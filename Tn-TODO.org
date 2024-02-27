@@ -1,0 +1,1394 @@
+#+FILETAGS: :Tn:
+* INPROGRESS System Core
+:LOGBOOK:
+- State "INPROGRESS" from "TODO"       [2024-02-21 Wed 20:26]
+:END:
+
+*** DONE Consider additional Packages
+CLOSED: [2024-02-19 Mon 17:59]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-19 Mon 17:59]
+:END:
+- [X] Install allusion and pureref without pkg manager
+  - wget to download the appImage locally
+  - then script to add to Nix-store
+  - ^ added to upgrade script, and first time install?
+  - https://allusion-app.github.io/
+  - https://www.pureref.com/
+- [X] Org-wild-notifier
+- [X] hledger
+  - https://www.youtube.com/watch?v=cjoCNRpLanY&list=WL&index=472&pp=gAQBiAQB
+- [X] FlyMake
+- [X] ~abbrev mode~
+- [X] Evil Harpoon
+- [X] [[https://github.com/bbatsov/crux][crux]]
+- [X] [[https://melpa.org/#/company][company]]
+  - [X] added backend for org-roam =company-capf= and enable completions
+#+begin_src emacs-lisp
+(setq org-roam-completion-everywhere t)
+#+end_src
+*** DONE Buffer Mangement
+CLOSED: [2024-02-23 Fri 09:25]
+:LOGBOOK:
+- State "DONE"       from "INPROGRESS" [2024-02-23 Fri 09:25]
+- State "INPROGRESS" from "NEXT"       [2024-02-23 Fri 09:11]
+:END:
+
+***** DONE Emacs-Winner mode for faster layout management
+CLOSED: [2024-02-23 Fri 09:08]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-23 Fri 09:08]
+:END:
+
+***** DONE Create function to close current buffer and hide window, and balance remaining window.
+CLOSED: [2024-02-23 Fri 09:23]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-23 Fri 09:23]
+:END:
+
+***** CANCELLED create function to split window Vertically and Balance all windows in single button
+CLOSED: [2024-02-23 Fri 09:25]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2024-02-23 Fri 09:25]
+:END:
+
+*** DONE [#B] Create key binding to open yearly calorie, and finance review files
+CLOSED: [2024-02-20 Tue 19:45]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-20 Tue 19:45]
+:END:
+
+*** DONE [#B] Learn how to track calories, and money with hledger
+CLOSED: [2024-02-25 Sun 17:05]
+:LOGBOOK:
+- State "DONE"       from "INPROGRESS" [2024-02-25 Sun 17:05]
+- State "INPROGRESS" from "NEXT"       [2024-02-23 Fri 09:25]
+CLOCK: [2024-02-20 Tue 19:47]--[2024-02-20 Tue 20:27] =>  0:40
+:END:
+*** DONE Follow up about Helm settings
+- State "DONE"       from "TODO"       [2024-02-13 Tue 14:29]
+- https://tuhdo.github.io/helm-intro.html
+- [[https://github.com/thierryvolpiatto/emacs-config/blob/main/init-helm.el][Example Helm Config]]
+- [[https://tuhdo.github.io/helm-intro.html][A Package in a League of it own]]
+***** DONE [[https://melpa.org/#/helm-company][Helm-Company]]
+- State "DONE"       from "TODO"       [2024-02-12 Mon 18:58]
+***** DONE [[https://melpa.org/#/flyspell-correct-helm][Fly-Spell Helm]]
+- State "DONE"       from "TODO"       [2024-02-12 Mon 18:58]
+*** DONE Configure default starting buffer
+- State "DONE"       from "TODO"       [2024-02-10 Sat 18:05]
+***** DONE Configure scratch buffer message
+- State "DONE"       from "TODO"       [2024-02-10 Sat 17:28]
+***** DONE Configure start up buffer contents
+- State "DONE"       from "TODO"       [2024-02-10 Sat 18:05]
+*** DONE Create a custom function to edit sudo files with tramp.
+- State "DONE"       from "TODO"       [2024-02-12 Mon 18:59]
+- Try to create a shell command =seo= to do the same or second function to reopen current file as root
+- [[https://emacs.stackexchange.com/questions/52/edit-file-with-super-user-rights]]
+*** DONE Learn more about undo tree
+- State "DONE"       from "TODO"       [2024-02-10 Sat 18:01]
+- https://www.emacswiki.org/emacs/UndoTree
+*** CANCELLED Follow up on using attachments with org files
+- State "CANCELLED"  from "TODO"       [2024-02-10 Sat 18:06] \\
+  Not sure why it would be needed so I'm canceling it for now.
+#+begin_src emacs-lisp
+(setq org-id-link-to-org-use-id 'create-if-interactive-and-no-custom-id)
+#+end_src
+I don't really know what this would be used for
+*** DONE Refine Evil Motions
+- State "DONE"       from "NEXT"       [2024-02-10 Sat 14:44]
+* DONE Configure Org
+CLOSED: [2024-02-21 Wed 20:26]
+:LOGBOOK:
+- State "DONE"       from "ACTIVE"     [2024-02-21 Wed 20:26]
+:END:
+- State "ACTIVE"     from "WAITING"       [2024-02-10 Sat 17:36]
+- State "WAITING"    from "NEXT"       [2024-02-06 Tue 19:19] \\
+  waiting until after fixing VIM motions to continue.
+- [[https://hugocisneros.com/org-config/][Example Config]]
+- https://www.youtube.com/watch?v=qz9tSMsMDII&list=WL&index=406&pp=gAQBiAQB
+- https://www.youtube.com/watch?v=oJTwQvgfgMM&list=WL&index=420&t=1503s&pp=gAQBiAQB
+- https://www.youtube.com/watch?v=SzA2YODtgK4&list=WL&index=474&t=2848s&pp=gAQBiAQB
+*** DONE [#B] Fix Org-Journal Hydras and integrate with org-capture and refile
+CLOSED: [2024-02-21 Wed 20:26]
+:LOGBOOK:
+- State "DONE"       from "WAITING"    [2024-02-21 Wed 20:26]
+CLOCK: [2024-02-19 Mon 16:50]--[2024-02-19 Mon 16:54] =>  0:04
+:END:
+***** DONE [#B] For nutrition tracking first open quick macro file then open capture
+CLOSED: [2024-02-21 Wed 19:11]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-21 Wed 19:11]
+:END:
+
+***** CANCELLED [#B] quick key to count the number of times i refill my water bottle
+CLOSED: [2024-02-21 Wed 19:11]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2024-02-21 Wed 19:11] \\
+  not needed
+:END:
+
+***** DONE [#B] Refactor =ongoing tasks= file
+CLOSED: [2024-02-21 Wed 19:30]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-21 Wed 19:30]
+CLOCK: [2024-02-21 Wed 19:11]--[2024-02-21 Wed 19:30] =>  0:19
+:END:
+To store todo headings of recurring tasks.
+- [X] eating
+- [X] sleeping
+- [X] Hanging out with tobey
+- [X] ect
+***** DONE [#B] create ongoing tasks hydra
+CLOSED: [2024-02-21 Wed 20:26]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-21 Wed 20:26]
+CLOCK: [2024-02-21 Wed 19:30]--[2024-02-21 Wed 20:25] =>  0:55
+:END:
+used to quickly clock in ongoing tasks
+***** DONE [#B] create clock hydra
+CLOSED: [2024-02-20 Tue 19:29]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-20 Tue 19:29]
+:END:
+to easily clock into and out of heading under point
+- [X] clock in
+- [X] clock out
+- [X] go to currently clocked heading
+- [X] clock into last
+***** DONE [#B] create quick captures with clocking
+CLOSED: [2024-02-21 Wed 19:11]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-21 Wed 19:11]
+CLOCK: [2024-02-21 Wed 18:31]--[2024-02-21 Wed 19:11] =>  0:40
+CLOCK: [2024-02-21 Wed 18:23]--[2024-02-21 Wed 18:29] =>  0:06
+CLOCK: [2024-02-21 Wed 17:59]--[2024-02-21 Wed 18:21] =>  0:22
+CLOCK: [2024-02-21 Wed 17:57]--[2024-02-21 Wed 17:58] =>  0:01
+CLOCK: [2024-02-21 Wed 17:49]--[2024-02-21 Wed 17:56] =>  0:07
+CLOCK: [2024-02-21 Wed 17:34]--[2024-02-21 Wed 17:48] =>  0:14
+CLOCK: [2024-02-21 Wed 17:16]--[2024-02-21 Wed 17:22] =>  0:06
+CLOCK: [2024-02-21 Wed 17:15]--[2024-02-21 Wed 17:16] =>  0:01
+CLOCK: [2024-02-21 Wed 17:14]--[2024-02-21 Wed 17:15] =>  0:01
+CLOCK: [2024-02-21 Wed 17:02]--[2024-02-21 Wed 17:13] =>  0:11
+CLOCK: [2024-02-21 Wed 16:55]--[2024-02-21 Wed 16:57] =>  0:02
+CLOCK: [2024-02-21 Wed 16:46]--[2024-02-21 Wed 16:49] =>  0:03
+CLOCK: [2024-02-21 Wed 14:22]--[2024-02-21 Wed 15:28] =>  1:06
+CLOCK: [2024-02-21 Wed 12:25]--[2024-02-21 Wed 12:47] =>  0:22
+CLOCK: [2024-02-21 Wed 12:04]--[2024-02-21 Wed 12:24] =>  0:20
+:END:
+capture short interuptions
+- [X] Talking with Tobey
+- [X] bathroom
+- [X] refilling water
+- [X] ect
+***** DONE [#B] create function to save buffers when clocking in/out
+CLOSED: [2024-02-21 Wed 12:05]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-21 Wed 12:05]
+:END:
+
+*** DONE [#B] Fix Org-Roam Hydras
+CLOSED: [2024-02-21 Wed 11:04]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-21 Wed 11:04]
+CLOCK: [2024-02-21 Wed 10:08]--[2024-02-21 Wed 11:04] =>  0:56
+:END:
+- [X] Check ability to insert SFW nodes
+- [X] Add ability to insert NSFW nodes
+- [X] Figure out it Citar suggestions can be sorted by tag from hydra
+- [X] Citar index sort by SFW / NSFW
+- [X] Move shopping list to internal section
+- [X] Add insert with priority to (C-M-<RET>)
+*** CANCELLED [#B] Refilling
+CLOSED: [2024-02-20 Tue 19:17]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2024-02-20 Tue 19:17] \\
+  not usefull
+:END:
+#+begin_src emacs-lisp
+; Targets include this file and any file contributing to the agenda - up to 9 levels deep
+(setq org-refile-targets (quote ((nil :maxlevel . 9)
+                                 (org-agenda-files :maxlevel . 9))))
+
+; Use full outline paths for refile targets - we file directly with IDO
+(setq org-refile-use-outline-path t)
+
+; Targets complete directly with IDO
+(setq org-outline-path-complete-in-steps nil)
+
+; Allow refile to create parent tasks with confirmation
+(setq org-refile-allow-creating-parent-nodes (quote confirm))
+
+; Use the current window for indirect buffer display
+(setq org-indirect-buffer-display 'current-window)
+
+;;;; Refile settings
+; Exclude DONE state tasks from refile targets
+(defun Tn/verify-refile-target ()
+  "Exclude todo keywords with a done state from refile targets"
+  (not (member (nth 2 (org-heading-components)) org-done-keywords)))
+
+(setq org-refile-target-verify-function 'Tn/verify-refile-target)
+#+end_src
+***** CANCELLED sort through capture templates to customize for my use
+CLOSED: [2024-02-20 Tue 19:17]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2024-02-20 Tue 19:17] \\
+  not needed
+:END:
+#+begin_src emacs-lisp
+(setq org-directory "~/Grimoire")
+(setq org-default-notes-file "~/git/org/refile.org")
+
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, meetings, and org-protocol
+(setq org-capture-templates
+      (quote (("t" "todo" entry (file "~/git/org/refile.org")
+               "* TODO %?\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("r" "respond" entry (file "~/git/org/refile.org")
+               "* NEXT Respond to %:from on %:subject\nSCHEDULED: %t\n%U\n%a\n" :clock-in t :clock-resume t :immediate-finish t)
+              ("n" "note" entry (file "~/git/org/refile.org")
+               "* %? :NOTE:\n%U\n%a\n" :clock-in t :clock-resume t)
+              ("j" "Journal" entry (file+datetree "~/git/org/diary.org")
+               "* %?\n%U\n" :clock-in t :clock-resume t)
+              ("w" "org-protocol" entry (file "~/git/org/refile.org")
+               "* TODO Review %c\n%U\n" :immediate-finish t)
+              ("m" "Meeting" entry (file "~/git/org/refile.org")
+               "* MEETING with %? :MEETING:\n%U" :clock-in t :clock-resume t)
+              ("p" "Phone call" entry (file "~/git/org/refile.org")
+               "* PHONE %? :PHONE:\n%U" :clock-in t :clock-resume t)
+              ("h" "Habit" entry (file "~/git/org/refile.org")
+               "* NEXT %?\n%U\n%a\nSCHEDULED: %(format-time-string \"%<<%Y-%m-%d %a .+1d/3d>>\")\n:PROPERTIES:\n:STYLE: habit\n:REPEAT_TO_STATE: NEXT\n:END:\n"))))
+#+end_src
+*** CANCELLED Configure Org habit display
+- State "CANCELLED"  from "TODO"       [2024-02-14 Wed 14:41] \\
+  doesn't work how I would want it to
+#+begin_src emacs-lisp
+(run-at-time "05:00" 86400 '(lambda () (setq org-habit-show-habits t)))
+#+end_src
+***** CANCELLED Find a way to create streaks tracking for habits
+- State "CANCELLED"  from "TODO"       [2024-02-14 Wed 14:40] \\
+  moved to a new long term goal
+*** CANCELLED Enable Modules
+CLOSED: [2024-02-19 Mon 18:38]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2024-02-19 Mon 18:38] \\
+  not needed
+:END:
+#+begin_src emacs-lisp
+(setq org-modules (quote (org-bbdb
+                          org-crypt
+                          org-gnus
+                          org-info
+                          org-jsinfo
+                          org-inlinetask
+                          org-irc
+                          org-mew
+                          org-mhe
+                          org-rmail
+                          org-vm
+                          org-wl
+                          org-w3m)))
+#+end_src
+*** DONE [#B] Archiving
+CLOSED: [2024-02-20 Tue 19:24]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-20 Tue 19:24]
+:END:
+#+begin_src emacs-lisp
+(setq org-archive-mark-done nil)
+(setq org-archive-location "%s_archive::* Archived Tasks")
+
+(defun Tn/skip-non-archivable-tasks ()
+  "Skip trees that are not available for archiving"
+  (save-restriction
+    (widen)
+    ;; Consider only tasks with done todo headings as archivable candidates
+    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max))))
+          (subtree-end (save-excursion (org-end-of-subtree t))))
+      (if (member (org-get-todo-state) org-todo-keywords-1)
+          (if (member (org-get-todo-state) org-done-keywords)
+              (let* ((daynr (string-to-int (format-time-string "%d" (current-time))))
+                     (a-month-ago (* 60 60 24 (+ daynr 1)))
+                     (last-month (format-time-string "%Y-%m-" (time-subtract (current-time) (seconds-to-time a-month-ago))))
+                     (this-month (format-time-string "%Y-%m-" (current-time)))
+                     (subtree-is-current (save-excursion
+                                           (forward-line 1)
+                                           (and (< (point) subtree-end)
+                                                (re-search-forward (concat last-month "\\|" this-month) subtree-end t)))))
+                (if subtree-is-current
+                    subtree-end ; Has a date in this month or last month, skip it
+                  nil))  ; available to archive
+            (or subtree-end (point-max)))
+        next-headline))))
+#+end_src
+**** CANCELLED Have completed heading moved to bottom of current subtree, and copied into year-archve.org file
+CLOSED: [2024-02-20 Tue 19:24]
+:LOGBOOK:
+- State "CANCELLED"  from "TODO"       [2024-02-20 Tue 19:24] \\
+  just use org-sort
+:END:
+
+*** DONE [#B] Refine Org-Agenda configuration
+CLOSED: [2024-02-20 Tue 19:15]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-20 Tue 19:15]
+CLOCK: [2024-02-20 Tue 11:25]--[2024-02-20 Tue 14:01] =>  2:36
+:END:
+- [X] Simplified and Minimal Daily view
+- [X] Minimal Rolling Future 10 day view
+- [X] Comprehensive 3 day view, of day surrounding a future date
+- [X] Categorized Global TODO list
+- [X] Start Up landing screen with Daily view next to Current days journal entry
+*** DONE [#B] Create keybining to create new todo with priority slug, insert
+CLOSED: [2024-02-20 Tue 11:56]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-20 Tue 11:56]
+:END:
+
+*** DONE Unify Org Keybindings
+- State "DONE"       from "TODO"       [2024-01-16 Tue 15:22]
+***** DONE Create hyrda for things like =(C-c C-t)=
+- State "DONE"       from "TODO"       [2024-01-16 Tue 13:16]
+******* DONE Tags =org-set-tags-command=
+- State "DONE"       from "TODO"       [2024-01-16 Tue 13:15]
+******* DONE Todo state =org-todo=
+******* DONE deadline =org-deadline=
+******* DONE scheduled =org-schedule=
+******* DONE timestamp (active) =org-time-stamp=
+- State "DONE"       from "TODO"       [2024-01-16 Tue 13:15]
+- add note about adding =,= for inactive
+***** DONE add org-open-link to =(C-c l)= hydra
+- State "DONE"       from "TODO"       [2024-01-16 Tue 13:23]
+***** DONE fix org-copy-link hydra function
+- State "DONE"       from "TODO"       [2024-01-16 Tue 13:23]
+***** DONE rework roam hydras
+- State "DONE"       from "TODO"       [2024-01-16 Tue 14:47]
+- journal/grimoire -> insert/open/capture -> node/topic/source
+
+- Menue 1, Select Group:
+  - Journal =(t)=:
+  - Knowledge =(n)=:
+
+- Menue 2; Knowledge, Select Action:
+  -
+******* DONE add function to delete current buffer
+- State "DONE"       from "TODO"       [2024-01-16 Tue 14:47]
+***** DONE create secondary roam hydra for alias', Tags, ect.
+- State "DONE"       from "TODO"       [2024-01-16 Tue 15:09]
+******* DONE Tags =org-roam-tag-add= =org-roam-tag-remove=
+******* DONE Alias =org-roam-alias-add= =org-roam-alias-remove=
+******* DONE citar refs =citar-org-roam-ref-add=
+*** DONE Fix Org todo states
+- State "DONE"       from "TODO"       [2024-01-16 Tue 15:21]
+***** CANCELLED Remove GOAL From global alist, and add it only to 2024 file locally.
+- State "CANCELLED"  from "DONE"       [2024-01-16 Tue 15:21] \\
+  not worth the extra effor
+*** DONE Configure Org heading priority inheritance
+- State "DONE"       from "TODO"       [2024-02-06 Tue 13:12]
+- [X] change priority values to 3k, 2k, 1k, 0
+- [X]configure priority heading to display as sub-trees in agenda.
+  - https://emacs.stackexchange.com/questions/37800/how-to-inherit-priority-in-org-mode
+- [X] change priority indicator colors
+*** DONE Configure org heading tags
+***** DONE Rebind Heading Actions Hydra Tag key to tags main hydra
+- subjects I am studying, things I make, people I know, place I go to.
+***** DONE Create main hydra that points to subject group Hydras
+***** DONE create location subject group hydra
+******* DONE Add @home tag to alist and create personal roam note
+******* DONE Add @studio tag to alist and create personal roam note
+******* DONE Add @desk tag to alist and create personal roam note
+******* DONE Add @phone tag to alist and create personal roam note
+******* DONE Add @car tag to alist and create personal roam note
+******* DONE Add @makespace tag to alist and create personal roam note
+******* DONE Add @CF-Gym tag to alist and create personal roam note
+******* DONE Add @Oly-Gym tag to alist and create personal roam note
+***** DONE create academic subject group hydra
+******* DONE Maths
+******* DONE Physics
+******* DONE ComputerScience
+******* DONE Linguistics
+***** DONE create physical art subject group hydra
+******* DONE Illustration
+******* DONE Painting
+******* DONE Sculpture
+******* DONE fabrication
+******* DONE animation
+***** DONE create digital art subject group hydra
+******* DONE illustration
+******* DONE painting
+******* DONE sculpture
+******* DONE Cad
+******* DONE animation
+***** DONE create a content subject group hydra
+******* DONE Essay Written
+******* DONE Essay Video
+******* DONE Live Stream
+******* DONE Clips
+***** DONE create a people subject group hydra
+******* DONE Add @Tobey tag to alist and create personal roam note
+***** DONE Test how tags, deadlines, and priorities show up in agenda todo list
+*** DONE Emacs Diary
+- State "DONE"       from "TODO"       [2024-02-06 Tue 19:15]
+- Use the diary file to track recurring events that are permanent and fixed.
+  - [X] Holidays
+  - [X] Birthdays
+  - [X] Paydays
+  - ect
+***** DONE Use emacs dairy long term recurring tasks?
+- State "DONE"       from "TODO"       [2024-02-06 Tue 19:15]
+***** DONE Integrate diary with agenda daily view, and have agenda tasks show up in calendar view.
+- State "DONE"       from "TODO"       [2024-02-06 Tue 19:12]
+- https://emacs.stackexchange.com/questions/29632/org-mode-calendar-integration
+*** DONE Configure Org-Agenda
+CLOSED: [2024-02-19 Mon 16:43]
+:LOGBOOK:
+- State "DONE"       from "NEXT"       [2024-02-19 Mon 16:43]
+:END:
+- https://redgreenrepeat.com/2021/04/09/org-mode-agenda-getting-started-scheduled-items-and-todos/
+***** DONE Agenda Displays
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:30]
+#+begin_src emacs-lisp
+;; Do not dim blocked tasks
+(setq org-agenda-dim-blocked-tasks nil)
+(setq org-agenda-compact-blocks t)
+
+;; Custom agenda command definitions
+(setq org-agenda-custom-commands
+      (quote (("N" "Notes" tags "NOTE"
+               ((org-agenda-overriding-header "Notes")
+                (org-tags-match-list-sublevels t)))
+              ("h" "Habits" tags-todo "STYLE=\"habit\""
+               ((org-agenda-overriding-header "Habits")
+                (org-agenda-sorting-strategy
+                 '(todo-state-down effort-up category-keep))))
+              (" " "Agenda"
+               ((agenda "" nil)
+                (tags "REFILE"
+                      ((org-agenda-overriding-header "Tasks to Refile")
+                       (org-tags-match-list-sublevels nil)))
+                (tags-todo "-CANCELLED/!"
+                           ((org-agenda-overriding-header "Stuck Projects")
+                            (org-agenda-skip-function 'bh/skip-non-stuck-projects)
+                            (org-agenda-sorting-strategy
+                             '(category-keep))))
+                (tags-todo "-HOLD-CANCELLED/!"
+                           ((org-agenda-overriding-header "Projects")
+                            (org-agenda-skip-function 'bh/skip-non-projects)
+                            (org-tags-match-list-sublevels 'indented)
+                            (org-agenda-sorting-strategy
+                             '(category-keep))))
+                (tags-todo "-CANCELLED/!NEXT"
+                           ((org-agenda-overriding-header (concat "Project Next Tasks"
+                                                                  (if bh/hide-scheduled-and-waiting-next-tasks
+                                                                      ""
+                                                                    " (including WAITING and SCHEDULED tasks)")))
+                            (org-agenda-skip-function 'bh/skip-projects-and-habits-and-single-tasks)
+                            (org-tags-match-list-sublevels t)
+                            (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-sorting-strategy
+                             '(todo-state-down effort-up category-keep))))
+                (tags-todo "-REFILE-CANCELLED-WAITING-HOLD/!"
+                           ((org-agenda-overriding-header (concat "Project Subtasks"
+                                                                  (if bh/hide-scheduled-and-waiting-next-tasks
+                                                                      ""
+                                                                    " (including WAITING and SCHEDULED tasks)")))
+                            (org-agenda-skip-function 'bh/skip-non-project-tasks)
+                            (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-sorting-strategy
+                             '(category-keep))))
+                (tags-todo "-REFILE-CANCELLED-WAITING-HOLD/!"
+                           ((org-agenda-overriding-header (concat "Standalone Tasks"
+                                                                  (if bh/hide-scheduled-and-waiting-next-tasks
+                                                                      ""
+                                                                    " (including WAITING and SCHEDULED tasks)")))
+                            (org-agenda-skip-function 'bh/skip-project-tasks)
+                            (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-with-date bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-sorting-strategy
+                             '(category-keep))))
+                (tags-todo "-CANCELLED+WAITING|HOLD/!"
+                           ((org-agenda-overriding-header (concat "Waiting and Postponed Tasks"
+                                                                  (if bh/hide-scheduled-and-waiting-next-tasks
+                                                                      ""
+                                                                    " (including WAITING and SCHEDULED tasks)")))
+                            (org-agenda-skip-function 'bh/skip-non-tasks)
+                            (org-tags-match-list-sublevels nil)
+                            (org-agenda-todo-ignore-scheduled bh/hide-scheduled-and-waiting-next-tasks)
+                            (org-agenda-todo-ignore-deadlines bh/hide-scheduled-and-waiting-next-tasks)))
+                (tags "-REFILE/"
+                      ((org-agenda-overriding-header "Tasks to Archive")
+                       (org-agenda-skip-function 'bh/skip-non-archivable-tasks)
+                       (org-tags-match-list-sublevels nil))))
+               nil))))
+#+end_src
+***** DONE configure calendar mode
+- State "DONE"       from "TODO"       [2024-02-14 Wed 19:02]
+******* DONE Have agenda tasks show up in calendar view
+- State "DONE"       from "TODO"       [2024-02-14 Wed 19:02]
+***** CANCELLED Agenda Filtering Based on tags
+- State "CANCELLED"  from "TODO"       [2024-02-15 Thu 12:23] \\
+  not needed
+#+begin_src emacs-lisp
+(defun bh/org-auto-exclude-function (tag)
+  "Automatic task exclusion in the agenda with / RET"
+  (and (cond
+        ((string= tag "hold")
+         t)
+        ((string= tag "farm")
+         t))
+       (concat "-" tag)))
+
+(setq org-agenda-auto-exclude-function 'bh/org-auto-exclude-function)
+#+end_src
+***** CANCELLED Org IDs
+- State "CANCELLED"  from "TODO"       [2024-02-15 Thu 11:40] \\
+  not needed
+#+begin_src emacs-lisp
+(require 'org-id)
+(defun bh/clock-in-task-by-id (id)
+  "Clock in a task by id"
+  (org-with-point-at (org-id-find id 'marker)
+    (org-clock-in nil)))
+
+(defun bh/clock-in-last-task (arg)
+  "Clock in the interrupted task if there is one
+Skip the default task and get the next one.
+A prefix arg forces clock in of the default task."
+  (interactive "p")
+  (let ((clock-in-to-task
+         (cond
+          ((eq arg 4) org-clock-default-task)
+          ((and (org-clock-is-active)
+                (equal org-clock-default-task (cadr org-clock-history)))
+           (caddr org-clock-history))
+          ((org-clock-is-active) (cadr org-clock-history))
+          ((equal org-clock-default-task (car org-clock-history)) (cadr org-clock-history))
+          (t (car org-clock-history)))))
+    (widen)
+    (org-with-point-at clock-in-to-task
+      (org-clock-in nil))))
+#+end_src
+******* DONE Find out if clock in id is usefull
+- State "DONE"       from "TODO"       [2024-02-15 Thu 11:40]
+***** DONE Org Clocking
+- State "DONE"       from "TODO"       [2024-02-15 Thu 11:39]
+***** DONE Time Logging Settings
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:23]
+#+begin_src emacs-lisp
+(setq org-log-done (quote time))
+(setq org-log-into-drawer t)
+(setq org-log-state-notes-insert-after-drawers nil)
+#+end_src
+***** DONE Log Time in discrete minute intervals
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:22]
+#+begin_src emacs-lisp
+(setq org-time-stamp-rounding-minutes (quote (1 1)))
+#+end_src
+***** CANCELLED Log time consistency check
+- State "CANCELLED"  from "TODO"       [2024-02-15 Thu 12:21] \\
+  not needed
+#+begin_src emacs-lisp
+(setq org-agenda-clock-consistency-checks
+      (quote (:max-duration "4:00"
+              :min-duration 0
+              :max-gap 0
+              :gap-ok-around ("4:00"))))
+#+end_src
+***** DONE Configure Org Clock monthly Report
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:21]
+#+begin_src emacs-lisp
+;; Agenda clock report parameters
+(setq org-agenda-clockreport-parameter-plist
+      (quote (:link t :maxlevel 5 :fileskip0 t :compact t :narrow 80)))
+;; Agenda log mode items to display (closed and state changes by default)
+(setq org-agenda-log-mode-items (quote (closed state)))
+#+end_src
+***** DONE Log time in hours only
+- State "DONE"       from "TODO"       [2024-02-15 Thu 11:42]
+#+begin_src emacs-lisp
+(setq org-time-clocksum-format
+      '(:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t))
+#+end_src
+
+***** DONE Configure agenda / diary integration
+- State "DONE"       from "TODO"       [2024-02-14 Wed 14:42]
+#+begin_src emacs-lisp
+(setq org-agenda-include-diary nil)
+(setq org-agenda-diary-file "~/git/org/diary.org")
+(setq org-agenda-insert-diary-extract-time t)
+#+end_src
+***** DONE Agenda Sorting
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:18]
+#+begin_src emacs-lisp
+;; Show all future entries for repeating tasks
+(setq org-agenda-repeating-timestamp-show-all t)
+
+;; Show all agenda dates - even if they are empty
+(setq org-agenda-show-all-dates t)
+#+end_src
+***** DONE enable opening multiple agendas together
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:19]
+#+begin_src emacs-lisp
+;; Use sticky agenda's so they persist
+(setq org-agenda-sticky t)
+#+end_src
+***** DONE Only display tasks due within 30 days
+- State "DONE"       from "TODO"       [2024-02-15 Thu 11:25]
+#+begin_src emacs-lisp
+(setq org-deadline-warning-days 30)
+#+end_src
+***** DONE Recurring tasks can be configured to only appear on the specific day with the timerstamp
+- State "DONE"       from "TODO"       [2024-02-14 Wed 14:42]
+#+begin_src emacs-lisp
+ DEADLINE: <2009-07-01 Wed +1m -0d>
+#+end_src
+***** DONE figure out how to use ~run-at-time~ for other stuff
+- State "DONE"       from "TODO"       [2024-02-14 Wed 14:42]
+***** DONE Configure agenda display.
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:10]
+#+begin_src emacs-lisp
+
+#+end_src
+***** CANCELLED check if tag sublevel is usefull
+- State "CANCELLED"  from "TODO"       [2024-02-14 Wed 19:06] \\
+  not needed
+***** CANCELLED Consider auto resetting filters daily
+- State "CANCELLED"  from "TODO"       [2024-02-15 Thu 12:08] \\
+  not needed
+***** DONE [[https://protesilaos.com/codelog/2021-12-09-emacs-org-block-agenda/][Example Org Agenda Config]]
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:24]
+***** CANCELLED Automatically convert ~next~ tasks to projects
+- State "CANCELLED"  from "TODO"       [2024-02-14 Wed 14:43] \\
+  went with a simpler project deftinition, and management system
+#+begin_src emacs-lisp
+(defun bh/mark-next-parent-tasks-todo ()
+  "Visit each parent task and change NEXT states to TODO"
+  (let ((mystate (or (and (fboundp 'org-state)
+                          state)
+                     (nth 2 (org-heading-components)))))
+    (when mystate
+      (save-excursion
+        (while (org-up-heading-safe)
+          (when (member (nth 2 (org-heading-components)) (list "NEXT"))
+            (org-todo "TODO")))))))
+
+(add-hook 'org-after-todo-state-change-hook 'bh/mark-next-parent-tasks-todo 'append)
+(add-hook 'org-clock-in-hook 'bh/mark-next-parent-tasks-todo 'append)
+#+end_src
+***** DONE Org-Super Agenda
+CLOSED: [2024-02-19 Mon 16:43]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-19 Mon 16:43]
+:END:
+- https://github.com/alphapapa/org-super-agenda
+***** DONE Clean up empty Clock Drawers
+- State "DONE"       from "TODO"       [2024-02-15 Thu 12:08]
+#+begin_src emacs-lisp
+;; Remove empty LOGBOOK drawers on clock out
+(defun Tn/remove-empty-drawer-on-clock-out ()
+  (interactive)
+  (save-excursion
+    (beginning-of-line 0)
+    (org-remove-empty-drawer-at "LOGBOOK" (point))))
+
+(add-hook 'org-clock-out-hook 'Tn/remove-empty-drawer-on-clock-out 'append)
+#+end_src
+
+***** CANCELLED Configure Project Management
+- State "CANCELLED"  from "TODO"       [2024-02-15 Thu 12:02] \\
+  not needed at the moment
+#+begin_src emacs-lisp
+(defun bh/is-project-p ()
+  "Any task with a todo keyword subtask"
+  (save-restriction
+    (widen)
+    (let ((has-subtask)
+          (subtree-end (save-excursion (org-end-of-subtree t)))
+          (is-a-task (member (nth 2 (org-heading-components)) org-todo-keywords-1)))
+      (save-excursion
+        (forward-line 1)
+        (while (and (not has-subtask)
+                    (< (point) subtree-end)
+                    (re-search-forward "^\*+ " subtree-end t))
+          (when (member (org-get-todo-state) org-todo-keywords-1)
+            (setq has-subtask t))))
+      (and is-a-task has-subtask))))
+
+(defun bh/is-project-subtree-p ()
+  "Any task with a todo keyword that is in a project subtree.
+Callers of this function already widen the buffer view."
+  (let ((task (save-excursion (org-back-to-heading 'invisible-ok)
+                              (point))))
+    (save-excursion
+      (bh/find-project-task)
+      (if (equal (point) task)
+          nil
+        t))))
+
+(defun bh/is-task-p ()
+  "Any task with a todo keyword and no subtask"
+  (save-restriction
+    (widen)
+    (let ((has-subtask)
+          (subtree-end (save-excursion (org-end-of-subtree t)))
+          (is-a-task (member (nth 2 (org-heading-components)) org-todo-keywords-1)))
+      (save-excursion
+        (forward-line 1)
+        (while (and (not has-subtask)
+                    (< (point) subtree-end)
+                    (re-search-forward "^\*+ " subtree-end t))
+          (when (member (org-get-todo-state) org-todo-keywords-1)
+            (setq has-subtask t))))
+      (and is-a-task (not has-subtask)))))
+
+(defun bh/is-subproject-p ()
+  "Any task which is a subtask of another project"
+  (let ((is-subproject)
+        (is-a-task (member (nth 2 (org-heading-components)) org-todo-keywords-1)))
+    (save-excursion
+      (while (and (not is-subproject) (org-up-heading-safe))
+        (when (member (nth 2 (org-heading-components)) org-todo-keywords-1)
+          (setq is-subproject t))))
+    (and is-a-task is-subproject)))
+
+(defun bh/list-sublevels-for-projects-indented ()
+  "Set org-tags-match-list-sublevels so when restricted to a subtree we list all subtasks.
+  This is normally used by skipping functions where this variable is already local to the agenda."
+  (if (marker-buffer org-agenda-restrict-begin)
+      (setq org-tags-match-list-sublevels 'indented)
+    (setq org-tags-match-list-sublevels nil))
+  nil)
+
+(defun bh/list-sublevels-for-projects ()
+  "Set org-tags-match-list-sublevels so when restricted to a subtree we list all subtasks.
+  This is normally used by skipping functions where this variable is already local to the agenda."
+  (if (marker-buffer org-agenda-restrict-begin)
+      (setq org-tags-match-list-sublevels t)
+    (setq org-tags-match-list-sublevels nil))
+  nil)
+
+(defvar bh/hide-scheduled-and-waiting-next-tasks t)
+
+(defun bh/toggle-next-task-display ()
+  (interactive)
+  (setq bh/hide-scheduled-and-waiting-next-tasks (not bh/hide-scheduled-and-waiting-next-tasks))
+  (when  (equal major-mode 'org-agenda-mode)
+    (org-agenda-redo))
+  (message "%s WAITING and SCHEDULED NEXT Tasks" (if bh/hide-scheduled-and-waiting-next-tasks "Hide" "Show")))
+
+(defun bh/skip-stuck-projects ()
+  "Skip trees that are not stuck projects"
+  (save-restriction
+    (widen)
+    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+      (if (bh/is-project-p)
+          (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+                 (has-next ))
+            (save-excursion
+              (forward-line 1)
+              (while (and (not has-next) (< (point) subtree-end) (re-search-forward "^\\*+ NEXT " subtree-end t))
+                (unless (member "WAITING" (org-get-tags-at))
+                  (setq has-next t))))
+            (if has-next
+                nil
+              next-headline)) ; a stuck project, has subtasks but no next task
+        nil))))
+
+(defun bh/skip-non-stuck-projects ()
+  "Skip trees that are not stuck projects"
+  ;; (bh/list-sublevels-for-projects-indented)
+  (save-restriction
+    (widen)
+    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+      (if (bh/is-project-p)
+          (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+                 (has-next ))
+            (save-excursion
+              (forward-line 1)
+              (while (and (not has-next) (< (point) subtree-end) (re-search-forward "^\\*+ NEXT " subtree-end t))
+                (unless (member "WAITING" (org-get-tags-at))
+                  (setq has-next t))))
+            (if has-next
+                next-headline
+              nil)) ; a stuck project, has subtasks but no next task
+        next-headline))))
+
+(defun bh/skip-non-projects ()
+  "Skip trees that are not projects"
+  ;; (bh/list-sublevels-for-projects-indented)
+  (if (save-excursion (bh/skip-non-stuck-projects))
+      (save-restriction
+        (widen)
+        (let ((subtree-end (save-excursion (org-end-of-subtree t))))
+          (cond
+           ((bh/is-project-p)
+            nil)
+           ((and (bh/is-project-subtree-p) (not (bh/is-task-p)))
+            nil)
+           (t
+            subtree-end))))
+    (save-excursion (org-end-of-subtree t))))
+
+(defun bh/skip-non-tasks ()
+  "Show non-project tasks.
+Skip project and sub-project tasks, habits, and project related tasks."
+  (save-restriction
+    (widen)
+    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+      (cond
+       ((bh/is-task-p)
+        nil)
+       (t
+        next-headline)))))
+
+(defun bh/skip-project-trees-and-habits ()
+  "Skip trees that are projects"
+  (save-restriction
+    (widen)
+    (let ((subtree-end (save-excursion (org-end-of-subtree t))))
+      (cond
+       ((bh/is-project-p)
+        subtree-end)
+       ((org-is-habit-p)
+        subtree-end)
+       (t
+        nil)))))
+
+(defun bh/skip-projects-and-habits-and-single-tasks ()
+  "Skip trees that are projects, tasks that are habits, single non-project tasks"
+  (save-restriction
+    (widen)
+    (let ((next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+      (cond
+       ((org-is-habit-p)
+        next-headline)
+       ((and bh/hide-scheduled-and-waiting-next-tasks
+             (member "WAITING" (org-get-tags-at)))
+        next-headline)
+       ((bh/is-project-p)
+        next-headline)
+       ((and (bh/is-task-p) (not (bh/is-project-subtree-p)))
+        next-headline)
+       (t
+        nil)))))
+
+(defun bh/skip-project-tasks-maybe ()
+  "Show tasks related to the current restriction.
+When restricted to a project, skip project and sub project tasks, habits, NEXT tasks, and loose tasks.
+When not restricted, skip project and sub-project tasks, habits, and project related tasks."
+  (save-restriction
+    (widen)
+    (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+           (next-headline (save-excursion (or (outline-next-heading) (point-max))))
+           (limit-to-project (marker-buffer org-agenda-restrict-begin)))
+      (cond
+       ((bh/is-project-p)
+        next-headline)
+       ((org-is-habit-p)
+        subtree-end)
+       ((and (not limit-to-project)
+             (bh/is-project-subtree-p))
+        subtree-end)
+       ((and limit-to-project
+             (bh/is-project-subtree-p)
+             (member (org-get-todo-state) (list "NEXT")))
+        subtree-end)
+       (t
+        nil)))))
+
+(defun bh/skip-project-tasks ()
+  "Show non-project tasks.
+Skip project and sub-project tasks, habits, and project related tasks."
+  (save-restriction
+    (widen)
+    (let* ((subtree-end (save-excursion (org-end-of-subtree t))))
+      (cond
+       ((bh/is-project-p)
+        subtree-end)
+       ((org-is-habit-p)
+        subtree-end)
+       ((bh/is-project-subtree-p)
+        subtree-end)
+       (t
+        nil)))))
+
+(defun bh/skip-non-project-tasks ()
+  "Show project tasks.
+Skip project and sub-project tasks, habits, and loose non-project tasks."
+  (save-restriction
+    (widen)
+    (let* ((subtree-end (save-excursion (org-end-of-subtree t)))
+           (next-headline (save-excursion (or (outline-next-heading) (point-max)))))
+      (cond
+       ((bh/is-project-p)
+        next-headline)
+       ((org-is-habit-p)
+        subtree-end)
+       ((and (bh/is-project-subtree-p)
+             (member (org-get-todo-state) (list "NEXT")))
+        subtree-end)
+       ((not (bh/is-project-subtree-p))
+        subtree-end)
+       (t
+        nil)))))
+
+(defun bh/skip-projects-and-habits ()
+  "Skip trees that are projects and tasks that are habits"
+  (save-restriction
+    (widen)
+    (let ((subtree-end (save-excursion (org-end-of-subtree t))))
+      (cond
+       ((bh/is-project-p)
+        subtree-end)
+       ((org-is-habit-p)
+        subtree-end)
+       (t
+        nil)))))
+
+(defun bh/skip-non-subprojects ()
+  "Skip trees that are not projects"
+  (let ((next-headline (save-excursion (outline-next-heading))))
+    (if (bh/is-subproject-p)
+        nil
+      next-headline)))
+#+end_src
+*** DONE create org-roam node tags hydra
+- State "DONE"       from "TODO"       [2024-02-13 Tue 18:00]
+***** DONE create nsfw tag
+- State "DONE"       from "TODO"       [2024-02-13 Tue 18:00]
+*** DONE configure heading priorities
+- State "DONE"       from "TODO"       [2024-02-10 Sat 17:17]
+*** DONE [[https://github.com/nobiot/org-transclusion#original-idea-by-john-kitchin][Org Transclusion]]
+CLOSED: [2024-02-19 Mon 18:34]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-19 Mon 18:34]
+CLOCK: [2024-02-19 Mon 18:30]--[2024-02-19 Mon 18:34] =>  0:04
+:END:
+*** DONE Org Flash Cards
+CLOSED: [2024-02-19 Mon 18:40]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-19 Mon 18:40]
+CLOCK: [2024-02-19 Mon 18:35]--[2024-02-19 Mon 18:40] =>  0:05
+:END:
+- https://www.reddit.com/r/emacs/comments/i0n100/is_there_a_way_to_transform_orgroam_files_to_anki/
+- org fc
+*** DONE Add ledger language to org babel
+CLOSED: [2024-02-16 Fri 12:35]
+:LOGBOOK:
+- State "DONE"       from "TODO"       [2024-02-16 Fri 12:35]
+:END:
+
+*** DONE Configure EWW mode
+- State "DONE"       from "TODO"       [2024-02-14 Wed 19:09]
+- [X] create easier hot key to copy current page url
+- [X] create hotkey to go back to previous page
+* TODO Configure Org / Emacs Integrations
+*** TODO LaTeX
+*** TODO Graphviz
+*** TODO Visidata
+- https://www.visidata.org/docs/customize/
+***** TODO Create emacs (M-x visidata) function to open visidata directly
+***** TODO Add Vi movement Keys
+***** TODO Create Basic theme
+*** TODO hugo
+- [[https://willschenk.com/howto/2019/using_org_mode_in_hugo/][Using Hugo with Org Mode]]
+*** TODO Use Google Calendar notifications for appointment reminders
+*** TODO exorcism (programming tutorial)
+*** TODO Improve Firefox integration
+***** TODO integrate tridactyl and emacs exwm-firefox-evil
+- [[https://codeberg.org/emacs-weirdware/exwm-firefox/src/branch/main/exwm-firefox.el][EXWM FireFox]]
+- [[https://github.com/walseb/exwm-firefox-core][exwm firefox core]]
+***** TODO increase default text size of tridactyl windows
+***** TODO [[https://www.reddit.com/r/archlinux/][change default tridactyl search engine]]
+***** TODO create hot key to open bookmarks manager
+***** TODO create hot key to open current page in eww
+***** TODO Change Tridactyl Bindings
+******* TODO rebind tridactyl tab to space
+******* TODO Create Binding Opening Current Page in EWW
+******* TODO Create Binding Link in EWW
+******* TODO Rebind =B= to =b=
+******* TODO Rebind Tab open =t/T= to open in new window
+- Rebind all tabs based commands to open new windows
+******* TODO Create binding to display bookmarks
+******* TODO Create binding to quicksearch with duckduckgo
+******* TODO Replace link hint engine with something cleaner
+***** TODO configure RES and youtube keybindings
+***** TODO Manage Bookmarks with Helm-FireFox
+***** TODO Watch Video in emacs with MPV
+***** TODO enable arrow / vim keys in tab list
+***** TODO rebind =b= to show all tabs in all windows =(B)=.
+***** TODO create keybinding to open favorites list
+***** TODO add treestyle tabs
+*** TODO Emacs Communication Suite
+***** TODO Emacs Email Client
+***** TODO WeeChat or similar
+******* TODO Discord
+******* TODO Matrix
+******* TODO Slack
+******* TODO Mastadon?
+- [[https://blog.nawaz.org/posts/2022/Dec/rendering-latex-formulae-in-mastodonel/][Adding LaTeX to Mastadon]]
+******* TODO Reddit?
+******* TODO Tumbler?
+******* TODO HootSuite (just curious)
+***** TODO Integrate Other communications programs with emacs
+******* TODO Email
+******* TODO Google Voice via Email
+******* TODO Twitter (?)
+******* TODO Mastadon
+******* TODO Tumbler (?)
+******* TODO Reddit : https://www.reddit.com/r/emacs/comments/eaf2r0/how_i_use_reddit_from_inside_emacs/
+******* Discord
+******* TODO Integrate Discord with Emacs
+******* Wee Chat
+******* TODO Compare Weechat with other graphical clients
+******* TODO Integrate IRC / Matrix with Emacs
+* TODO Create Note taking workflow
+ [[https://jonhanabennett.github.io/blog/2019/05/29/writing-academic-papers-with-org-mode/][Writing Academic Papers in Org Mode]]
+ [[https://karinks.com/software/latex-input-for-impatient-scholars/][Latex for Impatient Scolars]]
+ [[https://casl.dev/post/lecture-notes-1/][Latex + Vim Notes]]
+ https://www.youtube.com/watch?v=4-YqqGGIkHg&list=WL&index=87&pp=gAQBiAQB (and other videos on channel)
+ https://www.youtube.com/watch?v=wB89lJs5A3s&list=WL&index=244&pp=gAQBiAQB
+ https://www.youtube.com/watch?v=njibNuFQwjw&list=WL&index=245&t=605s&pp=gAQBiAQB
+ https://www.youtube.com/watch?v=5Q9435eIOVI&list=WL&index=265&t=296s&pp=gAQBiAQB
+ https://www.youtube.com/watch?v=bTbiC6SamT4&list=WL&index=279&pp=gAQBiAQB
+ https://www.youtube.com/watch?v=Bpmkeh4D98s&list=WL&index=470&t=1646s&pp=gAQBiAQB
+*** TODO Single large notes file
+ Integrate witRoam. By either the main file being indexed, or the top level headlines being Indexed.
+*** DONE Insight based / zettles
+- State "DONE"       from "TODO"       [2024-02-12 Mon 19:14]
+* TODO Create Knowledge Management Workflow
+ https://zk.zeel.page/examples
+ https://www.mtalnodes.com/taking-raw-notes-is-useless
+ https://whhoncom/posts/para-org-mode/
+ https://www.bldingasecondbrain.com/
+[[https://lucidmanager.org/tags/emacs/][Literature Management System]]
+ [[https://wwweddit.com/r/emacs/comments/10hm92r/emacs_and_knowledge_management_for_scientists/][Knowledge management for scientists]]
+ [[https://jetokuan.github.io/org-roam-guide/][Taking notes with org roam]]
+ [[https://tony-zorman.com/posts/my-phd-workflow.html][PhD Workflow]]
+ [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/][How to take smart notes with Org Mode]]
+ [[https://rgoswami.me/posts/org-note-workflow/][Org Mode Note Workflow]]
+*** TODO Capture Information from Web
+ https://githucom/abo-abo/orca
+ https://github.com/ArchiveBox/ArchiveBox
+ https://www.youtube.com/watch?v=eaZUZCzaIgw
+*** TODO PDF Viewer
+ [[https://gitb.com/vedang/pdf-tools]]
+ https://rgoswi.me/posts/org-note-workflow/#org-noter
+ https://alber.am/2020-04-11-pdf-tools-as-default-pdf-viewer.html
+*** DONE Integte wikipedia links using EWW and Org
+- State "DONE"       from "TODO"       [2024-02-13 Tue 18:01]
+*** TODO Ebook Library Manager
+**** TODO Find out if home-manager can configure Calibre DRM settings
+
+* TODO Create Math Workflow
+*** TODO Doing Math with Org-mode
+***** TODO Tables
+***** TODO Inline LaTeX
+***** TODO Org Charts
+***** TODO Org export to PDF
+
+*** TODO Elisp / Haskell (?) Code blocks
+ https://wiki.haskell.org/Haskell_and_mathematics
+*** TODO LaTeX Engine
+ https://www.latex-project.org/help/documentation/
+ https://texdoc.org/serve/latex2e.pdf/0
+ https://www.youtube.com/watch?v=xBctAt2TVew
+ https://www.youtube.com/watch?v=331YxgOJUGw&list=WL&index=280&pp=gAQBiAQB
+*** TODO mathpix.el
+*** TODO GNU calc and plot integration
+***** TODO Learn how to use Calc Properly
+*** TODO Latex inline code Support
+*** TODO Export org docs to pdf
+* TODO Create Programming Workflow
+*** DONE Figure Out what TreeSitter is
+- State "DONE"       from "TODO"       [2024-02-12 Mon 19:15]
+*** DONE Figure Out What LSP is
+- State "DONE"       from "TODO"       [2024-02-12 Mon 19:15]
+ https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
+ https://taingram.org/blog/emacs-lsp-ide.html
+ https://www.youtube.com/watch?v=w7i4amO_zaE&list=WL&index=63&t=215s&pp=gAQBiAQB
+*** DONE FIgure Out what DAP mode is
+- State "DONE"       from "TODO"       [2024-02-12 Mon 19:16]
+   - https://github.com/emacs-lsp/dap-mode
+*** TODO Learn how to use Macros and Registers
+*** TODO Learn how to use Skelelons and Killring
+*** TODO Searching
+***** TODO Learn how to use rg ; bound to =(C-s)=
+******* TODO Add ~<ESC>~ to exit search prompt
+***** TODO Learn how to use Helm-Regex ~/~
+*** TODO Including git Workflow
+**** TODO Magit
+***** TODO have magit commit messages copied into journal
+- [[https://github.com/magit/orgit][Orgit]] : Adds magit link support to org
+**** TODO Git time machine
+ https://codeberg.org/pidu/git-timemachine
+** TODO Create Task Management Workflow
+- [ ] [[https://redgreenrepeat.com/2019/10/04/checklists-in-org-mode/][Checklists in Org-Mode]]
+- [ ] [[https://d12frosted.io/posts/2021-01-16-task-management-with-roam-vol5.html][Task Management with Org Roam]]
+- [ ] [[https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html][Clocking Time With Org-Mode]]
+- [ ] [[https://melpa.org/#/org-pomodoro][Work Cycling with Org Pomodoro]]
+* Long Term
+*** TODO Configure remote access to network storage
+***** TODO configure document storage
+- [ ] install calibre
+- [ ] set calibre library as =~/Apocrypha/Documents=
+- [ ] update citar library location
+***** TODO Add Support for images in org-mode
+- https://emacs.stackexchange.com/questions/42281/org-mode-is-it-possible-to-display-online-images
+- https://github.com/abo-abo/org-download
+- https://org-roam.discourse.group/t/is-there-a-solution-for-images-organization-in-org-roam/925
+******* TODO Test install allusion and see how it handles files
+******* TODO How to manage media insertion with org/org-roam
+********* TODO embedded images
+********* TODO links to other files in apocrypha
+*** TODO Emacs-Perspectives for layout management
+- https://systemcrafters.net/effective-emacs-workflow/declutter-your-buffers-perspective-el/
+*** TODO Configure org-wild-notifier or other agenda notification apps
+*** TODO Replace Burly Bookmarks with Perspectives
+*** TODO Integrate Google Drive with Emacs
+- https://emacsnotes.wordpress.com/2018/07/08/your-google-drive-now-within-your-emacs/
+*** TODO Add additional settings to evil slide hydra as needed
+- [ ] jump forward / back by sexp
+*** TODO Finalize =README.org=
+*** TODO Integrate agenda with google calendar
+*** TODO Fix unclutter cursor hiding
+*** TODO Create code that tracks org habit streaks
+*** TODO add Emacs startup dash board
+- https://github.com/rakanalh/emacs-dashboard
+*** TODO Test and configure Projectile to jump to projects
+- [ ] is there an alacrity extension for projectile
+*** TODO Go through DoomEmacs Docs and figure out if its worth using
+- [[https://github.com/hlissner/dotfiles][DoomEmacs Creators NixOS Configuration]]
+*** TODO Fork Citar for calorie tracking program
+*** TODO Fix Firefox -> Roam-protocol error
+*** TODO Find a way to do multi cursor insert with Emacs
+*** DONE Configure =org-tag-alist= to use hydras. For more efficient tags
+- State "DONE"       from "TODO"       [2024-02-10 Sat 17:32]
+*** TODO Write new blog article on config refactor
+*** TODO Look into Modifying core system
+***** TODO Repeatable disk partitioning using a machine specific script.
+***** TODO Use of Zen kernel with older normal kernel fallback
+***** TODO Use of ZFS for file system
+- [[https://danieldk.eu/Posts/2019-05-01-NixOS-Dropbox-ZFS.html][Dropbox with ZFS]]
+***** TODO Use of TMPFS and Impermance modules
+- https://www.reddit.com/r/NixOS/comments/su5bwl/whos_here_runs_nixos_with_opt_in_state/
+- https://mt-caret.github.io/blog/posts/2020-06-29-optin-state.html
+- https://hanckmann.com/posts/nixos-and-erasing-my-darlings/
+- https://lantian.pub/en/article/modify-computer/nixos-impermanence.lantian/
+
+***** TODO Use of Libreboot Bios
+***** TODO Full disk encryption
+*** TODO Add these programs to work computer
+- gimp-with-plugins
+- inkscape-with-extensions
+- davinci-resolve
+- dark-table
+- krita
+- obs
+- ffmpeg
+- blind
+***** TODO Manage some program configurations with out of store symlinks
+- https://www.reddit.com/r/NixOS/comments/u09cz9/home_manager_create_my_own_symlinks_automatically/
+*** TODO Add configuration to apps
+***** TODO Alacritty
+- https://www.youtube.com/watch?v=6Gq6wsz8o_k&t=216s
+*** TODO Figure out how to create custom systemd services
+- https://www.codyhiar.com/blog/repeated-tasks-with-systemd-service-timers-on-nixos/
+***** TODO autolock screen when laptop lid is closed
+- https://discourse.nixos.org/t/slock-when-suspend/22457/2
+***** TODO auto run rebuild, upgrade, and clean nightly
+*** TODO Configure SSH to Use PGP
+- https://rzetterberg.github.io/yubikey-gpg-nixos.html
+- https://framagit.org/Glandos/bw-ssh/
+*** DONE Create a first time start up script
+- State "DONE"       from "TODO"       [2024-02-10 Sat 17:32]
+*** TODO create a tmux + vim ssh config
+- https://www.reddit.com/r/emacs/comments/xyo2fo/orgmode_vterm_tmux/
+- https://www.youtube.com/watch?v=stCXFxC4OH0&list=WL&index=11&pp=gAQBiAQB
+- https://www.youtube.com/watch?v=DzNmUNvnB04&list=WL&index=99&t=100s&pp=gAQBiAQB
+***** TODO create a default vimrc
+*** TODO create script to enable wacom tablet driver and set bindings
+
+#+begin_src nix
+  home.file."wacom-tablet-bindings.sh" = {
+    target = ".config/system-scripts/wacom-tablet-bindings.sh";
+    executable = true;
+    text = ''
+      #!/bin/bash
+
+      ## Upper group of exprss keys
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 1 "key tab"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 3 "key +control s -control"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 2 "key insert"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 8 "key alt"
+
+      ## Center Button
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 13 "key +control z -control"
+      ### This configuration leaves the default zoom-in/out touch ring bindings
+
+      ## Lower group of express keys
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 9 "key +shift"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 10 "key +control"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 11 "key +t"
+      xsetwacom set "Wacom Intuos Pro L Pad pad" Button 12 "key +b"
+
+
+      ## Pen Controls
+      xsetwacom set "Wacom Intuos Pro L Pen stylus" Button 3 "Key +e" # Toggles eraser mode on/off
+      xsetwacom set "Wacom Intuos Pro L Pen eraser" Button 1 "key +p" # Horizontally mirrors canvas <- Rebind this to something else. I dont like the eraser key
+    '';
+  };
+#+end_src
+*** TODO Create custom themes
+- https://github.com/doomemacs/themes/blob/master/themes/doom-city-lights-theme.el
+- https://blog.layus.be/posts/2020-06-12-nix-overlays.html
+- https://flyingcircus.io/blog/nixos-the-dos-and-donts-of-nixpkgs-overlays/
+- https://github.com/nix-community/emacs-overlay
+***** TODO Allacritty
+***** TODO Zsh
+***** TODO Starship
+***** TODO SSDM
+***** TODO OpenSCAD
+*** TODO Find a free and feature matched self hoasted alternative to gsuite, and bitwarden
+*** TODO Find a better way to ID active buffer
+- Create a secondary modeline that is only a 2px colored line. that goes gray when buffer is inactive.
+- https://www.youtube.com/watch?v=Qf_DLPIA9Cs
+*** TODO Add LLM Style Interaction
+- https://github.com/zerolfx/copilot.el
+*** TODO Learn How to Create Dev Env with Nix
+- [[https://determinate.systems/posts/nix-direnv][Nix-Direnv]]
+- https://notes.abhinavsarkar.net/2022/just-nix-podman-combo
+- https://www.youtube.com/watch?v=LjyQ7baj-KM&list=WL&index=78&pp=gAQBiAQB
+- https://www.youtube.com/watch?v=KaIRpx11qrc&list=WL&index=79&pp=gAQBiAQB
+- https://www.youtube.com/watch?v=6Le0IbPRzOE&list=WL&index=81&t=1844s&pp=gAQBiAQB
+- https://www.youtube.com/watch?v=0uixRE8xlbY&list=WL&index=82&t=770s&pp=gAQBiAQB
+- https://www.youtube.com/watch?v=5XY3K8DH55M&list=WL&index=83&t=428s&pp=gAQBiAQB
+*** TODO Advanced EXWM Config
+- [[https://tech.toryanderson.com/2021/01/08/adding-a-new-monitor-to-my-exwm-setup/][Multi Monitor EXWM]]
+- [[https://github.com/johanwiden/exwm-setup#overview-of-the-setup][EXWM Example Config]]
+- [[https://sqrtminusone.xyz/posts/2022-01-03-exwm/][EXWM and Perspective]]
+- [[https://github.com/johanwiden/exwm-setup#overview-of-the-setup][EXWM Advanced Configuration]]
+***** TODO Add arrow key bindings to change buffer location in exwm
+***** TODO Review exwm prefix keys for unused, and additional needed
+***** TODO follow up on input simulation keys for exwm
+***** TODO create function to split window Vertically and Balance all windows in single button
+***** TODO create a function that adds to (C-c C-o) in scadmode so openscad opens in a new window to the right of current buffer (may not be needed with auto tilling)
+*** TODO refactor polybar
+- [ ] have only current workspace number show on bar
+- [ ]remove un-needed code
+- [ ]change name
+*** TODO Fitness and Nutrition Tracking with Emacs
+- https://gist.github.com/alphapapa/982467abc1bf29f57c5cd2c408a77bd5
+- https://gist.github.com/iocanel/0b8bcdb3d69fb7731069cb872f836507
+- https://www.reddit.com/r/emacs/comments/a4zipp/fitnessorg_an_emacs_foodweightworkout_tracker/
+*** TODO Install additional System Packages
+***** TODO [[https://www.youtube.com/watch?v=TDBGsbwMo40][qpwgraph]]
+***** TODO [[https://www.youtube.com/watch?v=yufC22262I4&list=WL&index=6&t=552s&pp=gAQBiAQB][LocalSend]]
+***** TODO [[https://www.youtube.com/watch?v=-RW546svPOc&list=WL&index=170&t=629s&pp=gAQBiAQB][CURL]] utils
+***** TODO GH and Gitlab equivalent
+*** TODO Replace hard paths with variables where possible
+*** DONE Troubles shoot issues with org-bibtex mode
+- State "DONE"       from "TODO"       [2024-02-10 Sat 17:33]
+*** TODO FFXIV
+***** TODO Configure Ingame Settings
+***** TODO Back Up and Version Control Settings File
+***** TODO Research how to manage modes using xivlauncher and git
+***** TODO Configure ACT
+***** TODO Configure Fraps (or something like it)
+***** TODO scuff stlye controller
+***** TODO spatial audio mode
+*** TODO Combine and Repackage Roam-Todo and Journal-Todo into a custom Roam-Journal Package for emacs
+***** TODO Further integrate org-roam and org-journal
+******* TODO Look into org-journal search, and other secondary functions.
+******* TODO Add keybinding for them to dailies hydra
+*** TODO [#B] find a way to write a function that trigger org-roam-ui-mode. Waits until it has loaded, and then disables it.
+*** TODO Integrate Contact lists using BBDB
+- https://www.jwz.org/bbdb/
+#+begin_src emacs-lisp
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, and org-protocol
+(setq org-capture-templates
+      (quote (...
+              ("p" "Phone call" entry (file "~/git/org/refile.org")
+               "* PHONE %? :PHONE:\n%U" :clock-in t :clock-resume t)
+              ...)))
+
+(require 'bbdb)
+(require 'bbdb-com)
+
+(global-set-key (kbd "<f9> p") 'bh/phone-call)
+
+;;
+;; Phone capture template handling with BBDB lookup
+;; Adapted from code by Gregory J. Grubbs
+(defun bh/phone-call ()
+  "Return name and company info for caller from bbdb lookup"
+  (interactive)
+  (let* (name rec caller)
+    (setq name (completing-read "Who is calling? "
+                                (bbdb-hashtable)
+                                'bbdb-completion-predicate
+                                'confirm))
+    (when (> (length name) 0)
+      ; Something was supplied - look it up in bbdb
+      (setq rec
+            (or (first
+                 (or (bbdb-search (bbdb-records) name nil nil)
+                     (bbdb-search (bbdb-records) nil name nil)))
+                name)))
+
+    ; Build the bbdb link if we have a bbdb record, otherwise just return the name
+    (setq caller (cond ((and rec (vectorp rec))
+                        (let ((name (bbdb-record-name rec))
+                              (company (bbdb-record-company rec)))
+                          (concat "[[bbdb:"
+                                  name "]["
+                                  name "]]"
+                                  (when company
+                                    (concat " - " company)))))
+                       (rec)
+                       (t "NameOfCaller")))
+    (insert caller)))
+#+end_src
+***** TODO Integrate BBDB with Google contacts
+*** TODO Manage Secrets
+***** TODO Research how Linux Secrets Work
+-https://blog.sekun.dev/posts/manage-secrets-in-nixos/
+***** TODO Full disk system encryption
+***** TODO Using a UbiKey With Linux
+***** TODO encrypt files with Git crypt
+- https://github.com/AGWA/git-crypt
+***** TODO encrypt headings with org crypt
+#+begin_src emacs-lisp
+(require 'org-crypt)
+; Encrypt all entries before saving
+(org-crypt-use-before-save-magic)
+(setq org-tags-exclude-from-inheritance (quote ("crypt")))
+; GPG key to use for encryption
+(setq org-crypt-key "F0B66B40")
+
+(setq org-crypt-disable-auto-save nil)
+#+end_src
+- https://orgmode.org/manual/Org-Crypt.html
+***** TODO Check on ~org-crypt-key~
+***** TODO Research how to encrypt General files
+***** TODO manage system secrets using nix-sops
+- https://bmcgee.ie/posts/2022/11/getting-nixos-to-keep-a-secret/
+- https://github.com/Mic92/sops-nix
+*** TODO Consider additional Packages
+- [ ] deft
+- [ ] [[https://github.com/oantolin/embark][embark]]
+- [ ] [[https://github.com/nverno/llvm-mode][LLVM IR Mode]]
+- [ ] [[https://melpa.org/#/paredit][paredit]]
+- [ ] Gnu go
+- [ ] gnu cash
+  - if compatable with hledger
+*** TODO Improve emacs start times with lazy loading
+*** TODO Figure out how to integrate with phone
+**** TODO Orgzly to access todos from phone
+**** TODO Find a way to take voice notes and transcribe them into plain text
+* Media Center Configuration
+** TODO Find a way to control tv's ir via usb

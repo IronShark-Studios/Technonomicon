@@ -1,0 +1,15 @@
+#+Title: Technonomicon README
+
+
+* WARNING:
+
+I am not a programmer. I can offer no promises as to the safety, or efficiency of these configuration settings.
+
+* Technonomicon
+
+This repository holds all the configuration settings for my personal computers, organized as a Nix Flake. While not "/done/". I would consider most of what's there stable, and in working condition. I built this to learn more about computer science, Linux, and to eventually learn to program. It is currently divided into four major groups.
+
+- Flakes: This directory holds all the files needed for flakes specific functions.
+- Shared: This directory holds application specific files, used by Home-manager. They are grouped together by use-case. So they can be shared by machine specific configurations.
+- Thanatos: This directory holds all the files to configure NixOS for my work computer.
+- Artemis: This directory holds all the files to configure NixOS for my living room media center computer.
