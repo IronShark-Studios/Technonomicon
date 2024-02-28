@@ -690,8 +690,8 @@ If all failed, try to complete the common part with `company-complete-common'"
   (lsp-eldoc-hook nil)
   :bind (:map lsp-mode-map ("C-c C-f" . lsp-format-buffer))
   :hook
-  ;; (XxLanguageName . lsp-deferred)
-  ((lsp-mode . lsp-enable-which-key-integration))
+  ((SCAD//1 . lsp-deferred)
+   (lsp-mode . lsp-enable-which-key-integration))
   :config
   (defun lsp-update-server ()
     "Update LSP server."

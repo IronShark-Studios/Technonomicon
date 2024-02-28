@@ -18,6 +18,7 @@
       silver-searcher
       hunspell
       hunspellDicts.en_US-large
+      openscad-lsp
     ];
 
     file = {
