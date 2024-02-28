@@ -24,7 +24,7 @@
       display-line-numbers 'relative
       visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
 
-(bookmark-load bookmark-default-file t)
+;; (bookmark-load bookmark-default-file t)
 
 (dolist (face '(default fixed-pitch))
   (set-face-attribute face nil
