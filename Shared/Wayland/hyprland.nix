@@ -128,11 +128,11 @@
 
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
         bind = $mainMod, Z, exec, $terminal
-        bind = $mainMod, C, killactive,
+        bind = $mainMod, D, killactive,
         bind = $mainMod, M, exit,
         bind = $mainMod, E, exec, $fileManager
         bind = $mainMod, V, togglefloating,
-        bind = $mainMod, R, exec, $menu
+        bind = $mainMod, T, exec, $menu
         bind = $mainMod, P, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
 
