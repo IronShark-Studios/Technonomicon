@@ -2568,11 +2568,11 @@ _i_: Citar Link Index  _s_: Bibtex Validate
         (org-agenda nil "c")))
 
 (defun Tn/org-agenda-date-overview ()
-   (interactive)
-   (let ((org-agenda-start-day "-1d")
-         (org-agenda-span '3))
-        (org-agenda nil "c")
-        (org-agenda-goto-date (format-time-string "%Y-%m-%d" (time-subtract (date-to-time (org-read-date)) (days-to-time 1))))))
+  (interactive)
+  (let ((org-agenda-start-day "-1d")
+        (org-agenda-span '3))
+    (org-agenda nil "c")
+    (org-roam-dailies-capture-date 1 nil "t")))
 
 (defun Tn/agenda-clock-in ()
   (interactive)

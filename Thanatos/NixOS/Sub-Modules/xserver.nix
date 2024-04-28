@@ -35,6 +35,8 @@
         thunar-volman
       ];
     };
+
+    hyprland.enable = true;
   };
 
   security.pam.services.gdm.enableGnomeKeyring = true;
