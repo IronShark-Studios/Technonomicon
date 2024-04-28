@@ -20,6 +20,7 @@
       rofi-wayland
       waybar
       hyprpaper
+      swww
     ];
   };
 
