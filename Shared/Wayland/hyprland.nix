@@ -18,7 +18,7 @@
         # Set programs that you use
         $terminal = alacritty
         $fileManager = thunar
-        $menu = rofi --show drun
+        $menu = "rofi --show drun"
 
         # Some default env vars.
         env = XCURSOR_SIZE,24
