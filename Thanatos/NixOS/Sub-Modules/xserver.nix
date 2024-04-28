@@ -37,9 +37,11 @@
     };
 
     hyprland.enable = true;
+    kitty.enable = true;
+    rofi-wayland.enable = true;
   };
 
-  security.pam.services.gdm.enableGnomeKeyring = true;
+  # security.pam.services.gdm.enableGnomeKeyring = true;
 
   services = {
     blueman.enable = true;
@@ -78,22 +80,22 @@
         };
       };
 
-      desktopManager.enlightenment = {
-        enable = true;
-      };
+      # desktopManager.enlightenment = {
+      #   enable = true;
+      # };
     };
 
-    unclutter-xfixes = {
-      enable = true;
-      threshold = 10;
-      timeout = 1;
-    };
+    # unclutter-xfixes = {
+    #   enable = true;
+    #   threshold = 10;
+    #   timeout = 1;
+    # };
 
-    picom = {
-      enable = true;
-      vSync = true;
-      backend = "glx";
-    };
+    # picom = {
+    #   enable = true;
+    #   vSync = true;
+    #   backend = "glx";
+    # };
   };
 
   sound = {
