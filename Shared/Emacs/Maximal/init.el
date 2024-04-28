@@ -2832,5 +2832,3 @@ _t_: Tobey Time    _d_: Driving
   (interactive)
   (start-process-shell-command "starting plover" "*Messages*" "sudo plover")
   (run-with-timer 20 nil 'Tn/agenda-starting-screen))
-
-(add-hook 'after-init-hook #'Tn/plover-start-up)

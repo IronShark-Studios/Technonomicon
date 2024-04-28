@@ -18,6 +18,8 @@
       xdo
       kitty
       rofi-wayland
+      waybar
+      hyprpaper
     ];
   };
 
@@ -79,23 +81,7 @@
           theme = "chili";
         };
       };
-
-      # desktopManager.enlightenment = {
-      #   enable = true;
-      # };
     };
-
-    # unclutter-xfixes = {
-    #   enable = true;
-    #   threshold = 10;
-    #   timeout = 1;
-    # };
-
-    # picom = {
-    #   enable = true;
-    #   vSync = true;
-    #   backend = "glx";
-    # };
   };
 
   sound = {

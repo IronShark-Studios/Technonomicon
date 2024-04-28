@@ -10,16 +10,15 @@
 
         # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 
-        # Execute your favorite apps at launch
-        # exec-once = waybar & hyprpaper & firefox
+        exec-once = waybar & hyprpaper
 
         # Source a file (multi-file configs)
         # source = ~/.config/hypr/myColors.conf
 
         # Set programs that you use
-        $terminal = kitty
-        $fileManager = dolphin
-        $menu = wofi --show drun
+        $terminal = alacritty
+        $fileManager = thunar
+        $menu = rofi --show drun
 
         # Some default env vars.
         env = XCURSOR_SIZE,24
@@ -128,7 +127,7 @@
         $mainMod = SUPER
 
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-        bind = $mainMod, Q, exec, $terminal
+        bind = $mainMod, Z, exec, $terminal
         bind = $mainMod, C, killactive,
         bind = $mainMod, M, exit,
         bind = $mainMod, E, exec, $fileManager
