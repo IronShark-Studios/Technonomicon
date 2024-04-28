@@ -16,6 +16,8 @@
       xclip
       xsel
       xdo
+      kitty
+      rofi-wayland
     ];
   };
 
@@ -37,8 +39,6 @@
     };
 
     hyprland.enable = true;
-    kitty.enable = true;
-    rofi-wayland.enable = true;
   };
 
   # security.pam.services.gdm.enableGnomeKeyring = true;
