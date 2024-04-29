@@ -106,7 +106,7 @@
 
         misc {
             # See https://wiki.hyprland.org/Configuring/Variables/ for more
-            force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
+            # force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
         }
 
         # Example per-device config
