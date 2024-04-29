@@ -18,5 +18,12 @@
         sort = name
       '';
     };
+
+    file."test.txt" = {
+      target = "~/test.md";
+      text = ''
+test text for testing
+      '';
+    };
   };
 }
