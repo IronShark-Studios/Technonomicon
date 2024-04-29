@@ -41,7 +41,7 @@
                   "ethernet": [""],
                   "disconnected": [""]
               },
-              "on-click": "termite -e nmtui",
+              "on-click": "allacritty nmtui",
           "tooltip": false
           },
           "pulseaudio": {

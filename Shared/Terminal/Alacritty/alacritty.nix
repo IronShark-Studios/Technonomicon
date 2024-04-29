@@ -15,6 +15,5 @@
     rsync
     zoxide
     neofetch
-    termite
   ];
 }
