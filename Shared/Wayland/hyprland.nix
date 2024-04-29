@@ -13,7 +13,7 @@
         workspace = 1 ,monitor:DP-1
         windowrulev2 = nomaximizerequest, class:.*
 
-        exec-once = waybar & waypaper --restore & emacs --daemon
+        exec-once = waybar & waypaper --restore & emacs --daemon & hyprctl dispatch workspace 1
 
         $terminal = alacritty
         $fileManager = thunar
