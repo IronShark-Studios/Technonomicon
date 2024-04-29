@@ -7,7 +7,7 @@
     ];
 
     file."config.ini" = {
-      target = "~/.config/waypaper/config.ini";
+      target = ".config/waypaper/config.ini";
       text = ''
         [Settings]
         language = en
@@ -16,13 +16,6 @@
         monitors = All
         fill = Fill
         sort = name
-      '';
-    };
-
-    file."test.txt" = {
-      target = "~/test.md";
-      text = ''
-test text for testing
       '';
     };
   };
