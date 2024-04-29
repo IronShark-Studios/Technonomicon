@@ -17,7 +17,7 @@
       };
 
       "rofi-theme" = {
-        target = ".config/rofi/arthur.rasi"
+        target = ".config/rofi/Arthur.rasi"
           text = ''
            /**
             * ROFI Color theme
