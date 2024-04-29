@@ -104,8 +104,8 @@
 
         windowrulev2 = nomaximizerequest, class:.*
 
-        monitor = DP-1, auto, 0x0, 1
-        monitor = eDP-1, auto, auto, 1
+        monitor = DP-1, 2560x1440@60, 0x0, 1
+        monitor = eDP-1, 1920x1080@60, 1920x1080, 1
 
 
         # See https://wiki.hyprland.org/Configuring/Keywords/ for more
