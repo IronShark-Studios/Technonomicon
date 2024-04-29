@@ -8,7 +8,6 @@
         position = "top";
         height = 30;
         output = [
-          "eDP-1"
           "DP-1"
         ];
         modules-left = [ "sway/workspaces" "sway/mode" "wlr/taskbar" ];
@@ -18,14 +17,6 @@
         "sway/workspaces" = {
           disable-scroll = true;
           all-outputs = true;
-        };
-        "custom/hello-from-waybar" = {
-          format = "hello {}";
-          max-length = 40;
-          interval = "once";
-          exec = pkgs.writeShellScript "hello-from-waybar" ''
-        echo "from within waybar"
-      '';
         };
       };
     };
