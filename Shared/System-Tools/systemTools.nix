@@ -7,5 +7,6 @@
     ./Plover/plover.nix
     ./waybar.nix
     ./waypaper.nix
+    ./rofi.nix
   ];
 }
