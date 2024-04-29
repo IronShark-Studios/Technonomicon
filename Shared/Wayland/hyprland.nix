@@ -10,7 +10,7 @@
 
         # See https://wiki.hyprland.org/Configuring/Keywords/ for more
 
-        exec-once = waybar
+        exec-once = waybar & waypaper --restore
 
         # Source a file (multi-file configs)
         # source = ~/.config/hypr/myColors.conf
