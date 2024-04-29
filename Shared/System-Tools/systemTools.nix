@@ -6,5 +6,6 @@
     ./Thunar/thunar.nix
     ./Plover/plover.nix
     ./waybar.nix
+    ./waypaper.nix
   ];
 }

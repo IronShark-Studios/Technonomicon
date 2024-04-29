@@ -16,7 +16,6 @@
         monitors = All
         fill = Fill
         sort = name
-        color = #ffffff
       '';
     };
   };

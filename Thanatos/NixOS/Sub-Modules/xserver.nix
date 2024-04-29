@@ -62,7 +62,7 @@
       enable = true;
       libinput.enable = true;
       autorun = true;
-      layout = "us";
+      xkb.layout = "us";
       videoDrivers = [
         "modesetting"
         "nvidia"
