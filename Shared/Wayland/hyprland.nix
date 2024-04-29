@@ -10,7 +10,7 @@
         monitor = DP-1, 2560x1440@60, 0x0, 1
         monitor = eDP-1, 1920x1080@60, -1920x540, 1
 
-        workspace = 1 ,DP-1
+        workspace = 1 ,monitor:DP-1
         windowrulev2 = nomaximizerequest, class:.*
 
         exec-once = waybar & waypaper --restore & emacs --daemon
