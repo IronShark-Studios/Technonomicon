@@ -4,12 +4,6 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
-        # See https://wiki.hyprland.org/Configuring/Monitors/
-        monitor=,preferred,auto,auto
-
-
-        # See https://wiki.hyprland.org/Configuring/Keywords/ for more
-
         exec-once = waybar & waypaper --restore
 
         # Source a file (multi-file configs)
@@ -110,7 +104,8 @@
 
         windowrulev2 = nomaximizerequest, class:.*
 
-        monitor = DP-1, auto, auto, auto, preferred
+        monitor = DP-1, auto, 0x0, 1
+        monitor = eDP-1, auto, auto, 1
 
 
         # See https://wiki.hyprland.org/Configuring/Keywords/ for more
