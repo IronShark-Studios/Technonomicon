@@ -57,7 +57,7 @@
             font-family:   Sans;
             font-size:     15px;
             box-shadow:    none;
-            text-shadow:   1px;
+            text-shadow:   none;
             transition-duration: 0s;
         }
 
