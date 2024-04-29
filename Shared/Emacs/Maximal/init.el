@@ -2096,8 +2096,6 @@ If nil it defaults to `split-string-default-separators', normally
       org-journal-start-on-weekday 0
       org-journal-carryover-items "TODO=\"TODO\"|TODO=\"REVIEW\"|TODO=\"WAITING\"|TODO=\"NEXT\"|TODO=\"HOLD\"|TODO=\"ACTIVE\"|TODO=\"INPROGRESS\"")
 
-(org-journal-mode)
-
 (setq org-roam-dailies-capture-templates
       '(("m" "Memo" entry "*** %?"
          :target (file+head+olp "%<%Y>/%<%Y-%m-%d>.org"
