@@ -19,7 +19,6 @@
       xsel
       xdo
       kitty
-      rofi-wayland
     ];
   };
 
