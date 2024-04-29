@@ -4,40 +4,30 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
+        env = XCURSOR_SIZE,24
+        env = QT_QPA_PLATFORMTHEME,qt5ct
+
+        monitor = DP-1, 2560x1440@60, 0x0, 1
+        monitor = eDP-1, 1920x1080@60, -1920x1080, 1
+
+        windowrulev2 = nomaximizerequest, class:.*
+
         exec-once = waybar & waypaper --restore & emacs --daemon
 
-        # Source a file (multi-file configs)
-        # source = ~/.config/hypr/myColors.conf
-
-        # Set programs that you use
         $terminal = alacritty
         $fileManager = thunar
         $menu = rofi -show drun
 
-        # Some default env vars.
-        env = XCURSOR_SIZE,24
-        env = QT_QPA_PLATFORMTHEME,qt5ct # change to qt6ct if you have that
-
-        # For all categories, see https://wiki.hyprland.org/Configuring/Variables/
         input {
             kb_layout = us
-            kb_variant = caps:escape
-            kb_model =
-            kb_options =
-            kb_rules =
-
             follow_mouse = 1
-
+            sensitivity = 0
             touchpad {
                 natural_scroll = no
             }
-
-            sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
         }
 
         general {
-            # See https://wiki.hyprland.org/Configuring/Variables/ for more
-
             gaps_in = 5
             gaps_out = 20
             border_size = 2
@@ -101,11 +91,6 @@
         misc {
             disable_hyprland_logo = 1
         }
-
-        windowrulev2 = nomaximizerequest, class:.*
-
-        monitor = DP-1, 2560x1440@60, 0x0, 1
-        monitor = eDP-1, 1920x1080@60, -1920x1080, 1
 
 
         # See https://wiki.hyprland.org/Configuring/Keywords/ for more
