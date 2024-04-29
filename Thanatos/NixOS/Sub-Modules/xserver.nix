@@ -19,7 +19,7 @@
       kitty
       rofi-wayland
       waybar
-      hyprpaper
+      waypaper
       swww
     ];
   };
