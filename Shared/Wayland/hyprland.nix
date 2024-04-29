@@ -4,7 +4,7 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
-        exec-once = waybar & waypaper --restore & emacs --daemon
+        exec-once = waybar & waypaper --restore
 
         # Source a file (multi-file configs)
         # source = ~/.config/hypr/myColors.conf

@@ -1,6 +1,6 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
-  programs.emacs = {
+  services.emacs = {
     enable = true;
     package = (pkgs.emacsWithPackagesFromUsePackage {
       config = ./init.el;
