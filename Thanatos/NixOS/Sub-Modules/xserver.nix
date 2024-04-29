@@ -2,6 +2,8 @@
 
   environment = {
     systemPackages = with pkgs; [
+      lm_sensors
+      pciutils
       xfce.xfce4-genmon-plugin
       networkmanagerapplet
       sddm-chili-theme
@@ -18,9 +20,6 @@
       xdo
       kitty
       rofi-wayland
-      waybar
-      waypaper
-      swww
     ];
   };
 
@@ -44,7 +43,7 @@
     hyprland.enable = true;
   };
 
-  # security.pam.services.gdm.enableGnomeKeyring = true;
+  security.pam.services.gdm.enableGnomeKeyring = true;
 
   services = {
     blueman.enable = true;
@@ -64,7 +63,6 @@
       libinput.enable = true;
       autorun = true;
       layout = "us";
-      xkbOptions = "caps:escape";
       videoDrivers = [
         "modesetting"
         "nvidia"
@@ -75,7 +73,6 @@
       ];
 
       displayManager = {
-
         sddm = {
           enable = true;
           autoNumlock = true;

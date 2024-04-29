@@ -11,14 +11,12 @@
       text = ''
         [Settings]
         language = en
-        folder = ~/Projects/Technonomicon/Media
         wallpaper = ~/Projects/Technonomicon/Media/zdzislaw_beksinski_cathedral-wallpaper-2560x1440.jpg
         backend = swww
         monitors = All
         fill = Fill
         sort = name
         color = #ffffff
-        subfolders = False
       '';
     };
   };

@@ -11,6 +11,7 @@
         monitor = eDP-1, 1920x1080@60, -1920x540, 1
 
         workspace = 1 ,monitor:DP-1
+        workspace = 10 ,monitor:eDP-1
         windowrulev2 = nomaximizerequest, class:.*
 
         exec-once = waybar & waypaper --restore & emacs --daemon & hyprctl dispatch workspace 1
@@ -153,7 +154,5 @@
   };
 
   home.packages = with pkgs; [
-    lm_sensors
-    pciutils
   ];
 }
