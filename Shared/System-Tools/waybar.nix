@@ -73,7 +73,7 @@
     };
 
     "waybar-css" = {
-      target = ".config/waybar/config.jsonc";
+      target = ".config/waybar/style.css";
       text = ''
         * {
             border:        none;
@@ -140,6 +140,5 @@
         }
       '';
     };
-
   };
 }
