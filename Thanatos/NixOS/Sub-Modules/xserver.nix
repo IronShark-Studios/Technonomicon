@@ -2,7 +2,7 @@
 
   environment = {
     systemPackages = with pkgs; [
-      swaylock
+      waylock
       lm_sensors
       pciutils
       xfce.xfce4-genmon-plugin
@@ -36,7 +36,7 @@
 
   security.pam.services = {
     gdm.enableGnomeKeyring = true;
-    swaylock = {
+    waylock = {
       text = ''
         auth include login
       '';
