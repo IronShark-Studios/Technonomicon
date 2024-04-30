@@ -19,7 +19,7 @@
         $terminal = alacritty
         $fileManager = thunar
         $menu = rofi -show drun
-        $editor = emacsclient
+        $editor = emacsclient -c
         $browser = firefox
 
         input {

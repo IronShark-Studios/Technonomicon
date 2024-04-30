@@ -8,5 +8,6 @@
     ./waybar.nix
     ./waypaper.nix
     ./rofi.nix
+    ./hyprland.nix
   ];
 }
