@@ -2,6 +2,7 @@
 
   environment = {
     systemPackages = with pkgs; [
+      swaylock
       lm_sensors
       pciutils
       xfce.xfce4-genmon-plugin
@@ -33,7 +34,14 @@
     hyprland.enable = true;
   };
 
-  security.pam.services.gdm.enableGnomeKeyring = true;
+  security.pam.services = {
+    gdm.enableGnomeKeyring = true;
+    swaylock = {
+      text = ''
+        auth include login
+      '';
+    };
+  };
 
   services = {
     blueman.enable = true;

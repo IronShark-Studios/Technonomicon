@@ -7,7 +7,6 @@
     ./Plover/plover.nix
     ./waybar.nix
     ./waypaper.nix
-    ./waylock.nix
     ./rofi.nix
     ./hyprland.nix
   ];
