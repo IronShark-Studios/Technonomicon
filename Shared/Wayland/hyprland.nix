@@ -19,6 +19,8 @@
         $terminal = alacritty
         $fileManager = thunar
         $menu = rofi -show drun
+        $editor = emacsclient
+        $browser = firefox
 
         input {
             kb_layout = us
@@ -45,7 +47,7 @@
         decoration {
             # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
-            rounding = 10
+            rounding = 0
 
             blur {
                 enabled = true
@@ -99,13 +101,15 @@
         $mainMod = SUPER
 
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-        bind = $mainMod, Z, exec, $terminal
-        bind = $mainMod, D, killactive,
-        bind = $mainMod, M, exit,
-        bind = $mainMod, E, exec, $fileManager
-        bind = $mainMod, V, togglefloating,
+        bind = $mainMod, P, exec, $terminal,
+        bind = $mainMod, R, exec, $fileManager
         bind = $mainMod, T, exec, $menu
-        bind = $mainMod, P, pseudo, # dwindle
+        bind = $mainMod, S, exec, $browser
+        bind = $mainMod, F, exec, $editor
+        bind = $mainMod, D, killactive,
+        bind = $mainMod, C, exit,
+        bind = $mainMod, V, togglefloating,
+        bind = $mainMod, Z, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
 
         # Move focus with mainMod + arrow keys
