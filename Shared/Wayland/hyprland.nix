@@ -24,7 +24,7 @@
 
         input {
             kb_layout = us
-            follow_mouse = 1
+            follow_mouse = 2
             sensitivity = 0
             touchpad {
                 natural_scroll = no
@@ -40,12 +40,10 @@
 
             layout = dwindle
 
-            # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
             allow_tearing = false
         }
 
         decoration {
-            # See https://wiki.hyprland.org/Configuring/Variables/ for more
 
             rounding = 0
 
@@ -63,8 +61,6 @@
 
         animations {
             enabled = yes
-
-            # Some default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
 
             bezier = myBezier, 0.05, 0.9, 0.1, 1.05
 
@@ -143,8 +139,8 @@
         bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
         # Example special workspace (scratchpad)
-        bind = $mainMod, S, togglespecialworkspace, magic
-        bind = $mainMod SHIFT, S, movetoworkspace, special:magic
+        bind = $mainMod, X, togglespecialworkspace, magic
+        bind = $mainMod SHIFT, X, movetoworkspace, special:magic
 
         # Scroll through existing workspaces with mainMod + scroll
         bind = $mainMod, mouse_down, workspace, e+1

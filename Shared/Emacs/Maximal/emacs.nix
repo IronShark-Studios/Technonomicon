@@ -5,7 +5,7 @@
     package = (pkgs.emacsWithPackagesFromUsePackage {
       config = ./init.el;
       defaultInitFile = true;
-      package = pkgs.emacs-unstable;
+      package = pkgs.emacs-unstable-pgtk;
       alwaysEnsure = true;
       extraEmacsPackages = epkgs: with epkgs; [
       ];
