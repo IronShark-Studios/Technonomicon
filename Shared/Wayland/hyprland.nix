@@ -97,14 +97,14 @@
         $mainMod = SUPER
 
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-        bind = $mainMod, P, exec, $terminal,
+        bind = $mainMod, P, exec, $terminal
         bind = $mainMod, R, exec, $fileManager
         bind = $mainMod, T, exec, $menu
         bind = $mainMod, S, exec, $browser
         bind = $mainMod, F, exec, $editor
-        bind = $mainMod, D, killactive,
-        bind = $mainMod, C, exit,
-        bind = $mainMod, V, togglefloating,
+        bind = $mainMod, D, killactive
+        bind = $mainMod, C, exit
+        bind = $mainMod, V, togglefloating
         bind = $mainMod, Z, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
 
