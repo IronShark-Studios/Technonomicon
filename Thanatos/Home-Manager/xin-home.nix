@@ -9,7 +9,6 @@
     ../../Shared/Social-Tools/socialTools.nix
     ../../Shared/Accounting-Tools/accountingTools.nix
     ../../Shared/Art-Tools/artTools.nix
-    ../../Shared/Wayland/hyprland.nix
   ];
 
   programs.home-manager.enable = true;
