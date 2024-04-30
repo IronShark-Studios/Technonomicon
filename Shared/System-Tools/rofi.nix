@@ -19,187 +19,142 @@
       "rofi-theme" = {
         target = ".config/rofi/Arthur.rasi";
         text = ''
-          /**
-           * ROFI Color theme
-           * User: Qball
-           * Copyright: Dave Davenport
-           */
+        /*
+         * ROFI color theme
+         *
+         * Based on Base16 Material Color Scheme (https://github.com/ntpeters/base16-materialtheme-scheme)
+         *
+         * Modified by: Dave Davenport
+         * User: Tomaszal
+         * Copyright: Tomas Zaluckij
+         */
 
-          * {
-              foreground:  #ffeedd;
-              backlight:   #ccffeedd;
-              background-color:  transparent;
-              dark: #1c1c1c;
-              // Black
-              black:       #3d352a;
-              lightblack:  #554444;
-              tlightblack:  #554444cc;
-              //
-              // Red
-              red:         #cd5c5c;
-              lightred:    #cc5533;
-              //
-              // Green
-              green:       #86af80;
-              lightgreen:  #88cc22;
-              //
-              // Yellow
-              yellow:      #e8ae5b;
-              lightyellow:     #ffa75d;
-              //
-              // Blue
-              blue:      #6495ed;
-              lightblue:     #87ceeb;
-              //
-              // Magenta
-              magenta:      #deb887;
-              lightmagenta:     #996600;
-              //
-              // Cyan
-              cyan:      #b0c4de;
-              tcyan:      #ccb0c4de;
-              lightcyan:     #b0c4de;
-              //
-              // White
-              white:      #bbaa99;
-              lightwhite:     #ddccbb;
-              //
-              // Bold, Italic, Underline
-              highlight:     underline bold #ffffff;
+        * {
+          base00: #263238;
+          base01: #2E3C43;
+          base02: #314549;
+          base03: #546E7A;
+          base04: #B2CCD6;
+          base05: #EEFFFF;
+          base06: #EEFFFF;
+          base07: #FFFFFF;
+          base08: #F07178;
+          base09: #F78C6C;
+          base0A: #FFCB6B;
+          base0B: #C3E88D;
+          base0C: #89DDFF;
+          base0D: #82AAFF;
+          base0E: #C792EA;
+          base0F: #FF5370;
 
-              transparent: rgba(0,0,0,0);
-              font: "Source Code Pro 10";
-          }
-          window {
-              location: center;
-              anchor:   center;
-              transparency: "real";
-              padding: 10px;
-              border:  0px;
-              border-radius: 10px;
-              color: @magenta;
-              background-color: @transparent;
-              spacing: 0;
-              children:  [mainbox];
-              orientation: horizontal;
-          }
-          mainbox {
-              spacing: 0;
-              children: [ inputbar, message, listview ];
-          }
-          message {
-              border-color: @foreground;
-              border:  0px 2px 2px 2px;
-          //    border-radius: 10px;
-              padding: 5;
-              background-color: @tcyan;
-          }
-          message {
-              font: "Source Code Pro 8";
-              color: @black;
-          }
-          inputbar {
-              color: @lightgreen;
-              padding: 11px;
-              background-color: @tlightblack;
-              border: 2px 2px 2px 2px;
-              border-radius:  15px 15px 0px 0px;
-              border-color: @foreground;
-              font: "Source Code Pro 18";
-          }
-          entry,prompt,case-indicator {
-              text-font: inherit;
-              text-color:inherit;
-          }
-          prompt {
-              margin:     0px 0.3em 0em 0em ;
-          }
-          listview {
-              padding: 8px;
-              border-radius: 0px 0px 15px 15px;
-              border-color: @foreground;
-              border: 0px 2px 2px 2px;
-              background-color: #1c1c1ccc;
-              dynamic: false;
-              lines: 10;
-          }
-          element {
-              padding: 3px;
-              vertical-align: 0.5;
-          //    border: 2px;
-              border-radius: 4px;
-              background-color: transparent;
-              color: @foreground;
-              font:inherit;
-          }
-          element-text {
-              background-color: inherit;
-              text-color:       inherit;
-          }
-          element selected.normal {
-              background-color: @blue;
-          }
-          element normal active {
-              foreground: @lightblue;
-          }
-          element normal urgent {
-              foreground: @lightred;
-          }
-          element alternate normal {
-          }
-          element alternate active {
-              foreground: @lightblue;
-          }
-          element alternate urgent {
-              foreground: @lightred;
-          }
-          element selected active {
-              background-color: @lightblue;
-              foreground: @dark;
-          }
-          element selected urgent {
-              background-color: @lightred;
-              foreground: @dark;
-          }
-          element normal normal {
+          /*base0D: #00BCD4;*/
 
-          }
-          vertb {
-              expand: false;
-              children: [ dummy0, mode-switcher, dummy1  ];
-          }
-          dummy0,  dummy1 {
-              expand: true;
-          }
-          mode-switcher {
-              expand: false;
-              orientation: vertical;
-              spacing: 0px;
-              border: 0px 0px 0px 0px;
-          }
-          button {
-              font: "FontAwesome 22";
-              padding: 6px;
-              border: 2px 0px 2px 2px;
-              border-radius: 4px 0px 0px 4px;
-              background-color: @tlightblack;
-              border-color: @foreground;
-              color: @foreground;
-              horizontal-align: 0.5;
-          }
-          button selected normal {
-              color: @dark;
-              border: 2px 0px 2px 2px;
-              background-color: @backlight;
-              border-color: @foreground;
-          }
-          error-message {
-              expand: true;
-              background-color: red;
-              border-color: darkred;
-              border: 2px;
-              padding: 1em;
-          }
+          spacing: 0;
+          background-color: transparent;
+
+        }
+
+        window {
+          transparency: "real";
+          background-color: #263238CC; /*base00 + CC (80% opacity)*/
+        }
+
+        mainbox {
+          children: [inputbar, message, mode-switcher, listview];
+          spacing: 30px;
+          padding: 30px 0;
+          border: 1px;
+          border-color: @base0D;
+        }
+
+        inputbar {
+          padding: 0 30px;
+          children: [prompt, textbox-prompt-colon, entry, case-indicator];
+        }
+
+        prompt {
+          text-color: @base0D;
+        }
+
+        textbox-prompt-colon {
+          expand: false;
+          str: ":";
+          margin: 0 1ch 0 0;
+          text-color: @base0D;
+        }
+
+        entry {
+          text-color: @base07;
+        }
+
+        case-indicator {
+          text-color: @base0F;
+        }
+
+        mode-switcher, message {
+          border: 1px 0;
+          border-color: @base0D;
+        }
+
+        button, textbox {
+          background-color: @base03;
+          text-color: @base07;
+          padding: 5px;
+        }
+
+        button selected {
+          background-color: @base0D;
+        }
+
+        listview {
+          scrollbar: true;
+          margin: 0 10px 0 30px;
+        }
+
+        scrollbar {
+          background-color: @base03;
+          handle-color: @base0D;
+          handle-width: 10px;
+          border: 0 1px;
+          border-color: @base0D;
+          margin: 0 0 0 20px;
+        }
+
+        element {
+          padding: 5px;
+          spacing: 5px;
+          highlight: bold underline;
+          children: [element-icon, element-text];
+        }
+        element-text, element-icon {
+          background-color : inherit;
+          text-color       : inherit;
+          foreground-color : inherit;
+        }
+
+        element normal {
+          background-color: transparent;
+        }
+
+        element selected {
+          background-color: @base0D;
+        }
+
+        element alternate {
+          /*background-color: @base03;*/
+        }
+
+        element normal normal, element selected normal, element alternate normal {
+          text-color: @base07;
+        }
+
+        element normal urgent, element selected urgent, element alternate urgent {
+          text-color: @base0F;
+        }
+
+        element normal active, element selected active, element alternate active {
+          text-color: @base0B;
+        }
         '';
       };
     };
