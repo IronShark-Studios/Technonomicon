@@ -102,6 +102,7 @@
         bind = $mainMod, T, exec, $menu
         bind = $mainMod, S, exec, $browser
         bind = $mainMod, F, exec, $editor
+        bind = $mainMod, Q, exec, waylock
         bind = $mainMod, D, killactive
         bind = $mainMod, C, exit
         bind = $mainMod, V, togglefloating
