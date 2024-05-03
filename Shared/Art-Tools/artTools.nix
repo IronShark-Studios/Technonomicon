@@ -11,6 +11,10 @@ in {
     ./Cura/cura.nix
     ./OBS/obs.nix
     ./OpenSCAD/openscad.nix
+    ./Inkscape/inkscape.nix
+    ./Krita/krita.nix
+    ./Blender/blender.nix
+    ./Gimp/gimp.nix
   ];
 
   home.packages = with pkgs; [
