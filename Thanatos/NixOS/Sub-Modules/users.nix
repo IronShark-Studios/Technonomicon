@@ -1,7 +1,7 @@
 { inputs, outputs, config, lib, pkgs, modulesPath, ... }: {
 
   environment = {
-    etc.secrets.source = ../Tools/Secrets;
+    etc.secrets.source = ../Secrets;
     pathsToLink = [ "/share/zsh" ];
   };
 
