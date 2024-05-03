@@ -47,7 +47,7 @@ mode = "Vi"
 [[keyboard.bindings]]
 key = "Back"
 mods = "Command"
-chars = "\u001b[127;5u"
+chars = "\x17"
 
 [shell]
 program = "/home/xin/.nix-profile/bin/zsh"
