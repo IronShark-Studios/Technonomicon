@@ -10,10 +10,11 @@
     ./Sub-Modules/pkgs.nix
     ./Sub-Modules/xserver.nix
     ./Sub-Modules/network.nix
-    ./Tools/Scripts/rebuild.nix
-    ./Tools/Scripts/test.nix
-    ./Tools/Scripts/upgrade.nix
-    ./Tools/Scripts/mv-to-tmp.nix
+    ../../Shared/Scripts/rebuild.nix
+    ../../Shared/Scripts/test.nix
+    ../../Shared/Scripts/upgrade.nix
+    ../../Shared/Scripts/mv-to-tmp.nix
+    ../../Shared/Scripts/update-archives.nix
   ];
 
   boot = {

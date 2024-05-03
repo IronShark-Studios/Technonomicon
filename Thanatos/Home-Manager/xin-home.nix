@@ -1,7 +1,7 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
   imports = [
-    ../../Shared/Emacs/Maximal/emacs.nix
+    ../../Shared/Emacs/emacs.nix
     ../../Shared/XDG/user-dirs.nix
     ../../Shared/Terminal/terminal.nix
     ../../Shared/Firefox/firefox.nix
