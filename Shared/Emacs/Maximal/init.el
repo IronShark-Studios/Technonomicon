@@ -270,9 +270,10 @@
   :diminish)
 
 (use-package avy
-  :after evil)
+  :after evil
+  :config
+  (setq avy-word-punc-regexp nil))
 
-(setq avy-word-punc-regexp nil)
 
 (use-package harpoon
   :after evil)

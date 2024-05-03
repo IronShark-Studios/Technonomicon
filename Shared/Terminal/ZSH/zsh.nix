@@ -21,7 +21,7 @@
       eval "$(zoxide init zsh)"
       bindkey -a 'm' vi-backward-char
       printf '\n%.0s' {1..100}
-      neofetch
+      fastfetch
     '';
   };
 }

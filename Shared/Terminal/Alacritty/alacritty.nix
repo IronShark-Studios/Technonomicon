@@ -7,13 +7,15 @@
   };
 
   home.packages = with pkgs; [
+    fzf
     btop
     htop
     nmon
     kmon
-    fzf
     rsync
     zoxide
-    neofetch
+    gparted
+    pciutils
+    fastfetch
   ];
 }

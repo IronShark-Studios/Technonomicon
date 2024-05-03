@@ -3,43 +3,18 @@
   environment = {
     systemPackages = with pkgs; [
       waylock
-      lm_sensors
-      pciutils
-      xfce.xfce4-genmon-plugin
-      networkmanagerapplet
       sddm-chili-theme
       pavucontrol
-      xorg.xev
-      gparted
-      xdotool
-      pnmixer
-      udiskie
-      xcolor
-      slock
-      xclip
-      xsel
-      xdo
-      kitty
     ];
   };
 
   programs = {
+    hyprland.enable = true;
     dconf.enable = true;
     zsh.enable = true;
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
-    };
-
-    hyprland.enable = true;
-  };
-
-  security.pam.services = {
-    gdm.enableGnomeKeyring = true;
-    waylock = {
-      text = ''
-        auth include login
-      '';
     };
   };
 
@@ -73,10 +48,6 @@
           theme = "chili";
         };
       };
-
-      excludePackages = with pkgs; [
-        xterm
-      ];
     };
   };
 
@@ -88,6 +59,7 @@
   hardware = {
     pulseaudio.enable = false;
     bluetooth.enable = true;
+    opengl.enable = true;
 
     nvidia = {
       modesetting.enable = true;

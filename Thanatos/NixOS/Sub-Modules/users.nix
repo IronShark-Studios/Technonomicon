@@ -9,6 +9,15 @@
   security = {
     sudo.wheelNeedsPassword = false;
     rtkit.enable = true;
+    polkit.enable = true;
+    pam.services = {
+      gdm.enableGnomeKeyring = true;
+      waylock = {
+        text = ''
+        auth include login
+      '';
+      };
+    };
   };
 
   users = {
