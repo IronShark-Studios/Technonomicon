@@ -46,7 +46,7 @@ mode = "Vi"
 
 [[keyboard.bindings]]
 key = "Back"
-mods = "Command"
+mods = "Control"
 chars = "\u0017"
 
 [shell]
