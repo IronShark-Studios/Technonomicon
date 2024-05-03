@@ -156,8 +156,8 @@
 
   home.packages = with pkgs; [
     mako
-    shotman
     waylock
+    hyprshot
     wl-clipboard
   ];
 }
