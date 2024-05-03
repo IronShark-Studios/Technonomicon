@@ -21,16 +21,11 @@
           "modules-left": ["sway/workspaces", "sway/mode"],
           "modules-center": ["sway/window"],
           "modules-right": ["tray", "pulseaudio", "network", "idle_inhibitor", "clock"],
-          "sway/mode": {
-              "format": " {}"
-          },
-          "sway/workspaces": {
-              "format": "{name}",
-              "disable-scroll": true
-          },
-          "sway/window": {
-              "max-length": 80,
-              "tooltip": false
+          "hyprland/workspaces": {
+              "format": "{icon}",
+              "on-click": "activate",
+              "on-scroll-up": "hyprctl dispatch workspace e+1",
+              "on-scroll-down": "hyprctl dispatch workspace e-1"
           },
           "clock": {
               "format": "{:%a %d %b %H:%M}",
