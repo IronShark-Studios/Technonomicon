@@ -7,6 +7,8 @@
         env = XCURSOR_SIZE,24
         env = QT_QPA_PLATFORMTHEME,qt5ct
 
+        monitor = HDMI-A-2, 1920x1080@60, 0x0, 1
+
         exec-once = firefox
         $terminal = alacritty
         $fileManager = thunar
@@ -89,6 +91,9 @@
         $mainMod = SUPER
 
         # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
+        bind =, XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+
+        bind =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-
+        bind =, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
         bind = $mainMod, P, exec, $terminal
         bind = $mainMod, R, exec, $fileManager
         bind = $mainMod, T, exec, $menu
