@@ -66,10 +66,6 @@
         "nvidia"
       ];
 
-      excludePackages = with pkgs; [
-        xterm
-      ];
-
       displayManager = {
         sddm = {
           enable = true;
@@ -77,6 +73,10 @@
           theme = "chili";
         };
       };
+
+      excludePackages = with pkgs; [
+        xterm
+      ];
     };
   };
 

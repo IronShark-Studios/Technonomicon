@@ -1,4 +1,3 @@
-;; (server-start)
 (winner-mode +1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -18,13 +17,12 @@
       inhibit-splash-screen t
       ring-bell-function 'ignore
       use-package-always-ensure t
+      use-package-always-defer t
       initial-major-mode 'org-mode
       package-enable-at-startup nil
       warning-minimum-level ":error"
       display-line-numbers 'relative
       visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
-
-;; (bookmark-load bookmark-default-file t)
 
 (dolist (face '(default fixed-pitch))
   (set-face-attribute face nil
@@ -61,8 +59,6 @@
                 eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
-(use-package esup)
-
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
   :custom ((doom-modeline-height 15)))
@@ -78,16 +74,6 @@
         ad-do-it
       (fset 'one-window-p (symbol-function 'orig-one-window-p)))))
 
-(global-set-key (kbd "<escape>")  'keyboard-escape-quit)
-(global-set-key (kbd "C-x c")  'centered-cursor-mode)
-(global-set-key (kbd "C-S-v") 'clipboard-yank)
-(global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
-(global-set-key (kbd "C-S-x") 'clipboard-kill-region)
-(global-set-key (kbd "C-M-u") 'universal-argument)
-
-(define-key winner-mode-map (kbd "<C-s-left>") #'winner-undo)
-(define-key winner-mode-map (kbd "<C-s-right>") #'winner-redo)
-
 (defun save-all-buffers ()
   "Instead of `save-buffer', save all opened buffers by calling `save-some-buffers' with ARG t."
   (interactive)
@@ -95,8 +81,6 @@
 (global-set-key (kbd "C-x C-s") nil)
 (global-set-key (kbd "C-x C-s") #'save-all-buffers)
 
-
-(use-package burly)
 
 (use-package emojify)
 
@@ -160,26 +144,25 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . text-mode))
 
 (use-package nix-mode
-  :defer t
   :mode "\\.nix\\'")
 
-(use-package docker
-  :defer t)
+(use-package docker)
 
-(use-package dockerfile-mode
-  :defer t)
+(use-package dockerfile-mode)
 
-(use-package cmake-mode
-  :defer t)
+(use-package cmake-mode)
 
-(use-package bazel
-  :defer t)
+(use-package bazel)
 
 (use-package page-break-lines
   :diminish
   :init (global-page-break-lines-mode))
 
-(use-package helm)
+(use-package helm
+  :bind
+  (:map global-map
+        ("M-x" . helm-M-x)
+        ("C-x C-f" . helm-find-files)))
 (helm-mode 1)
 
 (setq helm-mode-fuzzy-match t)
@@ -196,16 +179,15 @@
           "\\*.+\\*"
           "\\magit-process:"
           "\\magit-diff:"
-             )))
+          )))
 
-(global-set-key (kbd "M-x") 'helm-M-x)
-(global-set-key (kbd "C-x C-f") 'helm-find-files)
-(define-key helm-find-files-map (kbd "<SPC>") 'helm-find-files-up-one-level)
-
-(use-package helm-projectile)
+(use-package helm-projectile
+  :after helm projectile)
 
 (use-package swiper-helm
-  :after helm)
+  :after helm
+  :bind
+  (:map helm-find-files-map ("<SPC>" . helm-find-files-up-one-level)))
 
 (defun Tn/evil-jump-character ()
   "moves point forward past the next character"
@@ -256,12 +238,12 @@
 (use-package evil
   :init
   (setq evil-want-integration t
-       evil-want-keybinding nil
-       evil-want-C-u-scroll t
-       evil-want-C-i-jump nil
-       evil-cross-lines t
-       evil-respect-visual-line-mode t
-       evil-undo-system 'undo-tree)
+        evil-want-keybinding nil
+        evil-want-C-u-scroll t
+        evil-want-C-i-jump nil
+        evil-cross-lines t
+        evil-respect-visual-line-mode t
+        evil-undo-system 'undo-tree)
 
   :config
   (evil-mode 1)
@@ -269,10 +251,20 @@
   (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
   (define-key evil-normal-state-map (kbd "<SPC>") 'harpoon-quick-menu-hydra)
   (define-key evil-normal-state-map (kbd "/") 'helm-regexp)
-  (evil-ex-define-cmd "q" 'kill-this-buffer) ;Evil nomral mode ':q' kills active buffer
-  (evil-ex-define-cmd "Q" 'kill-buffer-and-window)) ; Evil normal mode ':Q' kills buffer and window
+  (global-set-key (kbd "<escape>")  'keyboard-escape-quit)
+  (global-set-key (kbd "C-x c")  'centered-cursor-mode)
+  (global-set-key (kbd "C-S-v") 'clipboard-yank)
+  (global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
+  (global-set-key (kbd "C-S-x") 'clipboard-kill-region)
+  (global-set-key (kbd "C-M-u") 'universal-argument)
 
-(add-hook 'with-editor-mode-hook 'evil-insert-state)
+  (define-key winner-mode-map (kbd "<C-S-left>") #'winner-undo)
+  (define-key winner-mode-map (kbd "<C-S-right>") #'winner-redo)
+
+  (evil-ex-define-cmd "q" 'kill-this-buffer) ;Evil nomral mode ':q' kills active buffer
+  (evil-ex-define-cmd "Q" 'kill-buffer-and-window) ; Evil normal mode ':Q' kills buffer and window
+
+  (add-hook 'with-editor-mode-hook 'evil-insert-state))
 
 (use-package iedit
   :diminish)
@@ -287,7 +279,6 @@
 
 (use-package evil-collection
   :after evil
-  :ensure t
   :config
   (evil-collection-init))
 
@@ -412,7 +403,6 @@ If all failed, try to complete the common part with `company-complete-common'"
           (company-complete-common))))))
 
 (use-package company-tabnine
-  :defer 1
   :after company
   :custom
   (company-tabnine-max-num-results 9)
@@ -472,7 +462,6 @@ If all failed, try to complete the common part with `company-complete-common'"
      (define-key company-active-map (kbd "C-:") 'helm-company))))
 
 (use-package lsp-mode
-  :defer t
   :commands lsp
   :custom
   (lsp-keymap-prefix "C-x l")
@@ -518,18 +507,16 @@ If all failed, try to complete the common part with `company-complete-common'"
   (lsp-ui-sideline-ignore-duplicate t)
   (lsp-ui-sideline-show-code-actions nil)
   :config
-  ;; Use lsp-ui-doc-webkit only in GUI
   (when (display-graphic-p)
     (setq lsp-ui-doc-use-webkit t))
-  ;; WORKAROUND Hide mode-line of the lsp-ui-imenu buffer
-  ;; https://github.com/emacs-lsp/lsp-ui/issues/243
   (defadvice lsp-ui-imenu (after hide-lsp-ui-imenu-mode-line activate)
     (setq mode-line-format nil))
-  ;; `C-g'to close doc
   (advice-add #'keyboard-quit :before #'lsp-ui-doc-hide))
 
-(use-package helm-lsp)
-(define-key lsp-mode-map [remap xref-find-apropos] #'helm-lsp-workspace-symbol)
+(use-package helm-lsp
+  :after helm lsp-mode
+  :config
+  (define-key lsp-mode-map [remap xref-find-apropos] #'helm-lsp-workspace-symbol))
 
 (use-package dap-mode
   :diminish
@@ -589,7 +576,6 @@ If all failed, try to complete the common part with `company-complete-common'"
 (add-hook 'text-mode-hook #'flyspell-mode)
 
 (use-package flycheck
-  :defer t
   :diminish
   :hook (after-init . global-flycheck-mode)
   :commands (flycheck-add-mode)
@@ -599,9 +585,11 @@ If all failed, try to complete the common part with `company-complete-common'"
   (flycheck-emacs-lisp-load-path 'inherit)
   (flycheck-indication-mode (if (display-graphic-p) 'right-fringe 'right-margin)))
 
-(use-package helm-flycheck)
-(eval-after-load 'flycheck
-  '(define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck))
+(use-package helm-flycheck
+  :after helm flycheck
+  :config
+  (eval-after-load 'flycheck
+    '(define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck)))
 
 (use-package undo-tree)
 (global-undo-tree-mode 1)
@@ -627,9 +615,11 @@ If all failed, try to complete the common part with `company-complete-common'"
 
 (use-package projectile
   :init
-  (projectile-mode +1))
+  (projectile-mode +1)
+  :config
+  ;; (setq  projectile-project-search-path '("~/Projects" "~/Grimoire"))
+  )
 
-;; (setq  projectile-project-search-path '("~/Projects" "~/Grimoire"))
 
 (use-package helpful
   :commands (helpful-callable helpful-variable helpful-command helpful-key)
@@ -648,28 +638,29 @@ If all failed, try to complete the common part with `company-complete-common'"
   :custom
   (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
 
-(use-package org-appear)
+(use-package org-appear
+  :after evil
+  :config
+  (setq org-appear-trigger 'manual
+        org-appear-autoemphasis t
+        org-appear-autolinks t
+        org-link-descriptive t
+        org-pretty-entities t
+        org-appear-autoentities t
+        org-appear-autosubmarkers t
+        org-appear-autokeywords t
+        org-appear-inside-latex t)
 
-(setq org-appear-trigger 'manual
-      org-appear-autoemphasis t
-      org-appear-autolinks t
-      org-link-descriptive t
-      org-pretty-entities t
-      org-appear-autoentities t
-      org-appear-autosubmarkers t
-      org-appear-autokeywords t
-      org-appear-inside-latex t)
-
-(add-hook 'org-mode-hook 'org-appear-mode)
-(add-hook 'org-mode-hook (lambda ()
-                           (add-hook 'evil-insert-state-entry-hook
-                                     #'org-appear-manual-start
-                                     nil
-                                     t)
-                           (add-hook 'evil-insert-state-exit-hook
-                                     #'org-appear-manual-stop
-                                     nil
-                                     t)))
+  (add-hook 'org-mode-hook 'org-appear-mode)
+  (add-hook 'org-mode-hook (lambda ()
+                             (add-hook 'evil-insert-state-entry-hook
+                                       #'org-appear-manual-start
+                                       nil
+                                       t)
+                             (add-hook 'evil-insert-state-exit-hook
+                                       #'org-appear-manual-stop
+                                       nil
+                                       t))))
 
 (defun Tn/org-mode-visual-fill ()
   (setq visual-fill-column-width 100
@@ -2397,14 +2388,10 @@ _i_: Citar Link Index  _s_: Bibtex Validate
                                  (tags . " %i %-12:c")
                                  (search . " %i %-12:c")))
 (add-hook 'org-agenda-mode-hook
-    (lambda ()
-        (visual-line-mode -1)
-        (setq truncate-lines 1)))
+          (lambda ()
+            (visual-line-mode -1)
+            (setq truncate-lines 1)))
 
-(define-key org-super-agenda-header-map (kbd "n") 'org-agenda-next-line)
-(define-key org-super-agenda-header-map (kbd "e") 'org-agenda-previous-line)
-(define-key org-super-agenda-header-map (kbd "s-n") 'Tn/agenda-clock-in)
-(define-key org-super-agenda-header-map (kbd "s-e") 'Tn/agenda-clock-out)
 (define-key org-agenda-mode-map (kbd "n") 'org-agenda-next-line)
 (define-key org-agenda-mode-map (kbd "e") 'org-agenda-previous-line)
 (define-key org-agenda-mode-map (kbd "j") 'org-agenda-goto-date)
@@ -2558,25 +2545,31 @@ _t_: Tobey Time    _d_: Driving
 (interactive)
 (org-roam-dailies-capture-today nil "G"))
 
-(use-package org-super-agenda)
-(setq org-agenda-custom-commands
-      '(("c" "Super view"
-         ((agenda "" ((org-agenda-overriding-header "")
+(use-package org-super-agenda
+  :bind
+  (:map org-super-agenda-header-map
+        ("n" . org-agenda-next-line)
+        ("e" . org-agenda-previous-line))
+  :config
+  (setq org-agenda-custom-commands
+        '(("c" "Super view"
+           ((agenda "" ((org-agenda-overriding-header "")
+                        (org-super-agenda-groups
+                         '((:name "Today"
+                                  :time-grid t
+                                  :date today
+                                  :order 1)))))))
+          ("t" "Todo View"
+           (
+            (todo "" ((org-agenda-overriding-header "")
                       (org-super-agenda-groups
-                       '((:name "Today"
-                                :time-grid t
-                                :date today
-                                :order 1)))))))
-        ("t" "Todo View"
-         (
-          (todo "" ((org-agenda-overriding-header "")
-                    (org-super-agenda-groups
-                     '((:name "Inbox"
-                              :file-path "inbox"
-                              :order 0
-                              )
-                       (:auto-category t
-                                       :order 9)))))))))
+                       '((:name "Inbox"
+                                :file-path "inbox"
+                                :order 0
+                                )
+                         (:auto-category t
+                                         :order 9))))))))))
+
 
 (use-package org-ql)
 
@@ -2606,9 +2599,8 @@ _t_: Tobey Time    _d_: Driving
 
 (use-package centered-cursor-mode)
 
-(use-package dmenu)
-
 (use-package ag)
 
-(use-package rg)
-(global-set-key (kbd "C-s") #'rg-menu)
+(use-package rg
+  :config
+  (global-set-key (kbd "C-s") #'rg-menu))
