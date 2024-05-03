@@ -18,6 +18,7 @@
 
   services = {
     blueman.enable = true;
+    libinput.enable = true;
     gnome.gnome-keyring.enable = true;
 
     pipewire = {
@@ -29,23 +30,11 @@
       };
     };
 
-    xserver = {
+    displayManager.sddm = {
       enable = true;
-      libinput.enable = true;
-      autorun = true;
-      xkb.layout = "us";
-      videoDrivers = [
-        "modesetting"
-        "nvidia"
-      ];
-
-      displayManager = {
-        sddm = {
-          enable = true;
-          autoNumlock = true;
-          theme = "chili";
-        };
-      };
+      wayland.enable = true;
+      autoNumlock = true;
+      theme = "chili";
     };
   };
 

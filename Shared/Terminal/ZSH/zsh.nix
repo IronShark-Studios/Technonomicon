@@ -5,7 +5,7 @@
 
     autocd = true;
     enableCompletion = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
 
     history.ignoreAllDups = true;
     historySubstringSearch.enable = true;

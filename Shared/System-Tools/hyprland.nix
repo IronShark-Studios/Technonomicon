@@ -12,7 +12,6 @@
 
         workspace = 1 ,monitor:DP-1
         workspace = 10 ,monitor:eDP-1
-        windowrulev2 = nomaximizerequest, class:.*
 
         exec-once = waybar & waypaper --restore & mako & emacs --daemon & hyprctl dispatch workspace 1
 
@@ -103,6 +102,7 @@
         bind = $mainMod, S, exec, $browser
         bind = $mainMod, F, exec, $editor
         bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000
+        bind = $mainMod, G, exec, hyprshot -m region --clipboard-only
         bind = $mainMod, D, killactive
         bind = $mainMod, C, exit
         bind = $mainMod, V, togglefloating
@@ -158,6 +158,7 @@
     mako
     waylock
     hyprshot
+    hyprpicker
     wl-clipboard
   ];
 }
