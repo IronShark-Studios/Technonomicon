@@ -1,6 +1,7 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
   imports = [
+    ./hyprland.nix
     ../../Shared/Emacs/emacs.nix
     ../../Shared/XDG/user-dirs.nix
     ../../Shared/Terminal/terminal.nix
