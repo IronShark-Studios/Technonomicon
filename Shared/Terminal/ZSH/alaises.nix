@@ -15,6 +15,5 @@
     upgrade = "bash /etc/scripts/upgrade.sh";
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old && rebuild";
-    cb = "xclip -selection clipboard";
   };
 }

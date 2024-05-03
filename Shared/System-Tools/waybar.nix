@@ -4,11 +4,15 @@
     enable = true;
   };
 
-  home.file = {
+  home = {
+    packages = with pkgs; [
+      pavucontrol
+    ];
 
-    "waybar-config" = {
-    target = ".config/waybar/config.jsonc";
-    text = ''
+    file = {
+      "waybar-config" = {
+        target = ".config/waybar/config.jsonc";
+        text = ''
       {
           "layer": "bottom",
           "position": "top",
@@ -70,11 +74,11 @@
           }
       }
     '';
-    };
+      };
 
-    "waybar-css" = {
-      target = ".config/waybar/style.css";
-      text = ''
+      "waybar-css" = {
+        target = ".config/waybar/style.css";
+        text = ''
         * {
             border:        none;
             border-radius: 0;
@@ -139,6 +143,7 @@
             color:      rgba(217, 216, 216, 1);
         }
       '';
+      };
     };
   };
 }

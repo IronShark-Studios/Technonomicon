@@ -14,7 +14,7 @@
         workspace = 10 ,monitor:eDP-1
         windowrulev2 = nomaximizerequest, class:.*
 
-        exec-once = waybar & waypaper --restore & emacs --daemon & hyprctl dispatch workspace 1
+        exec-once = waybar & waypaper --restore & mako & emacs --daemon & hyprctl dispatch workspace 1
 
         $terminal = alacritty
         $fileManager = thunar
@@ -155,5 +155,9 @@
   };
 
   home.packages = with pkgs; [
+    mako
+    shotman
+    waylock
+    wl-clipboard
   ];
 }

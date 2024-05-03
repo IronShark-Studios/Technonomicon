@@ -2,9 +2,7 @@
 
   environment = {
     systemPackages = with pkgs; [
-      waylock
       sddm-chili-theme
-      pavucontrol
     ];
   };
 
