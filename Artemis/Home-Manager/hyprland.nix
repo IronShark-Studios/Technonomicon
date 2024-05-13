@@ -4,7 +4,7 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
-        env = XCURSOR_SIZE,24
+        env = XCURSOR_SIZE,44
         env = QT_QPA_PLATFORMTHEME,qt5ct
 
         monitor = HDMI-A-2, 1920x1080@60, 0x0, 1
@@ -18,6 +18,7 @@
 
         input {
             kb_layout = us
+            kb_options = caps:swapescape
             follow_mouse = 2
             sensitivity = 0
             touchpad {
