@@ -85,6 +85,8 @@
 
         misc {
             disable_hyprland_logo = 1
+            mouse_move_enables_dpms = true
+            key_press_enables_dpms = true
         }
 
 
@@ -100,7 +102,7 @@
         bind = $mainMod, T, exec, $menu
         bind = $mainMod, S, exec, $browser
         bind = $mainMod, F, exec, $editor
-        bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000
+        bind = $mainMod, Q, exec, hyprctl dispatch dpms off && waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000
         bind = $mainMod, G, exec, hyprshot -m region --clipboard-only
         bind = $mainMod, D, killactive
         bind = $mainMod, C, exit
