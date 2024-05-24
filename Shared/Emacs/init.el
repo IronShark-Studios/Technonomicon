@@ -2605,3 +2605,5 @@ _t_: Tobey Time    _d_: Driving
 (use-package rg
   :config
   (global-set-key (kbd "C-s") #'rg-menu))
+
+(use-package graphviz-dot-mode)
