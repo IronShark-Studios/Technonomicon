@@ -370,7 +370,11 @@
 
 (use-package company
   :diminish company-mode
-  :hook ((prog-mode LaTeX-mode latex-mode ess-r-mode) . company-mode)
+  :hook ((prog-mode
+          LaTeX-mode
+          latex-mode
+          ess-r-mode
+          graphviz-dot-mode-hook) . company-mode)
   :bind
   (:map company-active-map
         ("<tab>" . company-complete-selection)
