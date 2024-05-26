@@ -69,7 +69,7 @@
         * {
             border:        none;
             border-radius: 0;
-            font-family:   Iosevka;
+            font-family:   Sans;
             font-size:     15px;
             box-shadow:    none;
             text-shadow:   none;
