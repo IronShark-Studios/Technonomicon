@@ -9,11 +9,12 @@
     power-off = "sudo shutdown -h now";
     logout = "sudo kill -9 -1";
     restart = "sudo reboot";
-    eo = "emacsclient -c";
-    eoc = "emacsclient";
+    eo = "emacsclient -c $1 &";
+    eoc = "emacsclient $1 &";
     rebuild = "bash /etc/scripts/rebuild.sh";
     upgrade = "bash /etc/scripts/upgrade.sh";
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old && rebuild";
+    tn = "~/Projects/Technonomicon";
   };
 }

@@ -18,9 +18,9 @@
           "position": "top",
           "height": 30,
 
-          "modules-left": ["sway/workspaces", "sway/mode"],
+          "modules-left": ["hyprland/workspaces", "sway/mode"],
           "modules-center": ["sway/window"],
-          "modules-right": ["tray", "pulseaudio", "network", "idle_inhibitor", "clock"],
+          "modules-right": ["tray", "pulseaudio", "network", "clock"],
           "hyprland/workspaces": {
               "format": "{icon}",
               "on-click": "activate",
@@ -36,9 +36,9 @@
               "format-alt": "{ipaddr}/{cidr} {icon}",
               "format-alt-click": "click-right",
               "format-icons": {
-                  "wifi": ["", "" ,""],
-                  "ethernet": [""],
-                  "disconnected": [""]
+                  "wifi": ["󰣴", "󰣸" ,"󰣺"],
+                  "ethernet": ["󰈁"],
+                  "disconnected": ["󰯡"]
               },
               "on-click": "alacritty -e nmtui",
           "tooltip": false
@@ -47,21 +47,13 @@
               "format": "{icon}",
               "format-alt": "{volume} {icon}",
               "format-alt-click": "click-right",
-              "format-muted": "",
+              "format-muted": "",
               "format-icons": {
-                  "phone": [" ", " ", " ", " "],
-                  "default": ["", "", "", ""]
-              },
+                  "phone": [" ", " ", " ", " "],
+                  "default": ["", "", "", ""]
+              ,
               "scroll-step": 10,
               "on-click": "pavucontrol",
-              "tooltip": false
-          },
-          "idle_inhibitor": {
-              "format": "{icon}",
-              "format-icons": {
-                  "activated": "",
-                  "deactivated": ""
-              },
               "tooltip": false
           },
           "tray": {
