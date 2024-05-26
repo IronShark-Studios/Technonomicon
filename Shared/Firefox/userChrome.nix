@@ -313,5 +313,13 @@ Meaning, if theme text is light then the statuspanel uses dark background and li
   color: rgb(187,187,189) !important;
   border-color: grey !important;
 }
+
+:root {
+    /* Generic */
+    --tridactyl-font-family: monospace;
+    --tridactyl-font-family-sans: sans-serif;
+    --tridactyl-font-size: 16pt;
+    --tridactyl-small-font-size: 16px;
+}
 '';
 }
