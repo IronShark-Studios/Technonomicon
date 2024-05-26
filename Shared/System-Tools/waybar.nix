@@ -4,8 +4,6 @@
     enable = true;
   };
 
-  services.udiskie.enable = true;
-
   home = {
     packages = with pkgs; [
       pavucontrol
@@ -20,9 +18,9 @@
           "position": "top",
           "height": 30,
 
-          "modules-left": ["hyprland/workspaces", "sway/mode"],
-          "modules-center": ["sway/window"],
-          "modules-right": ["tray", "pulseaudio", "network", "clock"],
+          "modules-left": ["hyprland/workspaces"],
+          "modules-center": ["tray"],
+          "modules-right": ["pulseaudio", "network", "clock"],
           "hyprland/workspaces": {
               "format": "{icon}",
               "on-click": "activate",
