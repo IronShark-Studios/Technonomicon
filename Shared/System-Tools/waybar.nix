@@ -51,7 +51,7 @@
               "format-icons": {
                   "phone": [" ", " ", " ", " "],
                   "default": ["", "", "", ""]
-              ,
+              },
               "scroll-step": 10,
               "on-click": "pavucontrol",
               "tooltip": false
