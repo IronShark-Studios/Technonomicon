@@ -77,7 +77,7 @@
         * {
             border:        none;
             border-radius: 0;
-            font-family:   Sans;
+            font-family:   Iosevka;
             font-size:     15px;
             box-shadow:    none;
             text-shadow:   none;

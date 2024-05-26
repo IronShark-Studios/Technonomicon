@@ -13,3 +13,70 @@ This repository holds all the configuration settings for my personal computers, 
 - Shared: This directory holds application specific files, used by Home-manager. They are grouped together by use-case. So they can be shared by machine specific configurations.
 - Thanatos: This directory holds all the files to configure NixOS for my work computer.
 - Artemis: This directory holds all the files to configure NixOS for my living room media center computer.
+
+* Key Combos
+This configuration uses a custom layout for the ZSA Moonlander.
+
+*** Modifier Combos
+- Alt =R-S=
+- Alt Greater =I-E=
+- Left Shift =P-F=
+- Right Shift =L-U=
+- Left Ctrl =F-W=
+- Right Ctrl =U-Y=
+- Left Super =D-C=
+- Right Super =,-.=
+
+*** System Combos
+- Home =F-S=
+- End =S-D=
+- =T-V=
+- =R-C=
+- Esc =H-,=
+- ESC + Shift =H-,-V-D=
+- Tab =V-D=
+- Backspace + Ctrl =P-T=
+- Delete + Ctrl =W-R=
+- Enter =T-S=
+- Space =N-E=
+
+*** Arrow Combos
+- Up =U-E=
+- Down =E-,=
+- Left =N-H=
+- Right =I-.=
+- Right + Ctrl =Y-I=
+- Left + Ctrl =L-N=
+
+*** Symbol Combos
+- ( =N-P=
+- [ =N-F=
+- { =N-W=
+- < =N-V=
+- $ =N-D=
+- @ =N-C=
+- : =N-G=
+
+- ) =E-P=
+- ] =E-F=
+- } =E-W=
+- > =E-V=
+- ! =E-D=
+- ? =E-C=
+- ' =E-G=
+
+- - =T-L=
+- + =T-U=
+- = =T-Y=
+- * =T-H=
+- / =T-,=
+- % =T-.=
+- ; =T-M=
+
+- | =S-l=
+- _ =S-U=
+- & =S-Y=
+- # =S-H=
+- ^ =S-,=
+- ~ =S-.=
+- " =S-M=
