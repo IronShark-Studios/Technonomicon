@@ -4,6 +4,8 @@
     enable = true;
   };
 
+  services.udiskie.enable = true;
+
   home = {
     packages = with pkgs; [
       pavucontrol
@@ -69,7 +71,7 @@
         * {
             border:        none;
             border-radius: 0;
-            font-family:   Sans;
+            font-family:   Iosveka;
             font-size:     15px;
             box-shadow:    none;
             text-shadow:   none;
