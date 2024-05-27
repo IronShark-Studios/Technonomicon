@@ -12,7 +12,7 @@
         bind n scrollline 10
         colorscheme shydactyl
         set hintfiltermode vimperator-reflow
-        set hintchars mneightsrlphvuf
+        set hintchars lpnthvufesir
       '';
     };
   };

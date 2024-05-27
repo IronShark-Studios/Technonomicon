@@ -102,7 +102,7 @@
         bind = $mainMod, T, exec, $menu
         bind = $mainMod, S, exec, $browser
         bind = $mainMod, F, exec, $editor
-        bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000
+        bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000 & systemctl suspend
         bind = $mainMod, G, exec, hyprshot -m region --clipboard-only
         bind = $mainMod, D, killactive
         bind = $mainMod, C, exit
