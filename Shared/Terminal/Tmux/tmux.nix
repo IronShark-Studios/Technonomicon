@@ -10,7 +10,8 @@
     set-option -sa terminal-overrides ",xterm*:Tc"
     bind '"' split-window -v -c "#{pane_current_path}"
     bind % split-window -h -c "#{pane_current_path}"
-    set -g status off
+    set -g status-bg black
+    set -g status-fg white
     '';
   };
 }
