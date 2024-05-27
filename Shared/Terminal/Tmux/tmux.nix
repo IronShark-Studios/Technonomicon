@@ -4,9 +4,6 @@
     enable = true;
     plugins = with pkgs.tmuxPlugins; [
       sensible
-      {
-        tpm;
-      }
     ];
   };
 }
