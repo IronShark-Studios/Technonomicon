@@ -9,6 +9,7 @@
     ./ZSH/oh-my-zsh.nix
     ./ZSH/theme.nix
     ./ZSH/zsh.nix
+    ./Tmux/tmux.nix
     ./BASH/bash.nix
     ./VIM/vim.nix
     ./GIT/git.nix
