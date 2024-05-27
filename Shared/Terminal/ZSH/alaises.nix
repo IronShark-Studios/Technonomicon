@@ -2,8 +2,9 @@
 
   programs.zsh.shellAliases = {
     cd = "z";
-    lx = "ls -la";
-    ll = "ls -l";
+    cpa = "cp -f -r"
+    lx = "ls -l -c -a";
+    ll = "ls -l -c";
     rma = "sudo trash-put";
     arc-sync = "bash /etc/scripts/update-archives.sh";
     power-off = "sudo trash-put ~/Downloads/* & trash-empty & sudo shutdown -h now";
