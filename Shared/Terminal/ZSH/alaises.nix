@@ -2,7 +2,7 @@
 
   programs.zsh.shellAliases = {
     cd = "z";
-    cpa = "cp -f -r"
+    cpa = "cp -f -r";
     lx = "ls -l -c -a";
     ll = "ls -l -c";
     rma = "sudo trash-put";
