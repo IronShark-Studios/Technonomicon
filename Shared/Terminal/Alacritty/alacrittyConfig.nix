@@ -50,7 +50,7 @@ mods = "Control"
 chars = "\u0017"
 
 [shell]
-program = ""\${pkgs.tmux}/bin/tmux""
+program = "\${pkgs.tmux}/bin/tmux"
 args = ["new", "-A", "-s", "scratch"]
     '';
   };
