@@ -17,5 +17,7 @@
     gparted
     pciutils
     fastfetch
+    udiskie
+    trashy
   ];
 }

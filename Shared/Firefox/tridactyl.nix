@@ -10,7 +10,10 @@
       text = ''
         bind e scrollline -10
         bind n scrollline 10
+        colorscheme shydactyl
+        set hintfiltermode vimperator-reflow
+        set hintchars mneightsrlphvuf
       '';
-      };
+    };
   };
 }
