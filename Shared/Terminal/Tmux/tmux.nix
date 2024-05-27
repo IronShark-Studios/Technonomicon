@@ -8,6 +8,8 @@
     disableConfirmationPrompt = true;
     extraConfig = ''
     set-option -sa terminal-overrides ",xterm*:Tc"\n
+    bind '"' split-window -v -c "#{pane_current_path}"\n
+    bind % split-window -h -c "#{pane_current_path}"\n
     '';
   };
 }
