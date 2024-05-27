@@ -50,8 +50,8 @@ mods = "Control"
 chars = "\u0017"
 
 [shell]
-program = "/home/xin/.nix-profile/bin/zsh"
-args = ["-l"]
+program = ""\${pkgs.tmux}/bin/tmux""
+args = ["new", "-A", "-s", "scratch"]
     '';
   };
 }
