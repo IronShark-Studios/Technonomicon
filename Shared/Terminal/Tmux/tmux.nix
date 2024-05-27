@@ -5,7 +5,7 @@
     mouse = true;
     baseIndex = 1;
     prefix = "C-x";
-    shell = "\${pkgs.zsh}/bin/zsh";
+    shell = "/${pkgs.zsh}/bin/zsh";
     disableConfirmationPrompt = true;
     extraConfig = ''
     set-option -sa terminal-overrides ",xterm*:Tc"\n
