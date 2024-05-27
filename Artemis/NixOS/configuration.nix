@@ -13,7 +13,6 @@
     ../../Shared/Scripts/rebuild.nix
     ../../Shared/Scripts/test.nix
     ../../Shared/Scripts/upgrade.nix
-    ../../Shared/Scripts/mv-to-tmp.nix
     ../../Shared/Scripts/update-archives.nix
   ];
 
