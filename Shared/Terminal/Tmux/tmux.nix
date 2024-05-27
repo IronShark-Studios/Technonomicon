@@ -2,7 +2,8 @@
 
   programs.tmux = {
     enable = true;
-    plugins = with pkgs.tmuxPlugins; [
+    prefix = "C-x"
+      plugins = with pkgs.tmuxPlugins; [
       sensible
     ];
   };
