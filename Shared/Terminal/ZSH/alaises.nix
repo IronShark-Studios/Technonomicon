@@ -4,9 +4,9 @@
     cd = "z";
     lx = "ls -la";
     ll = "ls -l";
-    rma = "sudo trashy put";
+    rma = "sudo trash-put";
     arc-sync = "bash /etc/scripts/update-archives.sh";
-    power-off = "sudo shutdown -h now";
+    power-off = "sudo trash-put ~/Downloads/* & trash-empty & sudo shutdown -h now";
     logout = "sudo kill -9 -1";
     restart = "sudo reboot";
     eo = "emacsclient -n -c";

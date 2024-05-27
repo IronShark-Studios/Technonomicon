@@ -18,6 +18,6 @@
     pciutils
     fastfetch
     udiskie
-    trashy
+    trash-cli
   ];
 }
