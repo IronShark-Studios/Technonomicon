@@ -5,7 +5,7 @@
     plugins = with pkgs.tmuxPlugins; [
       sensible
       {
-        tpm
+        tpm;
       }
     ];
   };
