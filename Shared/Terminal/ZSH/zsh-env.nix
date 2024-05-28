@@ -1,6 +1,4 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
-  programs.zsh.envExtra = {
-    "test"
-  };
+  programs.zsh.envExtra = "test";
 }
