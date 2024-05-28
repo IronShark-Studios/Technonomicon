@@ -8,5 +8,10 @@
       "<enter>" = "open";
       "<space>" = "updir";
     };
+    extraConfig = ''
+set hidden true
+set ignorecase true
+set icons true
+    '';
   };
 }
