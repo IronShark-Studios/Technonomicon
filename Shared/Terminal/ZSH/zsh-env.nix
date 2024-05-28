@@ -1,7 +1,8 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
   programs.zsh.envExtra = {
-    LF_ICONS = "\
+    LF_ICONS = {
+      "\
 tw=:\
 st=:\
 ow=:\
@@ -162,6 +163,6 @@ ex=:\
 *.xspf=:\
 *.pdf=:\
 *.nix=:\
-";
+"    };
   };
 }
