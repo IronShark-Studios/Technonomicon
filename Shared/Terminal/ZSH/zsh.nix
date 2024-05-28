@@ -23,7 +23,9 @@
     historySubstringSearch.enable = true;
 
     sessionVariables = {
-      SUDO_EDITOR = "\"emacsclient\"";
+      SUDO_EDITOR = "emacsclient -n -c";
+      TECHNONOMICON = "~/Projects/Technonomicon";
+      BLOG-POSTS = "~/Projects/Personal-Blog/content/posts";
       NIXOS_GENERATION = "$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | tail -n 1 | sed 's/(current)//')";
     };
 
