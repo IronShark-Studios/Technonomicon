@@ -18,6 +18,7 @@
 
   services = {
     blueman.enable = true;
+    udisks2.enable = true;
     libinput.enable = true;
     gnome.gnome-keyring.enable = true;
 
