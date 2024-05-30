@@ -14,5 +14,6 @@
     ./BASH/bash.nix
     ./VIM/vim.nix
     ./GIT/git.nix
+    ./udiskie.nix
   ];
 }

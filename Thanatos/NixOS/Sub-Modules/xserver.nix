@@ -3,7 +3,6 @@
   environment = {
     systemPackages = with pkgs; [
       sddm-chili-theme
-      udiskie
     ];
   };
 
