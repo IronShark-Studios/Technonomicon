@@ -1,9 +1,9 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
 
-  programs.rofi-wayland = {
-
+  programs.rofi = {
     enable = true;
+    package = rofi-wayland;
     plugins = with pkgs; [
       rofi-emoji
       rofi-calc
