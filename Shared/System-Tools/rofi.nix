@@ -3,7 +3,7 @@
 
   programs.rofi = {
     enable = true;
-    package = "rofi-wayland";
+    package = "pkgs.rofi-wayland";
     plugins = with pkgs; [
       rofi-emoji
       rofi-calc
