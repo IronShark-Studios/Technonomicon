@@ -1,24 +1,29 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
 
-  home = {
-    packages = with pkgs; [
-      rofi-wayland
-    ];
+  programs.rofi-wayland = {
 
-    file = {
-      "rofi-config" = {
+    enable = true;
+    plugins = with pkgs; [
+      rofi-emoji
+      rofi-calc
+      rofi-bluetooth
+    ];
+  };
+
+  home.file = {
+    "rofi-config" = {
       target = ".config/rofi/config.rasi";
       text = ''
         configuration {
         }
         @theme "Arthur"
       '';
-      };
+    };
 
-      "rofi-theme" = {
-        target = ".config/rofi/Arthur.rasi";
-        text = ''
+    "rofi-theme" = {
+      target = ".config/rofi/Arthur.rasi";
+      text = ''
         /*
          * ROFI color theme
          *
@@ -156,7 +161,6 @@
           text-color: @base0B;
         }
         '';
-      };
     };
   };
 }

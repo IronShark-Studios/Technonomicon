@@ -4,6 +4,8 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
+        exec-once = waybar & waypaper --restore & mako & emacs --daemon & udiskie -asFN & hyprctl dispatch workspace 1
+
         env = XCURSOR_SIZE,24
         env = QT_QPA_PLATFORMTHEME,qt5ct
 
@@ -12,14 +14,6 @@
 
         workspace = 1 ,monitor:DP-1
         workspace = 10 ,monitor:eDP-1
-
-        exec-once = waybar & waypaper --restore & mako & emacs --daemon & hyprctl dispatch workspace 1
-
-        $terminal = alacritty
-        $fileManager = thunar
-        $menu = rofi -show drun
-        $editor = emacsclient -c
-        $browser = firefox
 
         input {
             kb_layout = us
@@ -72,18 +66,15 @@
         }
 
         dwindle {
-            # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
             pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
             preserve_split = yes # you probably want this
         }
 
         master {
-            # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
             new_is_master = true
         }
 
         gestures {
-            # See https://wiki.hyprland.org/Configuring/Variables/ for more
             workspace_swipe = off
         }
 
@@ -92,31 +83,34 @@
         }
 
 
-        # See https://wiki.hyprland.org/Configuring/Keywords/ for more
         $mainMod = SUPER
+        $terminal = alacritty
+        $fileManager = thunar
+        $menu = rofi -show drun
+        $editor = emacsclient -c
+        $browser = firefox
 
-        # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
+
         bind = $mainMod, P, exec, $terminal
         bind = $mainMod, R, exec, $fileManager
         bind = $mainMod, T, exec, $menu
         bind = $mainMod, S, exec, $browser
         bind = $mainMod, F, exec, $editor
-        bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000
-        bind = $mainMod SHIFT, Q, exec, poweroff
-        bind = , mouse:274, exec, hyprshot -m region --clipboard-only
         bind = $mainMod, D, killactive
-        bind = $mainMod, C, exit
         bind = $mainMod, V, togglefloating
         bind = $mainMod, Z, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
 
-        # Move focus with mainMod + arrow keys
+        bind = $mainmod, C, exec, emacsclient -c -e '(full-calc)'
+
+        bind = $mainMod SHIFT, Q, exec, poweroff
+        bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000
+
         bind = $mainMod, left, movefocus, l
         bind = $mainMod, right, movefocus, r
         bind = $mainMod, up, movefocus, u
         bind = $mainMod, down, movefocus, d
 
-        # Switch workspaces with mainMod + [0-9]
         bind = $mainMod, 1, workspace, 1
         bind = $mainMod, 2, workspace, 2
         bind = $mainMod, 3, workspace, 3
@@ -128,7 +122,6 @@
         bind = $mainMod, 9, workspace, 9
         bind = $mainMod, 0, workspace, 10
 
-        # Move active window to a workspace with mainMod + SHIFT + [0-9]
         bind = $mainMod SHIFT, 1, movetoworkspace, 1
         bind = $mainMod SHIFT, 2, movetoworkspace, 2
         bind = $mainMod SHIFT, 3, movetoworkspace, 3
@@ -140,17 +133,14 @@
         bind = $mainMod SHIFT, 9, movetoworkspace, 9
         bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
-        # Example special workspace (scratchpad)
         bind = $mainMod, X, togglespecialworkspace, magic
         bind = $mainMod SHIFT, X, movetoworkspace, special:magic
 
-        # Scroll through existing workspaces with mainMod + scroll
-        bind = $mainMod, mouse_down, workspace, e+1
-        bind = $mainMod, mouse_up, workspace, e-1
-
-        # Move/resize windows with mainMod + LMB/RMB and dragging
         bindm = $mainMod, mouse:272, movewindow
         bindm = $mainMod, mouse:273, resizewindow
+        bind = $mainMod, mouse_down, workspace, e+1
+        bind = $mainMod, mouse_up, workspace, e-1
+        bind = , mouse:274, exec, hyprshot -m region --clipboard-only
       '';
     };
   };
@@ -161,5 +151,6 @@
     hyprshot
     hyprpicker
     wl-clipboard
+    wtype
   ];
 }
