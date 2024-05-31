@@ -4,9 +4,7 @@
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
-    theme = ''
-      @theme "Arthur"
-    '';
+    theme =  "Arthur";
 
     plugins = with pkgs; [
       rofi-emoji
@@ -19,7 +17,7 @@
     "rofi-theme" = {
       target = ".config/rofi/Arthur.rasi";
       text = ''
-        /*
+    /*
          * ROFI color theme
          *
          * Based on Base16 Material Color Scheme (https://github.com/ntpeters/base16-materialtheme-scheme)
