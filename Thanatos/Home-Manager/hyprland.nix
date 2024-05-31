@@ -84,27 +84,36 @@
 
 
         $mainMod = SUPER
-        $terminal = alacritty
-        $fileManager = thunar
-        $menu = rofi -show drun
-        $editor = emacsclient -c
         $browser = firefox
 
 
-        bind = $mainMod, P, exec, $terminal
-        bind = $mainMod, R, exec, $fileManager
-        bind = $mainMod, T, exec, $menu
-        bind = $mainMod, S, exec, $browser
         bind = $mainMod, F, exec, $editor
-        bind = $mainMod, D, killactive
         bind = $mainMod, V, togglefloating
         bind = $mainMod, Z, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
 
+        bind = $mainMod, S, exec, $browser
+        bind = $mainMod SHIFT, S, exec, hyprctl dispatch pass yy
+
+        bind = $mainMod, T, exec, alacritty
+        bind = $mainMod SHIFT, T, exec, emacsclient -c
+
+        bind = $mainMod, F, exec, alacritty -e lf
+        bind = $mainMod SHIFT, F, exec, thunar
+
         bind = $mainMod, C, exec, emacsclient -c -e '(full-calc)'
+        bind = $mainMod SHIFT, C, exec, rofi -show calc -modi calc -no-show-match -no-sort
 
         bind = $mainMod SHIFT, Q, exec, poweroff
         bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000
+
+        bind = $mainMod, B, exec, rofi -show window
+        bind = $mainMod, X, exec, rofi -show drun
+        bind = $mainMod, K, killactive
+
+        bind =, XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+
+        bind =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-
+        bind =, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
         bind = $mainMod, left, movefocus, l
         bind = $mainMod, right, movefocus, r
@@ -133,8 +142,8 @@
         bind = $mainMod SHIFT, 9, movetoworkspace, 9
         bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
-        bind = $mainMod, X, togglespecialworkspace, magic
-        bind = $mainMod SHIFT, X, movetoworkspace, special:magic
+        bind = $mainMod, M, togglespecialworkspace, magic
+        bind = $mainMod SHIFT, M, movetoworkspace, special:magic
 
         bindm = $mainMod, mouse:272, movewindow
         bindm = $mainMod, mouse:273, resizewindow

@@ -6,16 +6,10 @@
     package = pkgs.rofi-wayland;
     theme =  "Arthur";
 
-    plugins = [
-      (pkgs.rofi-emoji.override {
-        rofi-unwrapped = rofi-wayland-unwrapped;
-      })
-      (pkgs.rofi-calc.override {
-        rofi-unwrapped = rofi-wayland-unwrapped;
-      })
-      (pkgs.rofi-bluetooth.override {
-        rofi-unwrapped = rofi-wayland-unwrapped;
-      })
+    plugins = with pkgs; [
+      rofi-emoji
+      rofi-calc
+      rofi-bluetooth
     ];
   };
 
