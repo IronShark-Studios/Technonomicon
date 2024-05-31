@@ -4,6 +4,12 @@
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
+    theme = ''
+      configuration {
+      }
+      @theme "Arthur"
+    '';
+
     plugins = with pkgs; [
       rofi-emoji
       rofi-calc
@@ -12,15 +18,6 @@
   };
 
   home.file = {
-    "rofi-config" = {
-      target = ".config/rofi/config.rasi";
-      text = ''
-        configuration {
-        }
-        @theme "Arthur"
-      '';
-    };
-
     "rofi-theme" = {
       target = ".config/rofi/Arthur.rasi";
       text = ''
