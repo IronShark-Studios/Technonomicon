@@ -101,7 +101,7 @@
         bind = $mainMod, Z, pseudo, # dwindle
         bind = $mainMod, J, togglesplit, # dwindle
 
-        bind = $mainmod, C, exec, emacsclient -c -e '(full-calc)'
+        bind = $mainMod, C, exec, emacsclient -c -e '(full-calc)'
 
         bind = $mainMod SHIFT, Q, exec, poweroff
         bind = $mainMod, Q, exec, waylock -init-color 0x000000 -input-color 0x0a6e73 -fail-color 0x000000

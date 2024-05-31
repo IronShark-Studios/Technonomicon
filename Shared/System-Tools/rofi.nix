@@ -5,8 +5,6 @@
     enable = true;
     package = pkgs.rofi-wayland;
     theme = ''
-      configuration {
-      }
       @theme "Arthur"
     '';
 
