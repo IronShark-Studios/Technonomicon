@@ -50,8 +50,7 @@ mods = "Control"
 chars = "\u0017"
 
 [shell]
-program = "/home/xin/.nix-profile/bin/tmux"
-args = ["new", "-A", "-s", "scratch"]
+program = "/home/xin/.nix-profile/bin/zsh"
     '';
   };
 }

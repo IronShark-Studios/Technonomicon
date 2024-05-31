@@ -84,16 +84,9 @@
 
 
         $mainMod = SUPER
-        $browser = firefox
 
-
-        bind = $mainMod, F, exec, $editor
-        bind = $mainMod, V, togglefloating
-        bind = $mainMod, Z, pseudo, # dwindle
-        bind = $mainMod, J, togglesplit, # dwindle
-
-        bind = $mainMod, S, exec, $browser
-        bind = $mainMod SHIFT, S, exec, hyprctl dispatch pass yy
+        bind = $mainMod, S, exec, firefox
+        bind = $mainMod SHIFT, S, exec, emacsclient -c -e "(eww-brower-url \"$(wl-paste)\")"
 
         bind = $mainMod, T, exec, alacritty
         bind = $mainMod SHIFT, T, exec, emacsclient -c
@@ -115,10 +108,18 @@
         bind =, XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-
         bind =, XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 
+        bind = $mainMod, J, togglesplit,
+        bind = $mainMod SHIFT, J, togglefloating
+
         bind = $mainMod, left, movefocus, l
         bind = $mainMod, right, movefocus, r
         bind = $mainMod, up, movefocus, u
         bind = $mainMod, down, movefocus, d
+
+        bind = $mainMod, left, swapwindow, l
+        bind = $mainMod, right, swapwindow, r
+        bind = $mainMod, up, swapwindow, u
+        bind = $mainMod, down, swapwindow, d
 
         bind = $mainMod, 1, workspace, 1
         bind = $mainMod, 2, workspace, 2
@@ -129,7 +130,6 @@
         bind = $mainMod, 7, workspace, 7
         bind = $mainMod, 8, workspace, 8
         bind = $mainMod, 9, workspace, 9
-        bind = $mainMod, 0, workspace, 10
 
         bind = $mainMod SHIFT, 1, movetoworkspace, 1
         bind = $mainMod SHIFT, 2, movetoworkspace, 2
@@ -140,10 +140,27 @@
         bind = $mainMod SHIFT, 7, movetoworkspace, 7
         bind = $mainMod SHIFT, 8, movetoworkspace, 8
         bind = $mainMod SHIFT, 9, movetoworkspace, 9
-        bind = $mainMod SHIFT, 0, movetoworkspace, 10
 
-        bind = $mainMod, M, togglespecialworkspace, magic
-        bind = $mainMod SHIFT, M, movetoworkspace, special:magic
+        bind = $mainMod ALT, 1, movecurrentworkspacetomonitor, 1
+        bind = $mainMod ALT, 2, movecurrentworkspacetomonitor, 2
+        bind = $mainMod ALT, 3, movecurrentworkspacetomonitor, 3
+        bind = $mainMod ALT, 4, movecurrentworkspacetomonitor, 4
+        bind = $mainMod ALT, 5, movecurrentworkspacetomonitor, 5
+        bind = $mainMod ALT, 6, movecurrentworkspacetomonitor, 6
+        bind = $mainMod ALT, 7, movecurrentworkspacetomonitor, 7
+        bind = $mainMod ALT, 8, movecurrentworkspacetomonitor, 8
+        bind = $mainMod ALT, 9, movecurrentworkspacetomonitor, 9
+
+        bind = $mainMod, 0, togglespecialworkspace, magic
+        bind = $mainMod SHIFT, 0, movetoworkspace, special:magic
+
+        bind = $mainMod, e, resizeactive, 10 0
+        bind = $mainMod, n, resizeactive, -10 0
+        bind = $mainMod, u, resizeactive, 0 -10
+        bind = $mainMod, l, resizeactive, 0 10
+
+        bind = $mainMod, M, fullscreen, 0
+        bind = $mainMod SHIFT, M, fakefullscreen
 
         bindm = $mainMod, mouse:272, movewindow
         bindm = $mainMod, mouse:273, resizewindow

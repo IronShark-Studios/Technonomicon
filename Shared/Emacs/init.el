@@ -217,6 +217,10 @@
   (forward-paragraph)
   (evil-scroll-line-to-center nil))
 
+(defun Tn/interactive-clipboard-yank ()
+  (interactive)
+  (clipboard-yank))
+
 (defun Tn/backward-paragraph-and-center ()
   (interactive)
   (backward-paragraph)
