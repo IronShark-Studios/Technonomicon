@@ -86,7 +86,7 @@
         $mainMod = SUPER
 
         bind = $mainMod, S, exec, firefox
-        bind = $mainMod SHIFT, S, exec, emacsclient -c -e "(eww-brower-url \"$(wl-paste)\")"
+        bind = $mainMod SHIFT, S, exec, emacsclient -c -e "(eww-browse-url \"$(wl-paste)\")"
 
         bind = $mainMod, T, exec, alacritty
         bind = $mainMod SHIFT, T, exec, emacsclient -c
@@ -116,10 +116,10 @@
         bind = $mainMod, up, movefocus, u
         bind = $mainMod, down, movefocus, d
 
-        bind = $mainMod, left, swapwindow, l
-        bind = $mainMod, right, swapwindow, r
-        bind = $mainMod, up, swapwindow, u
-        bind = $mainMod, down, swapwindow, d
+        bind = $mainMod SHIFT, left, swapwindow, l
+        bind = $mainMod SHIFT, right, swapwindow, r
+        bind = $mainMod SHIFT, up, swapwindow, u
+        bind = $mainMod SHIFT, down, swapwindow, d
 
         bind = $mainMod, 1, workspace, 1
         bind = $mainMod, 2, workspace, 2
