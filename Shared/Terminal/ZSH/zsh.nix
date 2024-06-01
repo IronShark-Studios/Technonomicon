@@ -34,6 +34,21 @@
       eval "$(zoxide init zsh)"
       bindkey -a 'm' vi-backward-char
       printf '\n%.0s' {1..100}
+
+set-long-prompt() { PROMPT='%~%# ' }
+precmd_functions=(set-long-prompt)
+
+set-short-prompt() {
+  if [[ $PROMPT != '%# ' ]]; then
+    PROMPT='%#\n '
+    zle .reset-prompt
+  fi
+}
+
+zle-line-finish() { set-short-prompt }
+zle -N zle-line-finish
+
+trap 'set-short-prompt; return 130' INT
     '';
   };
 }
