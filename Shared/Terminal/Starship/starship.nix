@@ -19,7 +19,7 @@
 
           [cmd_duration]
           style = "#f9a600"
-          format = "[](fg:black bg:#f9a600)[祥$duration](bg:$style fg:black)[](fg:$style)"
+          format = "[](fg:black bg:#f9a600)[$duration](bg:$style fg:black)[](fg:$style)"
 
           [directory]
           style = "#c05303"
@@ -43,16 +43,17 @@
           [git_status]
           style = "#d8712c"
           format = "(\b[ ](bg:$style fg:black)$conflicted$staged$modified$renamed$deleted$untracked$stashed$ahead_behind[](fg:$style))"
-          conflicted = "[ ](bold fg:88 bg:#d8712c)[  ](fg:black bg:#d8712c)"
-          staged = "[](fg:black bg:#d8712c)"
-          modified = "[](fg:black bg:#d8712c)"
-          renamed = "[](fg:black bg:#d8712c)"
-          deleted = "[](fg:black bg:#d8712c)"
-          untracked = "[?](fg:black bg:#d8712c)"
-          stashed = "[](fg:black bg:#d8712c)"
-          ahead = "[](fg:#523333 bg:#d8712c)"
-          behind = "[](fg:black bg:#d8712c)"
-          diverged = "[](fg:88 bg:#d8712c)[נּ](fg:black bg:#d8712c)[](fg:black bg:#d8712c)[](fg:black bg:#d8712c)"
+          conflicted = "[  ](bold fg:88 bg:#d8712c)[  ](fg:black bg:#d8712c)"
+          staged = "[  ](fg:black bg:#d8712c)"
+          modified = "[  ](fg:black bg:#d8712c)"
+          renamed = "[  ](fg:black bg:#d8712c)"
+          deleted = "[  ](fg:black bg:#d8712c)"
+          untracked = "[ ? ](fg:black bg:#d8712c)"
+          stashed = "[  ](fg:black bg:#d8712c)"
+          ahead = "[  ](fg:#523333 bg:#d8712c)"
+          behind = "[  ](fg:black bg:#d8712c)"
+          diverged = "[  ](fg:88 bg:#d8712c)[ נּ ](fg:black bg:#d8712c)[  ](fg:black bg:#d8712c)[  ](fg:black bg:#d8712c)"
+
    '';
   };
 }
