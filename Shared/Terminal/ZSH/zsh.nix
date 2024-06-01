@@ -50,7 +50,7 @@
       zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
       zstyle ':fzf-tab:*' switch-group '<' '>'
 
-      autoload -U compinit && compinit
+      autoload -U compinit; compinit
       source ~/.zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 
       eval "$(zoxide init zsh)"
