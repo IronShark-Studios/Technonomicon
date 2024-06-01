@@ -44,16 +44,16 @@
           [git_status]
           style = "#d8712c"
           format = "(\b[ ](bg:$style fg:black)$conflicted$staged$modified$renamed$deleted$untracked$stashed$ahead_behind[](fg:$style))"
-          conflicted = "[ ](bold fg:88 bg:#d8712c)[  \${count} ](fg:black bg:#d8712c)"
-          staged = "[ \${count} ](fg:black bg:#d8712c)"
-          modified = "[ \${count} ](fg:black bg:#d8712c)"
-          renamed = "[ \${count} ](fg:black bg:#d8712c)"
-          deleted = "[ \${count} ](fg:black bg:#d8712c)"
-          untracked = "[?\${count} ](fg:black bg:#d8712c)"
-          stashed = "[ \${count} ](fg:black bg:#d8712c)"
-          ahead = "[ \${count} ](fg:#523333 bg:#d8712c)"
-          behind = "[ \${count} ](fg:black bg:#d8712c)"
-          diverged = "[ ](fg:88 bg:#d8712c)[ נּ ](fg:black bg:#d8712c)[ \${ahead_count} ](fg:black bg:#d8712c)[ \${behind_count} ](fg:black bg:#d8712c)"
+          conflicted = "[ ](bold fg:88 bg:#d8712c)[  ](fg:black bg:#d8712c)"
+          staged = "[](fg:black bg:#d8712c)"
+          modified = "[](fg:black bg:#d8712c)"
+          renamed = "[](fg:black bg:#d8712c)"
+          deleted = "[](fg:black bg:#d8712c)"
+          untracked = "[?](fg:black bg:#d8712c)"
+          stashed = "[](fg:black bg:#d8712c)"
+          ahead = "[](fg:#523333 bg:#d8712c)"
+          behind = "[](fg:black bg:#d8712c)"
+          diverged = "[](fg:88 bg:#d8712c)[נּ](fg:black bg:#d8712c)[](fg:black bg:#d8712c)[](fg:black bg:#d8712c)"
    '';
   };
 }
