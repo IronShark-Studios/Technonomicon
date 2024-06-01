@@ -35,20 +35,35 @@
       bindkey -a 'm' vi-backward-char
       printf '\n%.0s' {1..100}
 
-set-long-prompt() { PROMPT='%~%# ' }
-precmd_functions=(set-long-prompt)
+zle-line-init() {
+  emulate -L zsh
 
-set-short-prompt() {
-  if [[ $PROMPT != '%# ' ]]; then
-    PROMPT='%# '
-    zle .reset-prompt
-  fi
-}
+  [[ $CONTEXT == start ]] || return 0
 
-zle-line-finish() { set-short-prompt }
-zle -N zle-line-finish
+  while true; do
+    zle .recursive-edit
+    local -i ret=$?
+    [[ $ret == 0 && $KEYS == $'\4' ]] || break
+    [[ -o ignore_eof ]] || exit 0
+  done
 
-trap 'set-short-prompt; return 130' INT
+  local saved_prompt=$PROMPT
+  local saved_rprompt=$RPROMPT
+  PROMPT='%# '
+  RPROMPT=''\''
+      zle .reset-prompt
+      PROMPT=$saved_prompt
+        RPROMPT=$saved_rprompt
+
+          if (( ret )); then
+            zle .send-break
+          else
+            zle .accept-line
+              fi
+              return ret
+  }
+
+    zle -N zle-line-init
     '';
-  };
+};
 }
