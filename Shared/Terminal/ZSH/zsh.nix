@@ -23,6 +23,7 @@
         src = pkgs.fetchFromGitHub {
           owner = "Aloxaf";
           repo = "fzf-tab";
+          rev = "v1.1.2";
         };
       }
     ];
