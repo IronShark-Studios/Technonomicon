@@ -36,6 +36,11 @@
       zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
       zstyle ':completion:*' menu no
 
+zstyle ':completion:*:git-checkout:*' sort false
+zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:*' switch-group '<' '>'
+
       autoload -Uz compinit && compinit
       eval "$(zoxide init zsh)"
       eval "$(fzf --zsh)"
