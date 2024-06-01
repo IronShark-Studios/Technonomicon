@@ -9,9 +9,12 @@
       "copypath"
       "copyfile"
       "cp"
+      "git"
       "zoxide"
       "colemak"
       "fzf"
+      "sudo"
+      "command-not-found"
     ];
     extraConfig = ''
       '';
