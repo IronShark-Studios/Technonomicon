@@ -40,7 +40,7 @@ precmd_functions=(set-long-prompt)
 
 set-short-prompt() {
   if [[ $PROMPT != '%# ' ]]; then
-    PROMPT='%#\n '
+    PROMPT='%# '
     zle .reset-prompt
   fi
 }
