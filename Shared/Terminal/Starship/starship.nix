@@ -17,7 +17,7 @@
 
           [cmd_duration]
           style = "#f9a600"
-          format = "[](fg:black bg:#f9a600)[  $duration](bg:$style fg:black)[](fg:$style)"
+          right_format = "[](fg:black bg:#f9a600)[ $duration](bg:$style fg:black)[](fg:$style)"
 
           [directory]
           style = "#c05303"
