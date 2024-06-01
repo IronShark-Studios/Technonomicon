@@ -30,6 +30,17 @@
     initExtra = ''
       tmux -2Du
       autoload -Uz compinit && compinit
+      HISTSIZE=3000
+      HISTFILE=~/.zsh_history
+      SAVEHIST=$HISTSIZE
+      HISTDUP=erase
+      setopt appendhistory
+      setopt sharedhistory
+      setopt hist_ignore_space
+      setopt hist_ignore_all_dups
+      setopt hist_save_no_dups
+      setopt hist_ignore_dups
+      setopt hist_find_no_dups
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
       eval "$(zoxide init zsh)"
       bindkey -a 'm' vi-backward-char
