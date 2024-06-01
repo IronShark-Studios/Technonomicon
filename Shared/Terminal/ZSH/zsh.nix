@@ -17,6 +17,14 @@
           sha256 = "1lzrn0n4fxfcgg65v0qhnj7wnybybqzs4adz7xsrkgmcsr0ii8b7";
         };
       }
+      {
+        name = "fzf-tab";
+        file = "fzf-tab.plugin.zsh";
+        src = pkgs.fetchFromGitHub {
+          owner = "Aloxaf";
+          repo = "fzf-tab";
+          rev = "v1.1.2";
+          sha256 = "c7fb028ec0bbc1056c51508602dbd61b0f475ac3"}}
     ];
 
     history.ignoreAllDups = true;
