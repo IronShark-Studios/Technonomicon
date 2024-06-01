@@ -12,6 +12,7 @@
       "zoxide"
       "colemak"
       "fzf"
+      "fzf-tab"
     ];
     extraConfig = ''
       '';
