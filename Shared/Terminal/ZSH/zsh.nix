@@ -42,13 +42,13 @@
 
       printf '\n%.0s' {1..100}
 
-      zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-      zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
       zstyle ':completion:*' menu no
+      zstyle ':fzf-tab:*' switch-group '<' '>'
       zstyle ':completion:*:git-checkout:*' sort false
       zstyle ':completion:*:descriptions' format '[%d]'
+      zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+      zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
       zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-      zstyle ':fzf-tab:*' switch-group '<' '>'
 
       eval "$(zoxide init zsh)"
       eval "$(fzf --zsh)"

@@ -2,6 +2,7 @@
 
   programs.zsh.shellAliases = {
     cd = "z";
+    ca = "clear";
     cpa = "cp -f -r";
     lx = "ls -l -c -a";
     ll = "ls -l -c";
@@ -17,8 +18,9 @@
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old && rebuild";
     devEnv = "nix develop -c zsh";
-    cd-tn = "cd ~/Projects/Technonomicon";
-    cd-ps = "cd ~/Projects/Personal-Blog/content/posts";
-    cd-dl = "cd ~/Downloads";
+    tn = "cd ~/Projects/Technonomicon";
+    ps = "cd ~/Projects/Personal-Blog/content/posts";
+    pj = "cd ~/Projects";
+    dl = "cd ~/Downloads";
   };
 }
