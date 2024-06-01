@@ -49,7 +49,7 @@ zle-line-init() {
 
   local saved_prompt=$PROMPT
   local saved_rprompt=$RPROMPT
-  PROMPT='󰜵# '
+  PROMPT='󰜵 '
   RPROMPT=''\''
       zle .reset-prompt
       PROMPT=$saved_prompt
