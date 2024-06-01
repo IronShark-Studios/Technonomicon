@@ -16,7 +16,11 @@ foreground = "#C5C8C6"
 
 [[keyboard.bindings]]
 action = "ToggleViMode"
-key = "U"
+key = "Escape"
+
+[[keyboard.bindings]]
+action = "ToggleViMode"
+key = "A"
 mode = "Vi"
 
 [[keyboard.bindings]]
