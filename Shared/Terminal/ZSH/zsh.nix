@@ -42,6 +42,7 @@
       setopt hist_ignore_dups
       setopt hist_find_no_dups
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+      zstyle ':completion:*' list-color "${(s.:.)LS_COLORS}"
       eval "$(zoxide init zsh)"
       bindkey -a 'm' vi-backward-char
       printf '\n%.0s' {1..100}
