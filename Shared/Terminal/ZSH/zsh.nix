@@ -24,7 +24,9 @@
           owner = "Aloxaf";
           repo = "fzf-tab";
           rev = "v1.1.2";
-          sha256 = "c7fb028ec0bbc1056c51508602dbd61b0f475ac3"}}
+          sha256 = "c7fb028ec0bbc1056c51508602dbd61b0f475ac3"
+        };
+      }
     ];
 
     history.ignoreAllDups = true;
