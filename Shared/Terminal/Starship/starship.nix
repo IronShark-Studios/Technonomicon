@@ -8,6 +8,8 @@
   home.file."starship-theme" = {
    target = ".config/starship.toml";
    text = ''
+          right_format = """cmd_duration"""
+
           [time]
           disabled = true
 
@@ -17,7 +19,7 @@
 
           [cmd_duration]
           style = "#f9a600"
-          right_format = "[](fg:black bg:#f9a600)[ $duration](bg:$style fg:black)[](fg:$style)"
+          format = "[](fg:black bg:#f9a600)[ $duration](bg:$style fg:black)[](fg:$style)"
 
           [directory]
           style = "#c05303"
