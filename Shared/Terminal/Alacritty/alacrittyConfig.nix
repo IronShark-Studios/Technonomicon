@@ -15,16 +15,6 @@ background = "#20282f"
 foreground = "#C5C8C6"
 
 [[keyboard.bindings]]
-action = "ToggleViMode"
-key = "Space"
-mods = "Shift"
-
-[[keyboard.bindings]]
-action = "ToggleViMode"
-key = "U"
-mode = "Vi"
-
-[[keyboard.bindings]]
 action = "Left"
 key = "M"
 mode = "Vi"
@@ -50,7 +40,7 @@ mods = "Control"
 chars = "\u0017"
 
 [shell]
-program = "/home/xin/.nix-profile/bin/zsh"
+program = "/home/xin/.nix-profile/bin/tmux"
     '';
   };
 }
