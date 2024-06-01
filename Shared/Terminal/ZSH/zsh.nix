@@ -28,6 +28,7 @@
     };
 
     initExtra = ''
+      if [ -t 0 ] && [[ -z $TMUX ]] && [[ $- = *i* ]]; then exec tmux; fi
       autoload -Uz compinit && compinit
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
       eval "$(zoxide init zsh)"
