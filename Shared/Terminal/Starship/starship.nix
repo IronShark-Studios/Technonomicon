@@ -9,10 +9,9 @@
    target = ".config/starship.toml";
    text = ''
           command_timeout = 1000
-          right_format = """$time"""
 
           [time]
-          disabled = f
+          disabled = true
 
           [character]
           success_symbol = "[❯](#ff9400)"
