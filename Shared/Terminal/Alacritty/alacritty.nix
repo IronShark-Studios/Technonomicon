@@ -13,6 +13,7 @@
     nmon
     kmon
     rsync
+
     zoxide
     gparted
     pciutils
