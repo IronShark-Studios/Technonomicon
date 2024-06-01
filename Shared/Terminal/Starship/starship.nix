@@ -8,7 +8,7 @@
   home.file."starship-theme" = {
    target = ".config/starship.toml";
    text = ''
-          right_format = """cmd_duration"""
+          right_format = """$cmd_duration"""
 
           [time]
           disabled = true
