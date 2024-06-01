@@ -43,10 +43,12 @@
       setopt hist_save_no_dups
       setopt hist_ignore_dups
       setopt hist_find_no_dups
-      autoload -Uz compinit && compinit
+
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
       zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
+      zstyle ':completion:*' menu no
 
+      autoload -Uz compinit && compinit
       eval "$(zoxide init zsh)"
       eval "$(fzf --zsh)"
 
