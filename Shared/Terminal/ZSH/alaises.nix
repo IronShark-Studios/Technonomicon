@@ -17,7 +17,8 @@
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old && rebuild";
     devEnv = "nix develop -c zsh";
-    tn = "~/Projects/Technonomicon";
-    posts = "~/Projects/Personal-Blog/content/posts";
+    cd-tn = "cd ~/Projects/Technonomicon";
+    cd-ps = "cd ~/Projects/Personal-Blog/content/posts";
+    cd-dl = "cd ~/Downloads";
   };
 }
