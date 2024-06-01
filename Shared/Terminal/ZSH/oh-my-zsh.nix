@@ -11,8 +11,14 @@
       "cp"
       "zoxide"
       "colemak"
+      "fzf"
     ];
     extraConfig = ''
       '';
   };
+
+  home.packages = with pkgs; [
+    fzf
+    zsh-fzf-tab
+  ];
 }

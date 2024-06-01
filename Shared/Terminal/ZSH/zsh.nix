@@ -29,7 +29,9 @@
 
     initExtra = ''
       tmux -2Du
-      autoload -Uz compinit && compinit
+
+      printf '\n%.0s' {1..100}
+
       HISTSIZE=3000
       HISTFILE=~/.zsh_history
       SAVEHIST=$HISTSIZE
@@ -41,11 +43,14 @@
       setopt hist_save_no_dups
       setopt hist_ignore_dups
       setopt hist_find_no_dups
+      autoload -Uz compinit && compinit
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
       zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
+
       eval "$(zoxide init zsh)"
+      eval "$(fzf --zsh)"
+
       bindkey -a 'm' vi-backward-char
-      printf '\n%.0s' {1..100}
 
       zle-line-init() {
         emulate -L zsh
