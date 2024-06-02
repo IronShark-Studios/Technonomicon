@@ -6,9 +6,9 @@
       ueberzug
       graphicsmagick
       ffmpeg_7-full
-      ghostScript
-          (fetchgit { url = "https://github.com/slavistan/lf-gadgets";
-                      sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";})
+      ghostscript
+      (fetchgit { url = "https://github.com/slavistan/lf-gadgets";
+                  sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";})
     ];
 
     file = {
