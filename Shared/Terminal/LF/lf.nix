@@ -2,16 +2,15 @@
 
   programs.lf = {
     enable = true;
-    keybindings = {
-      n = "down";
-      e = "up";
-      "<enter>" = "open";
-      "<space>" = "updir";
-    };
     extraConfig = ''
 set hidden true
 set ignorecase true
 set icons true
+
+map n down
+map e up
+map <enter> open
+map <space> updir
     '';
   };
 }
