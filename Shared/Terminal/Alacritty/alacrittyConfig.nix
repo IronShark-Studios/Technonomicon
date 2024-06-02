@@ -8,7 +8,6 @@ size = 18.0
 
 [cursor]
 style = "Beam"
-unfocused_hollow = true
 
 [colors.cursor]
 background = "#5ec4ff"
