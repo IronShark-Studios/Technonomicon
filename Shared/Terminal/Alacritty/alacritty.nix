@@ -7,7 +7,7 @@
   };
 
   home.packages = with pkgs; [
-    ptop
+    htop-vim
     nmon
     kmon
     rsync
