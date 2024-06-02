@@ -8,7 +8,7 @@
   home.file = {
     file = {
       "lfrc" = {
-        target = "";
+        target = ".config/lf/lfrc";
         text = ''
 set hidden true
 set ignorecase true
@@ -21,7 +21,7 @@ map <space> updir
         '';
       };
       "lfrc-icons" = {
-        target = "";
+        target = ".config/lf/icons";
         text = ''
 # file types (with matching order)
 ln             # LINK
