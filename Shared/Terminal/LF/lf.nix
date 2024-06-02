@@ -24,7 +24,7 @@ map <space> updir
         '';
       };
 
-      "lfrc" = {
+      "lfrc-ueberzug" = {
         target = ".config/lf-ueberzug/lfrc-ueberzug";
         text = ''
 set previewer lf-ueberzug-previewer
