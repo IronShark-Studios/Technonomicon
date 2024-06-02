@@ -33,10 +33,10 @@ set cleaner lf-ueberzug-cleaner
       };
 
       "ueberzug-lf" = {
-        target = ".config/lf/lf-gadgets";
+        target = ".config/lf/lfimg";
         source = pkgs.fetchFromGitHub {
-          owner = "slavistan";
-          repo = "lf-gadgets";
+          owner = "thimc";
+          repo = "lfimg";
           rev = "master";
           sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";
         };
@@ -408,7 +408,7 @@ Vagrantfile             
     };
 
     sessionPath = [
-      ".config/lf/lf-gadgets/lf-ueberzug"
+      ".config/lf/lf-gadgets/lfimg/lfrun"
     ];
   };
 }
