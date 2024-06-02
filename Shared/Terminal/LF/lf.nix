@@ -6,7 +6,13 @@
       ueberzug
       graphicsmagick
       ffmpeg_7-full
+      ffmpegthumbnailer
+      imagemagick
+      epub-thumbnailer
+      wkhtmltopdf
       ghostscript
+      bat
+      chafa
     ];
 
     file = {
