@@ -7,8 +7,6 @@
       graphicsmagick
       ffmpeg_7-full
       ghostscript
-      (fetchgit { url = "https://github.com/slavistan/lf-gadgets";
-                  sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";})
     ];
 
     file = {
@@ -24,6 +22,15 @@ map e up
 map <enter> open
 map <space> updir
         '';
+      };
+
+      "ueberzug-lf" = {
+        target = ".config/lf/ueberzug-lf";
+        src = pkgs.fetchFromGitHub {
+          owner = "slavistan";
+          repo = "lf-gadgets";
+          sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";
+        };
       };
 
       "lfrc-icons" = {
@@ -390,5 +397,7 @@ Vagrantfile             
         '';
       };
     };
+
+    sessionPath = [];
   };
 }
