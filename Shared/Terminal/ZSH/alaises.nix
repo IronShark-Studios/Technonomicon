@@ -3,6 +3,7 @@
   programs.zsh.shellAliases = {
     cd = "z";
     ca = "clear";
+    lf = "lfrun";
     cpa = "cp -f -r";
     lx = "ls -l -c -a";
     ll = "ls -l -c";

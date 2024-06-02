@@ -6,6 +6,11 @@
 [font]
 size = 18.0
 
+[cursor]
+style = "Beam"
+blinking = "On"
+unfocused_hollow = "true"
+
 [colors.cursor]
 background = "#5ec4ff"
 text = "#f8f8f2"
