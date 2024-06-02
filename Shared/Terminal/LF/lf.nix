@@ -32,7 +32,7 @@ map <space> updir
           owner = "thimc";
           repo = "lfimg";
           rev = "master";
-          sha256 = "";
+          sha256 = "PA0risD2PLAy3Y51bexMTSszGnUgn05h/ZNXa/HiU8E=";
         };
       };
 
