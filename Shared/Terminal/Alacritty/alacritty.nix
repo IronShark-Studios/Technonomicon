@@ -7,17 +7,19 @@
   };
 
   home.packages = with pkgs; [
-    btop
-    htop
+    ptop
     nmon
     kmon
     rsync
-
     zoxide
     gparted
     pciutils
     fastfetch
     udiskie
     trash-cli
+    ripgrep
+    ripgrep-all
+    fd
+    eza
   ];
 }

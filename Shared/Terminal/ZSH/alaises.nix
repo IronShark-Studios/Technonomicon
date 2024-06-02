@@ -4,6 +4,7 @@
     cd = "z";
     ca = "clear";
     lf = "lfrun";
+    cat = "bat";
     cpa = "cp -f -r";
     lx = "ls -l -c -a";
     ll = "ls -l -c";
