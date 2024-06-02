@@ -46,8 +46,6 @@
 
       printf '\n%.0s' {1..100}
 
-      shopt -s cdable_vars
-
       zstyle ':completion:*' menu no
       zstyle ':fzf-tab:*' switch-group '<' '>'
       zstyle ':completion:*:git-checkout:*' sort false
