@@ -21,6 +21,7 @@
 set hidden true
 set ignorecase true
 set icons true
+set mouse true
 set previewer ~/.config/lf/lfimg/preview
 set cleaner ~/.config/lf/lfimg/cleaner
 
