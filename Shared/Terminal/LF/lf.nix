@@ -399,6 +399,8 @@ Vagrantfile             
       };
     };
 
-    sessionPath = [];
+    sessionPath = [
+      ".config/lf/lf-gadgets/lf-ueberzug"
+    ];
   };
 }
