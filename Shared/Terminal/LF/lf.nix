@@ -26,10 +26,10 @@ map <space> updir
 
       "ueberzug-lf" = {
         target = ".config/lf/ueberzug-lf";
-        src = pkgs.fetchFromGitHub {
+        source = pkgs.fetchFromGitHub {
           owner = "slavistan";
           repo = "lf-gadgets";
-          rev = "0";
+          rev = "";
           sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";
         };
       };
