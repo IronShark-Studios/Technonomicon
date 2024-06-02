@@ -25,7 +25,7 @@ map <space> updir
       };
 
       "ueberzug-lf" = {
-        target = ".config/lf/ueberzug-lf";
+        target = ".config/lf/ueberzug-gadgets";
         source = pkgs.fetchFromGitHub {
           owner = "slavistan";
           repo = "lf-gadgets";
