@@ -42,10 +42,10 @@
 
       printf '\n%.0s' {1..100}
 
-      hash -d tn=Projects/Technonomicon
-      hash -d ps=Projects/Personal-Blog/content/posts
-      hash -d pj=Projects
-      hash -d dl=Downloads
+      hash -d tn=~/Projects/Technonomicon
+      hash -d ps=~/Projects/Personal-Blog/content/posts
+      hash -d pj=~/Projects
+      hash -d dl=~/Downloads
 
       zstyle ':completion:*' menu no
       zstyle ':fzf-tab:*' switch-group '<' '>'
