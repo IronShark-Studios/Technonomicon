@@ -19,6 +19,21 @@ map <enter> open
 map <space> updir
         '';
       };
+
+      "lf-uberzug" = {
+        target = "test-1";
+        source = pkgs.fetchFromGitHub {
+          owner = "chisui";
+          repo = "zsh-nix-shell";
+          rev = "v0.8.0";
+          sha256 = "1lzrn0n4fxfcgg65v0qhnj7wnybybqzs4adz7xsrkgmcsr0ii8b7";
+        };
+      };
+
+
+
+
+
       "lfrc-icons" = {
         target = ".config/lf/icons";
         text = ''
