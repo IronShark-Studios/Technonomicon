@@ -29,7 +29,7 @@ map <space> updir
         src = pkgs.fetchFromGitHub {
           owner = "slavistan";
           repo = "lf-gadgets";
-          rev = "";
+          rev = "0";
           sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";
         };
       };
