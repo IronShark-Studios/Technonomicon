@@ -9,7 +9,6 @@
       ffmpegthumbnailer
       imagemagick
       epub-thumbnailer
-      wkhtmltopdf
       ghostscript
       bat
       chafa
