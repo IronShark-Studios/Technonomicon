@@ -24,6 +24,14 @@ map <space> updir
         '';
       };
 
+      "lfrc" = {
+        target = ".config/lf-ueberzug/lfrc-ueberzug";
+        text = ''
+set previewer lf-ueberzug-previewer
+set cleaner lf-ueberzug-cleaner
+        '';
+      };
+
       "ueberzug-lf" = {
         target = ".config/lf/lf-gadgets";
         source = pkgs.fetchFromGitHub {
