@@ -16,6 +16,8 @@
 set hidden true
 set ignorecase true
 set icons true
+set previewer ~/.config/lf/lfimg/preview
+set cleaner ~/.config/lf/lfimg/cleaner
 
 map n down
 map e up
@@ -24,21 +26,13 @@ map <space> updir
         '';
       };
 
-      "lfrc-ueberzug" = {
-        target = ".config/lf-ueberzug/lfrc-ueberzug";
-        text = ''
-set previewer lf-ueberzug-previewer
-set cleaner lf-ueberzug-cleaner
-        '';
-      };
-
-      "ueberzug-lf" = {
+      "lfimg" = {
         target = ".config/lf/lfimg";
         source = pkgs.fetchFromGitHub {
           owner = "thimc";
           repo = "lfimg";
           rev = "master";
-          sha256 = "jm8NmvFLlrmi7ZDbDQE503rkEQdlGoh1Uwv27axFMJw=";
+          sha256 = "";
         };
       };
 
