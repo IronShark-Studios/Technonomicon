@@ -407,7 +407,7 @@ Vagrantfile             
     };
 
     sessionPath = [
-      ".config/lf/lf-gadgets/lfimg/lfrun"
+      ".config/lf/lfimg/lfrun"
     ];
   };
 }
