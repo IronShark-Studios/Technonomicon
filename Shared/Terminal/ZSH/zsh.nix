@@ -35,16 +35,17 @@
     sessionVariables = {
       SUDO_EDITOR = "\"emacsclient -n -c\"";
       NIXOS_GENERATION = "$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | tail -n 1 | sed 's/(current)//')";
-      tn = "~/Projects/Technonomicon";
-      ps = "~/Projects/Personal-Blog/content/posts";
-      pj = "~/Projects";
-      dl = "~/Downloads";
     };
 
     initExtra = ''
       tmux -2Du
 
       printf '\n%.0s' {1..100}
+
+      hash -d tn=~/Projects/Technonomicon
+      hash -d ps=~/Projects/Personal-Blog/content/posts
+      hash -d pj=~/Projects
+      hash -d dl=~/Downloads
 
       zstyle ':completion:*' menu no
       zstyle ':fzf-tab:*' switch-group '<' '>'
