@@ -65,10 +65,12 @@ fi             # FILE
 *.ejs           
 *.css           
 *.less          
-*.md            
-*.mdx           
-*.markdown      
-*.rmd           
+*.md            
+*.mdx           
+*.markdown      
+*.rmd           
+*.lock          
+*.org           
 *.json          
 *.webmanifest   
 *.js            
