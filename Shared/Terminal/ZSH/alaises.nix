@@ -5,9 +5,14 @@
     ca = "clear";
     lf = "lfrun";
     cat = "bat";
-    cpa = "cp -f -r";
-    lx = "ls -l -c -a";
-    ll = "ls -l -c";
+    find = "fd";
+    grep = "rg";
+    cpa = "rsync --force --recursive --progress";
+    lx = "eza --icons --oneline --group-directories-first --color auto --all";
+    ld = "eza --icons --oneline --group-directories-first --color auto --tree";
+    lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";
+    ll = " eza --icons --oneline --group-directories-first --color auto";
+    ls = "eza --icons --oneline --group-directories-first --color auto --long";
     rma = "sudo trash-put";
     arc-sync = "bash /etc/scripts/update-archives.sh";
     power-off = "sudo trash-put ~/Downloads/* & trash-empty & sudo shutdown -h now";
