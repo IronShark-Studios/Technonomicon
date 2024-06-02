@@ -6,10 +6,9 @@
 
 
   home.file = {
-    file = {
-      "lfrc" = {
-        target = ".config/lf/lfrc";
-        text = ''
+    "lfrc" = {
+      target = ".config/lf/lfrc";
+      text = ''
 set hidden true
 set ignorecase true
 set icons true
@@ -19,10 +18,10 @@ map e up
 map <enter> open
 map <space> updir
         '';
-      };
-      "lfrc-icons" = {
-        target = ".config/lf/icons";
-        text = ''
+    };
+    "lfrc-icons" = {
+      target = ".config/lf/icons";
+      text = ''
 # file types (with matching order)
 ln             # LINK
 or             # ORPHAN
@@ -380,7 +379,7 @@ Vagrantfile             
 # other formats
 *.pdf   
         '';
-      };
+    };
     };
   };
 }
