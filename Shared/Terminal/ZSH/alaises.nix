@@ -3,7 +3,7 @@
   programs.zsh.shellAliases = {
     cd = "z";
     ca = "clear";
-    lf = "lfrun";
+    lf = "bash ~/.config/lf/lfrun";
     cat = "bat";
     find = "fd";
     grep = "rg";
@@ -25,9 +25,5 @@
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old && rebuild";
     devEnv = "nix develop -c zsh";
-    tn = "cd ~/Projects/Technonomicon";
-    ps = "cd ~/Projects/Personal-Blog/content/posts";
-    pj = "cd ~/Projects";
-    dl = "cd ~/Downloads";
   };
 }
