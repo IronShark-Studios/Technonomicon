@@ -5,7 +5,7 @@
       lf
     ];
 
-    home.file = {
+    file = {
       "lfrc" = {
         target = ".config/lf/lfrc";
         text = ''
@@ -381,4 +381,5 @@ Vagrantfile             
         '';
       };
     };
+  };
 }
