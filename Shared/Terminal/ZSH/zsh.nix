@@ -76,7 +76,7 @@
         done
 
       local NEWLINE=$'\n'
-      local saved_prompt="${NEWLINE}$PROMPT"
+      local saved_prompt="\${NEWLINE}$PROMPT"
       local saved_rprompt=$RPROMPT
 
         PROMPT=' 󰜵 '
