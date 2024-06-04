@@ -75,9 +75,11 @@
           [[ -o ignore_eof ]] || exit 0
         done
 
-        local saved_prompt="$PROMPT"
+      local NEWLINE=$'\n'
+      local saved_prompt="${NEWLINE}$PROMPT"
       local saved_rprompt=$RPROMPT
-        PROMPT=' ''\\\n 󰜵 '
+
+        PROMPT=' 󰜵 '
           RPROMPT=''\''
             zle .reset-prompt
             PROMPT=$saved_prompt
