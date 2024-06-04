@@ -78,7 +78,7 @@
         local saved_prompt=$PROMPT
         local saved_rprompt=$RPROMPT
         PROMPT='󰜵 '
-        RPROMPT=''\''
+        RPROMPT=\''\''
             zle .reset-prompt
             PROMPT=$saved_prompt
               RPROMPT=$saved_rprompt
