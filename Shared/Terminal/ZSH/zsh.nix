@@ -79,7 +79,7 @@
         local saved_prompt=$PROMPT
       local saved_rprompt=$RPROMPT
 
-        PROMPT='Line1''\${NEWLINE}LINE2 󰜵 '
+        PROMPT='󰜵 ''\${NEWLINE} 󰜵 '
           RPROMPT=''\''
             zle .reset-prompt
             PROMPT=$saved_prompt
