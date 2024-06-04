@@ -145,7 +145,6 @@
 - [ ] [[https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html][Clocking Time With Org-Mode]]
 - [ ] [[https://melpa.org/#/org-pomodoro][Work Cycling with Org Pomodoro]]
 * Long Term
-*** TODO [#B] Finalize dot file management with hm-flakes
 *** TODO Configure remote access to network storage
 ***** TODO configure document storage
 - [ ] install calibre
@@ -162,14 +161,12 @@
 *** TODO Emacs-Perspectives for layout management
 - https://systemcrafters.net/effective-emacs-workflow/declutter-your-buffers-perspective-el/
 *** TODO Configure org-wild-notifier or other agenda notification apps
-*** TODO Replace Burly Bookmarks with Perspectives
 *** TODO Integrate Google Drive with Emacs
 - https://emacsnotes.wordpress.com/2018/07/08/your-google-drive-now-within-your-emacs/
 *** TODO Add additional settings to evil slide hydra as needed
 - [ ] jump forward / back by sexp
 *** TODO Finalize =README.org=
 *** TODO Integrate agenda with google calendar
-*** TODO Fix unclutter cursor hiding
 *** TODO Create code that tracks org habit streaks
 *** TODO add Emacs startup dash board
 - https://github.com/rakanalh/emacs-dashboard
@@ -182,7 +179,6 @@
 *** TODO Find a way to do multi cursor insert with Emacs
 *** DONE Configure =org-tag-alist= to use hydras. For more efficient tags
 - State "DONE"       from "TODO"       [2024-02-10 Sat 17:32]
-*** TODO Write new blog article on config refactor
 *** TODO Look into Modifying core system
 ***** TODO Repeatable disk partitioning using a machine specific script.
 ***** TODO Use of Zen kernel with older normal kernel fallback
@@ -268,9 +264,6 @@
 ***** TODO SSDM
 ***** TODO OpenSCAD
 *** TODO Find a free and feature matched self hoasted alternative to gsuite, and bitwarden
-*** TODO Find a better way to ID active buffer
-- Create a secondary modeline that is only a 2px colored line. that goes gray when buffer is inactive.
-- https://www.youtube.com/watch?v=Qf_DLPIA9Cs
 *** TODO Add LLM Style Interaction
 - https://github.com/zerolfx/copilot.el
 *** TODO Learn How to Create Dev Env with Nix
@@ -281,20 +274,6 @@
 - https://www.youtube.com/watch?v=6Le0IbPRzOE&list=WL&index=81&t=1844s&pp=gAQBiAQB
 - https://www.youtube.com/watch?v=0uixRE8xlbY&list=WL&index=82&t=770s&pp=gAQBiAQB
 - https://www.youtube.com/watch?v=5XY3K8DH55M&list=WL&index=83&t=428s&pp=gAQBiAQB
-*** TODO Advanced EXWM Config
-- [[https://tech.toryanderson.com/2021/01/08/adding-a-new-monitor-to-my-exwm-setup/][Multi Monitor EXWM]]
-- [[https://github.com/johanwiden/exwm-setup#overview-of-the-setup][EXWM Example Config]]
-- [[https://sqrtminusone.xyz/posts/2022-01-03-exwm/][EXWM and Perspective]]
-- [[https://github.com/johanwiden/exwm-setup#overview-of-the-setup][EXWM Advanced Configuration]]
-***** TODO Add arrow key bindings to change buffer location in exwm
-***** TODO Review exwm prefix keys for unused, and additional needed
-***** TODO follow up on input simulation keys for exwm
-***** TODO create function to split window Vertically and Balance all windows in single button
-***** TODO create a function that adds to (C-c C-o) in scadmode so openscad opens in a new window to the right of current buffer (may not be needed with auto tilling)
-*** TODO refactor polybar
-- [ ] have only current workspace number show on bar
-- [ ]remove un-needed code
-- [ ]change name
 *** TODO Fitness and Nutrition Tracking with Emacs
 - https://gist.github.com/alphapapa/982467abc1bf29f57c5cd2c408a77bd5
 - https://gist.github.com/iocanel/0b8bcdb3d69fb7731069cb872f836507
@@ -400,7 +379,6 @@
 - [ ] Gnu go
 - [ ] gnu cash
   - if compatable with hledger
-*** TODO Improve emacs start times with lazy loading
 *** TODO Figure out how to integrate with phone
 **** TODO Orgzly to access todos from phone
 **** TODO Find a way to take voice notes and transcribe them into plain text
