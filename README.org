@@ -18,9 +18,6 @@ This repository holds all the configuration settings for my personal computers, 
 This configuration uses a custom layout for the ZSA Moonlander.
 
 *** Modifier Combos
-[[./keyboard-layer-1.jpg]]
-
-[[./keyboard-layer-2.jpg]]
 
 - Alt =R-S=
 - Alt Greater =I-E=
@@ -53,34 +50,8 @@ This configuration uses a custom layout for the ZSA Moonlander.
 - Left + Ctrl =L-N=
 
 *** Symbol Combos
-- ( =N-P=
-- [ =N-F=
-- { =N-W=
-- < =N-V=
-- $ =N-D=
-- @ =N-C=
-- : =N-G=
+Each key combination is the key with the symbol on it, combined with the =xxxxxx= key from the opposing hand. To output the actual symbol.
 
-- ) =E-P=
-- ] =E-F=
-- } =E-W=
-- > =E-V=
-- ! =E-D=
-- ? =E-C=
-- ' =E-G=
+[[./keyboard-layer-1.jpg]]
 
-- - =T-L=
-- + =T-U=
-- = =T-Y=
-- * =T-H=
-- / =T-,=
-- % =T-.=
-- ; =T-M=
-
-- | =S-l=
-- _ =S-U=
-- & =S-Y=
-- # =S-H=
-- ^ =S-,=
-- ~ =S-.=
-- " =S-M=
+[[./keyboard-layer-2.jpg]]
