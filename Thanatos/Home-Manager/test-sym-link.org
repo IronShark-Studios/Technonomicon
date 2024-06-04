@@ -4,3 +4,5 @@
 * WARNING:
 
 This file is a test to see if I can get out of store sym links working
+
+test write

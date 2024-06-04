@@ -3,7 +3,7 @@
   programs.zsh.shellAliases = {
     cd = "z";
     ca = "clear";
-    lf = "bash ~/.config/lf/lfrun";
+    lf = "bash ~/.config/lf/lfimg/lfrun";
     cat = "bat";
     find = "fd";
     grep = "rg";

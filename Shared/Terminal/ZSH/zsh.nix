@@ -76,22 +76,22 @@
         done
 
       local NEWLINE=$'\n'
-        local saved_prompt=$PROMPT
+      local saved_prompt=$PROMPT
       local saved_rprompt=$RPROMPT
 
-        PROMPT=' ''\${NEWLINE}󰜵 '
-          RPROMPT=''\''
-            zle .reset-prompt
-            PROMPT=$saved_prompt
-              RPROMPT=$saved_rprompt
+      PROMPT=' ''\${NEWLINE}󰜵 '
+      RPROMPT=''\''
+        zle .reset-prompt
+        PROMPT=$saved_prompt
+        RPROMPT=$saved_rprompt
 
-                if (( ret )); then
-                  zle .send-break
-                else
-                  zle .accept-line
-                    fi
-                    return ret
-  }
+         if (( ret )); then
+            zle .send-break
+         else
+            zle .accept-line
+         fi
+            return ret
+      }
 
           zle -N zle-line-init
     '';

@@ -18,6 +18,10 @@ This repository holds all the configuration settings for my personal computers, 
 This configuration uses a custom layout for the ZSA Moonlander.
 
 *** Modifier Combos
+[[./keyboard-layer-1.jpg]]
+
+[[./keyboard-layer-2.jpg]]
+
 - Alt =R-S=
 - Alt Greater =I-E=
 - Left Shift =P-F=
