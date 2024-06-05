@@ -14,44 +14,29 @@ This repository holds all the configuration settings for my personal computers, 
 - Thanatos: This directory holds all the files to configure NixOS for my work computer.
 - Artemis: This directory holds all the files to configure NixOS for my living room media center computer.
 
-* Key Combos
+* Key Board Layout
 This configuration uses a custom layout for the ZSA Moonlander.
+
+*** Main Layer
+
+[[./Media/keyboard-layer-main.jpg]]
+
+*** Number Layer
+
+[[./Media/keyboard-layer-number.jpg]]
 
 *** Modifier Combos
 
-- Alt =R-S=
-- Alt Greater =I-E=
-- Left Shift =P-F=
-- Right Shift =L-U=
-- Left Ctrl =F-W=
-- Right Ctrl =U-Y=
-- Left Super =D-C=
-- Right Super =,-.=
+[[./Media/keyboard-layer-modifier.jpg]]
 
 *** System Combos
-- Home =F-S=
-- End =S-D=
-- =T-V=
-- =R-C=
-- Esc =H-,=
-- ESC + Shift =H-,-V-D=
-- Tab =V-D=
-- Backspace + Ctrl =P-T=
-- Delete + Ctrl =W-R=
-- Enter =T-S=
-- Space =N-E=
 
-*** Arrow Combos
-- Up =U-E=
-- Down =E-,=
-- Left =N-H=
-- Right =I-.=
-- Right + Ctrl =Y-I=
-- Left + Ctrl =L-N=
+
+[[./Media/keyboard-layer-actions.jpg]]
 
 *** Symbol Combos
 Each key combination is the key with the symbol on it, combined with the =xxxxxx= key from the opposing hand. To output the actual symbol.
 
-[[./keyboard-layer-1.jpg]]
+[[./Media/keyboard-layer-1.jpg]]
 
-[[./keyboard-layer-2.jpg]]
+[[./Media/keyboard-layer-2.jpg]]
