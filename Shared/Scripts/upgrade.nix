@@ -5,6 +5,7 @@
     text = ''
       #!/bin/sh
 
+      cd ~tn
       git add .
       git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
       sudo nix flake update
@@ -12,6 +13,7 @@
       git add .
       git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
       git push
+      cd -
     '';
   };
 }

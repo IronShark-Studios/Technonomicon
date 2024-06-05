@@ -5,6 +5,7 @@
     text = ''
       #!/bin/sh
 
+      cd ~tn
       git add .
       git status
       sudo nixos-rebuild switch --impure --flake .#$HOSTNAME
@@ -12,6 +13,7 @@
       git push &&
       echo
       echo System Generation $NIXOS_GENERATION Active.
+      cd -
     '';
   };
 }

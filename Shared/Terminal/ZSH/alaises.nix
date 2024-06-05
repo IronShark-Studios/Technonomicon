@@ -2,18 +2,21 @@
 
   programs.zsh.shellAliases = {
     cd = "z";
-    ca = "clear";
+    ca = "clear && printf '\n%.0s' {1..100}";
     lf = "bash ~/.config/lf/lfimg/lfrun";
     cat = "bat";
-    find = "fd";
-    grep = "rg";
-    cpa = "rsync --force --recursive --progress";
+    fd = "fd -i";
+    fd-x = "fd --regex";
+    rg = "rg -i";
+    rg-x = "rg --regex";
+    cp = "rsync --force --recursive --progress";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
     ld = "eza --icons --oneline --group-directories-first --color auto --tree";
     lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";
     ll = " eza --icons --oneline --group-directories-first --color auto";
     ls = "eza --icons --oneline --group-directories-first --color auto --long";
-    rma = "sudo trash-put";
+    rm = "sudo trash-put";
+    rm-s = "sudo shred -f";
     arc-sync = "bash /etc/scripts/update-archives.sh";
     power-off = "sudo trash-put ~/Downloads/* & trash-empty & sudo shutdown -h now";
     logout = "sudo kill -9 -1";
