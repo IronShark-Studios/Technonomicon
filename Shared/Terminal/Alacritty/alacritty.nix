@@ -21,5 +21,6 @@
     ripgrep-all
     fd
     eza
+    entr
   ];
 }
