@@ -3,7 +3,7 @@
   programs.emacs = {
     enable = true;
     package = (pkgs.emacsWithPackagesFromUsePackage {
-      config = ./init.el;
+      config = ./Spacemacs/init.el;
       defaultInitFile = true;
       package = pkgs.emacs-unstable-pgtk;
       alwaysEnsure = true;
@@ -22,9 +22,9 @@
     ];
 
     file = {
-      emacs-init = {
-        source = ./init.el;
-        target = ".config/emacs/init.el";
+      ".config/emacs" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/Spacemacs";
+        recursive = true;
       };
     };
   };
