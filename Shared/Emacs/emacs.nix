@@ -2,23 +2,11 @@
 
   programs.emacs = {
     enable = true;
-    package = (pkgs.emacsWithPackagesFromUsePackage {
-      config = ./Spacemacs/init.el;
-      defaultInitFile = true;
-      package = pkgs.emacs-unstable-pgtk;
-      alwaysEnsure = true;
-      extraEmacsPackages = epkgs: with epkgs; [
-      ];
-    });
+    package = pkgs.emacs-unstable-pgtk;
   };
 
   home = {
     packages = with pkgs; [
-      fd
-      silver-searcher
-      hunspell
-      hunspellDicts.en_US-large
-      openscad-lsp
     ];
 
     file = {
