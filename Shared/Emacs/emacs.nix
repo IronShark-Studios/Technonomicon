@@ -15,6 +15,20 @@
     ];
 
     file = {
+      "spacemacs" = {
+        target = ".spacemacs";
+        source = ./spacemacs;
+      };
+
+      ".spacemacs.env" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs.env";
+      };
+
+      "Personal-Layers" = {
+        target = ".config/emacs/private";
+        source = ./Personal-Layers;
+        recursive = true;
+      };
     };
   };
 }

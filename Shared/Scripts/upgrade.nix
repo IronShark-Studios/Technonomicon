@@ -5,6 +5,10 @@
     text = ''
       #!/bin/sh
 
+      cd ~/.config/emacs
+      git pull
+      cd ~/Projects/Technonomicon
+
       git add .
       git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
       sudo nix flake update
