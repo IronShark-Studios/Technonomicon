@@ -1,6 +1,6 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
-  system.stateVersion = "23.05";
+  system.stateVersion = "24.05";
 
   imports = [
     ./hardware-configuration.nix
