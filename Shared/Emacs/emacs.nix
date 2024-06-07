@@ -21,9 +21,11 @@
       openscad-lsp
     ];
 
-    file.emacs-init = {
-      source = ./init.el;
-      target = ".config/emacs/init.el";
+    file = {
+      emacs-init = {
+        source = ./init.el;
+        target = ".config/emacs/init.el";
+      };
     };
   };
 }
