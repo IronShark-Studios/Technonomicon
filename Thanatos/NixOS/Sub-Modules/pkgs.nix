@@ -13,6 +13,9 @@
   fonts.packages = with pkgs; [
     nerdfonts
     iosevka
+    iosevka-comfy.comfy-wide-motion
+    iosevka-comfy.comfy-wide-motion-duo
+    sarasa-gothic
     overpass
     fira-code
     fira-go
