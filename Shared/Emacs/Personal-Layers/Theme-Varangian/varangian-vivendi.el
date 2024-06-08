@@ -1,2 +1,3 @@
 (setq modus-themes-vivendi-color-overrides
-      '((bg-main . "#e28743")))
+      '((bg-main . "#1f1f1f")
+        (magenta-cooler . "#ff0000")))
