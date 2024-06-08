@@ -15,9 +15,8 @@
     ];
 
     file = {
-      "spacemacs" = {
-        target = ".spacemacs";
-        source = ./spacemacs;
+      ".spacemacs" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs";
       };
 
       ".spacemacs.env" = {
