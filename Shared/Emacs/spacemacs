@@ -268,10 +268,7 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
-
-  (setq modus-vevendi-palette-overrides
-        '((bg-main "#333333")))
-)
+  )
 
 
 (defun dotspacemacs/user-load ()
@@ -279,7 +276,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 This function is called only while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included in the
 dump."
-)
+  )
 
 
 (defun dotspacemacs/user-config ()
@@ -288,6 +285,9 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+
+  (setq modus-vivendi-palette-overrides
+        '((bg-main "#333333")))
   )
 
 
