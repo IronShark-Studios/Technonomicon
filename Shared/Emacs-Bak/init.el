@@ -6,21 +6,6 @@
       warning-minimum-level ":error"
       visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
 
-(use-package doom-modeline
-  :init (doom-modeline-mode 1)
-  :custom ((doom-modeline-height 15)))
-
-(use-package doom-themes
-  :init (load-theme 'doom-city-lights t))
-
-(defadvice keyboard-escape-quit (around my-keyboard-escape-quit activate)
-  (let (orig-one-window-p)
-    (fset 'orig-one-window-p (symbol-function 'one-window-p))
-    (fset 'one-window-p (lambda (&optional nomini all-frames) t))
-    (unwind-protect
-        ad-do-it
-      (fset 'one-window-p (symbol-function 'orig-one-window-p)))))
-
 
 
 (use-package emojify)
@@ -49,28 +34,6 @@
   (ligature-set-ligatures 't ligatures-fixed)
   (global-ligature-mode t))
 
-(use-package aggressive-indent
-  :config
-  (global-aggressive-indent-mode 1))
-
-(use-package rainbow-delimiters
-  :init
-  (add-hook 'prog-mode-hook #'rainbow-delimiters-mode))
-
-(use-package smartparens
-  :init
-  (add-hook 'prog-mode-hook #'smartparens-mode)
-  (add-hook 'org-mode-hook #'smartparens-mode)
-  :config
-  (setq sp-show-pair-from-inside nil)
-  (require 'smartparens-config)
-  :diminish
-  smartparens-mode)
-
-
-(use-package evil-nerd-commenter
-  :after evil)
-
 (use-package sudo-edit
   :commands (sudo-edit))
 
@@ -86,48 +49,11 @@
 (use-package nix-mode
   :mode "\\.nix\\'")
 
-(use-package docker)
-
-(use-package dockerfile-mode)
-
-(use-package cmake-mode)
-
-(use-package bazel)
 
 (use-package page-break-lines
   :diminish
   :init (global-page-break-lines-mode))
 
-(use-package helm
-  :bind
-  (:map global-map
-        ("M-x" . helm-M-x)
-        ("C-x C-f" . helm-find-files)))
-(helm-mode 1)
-
-(setq helm-mode-fuzzy-match t)
-
-(setq _helm-exciting-buffer-regexp-list
-      (quote
-       ("\\*magit:"
-        )))
-
-(setq helm-boring-buffer-regexp-list
-      (quote
-       (  "\\Minibuf.+\\*"
-          "\\` "
-          "\\*.+\\*"
-          "\\magit-process:"
-          "\\magit-diff:"
-          )))
-
-(use-package helm-projectile
-  :after helm projectile)
-
-(use-package swiper-helm
-  :after helm
-  :bind
-  (:map helm-find-files-map ("<SPC>" . helm-find-files-up-one-level)))
 
 (defun Tn/evil-jump-character ()
   "moves point forward past the next character"
@@ -208,96 +134,6 @@
 
 (use-package harpoon
   :after evil)
-
-(use-package evil-collection
-  :after evil
-  :config
-  (evil-collection-init))
-
-(defun  Tn/evil-collection-colemak (_mode mode-keymaps &rest _rest)
-  (evil-collection-translate-key 'normal mode-keymaps
-    "m" "h"
-    "n" "j"
-    "e" "k"
-    "i" "l"
-    "h" "m"
-    "j" "n"
-    "k" "e"
-    "l" "i"
-    "w" "p"
-    "p" "w"))
-
-;; called after evil-collection makes its keybindings
-(add-hook 'evil-collection-setup-hook #'Tn/evil-collection-colemak)
-
-(use-package evil-colemak-basics
-  :after evil avy
-  :diminish global-evil-colemak-basis-mode
-  :init
-  (setq evil-colemak-basics-layout-mod 'mod-dh)
-  :config
-  (evil-mode 1)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> <RET>")
-              'harpoon-quick-menu-hydra)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> L")
-              'evil-redo)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> j")
-               'eval-last-sexp)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> J")
-               'comment-or-uncomment-region)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> p")
-               'evil-forward-WORD-end)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> P")
-               'evil-forward-WORD-begin)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> f")
-               'evil-backward-WORD-begin)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> F")
-               'evil-backward-WORD-end)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> s")
-              'avy-goto-char-in-line)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> t")
-              'Tn/avy-jump-and-center)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> w")
-               'evil-paste-after)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> W")
-               'evil-paste-before)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> <SPC>")
-              'swiper-helm)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> N")
-              'Tn/evil-pg-down-and-center)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> E")
-              'Tn/evil-pg-up-and-center)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> I")
-              'evil-jump-item)
-  (define-key evil-colemak-basics-keymap  (kbd "<normal-state> ;")
-              'helm-flyspell-correct)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> p")
-               'evil-forward-WORD-end)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> P")
-               'evil-forward-WORD-begin)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> f")
-               'evil-backward-WORD-begin)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> F")
-               'evil-backward-WORD-end)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> s")
-              'avy-goto-char-in-line)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> t")
-              'Tn/avy-jump-and-center)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> w")
-               'evil-paste-after)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> W")
-               'evil-paste-before)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> M")
-              'swiper-helm)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> N")
-              'Tn/evil-pg-down-and-center)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> E")
-              'Tn/evil-pg-up-and-center)
-  (define-key evil-colemak-basics-keymap  (kbd "<visual-state> I")
-              'evil-jump-item)
-  (evil-ex-define-cmd "q" 'kill-this-buffer) ;; ':q' kills active buffer
-  (evil-ex-define-cmd "Q" 'kill-buffer-and-window) ;; ':Q' kills buffer and window
-  (global-evil-colemak-basics-mode))
 
 (use-package company
   :diminish company-mode
@@ -541,33 +377,6 @@ If all failed, try to complete the common part with `company-complete-common'"
 
 (fset 'undo-auto-amalgamate 'ignore)
 
-(use-package magit)
-
-(defun Tn/save-and-magit ()
-  "Save the current buffer and call Magit status."
-  (interactive)
-  (save-buffer)
-  (magit-status))
-
-(use-package projectile
-  :init
-  (projectile-mode +1)
-  :config
-  ;; (setq  projectile-project-search-path '("~/Projects" "~/Grimoire"))
-  )
-
-
-(use-package helpful
-  :commands (helpful-callable helpful-variable helpful-command helpful-key)
-  :bind
-  ([remap describe-command] . helpful-command)
-  ([remap describe-key] . helpful-key))
-
-(use-package which-key
-  :diminish which-key-mode
-  :config
-  (which-key-mode)
-  (setq which-key-idle-delay 1))
 
 (use-package org-bullets
   :hook (org-mode . org-bullets-mode)
@@ -907,19 +716,13 @@ _f_: Physical Project  _d_: Digital Project
 -----------------------------------------------
 _o_: Out Going   _i_: In Coming
 _p_: Phone       _e_: Email
-         _t_: Tobey
 "
-  ("t" Tn/org-tag-tobey)
   ("o" Tn/org-tag-out-going)
   ("i" Tn/org-tag-in-coming)
   ("e" Tn/org-tag-phone)
   ("p" Tn/org-tag-email)
   ("r" Tn/org-tag-main-hydra/body "Return" :color blue )
   ("q" nil "Cancel" :color blue))
-
-(defun Tn/org-tag-tobey ()
-  (interactive)
-  (org-set-tags (append (org-get-tags) '("@TOBEY"))))
 
 (defun Tn/org-tag-out-going ()
   (interactive)
@@ -2533,7 +2336,6 @@ _t_: Tobey Time    _d_: Driving
 
 (use-package scad-mode)
 
-(use-package centered-cursor-mode)
 
 (use-package ag)
 
