@@ -299,13 +299,9 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (add-to-list 'load-path "~/.config/emacs/private/General-Configuration")
-
   (load-file "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
   (load-file "~/.config/emacs/private/Secrets/secrets.el")
-  ;; (load-file "~/.config/emacs/private/General-Configuration/global-save.el")
-
-  (require 'global-save)
+  (load "~/.config/emacs/private/General-Configuration/global-save.el")
   )
 
 

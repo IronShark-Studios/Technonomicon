@@ -19,5 +19,3 @@
 (global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
 (global-set-key (kbd "C-S-x") 'clipboard-kill-region)
 (global-set-key (kbd "C-S-v") 'clipboard-yank)
-
-(provide 'global-save)
