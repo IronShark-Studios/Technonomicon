@@ -1,63 +1,10 @@
-(winner-mode +1)
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(show-paren-mode t)
-(set-fringe-mode 5)
-(scroll-bar-mode -1)
-(global-hl-line-mode 1)
-(global-auto-revert-mode 1)
-(global-visual-line-mode t)
-(fset 'yes-or-no-p 'y-or-n-p)
-(global-display-line-numbers-mode t)
-
 (setq visible-bell t
       use-dialog-box nil
       column-number-mode t
       vc-follow-symlinks t
-      inhibit-splash-screen t
       ring-bell-function 'ignore
-      use-package-always-ensure t
-      use-package-always-defer t
-      initial-major-mode 'org-mode
-      package-enable-at-startup nil
       warning-minimum-level ":error"
-      display-line-numbers 'relative
       visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
-
-(dolist (face '(default fixed-pitch))
-  (set-face-attribute face nil
-                      :font "Iosevka"
-                      :weight 'regular
-                      :height 180))
-
-(set-face-attribute 'variable-pitch nil
-                    :font "FiraGo"
-                    :weight 'regular
-                    :height 180)
-
-(prefer-coding-system 'utf-8)
-(when (display-graphic-p)
-  (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
-
-(setq calendar-latitude 39.96
-      calendar-longitude -82.99
-      calendar-location-name "Columbus,OH"
-      user-login-name "xin"
-      user-mail-address "xin@ironshark.org")
-
-(setq-default fill-column 80
-              indent-tabs-mode nil
-              sentence-end-double-space nil)
-
-(dolist (mode '(pdf-view-mode-hook
-                term-mode-hook
-                org-mode-hook
-                shell-mode-hook
-                eww-mode-hook
-                text-mode-hook
-                scad-preview-mode-hook
-                eshell-mode-hook))
-  (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 (use-package doom-modeline
   :init (doom-modeline-mode 1)
@@ -74,12 +21,6 @@
         ad-do-it
       (fset 'one-window-p (symbol-function 'orig-one-window-p)))))
 
-(defun save-all-buffers ()
-  "Instead of `save-buffer', save all opened buffers by calling `save-some-buffers' with ARG t."
-  (interactive)
-  (save-some-buffers t))
-(global-set-key (kbd "C-x C-s") nil)
-(global-set-key (kbd "C-x C-s") #'save-all-buffers)
 
 
 (use-package emojify)
@@ -126,7 +67,6 @@
   :diminish
   smartparens-mode)
 
-(add-hook 'before-save-hook #'whitespace-cleanup)
 
 (use-package evil-nerd-commenter
   :after evil)
@@ -196,12 +136,6 @@
   (evil-forward-char)
   (evil-append 1))
 
-(defun Tn/evil-normal-and-save ()
-  "switches to evil normal mode, and saves buffer"
-  (interactive)
-  (evil-normal-state)
-  (save-all-buffers))
-
 (defun Tn/evil-pg-down-and-center ()
   (interactive)
   (evil-next-visual-line 30)
@@ -251,16 +185,9 @@
 
   :config
   (evil-mode 1)
-  (define-key evil-insert-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
-  (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
   (define-key evil-normal-state-map (kbd "<SPC>") 'harpoon-quick-menu-hydra)
   (define-key evil-normal-state-map (kbd "/") 'helm-regexp)
-  (global-set-key (kbd "<escape>")  'keyboard-escape-quit)
   (global-set-key (kbd "C-x c")  'centered-cursor-mode)
-  (global-set-key (kbd "C-S-v") 'clipboard-yank)
-  (global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
-  (global-set-key (kbd "C-S-x") 'clipboard-kill-region)
-  (global-set-key (kbd "C-M-u") 'universal-argument)
 
   (define-key winner-mode-map (kbd "<C-S-left>") #'winner-undo)
   (define-key winner-mode-map (kbd "<C-S-right>") #'winner-redo)
