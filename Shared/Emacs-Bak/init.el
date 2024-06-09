@@ -1,11 +1,3 @@
-(setq visible-bell t
-      use-dialog-box nil
-      column-number-mode t
-      vc-follow-symlinks t
-      ring-bell-function 'ignore
-      warning-minimum-level ":error"
-      visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
-
 
 
 (use-package emojify)
