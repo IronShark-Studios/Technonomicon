@@ -44,7 +44,7 @@ This function should only modify configuration layer settings."
                      spell-checking-enable-auto-dictionary t)
      (auto-completion :variables
                       auto-completion-return-key-behavior nil
-                      auto-completion-tab-key-behavior complete
+                      auto-completion-tab-key-behavior 'complete
                       auto-completion-minimum-prefix-length 1
                       auto-completion-idle-delay 0)
      (languagetool :variables
