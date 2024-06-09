@@ -12,6 +12,8 @@
       hunspell
       hunspellDicts.en_US-large
       openscad-lsp
+      gforth
+      racket
     ];
 
     file = {

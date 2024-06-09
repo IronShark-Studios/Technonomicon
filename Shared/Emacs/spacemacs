@@ -15,6 +15,20 @@ This function should only modify configuration layer settings."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(theming
+     emoji
+     unicode-fonts
+     helpful
+     treemacs
+     ibuffer
+     hackernews
+     vinegar
+     evil-commentary
+     evil-better-jumper
+     multiple-cursors
+     eww
+     finance
+     (evil-snipe :variables
+                 evil-snipe-enable-alternate-f-and-t-behaviors t)
      (keyboard-layout :variables
                       kl-layout 'colemak-neio-inverted)
      (better-defaults :variables
@@ -26,21 +40,84 @@ This function should only modify configuration layer settings."
      ;; Completion and Correction
      (helm :variables
            helm-no-header t)
-     (spell-checking :variables spell-checking-enable-auto-dictionary t)
+     (spell-checking :variables
+                     spell-checking-enable-auto-dictionary t)
+     (auto-completion :variables
+                      auto-completion-return-key-behavior nil
+                      auto-completion-tab-key-behavior complete
+                      auto-completion-minimum-prefix-length 1
+                      auto-completion-idle-delay 0)
+     (languagetool :variables
+                   langtool-default-language "en-US")
      syntax-checking
-     auto-completion
+     templates
+     prettier
+     tree-sitter
 
+     ;; Programing Tools
+     lsp
+     semantic
+     nixos
+     dtrt-indent
+     dap
+     debug
+     docker
+     kubernetes
+     meson
+     systemd
+     tmux
+     gtags
+     (git :variables
+          git-magit-status-fullscreen t
+          git-enable-magit-svn-plugin t)
+     version-control
+
+     ;; Reading Tools
+     speed-reading
+     epub
+     pdf
+
+     ;; Programing Languages
      emacs-lisp
-     ;; git
-     ;; lsp
-     ;; markdown
-     multiple-cursors
-     ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; version-control
-     treemacs
+     common-lisp
+     alda
+     extempore
+     bm
+     bibtex
+     csv
+     fountain
+     graphviz
+     latex
+     plantuml
+     shell-scripts
+     coq
+     ess
+     gpu
+     prolog
+     sql
+     asm
+     hy
+     racket
+     rust
+     toml
+     (zig :variables
+          zls-backend 'lsp)
+     (haskell :variables
+              haskell-completion-backend 'dante)
+     (c-c++ :variables
+            lsp-clangd)
+     (forth :variables
+            forth-executable "gforth")
+     (scheme :variables
+             scheme-implementations '(guile racket))
+     (cmake :variables
+            cmake-backend 'lsp)
+     (ansible :variables
+              ansible-auto-encrypt-decrypt nil)
+
+     ;; Plain Text Management
+     markdown
+     org
 )
 
 
@@ -300,6 +377,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
   (load "~/.config/emacs/private/General-Configuration/global-save.el")
+  (load "~/.config/emacs/private/General-Configuration/global-variables.el")
   (load "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
   (load "~/.config/emacs/private/Secrets/secrets.el"))
 
@@ -317,7 +395,7 @@ This function is called at the very end of Spacemacs initialization."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(auto-dictionary auto-yasnippet flycheck-pos-tip pos-tip flyspell-correct-helm flyspell-correct helm-c-yasnippet helm-company company mwim unfill yasnippet-snippets yasnippet unkillable-scratch color-identifiers-mode nyan-mode rainbow-identifiers rainbow-mode ws-butler writeroom-mode winum which-key volatile-highlights vim-powerline vi-tilde-fringe uuidgen undo-tree treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toc-org term-cursor symon symbol-overlay string-inflection string-edit-at-point spacemacs-whitespace-cleanup spacemacs-purpose-popwin spaceline space-doc restart-emacs request rainbow-delimiters quickrun popwin pcre2el password-generator paradox overseer org-superstar open-junk-file nameless multi-line macrostep lorem-ipsum link-hint inspector info+ indent-guide hybrid-mode hungry-delete holy-mode hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org helm-mode-manager helm-make helm-descbinds helm-comint helm-ag google-translate golden-ratio flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-evilified-state evil-escape evil-easymotion evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu emr elisp-slime-nav elisp-demos elisp-def editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish devdocs define-word column-enforce-mode clean-aindent-mode centered-cursor-mode auto-highlight-symbol auto-compile all-the-icons aggressive-indent ace-link ace-jump-helm-line)))
+   '(alda-mode ansible ansible-doc attrap better-jumper blacken bm browse-at-remote ccls cmake-mode cmm-mode code-cells common-lisp-snippets company-anaconda anaconda-mode company-ansible company-auctex company-c-headers company-cabal company-coq company-emoji company-math company-nixos-options company-reftex company-rtags company-shell company-ycmd cpp-auto-include csv-mode cuda-mode cython-mode dante lcr eldoc dap-mode lsp-docker bui diff-hl disaster docker aio dockerfile-mode dtrt-indent ediprolog emoji-cheat-sheet-plus emojify ess-R-data-view ess evil-commentary evil-ledger evil-org evil-snipe evil-tex extempore-mode fish-mode flycheck-bashate flycheck-haskell flycheck-ledger flycheck-rtags flycheck-ycmd forth-mode fountain-mode geiser-guile geiser-racket geiser gendoxy ggtags gh-md git-link git-messenger git-modes git-timemachine gitignore-templates glsl-mode gnuplot google-c-style graphviz-dot-mode hackernews haskell-snippets helm-bibtex helm-ctest helm-git-grep helm-gtags helm-hoogle helm-ls-git helm-lsp helm-nixos-options helm-org-rifle helm-pydoc helm-rtags helpful elisp-refs hindent hlint-refactor hy-mode ibuffer-projectile importmagic epc ctable concurrent insert-shebang jinja2-mode journalctl-mode kubernetes-evil kubernetes magit-popup ledger-mode live-py-mode lsp-haskell haskell-mode lsp-latex consult lsp-origami origami lsp-pyright lsp-treemacs lsp-ui lsp-mode magit-svn markdown-toc math-symbol-lists meson-mode nasm-mode nix-mode nixos-options nose nov esxml kv ob-hy olivetti opencl-mode org-cliplink org-contrib org-download org-mime org-pomodoro alert log4e gntp org-present org-projectile org-project-capture org-category-capture org-ref ox-pandoc citeproc bibtex-completion htmlize biblio biblio-core parsebib org-rich-yank orgit-forge orgit forge yaml ghub closql emacsql treepy pdf-view-restore pdf-tools tablist pip-requirements pipenv load-env-vars pippel plantuml-mode poetry prettier-js proof-general py-isort pydoc pyenv-mode pythonic pylookup pytest pyvenv racket-mode realgud test-simple loc-changes load-relative ron-mode rtags rustic xterm-color markdown-mode rust-mode xref shfmt slime-company slime smeargle sphinx-doc spray sql-indent srefactor stickyfunc-enhance systemd texfrag auctex toml-mode tree-sitter-langs tree-sitter tsc treemacs-magit magit magit-section git-commit with-editor transient unicode-fonts ucs-utils font-utils persistent-soft pcache x86-lookup yaml-mode yapfify yatemplate ycmd request-deferred deferred zig-mode reformatter auto-dictionary auto-yasnippet flycheck-pos-tip pos-tip flyspell-correct-helm flyspell-correct helm-c-yasnippet helm-company company mwim unfill yasnippet-snippets yasnippet unkillable-scratch color-identifiers-mode nyan-mode rainbow-identifiers rainbow-mode ws-butler writeroom-mode winum which-key volatile-highlights vim-powerline vi-tilde-fringe uuidgen undo-tree treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toc-org term-cursor symon symbol-overlay string-inflection string-edit-at-point spacemacs-whitespace-cleanup spacemacs-purpose-popwin spaceline space-doc restart-emacs request rainbow-delimiters quickrun popwin pcre2el password-generator paradox overseer org-superstar open-junk-file nameless multi-line macrostep lorem-ipsum link-hint inspector info+ indent-guide hybrid-mode hungry-delete holy-mode hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org helm-mode-manager helm-make helm-descbinds helm-comint helm-ag google-translate golden-ratio flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-evilified-state evil-escape evil-easymotion evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu emr elisp-slime-nav elisp-demos elisp-def editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish devdocs define-word column-enforce-mode clean-aindent-mode centered-cursor-mode auto-highlight-symbol auto-compile all-the-icons aggressive-indent ace-link ace-jump-helm-line)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
