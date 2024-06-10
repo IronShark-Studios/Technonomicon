@@ -29,7 +29,7 @@
                                      "\\\\" "://"))
 
 
-
+;; Not able to git ligatures to work. Troubleshoot later
 ;; (use-package ligature
 ;;   :config
 ;;   (ligature-set-ligatures 't ligatures-fixed)

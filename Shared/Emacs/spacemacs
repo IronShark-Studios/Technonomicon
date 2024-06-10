@@ -12,14 +12,14 @@ This function should only modify configuration layer settings."
    ;; Paths must have a trailing slash (i.e. "~/.mycontribs/")
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-additional-packages '(llvm-ts-mode
-                                      ligature
+
+
                                       )
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(theming
      emoji
-     unicode-fonts
      helpful
      treemacs
      ibuffer
@@ -30,6 +30,10 @@ This function should only modify configuration layer settings."
      multiple-cursors
      eww
      finance
+     (unicode-fonts :variables
+                    unicode-fonts-enable-ligatures t
+                    unicode-fonts-ligature-modes '(text-mode
+                                                   prog-mode))
      (evil-snipe :variables
                  evil-snipe-enable-alternate-f-and-t-behaviors t)
      (keyboard-layout :variables
