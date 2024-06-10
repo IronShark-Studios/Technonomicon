@@ -184,16 +184,15 @@ it can be passed in POS."
   (add-hook 'org-mode 'Tn/org-mode-setup)
   (add-hook 'org-mode 'Tn/org-font-setup)
   (add-hook 'before-save 'Tn/org-set-last-modified)
-  ;; (add-hook 'org-mode-hook 'org-appear-mode)
-  ;; (add-hook 'org-mode-hook (lambda ()
-  ;;                            (add-hook 'evil-insert-state-entry-hook
-  ;;                                      #'org-appear-manual-start
-  ;;                                      nil
-  ;;                                      t)
-  ;;                            (add-hook 'evil-insert-state-exit-hook
-  ;;                                      #'org-appear-manual-stop
-  ;;                                      nil
-  ;;                                      t)))
+  (add-hook 'org-mode-hook (lambda ()
+                             (add-hook 'evil-insert-state-entry-hook
+                                       #'org-appear-manual-start
+                                       nil
+                                       t)
+                             (add-hook 'evil-insert-state-exit-hook
+                                       #'org-appear-manual-stop
+                                       nil
+                                       t)))
 
 
   (advice-add 'org-ctrl-c-ctrl-c  :after #'save-buffer)
