@@ -14,6 +14,7 @@
       openscad-lsp
       gforth
       racket
+      languagetool
     ];
 
     file = {

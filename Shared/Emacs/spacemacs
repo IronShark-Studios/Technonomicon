@@ -105,7 +105,7 @@ This function should only modify configuration layer settings."
      (haskell :variables
               haskell-completion-backend 'dante)
      (c-c++ :variables
-            lsp-clangd)
+            c-c++-backend 'lsp-clangd)
      (forth :variables
             forth-executable "gforth")
      (scheme :variables
