@@ -1,4 +1,5 @@
   (defun Tn/org-mode-setup ()
+    (interactive)
     (org-indent-mode 1)
     (variable-pitch-mode 1)
     (auto-fill-mode 0)
