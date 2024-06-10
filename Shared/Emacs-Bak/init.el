@@ -1,50 +1,31 @@
 
 
-(use-package emojify)
 
-(use-package all-the-icons
-  :init
-  (unless (member "all-the-icons" (font-family-list))
-    (all-the-icons-install-fonts t)))
 
-(defvar ligatures-fixed '("|||>" "<|||" "<==>" "<!--" "####" "~~>" "***" "||=" "||>"
-                                     ":::" "::=" "=:=" "===" "==>" "=!=" "=>>" "=<<" "=/=" "!=="
-                                     "!!." ">=>" ">>=" ">>>" ">>-" ">->" "->>" "-->" "---" "-<<"
-                                     "<~~" "<~>" "<*>" "<||" "<|>" "<$>" "<==" "<=>" "<=<" "<->"
-                                     "<--" "<-<" "<<=" "<<-" "<<<" "<+>" "</>" "###" "#_(" "..<"
-                                     "..." "+++" "/==" "///" "_|_" "www" "&&" "^=" "~~" "~@" "~="
-                                     "~>" "~-" "**" "*>" "*/" "||" "|}" "|]" "|=" "|>" "|-" "{|"
-                                     "[|" "]#" "::" ":=" ":>" ":<" "$>" "==" "=>" "!=" "!!" ">:"
-                                     ">=" ">>" ">-" "-~" "-|" "->" "--" "-<" "<~" "<*" "<|" "<:"
-                                     "<$" "<=" "<>" "<-" "<<" "<+" "</" "#{" "#[" "#:" "#=" "#!"
-                                     "##" "#(" "#?" "#_" "%%" ".=" ".-" ".." ".?" "+>" "++" "?:"
-                                     "?=" "?." "??" ";;" "/*" "/=" "/>" "//" "__" "~~" "(*" "*)"
-                                     "\\\\" "://"))
+;;; (use-package undo-tree)
+(setq evil-want-fine-undo t)
 
-(use-package ligature
+
+(use-package helm-flyspell
+  :after company helm
   :config
-  (ligature-set-ligatures 't ligatures-fixed)
-  (global-ligature-mode t))
+  (define-key flyspell-mode-map (kbd "C-;") 'helm-flyspell-correct))
 
-(use-package sudo-edit
-  :commands (sudo-edit))
-
-(use-package crux
+(use-package helm-flycheck
+  :after helm flycheck
   :config
-  (crux-with-region-or-buffer indent-region)
-  (crux-with-region-or-buffer untabify)
-  (crux-with-region-or-point-to-eol kill-ring-save)
-  (defalias 'rename-file-and-buffer #'crux-rename-file-and-buffer))
-
-(add-to-list 'auto-mode-alist '("\\.md\\'" . text-mode))
-
-(use-package nix-mode
-  :mode "\\.nix\\'")
+  (eval-after-load 'flycheck
+    '(define-key flycheck-mode-map (kbd "C-:") 'helm-flycheck)))
 
 
-(use-package page-break-lines
-  :diminish
-  :init (global-page-break-lines-mode))
+
+
+
+
+
+
+
+;;; Packages Above this point are confirmed as neeeded ;;;
 
 
 (defun Tn/evil-jump-character ()
@@ -115,183 +96,9 @@
 
   (add-hook 'with-editor-mode-hook 'evil-insert-state))
 
-(use-package iedit
-  :diminish)
-
-(use-package avy
-  :after evil
-  :config
-  (setq avy-word-punc-regexp nil))
-
-
 (use-package harpoon
   :after evil)
 
-(use-package company
-  :diminish company-mode
-  :hook ((prog-mode
-          LaTeX-mode
-          latex-mode
-          ess-r-mode
-          graphviz-dot-mode-hook) . company-mode)
-  :bind
-  (:map company-active-map
-        ("<tab>" . company-complete-selection)
-        ("<return>" . nil))
-  :custom
-  (company-minimum-prefix-length 1)
-  (company-tooltip-align-annotations t)
-  (company-require-match 'never)
-  (company-global-modes '(not shell-mode eaf-mode))
-  (company-idle-delay 0.1)
-  (company-show-numbers nil)
-  :config
-
-  (defun smarter-tab-to-complete ()
-    "Try to `org-cycle', `yas-expand', and `yas-next-field' at current cursor position.
-
-If all failed, try to complete the common part with `company-complete-common'"
-    (interactive)
-    (when yas-minor-mode
-      (let ((old-point (point))
-            (old-tick (buffer-chars-modified-tick))
-            (func-list
-             (if (equal major-mode 'org-mode) '(org-cycle yas-expand yas-next-field)
-               '(yas-expand yas-next-field))))
-        (catch 'func-suceed
-          (dolist (func func-list)
-            (ignore-errors (call-interactively func))
-            (unless (and (eq old-point (point))
-                         (eq old-tick (buffer-chars-modified-tick)))
-              (throw 'func-suceed t)))
-          (company-complete-common))))))
-
-(use-package company-tabnine
-  :after company
-  :custom
-  (company-tabnine-max-num-results 9)
-  (company-tabnine-show-annotation nil)
-  :bind
-  (("M-q" . company-other-backend))
-  :init
-  (defun company//sort-by-tabnine (candidates)
-    "Integrate company-tabnine with lsp-mode"
-    (if (or (functionp company-backend)
-            (not (and (listp company-backend) (memq 'company-tabnine company-backends))))
-        candidates
-      (let ((candidates-table (make-hash-table :test #'equal))
-            candidates-lsp
-            candidates-tabnine)
-        (dolist (candidate candidates)
-          (if (eq (get-text-property 0 'company-backend candidate)
-                  'company-tabnine)
-              (unless (gethash candidate candidates-table)
-                (push candidate candidates-tabnine))
-            (push candidate candidates-lsp)
-            (puthash candidate t candidates-table)))
-        (setq candidates-lsp (nreverse candidates-lsp))
-        (setq candidates-tabnine (nreverse candidates-tabnine))
-        (nconc (seq-take candidates-tabnine 3)
-               (seq-take candidates-lsp 6)))))
-  (defun lsp-after-open-tabnine ()
-    "Hook to attach to `lsp-after-open'."
-    (setq-local company-tabnine-max-num-results 3)
-    (add-to-list 'company-transformers 'company//sort-by-tabnine t)
-    (add-to-list 'company-backends '(company-capf :with company-tabnine :separate)))
-  (defun company-tabnine-toggle (&optional enable)
-    "Enable/Disable TabNine. If ENABLE is non-nil, definitely enable it."
-    (interactive)
-    (if (or enable (not (memq 'company-tabnine company-backends)))
-        (progn
-          (add-hook 'lsp-after-open-hook #'lsp-after-open-tabnine)
-          (add-to-list 'company-backends #'company-tabnine)
-          (when (bound-and-true-p lsp-mode) (lsp-after-open-tabnine))
-          (message "TabNine enabled."))
-      (setq company-backends (delete 'company-tabnine company-backends))
-      (setq company-backends (delete '(company-capf :with company-tabnine :separate) company-backends))
-      (remove-hook 'lsp-after-open-hook #'lsp-after-open-tabnine)
-      (company-tabnine-kill-process)
-      (message "TabNine disabled.")))
-  :hook
-  (kill-emacs . company-tabnine-kill-process)
-  :config
-  (company-tabnine-toggle t))
-
-(use-package helm-company
-  :after company
-  :config
-  (eval-after-load 'company
-  '(progn
-     (define-key company-mode-map (kbd "C-:") 'helm-company)
-     (define-key company-active-map (kbd "C-:") 'helm-company))))
-
-(use-package lsp-mode
-  :commands lsp
-  :custom
-  (lsp-keymap-prefix "C-x l")
-  (lsp-auto-guess-root nil)
-  (lsp-prefer-flymake nil) ; Use flycheck instead of flymake
-  (lsp-enable-file-watchers nil)
-  (lsp-enable-folding nil)
-  (read-process-output-max (* 1024 1024))
-  (lsp-keep-workspace-alive nil)
-  (lsp-eldoc-hook nil)
-  :bind (:map lsp-mode-map ("C-c C-f" . lsp-format-buffer))
-  :hook
-  ((SCAD//1 . lsp-deferred)
-   (lsp-mode . lsp-enable-which-key-integration))
-  :config
-  (defun lsp-update-server ()
-    "Update LSP server."
-    (interactive)
-    ;; Equals to `C-u M-x lsp-install-server'
-    (lsp-install-server t)))
-
-(use-package lsp-ui
-  :after lsp-mode
-  :diminish
-  :commands lsp-ui-mode
-  :custom-face
-  (lsp-ui-doc-background ((t (:background nil))))
-  (lsp-ui-doc-header ((t (:inherit (font-lock-string-face italic)))))
-  :bind
-  (:map lsp-ui-mode-map
-        ([remap xref-find-definitions] . lsp-ui-peek-find-definitions)
-        ([remap xref-find-references] . lsp-ui-peek-find-references)
-        ("C-c u" . lsp-ui-imenu)
-        ("M-i" . lsp-ui-doc-focus-frame))
-  (:map lsp-mode-map
-        ("M-n" . forward-paragraph)
-        ("M-e" . backward-paragraph))
-  :custom
-  (lsp-ui-doc-header t)
-  (lsp-ui-doc-include-signature t)
-  (lsp-ui-doc-border (face-foreground 'default))
-  (lsp-ui-sideline-enable nil)
-  (lsp-ui-sideline-ignore-duplicate t)
-  (lsp-ui-sideline-show-code-actions nil)
-  :config
-  (when (display-graphic-p)
-    (setq lsp-ui-doc-use-webkit t))
-  (defadvice lsp-ui-imenu (after hide-lsp-ui-imenu-mode-line activate)
-    (setq mode-line-format nil))
-  (advice-add #'keyboard-quit :before #'lsp-ui-doc-hide))
-
-(use-package helm-lsp
-  :after helm lsp-mode
-  :config
-  (define-key lsp-mode-map [remap xref-find-apropos] #'helm-lsp-workspace-symbol))
-
-(use-package dap-mode
-  :diminish
-  :bind
-  (:map dap-mode-map
-        (("<f12>" . dap-debug)
-         ("<f8>" . dap-continue)
-         ("<f9>" . dap-next)
-         ("<M-f11>" . dap-step-in)
-         ("C-M-<f11>" . dap-step-out)
-         ("<f7>" . dap-breakpoint-toggle))))
 
 (use-package hydra)
 
@@ -326,48 +133,6 @@ If all failed, try to complete the common part with `company-complete-common'"
 
 (add-hook 'ibuffer-mode-hook #'ibuffer-auto-mode)
 (remove-hook 'kill-buffer-query-functions 'process-kill-buffer-query-function)
-
-(use-package helm-flyspell
-  :after company helm
-  :config
-  (define-key flyspell-mode-map (kbd "C-;") 'helm-flyspell-correct))
-
-(dolist (hook '(text-mode-hook))
-  (add-hook hook (lambda ()
-                   (flyspell-mode 1))))
-
-(add-hook 'prog-mode-hook #'flyspell-prog-mode)
-(add-hook 'text-mode-hook #'flyspell-mode)
-
-(use-package flycheck
-  :diminish
-  :hook (after-init . global-flycheck-mode)
-  :commands (flycheck-add-mode)
-  :custom
-  (flycheck-global-modes
-   '(not outline-mode diff-mode shell-mode eshell-mode term-mode))
-  (flycheck-emacs-lisp-load-path 'inherit)
-  (flycheck-indication-mode (if (display-graphic-p) 'right-fringe 'right-margin)))
-
-(use-package helm-flycheck
-  :after helm flycheck
-  :config
-  (eval-after-load 'flycheck
-    '(define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck)))
-
-(use-package undo-tree)
-(global-undo-tree-mode 1)
-(setq undo-tree-history-directory-alist '(("." . "~/.config/emacs/backup-files"))
-      evil-want-fine-undo t
-      backup-directory-alist '(("." . "~/.config/emacs/backup-files")))
-
-(when (timerp undo-auto-current-boundary-timer)
-  (cancel-timer undo-auto-current-boundary-timer))
-
-(fset 'undo-auto--undoable-change
-      (lambda () (add-to-list 'undo-auto--undoably-changed-buffers (current-buffer))))
-
-(fset 'undo-auto-amalgamate 'ignore)
 
 
 (use-package org-bullets
@@ -1829,7 +1594,6 @@ _t_: ToDo         _e_: Financial
   ("t" Tn/easy-todo-capture)
   ("q" nil "Cancel" :color blue))
 
-(use-package pdf-tools)
 
 (require 'bibtex)
 
@@ -2035,9 +1799,6 @@ _i_: Citar Link Index  _s_: Bibtex Validate
 (setq citar-org-roam-subdir (file-truename "~/Grimoire/Reference/")
       citar-org-roam-capture-template-key "s")
 
-(use-package ledger-mode
-  :mode ("\\.journal\\'" "\\.hledger\\'")
-  :hook (ledger-mode . company-mode))
 
 (defun Tn/org-inherited-priority (s)
   (cond
@@ -2244,10 +2005,6 @@ _t_: Tobey Time    _d_: Driving
 (interactive)
 (org-roam-dailies-capture-today nil "F"))
 
-(defun Tn/clock-tobey-time ()
-(interactive)
-(org-roam-dailies-capture-today nil "Z"))
-
 (defun Tn/clock-food-prep ()
 (interactive)
 (org-roam-dailies-capture-today nil "Y"))
@@ -2325,18 +2082,3 @@ _t_: Tobey Time    _d_: Driving
       holiday-oriental-holidays nil
       holiday-other-holidays nil
       org-agenda-include-diary t)
-
-(use-package scad-mode)
-
-
-(use-package ag)
-
-(use-package rg
-  :config
-  (global-set-key (kbd "C-s") #'rg-menu))
-
-(use-package graphviz-dot-mode)
-
-(use-package dirvish
-  :config
-  dirvish-override-dired-mode)
