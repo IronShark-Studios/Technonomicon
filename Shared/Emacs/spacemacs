@@ -11,10 +11,6 @@ This function should only modify configuration layer settings."
    ;; List of additional paths where to look for configuration layers.
    ;; Paths must have a trailing slash (i.e. "~/.mycontribs/")
    dotspacemacs-configuration-layer-path '()
-   dotspacemacs-additional-packages '(llvm-ts-mode
-
-
-                                      )
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
@@ -128,6 +124,12 @@ This function should only modify configuration layer settings."
      markdown
      org
 )
+
+   dotspacemacs-additional-packages '(llvm-ts-mode
+                                      helm-flyspell
+                                      helm-flycheck
+                                      harpoon
+                                      )
 
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
@@ -375,7 +377,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (load "~/.config/emacs/private/General-Configuration/global-save.el")
+  (load "~/.config/emacs/private/General-Configuration/global-keynbinds.el")
   (load "~/.config/emacs/private/General-Configuration/global-variables.el")
   (load "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
   (load "~/.config/emacs/private/Theme-Varangian/fonts-and-ligatures.el")

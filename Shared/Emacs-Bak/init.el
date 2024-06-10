@@ -1,140 +1,4 @@
 
-;;; (use-package undo-tree)
-(setq evil-want-fine-undo t)
-
-
-(use-package helm-flyspell
-  :after company helm
-  :config
-  (define-key flyspell-mode-map (kbd "C-;") 'helm-flyspell-correct))
-
-(use-package helm-flycheck
-  :after helm flycheck
-  :config
-  (eval-after-load 'flycheck
-    '(define-key flycheck-mode-map (kbd "C-:") 'helm-flycheck)))
-
-
-
-
-
-
-
-
-
-;;; Packages Above this point are confirmed as neeeded ;;;
-
-
-(defun Tn/evil-jump-character ()
-  "moves point forward past the next character"
-  (interactive)
-  (evil-normal-state)
-  (evil-forward-char)
-  (evil-append 1))
-
-(defun Tn/evil-pg-down-and-center ()
-  (interactive)
-  (evil-next-visual-line 30)
-  (evil-scroll-line-to-center nil))
-
-(defun Tn/evil-pg-up-and-center ()
-  (interactive)
-  (evil-previous-visual-line 30)
-  (evil-scroll-line-to-center nil))
-
-(defun Tn/forward-paragraph-and-center ()
-  (interactive)
-  (forward-paragraph)
-  (evil-scroll-line-to-center nil))
-
-(defun Tn/interactive-clipboard-yank ()
-  (interactive)
-  (clipboard-yank))
-
-(defun Tn/backward-paragraph-and-center ()
-  (interactive)
-  (backward-paragraph)
-  (evil-scroll-line-to-center nil))
-
-(defun Tn/avy-jump-and-center ()
-  "moves point forward past the next character"
-  (interactive)
-  (avy-goto-word-or-subword-1)
-  (evil-scroll-line-to-center nil))
-
-(defun Tn/new-todo-with-priority ()
-  (interactive)
-  (org-insert-heading-respect-content)
-  (org-shiftright)
-  (org-priority-up)
-  (evil-append-line nil))
-
-(use-package evil
-  :init
-  (setq evil-want-integration t
-        evil-want-keybinding nil
-        evil-want-C-u-scroll t
-        evil-want-C-i-jump nil
-        evil-cross-lines t
-        evil-respect-visual-line-mode t
-        evil-undo-system 'undo-tree)
-
-  :config
-  (evil-mode 1)
-  (define-key evil-normal-state-map (kbd "<SPC>") 'harpoon-quick-menu-hydra)
-  (define-key evil-normal-state-map (kbd "/") 'helm-regexp)
-  (global-set-key (kbd "C-x c")  'centered-cursor-mode)
-
-  (define-key winner-mode-map (kbd "<C-S-left>") #'winner-undo)
-  (define-key winner-mode-map (kbd "<C-S-right>") #'winner-redo)
-
-  (evil-ex-define-cmd "q" 'kill-this-buffer) ;Evil nomral mode ':q' kills active buffer
-  (evil-ex-define-cmd "Q" 'kill-buffer-and-window) ; Evil normal mode ':Q' kills buffer and window
-
-  (add-hook 'with-editor-mode-hook 'evil-insert-state))
-
-
-
-
-(use-package harpoon
-  :after evil)
-
-
-(use-package hydra)
-
-(setq ibuffer-formats
-      '((mark modified read-only " "
-              (name 40 40 :left :elide) ; change: 30s were originally 18s
-              " "
-              (size 9 -1 :right)
-              " "
-              (mode 9 9 :left :elide)
-              " " filename-and-process)
-        (mark " "
-              (name 16 -1)
-              " " filename)))
-
-(with-eval-after-load 'ibuf-ext
-  (define-ibuffer-sorter alphabetic-ignore-case
-    "Sort the buffers by their names, ignoring case."
-    (:description "buffer name")
-    (string-collate-lessp
-     (buffer-name (car a))
-     (buffer-name (car b))
-     nil t))
-  ;; Assign the new command to the 'Name' header keymap.
-  (define-key ibuffer-name-header-map [(mouse-1)]
-    'ibuffer-do-sort-by-alphabetic-ignore-case)
-  (put 'ibuffer-make-column-name 'header-mouse-map
-       ibuffer-name-header-map))
-
-(setq ibuffer-expert t)
-(setq-default ibuffer-default-sorting-mode 'alphabetic-ignore-case)
-
-(add-hook 'ibuffer-mode-hook #'ibuffer-auto-mode)
-(remove-hook 'kill-buffer-query-functions 'process-kill-buffer-query-function)
-
-
 (use-package org-bullets
   :hook (org-mode . org-bullets-mode)
   :custom
@@ -171,9 +35,6 @@
 
 (use-package visual-fill-column
   :hook (org-mode . Tn/org-mode-visual-fill))
-
-(use-package ox-hugo
-  :after ox)
 
 (setq org-export-backends '(ascii html icalendar latex md odt))
 
@@ -212,7 +73,7 @@
                 (org-level-6 . "Azure3")
                 (org-level-7 . "Azure3")
                 (org-level-8 . "Azure3")))
-  (set-face-attribute (car face) nil :font "Iosevka"
+  (set-face-attribute (car face) nil :font "Iosevka Comfy Motion"
                       :weight 'regular :height 1.3
                       :foreground (cdr face)))
 

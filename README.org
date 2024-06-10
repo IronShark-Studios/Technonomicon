@@ -12,7 +12,7 @@ This repository holds all the configuration settings for my personal computers, 
 - Flakes: This directory holds all the files needed for flakes specific functions.
 - Shared: This directory holds application specific files, used by Home-manager. They are grouped together by use-case. So they can be shared by machine specific configurations.
 - Thanatos: This directory holds all the files to configure NixOS for my work computer.
-- Artemis: This directory holds all the files to configure NixOS for my living room media center computer.
+- Artemis: This directory holds test all the files to configure NixOS for my living room media center computer.
 
 * Key Board Layout
 This configuration uses a custom layout for the ZSA Moonlander.
