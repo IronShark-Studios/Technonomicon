@@ -184,7 +184,7 @@
 
 
 
-  (add-hook 'org-mode 'Tn/org-mode-setup)
+  (add-hook 'org-mode #'Tn/org-mode-setup)
 ;;   (add-hook 'org-mode 'Tn/org-font-setup)
 ;;   (add-hook 'before-save 'Tn/org-set-last-modified)
 ;;   (add-hook 'org-mode-hook (lambda ()

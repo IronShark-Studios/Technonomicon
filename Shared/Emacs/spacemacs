@@ -122,7 +122,17 @@ This function should only modify configuration layer settings."
 
      ;; Plain Text Management
      markdown
-     org
+     (org :variables
+          org-enable-appear-support t
+          org-todo-dependencies-strategy 'naive-auto
+          org-enable-notifications t
+          org-start-notification-daemon-on-startup t
+          org-enable-org-journal-support t
+          org-projectile-file "TODOs.org"
+          org-enable-roam-support t
+          org-enable-roam-ui t
+          org-enable-roam-protocol t
+          org-enable-transclusion-support t)
 )
 
    dotspacemacs-additional-packages '(llvm-ts-mode
@@ -247,25 +257,6 @@ It should only modify the values of Spacemacs settings."
    dotspacemacs-mode-line-unicode-symbols t
    dotspacemacs-smooth-scrolling t
    dotspacemacs-scroll-bar-while-scrolling nil
-
-   ;; Control line numbers activation.
-   ;; If set to `t', `relative' or `visual' then line numbers are enabled in all
-   ;; `prog-mode' and `text-mode' derivatives. If set to `relative', line
-   ;; numbers are relative. If set to `visual', line numbers are also relative,
-   ;; but only visual lines are counted. For example, folded lines will not be
-   ;; counted and wrapped lines are counted as multiple lines.
-   ;; This variable can also be set to a property list for finer control:
-   ;; '(:relative nil
-   ;;   :visual nil
-   ;;   :disabled-for-modes dired-mode
-   ;;                       doc-view-mode
-   ;;                       markdown-mode
-   ;;                       org-mode
-   ;;                       pdf-view-mode
-   ;;                       text-mode
-   ;;   :size-limit-kb 1000)
-   ;; When used in a plist, `visual' takes precedence over `relative'.
-   ;; (default nil)
    dotspacemacs-line-numbers '(:relative nil
                                :visual text-mode
                                        prog-mode
@@ -359,6 +350,7 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
+
   )
 
 
@@ -367,7 +359,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 This function is called only while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included in the
 dump."
-  )
+       )
 
 
 (defun dotspacemacs/user-config ()
@@ -377,7 +369,8 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (load "~/.config/emacs/private/General-Configuration/global-keynbinds.el")
+  (load "~/.config/emacs/private/Org-Mode/org-core.el")
+  (load "~/.config/emacs/private/General-Configuration/global-keybinds.el")
   (load "~/.config/emacs/private/General-Configuration/global-variables.el")
   (load "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
   (load "~/.config/emacs/private/Theme-Varangian/fonts-and-ligatures.el")
