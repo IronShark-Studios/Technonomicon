@@ -12,6 +12,7 @@ This function should only modify configuration layer settings."
    ;; Paths must have a trailing slash (i.e. "~/.mycontribs/")
    dotspacemacs-configuration-layer-path '()
    dotspacemacs-additional-packages '(llvm-ts-mode
+                                      ligature
                                       )
 
    ;; List of configuration layers to load.
