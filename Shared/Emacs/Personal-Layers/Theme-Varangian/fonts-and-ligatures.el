@@ -30,6 +30,7 @@
 
 (use-package ligature
   :ensure t
+  :load-path "~/.config/emacs/private/Theme-Varangian/ligatures.el"
   :config
   (ligature-set-ligatures 't ligatures-fixed)
   (global-ligature-mode t))
