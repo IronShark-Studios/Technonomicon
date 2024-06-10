@@ -29,6 +29,7 @@
                                      "\\\\" "://"))
 
 (use-package ligature
+  :ensure t
   :config
   (ligature-set-ligatures 't ligatures-fixed)
   (global-ligature-mode t))
