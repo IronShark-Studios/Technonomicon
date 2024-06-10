@@ -96,6 +96,9 @@
 
   (add-hook 'with-editor-mode-hook 'evil-insert-state))
 
+
+
+
 (use-package harpoon
   :after evil)
 
