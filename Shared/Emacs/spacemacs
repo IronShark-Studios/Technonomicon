@@ -48,7 +48,8 @@ This function should only modify configuration layer settings."
                       auto-completion-minimum-prefix-length 1
                       auto-completion-idle-delay 0)
      (languagetool :variables
-                   langtool-default-language "en-US")
+                   langtool-default-language "en-US"
+                   langtool-java-classpath "~/.nix-profile/bin/languagetool")
      syntax-checking
      templates
      prettier
