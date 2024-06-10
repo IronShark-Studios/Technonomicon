@@ -15,6 +15,7 @@
       gforth
       racket
       languagetool
+      emacsPackages.ligature
     ];
 
     file = {
