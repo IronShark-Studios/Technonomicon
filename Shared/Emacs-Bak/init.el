@@ -1,7 +1,4 @@
 
-
-
-
 ;;; (use-package undo-tree)
 (setq evil-want-fine-undo t)
 
