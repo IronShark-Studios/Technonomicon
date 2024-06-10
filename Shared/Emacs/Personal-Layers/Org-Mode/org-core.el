@@ -1,9 +1,8 @@
-(with-eval-after-load 'org
   (defun Tn/org-mode-setup ()
     (org-indent-mode 1)
     (variable-pitch-mode 1)
     (auto-fill-mode 0)
-    (visual-line-mode 1)))
+    (visual-line-mode 1))
 
 
 ;;   (defun Tn/org-mode-visual-fill ()
@@ -184,8 +183,7 @@
 
 
 
-(with-eval-after-load 'org
-  (add-hook 'org-mode 'Tn/org-mode-setup))
+  (add-hook 'org-mode 'Tn/org-mode-setup)
 ;;   (add-hook 'org-mode 'Tn/org-font-setup)
 ;;   (add-hook 'before-save 'Tn/org-set-last-modified)
 ;;   (add-hook 'org-mode-hook (lambda ()
