@@ -1,14 +1,14 @@
-  (setq org-cite-follow-processor 'citar
-        org-cite-insert-processor 'citar
-        org-cite-activate-processor 'citar
-        org-cite-global-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
-        citar-bibliography '("~/Apocrypha/Org/bibliography-index.bib"))
+;;   (setq org-cite-follow-processor 'citar
+;;         org-cite-insert-processor 'citar
+;;         org-cite-activate-processor 'citar
+;;         org-cite-global-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
+;;         citar-bibliography '("~/Apocrypha/Org/bibliography-index.bib"))
 
-(add-hook 'LaTeX-mode-hook 'citar-capf-setup)
-(add-hook 'org-mode-hook 'citar-capf-setup)
+;; (add-hook 'LaTeX-mode-hook 'citar-capf-setup)
+;; (add-hook 'org-mode-hook 'citar-capf-setup)
 
-(define-key org-mode-map (kbd "C-c b") 'Tn/citar-bibtex-hydra/body)
-(define-key helm-comp-read-map (kbd "C-c C-c") 'helm-cr-empty-string)
+;; (define-key org-mode-map (kbd "C-c b") 'Tn/citar-bibtex-hydra/body)
+;; (define-key helm-comp-read-map (kbd "C-c C-c") 'helm-cr-empty-string)
 
 ;; (defun Tn/bibtex-validate-and-save ()
 ;;   "saves file and validates bibtex formatting"

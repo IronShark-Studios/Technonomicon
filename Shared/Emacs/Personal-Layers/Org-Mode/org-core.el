@@ -1,4 +1,3 @@
-(with-eval-after-load 'org
 (defun Tn/org-visual-setup ()
     (interactive)
 
@@ -164,4 +163,3 @@ it can be passed in POS."
   (advice-add 'org-schedule       :after #'save-buffer)
   (advice-add 'org-store-log-note :after #'save-buffer)
   (advice-add 'org-store-log-note :after #'org-cycle)
-)
