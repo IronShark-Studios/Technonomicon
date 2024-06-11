@@ -4,5 +4,4 @@
       warning-minimum-level ":error"
       evil-want-fine-undo t
       evil-respect-visual-line-mode t
-      ibuffer-expert t
-      ibuffer-formats)
+      ibuffer-expert t)
