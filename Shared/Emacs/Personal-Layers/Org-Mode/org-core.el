@@ -1,4 +1,3 @@
-(with-eval-after-load 'org
 (defun Tn/org-mode-setup ()
     (interactive)
     (org-indent-mode 1)
@@ -6,7 +5,7 @@
     (auto-fill-mode 0)
     (visual-line-mode 1))
 
-(add-hook 'org-mode-hook 'Tn/org-mode-setup))
+(add-hook 'org-mode-hook 'Tn/org-mode-setup)
 
 
 ;;   (defun Tn/org-mode-visual-fill ()
