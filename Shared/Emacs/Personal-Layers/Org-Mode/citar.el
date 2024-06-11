@@ -1,5 +1,4 @@
 (use-package citar
-  :defer t
   :config
   (setq org-cite-follow-processor 'citar
         org-cite-insert-processor 'citar
@@ -54,8 +53,7 @@ _i_: Citar Link Index  _s_: Bibtex Validate
 
 
 (use-package citar-org-roam
-  :defer t
-  :after (citar org-roam)
+  :after (citar org)
   :config (citar-org-roam-mode))
 
 (setq citar-org-roam-subdir (file-truename "~/Grimoire/Reference/")
