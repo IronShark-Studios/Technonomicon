@@ -4,10 +4,9 @@
 (set-face-attribute 'fixed-pitch nil
                     :font "Iosevka Comfy Wide Motion"
                     :weight normal
-                    :size 18.0)
+                    :height 180)
 
-(setq
 (set-face-attribute 'variable-pitch nil
                     :font "Iosevka Comfy Wide Motion Duo"
                     :weight normal
-                    :size 18.0))
+                    :height 180)
