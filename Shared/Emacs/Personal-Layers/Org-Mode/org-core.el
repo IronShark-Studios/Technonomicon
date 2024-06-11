@@ -68,34 +68,6 @@ it can be passed in POS."
   (shell-command-to-string "echo -n $(date +%Y)"))
 
 
-    (dolist (face '((org-level-1 . "Azure3")
-                    (org-level-2 . "Azure3")
-                    (org-level-3 . "Azure3")
-                    (org-level-4 . "Azure3")
-                    (org-level-5 . "Azure3")
-                    (org-level-6 . "Azure3")
-                    (org-level-7 . "Azure3")
-                    (org-level-8 . "Azure3")))
-      (set-face-attribute (car face) nil :font "Iosevka Comfy Motion"
-                          :weight 'regular :height 1.3
-                          :foreground (cdr face)))
-
-    (set-face-attribute 'org-link nil    :foreground "cyan" :inherit 'fixed-pitch)
-    (set-face-attribute 'org-tag nil     :height 0.9 :inherit 'fixed-pitch)
-    (set-face-attribute 'org-block nil    :inherit 'fixed-pitch)
-    (set-face-attribute 'org-table nil    :foreground "dark cyan" :inherit 'fixed-pitch)
-    (set-face-attribute 'org-formula nil  :foreground "dark cyan" :inherit 'fixed-pitch)
-    (set-face-attribute 'org-code nil     :foreground "SpringGreen3"
-                        :weight 'semi-bold :inherit '(shadow fixed-pitch))
-    (set-face-attribute 'org-verbatim nil :foreground "SpringGreen3"
-                        :weight 'semi-bold :inherit '(shadow fixed-pitch))
-    (set-face-attribute 'org-table nil    :inherit '(shadow fixed-pitch))
-    (set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
-    (set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
-    (set-face-attribute 'org-checkbox nil  :inherit 'fixed-pitch)
-    (set-face-attribute 'line-number nil :inherit 'fixed-pitch)
-    (set-face-attribute 'line-number-current-line nil :inherit 'fixed-pitch)
-
   (setq org-priority-faces '((?A . (:foreground "medium spring green" :weight 'bold
                                                 :inherit 'fixed-pitch))
                              (?B . (:foreground "deep sky blue" :weight 'bold
@@ -174,14 +146,14 @@ it can be passed in POS."
               ("CANCELLED" :foreground "dim gray" :weight bold))))
 
 
-  (add-hook 'org-capture-mode-hook 'evil-insert-state)
-  (add-hook 'org-log-buffer-setup-hook 'evil-insert-state)
+  (add-hook 'org-capture-mode-hook 'evil-hybrid-state)
+  (add-hook 'org-log-buffer-setup-hook 'evil-hybrid-state)
   (add-hook 'org-mode-hook (lambda ()
-                             (add-hook 'evil-insert-state-entry-hook
+                             (add-hook 'evil-hybrid-state-entry-hook
                                        #'org-appear-manual-start
                                        nil
                                        t)
-                             (add-hook 'evil-insert-state-exit-hook
+                             (add-hook 'evil-hybrid-state-exit-hook
                                        #'org-appear-manual-stop
                                        nil
                                        t)))
