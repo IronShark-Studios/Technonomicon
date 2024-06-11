@@ -3,12 +3,6 @@
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
 
-(set-face-attribute 'variable-pitch nil
-                    :font "Iosevka Comfy Motion Duo"
-                    :weight 'regular
-                    :height 180)
-
-
 ;;; Overrides default colors of Modus-Vivendi.
 ;;; Colors can be found by placing point on a character, and using
 ;;; (M-x describe-char). Then finding the hex code and searching that
