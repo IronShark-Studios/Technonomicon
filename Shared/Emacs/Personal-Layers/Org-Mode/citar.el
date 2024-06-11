@@ -1,17 +1,14 @@
-(use-package citar
-  :config
   (setq org-cite-follow-processor 'citar
         org-cite-insert-processor 'citar
         org-cite-activate-processor 'citar
         org-cite-global-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
         citar-bibliography '("~/Apocrypha/Org/bibliography-index.bib"))
 
-  :hook
-  (LaTeX-mode . citar-capf-setup)
-  (org-mode . citar-capf-setup)
+(add-hook 'org-mode-hook 'Tn/org-visual-setup)
+(add-hook 'LaTeX-mode-hook 'citar-capf-setup)
+(add-hook 'org-mode-hook 'citar-capf-setup)
 
-  :bind
-  (("C-c b" . Tn/citar-bibtex-hydra/body)))
+  (define-key org-mode-map (kbd "C-c b") 'Tn/citar-bibtex-hydra/body)
 
 (define-key helm-comp-read-map (kbd "C-c C-c") 'helm-cr-empty-string)
 
@@ -50,11 +47,6 @@ _i_: Citar Link Index  _s_: Bibtex Validate
   ("l" citar-open-links)
   ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
   ("q" nil "Cancel" :color blue))
-
-
-(use-package citar-org-roam
-  :after (citar org)
-  :config (citar-org-roam-mode))
 
 (setq citar-org-roam-subdir (file-truename "~/Grimoire/Reference/")
       citar-org-roam-capture-template-key "s")
