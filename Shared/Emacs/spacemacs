@@ -16,6 +16,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(theming
      emoji
+     themes-megapack
      helpful
      treemacs
      ibuffer
@@ -139,6 +140,7 @@ This function should only modify configuration layer settings."
                                       helm-flyspell
                                       helm-flycheck
                                       harpoon
+                                      citar
                                       )
 
    dotspacemacs-frozen-packages '()
@@ -202,7 +204,8 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(modus-vivendi
+   dotspacemacs-themes '(ir-black
+                         modus-vivendi
                          modus-operandi)
 
    dotspacemacs-mode-line-theme '(vim-powerline)
@@ -374,7 +377,7 @@ before packages are loaded."
   (load "~/.config/emacs/private/General-Configuration/global-keybinds.el")
   (load "~/.config/emacs/private/General-Configuration/global-variables.el")
   (load "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
-  (load "~/.config/emacs/private/Theme-Varangian/fonts-and-ligatures.el")
+  ;; (load "~/.config/emacs/private/Theme-Varangian/fonts-and-ligatures.el")
   (load "~/.config/emacs/private/Secrets/secrets.el"))
 
 

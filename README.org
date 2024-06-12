@@ -14,6 +14,19 @@ This repository holds all the configuration settings for my personal computers, 
 - Thanatos: This directory holds all the files to configure NixOS for my work computer.
 - Artemis: This directory holds test all the files to configure NixOS for my living room media center computer.
 
+[[google.com][Google]]
+
+/test/
+
+* ACTIVE [#A]
+- State "ACTIVE"     from "NEXT"       [2024-06-11 Tue 13:56]
+
+
+ #+begin_src lisp
+begin code
+ #+end_src
+
+*********** test
 * Key Board Layout
 This configuration uses a custom layout for the ZSA Moonlander.
 
