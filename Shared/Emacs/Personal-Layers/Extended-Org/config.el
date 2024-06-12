@@ -7,6 +7,27 @@
 
       )
 
+
+
+
+
+(setq org-todo-keywords
+      (quote ((sequence "TODO(t)" "NEXT(n)" "INPROGRESS(i!/!)" "ACTIVE(a!/!)"
+                        "|" "DONE(d!/!)")
+              (sequence "GOAL(g@/!)" "WAITING(w@/!)" "HOLD(h@/!)"
+                         "REVIEW" "|" "CANCELLED(c@/!)"))))
+
+(setq org-todo-keyword-faces
+      (quote (("TODO" :foreground "deep sky blue" :weight bold)
+              ("NEXT" :foreground "medium spring green" :weight bold)
+              ("ACTIVE" :foreground "cyan" :weight bold)
+              ("DONE" :foreground "dim gray" :weight bold)
+              ("WAITING" :foreground "blue violet" :weight bold)
+              ("REVIEW" :foreground "blue violet" :weight bold)
+              ("HOLD" :foreground "dark red" :weight bold)
+              ("CANCELLED" :foreground "dim gray" :weight bold))))
+
+
 (add-hook 'org-mode-hook 'Tn/org-mode-setup)
 (add-hook 'before-save-hook 'Tn/org-set-last-modified)
 (add-hook 'org-capture-mode-hook 'evil-hybrid-state)
@@ -24,7 +45,11 @@
       org-pretty-entities t
       org-appear-autoentities t
       org-appear-autokeywords t
-      org-appear-inside-latex t)
+      org-appear-inside-latex t
+      org-appear-autoemphasis t
+      org-appear-autolinks t
+      org-link-descriptive t
+      org-appear-autosubmarkers t)
 
   (add-hook 'org-mode-hook (lambda ()
                              (add-hook 'evil-hybrid-state-entry-hook

@@ -1,6 +1,7 @@
 (when (configuration-layer/package-used-p 'org)
 
 ;;; General visual settings for Org-Mode
+
   (defun Tn/org-mode-setup ()
     (org-indent-mode 1)
     (variable-pitch-mode 1)
@@ -56,5 +57,65 @@ it can be passed in POS."
     "Update the LAST_MODIFIED file property in the preamble."
     (when (derived-mode-p 'org-mode)
       (Tn/org-set-time-file-property "LAST_MODIFIED")))
+
+;;; Generate Current Year string for file names
+
+(defun Tn/current-year () (interactive)
+  (shell-command-to-string "echo -n $(date +%Y)"))
+
+;;; Frequent Action Hydras
+
+(defhydra Tn/org-link-hydra (:color blue
+                             :hint nil)
+  "
+      ^Link Actions^
+----------------------------
+_n_: Insert      _t_: Tangle
+_y_: Yank        _o_: Open
+     _f_: FireFox
+^ ^
+^ ^
+
+"
+  ("n" org-insert-link)
+  ("y" org-store-link)
+  ("t" org-babel-tangle)
+  ("o" org-open-at-point)
+  ("f" Tn/open-link-firefox)
+  ("q" nil "Cancel" :color blue))
+
+(defun Tn/open-link-firefox ()
+  "Opens the Org-mode link under point with Firefox."
+  (interactive)
+  (let ((link-at-point (org-element-context)))
+      (browse-url-firefox (org-element-property :raw-link link-at-point))))
+
+(defhydra Tn/org-heading-actions-hydra (:color blue
+                                        :hint nil)
+  "
+      ^Heading Actions^
+-------------------------------
+_t_: Tags         _s_: Schedual
+_h_: Todo State   _d_: Deadline
+_m_: Time stamp; , for inactive
+^ ^
+^ ^
+"
+  ("t" Tn/org-tag-main-hydra/body)
+  ("h" org-todo)
+  ("s" org-schedule)
+  ("d" org-deadline)
+  ("m" org-time-stamp)
+  ("q" nil "Cancel" :color blue))
+
+
+
+
+
+
+
+
+
+
 
 )

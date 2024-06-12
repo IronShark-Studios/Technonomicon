@@ -1,4 +1,8 @@
 
+
+
+(use-package helm-org-ql)
+
 (use-package evil
   :init
   (setq evil-want-integration t
@@ -8,6 +12,7 @@
         evil-cross-lines t
         evil-respect-visual-line-mode t
         evil-undo-system 'undo-tree)
+  (setq evil-want-fine-undo t)
 
   :config
   (evil-mode 1)
@@ -17,14 +22,6 @@
 
   (add-hook 'with-editor-mode-hook 'evil-insert-state))
 
-(use-package avy
-  :after evil
-  :config
-  (setq avy-word-punc-regexp nil))
-
-
-(use-package harpoon
-  :after evil)
 
 (use-package helm-company
   :after company
@@ -33,11 +30,6 @@
     '(progn
        (define-key company-mode-map (kbd "C-:") 'helm-company)
        (define-key company-active-map (kbd "C-:") 'helm-company))))
-
-(setq ibuffer-expert t)
-
-(add-hook 'ibuffer-mode-hook #'ibuffer-auto-mode)
-(remove-hook 'kill-buffer-query-functions 'process-kill-buffer-query-function)
 
 (use-package helm-flyspell
   :after company helm
@@ -54,7 +46,6 @@
   (eval-after-load 'flycheck
     '(define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck)))
 
-(setq evil-want-fine-undo t)
 
 
 
@@ -117,75 +108,7 @@
 ;;                            (?E . (:foreground "dark red" :weight 'bold
 ;;                                               :inherit 'fixed-pitch))))
 
-(defun Tn/org-find-time-file-property (property &optional anywhere)
-  "Return the position of the time file PROPERTY if it exists.
-When ANYWHERE is non-nil, search beyond the preamble."
-  (save-excursion
-    (goto-char (point-min))
-    (let ((first-heading
-           (save-excursion
-             (re-search-forward org-outline-regexp-bol nil t))))
-      (when (re-search-forward (format "^#\\+%s:" property)
-                               (if anywhere nil first-heading)
-                               t)
-        (point)))))
 
-(defun Tn/org-has-time-file-property-p (property &optional anywhere)
-  "Return the position of time file PROPERTY if it is defined.
-As a special case, return -1 if the time file PROPERTY exists but
-is not defined."
-  (when-let ((pos (Tn/org-find-time-file-property property anywhere)))
-    (save-excursion
-      (goto-char pos)
-      (if (and (looking-at-p " ")
-               (progn (forward-char)
-                      (org-at-timestamp-p 'lax)))
-          pos
-        -1))))
-
-(defun Tn/org-set-time-file-property (property &optional anywhere pos)
-  "Set the time file PROPERTY in the preamble.
-When ANYWHERE is non-nil, search beyond the preamble.
-If the position of the file PROPERTY has already been computed,
-it can be passed in POS."
-  (when-let ((pos (or pos
-                      (Tn/org-find-time-file-property property))))
-    (save-excursion
-      (goto-char pos)
-      (if (looking-at-p " ")
-          (forward-char)
-        (insert " "))
-      (delete-region (point) (line-end-position))
-      (let* ((now (format-time-string "[%Y-%m-%d %a %H:%M]")))
-        (insert now)))))
-
-(defun Tn/org-set-last-modified ()
-  "Update the LAST_MODIFIED file property in the preamble."
-  (when (derived-mode-p 'org-mode)
-    (Tn/org-set-time-file-property "LAST_MODIFIED")))
-
-(defun Tn/current-year () (interactive)
-  (shell-command-to-string "echo -n $(date +%Y)"))
-
-(defun Tn/todays-weather ()
-  (interactive)
-  (shell-command-to-string "curl -s https://wttr.in/39.96,-82.99\\?ndTA | head -n 17 | tail -n +8"))
-
-(setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "NEXT(n)" "INPROGRESS(i!/!)" "ACTIVE(a!/!)"
-                        "|" "DONE(d!/!)")
-              (sequence "GOAL(g@/!)" "WAITING(w@/!)" "HOLD(h@/!)"
-                         "REVIEW" "|" "CANCELLED(c@/!)"))))
-
-(setq org-todo-keyword-faces
-      (quote (("TODO" :foreground "deep sky blue" :weight bold)
-              ("NEXT" :foreground "medium spring green" :weight bold)
-              ("ACTIVE" :foreground "cyan" :weight bold)
-              ("DONE" :foreground "dim gray" :weight bold)
-              ("WAITING" :foreground "blue violet" :weight bold)
-              ("REVIEW" :foreground "blue violet" :weight bold)
-              ("HOLD" :foreground "dark red" :weight bold)
-              ("CANCELLED" :foreground "dim gray" :weight bold))))
 
 
 (setq org-ellipsis " ▾"
@@ -201,7 +124,6 @@ it can be passed in POS."
       org-hide-block-startup nil
       org-src-preserve-indentation nil
       org-startup-folded t
-      org-image-actual-width 600
       org-treat-S-cursor-todo-selection-as-state-change nil
       org-startup-with-inline-images t
       org-cycle-separator-lines 2
@@ -223,17 +145,9 @@ it can be passed in POS."
       org-archive-location (format "~/Ferronomicon/\%s/\%s-archvie.org::datetree/" (Tn/current-year) (Tn/current-year)))
 
 (use-package org
-:hook
-(org-mode . Tn/org-font-setup)
-(before-save . Tn/org-set-last-modified)
 
 :bind
 (("C-c l" . Tn/org-link-hydra/body)
- ("s-n" . org-clock-in)
- ("s-N" . org-clock-goto)
- ("s-e" . Tn/org-todo-quick-done)
- ("s-E" . org-clock-in-last)
- ("s-<return>" . Tn/new-todo-with-priority)
  ("C-c h" . Tn/org-heading-actions-hydra/body))
 
 :config
@@ -247,54 +161,7 @@ it can be passed in POS."
 
 (push '("conf-unix" . conf-unix) org-src-lang-modes))
 
-(defhydra Tn/org-link-hydra (:color blue
-                             :hint nil)
-  "
-      ^Link Actions^
-----------------------------
-_n_: Insert      _t_: Tangle
-_y_: Yank        _o_: Open
-     _f_: FireFox
-^ ^
-^ ^
 
-"
-  ("n" org-insert-link)
-  ("y" org-store-link)
-  ("t" org-babel-tangle)
-  ("o" org-open-at-point)
-  ("f" Tn/open-link-firefox)
-  ("q" nil "Cancel" :color blue))
-
-(defun Tn/open-link-firefox ()
-  "Opens the Org-mode link under point with Firefox."
-  (interactive)
-  (let ((link-at-point (org-element-context)))
-      (browse-url-firefox (org-element-property :raw-link link-at-point))))
-
-(defhydra Tn/org-heading-actions-hydra (:color blue
-                                        :hint nil)
-  "
-      ^Heading Actions^
--------------------------------
-_t_: Tags         _s_: Schedual
-_h_: Todo State   _d_: Deadline
-_m_: Time stamp; , for inactive
-^ ^
-^ ^
-"
-  ("t" Tn/org-tag-main-hydra/body)
-  ("h" org-todo)
-  ("s" org-schedule)
-  ("d" org-deadline)
-  ("m" org-time-stamp)
-  ("q" nil "Cancel" :color blue))
-
-(use-package org-ql)
-
-(use-package helm-org-ql)
-
-(use-package org-transclusion)
 
 (defhydra Tn/org-tag-main-hydra (:color blue
                                  :hint nil)

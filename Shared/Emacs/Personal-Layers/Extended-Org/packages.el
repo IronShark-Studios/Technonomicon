@@ -41,7 +41,7 @@
 ;;; Code:
 
 (defconst Extended-Org-packages
-  '()
+  '(org-ql)
   "The list of Lisp packages required by the Extended-Org layer.
 
 Each entry is either:

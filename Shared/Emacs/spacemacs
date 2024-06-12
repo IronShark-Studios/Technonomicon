@@ -132,7 +132,8 @@ This function should only modify configuration layer settings."
           org-enable-transclusion-support t)
 )
 
-   dotspacemacs-additional-packages '(llvm-ts-mode)
+   dotspacemacs-additional-packages '(llvm-ts-mode
+                                      harpoon)
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
    dotspacemacs-install-packages 'used-only))
