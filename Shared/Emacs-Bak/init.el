@@ -29,34 +29,6 @@
 
 
 
-(use-package helm-org-ql)
-
-(use-package helm-company
-  :after company
-  :config
-  (eval-after-load 'company
-    '(progn
-       (define-key company-mode-map (kbd "C-:") 'helm-company)
-       (define-key company-active-map (kbd "C-:") 'helm-company))))
-
-(use-package helm-flyspell
-  :after company helm
-  :config
-  (define-key flyspell-mode-map (kbd "C-;") 'helm-flyspell-correct))
-
-(dolist (hook '(text-mode-hook))
-  (add-hook hook (lambda ()
-                   (flyspell-mode 1))))
-
-(use-package helm-flycheck
-  :after helm flycheck
-  :config
-  (eval-after-load 'flycheck
-    '(define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck)))
-
-
-
-
 
 
 
@@ -1286,7 +1258,6 @@ _t_: ToDo         _e_: Financial
   ("t" Tn/easy-todo-capture)
   ("q" nil "Cancel" :color blue))
 
-(use-package pdf-tools)
 
 (require 'bibtex)
 
