@@ -2,7 +2,10 @@
 
 (setq alert-default-style 'notifications
       org-export-backends '(ascii html icalendar latex md odt)
-      org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●"))
+      org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●")
+
+
+      )
 
 (add-hook 'org-mode-hook 'Tn/org-mode-setup)
 (add-hook 'before-save-hook 'Tn/org-set-last-modified)
