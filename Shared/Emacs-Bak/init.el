@@ -68,92 +68,54 @@
 
 
 
-(use-package org-appear
-  :after evil
-  :config
-  (setq org-appear-trigger 'manual
-        org-appear-autoemphasis t
-        org-appear-autolinks t
-        org-link-descriptive t
-        org-pretty-entities t
-        org-appear-autoentities t
-        org-appear-autosubmarkers t
-        org-appear-autokeywords t
-        org-appear-inside-latex t)
-
-  (add-hook 'org-mode-hook 'org-appear-mode)
-  (add-hook 'org-mode-hook (lambda ()
-                             (add-hook 'evil-insert-state-entry-hook
-                                       #'org-appear-manual-start
-                                       nil
-                                       t)
-                             (add-hook 'evil-insert-state-exit-hook
-                                       #'org-appear-manual-stop
-                                       nil
-                                       t))))
-
-(setq org-export-backends '(ascii html icalendar latex md odt))
-
-(require 'org-tempo)
-(add-to-list 'org-structure-template-alist
-             '("el" . "src emacs-lisp\n"))
-(add-to-list 'org-structure-template-alist
-             '("en" . "src nix\n"))
 
 
-(add-hook 'org-capture-mode-hook 'evil-insert-state)
-(add-hook 'org-log-buffer-setup-hook 'evil-insert-state)
+;; (add-hook 'org-mode-hook 'Tn/org-font-setup)
 
-(advice-add 'org-ctrl-c-ctrl-c  :after #'save-buffer)
-(advice-add 'org-deadline       :after #'save-buffer)
-(advice-add 'org-schedule       :after #'save-buffer)
-(advice-add 'org-store-log-note :after #'save-buffer)
-(advice-add 'org-store-log-note :after #'org-cycle)
+;; (defun Tn/org-font-setup ()
+;; ;; This is magic code that changes the font of non-heading bullet point lists.
+;; (font-lock-add-keywords 'org-mode
+;;                         '(("^ *\\([-]\\) "
+;;                            (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
 
-(defun Tn/org-font-setup ()
-;; This is magic code that changes the font of non-heading bullet point lists.
-(font-lock-add-keywords 'org-mode
-                        '(("^ *\\([-]\\) "
-                           (0 (prog1 () (compose-region (match-beginning 1) (match-end 1) "•"))))))
+;; (dolist (face '((org-level-1 . "Azure3")
+;;                 (org-level-2 . "Azure3")
+;;                 (org-level-3 . "Azure3")
+;;                 (org-level-4 . "Azure3")
+;;                 (org-level-5 . "Azure3")
+;;                 (org-level-6 . "Azure3")
+;;                 (org-level-7 . "Azure3")
+;;                 (org-level-8 . "Azure3")))
+;;   (set-face-attribute (car face) nil :font "Iosevka"
+;;                       :weight 'regular :height 1.3
+;;                       :foreground (cdr face)))
 
-(dolist (face '((org-level-1 . "Azure3")
-                (org-level-2 . "Azure3")
-                (org-level-3 . "Azure3")
-                (org-level-4 . "Azure3")
-                (org-level-5 . "Azure3")
-                (org-level-6 . "Azure3")
-                (org-level-7 . "Azure3")
-                (org-level-8 . "Azure3")))
-  (set-face-attribute (car face) nil :font "Iosevka"
-                      :weight 'regular :height 1.3
-                      :foreground (cdr face)))
+;; (set-face-attribute 'org-link nil    :foreground "cyan" :inherit 'fixed-pitch)
+;; (set-face-attribute 'org-tag nil     :height 0.9 :inherit 'fixed-pitch)
+;; (set-face-attribute 'org-block nil    :inherit 'fixed-pitch)
+;; (set-face-attribute 'org-table nil    :foreground "dark cyan" :inherit 'fixed-pitch)
+;; (set-face-attribute 'org-formula nil  :foreground "dark cyan" :inherit 'fixed-pitch)
+;; (set-face-attribute 'org-code nil     :foreground "SpringGreen3"
+;;                     :weight 'semi-bold :inherit '(shadow fixed-pitch))
+;; (set-face-attribute 'org-verbatim nil :foreground "SpringGreen3"
+;;                     :weight 'semi-bold :inherit '(shadow fixed-pitch))
+;; (set-face-attribute 'org-table nil    :inherit '(shadow fixed-pitch))
+;; (set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
+;; (set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
+;; (set-face-attribute 'org-checkbox nil  :inherit 'fixed-pitch)
+;; (set-face-attribute 'line-number nil :inherit 'fixed-pitch)
+;; (set-face-attribute 'line-number-current-line nil :inherit 'fixed-pitch))
 
-(set-face-attribute 'org-link nil    :foreground "cyan" :inherit 'fixed-pitch)
-(set-face-attribute 'org-tag nil     :height 0.9 :inherit 'fixed-pitch)
-(set-face-attribute 'org-block nil    :inherit 'fixed-pitch)
-(set-face-attribute 'org-table nil    :foreground "dark cyan" :inherit 'fixed-pitch)
-(set-face-attribute 'org-formula nil  :foreground "dark cyan" :inherit 'fixed-pitch)
-(set-face-attribute 'org-code nil     :foreground "SpringGreen3"
-                    :weight 'semi-bold :inherit '(shadow fixed-pitch))
-(set-face-attribute 'org-verbatim nil :foreground "SpringGreen3"
-                    :weight 'semi-bold :inherit '(shadow fixed-pitch))
-(set-face-attribute 'org-table nil    :inherit '(shadow fixed-pitch))
-(set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
-(set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
-(set-face-attribute 'org-checkbox nil  :inherit 'fixed-pitch)
-(set-face-attribute 'line-number nil :inherit 'fixed-pitch)
-(set-face-attribute 'line-number-current-line nil :inherit 'fixed-pitch))
-
-(setq org-priority-faces '((?A . (:foreground "medium spring green" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?B . (:foreground "deep sky blue" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?C . (:foreground "blue violet" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?D . (:foreground "dim grey" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?E . (:foreground "dark red" :weight 'bold
-                                              :inherit 'fixed-pitch))))
+;; (setq org-priority-faces '((?A . (:foreground "medium spring green" :weight 'bold
+;;                                               :inherit 'fixed-pitch))
+;;                            (?B . (:foreground "deep sky blue" :weight 'bold
+;;                                               :inherit 'fixed-pitch))
+;;                            (?C . (:foreground "blue violet" :weight 'bold
+;;                                               :inherit 'fixed-pitch))
+;;                            (?D . (:foreground "dim grey" :weight 'bold
+;;                                               :inherit 'fixed-pitch))
+;;                            (?E . (:foreground "dark red" :weight 'bold
+;;                                               :inherit 'fixed-pitch))))
 
 (defun Tn/org-find-time-file-property (property &optional anywhere)
   "Return the position of the time file PROPERTY if it exists.
@@ -225,10 +187,6 @@ it can be passed in POS."
               ("HOLD" :foreground "dark red" :weight bold)
               ("CANCELLED" :foreground "dim gray" :weight bold))))
 
-
-(defun Tn/org-todo-quick-done ()
-(interactive)
-(org-todo "DONE"))
 
 (setq org-ellipsis " ▾"
       org-highest-priority ?A
