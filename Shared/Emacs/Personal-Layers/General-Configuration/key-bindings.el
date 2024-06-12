@@ -15,7 +15,24 @@
 (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
 (define-key evil-hybrid-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
 
-;;; I am also binding the clipboard functions here. As this seems to be where they would have the most overlap.
+;;; Allow me to use the System Clipboard
 (global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
 (global-set-key (kbd "C-S-x") 'clipboard-kill-region)
 (global-set-key (kbd "C-S-v") 'clipboard-yank)
+
+;;; Improved Evil Movement
+(defun Tn/evil-pg-down-and-center ()
+  (interactive)
+  (evil-next-visual-line 35)
+  (evil-scroll-line-to-center nil))
+
+(defun Tn/evil-pg-up-and-center ()
+  (interactive)
+  (evil-previous-visual-line 35)
+  (evil-scroll-line-to-center nil))
+
+(defun Tn/avy-jump-and-center ()
+  "moves point forward past the next character"
+  (interactive)
+  (avy-goto-word-or-subword-1)
+  (evil-scroll-line-to-center nil))
