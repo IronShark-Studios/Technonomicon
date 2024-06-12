@@ -118,8 +118,18 @@ This function should only modify configuration layer settings."
 
      ;; Plain Text Management
      markdown
-     org
-     extended-org
+     Extended-Org
+     (org :variables
+          org-todo-dependencies-strategy 'semiauto
+          org-enable-notifications t
+          org-start-notification-daemon-on-startup t
+          org-enable-org-journal-support t
+          org-projectile-file "TODOs.org"
+          org-enable-roam-support t
+          org-enable-roam-protocol t
+          org-enable-roam-ui t
+          org-enable-appear-support t
+          org-enable-transclusion-support t)
 )
 
    dotspacemacs-additional-packages '(llvm-ts-mode)

@@ -68,11 +68,6 @@
 
 
 
-(use-package org-bullets
-  :hook (org-mode . org-bullets-mode)
-  :custom
-  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
-
 (use-package org-appear
   :after evil
   :config
@@ -263,7 +258,6 @@ it can be passed in POS."
       org-refile-use-outline-path 'file
       org-outline-path-complete-in-steps nil
       org-refile-allow-creating-parent-nodes 'confirm
-      org-enforce-todo-dependencies t
       org-enforce-todo-checkbox-dependencies t
       org-odd-levels-only t
       org-fold-catch-invisible-edits 'show-and-error
