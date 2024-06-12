@@ -119,7 +119,7 @@ This function should only modify configuration layer settings."
      ;; Plain Text Management
      markdown
     ;; Extended-Helm
-    ;; Extended-Org
+     Extended-Org
      (org :variables
           org-todo-dependencies-strategy 'semiauto
           org-enable-notifications t
@@ -381,7 +381,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (load "~/.config/emacs/private/General-Configuration/global-save.el")
+  (load "~/.config/emacs/private/General-Configuration/key-bindings.el")
   (load "~/.config/emacs/private/General-Configuration/global-variables.el")
   (load "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
   (load "~/.config/emacs/private/Secrets/secrets.el"))
