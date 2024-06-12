@@ -119,7 +119,7 @@ This function should only modify configuration layer settings."
      ;; Plain Text Management
      markdown
     ;; Extended-Helm
-     Extended-Org
+    ;; Extended-Org
      (org :variables
           org-todo-dependencies-strategy 'semiauto
           org-enable-notifications t
