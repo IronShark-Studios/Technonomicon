@@ -2,7 +2,7 @@
 
   (require 'hydra)
 
-  (defhydra Tn/helm-check-hydra (:color blue
+(eval  '(defhydra Tn/helm-check-hydra (:color blue
                                 :hint nil)
    "
             ^Helm^
@@ -16,6 +16,6 @@
    ("s" helm-flyspell-correct)
    ("e" helm-flycheck)
    ("c" helm-company)
-   ("q" nil "Cancel" :color blue))
+   ("q" nil "Cancel" :color blue)))
 
 )
