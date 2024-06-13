@@ -9,7 +9,6 @@
                  '(define-key flyspell-mode-map (kbd "C-;") 'helm-flycheck))
 
 
-(eval-after-load 'evil
 
 (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
 (define-key evil-hybrid-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
@@ -27,5 +26,3 @@
 (define-key evil-normal-state-map (kbd "/") 'helm-swoop)
 (define-key evil-normal-state-map (kbd "?") 'helm-regexp)
 (define-key evil-normal-state-map (kbd "C-h") 'help)
-
-                 )
