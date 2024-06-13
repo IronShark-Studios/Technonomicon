@@ -1,3 +1,4 @@
+(with-eval-after-load 'org
 ;;; General Org-Mode
 
 (setq alert-default-style 'notifications
@@ -52,8 +53,9 @@
 
 
 ;;; Org Related Keybindings, Hooks, and Advice
-;; (define-key org-mode-map (kbd "C-c l") 'Tn/org-link-hydra/body)
-;; (define-key org-mode-map (kbd "C-c h") 'Tn/org-heading-actions-hydra/body)
+(with-eval-after-load 'hydra
+  (define-key org-mode-map (kbd "C-c l") 'Tn/org-link-hydra/body)
+  (define-key org-mode-map (kbd "C-c h") 'Tn/org-heading-actions-hydra/body))
 
 
 (add-hook 'org-mode-hook 'Tn/org-mode-setup)
@@ -69,42 +71,4 @@
 (advice-add 'org-store-log-note :after #'org-cycle)
 
 
-;;; Frequent Action Hydras
-
-(defhydra Tn/org-link-hydra (:color blue
-                                    :hint nil)
-  "
-      ^Link Actions^
-----------------------------
-_n_: Insert      _t_: Tangle
-_y_: Yank        _o_: Open
-     _f_: FireFox
-^ ^
-^ ^
-
-"
-  ("n" org-insert-link)
-  ("y" org-store-link)
-  ("t" org-babel-tangle)
-  ("o" org-open-at-point)
-  ("f" Tn/open-link-firefox)
-  ("q" nil "Cancel" :color blue))
-
-
-(defhydra Tn/org-heading-actions-hydra (:color blue
-                                        :hint nil)
-  "
-      ^Heading Actions^
--------------------------------
-_t_: Tags         _s_: Schedual
-_h_: Todo State   _d_: Deadline
-_m_: Time stamp; , for inactive
-^ ^
-^ ^
-"
-  ("t" Tn/org-tag-main-hydra/body)
-  ("h" org-todo)
-  ("s" org-schedule)
-  ("d" org-deadline)
-  ("m" org-time-stamp)
-  ("q" nil "Cancel" :color blue))
+)
