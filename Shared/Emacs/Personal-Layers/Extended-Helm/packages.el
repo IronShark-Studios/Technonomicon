@@ -71,3 +71,19 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+
+(defun Extended-Org/init-org-ql ()
+  (use-package org-ql
+    :defer t))
+
+(defun Extended-Org/init-helm-company ()
+  (use-package helm-company
+    :defer t))
+
+(defun Extended-Org/init-helm-flyspell ()
+  (use-package helm-flyspell
+    :defer t))
+
+(defun Extended-Org/init-helm-flycheck ()
+  (use-package helm-flycheck
+    :defer t))
