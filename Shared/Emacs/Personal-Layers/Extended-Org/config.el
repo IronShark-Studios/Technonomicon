@@ -39,9 +39,6 @@
       )
 
 
-
-
-
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "NEXT(n)" "INPROGRESS(i!/!)" "ACTIVE(a!/!)"
                         "|" "DONE(d!/!)")
@@ -57,6 +54,18 @@
               ("REVIEW" :foreground "blue violet" :weight bold)
               ("HOLD" :foreground "dark red" :weight bold)
               ("CANCELLED" :foreground "dim gray" :weight bold))))
+
+
+;;; Org-Bable
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((emacs-lisp . t)
+   (lisp . t)
+   (gnuplot . t)
+   (latex . t)
+   (scheme . t)))
+
+(push '("conf-unix" . conf-unix) org-src-lang-modes)
 
 
 ;;; Org-Appear
