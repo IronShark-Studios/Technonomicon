@@ -7,11 +7,11 @@
   ;; (define-key evil-normal-state-map (kbd "C-h") 'help)
 
 
-  ;; (add-hook 'evil-mode-hook
-  ;;           (lambda ()
-  ;;             (define-key evil-normal-state-map (kbd "C-h") 'help)
-  ;;             (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
-  ;;             ))
+  (add-hook 'evil-mode-hook
+            (lambda ()
+              (define-key evil-normal-state-map (kbd "C-h") 'help)
+              (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
+              ))
 
   ;; (add-hook 'evil-mode-hook
   ;;           (lambda ()
