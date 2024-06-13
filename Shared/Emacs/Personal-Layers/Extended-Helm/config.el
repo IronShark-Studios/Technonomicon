@@ -1,1 +1,1 @@
-(global-set-key (kbd "C-c !")  'Tn/helm-check-hydra/body)
+(global-set-key (kbd "C-c !")  'spacemacs/Tn/helm-actions-transient-state/body)
