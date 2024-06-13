@@ -41,7 +41,8 @@
 ;;; Code:
 
 (defconst Extended-Evil-packages
-  '()
+  '(rg
+    harpoon)
   "The list of Lisp packages required by the Extended-Evil layer.
 
 Each entry is either:
@@ -68,3 +69,12 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+
+
+(defun Extended-Evil/init-rg ()
+  (use-package rg
+    :defer t))
+
+(defun Extended-Evil/init-harpoon ()
+  (use-package harpoon
+    :defer t))
