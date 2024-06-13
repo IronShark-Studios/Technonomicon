@@ -72,5 +72,6 @@ Each entry is either:
 
 
 
-(use-package org-ql
-  :defer t)
+(defun Extended-Org/init-org-ql ()
+  (use-package org-ql
+    :defer t))
