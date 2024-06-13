@@ -10,6 +10,10 @@
     (evil-previous-visual-line 35)
     (evil-scroll-line-to-center nil))
 
+  (defun Tn/evil-center-page ()
+    (interactive)
+    (evil-scroll-line-to-center nil))
+
   (defun Tn/avy-jump-and-center ()
     "moves point forward past the next character"
     (interactive)
