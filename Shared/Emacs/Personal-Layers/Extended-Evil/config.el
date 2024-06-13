@@ -1,5 +1,4 @@
 
-;(define-key evil-normal-state-map (kbd "C-h") 'help)
 
 
 
