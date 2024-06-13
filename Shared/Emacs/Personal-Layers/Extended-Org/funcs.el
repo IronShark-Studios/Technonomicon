@@ -60,64 +60,55 @@ it can be passed in POS."
 
 ;;; Generate Current Year string for file names
 
-(defun Tn/current-year () (interactive)
-  (shell-command-to-string "echo -n $(date +%Y)"))
+  (defun Tn/current-year () (interactive)
+         (shell-command-to-string "echo -n $(date +%Y)"))
 
 ;;; Open Link under point
-(defun Tn/open-link-firefox ()
-  "Opens the Org-mode link under point with Firefox."
-  (interactive)
-  (let ((link-at-point (org-element-context)))
-    (browse-url-firefox (org-element-property :raw-link link-at-point))))
+  (defun Tn/open-link-firefox ()
+    "Opens the Org-mode link under point with Firefox."
+    (interactive)
+    (let ((link-at-point (org-element-context)))
+      (browse-url-firefox (org-element-property :raw-link link-at-point))))
 
 ;;; Frequent Action Hydras
 
-(defhydra Tn/org-link-hydra (:color blue
-                                    :hint nil)
+(spacemacs|define-transient-state Tn/org-link
+  :title "Org Link Actions"
+  :foreign-keys run
+  :doc "
+    ^Link Actions^
+  ----------------------------
+  _n_: Insert      _t_: Tangle
+  _y_: Yank        _o_: Open
+       _f_: FireFox
   "
-      ^Link Actions^
-----------------------------
-_n_: Insert      _t_: Tangle
-_y_: Yank        _o_: Open
-     _f_: FireFox
-^ ^
-^ ^
-
-"
+  :bindings
   ("n" org-insert-link)
   ("y" org-store-link)
   ("t" org-babel-tangle)
   ("o" org-open-at-point)
   ("f" Tn/open-link-firefox)
-  ("q" nil "Cancel" :color blue))
+  ("q" nil :exit t))
 
 
-(defhydra Tn/org-heading-actions-hydra (:color blue
-                                        :hint nil)
+
+(spacemacs|define-transient-state Tn/org-headings
+  :title "Org Heading Actions"
+  :foreign-keys run
+  :doc "
+        ^Heading Actions^
+  -------------------------------
+  _t_: tags         _s_: schedual
+  _h_: todo state   _d_: deadline
+  _m_: time stamp; , for inactive
   "
-      ^Heading Actions^
--------------------------------
-_t_: Tags         _s_: Schedual
-_h_: Todo State   _d_: Deadline
-_m_: Time stamp; , for inactive
-^ ^
-^ ^
-"
-  ("t" Tn/org-tag-main-hydra/body)
+  :bindings
+  ("t" spacemacs/Tn/helm-actions-transient-state/body)
   ("h" org-todo)
   ("s" org-schedule)
   ("d" org-deadline)
   ("m" org-time-stamp)
-  ("q" nil "Cancel" :color blue))
+  ("q" nil :exit t))
 
-
-
-
-
-
-
-
-
-
-
+;;; Closing Paren for eval statement
 )

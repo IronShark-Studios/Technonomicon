@@ -1,4 +1,5 @@
-;;; General Org-Mode
+(when (configuration-layer/package-used-p 'org)
+;;; General Org-Mode Variables
 
 (setq alert-default-style 'notifications
       org-export-backends '(ascii html icalendar latex md odt)

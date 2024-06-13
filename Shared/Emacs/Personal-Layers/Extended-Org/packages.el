@@ -41,9 +41,7 @@
 ;;; Code:
 
 (defconst Extended-Org-packages
-  '((org-ql
-     :location (recipe :fetcher github :repo "alphapapa/org-ql"))
-    hydra)
+  '()
   "The list of Lisp packages required by the Extended-Org layer.
 
 Each entry is either:
@@ -70,13 +68,3 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
-
-
-
-(defun Extended-Org/init-org-ql ()
-  (use-package org-ql
-    :defer t))
-
-(defun Extended-Org/init-hydra ()
-  (use-package hydra
-    :defer t))
