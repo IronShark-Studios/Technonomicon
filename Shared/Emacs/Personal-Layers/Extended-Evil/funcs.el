@@ -27,7 +27,7 @@
   (defun Tn/evil-normal-and-save ()
     "switches to evil normal mode, and then saves all buffers"
     (interactive)
-    (evil-normal-state)
+    (evil-force-normal-state)
     (Tn/save-all-buffers))
 
 ;;; Closing Paren for Eval Statement
