@@ -41,7 +41,8 @@
 ;;; Code:
 
 (defconst Extended-Helm-packages
-  '(helm-org-ql
+  '(org-ql
+    helm-org-ql
     helm-company
     helm-flyspell
     helm-flycheck)
@@ -74,6 +75,10 @@ Each entry is either:
 
 (defun Extended-Helm/init-org-ql ()
   (use-package org-ql
+    :defer t))
+
+(defun Extended-Helm/init-helm-org-ql ()
+  (use-package helm-org-ql
     :defer t))
 
 (defun Extended-Helm/init-helm-company ()
