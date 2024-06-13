@@ -133,7 +133,7 @@ This function should only modify configuration layer settings."
 
 
     Extended-Helm
-    ;; Extended-Org
+    Extended-Org
 )
 
    dotspacemacs-frozen-packages '()

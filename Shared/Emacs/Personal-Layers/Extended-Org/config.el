@@ -3,9 +3,39 @@
 
 (setq alert-default-style 'notifications
       org-export-backends '(ascii html icalendar latex md odt)
+      org-ellipsis " ▾"
+      org-highest-priority ?A
+      org-default-priority ?B
+      org-lowest-priority ?D
+      org-habit-graph-column 100
+      org-hide-emphasis-markers t
+      org-src-fontify-natively t
+      org-fontify-quote-and-verse-blocks t
+      org-fontify-done-headline t
+      org-src-tab-acts-natively t
+      org-hide-block-startup nil
+      org-src-preserve-indentation nil
+      org-startup-folded t
+      org-treat-S-cursor-todo-selection-as-state-change nil
+      org-startup-with-inline-images t
+      org-cycle-separator-lines 2
+      org-confirm-babel-evaluate nil
+      org-capture-bookmark nil
+      evil-auto-indent nil
+      org-src-preserve-indentation nil
+      org-export-with-todo-keywords nil
+      org-edit-src-content-indentation 0
+      org-return-follows-link t
+      org-refile-targets '((org-agenda-files :maxlevel . 10))
+      org-refile-use-outline-path 'file
+      org-outline-path-complete-in-steps nil
+      org-refile-allow-creating-parent-nodes 'confirm
+      org-enforce-todo-checkbox-dependencies t
+      org-odd-levels-only t
+      org-fold-catch-invisible-edits 'show-and-error
+      org-directory "~/Apocrypha/Org/"
+      org-archive-location (format "~/Ferronomicon/\%s/\%s-archvie.org::datetree/" (Tn/current-year) (Tn/current-year))
       org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●")
-
-
       )
 
 
