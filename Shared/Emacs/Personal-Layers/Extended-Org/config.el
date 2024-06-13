@@ -53,9 +53,8 @@
 
 
 ;; ;;; Org Related Keybindings, Hooks, and Advice
-;; (with-eval-after-load 'hydra
-;;   (define-key org-mode-map (kbd "C-c l") 'Tn/org-link-hydra/body)
-;;   (define-key org-mode-map (kbd "C-c h") 'Tn/org-heading-actions-hydra/body))
+ (global-set-key (kbd "C-c l") 'spacemacs/Tn/org-link-transient-state/body)
+ (global-set-key (kbd "C-c h") 'spacemacs/Tn/org-headings-transient-state/body)
 
 
 (add-hook 'org-mode-hook 'Tn/org-mode-setup)
@@ -69,3 +68,8 @@
 (advice-add 'org-schedule       :after #'save-buffer)
 (advice-add 'org-store-log-note :after #'save-buffer)
 (advice-add 'org-store-log-note :after #'org-cycle)
+
+
+
+;;; Closing Paren for Eval
+)
