@@ -1,4 +1,4 @@
-(when (configuration-layer/package-used-p 'spacemacs-evil)
+(when (configuration-layer/package-used-p 'evil)
 
 
 (global-set-key (kbd "C-x C-s") #'Tn/save-all-buffers)

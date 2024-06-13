@@ -1,4 +1,4 @@
-(when (configuration-layer/package-used-p 'helm)
+(when (configuration-layer/package-used-p 'evil)
 
   (defun Tn/evil-pg-down-and-center ()
     (interactive)
