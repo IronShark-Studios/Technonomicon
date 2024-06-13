@@ -9,8 +9,8 @@
 
   (add-hook 'evil-normal-state-hook
             (lambda ()
-              (define-key evil-normal-state-map (kbd "C-h") 'help)
-              (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
+              (define-key evil-normal-state-map (kbd "C-h") #'help)
+              (define-key evil-normal-state-map (kbd "S-<escape>") #'Tn/evil-normal-and-save)
               ))
 
   (add-hook 'evil-hybrid-state-hook
