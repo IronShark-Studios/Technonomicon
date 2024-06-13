@@ -12,7 +12,7 @@
   ;; (add-hook 'evil-mode-hook
   ;;           (lambda ()
   ;;             (define-key evil-hybridevil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)))
-  (evil-define-key '(normal) evil-normal-mode-map (kbd "C-h") 'help)
+ ; (evil-define-key '(normal) evil-normal-mode-map (kbd "C-h") 'help)
 
 
 
