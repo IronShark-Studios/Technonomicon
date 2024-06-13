@@ -26,7 +26,8 @@
   (defun Tn/save-all-buffers ()
     "Instead of `save-buffer', save all opened buffers by calling `save-some-buffers' with ARG t."
     (interactive)
-    (save-some-buffers t))
+    (save-some-buffers t)
+    (message "All Buffers Saved"))
 
   (defun Tn/evil-normal-and-save ()
     "switches to evil normal mode, and then saves all buffers"

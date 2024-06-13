@@ -19,6 +19,16 @@
 
 (define-key evil-normal-state-map (kbd "C-h") 'help)
 
+
+(define-key evil-motion-state-map (kbd "N") 'Tn/evil-pg-down-and-center)
+(define-key evil-motion-state-map (kbd "n") 'evil-next-visual-line)
+(define-key evil-motion-state-map (kbd "E") 'Tn/evil-pg-up-and-center)
+(define-key evil-motion-state-map (kbd "e") 'evil-previous-visual-line)
+(define-key evil-motion-state-map (kbd "I") 'Tn/evil-center-page)
+(define-key evil-motion-state-map (kbd "i") 'avy-goto-subword-1)
+(define-key evil-motion-state-map (kbd "O") 'join-line)
+
+
 (define-key evil-normal-state-map (kbd "N") 'Tn/evil-pg-down-and-center)
 (define-key evil-normal-state-map (kbd "n") 'evil-next-visual-line)
 (define-key evil-normal-state-map (kbd "E") 'Tn/evil-pg-up-and-center)
@@ -29,6 +39,7 @@
 (define-key evil-normal-state-map (kbd "o") 'harpoon-quick-menu-hydra)
 (define-key evil-normal-state-map (kbd "/") 'helm-swoop)
 (define-key evil-normal-state-map (kbd "?") 'helm-regexp)
+
 
 (define-key evil-normal-state-map (kbd "<up>") 'evil-previous-visual-line)
 (define-key evil-normal-state-map (kbd "<down>") 'evil-next-visual-line)
