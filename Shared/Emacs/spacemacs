@@ -7,12 +7,12 @@ This function should only modify configuration layer settings."
    dotspacemacs-distribution 'spacemacs
    dotspacemacs-enable-lazy-installation 'nil
    dotspacemacs-ask-for-lazy-installation t
-
-   ;; List of additional paths where to look for configuration layers.
-   ;; Paths must have a trailing slash (i.e. "~/.mycontribs/")
    dotspacemacs-configuration-layer-path '()
 
-   ;; List of configuration layers to load.
+   dotspacemacs-additional-packages '(llvm-ts-mode
+                                      harpoon
+                                      )
+
    dotspacemacs-configuration-layers
    '(theming
      emoji
@@ -118,8 +118,6 @@ This function should only modify configuration layer settings."
 
      ;; Plain Text Management
      markdown
-    ;; Extended-Helm
-     Extended-Org
      (org :variables
           org-todo-dependencies-strategy 'semiauto
           org-enable-notifications t
@@ -131,10 +129,13 @@ This function should only modify configuration layer settings."
           org-enable-roam-ui t
           org-enable-appear-support t
           org-enable-transclusion-support t)
+
+
+
+    Extended-Helm
+    ;; Extended-Org
 )
 
-   dotspacemacs-additional-packages '(llvm-ts-mode
-                                      harpoon)
    dotspacemacs-frozen-packages '()
    dotspacemacs-excluded-packages '()
    dotspacemacs-install-packages 'used-only))
