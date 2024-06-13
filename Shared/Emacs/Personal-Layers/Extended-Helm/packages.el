@@ -43,7 +43,6 @@
 (defconst Extended-Helm-packages
   '(org-ql
     helm-org-ql
-    helm-company
     helm-flyspell
     helm-flycheck)
   "The list of Lisp packages required by the Extended-Helm layer.
@@ -79,10 +78,6 @@ Each entry is either:
 
 (defun Extended-Helm/init-helm-org-ql ()
   (use-package helm-org-ql
-    :defer t))
-
-(defun Extended-Helm/init-helm-company ()
-  (use-package helm-company
     :defer t))
 
 (defun Extended-Helm/init-helm-flyspell ()
