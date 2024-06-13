@@ -11,7 +11,11 @@
 
   ;; (add-hook 'evil-mode-hook
   ;;           (lambda ()
-  ;;             (define-key evil-hybrid-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)))
+  ;;             (define-key evil-hybridevil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)))
+  (evil-define-key '(normal) evil-normal-mode-map (kbd "C-h") 'help)
+
+
+
 
 
 ;;; Closing Paren to Eval Statement
