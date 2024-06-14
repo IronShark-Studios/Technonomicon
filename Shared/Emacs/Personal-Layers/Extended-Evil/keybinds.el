@@ -51,5 +51,5 @@
 (define-key evil-normal-state-map (kbd "<down>") 'evil-next-visual-line)
 
 
-;; (eval-after-load 'helm
-;; (define-key helm-comp-read-map (kbd "C-c C-c") 'helm-cr-empty-string))
+(eval-after-load 'citar
+  (define-key helm-comp-read-map (kbd "C-c C-c") 'helm-cr-empty-string))
