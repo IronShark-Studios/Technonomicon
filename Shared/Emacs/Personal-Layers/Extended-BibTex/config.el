@@ -10,29 +10,30 @@
         citar-org-roam-capture-template-key "s"
         citar-org-roam-subdir (file-truename "~/Grimoire/Reference/")
         citar-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
-        org-cite-global-bibliography '("~/Apocrypha/Org/bibliography-index.bib"))
+        org-cite-global-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
+        bibtex-dialect 'biblatex
+        bibtex-autokey-year-length 4
+        bibtex-autokey-name-year-separator "-"
+        bibtex-autokey-year-title-separator "-"
+        bibtex-autokey-titleword-separator "-"
+        bibtex-autokey-titlewords 2
+        bibtex-autokey-titlewords-stretch 1
+        bibtex-autokey-titleword-length 5
+        bibtex-align-at-equal-sign t
+        bibtex-completion-pdf-symbol "⌘"
+        bibtex-completion-pdf-field "File"
+        bibtex-completion-notes-symbol "✎"
+        bibtex-completion-additional-search-fields '(Tags)
+        bibtex-completion-notes-extension ".org"
+        bibtex-completion-pdf-extension '(".pdf" ".djvu", ".jpg")
+        bibtex-completion-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
+        bibtex-completion-browser-function
+        (lambda (url _) (start-process "firefox" "*firefox*" "firefox" url))
+        bibtex-user-optional-fields '(("tags" "Tags to describe the entry" "")
+                                      ("file" "Link to a document file." "" ))
+        )
 
 
-(setq bibtex-dialect 'biblatex
-      bibtex-autokey-year-length 4
-      bibtex-autokey-name-year-separator "-"
-      bibtex-autokey-year-title-separator "-"
-      bibtex-autokey-titleword-separator "-"
-      bibtex-autokey-titlewords 2
-      bibtex-autokey-titlewords-stretch 1
-      bibtex-autokey-titleword-length 5
-      bibtex-align-at-equal-sign t
-      bibtex-completion-pdf-symbol "⌘"
-      bibtex-completion-pdf-field "File"
-      bibtex-completion-notes-symbol "✎"
-      bibtex-completion-additional-search-fields '(Tags)
-      bibtex-completion-notes-extension ".org"
-      bibtex-completion-pdf-extension '(".pdf" ".djvu", ".jpg")
-      bibtex-completion-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
-      bibtex-completion-browser-function
-      (lambda (url _) (start-process "firefox" "*firefox*" "firefox" url))
-      bibtex-user-optional-fields '(("tags" "Tags to describe the entry" "")
-                                    ("file" "Link to a document file." "" )))
 
 
 (with-eval-after-load 'bibtex
