@@ -71,4 +71,5 @@ Each entry is either:
 
 (defun Extended-Roam/init-org-roam-bibtex ()
   (use-package org-roam-bibtex
-    :defer t))
+    :defer t
+    :after org-roam))
