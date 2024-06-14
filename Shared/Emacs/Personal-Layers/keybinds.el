@@ -26,9 +26,9 @@
 (define-key evil-normal-state-map (kbd "C-h") 'help)
 
 
-(define-key evil-motion-state-map (kbd "N") 'Tn/evil-pg-down)
+(define-key evil-motion-state-map (kbd "N") 'Tn/evil-pg-down-and-center)
 (define-key evil-motion-state-map (kbd "n") 'evil-next-visual-line)
-(define-key evil-motion-state-map (kbd "E") 'Tn/evil-pg-up)
+(define-key evil-motion-state-map (kbd "E") 'Tn/evil-pg-up-and-center)
 (define-key evil-motion-state-map (kbd "e") 'evil-previous-visual-line)
 (define-key evil-motion-state-map (kbd "I") 'Tn/evil-center-page)
 (define-key evil-motion-state-map (kbd "i") 'avy-goto-subword-1)
