@@ -130,106 +130,106 @@
 
 
 
-(spacemacs|define-transient-state Tn/roam-insert
-  :title "Roam Insert"
-  :foreign-keys run
-  :doc "
-         File Types
-  --------------------------
-  _n_: Node    _e_: Internal
-  _t_: Topic   _s_: Source
-  _b_: Citation
-  _w_: Web Link"
-  :bindings
-  ("n" Tn/Node-insert)
-  ("N" Tn/Node-insert-all)
-  ("e" Tn/Internal-insert)
-  ("t" Tn/Topic-insert)
-  ("T" Tn/Topic-insert-all)
-  ("s" Tn/Source-insert)
-  ("S" Tn/Source-insert-all)
-  ("b" citar-insert-citation)
-  ("w" Tn/eww-wikipedia-search)
-  ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
-  ("q" nil :exit t))
+;; (spacemacs|define-transient-state Tn/roam-insert
+;;   :title "Roam Insert"
+;;   :foreign-keys run
+;;   :doc "
+;;          File Types
+;;   --------------------------
+;;   _n_: Node    _e_: Internal
+;;   _t_: Topic   _s_: Source
+;;   _b_: Citation
+;;   _w_: Web Link"
+;;   :bindings
+;;   ("n" Tn/Node-insert)
+;;   ("N" Tn/Node-insert-all)
+;;   ("e" Tn/Internal-insert)
+;;   ("t" Tn/Topic-insert)
+;;   ("T" Tn/Topic-insert-all)
+;;   ("s" Tn/Source-insert)
+;;   ("S" Tn/Source-insert-all)
+;;   ("b" citar-insert-citation)
+;;   ("w" Tn/eww-wikipedia-search)
+;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
+;;   ("q" nil :exit t))
 
-(spacemacs|define-transient-state Tn/roam-find
-  :title "Roam Find"
-  :foreign-keys run
-  :doc "
-        File Types
-  --------------------------
-  _n_: Node    _e_: Internal
-  _t_: Topic   _s_: Source"
-  :bindings
-  ("n" Tn/Node-find)
-  ("N" Tn/Node-find-all)
-  ("e" Tn/Internal-find)
-  ("t" Tn/Topic-find)
-  ("T" Tn/Topic-find-all)
-  ("s" Tn/Source-find)
-  ("S" Tn/Source-find-all)
-  ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
-  ("q" nil :exit t))
+;; (spacemacs|define-transient-state Tn/roam-find
+;;   :title "Roam Find"
+;;   :foreign-keys run
+;;   :doc "
+;;         File Types
+;;   --------------------------
+;;   _n_: Node    _e_: Internal
+;;   _t_: Topic   _s_: Source"
+;;   :bindings
+;;   ("n" Tn/Node-find)
+;;   ("N" Tn/Node-find-all)
+;;   ("e" Tn/Internal-find)
+;;   ("t" Tn/Topic-find)
+;;   ("T" Tn/Topic-find-all)
+;;   ("s" Tn/Source-find)
+;;   ("S" Tn/Source-find-all)
+;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
+;;   ("q" nil :exit t))
 
-(spacemacs|define-transient-state Tn/roam-capture
-  :title "Roam Capture"
-  :foreign-keys run
-  :doc "
-         File Types
-  --------------------------
-  _n_: Node    _e_: Internal
-  _t_: Topic   _s_: Source"
-  :bindings
-  ("q" nil :exit t)
-  ("n" Tn/Node-capture)
-  ("e" Tn/Internal-capture)
-  ("t" Tn/Topic-capture)
-  ("s" citar-open-notes)
-  ("r" Tn/org-roam-main-hydra/body "Return" :color blue ))
+;; (spacemacs|define-transient-state Tn/roam-capture
+;;   :title "Roam Capture"
+;;   :foreign-keys run
+;;   :doc "
+;;          File Types
+;;   --------------------------
+;;   _n_: Node    _e_: Internal
+;;   _t_: Topic   _s_: Source"
+;;   :bindings
+;;   ("q" nil :exit t)
+;;   ("n" Tn/Node-capture)
+;;   ("e" Tn/Internal-capture)
+;;   ("t" Tn/Topic-capture)
+;;   ("s" citar-open-notes)
+;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue ))
 
-(spacemacs|define-transient-state Tn/roam-actions
-  :title "Roam Actions"
-  :foreign-keys run
-  :doc "
-             File Actions
-  ------------------------------------
-  _t_: Add Tag      _T_: Remove Tag
-  _a_: Add Alias    _A_: Remove Alias
-  _r_: Add RefKey   _R_: Remove RefKey"
-  :bindings
-  ("t" org-roam-tag-add)
-  ("T" org-roam-tag-remove)
-  ("a" org-roam-alias-add)
-  ("A" org-roam-alias-remove)
-  ("r" citar-org-roam-ref-add)
-  ("R" org-roam-ref-remove))
+;; (spacemacs|define-transient-state Tn/roam-actions
+;;   :title "Roam Actions"
+;;   :foreign-keys run
+;;   :doc "
+;;              File Actions
+;;   ------------------------------------
+;;   _t_: Add Tag      _T_: Remove Tag
+;;   _a_: Add Alias    _A_: Remove Alias
+;;   _r_: Add RefKey   _R_: Remove RefKey"
+;;   :bindings
+;;   ("t" org-roam-tag-add)
+;;   ("T" org-roam-tag-remove)
+;;   ("a" org-roam-alias-add)
+;;   ("A" org-roam-alias-remove)
+;;   ("r" citar-org-roam-ref-add)
+;;   ("R" org-roam-ref-remove))
 
-(spacemacs|define-transient-state Tn/roam-main
-  :title "Roam Main Menu"
-  :foreign-keys run
-  :doc "
-   File Groups     All Files          Actions
-  --------------------------------------------------
-  _n_: Insert     _N_: Insert      _b_: Roam Buffer
-  _f_: Find       _F_: Find        _g_: Roam Graph
-  _c_: Capture    _C_: Capture     _d_: Delete File
-     _o_: Open Bibtex File  _u_: Update Database
-            _h_: Heading Actions"
-  :bindings
-  ("b" org-roam-buffer-toggle)
-  ("o" Tn/open-bibliography)
-  ("u" org-roam-db-sync)
-  ("g" org-roam-ui-mode)
-  ("G" org-roam-graph)
-  ("N" org-roam-node-insert)
-  ("C" org-roam-capture)
-  ("F" org-roam-node-find)
-  ("h" spacemacs/Tn/roam-actions-transient-state/body)
-  ("n" spacemacs/Tn/roam-insert-transient-state/body)
-  ("c" spacemacs/Tn/roam-capture-transient-state/body)
-  ("f" spacemacs/Tn/roam-find-transient-state/body)
-  ("d" Tn/delete-file-and-buffer)
-  ("q" nil :exit t))
+;; (spacemacs|define-transient-state Tn/roam-main
+;;   :title "Roam Main Menu"
+;;   :foreign-keys run
+;;   :doc "
+;;    File Groups     All Files          Actions
+;;   --------------------------------------------------
+;;   _n_: Insert     _N_: Insert      _b_: Roam Buffer
+;;   _f_: Find       _F_: Find        _g_: Roam Graph
+;;   _c_: Capture    _C_: Capture     _d_: Delete File
+;;      _o_: Open Bibtex File  _u_: Update Database
+;;             _h_: Heading Actions"
+;;   :bindings
+;;   ("b" org-roam-buffer-toggle)
+;;   ("o" Tn/open-bibliography)
+;;   ("u" org-roam-db-sync)
+;;   ("g" org-roam-ui-mode)
+;;   ("G" org-roam-graph)
+;;   ("N" org-roam-node-insert)
+;;   ("C" org-roam-capture)
+;;   ("F" org-roam-node-find)
+;;   ("h" spacemacs/Tn/roam-actions-transient-state/body)
+;;   ("n" spacemacs/Tn/roam-insert-transient-state/body)
+;;   ("c" spacemacs/Tn/roam-capture-transient-state/body)
+;;   ("f" spacemacs/Tn/roam-find-transient-state/body)
+;;   ("d" Tn/delete-file-and-buffer)
+;;   ("q" nil :exit t))
 ;;; Closing Paren for eval statement
 )
