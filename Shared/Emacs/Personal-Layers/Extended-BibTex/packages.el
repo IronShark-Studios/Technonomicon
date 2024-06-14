@@ -41,7 +41,8 @@
 ;;; Code:
 
 (defconst Extended-BibTex-packages
-  '(
+  '(citar
+    citar-org-roam
     )
   "The list of Lisp packages required by the Extended-BibTex layer.
 
@@ -69,3 +70,13 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
+
+(defun Extended-BibTex/init-citar ()
+  (use-package citar
+    :defer t))
+
+(defun Extended-BibTex/init-citar-org-roam ()
+  (use-package citar-org-roam
+    :defer t
+    :after (citar org-roam)
+    :config (citar-org-roam-mode)))
