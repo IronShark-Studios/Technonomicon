@@ -1423,9 +1423,6 @@ _i_: Citar Link Index  _s_: Bibtex Validate
 (setq citar-org-roam-subdir (file-truename "~/Grimoire/Reference/")
       citar-org-roam-capture-template-key "s")
 
-(use-package ledger-mode
-  :mode ("\\.journal\\'" "\\.hledger\\'")
-  :hook (ledger-mode . company-mode))
 
 (defun Tn/org-inherited-priority (s)
   (cond
@@ -1697,7 +1694,6 @@ _t_: Tobey Time    _d_: Driving
       org-icalendar-combined-name "OrgCal"
       org-icalendar-use-scheduled '(todo-start event-if-todo event-if-not-todo)
       org-icalendar-use-deadline '(todo-due event-if-todo event-if-not-todo)
-      org-icalendar-timezone "America/Detroit"
       org-icalendar-store-UID t
       org-icalendar-alarm-time 30
       calendar-date-style 'iso

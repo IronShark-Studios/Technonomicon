@@ -1,6 +1,5 @@
 (when (configuration-layer/package-used-p 'org)
 ;;; General Org-Mode Variables
-
 (setq alert-default-style 'notifications
       org-export-backends '(ascii html icalendar latex md odt)
       org-ellipsis " ▾"
@@ -34,6 +33,8 @@
       org-odd-levels-only t
       org-fold-catch-invisible-edits 'show-and-error
       org-directory "~/Apocrypha/Org/"
+      org-hide-leading-stars t
+      org-superstar-item-bullet-alist '((?* . ?•) (?+ . ?➤) (?- . ?•))
       org-archive-location (format "~/Ferronomicon/\%s/\%s-archvie.org::datetree/" (Tn/current-year) (Tn/current-year))
       org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●")
       )

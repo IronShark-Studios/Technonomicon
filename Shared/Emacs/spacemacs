@@ -131,8 +131,9 @@ This function should only modify configuration layer settings."
 
 
 
-    Extended-Helm
     Extended-Org
+    Extended-BibTex
+    Extended-Helm
     Extended-Evil
 )
 
