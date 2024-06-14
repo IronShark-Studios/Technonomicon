@@ -1,29 +1,5 @@
 
 
-(use-package rg
-  :config
-  (global-set-key (kbd "C-s") #'rg-menu))
-
-
-
-(use-package evil
-  :init
-  (setq evil-want-integration t
-        evil-want-keybinding nil
-        evil-want-C-u-scroll t
-        evil-want-C-i-jump nil
-        evil-cross-lines t
-        evil-respect-visual-line-mode t
-        evil-undo-system 'undo-tree)
-  (setq evil-want-fine-undo t)
-
-  :config
-  (evil-mode 1)
-  (define-key evil-normal-state-map (kbd "<SPC>") 'harpoon-quick-menu-hydra)
-  (define-key evil-normal-state-map (kbd "/") 'helm-regexp)
-  (global-set-key (kbd "C-x c")  'centered-cursor-mode)
-
-  (add-hook 'with-editor-mode-hook 'evil-insert-state))
 
 
 
@@ -45,51 +21,7 @@
 
 
 
-(setq org-ellipsis " ▾"
-      org-highest-priority ?A
-      org-default-priority ?B
-      org-lowest-priority ?D
-      org-habit-graph-column 100
-      org-hide-emphasis-markers t
-      org-src-fontify-natively t
-      org-fontify-quote-and-verse-blocks t
-      org-fontify-done-headline t
-      org-src-tab-acts-natively t
-      org-hide-block-startup nil
-      org-src-preserve-indentation nil
-      org-startup-folded t
-      org-treat-S-cursor-todo-selection-as-state-change nil
-      org-startup-with-inline-images t
-      org-cycle-separator-lines 2
-      org-confirm-babel-evaluate nil
-      org-capture-bookmark nil
-      evil-auto-indent nil
-      org-src-preserve-indentation nil
-      org-export-with-todo-keywords nil
-      org-edit-src-content-indentation 0
-      org-return-follows-link t
-      org-refile-targets '((org-agenda-files :maxlevel . 10))
-      org-refile-use-outline-path 'file
-      org-outline-path-complete-in-steps nil
-      org-refile-allow-creating-parent-nodes 'confirm
-      org-enforce-todo-checkbox-dependencies t
-      org-odd-levels-only t
-      org-fold-catch-invisible-edits 'show-and-error
-      org-directory "~/Apocrypha/Org/"
-      org-archive-location (format "~/Ferronomicon/\%s/\%s-archvie.org::datetree/" (Tn/current-year) (Tn/current-year)))
 
-(use-package org
-
-:config
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((emacs-lisp . t)
-   (lisp . t)
-   (gnuplot . t)
-   (latex . t)
-   (scheme . t)))
-
-(push '("conf-unix" . conf-unix) org-src-lang-modes))
 
 
 
@@ -585,6 +517,34 @@ _c_: CAD             _g_: Game Design
 (defun Tn/org-tag-cad ()
   (interactive)
   (org-set-tags (append (org-get-tags) '("CAD"))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;; Create Org-ex-tags layer
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (use-package org-roam
   :after org

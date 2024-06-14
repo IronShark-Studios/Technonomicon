@@ -10,7 +10,6 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layer-path '()
 
    dotspacemacs-additional-packages '(llvm-ts-mode
-                                      harpoon
                                       )
 
    dotspacemacs-configuration-layers
@@ -134,6 +133,7 @@ This function should only modify configuration layer settings."
 
     Extended-Helm
     Extended-Org
+    Extended-Evil
 )
 
    dotspacemacs-frozen-packages '()
@@ -382,8 +382,12 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (load "~/.config/emacs/private/General-Configuration/key-bindings.el")
-  (load "~/.config/emacs/private/General-Configuration/global-variables.el")
+  (setq vc-follow-symlinks t
+        ibuffer-expert t
+      )
+
+
+  (load "~/.config/emacs/private/Extended-Evil/keybinds.el")
   (load "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
   (load "~/.config/emacs/private/Secrets/secrets.el"))
 

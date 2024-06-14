@@ -4,7 +4,12 @@
 
 (global-set-key (kbd "C-s") 'rg-menu)
 (global-set-key (kbd "C-x C-s") 'Tn/save-all-buffers)
+(global-set-key (kbd "C-c l") 'spacemacs/Tn/org-link-transient-state/body)
 (global-set-key (kbd "C-c !")  'spacemacs/Tn/helm-actions-transient-state/body)
+
+(global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
+(global-set-key (kbd "C-S-x") 'clipboard-kill-region)
+(global-set-key (kbd "C-S-v") 'clipboard-yank)
 
 (eval-after-load 'flycheck
                  '(global-set-key (kbd "C-:") 'helm-flyspell-correct))
