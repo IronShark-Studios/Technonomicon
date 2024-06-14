@@ -18,6 +18,11 @@
 (eval-after-load 'flyspell
   '(global-set-key (kbd "C-;") 'helm-flycheck))
 
+(eval-after-load 'org-super-agenda
+  '(global-set-key (kbd "n") 'org-agenda-next-line))
+
+(eval-after-load 'org-super-agenda
+  '(global-set-key (kbd "e") 'org-agenda-previous-line))
 
 
 (define-key evil-normal-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
