@@ -20,6 +20,13 @@
     (avy-goto-word-or-subword-1)
     (evil-scroll-line-to-center nil))
 
+  (defun Tn/evil-pg-down ()
+    (interactive)
+    (evil-next-visual-line 35))
+
+  (defun Tn/evil-pg-up ()
+    (interactive)
+    (evil-previous-visual-line 35))
 
 ;;; I prefer to automattically save all open buffers. And the (S-ESC) combination is convient to me due to a custom keyboard layout.
 

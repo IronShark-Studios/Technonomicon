@@ -8,9 +8,6 @@
         org-cite-insert-processor 'citar
         org-cite-activate-processor 'citar
         citar-org-roam-capture-template-key "s"
-        citar-org-roam-subdir (file-truename "~/Grimoire/Reference/")
-        citar-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
-        org-cite-global-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
         bibtex-dialect 'biblatex
         bibtex-autokey-year-length 4
         bibtex-autokey-name-year-separator "-"
@@ -26,6 +23,9 @@
         bibtex-completion-additional-search-fields '(Tags)
         bibtex-completion-notes-extension ".org"
         bibtex-completion-pdf-extension '(".pdf" ".djvu", ".jpg")
+        citar-org-roam-subdir (file-truename "~/Grimoire/Reference/")
+        citar-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
+        org-cite-global-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
         bibtex-completion-bibliography '("~/Apocrypha/Org/bibliography-index.bib")
         bibtex-completion-browser-function
         (lambda (url _) (start-process "firefox" "*firefox*" "firefox" url))
