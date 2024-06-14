@@ -131,10 +131,11 @@ This function should only modify configuration layer settings."
 
 
 
-    Extended-Org
-    Extended-BibTex
-    Extended-Helm
-    Extended-Evil
+     Extended-Org
+     Extended-Agenda
+     Extended-BibTex
+     Extended-Helm
+     Extended-Evil
 )
 
    dotspacemacs-frozen-packages '()
