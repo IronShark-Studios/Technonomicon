@@ -188,7 +188,7 @@
   ("s" citar-open-notes)
   ("r" Tn/org-roam-main-hydra/body "Return" :color blue ))
 
-(spacemacs|define-transient-state Tn/org-roam-actions
+(spacemacs|define-transient-state Tn/roam-actions
   :title "Roam Actions"
   :foreign-keys run
   :doc "
@@ -225,7 +225,7 @@
   ("N" org-roam-node-insert)
   ("C" org-roam-capture)
   ("F" org-roam-node-find)
-  ("h" spacemacs/Tn/org-roam-actions-transient-state/body)
+  ("h" spacemacs/Tn/roam-actions-transient-state/body)
   ("n" spacemacs/Tn/roam-insert-transient-state/body)
   ("c" spacemacs/Tn/roam-capture-transient-state/body)
   ("f" spacemacs/Tn/roam-find-transient-state/body)
