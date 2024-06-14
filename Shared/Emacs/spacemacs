@@ -388,9 +388,9 @@ before packages are loaded."
       )
 
 
-  (load "~/.config/emacs/private/Extended-Evil/keybinds.el")
+  (load "~/.config/emacs/private/keybinds.el")
   (load "~/.config/emacs/private/Theme-Varangian/varangian-vivendi.el")
-  (load "~/.config/emacs/private/Secrets/secrets.el"))
+  (load "~/.config/emacs/private/secrets.el"))
 
 
 ;; Do not write anything past this comment. This is where Emacs will
