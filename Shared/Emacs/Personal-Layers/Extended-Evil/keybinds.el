@@ -5,7 +5,7 @@
 (global-set-key (kbd "C-s") 'rg-menu)
 (global-set-key (kbd "C-x C-s") 'Tn/save-all-buffers)
 (global-set-key (kbd "C-c l") 'spacemacs/Tn/org-link-transient-state/body)
-(global-set-key (kbd "C-c b") 'spacemacs/Tn/bibtex-actions/body)
+(global-set-key (kbd "C-c b") 'spacemacs/Tn/bibtex-actions-transient-state/body)
 (global-set-key (kbd "C-c !")  'spacemacs/Tn/helm-actions-transient-state/body)
 
 (global-set-key (kbd "C-S-c") 'clipboard-kill-ring-save)
