@@ -129,32 +129,6 @@
     (eww (format "https://en.wikipedia.org/wiki/Special:Search?search=%s" (read-from-minibuffer "Search For: " ""))))
 
 
-(spacemacs|define-transient-state Tn/roam-main
-  :title "Roam Main Menu"
-  :foreign-keys run
-  :doc "
-   File Groups     All Files          Actions
-  --------------------------------------------------
-  _n_: Insert     _N_: Insert      _b_: Roam Buffer
-  _f_: Find       _F_: Find        _g_: Roam Graph
-  _c_: Capture    _C_: Capture     _d_: Delete File
-     _o_: Open Bibtex File  _u_: Update Database
-            _h_: Heading Actions"
-  :bindings
-  ("b" org-roam-buffer-toggle)
-  ("o" Tn/open-bibliography)
-  ("u" org-roam-db-sync)
-  ("g" org-roam-ui-mode)
-  ("G" org-roam-graph)
-  ("N" org-roam-node-insert)
-  ("C" org-roam-capture)
-  ("F" org-roam-node-find)
-  ("h" spacemacs/Tn/org-roam-actions-transient-state/body)
-  ("n" spacemacs/Tn/roam-insert-transient-state/body)
-  ("c" spacemacs/Tn/roam-capture-transient-state/body)
-  ("f" spacemacs/Tn/roam-find-transient-state/body)
-  ("d" Tn/delete-file-and-buffer)
-  ("q" nil :exit t))
 
 (spacemacs|define-transient-state Tn/roam-insert
   :title "Roam Insert"
@@ -231,6 +205,31 @@
   ("r" citar-org-roam-ref-add)
   ("R" org-roam-ref-remove))
 
-
+(spacemacs|define-transient-state Tn/roam-main
+  :title "Roam Main Menu"
+  :foreign-keys run
+  :doc "
+   File Groups     All Files          Actions
+  --------------------------------------------------
+  _n_: Insert     _N_: Insert      _b_: Roam Buffer
+  _f_: Find       _F_: Find        _g_: Roam Graph
+  _c_: Capture    _C_: Capture     _d_: Delete File
+     _o_: Open Bibtex File  _u_: Update Database
+            _h_: Heading Actions"
+  :bindings
+  ("b" org-roam-buffer-toggle)
+  ("o" Tn/open-bibliography)
+  ("u" org-roam-db-sync)
+  ("g" org-roam-ui-mode)
+  ("G" org-roam-graph)
+  ("N" org-roam-node-insert)
+  ("C" org-roam-capture)
+  ("F" org-roam-node-find)
+  ("h" spacemacs/Tn/org-roam-actions-transient-state/body)
+  ("n" spacemacs/Tn/roam-insert-transient-state/body)
+  ("c" spacemacs/Tn/roam-capture-transient-state/body)
+  ("f" spacemacs/Tn/roam-find-transient-state/body)
+  ("d" Tn/delete-file-and-buffer)
+  ("q" nil :exit t))
 ;;; Closing Paren for eval statement
 )
