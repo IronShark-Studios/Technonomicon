@@ -2,12 +2,12 @@
 
   (defun Tn/evil-pg-down-and-center ()
     (interactive)
-    (evil-scroll-down)
+    (evil-scroll-down 0)
     (evil-scroll-line-to-center nil))
 
   (defun Tn/evil-pg-up-and-center ()
     (interactive)
-    (evil-scroll-up)
+    (evil-scroll-up 0)
     (evil-scroll-line-to-center nil))
 
   (defun Tn/evil-center-page ()
