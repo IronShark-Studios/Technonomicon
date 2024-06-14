@@ -60,3 +60,9 @@
 (define-key evil-motion-state-map (kbd "F") 'evil-snipe-T)
 (define-key evil-motion-state-map (kbd "t") 'evil-snipe-f)
 (define-key evil-motion-state-map (kbd "T") 'evil-snipe-F)
+
+
+(define-key evil-snipe-override-mode-map (kbd "f") 'evil-snipe-t)
+(define-key evil-snipe-override-mode-map (kbd "F") 'evil-snipe-T)
+(define-key evil-snipe-override-mode-map (kbd "t") 'evil-snipe-f)
+(define-key evil-snipe-override-mode-map (kbd "T") 'evil-snipe-F)
