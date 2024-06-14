@@ -133,13 +133,13 @@
   :title "Roam Main Menu"
   :foreign-keys run
   :doc "
-  ^File Groups^   ^All Files^        ^Actions^
+   File Groups     All Files          Actions
   --------------------------------------------------
   _n_: Insert     _N_: Insert      _b_: Roam Buffer
   _f_: Find       _F_: Find        _g_: Roam Graph
   _c_: Capture    _C_: Capture     _d_: Delete File
-  ^ ^_o_: Open Bibtex File  _u_: Update Database^ ^
-        ^ ^ _h_: Heading Actions^ ^"
+     _o_: Open Bibtex File  _u_: Update Database
+            _h_: Heading Actions"
   :bindings
   ("b" org-roam-buffer-toggle)
   ("o" Tn/open-bibliography)
@@ -160,7 +160,7 @@
   :title "Roam Insert"
   :foreign-keys run
   :doc "
-  ^File Types^
+         File Types
   --------------------------
   _n_: Node    _e_: Internal
   _t_: Topic   _s_: Source
@@ -183,7 +183,7 @@
   :title "Roam Find"
   :foreign-keys run
   :doc "
-       ^File Types^
+        File Types
   --------------------------
   _n_: Node    _e_: Internal
   _t_: Topic   _s_: Source"
@@ -202,7 +202,7 @@
   :title "Roam Capture"
   :foreign-keys run
   :doc "
-  ^File Types^
+         File Types
   --------------------------
   _n_: Node    _e_: Internal
   _t_: Topic   _s_: Source"
@@ -218,7 +218,7 @@
   :title "Roam Actions"
   :foreign-keys run
   :doc "
-  ^File Actions^
+             File Actions
   ------------------------------------
   _t_: Add Tag      _T_: Remove Tag
   _a_: Add Alias    _A_: Remove Alias
