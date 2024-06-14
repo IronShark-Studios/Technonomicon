@@ -36,14 +36,14 @@
          :unnarrowed t :empty-lines-before 1)))
 
 
-  (add-to-list 'display-buffer-alist
-               '("\\*org-roam\\*"
-                 (display-buffer-in-direction)
-               (direction . right)
-               (window-width . 0.33)
-               (window-height . fit-window-to-buffer)))
+  ;; (add-to-list 'display-buffer-alist
+  ;;              '("\\*org-roam\\*"
+  ;;                (display-buffer-in-direction)
+  ;;              (direction . right)
+  ;;              (window-width . 0.33)
+  ;;              (window-height . fit-window-to-buffer)))
 
-  (org-roam-db-autosync-mode)
-  (org-roam-bibtex-mode +1)
+  ;; (org-roam-db-autosync-mode)
+  ;; (org-roam-bibtex-mode +1)
 ;;; Closing Paren for Eval
 )
