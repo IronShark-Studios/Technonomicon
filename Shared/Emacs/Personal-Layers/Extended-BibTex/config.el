@@ -34,6 +34,9 @@
       bibtex-user-optional-fields '(("tags" "Tags to describe the entry" "")
                                     ("file" "Link to a document file." "" )))
 
+
+(with-eval-after-load 'bibtex
+
 (add-to-list 'bibtex-biblatex-entry-alist '("Movie" "Feature length video"
                                     (("title")
                                      ("author")
@@ -154,6 +157,7 @@
                                      ("file")
                                      ("url")
                                      ("notes"))))
+)
 
 
 
