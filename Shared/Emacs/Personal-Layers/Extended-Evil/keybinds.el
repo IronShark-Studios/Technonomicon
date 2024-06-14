@@ -48,3 +48,15 @@
 
 (define-key evil-normal-state-map (kbd "<up>") 'evil-previous-visual-line)
 (define-key evil-normal-state-map (kbd "<down>") 'evil-next-visual-line)
+
+
+(define-key evil-normal-state-map (kbd "f") 'evil-snipe-t)
+(define-key evil-normal-state-map (kbd "F") 'evil-snipe-T)
+(define-key evil-normal-state-map (kbd "t") 'evil-snipe-f)
+(define-key evil-normal-state-map (kbd "T") 'evil-snipe-F)
+
+
+(define-key evil-motion-state-map (kbd "f") 'evil-snipe-t)
+(define-key evil-motion-state-map (kbd "F") 'evil-snipe-T)
+(define-key evil-motion-state-map (kbd "t") 'evil-snipe-f)
+(define-key evil-motion-state-map (kbd "T") 'evil-snipe-F)
