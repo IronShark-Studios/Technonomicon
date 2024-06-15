@@ -43,7 +43,9 @@
                (window-width . 0.33)
                (window-height . fit-window-to-buffer)))
 
-;;  (org-roam-db-autosync-mode)
-;;  (org-roam-bibtex-mode +1)
+  (with-eval-after-load 'org-roam
+     (org-roam-db-autosync-mode)
+     (org-roam-bibtex-mode +1)
+    )
 ;;; Closing Paren for Eval
 )
