@@ -144,11 +144,6 @@
         (cyan-alt-other-faint . "#9ac8e0")
         (cyan-intense . "#00eff0")
 
-;;; Paren match
-        (bg-paren-match        "#2f7f9f")
-        (fg-paren-match        fg-main)
-        (bg-paren-expression   "#453040")
-
 ;;;; Rainbow mappings
         (rainbow-0 fg-main)
         (rainbow-1 magenta-intense)
