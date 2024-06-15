@@ -150,7 +150,7 @@
 ;;   ("S" Tn/Source-insert-all)
 ;;   ("b" citar-insert-citation)
 ;;   ("w" Tn/eww-wikipedia-search)
-;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
+;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
 ;;   ("q" nil :exit t))
 
 ;; (spacemacs|define-transient-state Tn/roam-find
@@ -170,6 +170,7 @@
 ;;   ("s" Tn/Source-find)
 ;;   ("S" Tn/Source-find-all)
 ;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
+;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
 ;;   ("q" nil :exit t))
 
 ;; (spacemacs|define-transient-state Tn/roam-capture
@@ -186,24 +187,26 @@
 ;;   ("e" Tn/Internal-capture)
 ;;   ("t" Tn/Topic-capture)
 ;;   ("s" citar-open-notes)
+;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
 ;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue ))
 
-;; (spacemacs|define-transient-state Tn/roam-actions
-;;   :title "Roam Actions"
-;;   :foreign-keys run
-;;   :doc "
-;;              File Actions
-;;   ------------------------------------
-;;   _t_: Add Tag      _T_: Remove Tag
-;;   _a_: Add Alias    _A_: Remove Alias
-;;   _r_: Add RefKey   _R_: Remove RefKey"
-;;   :bindings
-;;   ("t" org-roam-tag-add)
-;;   ("T" org-roam-tag-remove)
-;;   ("a" org-roam-alias-add)
-;;   ("A" org-roam-alias-remove)
-;;   ("r" citar-org-roam-ref-add)
-;;   ("R" org-roam-ref-remove))
+(spacemacs|define-transient-state Tn/roam-actions
+  :title "Roam Actions"
+  :foreign-keys run
+  :doc "
+             File Actions
+  ------------------------------------
+  _t_: Add Tag      _T_: Remove Tag
+  _a_: Add Alias    _A_: Remove Alias
+  _r_: Add RefKey   _R_: Remove RefKey"
+  :bindings
+  ("t" org-roam-tag-add)
+  ("T" org-roam-tag-remove)
+  ("a" org-roam-alias-add)
+  ("A" org-roam-alias-remove)
+  ("r" citar-org-roam-ref-add)
+  ("R" org-roam-ref-remove)
+  ("q" nil :exit t))
 
 ;; (spacemacs|define-transient-state Tn/roam-main
 ;;   :title "Roam Main Menu"
