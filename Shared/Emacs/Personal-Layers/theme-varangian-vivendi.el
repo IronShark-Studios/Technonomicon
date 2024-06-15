@@ -87,7 +87,7 @@
         (cyan-alt-faint . "#9ac8e0")
         (cyan-alt-other-faint . "#9ac8e0")
         (cyan-intense . "#00eff0")
-        (fg-prose-code . "#9b30ff")
-        (fg-prose-macro . "#9b30ff")
-        (fg-prose-verbatim . "#9b30ff")
         ))
+
+(setq modus-themes-headings
+          (quote ((t . (monochrome)))))
