@@ -148,6 +148,8 @@
 ;; (set-face-attribute 'line-number nil :inherit 'fixed-pitch)
 ;; (set-face-attribute 'line-number-current-line nil :inherit 'fixed-pitch))
 
+;; rainbow paren, and matching colors
+
 (setq org-priority-faces '((?A . (:foreground "medium spring green" :weight 'bold
                                               :inherit 'fixed-pitch))
                            (?B . (:foreground "deep sky blue" :weight 'bold
@@ -163,9 +165,14 @@
 
 (custom-set-faces
  '(org-block-begin-line
-   ((t (:underline "#000000" :foreground "#000000" :background "#2F4F4F" :extend t))))
+   ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
  '(org-block
-   ((t (:background "#2F4F4F" :extend t))))
+   ((t (:background "#2e2e2e" :extend t))))
  '(org-block-end-line
-   ((t (:overline "#000000" :foreground "#000000" :background "#2F4F4F" :extend t))))
+   ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
  )
+
+(defun Tn/toggle-mode-line ()
+  (setq mode-line-format nil))
+
+(add-hook 'term-mode-hook 'Tn/toggle-mode-line)

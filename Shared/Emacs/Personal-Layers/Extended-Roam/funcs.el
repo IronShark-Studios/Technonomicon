@@ -161,13 +161,13 @@
   _n_: Node    _e_: Internal
   _t_: Topic   _s_: Source"
   :bindings
-  ("n" Tn/Node-find)
-  ("N" Tn/Node-find-all)
+  ("N" Tn/Node-find)
+  ("n" Tn/Node-find-all)
   ("e" Tn/Internal-find)
-  ("t" Tn/Topic-find)
-  ("T" Tn/Topic-find-all)
-  ("s" Tn/Source-find)
-  ("S" Tn/Source-find-all)
+  ("T" Tn/Topic-find)
+  ("t" Tn/Topic-find-all)
+  ("S" Tn/Source-find)
+  ("s" Tn/Source-find-all)
   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
   ("q" nil :exit t))
 
