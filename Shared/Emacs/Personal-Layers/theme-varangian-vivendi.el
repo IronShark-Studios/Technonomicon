@@ -3,67 +3,6 @@
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;;; Imported all visual setting form org config. Need to integrate them to theme.
-
-
-
-
-;; (dolist (face '((org-level-1 . "Azure3")
-;;                 (org-level-2 . "Azure3")
-;;                 (org-level-3 . "Azure3")
-;;                 (org-level-4 . "Azure3")
-;;                 (org-level-5 . "Azure3")
-;;                 (org-level-6 . "Azure3")
-;;                 (org-level-7 . "Azure3")
-;;                 (org-level-8 . "Azure3")))
-;;   (set-face-attribute (car face) nil :font "Iosevka"
-;;                       :weight 'regular :height 1.3
-;;                       :foreground (cdr face)))
-
-
-;; rainbow paren, and matching colors
-
-
-
-
 (custom-set-faces
  '(org-block-begin-line
    ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
@@ -73,11 +12,11 @@
    ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
  )
 
+
 (defun Tn/toggle-mode-line ()
   (setq mode-line-format nil))
 
 (add-hook 'term-mode-hook 'Tn/toggle-mode-line)
-
 
 
 ;;; Overrides default colors of Modus-Vivendi.
@@ -177,6 +116,12 @@
 ;;         (prose-table-formula . magenta-warmer)
 ;;         (prose-tag . magenta-faint)
 
+
+        ))
+
+
+(setq modus-themes-common-palette-overrides
+      '(
 ;;;; Heading mappings
         (fg-heading-0 . "#00ced1")
         (fg-heading-1 . "#00ced1")
@@ -188,4 +133,7 @@
         (fg-heading-7 . "#00ced1")
         (fg-heading-8 . "#00ced1")
 
-      ))
+
+
+
+        ))
