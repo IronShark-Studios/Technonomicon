@@ -26,7 +26,7 @@
     rebuild = "bash /etc/scripts/rebuild.sh";
     upgrade = "bash /etc/scripts/upgrade.sh";
     test = "bash /etc/scripts/test.sh";
-    clean = "sudo nix-collect-garbage --delete-old && rebuild";
+    clean = "sudo nix-collect-garbage --delete-old";
     devEnv = "nix develop -c zsh";
   };
 }

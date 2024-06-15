@@ -12,6 +12,7 @@
       sudo nixos-rebuild switch --impure --flake .#$HOSTNAME
       git commit -m "$HOST Rebuild: $NIXOS_GENERATION"
       git push
+      git switch main
       echo
       echo System Generation $NIXOS_GENERATION Active.
     '';
