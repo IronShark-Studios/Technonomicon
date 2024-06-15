@@ -145,7 +145,6 @@
         (cyan-intense . "#00eff0")
 
 ;;;; Rainbow mappings
-        (rainbow-0 . fg-main)
         (rainbow-1 . magenta-intense)
         (rainbow-2 . cyan-intense)
         (rainbow-3 . blue-intense)
@@ -157,7 +156,6 @@
 
 ;;;; Code mappings
         (builtin . magenta-warmer)
-        (comment . fg-dim)
         (constant . blue-cooler)
         (docstring . cyan-faint)
         (docmarkup . magenta-faint)
