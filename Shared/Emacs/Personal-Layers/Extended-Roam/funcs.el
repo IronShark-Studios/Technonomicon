@@ -187,8 +187,7 @@
 ;;   ("e" Tn/Internal-capture)
 ;;   ("t" Tn/Topic-capture)
 ;;   ("s" citar-open-notes)
-;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
-;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue ))
+;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue ))
 
 (spacemacs|define-transient-state Tn/roam-actions
   :title "Roam Actions"
@@ -198,41 +197,43 @@
   ------------------------------------
   _t_: Add Tag      _T_: Remove Tag
   _a_: Add Alias    _A_: Remove Alias
-  _r_: Add RefKey   _R_: Remove RefKey"
+  _l_: Add RefKey   _L_: Remove RefKey"
   :bindings
   ("t" org-roam-tag-add)
   ("T" org-roam-tag-remove)
   ("a" org-roam-alias-add)
   ("A" org-roam-alias-remove)
-  ("r" citar-org-roam-ref-add)
-  ("R" org-roam-ref-remove)
+  ("l" citar-org-roam-ref-add)
+  ("L" org-roam-ref-remove)
+;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
   ("q" nil :exit t))
 
-;; (spacemacs|define-transient-state Tn/roam-main
-;;   :title "Roam Main Menu"
-;;   :foreign-keys run
-;;   :doc "
-;;    File Groups     All Files          Actions
-;;   --------------------------------------------------
-;;   _n_: Insert     _N_: Insert      _b_: Roam Buffer
-;;   _f_: Find       _F_: Find        _g_: Roam Graph
-;;   _c_: Capture    _C_: Capture     _d_: Delete File
-;;      _o_: Open Bibtex File  _u_: Update Database
-;;             _h_: Heading Actions"
-;;   :bindings
-;;   ("b" org-roam-buffer-toggle)
-;;   ("o" Tn/open-bibliography)
-;;   ("u" org-roam-db-sync)
-;;   ("g" org-roam-ui-mode)
-;;   ("G" org-roam-graph)
-;;   ("N" org-roam-node-insert)
-;;   ("C" org-roam-capture)
-;;   ("F" org-roam-node-find)
-;;   ("h" spacemacs/Tn/roam-actions-transient-state/body)
-;;   ("n" spacemacs/Tn/roam-insert-transient-state/body)
-;;   ("c" spacemacs/Tn/roam-capture-transient-state/body)
-;;   ("f" spacemacs/Tn/roam-find-transient-state/body)
-;;   ("d" Tn/delete-file-and-buffer)
-;;   ("q" nil :exit t))
+(spacemacs|define-transient-state Tn/roam-main
+  :title "Roam Main Menu"
+  :foreign-keys run
+  :doc "
+   File Groups     All Files          Actions
+  --------------------------------------------------
+  _n_: Insert     _N_: Insert      _b_: Roam Buffer
+  _f_: Find       _F_: Find        _g_: Roam Graph
+  _c_: Capture    _C_: Capture     _d_: Delete File
+     _o_: Open Bibtex File  _u_: Update Database
+            _h_: Heading Actions"
+  :bindings
+  ("b" org-roam-buffer-toggle)
+  ("o" Tn/open-bibliography)
+  ("u" org-roam-db-sync)
+  ("g" org-roam-ui-mode)
+  ("G" org-roam-graph)
+  ("N" org-roam-node-insert)
+  ("C" org-roam-capture)
+  ("F" org-roam-node-find)
+  ("h" spacemacs/Tn/roam-actions-transient-state/body)
+  ("n" spacemacs/Tn/roam-insert-transient-state/body)
+  ("c" spacemacs/Tn/roam-capture-transient-state/body)
+  ("f" spacemacs/Tn/roam-find-transient-state/body)
+  ("d" Tn/delete-file-and-buffer)
+  ("q" nil :exit t))
+
 ;;; Closing Paren for eval statement
 )
