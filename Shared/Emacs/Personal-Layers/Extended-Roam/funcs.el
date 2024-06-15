@@ -129,49 +129,47 @@
     (eww (format "https://en.wikipedia.org/wiki/Special:Search?search=%s" (read-from-minibuffer "Search For: " ""))))
 
 
+(spacemacs|define-transient-state Tn/roam-insert
+  :title "Roam Insert"
+  :foreign-keys run
+  :doc "
+         File Types
+  --------------------------
+  _n_: Node    _e_: Internal
+  _t_: Topic   _s_: Source
+       _b_: Citation
+       _w_: Web Link"
+  :bindings
+  ("n" Tn/Node-insert)
+  ("N" Tn/Node-insert-all)
+  ("e" Tn/Internal-insert)
+  ("t" Tn/Topic-insert)
+  ("T" Tn/Topic-insert-all)
+  ("s" Tn/Source-insert)
+  ("S" Tn/Source-insert-all)
+  ("b" citar-insert-citation)
+  ("w" Tn/eww-wikipedia-search)
+  ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
+  ("q" nil :exit t))
 
-;; (spacemacs|define-transient-state Tn/roam-insert
-;;   :title "Roam Insert"
-;;   :foreign-keys run
-;;   :doc "
-;;          File Types
-;;   --------------------------
-;;   _n_: Node    _e_: Internal
-;;   _t_: Topic   _s_: Source
-;;   _b_: Citation
-;;   _w_: Web Link"
-;;   :bindings
-;;   ("n" Tn/Node-insert)
-;;   ("N" Tn/Node-insert-all)
-;;   ("e" Tn/Internal-insert)
-;;   ("t" Tn/Topic-insert)
-;;   ("T" Tn/Topic-insert-all)
-;;   ("s" Tn/Source-insert)
-;;   ("S" Tn/Source-insert-all)
-;;   ("b" citar-insert-citation)
-;;   ("w" Tn/eww-wikipedia-search)
-;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
-;;   ("q" nil :exit t))
-
-;; (spacemacs|define-transient-state Tn/roam-find
-;;   :title "Roam Find"
-;;   :foreign-keys run
-;;   :doc "
-;;         File Types
-;;   --------------------------
-;;   _n_: Node    _e_: Internal
-;;   _t_: Topic   _s_: Source"
-;;   :bindings
-;;   ("n" Tn/Node-find)
-;;   ("N" Tn/Node-find-all)
-;;   ("e" Tn/Internal-find)
-;;   ("t" Tn/Topic-find)
-;;   ("T" Tn/Topic-find-all)
-;;   ("s" Tn/Source-find)
-;;   ("S" Tn/Source-find-all)
-;;   ("r" Tn/org-roam-main-hydra/body "Return" :color blue )
-;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
-;;   ("q" nil :exit t))
+(spacemacs|define-transient-state Tn/roam-find
+  :title "Roam Find"
+  :foreign-keys run
+  :doc "
+        File Types
+  --------------------------
+  _n_: Node    _e_: Internal
+  _t_: Topic   _s_: Source"
+  :bindings
+  ("n" Tn/Node-find)
+  ("N" Tn/Node-find-all)
+  ("e" Tn/Internal-find)
+  ("t" Tn/Topic-find)
+  ("T" Tn/Topic-find-all)
+  ("s" Tn/Source-find)
+  ("S" Tn/Source-find-all)
+  ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
+  ("q" nil :exit t))
 
 (spacemacs|define-transient-state Tn/roam-capture
   :title "Roam Capture"
