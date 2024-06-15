@@ -84,6 +84,17 @@
         (cyan-alt-other-faint . "#9ac8e0")
         (cyan-intense . "#00eff0")
 
+;;;; Heading mappings
+        (fg-heading-0 . "#00ced1")
+        (fg-heading-1 . "#00ced1")
+        (fg-heading-2 . "#00ced1")
+        (fg-heading-3 . "#00ced1")
+        (fg-heading-4 . "#00ced1")
+        (fg-heading-5 . "#00ced1")
+        (fg-heading-6 . "#00ced1")
+        (fg-heading-7 . "#00ced1")
+        (fg-heading-8 . "#00ced1")
+
 ;; ;;;; Rainbow mappings
 ;;         (rainbow-0 . "fg-main")
 ;;         (rainbow-1 . "magenta-intense")
@@ -116,24 +127,6 @@
 ;;         (fg-prose-verbatim . cyan-warmer)
 ;;         (prose-table-formula . magenta-warmer)
 ;;         (prose-tag . magenta-faint)
-
-;;;; Heading mappings
-
-        ))
-
-
-(setq modus-themes-headings
-      '(
-        (fg-heading-0 . Tn/heading)
-        (fg-heading-1 . Tn/heading)
-        (fg-heading-2 . Tn/heading)
-        (fg-heading-3 . Tn/heading)
-        (fg-heading-4 . Tn/heading)
-        (fg-heading-5 . Tn/heading)
-        (fg-heading-6 . Tn/heading)
-        (fg-heading-7 . Tn/heading)
-        (fg-heading-8 . Tn/heading)
-
 
 
         ))
