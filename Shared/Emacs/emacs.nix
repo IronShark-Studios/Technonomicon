@@ -2,14 +2,7 @@
 
   programs.emacs = {
     enable = true;
-    package = (pkgs.emacsWithPackagesFromUsePackage {
-      config = ./init.el;
-      defaultInitFile = true;
-      package = pkgs.emacs-unstable-pgtk;
-      alwaysEnsure = true;
-      extraEmacsPackages = epkgs: with epkgs; [
-      ];
-    });
+    package = pkgs.emacs-unstable-pgtk;
   };
 
   home = {
@@ -19,11 +12,25 @@
       hunspell
       hunspellDicts.en_US-large
       openscad-lsp
+      gforth
+      racket
+      languagetool
     ];
 
-    file.emacs-init = {
-      source = ./init.el;
-      target = ".config/emacs/init.el";
+    file = {
+      ".spacemacs" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs";
+      };
+
+      ".spacemacs.env" = {
+        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs.env";
+      };
+
+      "Personal-Layers" = {
+        target = ".config/emacs/private";
+        source = ./Personal-Layers;
+        recursive = true;
+      };
     };
   };
 }
