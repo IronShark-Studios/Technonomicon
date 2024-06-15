@@ -118,15 +118,15 @@
 ;;         (prose-tag . magenta-faint)
 
 ;;;; Heading mappings
-        (fg-heading-0 Tn/heading-fg)
-        (fg-heading-1 Tn/heading-fg)
-        (fg-heading-2 Tn/heading-fg)
-        (fg-heading-3 Tn/heading-fg)
-        (fg-heading-4 Tn/heading-fg)
-        (fg-heading-5 Tn/heading-fg)
-        (fg-heading-6 Tn/heading-fg)
-        (fg-heading-7 Tn/heading-fg)
-        (fg-heading-8 Tn/heading-fg)
+        (fg-heading-0 . Tn/heading-fg)
+        (fg-heading-1 . Tn/heading-fg)
+        (fg-heading-2 . Tn/heading-fg)
+        (fg-heading-3 . Tn/heading-fg)
+        (fg-heading-4 . Tn/heading-fg)
+        (fg-heading-5 . Tn/heading-fg)
+        (fg-heading-6 . Tn/heading-fg)
+        (fg-heading-7 . Tn/heading-fg)
+        (fg-heading-8 . Tn/heading-fg)
 
         ))
 
