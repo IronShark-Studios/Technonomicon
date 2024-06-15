@@ -123,15 +123,15 @@
 (setq modus-themes-common-palette-overrides
       '(
 ;;;; Heading mappings
-        (fg-heading-0 #00ced1)
-        (fg-heading-1 #00ced1)
-        (fg-heading-2 #00ced1)
-        (fg-heading-3 #00ced1)
-        (fg-heading-4 #00ced1)
-        (fg-heading-5 #00ced1)
-        (fg-heading-6 #00ced1)
-        (fg-heading-7 #00ced1)
-        (fg-heading-8 #00ced1)
+        (fg-heading-0 "#00ced1")
+        (fg-heading-1 "#00ced1")
+        (fg-heading-2 "#00ced1")
+        (fg-heading-3 "#00ced1")
+        (fg-heading-4 "#00ced1")
+        (fg-heading-5 "#00ced1")
+        (fg-heading-6 "#00ced1")
+        (fg-heading-7 "#00ced1")
+        (fg-heading-8 "#00ced1")
 
 
 
