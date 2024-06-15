@@ -28,7 +28,7 @@
 (setq modus-themes-vivendi-color-overrides
       '((bg-main . "#1f1f1f")
         (bg-dim . "#000000")
-        (Tn/heading-fg . "#00ced1")
+        (Tn/heading . "#00ced1")
         (red . "#cd0000")
         (red-alt . "#cd0000")
         (red-alt-other . "#cd0000")
@@ -118,22 +118,21 @@
 ;;         (prose-tag . magenta-faint)
 
 ;;;; Heading mappings
-        (fg-heading-0 . Tn/heading-fg)
-        (fg-heading-1 . Tn/heading-fg)
-        (fg-heading-2 . Tn/heading-fg)
-        (fg-heading-3 . Tn/heading-fg)
-        (fg-heading-4 . Tn/heading-fg)
-        (fg-heading-5 . Tn/heading-fg)
-        (fg-heading-6 . Tn/heading-fg)
-        (fg-heading-7 . Tn/heading-fg)
-        (fg-heading-8 . Tn/heading-fg)
 
         ))
 
 
-(setq modus-themes-common-palette-overrides
+(setq modus-themes-headings
       '(
-
+        (fg-heading-0 . Tn/heading)
+        (fg-heading-1 . Tn/heading)
+        (fg-heading-2 . Tn/heading)
+        (fg-heading-3 . Tn/heading)
+        (fg-heading-4 . Tn/heading)
+        (fg-heading-5 . Tn/heading)
+        (fg-heading-6 . Tn/heading)
+        (fg-heading-7 . Tn/heading)
+        (fg-heading-8 . Tn/heading)
 
 
 
