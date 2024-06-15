@@ -7,6 +7,8 @@
 ;;; Colors can be found by placing point on a character, and using
 ;;; (M-x describe-char). Then finding the hex code and searching that
 ;;; in (M-x modus-themes-list-colors)
+
+
 (setq modus-themes-vivendi-color-overrides
       '((bg-main . "#1f1f1f")
         (bg-dim . "#000000")
@@ -31,6 +33,8 @@
         (blue-faint . "#191970")
         (blue-intense . "#1e90ff")
         (magenta . "#c6e2ff")
+        (magenta-alt . "#c6e2ff")
+        (magenta-alt-other . "#c6e2ff")
         (magenta-warmer . "#87ceff")
         (magenta-cooler . "#b0e2ff")
         (magenta-faint . "#c6e2ff")
@@ -48,7 +52,7 @@
         (docstring . cyan-faint)
         (docmarkup . magenta-faint)
         (fnname . magenta)
-        (keyword . magenta-cooler)
+        (keyword . "#00d3d0")
         (preprocessor . red-cooler)
         (string . blue-warmer)
         (type . cyan-cooler)
