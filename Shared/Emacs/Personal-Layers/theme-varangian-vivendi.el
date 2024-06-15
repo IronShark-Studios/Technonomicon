@@ -3,14 +3,14 @@
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
 
-(custom-set-faces
- '(org-block-begin-line
-   ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
- '(org-block
-   ((t (:background "#2e2e2e" :extend t))))
- '(org-block-end-line
-   ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
- )
+;; (custom-set-faces
+;;  '(org-block-begin-line
+;;    ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
+;;  '(org-block
+;;    ((t (:background "#2e2e2e" :extend t))))
+;;  '(org-block-end-line
+;;    ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
+;;  )
 
 
 (defun Tn/toggle-mode-line ()
@@ -24,6 +24,10 @@
 ;;; (M-x describe-char). Then finding the hex code and searching that
 ;;; in (M-x modus-themes-list-colors)
 
+(setq modus-themes-paren-match '(bold intense)
+      modus-themes-bold-constructs t
+      modus-themes-org-blocks 'tinted-background
+      )
 
 (setq modus-themes-vivendi-color-overrides
       '((bg-main . "#1f1f1f")
@@ -83,50 +87,4 @@
         (cyan-alt-faint . "#9ac8e0")
         (cyan-alt-other-faint . "#9ac8e0")
         (cyan-intense . "#00eff0")
-
-;;;; Heading mappings
-        (fg-heading-0 . "#00ced1")
-        (fg-heading-1 . "#00ced1")
-        (fg-heading-2 . "#00ced1")
-        (fg-heading-3 . "#00ced1")
-        (fg-heading-4 . "#00ced1")
-        (fg-heading-5 . "#00ced1")
-        (fg-heading-6 . "#00ced1")
-        (fg-heading-7 . "#00ced1")
-        (fg-heading-8 . "#00ced1")
-
-;; ;;;; Rainbow mappings
-;;         (rainbow-0 . "fg-main")
-;;         (rainbow-1 . "magenta-intense")
-;;         (rainbow-2 . "cyan-intense")
-;;         (rainbow-3 . "blue-intense")
-;;         (rainbow-4 . "yellow-intense")
-;;         (rainbow-5 . "magenta-cooler")
-;;         (rainbow-6 . "cyan-cooler")
-;;         (rainbow-7 . "blue-cooler")
-;;         (rainbow-8 . "yellow-cooler")
-
-;; ;;;; Code mappings
-;;         (builtin . magenta-warmer)
-;;         (comment . fg-dim)
-;;         (constant . blue-cooler)
-;;         (docstring . cyan-faint)
-;;         (docmarkup . magenta-faint)
-;;         (fnname . magenta)
-;;         (keyword . magenta-cooler)
-;;         (preprocessor . red-cooler)
-;;         (string . blue-warmer)
-;;         (type . cyan-cooler)
-;;         (variable . cyan)
-;;         (rx-construct . green-cooler)
-;;         (rx-backslash . magenta)
-
-;; ;;;; Prose mappings
-;;         (fg-prose-code . cyan-warmer)
-;;         (fg-prose-macro . magenta-cooler)
-;;         (fg-prose-verbatim . cyan-warmer)
-;;         (prose-table-formula . magenta-warmer)
-;;         (prose-tag . magenta-faint)
-
-
         ))
