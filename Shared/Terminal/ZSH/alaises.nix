@@ -15,7 +15,7 @@
     lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";
     ll = "eza --icons --oneline --group-directories-first --color auto";
     ls = "eza --icons --oneline --group-directories-first --color auto --long";
-    rm = "sudo trash-put";
+    rm = "sudo trash-put -v";
     rm-s = "sudo shred -f";
     arc-sync = "bash /etc/scripts/update-archives.sh";
     power-off = "sudo trash-put ~/Downloads/* & trash-empty & sudo shutdown -h now";
