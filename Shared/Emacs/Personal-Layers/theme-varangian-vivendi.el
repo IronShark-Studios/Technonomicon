@@ -84,16 +84,16 @@
         (cyan-alt-other-faint . "#9ac8e0")
         (cyan-intense . "#00eff0")
 
-;;;; Rainbow mappings
-        (rainbow-0 . "fg-main")
-        (rainbow-1 . "magenta-intense")
-        (rainbow-2 . "cyan-intense")
-        (rainbow-3 . "blue-intense")
-        (rainbow-4 . "yellow-intense")
-        (rainbow-5 . "magenta-cooler")
-        (rainbow-6 . "cyan-cooler")
-        (rainbow-7 . "blue-cooler")
-        (rainbow-8 . "yellow-cooler")
+;; ;;;; Rainbow mappings
+;;         (rainbow-0 . "fg-main")
+;;         (rainbow-1 . "magenta-intense")
+;;         (rainbow-2 . "cyan-intense")
+;;         (rainbow-3 . "blue-intense")
+;;         (rainbow-4 . "yellow-intense")
+;;         (rainbow-5 . "magenta-cooler")
+;;         (rainbow-6 . "cyan-cooler")
+;;         (rainbow-7 . "blue-cooler")
+;;         (rainbow-8 . "yellow-cooler")
 
 ;; ;;;; Code mappings
 ;;         (builtin . magenta-warmer)
@@ -117,12 +117,6 @@
 ;;         (prose-table-formula . magenta-warmer)
 ;;         (prose-tag . magenta-faint)
 
-
-        ))
-
-
-(setq modus-themes-common-palette-overrides
-      '(
 ;;;; Heading mappings
         (fg-heading-0 Tn/heading-fg)
         (fg-heading-1 Tn/heading-fg)
@@ -133,6 +127,12 @@
         (fg-heading-6 Tn/heading-fg)
         (fg-heading-7 Tn/heading-fg)
         (fg-heading-8 Tn/heading-fg)
+
+        ))
+
+
+(setq modus-themes-common-palette-overrides
+      '(
 
 
 
