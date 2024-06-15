@@ -13,12 +13,12 @@
       git pull --ff-only
       git add .
       git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
+      git switch main
       sudo nix flake update
       sudo nixos-rebuild switch --flake .#$HOSTNAME --upgrade
       git add .
       git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
-      git push origin HEAD
-      git switch main
+      git push
     '';
   };
 }
