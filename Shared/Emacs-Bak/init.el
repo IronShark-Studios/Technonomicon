@@ -715,11 +715,6 @@ If nil it defaults to `split-string-default-separators', normally
                                 "%[../roam-journal-template.org]"
                                 ("Task-List"))
          :clock-in t :clock-keep t)
-        ("Z" "Tobey Time" plain "* TODO [#B] Tobey Time %?  :@TOBEY:"
-         :target (file+head+olp "%<%Y>/%<%Y-%m-%d>.org"
-                                "%[../roam-journal-template.org]"
-                                ("Task-List"))
-         :clock-in t :clock-keep t :immediate-finish t)
         ("Y" "Food Prep" plain "* TODO [#B] Preparing %?  :FOOD:"
          :target (file+head+olp "%<%Y>/%<%Y-%m-%d>.org"
                                 "%[../roam-journal-template.org]"
@@ -913,79 +908,33 @@ _t_: ToDo         _e_: Financial
 
 
 
-(defun Tn/org-inherited-priority (s)
-  (cond
 
-   ;; Priority cookie in this heading
-   ((string-match org-priority-regexp s)
-    (* 1000 (- org-priority-lowest
-               (org-priority-to-value (match-string 2 s)))))
-
-   ;; No priority cookie, but already at highest level
-   ((not (org-up-heading-safe))
-    (* 1000 (- org-priority-lowest org-priority-default)))
-
-   ;; Look for the parent's priority
-   (t
-    (Tn/org-inherited-priority (org-get-heading)))))
-
-(setq org-priority-get-priority-function #'Tn/org-inherited-priority)
-
-(defun Tn/agenda-starting-screen ()
-  (interactive)
-  (Tn/org-agenda-day)
-  (split-window-right)
-  (windmove-right)
-  (Tn/org-journal-setup))
-
-(require 'org-agenda)
-
-(defun Tn/org-agenda-todos ()
-   (interactive)
-        (org-agenda nil "t"))
-
-(defun Tn/org-agenda-day ()
-   (interactive)
-   (let ((org-agenda-span 'day))
-        (org-agenda nil "c")))
-
-(defun Tn/org-agenda-week ()
-   (interactive)
-   (let ((org-agenda-span 'week))
-        (org-agenda nil "c")))
-
-(defun Tn/org-agenda-date-overview ()
-  (interactive)
-  (let ((org-agenda-start-day "-1d")
-        (org-agenda-span '3))
-    (org-agenda nil "c")
-    (org-roam-dailies-capture-date 1 nil "t")))
-
-(defun Tn/agenda-clock-in ()
-  (interactive)
-  (org-agenda-switch-to)
-  (evil-previous-visual-line 1)
-  (org-clock-in)
-  (bury-buffer))
-
-(defun Tn/agenda-clock-out ()
-  (interactive)
-  (org-clock-goto)
-  (org-clock-out)
-  (bury-buffer))
-
-
-(define-key org-agenda-mode-map (kbd "n") 'org-agenda-next-line)
-(define-key org-agenda-mode-map (kbd "e") 'org-agenda-previous-line)
-(define-key org-agenda-mode-map (kbd "j") 'org-agenda-goto-date)
-(define-key org-agenda-mode-map (kbd "p") 'org-agenda-capture)
-(define-key org-agenda-mode-map (kbd "<SPC>") 'helm-occur)
-(define-key org-agenda-mode-map (kbd "s-A") 'org-agenda-exit)
 
 (defun Tn/agenda-files-update (&rest _)
   "Update the value of `org-agenda-files'."
   (Tn/org-journal--update-org-agenda-files)
   (setq org-agenda-files (delete-dups (append (Tn/project-files) (symbol-value 'Tn/org-journal-file-list) (directory-files-recursively "~/Projects/" "^.*-todo.org$")))))
+
+
+
+
+
+
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+
+
+
+
 
 (setq org-clock-history-length 30
       org-clock-in-resume t
@@ -1081,7 +1030,6 @@ _t_: Tobey Time    _d_: Driving
 
 "
   ("z" Tn/clock-sleep)
-  ("t" Tn/clock-tobey-time)
   ("f" Tn/clock-food-prep)
   ("e" Tn/clock-eating)
   ("d" Tn/clock-driving)
@@ -1095,10 +1043,6 @@ _t_: Tobey Time    _d_: Driving
 (defun Tn/clock-sleep ()
 (interactive)
 (org-roam-dailies-capture-today nil "F"))
-
-(defun Tn/clock-tobey-time ()
-(interactive)
-(org-roam-dailies-capture-today nil "Z"))
 
 (defun Tn/clock-food-prep ()
 (interactive)

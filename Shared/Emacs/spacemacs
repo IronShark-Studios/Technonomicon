@@ -134,6 +134,7 @@ This function should only modify configuration layer settings."
      Extended-Org
      Extended-Agenda
      Extended-BibTex
+     Extended-Roam
      Extended-Helm
      Extended-Evil
 )
