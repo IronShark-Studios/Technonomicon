@@ -103,7 +103,7 @@ it can be passed in POS."
   _m_: time stamp; , for inactive
   "
   :bindings
-  ("t" spacemacs/Tn/helm-actions-transient-state/body)
+  ("t" spacemacs/Tn/tag-main-menu-transient-state/body)
   ("h" org-todo)
   ("s" org-schedule)
   ("d" org-deadline)

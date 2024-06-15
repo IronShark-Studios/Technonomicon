@@ -135,6 +135,8 @@ This function should only modify configuration layer settings."
      Extended-Agenda
      Extended-BibTex
      Extended-Roam
+     Extended-Clock
+     Extended-Project
      Extended-Helm
      Extended-Evil
 )
