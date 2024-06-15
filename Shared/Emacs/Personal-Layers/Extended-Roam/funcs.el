@@ -173,21 +173,21 @@
 ;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
 ;;   ("q" nil :exit t))
 
-;; (spacemacs|define-transient-state Tn/roam-capture
-;;   :title "Roam Capture"
-;;   :foreign-keys run
-;;   :doc "
-;;          File Types
-;;   --------------------------
-;;   _n_: Node    _e_: Internal
-;;   _t_: Topic   _s_: Source"
-;;   :bindings
-;;   ("q" nil :exit t)
-;;   ("n" Tn/Node-capture)
-;;   ("e" Tn/Internal-capture)
-;;   ("t" Tn/Topic-capture)
-;;   ("s" citar-open-notes)
-;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue ))
+(spacemacs|define-transient-state Tn/roam-capture
+  :title "Roam Capture"
+  :foreign-keys run
+  :doc "
+         File Types
+  --------------------------
+  _n_: Node    _e_: Internal
+  _t_: Topic   _s_: Source"
+  :bindings
+  ("q" nil :exit t)
+  ("n" Tn/Node-capture)
+  ("e" Tn/Internal-capture)
+  ("t" Tn/Topic-capture)
+  ("s" citar-open-notes)
+  ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue ))
 
 (spacemacs|define-transient-state Tn/roam-actions
   :title "Roam Actions"
@@ -205,7 +205,7 @@
   ("A" org-roam-alias-remove)
   ("l" citar-org-roam-ref-add)
   ("L" org-roam-ref-remove)
-;;   ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
+  ("r" spacemacs/Tn/roam-main-transient-state/body "Return" :color blue )
   ("q" nil :exit t))
 
 (spacemacs|define-transient-state Tn/roam-main
