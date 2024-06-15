@@ -506,9 +506,9 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;; The code below this point is fragile. It uses tags to automattically ;;;;
-;;; add and remove org roam files from the agenda file list to prevent   ;;;;
-;;; large file numbers from slowing it down.                             ;;;;
+;;; The code below this point is fragile. It uses tags to automatically  ;;;;
+;;; adds and removes org roam files from the agenda file list to         ;;;;
+;;; prevent large file numbers from slowing it down.                     ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 

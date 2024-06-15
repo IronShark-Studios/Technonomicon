@@ -137,6 +137,7 @@ This function should only modify configuration layer settings."
      Extended-Roam
      Extended-Clock
      Extended-Project
+     Extended-Journal
      Extended-Helm
      Extended-Evil
 )

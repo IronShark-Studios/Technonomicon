@@ -7,6 +7,7 @@
 (global-set-key (kbd "C-c l") 'spacemacs/Tn/org-link-transient-state/body)
 (global-set-key (kbd "C-c l") 'spacemacs/Tn/org-link-transient-state/body)
 (global-set-key (kbd "C-c l") 'spacemacs/Tn/org-link-transient-state/body)
+(global-set-key (kbd "C-c t") 'spacemacs/Tn/journal-transient-state/body)
 (global-set-key (kbd "C-c b") 'spacemacs/Tn/bibtex-actions-transient-state/body)
 (global-set-key (kbd "C-c !")  'spacemacs/Tn/helm-actions-transient-state/body)
 
