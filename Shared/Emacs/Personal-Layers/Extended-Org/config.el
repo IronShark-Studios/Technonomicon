@@ -57,6 +57,16 @@
               ("CANCELLED" :foreground "dim gray" :weight bold))))
 
 
+(setq org-priority-faces '((?A . (:foreground "medium spring green" :weight 'bold
+                                              :inherit 'fixed-pitch))
+                           (?B . (:foreground "deep sky blue" :weight 'bold
+                                              :inherit 'fixed-pitch))
+                           (?C . (:foreground "blue violet" :weight 'bold
+                                              :inherit 'fixed-pitch))
+                           (?D . (:foreground "dim grey" :weight 'bold
+                                              :inherit 'fixed-pitch))))
+
+
 ;;; Org-Bable
 (org-babel-do-load-languages
  'org-babel-load-languages

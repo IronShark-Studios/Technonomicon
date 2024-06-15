@@ -3,6 +3,83 @@
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;; Imported all visual setting form org config. Need to integrate them to theme.
+
+
+
+
+;; (dolist (face '((org-level-1 . "Azure3")
+;;                 (org-level-2 . "Azure3")
+;;                 (org-level-3 . "Azure3")
+;;                 (org-level-4 . "Azure3")
+;;                 (org-level-5 . "Azure3")
+;;                 (org-level-6 . "Azure3")
+;;                 (org-level-7 . "Azure3")
+;;                 (org-level-8 . "Azure3")))
+;;   (set-face-attribute (car face) nil :font "Iosevka"
+;;                       :weight 'regular :height 1.3
+;;                       :foreground (cdr face)))
+
+
+;; rainbow paren, and matching colors
+
+
+
+
+(custom-set-faces
+ '(org-block-begin-line
+   ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
+ '(org-block
+   ((t (:background "#2e2e2e" :extend t))))
+ '(org-block-end-line
+   ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
+ )
+
+(defun Tn/toggle-mode-line ()
+  (setq mode-line-format nil))
+
+(add-hook 'term-mode-hook 'Tn/toggle-mode-line)
+
+
+
 ;;; Overrides default colors of Modus-Vivendi.
 ;;; Colors can be found by placing point on a character, and using
 ;;; (M-x describe-char). Then finding the hex code and searching that
@@ -67,112 +144,53 @@
         (cyan-alt-other-faint . "#9ac8e0")
         (cyan-intense . "#00eff0")
 
+;;; Paren match
+        (bg-paren-match        "#2f7f9f")
+        (fg-paren-match        fg-main)
+        (bg-paren-expression   "#453040")
 
+;;;; Rainbow mappings
+        (rainbow-0 fg-main)
+        (rainbow-1 magenta-intense)
+        (rainbow-2 cyan-intense)
+        (rainbow-3 blue-intense)
+        (rainbow-4 yellow-intense)
+        (rainbow-5 magenta-cooler)
+        (rainbow-6 cyan-cooler)
+        (rainbow-7 blue-cooler)
+        (rainbow-8 yellow-cooler)
 
+;;;; Code mappings
+        (builtin magenta-warmer)
+        (comment fg-dim)
+        (constant blue-cooler)
+        (docstring cyan-faint)
+        (docmarkup magenta-faint)
+        (fnname magenta)
+        (keyword magenta-cooler)
+        (preprocessor red-cooler)
+        (string blue-warmer)
+        (type cyan-cooler)
+        (variable cyan)
+        (rx-construct green-cooler)
+        (rx-backslash magenta)
 
+;;;; Prose mappings
+        (fg-prose-code cyan-warmer)
+        (fg-prose-macro magenta-cooler)
+        (fg-prose-verbatim cyan-warmer)
+        (prose-table-formula magenta-warmer)
+        (prose-tag magenta-faint)
 
-
-
-
-
+;;;; Heading mappings
+        (fg-heading-0 "#00ced1")
+        (fg-heading-1 "#00ced1")
+        (fg-heading-2 "#00ced1")
+        (fg-heading-3 "#00ced1")
+        (fg-heading-4 "#00ced1")
+        (fg-heading-5 "#00ced1")
+        (fg-heading-6 "#00ced1")
+        (fg-heading-7 "#00ced1")
+        (fg-heading-8 "#00ced1")
 
       ))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;;; Imported all visual setting form org config. Need to integrate them to theme.
-
-
-
-
-;; (dolist (face '((org-level-1 . "Azure3")
-;;                 (org-level-2 . "Azure3")
-;;                 (org-level-3 . "Azure3")
-;;                 (org-level-4 . "Azure3")
-;;                 (org-level-5 . "Azure3")
-;;                 (org-level-6 . "Azure3")
-;;                 (org-level-7 . "Azure3")
-;;                 (org-level-8 . "Azure3")))
-;;   (set-face-attribute (car face) nil :font "Iosevka"
-;;                       :weight 'regular :height 1.3
-;;                       :foreground (cdr face)))
-
-;; (set-face-attribute 'org-link nil    :foreground "cyan" :inherit 'fixed-pitch)
-;; (set-face-attribute 'org-tag nil     :height 0.9 :inherit 'fixed-pitch)
-;; (set-face-attribute 'org-block nil    :inherit 'fixed-pitch)
-;; (set-face-attribute 'org-table nil    :foreground "dark cyan" :inherit 'fixed-pitch)
-;; (set-face-attribute 'org-formula nil  :foreground "dark cyan" :inherit 'fixed-pitch)
-;; (set-face-attribute 'org-code nil     :foreground "SpringGreen3"
-;;                     :weight 'semi-bold :inherit '(shadow fixed-pitch))
-;; (set-face-attribute 'org-verbatim nil :foreground "SpringGreen3"
-;;                     :weight 'semi-bold :inherit '(shadow fixed-pitch))
-;; (set-face-attribute 'org-table nil    :inherit '(shadow fixed-pitch))
-;; (set-face-attribute 'org-special-keyword nil :inherit '(font-lock-comment-face fixed-pitch))
-;; (set-face-attribute 'org-meta-line nil :inherit '(font-lock-comment-face fixed-pitch))
-;; (set-face-attribute 'org-checkbox nil  :inherit 'fixed-pitch)
-;; (set-face-attribute 'line-number nil :inherit 'fixed-pitch)
-;; (set-face-attribute 'line-number-current-line nil :inherit 'fixed-pitch))
-
-;; rainbow paren, and matching colors
-
-(setq org-priority-faces '((?A . (:foreground "medium spring green" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?B . (:foreground "deep sky blue" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?C . (:foreground "blue violet" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?D . (:foreground "dim grey" :weight 'bold
-                                              :inherit 'fixed-pitch))
-                           (?E . (:foreground "dark red" :weight 'bold
-                                              :inherit 'fixed-pitch))))
-
-
-
-(custom-set-faces
- '(org-block-begin-line
-   ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
- '(org-block
-   ((t (:background "#2e2e2e" :extend t))))
- '(org-block-end-line
-   ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
- )
-
-(defun Tn/toggle-mode-line ()
-  (setq mode-line-format nil))
-
-(add-hook 'term-mode-hook 'Tn/toggle-mode-line)
