@@ -29,6 +29,7 @@
         org-combined-agenda-icalendar-file "~/Apocrypha/Org/calendar.ics"
         org-icalendar-use-deadline '(todo-due event-if-todo event-if-not-todo)
         diary-file (file-truename "~/Apocrypha/Org/diary.org")
+        org-priority-get-priority-function #'Tn/org-inherited-priority
         org-icalendar-use-scheduled '(todo-start event-if-todo event-if-not-todo)
         org-agenda-time-grid '((daily today require-timed remove-match)
                                () " ----- " "┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄")

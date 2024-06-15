@@ -57,6 +57,10 @@
 (define-key evil-normal-state-map (kbd "<up>") 'evil-previous-visual-line)
 (define-key evil-normal-state-map (kbd "<down>") 'evil-next-visual-line)
 
+(define-key org-agenda-mode-map (kbd "n") 'org-agenda-next-line)
+(define-key org-agenda-mode-map (kbd "e") 'org-agenda-previous-line)
+(define-key org-agenda-mode-map (kbd "j") 'org-agenda-goto-date)
+(define-key org-agenda-mode-map (kbd "p") 'org-agenda-capture)
 
 ;; (eval-after-load 'helm
 ;;   (define-key helm-comp-read-map (kbd "C-c C-c") 'helm-cr-empty-string))
