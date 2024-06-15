@@ -42,19 +42,19 @@
         (cyan-intense . "#00eff0")
 
 
-        (builtin magenta-warmer)
-        (comment fg-dim)
-        (constant blue-cooler)
-        (docstring cyan-faint)
-        (docmarkup magenta-faint)
-        (fnname magenta)
-        (keyword magenta-cooler)
-        (preprocessor red-cooler)
-        (string blue-warmer)
-        (type cyan-cooler)
-        (variable cyan)
-        (rx-construct green-cooler)
-        (rx-backslash magenta)
+        (builtin . magenta-warmer)
+        (comment . fg-dim)
+        (constant . blue-cooler)
+        (docstring . cyan-faint)
+        (docmarkup . magenta-faint)
+        (fnname . magenta)
+        (keyword . magenta-cooler)
+        (preprocessor . red-cooler)
+        (string . blue-warmer)
+        (type . cyan-cooler)
+        (variable . cyan)
+        (rx-construct . green-cooler)
+        (rx-backslash . magenta)
 
 ;; ;;; Uncommon accent foregrounds
 
