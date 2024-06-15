@@ -17,8 +17,8 @@
       sudo nixos-rebuild switch --flake .#$HOSTNAME --upgrade
       git add .
       git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
+      git push origin HEAD
       git switch main
-      git push
     '';
   };
 }
