@@ -88,8 +88,8 @@
         bind = $mainMod, S, exec, firefox
         bind = $mainMod SHIFT, S, exec, emacsclient -c -e "(eww-browse-url \"$(wl-paste)\")"
 
-        bind = $mainMod, T, exec, emacsclient -c -e "(term \".nix-profile/bin/zsh\")"
-        bind = $mainMod SHIFT, T, exec, alacritty
+        bind = $mainMod SHIFT, T, exec, emacsclient -c -e "(term \".nix-profile/bin/zsh\")"
+        bind = $mainMod, T, exec, alacritty
 
         bind = $mainMod, F, exec, emacsclient -c
         bind = $mainMod SHIFT, F, exec, alacritty -e lf
