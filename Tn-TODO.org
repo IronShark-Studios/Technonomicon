@@ -1,41 +1,19 @@
 #+FILETAGS: :Tn:
 * TODO Configure Org / Emacs Integrations
-*** TODO LaTeX
-*** TODO Graphviz
 *** TODO Visidata
 - https://www.visidata.org/docs/customize/
 ***** TODO Create emacs (M-x visidata) function to open visidata directly
 ***** TODO Add Vi movement Keys
 ***** TODO Create Basic theme
-*** TODO hugo
-- [[https://willschenk.com/howto/2019/using_org_mode_in_hugo/][Using Hugo with Org Mode]]
 *** TODO Use Google Calendar notifications for appointment reminders
 *** TODO exorcism (programming tutorial)
 *** TODO Improve Firefox integration
-***** TODO integrate tridactyl and emacs exwm-firefox-evil
-- [[https://codeberg.org/emacs-weirdware/exwm-firefox/src/branch/main/exwm-firefox.el][EXWM FireFox]]
-- [[https://github.com/walseb/exwm-firefox-core][exwm firefox core]]
 ***** TODO increase default text size of tridactyl windows
 ***** TODO [[https://www.reddit.com/r/archlinux/][change default tridactyl search engine]]
-***** TODO create hot key to open bookmarks manager
-***** TODO create hot key to open current page in eww
-***** TODO Change Tridactyl Bindings
-******* TODO rebind tridactyl tab to space
-******* TODO Create Binding Opening Current Page in EWW
-******* TODO Create Binding Link in EWW
-******* TODO Rebind =B= to =b=
-******* TODO Rebind Tab open =t/T= to open in new window
-- Rebind all tabs based commands to open new windows
-******* TODO Create binding to display bookmarks
-******* TODO Create binding to quicksearch with duckduckgo
-******* TODO Replace link hint engine with something cleaner
 ***** TODO configure RES and youtube keybindings
 ***** TODO Manage Bookmarks with Helm-FireFox
 ***** TODO Watch Video in emacs with MPV
-***** TODO enable arrow / vim keys in tab list
 ***** TODO rebind =b= to show all tabs in all windows =(B)=.
-***** TODO create keybinding to open favorites list
-***** TODO add treestyle tabs
 *** TODO Emacs Communication Suite
 ***** TODO Emacs Email Client
 ***** TODO WeeChat or similar
@@ -59,20 +37,6 @@
 ******* Wee Chat
 ******* TODO Compare Weechat with other graphical clients
 ******* TODO Integrate IRC / Matrix with Emacs
-* TODO Create Note taking workflow
- [[https://jonhanabennett.github.io/blog/2019/05/29/writing-academic-papers-with-org-mode/][Writing Academic Papers in Org Mode]]
- [[https://karinks.com/software/latex-input-for-impatient-scholars/][Latex for Impatient Scolars]]
- [[https://casl.dev/post/lecture-notes-1/][Latex + Vim Notes]]
- https://www.youtube.com/watch?v=4-YqqGGIkHg&list=WL&index=87&pp=gAQBiAQB (and other videos on channel)
- https://www.youtube.com/watch?v=wB89lJs5A3s&list=WL&index=244&pp=gAQBiAQB
- https://www.youtube.com/watch?v=njibNuFQwjw&list=WL&index=245&t=605s&pp=gAQBiAQB
- https://www.youtube.com/watch?v=5Q9435eIOVI&list=WL&index=265&t=296s&pp=gAQBiAQB
- https://www.youtube.com/watch?v=bTbiC6SamT4&list=WL&index=279&pp=gAQBiAQB
- https://www.youtube.com/watch?v=Bpmkeh4D98s&list=WL&index=470&t=1646s&pp=gAQBiAQB
-*** TODO Single large notes file
- Integrate witRoam. By either the main file being indexed, or the top level headlines being Indexed.
-*** DONE Insight based / zettles
-- State "DONE"       from "TODO"       [2024-02-12 Mon 19:14]
 * TODO Create Knowledge Management Workflow
  https://zk.zeel.page/examples
  https://www.mtalnodes.com/taking-raw-notes-is-useless
@@ -92,8 +56,6 @@
  [[https://gitb.com/vedang/pdf-tools]]
  https://rgoswi.me/posts/org-note-workflow/#org-noter
  https://alber.am/2020-04-11-pdf-tools-as-default-pdf-viewer.html
-*** DONE Integte wikipedia links using EWW and Org
-- State "DONE"       from "TODO"       [2024-02-13 Tue 18:01]
 *** TODO Ebook Library Manager
 **** TODO Find out if home-manager can configure Calibre DRM settings
 
@@ -117,16 +79,6 @@
 *** TODO Latex inline code Support
 *** TODO Export org docs to pdf
 * TODO Create Programming Workflow
-*** DONE Figure Out what TreeSitter is
-- State "DONE"       from "TODO"       [2024-02-12 Mon 19:15]
-*** DONE Figure Out What LSP is
-- State "DONE"       from "TODO"       [2024-02-12 Mon 19:15]
- https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
- https://taingram.org/blog/emacs-lsp-ide.html
- https://www.youtube.com/watch?v=w7i4amO_zaE&list=WL&index=63&t=215s&pp=gAQBiAQB
-*** DONE FIgure Out what DAP mode is
-- State "DONE"       from "TODO"       [2024-02-12 Mon 19:16]
-   - https://github.com/emacs-lsp/dap-mode
 *** TODO Learn how to use Macros and Registers
 *** TODO Learn how to use Skelelons and Killring
 *** TODO Searching
@@ -139,7 +91,7 @@
 - [[https://github.com/magit/orgit][Orgit]] : Adds magit link support to org
 **** TODO Git time machine
  https://codeberg.org/pidu/git-timemachine
-** TODO Create Task Management Workflow
+* TODO Create Task Management Workflow
 - [ ] [[https://redgreenrepeat.com/2019/10/04/checklists-in-org-mode/][Checklists in Org-Mode]]
 - [ ] [[https://d12frosted.io/posts/2021-01-16-task-management-with-roam-vol5.html][Task Management with Org Roam]]
 - [ ] [[https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html][Clocking Time With Org-Mode]]
@@ -158,27 +110,12 @@
 ******* TODO How to manage media insertion with org/org-roam
 ********* TODO embedded images
 ********* TODO links to other files in apocrypha
-*** TODO Emacs-Perspectives for layout management
-- https://systemcrafters.net/effective-emacs-workflow/declutter-your-buffers-perspective-el/
-*** TODO Configure org-wild-notifier or other agenda notification apps
 *** TODO Integrate Google Drive with Emacs
 - https://emacsnotes.wordpress.com/2018/07/08/your-google-drive-now-within-your-emacs/
-*** TODO Add additional settings to evil slide hydra as needed
-- [ ] jump forward / back by sexp
-*** TODO Finalize =README.org=
 *** TODO Integrate agenda with google calendar
 *** TODO Create code that tracks org habit streaks
-*** TODO add Emacs startup dash board
-- https://github.com/rakanalh/emacs-dashboard
-*** TODO Test and configure Projectile to jump to projects
-- [ ] is there an alacrity extension for projectile
-*** TODO Go through DoomEmacs Docs and figure out if its worth using
-- [[https://github.com/hlissner/dotfiles][DoomEmacs Creators NixOS Configuration]]
 *** TODO Fork Citar for calorie tracking program
 *** TODO Fix Firefox -> Roam-protocol error
-*** TODO Find a way to do multi cursor insert with Emacs
-*** DONE Configure =org-tag-alist= to use hydras. For more efficient tags
-- State "DONE"       from "TODO"       [2024-02-10 Sat 17:32]
 *** TODO Look into Modifying core system
 ***** TODO Repeatable disk partitioning using a machine specific script.
 ***** TODO Use of Zen kernel with older normal kernel fallback
@@ -192,20 +129,6 @@
 
 ***** TODO Use of Libreboot Bios
 ***** TODO Full disk encryption
-*** TODO Add these programs to work computer
-- gimp-with-plugins
-- inkscape-with-extensions
-- davinci-resolve
-- dark-table
-- krita
-- obs
-- ffmpeg
-- blind
-***** TODO Manage some program configurations with out of store symlinks
-- https://www.reddit.com/r/NixOS/comments/u09cz9/home_manager_create_my_own_symlinks_automatically/
-*** TODO Add configuration to apps
-***** TODO Alacritty
-- https://www.youtube.com/watch?v=6Gq6wsz8o_k&t=216s
 *** TODO Figure out how to create custom systemd services
 - https://www.codyhiar.com/blog/repeated-tasks-with-systemd-service-timers-on-nixos/
 ***** TODO autolock screen when laptop lid is closed
@@ -214,13 +137,6 @@
 *** TODO Configure SSH to Use PGP
 - https://rzetterberg.github.io/yubikey-gpg-nixos.html
 - https://framagit.org/Glandos/bw-ssh/
-*** DONE Create a first time start up script
-- State "DONE"       from "TODO"       [2024-02-10 Sat 17:32]
-*** TODO create a tmux + vim ssh config
-- https://www.reddit.com/r/emacs/comments/xyo2fo/orgmode_vterm_tmux/
-- https://www.youtube.com/watch?v=stCXFxC4OH0&list=WL&index=11&pp=gAQBiAQB
-- https://www.youtube.com/watch?v=DzNmUNvnB04&list=WL&index=99&t=100s&pp=gAQBiAQB
-***** TODO create a default vimrc
 *** TODO create script to enable wacom tablet driver and set bindings
 
 #+begin_src nix
@@ -253,27 +169,9 @@
     '';
   };
 #+end_src
-*** TODO Create custom themes
-- https://github.com/doomemacs/themes/blob/master/themes/doom-city-lights-theme.el
-- https://blog.layus.be/posts/2020-06-12-nix-overlays.html
-- https://flyingcircus.io/blog/nixos-the-dos-and-donts-of-nixpkgs-overlays/
-- https://github.com/nix-community/emacs-overlay
-***** TODO Allacritty
-***** TODO Zsh
-***** TODO Starship
-***** TODO SSDM
-***** TODO OpenSCAD
 *** TODO Find a free and feature matched self hoasted alternative to gsuite, and bitwarden
 *** TODO Add LLM Style Interaction
 - https://github.com/zerolfx/copilot.el
-*** TODO Learn How to Create Dev Env with Nix
-- [[https://determinate.systems/posts/nix-direnv][Nix-Direnv]]
-- https://notes.abhinavsarkar.net/2022/just-nix-podman-combo
-- https://www.youtube.com/watch?v=LjyQ7baj-KM&list=WL&index=78&pp=gAQBiAQB
-- https://www.youtube.com/watch?v=KaIRpx11qrc&list=WL&index=79&pp=gAQBiAQB
-- https://www.youtube.com/watch?v=6Le0IbPRzOE&list=WL&index=81&t=1844s&pp=gAQBiAQB
-- https://www.youtube.com/watch?v=0uixRE8xlbY&list=WL&index=82&t=770s&pp=gAQBiAQB
-- https://www.youtube.com/watch?v=5XY3K8DH55M&list=WL&index=83&t=428s&pp=gAQBiAQB
 *** TODO Fitness and Nutrition Tracking with Emacs
 - https://gist.github.com/alphapapa/982467abc1bf29f57c5cd2c408a77bd5
 - https://gist.github.com/iocanel/0b8bcdb3d69fb7731069cb872f836507
@@ -283,9 +181,6 @@
 ***** TODO [[https://www.youtube.com/watch?v=yufC22262I4&list=WL&index=6&t=552s&pp=gAQBiAQB][LocalSend]]
 ***** TODO [[https://www.youtube.com/watch?v=-RW546svPOc&list=WL&index=170&t=629s&pp=gAQBiAQB][CURL]] utils
 ***** TODO GH and Gitlab equivalent
-*** TODO Replace hard paths with variables where possible
-*** DONE Troubles shoot issues with org-bibtex mode
-- State "DONE"       from "TODO"       [2024-02-10 Sat 17:33]
 *** TODO FFXIV
 ***** TODO Configure Ingame Settings
 ***** TODO Back Up and Version Control Settings File

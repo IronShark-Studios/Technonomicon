@@ -91,8 +91,8 @@
         bind = $mainMod SHIFT, T, exec, emacsclient -c -e "(term \".nix-profile/bin/zsh\")"
         bind = $mainMod, T, exec, alacritty
 
-        bind = $mainMod, F, exec, emacsclient -c
-        bind = $mainMod SHIFT, F, exec, alacritty -e lf
+        bind = $mainMod SHIFT, F, exec, emacsclient -c
+        bind = $mainMod, F, exec, alacritty -e lf
 
         bind = $mainMod, h, exec, emacsclient -c ~/Projects/Technonomicon/README.org
 

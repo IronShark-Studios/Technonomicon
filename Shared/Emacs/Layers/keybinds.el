@@ -32,7 +32,7 @@
 (define-key evil-hybrid-state-map (kbd "S-<escape>") 'Tn/evil-normal-and-save)
 
 (define-key evil-normal-state-map (kbd "C-h") 'help)
-(define-key evil-normal-state-map (kbd "C-l") 'help)
+(define-key evil-normal-state-map (kbd "C-l") 'Tn/open-term-mode)
 (define-key evil-normal-state-map (kbd "C-j") 'spacemacs/evil-insert-line-above)
 (define-key evil-normal-state-map (kbd "C-k") 'spacemacs/evil-insert-line-below)
 

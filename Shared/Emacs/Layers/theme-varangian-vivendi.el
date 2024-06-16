@@ -3,15 +3,19 @@
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
 
-;; (custom-set-faces
-;;  '(org-block-begin-line
-;;    ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
-;;  '(org-block
-;;    ((t (:background "#2e2e2e" :extend t))))
-;;  '(org-block-end-line
-;;    ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
-;;  )
+(custom-set-faces
+ '(org-block-begin-line
+   ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
+ '(org-block
+   ((t (:background "#2e2e2e" :extend t))))
+ '(org-block-end-line
+   ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
+ )
 
+
+(defun Tn/open-term-mode ()
+  (interactive)
+  (term "~/.nix-profile/bin/zsh"))
 
 (defun Tn/toggle-mode-line ()
   (setq mode-line-format nil))

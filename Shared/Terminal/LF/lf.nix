@@ -18,17 +18,18 @@
       "lfrc" = {
         target = ".config/lf/lfrc";
         text = ''
-set hidden true
-set ignorecase true
-set icons true
-set mouse true
-set previewer ~/.config/lf/lfimg/preview
-set cleaner ~/.config/lf/lfimg/cleaner
+           set hidden true
+           set ignorecase true
+           set icons true
+           set mouse true
+           set previewer ~/.config/lf/lfimg/preview
+           set cleaner ~/.config/lf/lfimg/cleaner
 
-map n down
-map e up
-map <enter> open
-map <space> updir
+           map n down
+           map e up
+           map <enter> open
+           map <space> updir
+           map . set hidden!
         '';
       };
 
