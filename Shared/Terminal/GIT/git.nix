@@ -30,7 +30,7 @@
           rebase = true;
         };
         push = {
-          orgin = HEAD;
+          orgin = "HEAD";
         };
       };
     };
