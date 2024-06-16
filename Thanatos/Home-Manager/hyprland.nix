@@ -88,11 +88,14 @@
         bind = $mainMod, S, exec, firefox
         bind = $mainMod SHIFT, S, exec, emacsclient -c -e "(eww-browse-url \"$(wl-paste)\")"
 
-        bind = $mainMod, T, exec, alacritty
-        bind = $mainMod SHIFT, T, exec, emacsclient -c
+        bind = $mainMod, T, exec, emacsclient -c -e "(term \".nix-profile/bin/zsh\")"
+        bind = $mainMod SHIFT, T, exec, alacritty
 
-        bind = $mainMod, F, exec, alacritty -e lf
-        bind = $mainMod SHIFT, F, exec, thunar
+        bind = $mainMod, F, exec, emacsclient -c
+        bind = $mainMod SHIFT, F, exec, alacritty -e lf
+
+        bind = $mainMod, h, exec, emacsclient -c ~/Projects/Technonomicon/README.org
+
 
         bind = $mainMod, C, exec, emacsclient -c -e '(full-calc)'
         bind = $mainMod SHIFT, C, exec, rofi -show calc -modi calc -no-show-match -no-sort
@@ -150,9 +153,6 @@
         bind = $mainMod ALT, 7, movecurrentworkspacetomonitor, 7
         bind = $mainMod ALT, 8, movecurrentworkspacetomonitor, 8
         bind = $mainMod ALT, 9, movecurrentworkspacetomonitor, 9
-
-        bind = $mainMod, 0, togglespecialworkspace, magic
-        bind = $mainMod SHIFT, 0, movetoworkspace, special:magic
 
         bind = $mainMod, e, resizeactive, 10 0
         bind = $mainMod, n, resizeactive, -10 0
