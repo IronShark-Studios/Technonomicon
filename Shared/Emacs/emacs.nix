@@ -28,7 +28,7 @@
 
       "Personal-Layers" = {
         target = ".config/emacs/private";
-        source = ./Personal-Layers;
+        source = ./Layers;
         recursive = true;
       };
     };

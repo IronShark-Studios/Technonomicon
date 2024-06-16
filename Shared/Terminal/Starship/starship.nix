@@ -14,45 +14,46 @@
           disabled = true
 
           [character]
-          success_symbol = "[❯](#ff9400)"
+          success_symbol = "[❯](#7fff00)"
           error_symbol = "[✗](#ff4b00)"
 
           [cmd_duration]
-          style = "#f9a600"
-          format = "[ $duration](bg:black fg:$style)"
+          style = "#7fff00"
+          format = "[ $duration](bg:#20282f fg:$style)"
 
           [directory]
-          style = "#c05303"
+          style = "#7fff00"
           truncate_to_repo = false
           fish_style_pwd_dir_length = 1
-          format = "[](fg:black bg:#c05303)[$path[$read_only](bg:$style fg:black)](bg:$style fg:black)[](fg:$style)"
+          format = "[](fg:black bg:#7fff00)[$path[$read_only](bg:$style fg:black)](bg:$style fg:black)[](fg:$style)"
           read_only = " "
 
           [git_branch]
-          style = "#d8712c"
+          style = "#dcdcdc"
           format = "[](fg:black bg:$style)[ $symbol$branch](fg:black bg:$style)[](fg:$style)"
 
           [git_commit]
-          style = "#d8712c"
+          style = "#dcdcdc"
           format = "\b[ ](bg:$style)[\\($hash$tag\\)](fg:black bg:$style)[](fg:$style)"
 
           [git_state]
-          style = "#d8712c"
+          style = "#dcdcdc"
           format = "\b[ ](bg:$style)[ \\($state( $progress_current/$progress_total)\\)](fg:black bg:$style)[](fg:$style)"
 
+
           [git_status]
-          style = "#d8712c"
+          style = "#dcdcdc"
           format = "(\b[ ](bg:$style fg:black)$conflicted$staged$modified$renamed$deleted$untracked$stashed$ahead_behind[](fg:$style))"
-          conflicted = "[  ](bold fg:88 bg:#d8712c)[  ](fg:black bg:#d8712c)"
-          staged = "[  ](fg:black bg:#d8712c)"
-          modified = "[  ](fg:black bg:#d8712c)"
-          renamed = "[  ](fg:black bg:#d8712c)"
-          deleted = "[  ](fg:black bg:#d8712c)"
-          untracked = "[ ? ](fg:black bg:#d8712c)"
-          stashed = "[  ](fg:black bg:#d8712c)"
-          ahead = "[  ](fg:#523333 bg:#d8712c)"
-          behind = "[  ](fg:black bg:#d8712c)"
-          diverged = "[  ](fg:88 bg:#d8712c)[ נּ ](fg:black bg:#d8712c)[  ](fg:black bg:#d8712c)[  ](fg:black bg:#d8712c)"
+          conflicted = "[  ](bold fg:88 bg:#dcdcdc)[  ](fg:black bg:#dcdcdc)"
+          staged = "[  ](fg:black bg:#dcdcdc)"
+          modified = "[  ](fg:black bg:#dcdcdc)"
+          renamed = "[  ](fg:black bg:#dcdcdc)"
+          deleted = "[  ](fg:black bg:#dcdcdc)"
+          untracked = "[ ? ](fg:black bg:#dcdcdc)"
+          stashed = "[  ](fg:black bg:#dcdcdc)"
+          ahead = "[  ](fg:#523333 bg:#dcdcdc)"
+          behind = "[  ](fg:black bg:#dcdcdc)"
+          diverged = "[  ](fg:88 bg:#dcdcdc)[ נּ ](fg:black bg:#dcdcdc)[  ](fg:black bg:#dcdcdc)[  ](fg:black bg:#dcdcdc)"
 
    '';
   };

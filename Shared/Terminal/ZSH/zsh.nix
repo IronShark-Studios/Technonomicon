@@ -61,8 +61,6 @@
       autoload -U compinit; compinit
       source ~/.zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 
-      bindkey -a 'm' vi-backward-char
-
       zle-line-init() {
         emulate -L zsh
 

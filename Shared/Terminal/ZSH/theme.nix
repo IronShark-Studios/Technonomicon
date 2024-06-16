@@ -3,14 +3,14 @@
   programs.zsh.syntaxHighlighting = {
     enable = true;
     styles = {
-      comment = "fg=#41505E,underline";
-      constant = "fg=#D95468,bold";
-      entity = "fg=#D98E48,italic";
-      function = "fg=#8BD49C";
+      comment = "fg=#989898,underline";
+      constant = "fg=#989898,bold";
+      entity = "fg=#00fa9a,italic";
+      function = "fg=#00fa9a";
       alias = "fg=#33CED8";
       suffix-alias = "fg=#33CED8,bold";
       global-alias = "fg=#33CED8,bold";
-      builtin = "fg=#EBBF83";
+      builtin = "fg=#33CED8";
       reserved-word = "fg=#5EC4FF,bold";
       hashed-command = "fg=#539AFC";
       path = "fg=#718CA1";

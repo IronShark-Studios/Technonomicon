@@ -27,23 +27,13 @@ key = "A"
 mode = "Vi"
 
 [[keyboard.bindings]]
-action = "Left"
-key = "M"
-mode = "Vi"
-
-[[keyboard.bindings]]
-action = "Down"
+action = "ScrollHalfPageDown"
 key = "N"
 mode = "Vi"
 
 [[keyboard.bindings]]
-action = "Up"
+action = "ScrollHalfPageUp"
 key = "E"
-mode = "Vi"
-
-[[keyboard.bindings]]
-action = "Right"
-key = "I"
 mode = "Vi"
 
 [[keyboard.bindings]]

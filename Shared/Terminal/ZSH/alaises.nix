@@ -1,14 +1,18 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
   programs.zsh.shellAliases = {
-    cd = "z";
+    cd = "cdd";
     ca = "clear && printf '\n%.0s' {1..100}";
     lf = "bash ~/.config/lf/lfimg/lfrun";
     cat = "bat";
-    fd = "fd -i";
-    fd-x = "fd --regex";
-    rg = "rg -i";
-    rg-x = "rg --regex";
+    find = "fd -i";
+    find-m = "fd-menu";
+    findx = "fd --regex";
+    findx-m = "fdx-menu";
+    grep = "rg -i";
+    grep-m = "rg-menu";
+    grepx = "rg --regex";
+    grepx-m = "rgx-menu";
     cp = "rsync --force --recursive --progress";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
     ld = "eza --icons --oneline --group-directories-first --color auto --tree";

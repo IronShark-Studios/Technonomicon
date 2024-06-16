@@ -29,6 +29,9 @@
         pull = {
           rebase = true;
         };
+        push = {
+          origin = "HEAD";
+        };
       };
     };
   };
