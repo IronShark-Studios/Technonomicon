@@ -6,7 +6,7 @@
       #!/bin/sh
 
       cd ~/.config/emacs
-      git pull
+      git pull --ff
       cd ~/Projects/Technonomicon
 
       git switch Build-Logs
