@@ -13,16 +13,15 @@
     spiceUSBRedirection.enable = true;
   };
 
-  users.users.${username}.extraGroups = [ "libvirtd" ];
+  users.users.xin.extraGroups = [ "libvirtd" ];
 
   environment.systemPackages = with pkgs; [
     spice
     spice-gtk
     spice-protocol
     virt-viewer
-    #virtio-win
-    #win-spice
   ];
+
   programs.virt-manager.enable = true;
 
   home-manager.users.xin = {
