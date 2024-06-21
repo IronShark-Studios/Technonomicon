@@ -1,5 +1,5 @@
-{ pkgs, username, ... }:
-{
+{ inputs, outputs, lib, config, pkgs, ... }: {
+
   virtualisation = {
     libvirtd = {
       enable = true;
@@ -25,7 +25,7 @@
   ];
   programs.virt-manager.enable = true;
 
-  home-manager.users.${username} = {
+  home-manager.users.xin = {
     dconf.settings = {
       "org/virt-manager/virt-manager/connections" = {
         autoconnect = [ "qemu:///system" ];
