@@ -16,12 +16,12 @@
     :bindings
     ("m" Tn/add-misc-tag)
     ("p" Tn/add-food-tag)
-    ("p" Tn/org-tag-people-hydra/body)
-    ("l" Tn/org-tag-location-hydra/body)
-    ("a" Tn/org-tag-academic-hydra/body)
-    ("c" Tn/org-tag-content-hydra/body)
-    ("f" Tn/org-tag-physical-project-hydra/body)
-    ("d" Tn/org-tag-digital-project-hydra/body)
+    ("p" spacemacs/Tn/tag-people-transient-state/body)
+    ("l" spacemacs/Tn/tag-locations-transient-state/body)
+    ("a" spacemacs/Tn/tag-academic-transient-state/body)
+    ("c" spacemacs/Tn/tag-content-transient-state/body)
+    ("f" spacemacs/Tn/tag-physical-project-transient-state/body)
+    ("d" spacemacs/Tn/tag-digital-project-transient-state/body)
     ("k" Tn/convert-to-NSFW)
     ("q" nil :exit t))
 
@@ -445,8 +445,8 @@
     (org-set-tags (append (org-get-tags) '("ELECTRONICS")))
     (org-set-tags (append (org-get-tags) '("BREAD-BOARD"))))
 
-  (spacemacs|define-transient-state Tn/helm-actions
-    :title "Helm Actions"
+  (spacemacs|define-transient-state Tn/tag-digital-project
+    :title "Digital Projects"
     :foreign-keys run
     :doc "
                Digital Projects
