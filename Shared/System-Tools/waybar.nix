@@ -5,6 +5,12 @@
   };
 
   home = {
+    pointerCursor = {
+        gtk.enable = true;
+        package = pkgs.vanilla-dmz;
+        name = "Vanilla-DMZ";
+    };
+
     packages = with pkgs; [
       pavucontrol
     ];
