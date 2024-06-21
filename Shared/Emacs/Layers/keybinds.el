@@ -47,8 +47,6 @@
 (define-key evil-motion-state-map (kbd "F") 'evil-snipe-F)
 (define-key evil-motion-state-map (kbd "t") 'evil-snipe-t)
 (define-key evil-motion-state-map (kbd "T") 'evil-snipe-T)
-(define-key evil-motion-state-map (kbd "s") 'evil-snipe-s)
-(define-key evil-motion-state-map (kbd "S") 'evil-snipe-S)
 
 (define-key evil-motion-state-map (kbd "<up>") 'evil-previous-visual-line)
 (define-key evil-motion-state-map (kbd "<down>") 'evil-next-visual-line)

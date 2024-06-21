@@ -10,6 +10,7 @@
     ./Sub-Modules/pkgs.nix
     ./Sub-Modules/xserver.nix
     ./Sub-Modules/network.nix
+    ./Sub-Modules/virtualization.nix
     ../../Shared/Scripts/rebuild.nix
     ../../Shared/Scripts/test.nix
     ../../Shared/Scripts/upgrade.nix
