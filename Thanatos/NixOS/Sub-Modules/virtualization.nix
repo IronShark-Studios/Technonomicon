@@ -22,7 +22,10 @@
     virt-viewer
   ];
 
-  programs.virt-manager.enable = true;
+  programs = {
+    virt-manager.enable = true;
+    dconf.enable = true;
+  };
 
   home-manager.users.xin = {
     dconf.settings = {
