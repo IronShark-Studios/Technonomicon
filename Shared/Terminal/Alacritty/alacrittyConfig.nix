@@ -19,6 +19,7 @@ foreground = "#C5C8C6"
 
 [[keyboard.bindings]]
 action = "ToggleViMode"
+mods = "Shift"
 key = "Escape"
 
 [[keyboard.bindings]]
