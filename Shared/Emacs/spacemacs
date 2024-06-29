@@ -45,7 +45,7 @@ This function should only modify configuration layer settings."
                       auto-completion-return-key-behavior nil
                       auto-completion-tab-key-behavior 'complete
                       auto-completion-minimum-prefix-length 1
-                      auto-completion-idle-delay 0.1)
+                      auto-completion-idle-delay 0.3)
      (languagetool :variables
                    langtool-default-language "en-US"
                    langtool-java-classpath "~/.nix-profile/bin/languagetool")
