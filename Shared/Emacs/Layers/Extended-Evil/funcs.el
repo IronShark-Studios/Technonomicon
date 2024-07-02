@@ -20,7 +20,13 @@
     (avy-goto-word-or-subword-1)
     (evil-scroll-line-to-center nil))
 
-;;; I prefer to automattically save all open buffers. And the (S-ESC) combination is convient to me due to a custom keyboard layout.
+  (defun Tn/flyspell-and-jump ()
+    "jumps to end of word after correcting with flyspell"
+    (interactive)
+    (helm-flyspell-correct)
+    (right-word))
+
+;;; I prefer to automatically save all open buffers. And the (S-ESC) combination is convenient to me due to a custom keyboard layout.
 
   (defun Tn/save-all-buffers ()
     "Instead of `save-buffer', save all opened buffers by calling `save-some-buffers' with ARG t."
