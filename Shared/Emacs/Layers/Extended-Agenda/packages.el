@@ -42,8 +42,7 @@
 
 (defconst Extended-Agenda-packages
   '(org-super-agenda
-    calfw
-    calfw-org)
+    calfw)
   "The list of Lisp packages required by the Extended-Agenda layer.
 
 Each entry is either:
@@ -77,8 +76,4 @@ Each entry is either:
 
 (defun Extended-Agenda/init-calfw ()
   (use-package calfw
-    :defer t))
-
-(defun Extended-Agenda/init-calfw-org ()
-  (use-package calfw-org
     :defer t))
