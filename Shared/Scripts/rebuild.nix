@@ -5,8 +5,6 @@
     text = ''
       #!/bin/sh
 
-      git switch Build-Logs
-      git pull --ff-only
       git add .
       git status
       sudo nixos-rebuild switch --impure --flake .#$HOSTNAME
