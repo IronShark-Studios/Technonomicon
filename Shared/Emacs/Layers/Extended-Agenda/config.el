@@ -40,10 +40,10 @@
 
 
 
-(add-hook 'org-agenda-mode-hook
-          (lambda ()
-            (visual-line-mode -1)
-            (setq truncate-lines 1)))
+  (add-hook 'org-agenda-mode-hook
+            (lambda ()
+              (visual-line-mode -1)
+              (setq truncate-lines 1)))
 
 
   (setq org-agenda-custom-commands
@@ -67,5 +67,8 @@
 
 
   (setq-default org-icalendar-include-todo t)
+
+  (require 'calfw)
+  (require 'calfw-org)
 
   )
