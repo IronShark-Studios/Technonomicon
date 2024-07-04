@@ -2,6 +2,8 @@
 (when (display-graphic-p)
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
+(unless (member "all-the-icons" (font-family-list))
+  (all-the-icons-install-fonts t))
 
 (custom-set-faces
  '(org-block-begin-line
@@ -94,4 +96,4 @@
         ))
 
 (setq modus-themes-headings
-          (quote ((t . (monochrome)))))
+      (quote ((t . (monochrome)))))
