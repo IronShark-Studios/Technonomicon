@@ -40,10 +40,10 @@
 
 ;;; Code:
 
-(defconst calendar-packages
-  '(;calfw
-    ;calfw-org
-    ;org-gcal
+(defconst Extended-Agenda-packages
+  '(;;calfw
+    ;;calfw-org
+    ;;org-gcal
     org-super-agenda))
 
 (defun Extended-Agenda/init-org-super-agenda ()
