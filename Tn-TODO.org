@@ -11,6 +11,7 @@
 ***** TODO increase default text size of tridactyl windows
 ***** TODO [[https://www.reddit.com/r/archlinux/][change default tridactyl search engine]]
 ***** TODO configure RES and youtube keybindings
+***** TODO fix issues with RES permissions popups
 ***** TODO Manage Bookmarks with Helm-FireFox
 ***** TODO Watch Video in emacs with MPV
 ***** TODO rebind =b= to show all tabs in all windows =(B)=.
