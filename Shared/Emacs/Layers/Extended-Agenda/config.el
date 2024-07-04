@@ -68,5 +68,7 @@
 
   (setq-default org-icalendar-include-todo t)
 
+  (require 'calfw)
+  (require 'calfw-org)
 
   )

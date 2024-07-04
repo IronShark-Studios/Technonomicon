@@ -43,7 +43,7 @@
 (defconst Extended-Agenda-packages
   '(org-super-agenda
     calfw
-    )
+    calfw-org)
   "The list of Lisp packages required by the Extended-Agenda layer.
 
 Each entry is either:
@@ -70,11 +70,3 @@ Each entry is either:
 
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
-
-(defun Extended-Agenda/init-org-super-agenda ()
-  (use-package org-super-agenda
-    :defer t))
-
-(defun Extended-Agenda/init-calfw ()
-  (use-package calfw
-    :defer t))
