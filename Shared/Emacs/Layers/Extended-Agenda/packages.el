@@ -70,7 +70,6 @@
     :defer t
     :commands (cfw:open-org-calendar)
     :init
-    (require 'calfw)
     (spacemacs/set-leader-keys "aoCd" 'cfw:open-org-calendar)
     :config
     (progn
