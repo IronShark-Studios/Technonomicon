@@ -41,7 +41,7 @@
 ;;; Code:
 
 (defconst Extended-Agenda-packages
-  '(;;calfw
+  '(calfw
     ;;calfw-org
     ;;org-gcal
     org-super-agenda))
