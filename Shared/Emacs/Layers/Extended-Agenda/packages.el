@@ -42,7 +42,7 @@
 
 (defconst Extended-Agenda-packages
   '(;;calfw
-    calfw-org
+    ;;calfw-org
     ;;org-gcal
     org-super-agenda))
 
