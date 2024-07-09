@@ -9,14 +9,11 @@
       git pull --ff-only
       cd ~/Projects/Technonomicon
 
-      git switch Build-Logs
-      git pull --ff-only
       git add .
       git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
       git push origin HEAD
-      git switch main
       sudo nix flake update
-      sudo nixos-rebuild switch --flake .#$HOSTNAME --upgrade
+      sudo nixos-rebuild switch --impure --flake .#$HOSTNAME --upgrade
       git add .
       git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
       git push

@@ -6,7 +6,7 @@
       #!/bin/sh
 
       git add .
-      sudo nixos-rebuild test --flake .#$HOSTNAME &&
+      sudo nixos-rebuild test --impure --flake .#$HOSTNAME &&
       echo
       echo System Generation $NIXOS_GENERATION Temporarily Active.
     '';
