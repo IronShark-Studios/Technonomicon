@@ -47,8 +47,6 @@
       hash -d pj=~/Projects
       hash -d dl=~/Downloads
 
-      export PATH=”$HOME/.emacs.d/bin:$PATH”
-
       zstyle ':completion:*' menu no
       zstyle ':fzf-tab:*' switch-group '<' '>'
       zstyle ':completion:*:git-checkout:*' sort false
