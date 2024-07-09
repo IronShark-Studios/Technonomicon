@@ -42,8 +42,6 @@
 
       printf '\n%.0s' {1..100}
 
-      export PATH=”$HOME/.emacs.d/bin:$PATH
-
       hash -d tn=~/Projects/Technonomicon
       hash -d ps=~/Projects/Personal-Blog/content/posts
       hash -d pj=~/Projects
