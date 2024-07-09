@@ -7,6 +7,7 @@
 
       git add .
       sudo nixos-rebuild test --impure --flake .#$HOSTNAME &&
+      doom sync
       echo
       echo System Generation $NIXOS_GENERATION Temporarily Active.
     '';
