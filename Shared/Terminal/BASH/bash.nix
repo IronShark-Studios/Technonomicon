@@ -5,7 +5,7 @@
   };
 
   home.sessionPath = [
-  "$HOME/.config/emacs/bin"
+  "$HOME/.emacs.d/bin"
   ];
 
   home.packages = with pkgs; [
