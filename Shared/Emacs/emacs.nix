@@ -17,20 +17,20 @@
       languagetool
     ];
 
-    file = {
-      ".spacemacs" = {
-        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs";
-      };
+    # file = {
+    #   ".spacemacs" = {
+    #     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs";
+    #   };
 
-      ".spacemacs.env" = {
-        source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs.env";
-      };
+    #   ".spacemacs.env" = {
+    #     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs.env";
+    #   };
 
-      "Personal-Layers" = {
-        target = ".config/emacs/private";
-        source = ./Layers;
-        recursive = true;
-      };
-    };
+    #   "Personal-Layers" = {
+    #     target = ".config/emacs/private";
+    #     source = ./Layers;
+    #     recursive = true;
+    #   };
+    # };
   };
 }
