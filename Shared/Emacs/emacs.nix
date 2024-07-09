@@ -17,20 +17,21 @@
       languagetool
     ];
 
-    # file = {
-    #   ".spacemacs" = {
-    #     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs";
-    #   };
+    file = {
+      "config.el" = {
+        source = ./Doom/config.el;
+        target = ".config/doom/config.el";
+      };
 
-    #   ".spacemacs.env" = {
-    #     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Shared/Emacs/spacemacs.env";
-    #   };
+      "init.el" = {
+        source = ./Doom/init.el;
+        target = ".config/doom/init.el";
+      };
 
-    #   "Personal-Layers" = {
-    #     target = ".config/emacs/private";
-    #     source = ./Layers;
-    #     recursive = true;
-    #   };
-    # };
+      "packages.el" = {
+        source = ./Doom/packages.el;
+        target = ".config/doom/packages.el";
+      };
+    };
   };
 }
