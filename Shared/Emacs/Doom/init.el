@@ -149,9 +149,10 @@
        ;;(java +lsp)       ; the poster child for carpal tunnel syndrome
        (javascript +lsp
                    +tree-sitter)        ; all(hope(abandon(ye(who(enter(here))))))
-       (julia +lsp
-              +tree-sitter
-              +snail)             ; a better, faster MATLAB
+       ;; (julia +lsp
+       ;;        +tree-sitter
+       ;;        +snail)
+                                        ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
        (latex +cdlatex
               +fold
@@ -165,7 +166,6 @@
             +tree-sitter)               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        (org +brain
-            +contacts
             +dragndrop
             +crypt
             +gnuplot

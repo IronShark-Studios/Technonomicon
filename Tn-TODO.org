@@ -280,3 +280,14 @@
 **** TODO Find a way to take voice notes and transcribe them into plain text
 * Media Center Configuration
 ** TODO Find a way to control tv's ir via usb
+* TODO Doom Conversion ToDo's
+** TODO Custom Modus theme coloring
+** TODO Completion Setting
+*** TODO Company wildcard character
+*** TODO Tab for completion / Enter = nil
+** TODO evil undo single step
+** TODO configure custom ligature list
+** TODO configure symbol font for APL style characters
+** TODO shift esc for save and normal mode
+** TODO change save to save all buffers
+** TODO update hl-todo regex list
