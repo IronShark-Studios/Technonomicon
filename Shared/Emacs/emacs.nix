@@ -35,7 +35,7 @@
 
       "secrets.el" = {
         source = ./secrets.el;
-        target = ".config/doom/secrets.el"
+        target = ".config/doom/secrets.el";
       };
     };
   };
