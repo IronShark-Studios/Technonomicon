@@ -3,14 +3,16 @@
   programs.emacs = {
     enable = true;
     package = pkgs.emacs-unstable-pgtk;
+    extraPackages = epkgs: [ epkgs.vterm ];
   };
 
   home = {
     packages = with pkgs; [
+      (aspellWithDicts (dicts: with dicts; [ en en-computers en-science ]))
+      hunspellDicts.en_US-large
+      hunspell
       fd
       silver-searcher
-      hunspell
-      hunspellDicts.en_US-large
       openscad-lsp
       gforth
       racket
