@@ -86,12 +86,12 @@
        grammar           ; tasing grammar mistake every you make
 
        :tools
-       ansible
+       ;; ansible
        biblio            ; Writes a PhD for you (citation needed)
        ;;collab            ; buffers with friends
-       (debugger +lsp)  ; FIXME stepping through code, to help you add bugs
+       ;; (debugger +lsp)  ; FIXME stepping through code, to help you add bugs
        ;;direnv
-       docker
+       ;; docker
        ;;editorconfig      ; let someone else argue about tabs vs spaces
        ;;ein               ; tame Jupyter notebooks with emacs
        (eval +overlay)     ; run code, run (also, repls)
@@ -100,7 +100,7 @@
                +dictionary)              ; navigate your code and its documentation
        lsp               ; M-x vscode
        (magit +forge)             ; a git porcelain for Emacs
-       make              ; run make tasks from Emacs
+       ;; make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
        pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
@@ -116,40 +116,39 @@
        :lang
        ;;agda              ; types of types of types of types...
        ;;beancount         ; mind the GAAP
-       (cc +lsp
-           +tree-sitter)         ; C > C++ == 1
-       (clojure +lsp
-                +tree-sitter)           ; java with a lisp
-       common-lisp       ; if you've seen one lisp, you've seen them all
-       coq               ; proofs-as-programs
+       ;; (cc +lsp
+       ;;     +tree-sitter)         ; C > C++ == 1
+       ;; (clojure +lsp
+       ;;          +tree-sitter)           ; java with a lisp
+       ;; common-lisp       ; if you've seen one lisp, you've seen them all
+       ;; coq               ; proofs-as-programs
        ;;crystal           ; ruby at the speed of c
        ;;csharp            ; unity, .NET, and mono shenanigans
-       data              ; config/data formats
+       ;; data              ; config/data formats
        ;;(dart +flutter)   ; paint ui and not much else
        ;;dhall
        ;;elixir            ; erlang done right
        ;;elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
        ;;erlang            ; an elegant language for a more civilized age
-       (ess +stan
-            +tree-sitter)               ; emacs speaks statistics
+       ;; (ess +stan
+       ;;      +tree-sitter)               ; emacs speaks statistics
        ;;factor
        ;;faust             ; dsp, but you get to keep your soul
-       (fortran +lsp)           ; in FORTRAN, GOD is REAL (unless declared INTEGER)
+       ;; (fortran +lsp)           ; in FORTRAN, GOD is REAL (unless declared INTEGER)
        ;;fsharp            ; ML stands for Microsoft's Language
        ;;fstar             ; (dependent) types and (monadic) effects and Z3
-       (gdscript +lsp)          ; the language you waited for
+       ;; (gdscript +lsp)          ; the language you waited for
        ;;(go +lsp)         ; the hipster dialect
-       (graphql +lsp)    ; Give queries a REST
-       (haskell +lsp
-                +tree-sitter)    ; a language that's lazier than I am
-       hy                ; readability of scheme w/ speed of python
+       ;; (graphql +lsp)    ; Give queries a REST
+       ;; (haskell +lsp
+       ;;          +tree-sitter)    ; a language that's lazier than I am
        ;;idris             ; a language you can depend on
-       (json +lsp
-             +tree-sitter)              ; At least it ain't XML
+       ;; (json +lsp
+       ;;       +tree-sitter)              ; At least it ain't XML
        ;;(java +lsp)       ; the poster child for carpal tunnel syndrome
-       (javascript +lsp
-                   +tree-sitter)        ; all(hope(abandon(ye(who(enter(here))))))
+       ;; (javascript +lsp
+       ;;             +tree-sitter)        ; all(hope(abandon(ye(who(enter(here))))))
        ;; (julia +lsp
        ;;        +tree-sitter
        ;;        +snail)
@@ -161,13 +160,12 @@
        ;;lean              ; for folks with too much to prove
        ledger            ; be audit you can be
        ;;lua               ; one-based indices? one-based indices
-       (markdown +grip)          ; writing docs for people to ignore
+       (markdown)          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
        (nix +lsp
             +tree-sitter)               ; I hereby declare "nix geht mehr!"
        ;;ocaml             ; an objective camel
        (org +brain
-            +contacts
             +dragndrop
             +crypt
             +gnuplot
@@ -181,20 +179,21 @@
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
+       hy                ; readability of scheme w/ speed of python
        (python +lsp
                +tree-sitter
                +conda
                +cython
                +pyright)            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
-       (racket +lsp
-               +xp)            ; a DSL for DSLs
+       ;; (racket +lsp
+       ;;         +xp)            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
        ;;rest              ; Emacs as a REST client
        ;;rst               ; ReST in peace
        ;;(ruby +rails)     ; 1.step {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       (rust +lsp
-             +tree-sitter)       ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+       ;; (rust +lsp
+       ;;       +tree-sitter)       ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
        (scheme +guile
                +mit
@@ -207,12 +206,12 @@
        ;;solidity          ; do you need a blockchain? No.
        ;;swift             ; who asked for emoji variables?
        ;;terra             ; Earth and Moon in alignment for performance.
-       (web +lsp
-            +tree-sitter)               ; the tubes
-       (yaml +lsp
-             +tree-sitter)              ; JSON, but readable
-       (zig +lsp
-            +tree-sitter)               ; C, but simpler
+       ;; (web +lsp
+       ;;      +tree-sitter)               ; the tubes
+       ;; (yaml +lsp
+       ;;       +tree-sitter)              ; JSON, but readable
+       ;; (zig +lsp
+       ;;      +tree-sitter)               ; C, but simpler
 
        :email
        ;;(mu4e +org +gmail)
