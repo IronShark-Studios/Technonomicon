@@ -388,14 +388,10 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
 
-  (setq vc-follow-symlinks t
-        ibuffer-expert t
-        )
 
 
-  (load "~/.config/emacs/private/theme-varangian-vivendi.el")
   (load "~/.config/emacs/private/keybinds.el")
-  (load "~/.config/emacs/private/secrets.el"))
+  )
 
 
 ;; Do not write anything past this comment. This is where Emacs will
