@@ -32,6 +32,11 @@
         source = ./Doom/packages.el;
         target = ".config/doom/packages.el";
       };
+
+      "secrets.el" = {
+        source = ./secrets.el;
+        target = ".config/doom/secrets.el"
+      };
     };
   };
 }
