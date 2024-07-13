@@ -9,7 +9,7 @@
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 ;;
-;; (load "~/.config/doom/secrets.el")
+(load "~/.config/doom/secrets.el")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -22,15 +22,15 @@
 ;;
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
-;;
-;; (prefer-coding-system 'utf-8)
-;; (when (display-graphic-p)
-;;   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
+
+(prefer-coding-system 'utf-8)
+ (when (display-graphic-p)
+ (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 
 (setq doom-font (font-spec :family "Iosevka Comfy Wide Motion" :size 18)
       doom-variable-pitch-font (font-spec :family "Iosevka Comfy Wide Motion Duo" :size 18)
       )
-;;
+
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to
 ;; refresh your font settings. If Emacs still can't find your font, it likely
@@ -104,16 +104,6 @@
 (setq modus-themes-headings
       (quote ((t . (monochrome)))))
 
-;; (custom-set-faces
-;;  '(org-block-begin-line
-;;    ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
-;;  '(org-block
-;;    ((t (:background "#2e2e2e" :extend t))))
-;;  '(org-block-end-line
-;;    ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
-;;  )
-
-
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
@@ -122,9 +112,9 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
-;; (setq vc-follow-symlinks t
+(setq vc-follow-symlinks t
 ;;       ibuffer-expert t
-;;       )
+      )
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
