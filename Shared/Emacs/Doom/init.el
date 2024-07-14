@@ -158,7 +158,7 @@
               +fold
               +lsp)             ; writing papers in Emacs has never been so fun
        ;;lean              ; for folks with too much to prove
-       ledger            ; be audit you can be
+       ;; ledger            ; be audit you can be
        ;;lua               ; one-based indices? one-based indices
        (markdown)          ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
@@ -179,12 +179,12 @@
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
-       hy                ; readability of scheme w/ speed of python
-       (python +lsp
-               +tree-sitter
-               +conda
-               +cython
-               +pyright)            ; beautiful is better than ugly
+       ;; hy                ; readability of scheme w/ speed of python
+       ;; (python +lsp
+       ;;        +tree-sitter
+       ;;        +conda
+       ;;        +cython
+       ;;        +pyright)            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;; (racket +lsp
        ;;         +xp)            ; a DSL for DSLs
@@ -195,11 +195,11 @@
        ;; (rust +lsp
        ;;       +tree-sitter)       ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
-       (scheme +guile
-               +mit
-               +racket
-               +chicken
-               +chez)   ; a fully conniving family of lisps
+       ;; (scheme +guile
+       ;;         +mit
+       ;;         +racket
+       ;;         +chicken
+       ;;         +chez)   ; a fully conniving family of lisps
        (sh +lsp
            +tree-sitter)                ; she sells {ba,z,fi}sh shells on the C xor
        ;;sml
