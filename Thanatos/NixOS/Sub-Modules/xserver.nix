@@ -39,11 +39,6 @@
     };
   };
 
-  sound = {
-    enable = true;
-    mediaKeys.enable = true;
-  };
-
   hardware = {
     pulseaudio.enable = false;
     bluetooth.enable = true;
