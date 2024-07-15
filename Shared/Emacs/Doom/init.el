@@ -99,14 +99,14 @@
                +docsets
                +dictionary)              ; navigate your code and its documentation
        lsp               ; M-x vscode
+       tree-sitter       ; syntax and parsing, sitting in a tree...
        (magit +forge)             ; a git porcelain for Emacs
        ;; make              ; run make tasks from Emacs
        ;;pass              ; password manager for nerds
-       pdf               ; pdf enhancements
+       ;; pdf               ; pdf enhancements
        ;;prodigy           ; FIXME managing external services & code builders
        ;;terraform         ; infrastructure as code
-       tmux              ; an API for interacting with tmux
-       tree-sitter       ; syntax and parsing, sitting in a tree...
+       ;; tmux              ; an API for interacting with tmux
        ;;upload            ; map local to remote projects via ssh/ftp
 
        :os
@@ -154,9 +154,9 @@
        ;;        +snail)
                                         ; a better, faster MATLAB
        ;;kotlin            ; a better, slicker Java(Script)
-       (latex +cdlatex
-              +fold
-              +lsp)             ; writing papers in Emacs has never been so fun
+       ;; (latex +cdlatex
+       ;;        +fold
+       ;;        +lsp)             ; writing papers in Emacs has never been so fun
        ;;lean              ; for folks with too much to prove
        ;; ledger            ; be audit you can be
        ;;lua               ; one-based indices? one-based indices
@@ -167,13 +167,13 @@
        ;;ocaml             ; an objective camel
        (org +brain
             +dragndrop
-            +crypt
-            +gnuplot
+            ;; +crypt
+            ;; +gnuplot
             +hugo
             +journal
-            +noter
+            ;; +noter
             +pomodoro
-            +present
+            ;; +present
             +pretty
             +roam2)               ; organize your plain life in plain text
        ;;php               ; perl's insecure younger brother
