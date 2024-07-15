@@ -66,6 +66,7 @@
       rust-analyzer
       shfmt
       shellcheck
+      pandoc
     ];
 
     file = {
