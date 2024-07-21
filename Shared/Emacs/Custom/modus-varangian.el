@@ -61,7 +61,6 @@
         (cyan-faint . "#9ac8e0")
         (cyan-alt-faint . "#9ac8e0")
         (cyan-alt-other-faint . "#9ac8e0")
-        (cyan-intense . "#00eff0"))
-)
+        (cyan-intense . "#00eff0")))
 
 ;;; modus-varangian.el ends here
