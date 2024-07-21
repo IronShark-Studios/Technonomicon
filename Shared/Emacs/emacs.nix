@@ -54,8 +54,13 @@
       };
 
       "secrets.el" = {
-        source = ./secrets.el;
+        source = ./Custom/secrets.el;
         target = ".config/doom/secrets.el";
+      };
+
+      "modus-varangian.el" = {
+        source = ./Custom/modus-varangian.el;
+        target = ".config/doom/lisp/modus-varangian";
       };
     };
   };

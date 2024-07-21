@@ -48,3 +48,13 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+
+;; (package! modus-varangian
+;;   :load-path "~/.config/doom/lisp/modus-varangian")
+
+;; (package! package-name :recipe
+;;   (:local-repo "~/path/to/code"))
+
+;; (package! modus-varangian
+;;   :recipe (:host github :repo "username/repo"
+;;            :files ("some-file.el" "src/lisp/*.el")))
