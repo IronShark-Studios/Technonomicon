@@ -1,44 +1,13 @@
-(prefer-coding-system 'utf-8)
-(when (display-graphic-p)
-  (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
+;;; modus-varangian --- Customized version of modus-vevidi -*- lexical-binding:t -*-
 
-(unless (member "all-the-icons" (font-family-list))
-  (all-the-icons-install-fonts t))
-
-(custom-set-faces
- '(org-block-begin-line
-   ((t (:underline "#000000" :foreground "#000000" :background "#696969" :extend t))))
- '(org-block
-   ((t (:background "#2e2e2e" :extend t))))
- '(org-block-end-line
-   ((t (:overline "#000000" :foreground "#000000" :background "#696969" :extend t))))
- )
-
-
-(defun Tn/open-term-mode ()
-  (interactive)
-  (term "~/.nix-profile/bin/zsh"))
-
-(defun Tn/toggle-mode-line ()
-  (setq mode-line-format nil))
-
-(add-hook 'term-mode-hook 'Tn/toggle-mode-line)
-
-
-;;; Overrides default colors of Modus-Vivendi.
-;;; Colors can be found by placing point on a character, and using
-;;; (M-x describe-char). Then finding the hex code and searching that
-;;; in (M-x modus-themes-list-colors)
+;;; Code:
 
 (setq modus-themes-paren-match '(bold intense)
       modus-themes-bold-constructs t
       modus-themes-org-blocks 'tinted-background
-      )
-
-(setq modus-themes-vivendi-color-overrides
+      modus-themes-vivendi-color-overrides
       '((bg-main . "#1f1f1f")
         (bg-dim . "#000000")
-        (Tn/heading . "#00ced1")
         (red . "#cd0000")
         (red-alt . "#cd0000")
         (red-alt-other . "#cd0000")
@@ -92,8 +61,6 @@
         (cyan-faint . "#9ac8e0")
         (cyan-alt-faint . "#9ac8e0")
         (cyan-alt-other-faint . "#9ac8e0")
-        (cyan-intense . "#00eff0")
-        ))
+        (cyan-intense . "#00eff0")))
 
-(setq modus-themes-headings
-      (quote ((t . (monochrome)))))
+;;; modus-varangian.el ends here

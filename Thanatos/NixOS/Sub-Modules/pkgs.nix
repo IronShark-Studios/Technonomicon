@@ -6,7 +6,6 @@
       wget
       unzip
       alsa-utils
-      plover.dev
     ];
   };
 
