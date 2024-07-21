@@ -4,7 +4,6 @@
     cd = "cdd";
     ca = "clear && printf '\n%.0s' {1..100}";
     lf = "bash ~/.config/lf/lfimg/lfrun";
-    cat = "bat";
     find = "fd -i";
     find-m = "fd-menu";
     findx = "fd --regex";
@@ -13,7 +12,7 @@
     grep-m = "rg-menu";
     grepx = "rg --regex";
     grepx-m = "rgx-menu";
-    cp = "rsync --force --recursive --progress";
+    cp = "cp -r";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
     ld = "eza --icons --oneline --group-directories-first --color auto --tree";
     lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";

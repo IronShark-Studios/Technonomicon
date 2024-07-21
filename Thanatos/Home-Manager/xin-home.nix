@@ -2,7 +2,6 @@
 
   imports = [
     ./hyprland.nix
-    ./test-sym-link.nix
     ../../Shared/Emacs/emacs.nix
     ../../Shared/XDG/user-dirs.nix
     ../../Shared/Terminal/terminal.nix

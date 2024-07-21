@@ -40,6 +40,17 @@ mkdir ~/.config/doom
 cd ~/.emacs.d
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d	
 ~/.emacs.d/bin/doom install
+emacs --batch -f nerd-icons-install-fonts
 echo
+
+echo "Updating hardware-configuration.nix"
+cd ~tn/Thanatos/NixOS
+rm ./hardware-configuration.nix
+cp /etc/nixos/hardware-configuration.nix ./hardware-configuration.nix
+
+echo "Updating and Rebuilding System"
+Upgrade
+Rebuild
+
 echo
 echo "Home Directory Set Up Complete Please Rebuild"

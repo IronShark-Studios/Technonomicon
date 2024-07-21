@@ -5,15 +5,14 @@
     text = ''
       #!/bin/sh
 
-      cd ~/.config/emacs
-      git pull --ff-only
-      cd ~/Projects/Technonomicon
-
       git add .
       git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
-      git push origin HEAD
+      git push
       sudo nix flake update
       sudo nixos-rebuild switch --impure --flake .#$HOSTNAME --upgrade
+      doom upgrade
+      doom sync
+      doom doctor
       git add .
       git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
       git push
