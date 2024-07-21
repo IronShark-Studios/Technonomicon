@@ -28,42 +28,8 @@
       fd
       silver-searcher
       openscad-lsp
-      gforth
-      racket
       languagetool
-      python3
-      cmake
-      gnumake
-      ansible
-      docker
-      dockfmt
-      sqlite
-      libclang
-      clojure
-      clojure-lsp
-      cljfmt
-      sbcl
-      glslang
-      libxml2
-      gfortran9
-      fortran-fpm
-      fortls
-      fprettify
-      gdtoolkit_4
-      haskell-language-server
-      ghc
-      cabal-install
       nixfmt-rfc-style
-      scrot
-      gnuplot
-      zig
-      zls
-      html-tidy
-      stylelint
-      jsbeautifier
-      rustc
-      cargo
-      rust-analyzer
       shfmt
       shellcheck
       pandoc
