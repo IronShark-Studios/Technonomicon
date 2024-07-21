@@ -33,6 +33,8 @@
       shfmt
       shellcheck
       pandoc
+      scrot
+      sqlite
     ];
 
     file = {
