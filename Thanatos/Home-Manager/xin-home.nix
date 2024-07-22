@@ -10,6 +10,7 @@
     ../../Shared/Social-Tools/socialTools.nix
     ../../Shared/Accounting-Tools/accountingTools.nix
     ../../Shared/Art-Tools/artTools.nix
+    ../../Shared/FFXIV/ffxiv.nix
   ];
 
   programs.home-manager.enable = true;
