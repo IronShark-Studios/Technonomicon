@@ -51,6 +51,7 @@
     pulseaudio.enable = false;
     bluetooth.enable = true;
     opengl.enable = true;
+    xpadneo.enable = true;
 
     nvidia = {
       modesetting.enable = true;
