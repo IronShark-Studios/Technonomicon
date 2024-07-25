@@ -8,6 +8,7 @@
 
         env = XCURSOR_SIZE,24
         env = QT_QPA_PLATFORMTHEME,qt5ct
+        env = AQ_DRM_DEVICES,/dev/dri/card0:/dev/dri/card1
 
         monitor = DP-1, 2560x1440@60, 0x0, 1
         monitor = eDP-1, 1920x1080@60, -1920x540, 1
