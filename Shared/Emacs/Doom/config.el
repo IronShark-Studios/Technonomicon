@@ -40,69 +40,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-   (setq doom-theme 'modus-vivendi
-;;       modus-themes-paren-match '(bold intense)
-;;       modus-themes-bold-constructs t
-;;       modus-themes-org-blocks 'tinted-background
-;;       modus-themes-vivendi-color-overrides
-;;       '((bg-main . "#1f1f1f")
-;;         (bg-dim . "#000000")
-;;         (red . "#cd0000")
-;;         (red-alt . "#cd0000")
-;;         (red-alt-other . "#cd0000")
-;;         (red-warmer . "#8b0000")
-;;         (red-cooler . "#ff3030")
-;;         (red-faint . "#8b3a3a")
-;;         (red-alt-faint . "#8b3a3a")
-;;         (red-alt-other-faint . "#8b3a3a")
-;;         (red-intense . "#ff0000")
-;;         (green . "#836fff")
-;;         (green-alt . "#836fff")
-;;         (green-alt-other . "#836fff")
-;;         (green-warmer . "#ab82ff")
-;;         (green-cooler . "#7d26cd")
-;;         (green-faint . "#bf3eff")
-;;         (green-alt-faint . "#bf3eff")
-;;         (green-alt-other-faint . "#bf3eff")
-;;         (green-intense . "#9b30ff")
-;;         (yellow . "#7cfc00")
-;;         (yellow-alt . "#7cfc00")
-;;         (yellow-alt-other . "#7cfc00")
-;;         (yellow-warmer ."#adff2f")
-;;         (yellow-cooler . "#9aff9a")
-;;         (yellow-faint . "#88ca9f")
-;;         (yellow-alt-faint . "#88ca9f")
-;;         (yellow-alt-other-faint . "#88ca9f")
-;;         (yellow-intense . "#54ff9f")
-;;         (blue . "#2fafff")
-;;         (blue-alt . "#2fafff")
-;;         (blue-alt-other . "#2fafff")
-;;         (blue-warmer . "#79a8ff")
-;;         (blue-cooler . "#4769e1")
-;;         (blue-faint . "#191970")
-;;         (blue-alt-faint . "#191970")
-;;         (blue-alt-other-faint . "#191970")
-;;         (blue-intense . "#1e90ff")
-;;         (magenta . "#00fa9a")
-;;         (magenta-alt . "#00fa9a")
-;;         (magenta-alt-other . "#00fa9a")
-;;         (magenta-warmer . "#006400")
-;;         (magenta-cooler . "#556b2f")
-;;         (magenta-faint . "#00c06f")
-;;         (magenta-alt-faint . "#00c06f")
-;;         (magenta-alt-other-faint . "#00c06f")
-;;         (magenta-intense . "#32cd32")
-;;         (cyan . "#00d3d0")
-;;         (cyan-alt . "#00d3d0")
-;;         (cyan-alt-other . "#00d3d0")
-;;         (cyan-warmer . "#4ae2f0")
-;;         (cyan-cooler . "#6ae4b9")
-;;         (cyan-faint . "#9ac8e0")
-;;         (cyan-alt-faint . "#9ac8e0")
-;;         (cyan-alt-other-faint . "#9ac8e0")
-;;         (cyan-intense . "#00eff0"))
-           )
-
+(setq doom-theme 'modus-vivendi)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -115,6 +53,12 @@
 (setq vc-follow-symlinks t
       )
 
+(setq org-journal-dir "~/Feronomicon/2024"
+      org-journal-file-format "%Y%m%d.org"
+      org-journal-date-format "%A, %Y%m%d"
+      org-journal-date-prefix "#+TITLE: "
+      org-journal-time-format "%H%M"
+      org-journal-time-prefix "* ")
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
