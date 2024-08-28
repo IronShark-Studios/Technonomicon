@@ -58,3 +58,5 @@
 ;; (package! modus-varangian
 ;;   :recipe (:host github :repo "username/repo"
 ;;            :files ("some-file.el" "src/lisp/*.el")))
+
+(package! scad-mode)
