@@ -8,7 +8,7 @@
 
  # hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
  services.xserver.videoDrivers = [ "nvidia" ];
-
+ services.xserver.wacom.enable = true;
   programs = {
     hyprland.enable = true;
     dconf.enable = true;
@@ -52,7 +52,6 @@
     bluetooth.enable = true;
     opengl.enable = true;
     xpadneo.enable = true;
-    opentabletdriver.enable = true;
 
     nvidia = {
       modesetting.enable = true;
