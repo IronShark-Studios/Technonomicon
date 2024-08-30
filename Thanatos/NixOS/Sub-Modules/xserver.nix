@@ -52,6 +52,7 @@
     bluetooth.enable = true;
     opengl.enable = true;
     xpadneo.enable = true;
+    opentabletdriver.enable = true;
 
     nvidia = {
       modesetting.enable = true;
