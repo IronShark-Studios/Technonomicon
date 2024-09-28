@@ -5,6 +5,7 @@
       target = ".config/hypr/hyprland.conf";
       text = ''
         exec-once = waybar & waypaper --restore & mako & emacs --daemon & udiskie -asFN & hyprctl dispatch workspace 1
+        exec-once=dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
         env = XCURSOR_SIZE,24
         env = QT_QPA_PLATFORMTHEME,qt5ct
