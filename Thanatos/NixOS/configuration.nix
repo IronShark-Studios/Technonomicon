@@ -30,6 +30,7 @@
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  hardware.opentabletdriver.enable = true;
 
   systemd.sleep.extraConfig = ''
     HandleSuspend=ignore

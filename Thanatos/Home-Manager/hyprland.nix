@@ -84,6 +84,10 @@
             disable_hyprland_logo = 1
         }
 
+        device:wacom-intuos-pro-l-pen {
+            output=DP-1
+        }
+
 
         $mainMod = SUPER
 
