@@ -7,6 +7,7 @@
       xdg-desktop-portal-hyprland
       slurp
       grim
+      vlc
     ];
   };
 }
