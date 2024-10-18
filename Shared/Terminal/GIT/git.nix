@@ -36,8 +36,6 @@
     };
   };
 
-   programs = with pkgs; [
-    git-crypt
-  ];
+   programs.git-crypt.enable = true;
 
 }
