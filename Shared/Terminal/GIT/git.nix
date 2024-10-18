@@ -35,4 +35,9 @@
       };
     };
   };
+
+  home.package = with pkgs; [
+    git-crypt
+  ];
+
 }
