@@ -36,7 +36,7 @@
     };
   };
 
-  home.package = with pkgs; [
+   programs = with pkgs; [
     git-crypt
   ];
 
