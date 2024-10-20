@@ -42,19 +42,19 @@
     };
   };
 
-  sound = {
-    enable = true;
-    mediaKeys.enable = true;
-  };
+  # sound = {
+  #   enable = true;
+  #   mediaKeys.enable = true;
+  # };
 
   hardware = {
     pulseaudio.enable = false;
     bluetooth.enable = true;
-    opengl.enable = true;
     xpadneo.enable = true;
 
     nvidia = {
       modesetting.enable = true;
+      open = true;
       prime = {
         sync.enable = true;
         nvidiaBusId = "PCI:01:00:0";  # Found with lspci | grep VGA
