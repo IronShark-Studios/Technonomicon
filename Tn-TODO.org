@@ -1,0 +1,247 @@
+#+FILETAGS: :Tn:
+* TODO Configure Org / Emacs Integrations
+*** TODO Visidata
+- https://www.visidata.org/docs/customize/
+***** TODO Create emacs (M-x visidata) function to open visidata directly
+***** TODO Add Vi movement Keys
+***** TODO Create Basic theme
+*** TODO Use Google Calendar notifications for appointment reminders
+*** TODO exorcism (programming tutorial)
+*** TODO Improve Firefox integration
+***** TODO increase default text size of tridactyl windows
+***** TODO [[https://www.reddit.com/r/archlinux/][change default tridactyl search engine]]
+***** TODO configure RES and youtube keybindings
+***** TODO fix issues with RES permissions popups
+***** TODO Manage Bookmarks with Helm-FireFox
+***** TODO Watch Video in emacs with MPV
+***** TODO rebind =b= to show all tabs in all windows =(B)=.
+*** TODO Emacs Communication Suite
+***** TODO Emacs Email Client
+***** TODO WeeChat or similar
+******* TODO Discord
+******* TODO Matrix
+******* TODO Slack
+******* TODO Mastadon?
+- [[https://blog.nawaz.org/posts/2022/Dec/rendering-latex-formulae-in-mastodonel/][Adding LaTeX to Mastadon]]
+******* TODO Reddit?
+******* TODO Tumbler?
+******* TODO HootSuite (just curious)
+***** TODO Integrate Other communications programs with emacs
+******* TODO Email
+******* TODO Google Voice via Email
+******* TODO Twitter (?)
+******* TODO Mastadon
+******* TODO Tumbler (?)
+******* TODO Reddit : https://www.reddit.com/r/emacs/comments/eaf2r0/how_i_use_reddit_from_inside_emacs/
+******* Discord
+******* TODO Integrate Discord with Emacs
+******* Wee Chat
+******* TODO Compare Weechat with other graphical clients
+******* TODO Integrate IRC / Matrix with Emacs
+* TODO Create Knowledge Management Workflow
+ https://zk.zeel.page/examples
+ https://www.mtalnodes.com/taking-raw-notes-is-useless
+ https://whhoncom/posts/para-org-mode/
+ https://www.bldingasecondbrain.com/
+[[https://lucidmanager.org/tags/emacs/][Literature Management System]]
+ [[https://wwweddit.com/r/emacs/comments/10hm92r/emacs_and_knowledge_management_for_scientists/][Knowledge management for scientists]]
+ [[https://jetokuan.github.io/org-roam-guide/][Taking notes with org roam]]
+ [[https://tony-zorman.com/posts/my-phd-workflow.html][PhD Workflow]]
+ [[https://blog.jethro.dev/posts/how_to_take_smart_notes_org/][How to take smart notes with Org Mode]]
+ [[https://rgoswami.me/posts/org-note-workflow/][Org Mode Note Workflow]]
+*** TODO Capture Information from Web
+ https://githucom/abo-abo/orca
+ https://github.com/ArchiveBox/ArchiveBox
+ https://www.youtube.com/watch?v=eaZUZCzaIgw
+*** TODO PDF Viewer
+ [[https://gitb.com/vedang/pdf-tools]]
+ https://rgoswi.me/posts/org-note-workflow/#org-noter
+ https://alber.am/2020-04-11-pdf-tools-as-default-pdf-viewer.html
+*** TODO Ebook Library Manager
+**** TODO Find out if home-manager can configure Calibre DRM settings
+
+* TODO Create Math Workflow
+*** TODO Doing Math with Org-mode
+***** TODO Tables
+***** TODO Inline LaTeX
+***** TODO Org Charts
+***** TODO Org export to PDF
+
+*** TODO Elisp / Haskell (?) Code blocks
+ https://wiki.haskell.org/Haskell_and_mathematics
+*** TODO LaTeX Engine
+ https://www.latex-project.org/help/documentation/
+ https://texdoc.org/serve/latex2e.pdf/0
+ https://www.youtube.com/watch?v=xBctAt2TVew
+ https://www.youtube.com/watch?v=331YxgOJUGw&list=WL&index=280&pp=gAQBiAQB
+*** TODO mathpix.el
+*** TODO GNU calc and plot integration
+***** TODO Learn how to use Calc Properly
+*** TODO Latex inline code Support
+*** TODO Export org docs to pdf
+* TODO Create Programming Workflow
+*** TODO Learn how to use Macros and Registers
+*** TODO Learn how to use Skelelons and Killring
+*** TODO Searching
+***** TODO Learn how to use rg ; bound to =(C-s)=
+******* TODO Add ~<ESC>~ to exit search prompt
+***** TODO Learn how to use Helm-Regex ~/~
+*** TODO Including git Workflow
+**** TODO Magit
+***** TODO have magit commit messages copied into journal
+- [[https://github.com/magit/orgit][Orgit]] : Adds magit link support to org
+**** TODO Git time machine
+ https://codeberg.org/pidu/git-timemachine
+* TODO Create Task Management Workflow
+- [ ] [[https://redgreenrepeat.com/2019/10/04/checklists-in-org-mode/][Checklists in Org-Mode]]
+- [ ] [[https://d12frosted.io/posts/2021-01-16-task-management-with-roam-vol5.html][Task Management with Org Roam]]
+- [ ] [[https://writequit.org/denver-emacs/presentations/2017-04-11-time-clocking-with-org.html][Clocking Time With Org-Mode]]
+- [ ] [[https://melpa.org/#/org-pomodoro][Work Cycling with Org Pomodoro]]
+* Long Term
+*** TODO Configure remote access to network storage
+***** TODO configure document storage
+- [ ] install calibre
+- [ ] set calibre library as =~/Apocrypha/Documents=
+- [ ] update citar library location
+***** TODO Add Support for images in org-mode
+- https://emacs.stackexchange.com/questions/42281/org-mode-is-it-possible-to-display-online-images
+- https://github.com/abo-abo/org-download
+- https://org-roam.discourse.group/t/is-there-a-solution-for-images-organization-in-org-roam/925
+******* TODO Test install allusion and see how it handles files
+******* TODO How to manage media insertion with org/org-roam
+********* TODO embedded images
+********* TODO links to other files in apocrypha
+*** TODO Integrate Google Drive with Emacs
+- https://emacsnotes.wordpress.com/2018/07/08/your-google-drive-now-within-your-emacs/
+*** TODO Integrate agenda with google calendar
+*** TODO Create code that tracks org habit streaks
+*** TODO Fork Citar for calorie tracking program
+*** TODO Fix Firefox -> Roam-protocol error
+*** TODO Look into Modifying core system
+***** TODO Repeatable disk partitioning using a machine specific script.
+***** TODO Use of Zen kernel with older normal kernel fallback
+***** TODO Use of ZFS for file system
+- [[https://danieldk.eu/Posts/2019-05-01-NixOS-Dropbox-ZFS.html][Dropbox with ZFS]]
+***** TODO Use of TMPFS and Impermance modules
+- https://www.reddit.com/r/NixOS/comments/su5bwl/whos_here_runs_nixos_with_opt_in_state/
+- https://mt-caret.github.io/blog/posts/2020-06-29-optin-state.html
+- https://hanckmann.com/posts/nixos-and-erasing-my-darlings/
+- https://lantian.pub/en/article/modify-computer/nixos-impermanence.lantian/
+
+***** TODO Use of Libreboot Bios
+***** TODO Full disk encryption
+*** TODO Figure out how to create custom systemd services
+- https://www.codyhiar.com/blog/repeated-tasks-with-systemd-service-timers-on-nixos/
+***** TODO autolock screen when laptop lid is closed
+- https://discourse.nixos.org/t/slock-when-suspend/22457/2
+***** TODO auto run rebuild, upgrade, and clean nightly
+*** TODO Configure SSH to Use PGP
+- https://rzetterberg.github.io/yubikey-gpg-nixos.html
+- https://framagit.org/Glandos/bw-ssh/
+*** TODO Fitness and Nutrition Tracking with Emacs
+- https://gist.github.com/alphapapa/982467abc1bf29f57c5cd2c408a77bd5
+- https://gist.github.com/iocanel/0b8bcdb3d69fb7731069cb872f836507
+- https://www.reddit.com/r/emacs/comments/a4zipp/fitnessorg_an_emacs_foodweightworkout_tracker/
+*** TODO Install additional System Packages
+***** TODO [[https://www.youtube.com/watch?v=TDBGsbwMo40][qpwgraph]]
+***** TODO [[https://www.youtube.com/watch?v=yufC22262I4&list=WL&index=6&t=552s&pp=gAQBiAQB][LocalSend]]
+***** TODO [[https://www.youtube.com/watch?v=-RW546svPOc&list=WL&index=170&t=629s&pp=gAQBiAQB][CURL]] utils
+***** TODO GH and Gitlab equivalent
+*** TODO FFXIV
+***** TODO Configure Ingame Settings
+***** TODO Back Up and Version Control Settings File
+***** TODO Research how to manage modes using xivlauncher and git
+***** TODO Configure ACT
+***** TODO Configure Fraps (or something like it)
+***** TODO scuff stlye controller
+***** TODO spatial audio mode
+*** TODO Combine and Repackage Roam-Todo and Journal-Todo into a custom Roam-Journal Package for emacs
+***** TODO Further integrate org-roam and org-journal
+******* TODO Look into org-journal search, and other secondary functions.
+******* TODO Add keybinding for them to dailies hydra
+*** TODO [#B] find a way to write a function that trigger org-roam-ui-mode. Waits until it has loaded, and then disables it.
+*** TODO Integrate Contact lists using BBDB
+- https://www.jwz.org/bbdb/
+#+begin_src emacs-lisp
+;; Capture templates for: TODO tasks, Notes, appointments, phone calls, and org-protocol
+(setq org-capture-templates
+      (quote (...
+              ("p" "Phone call" entry (file "~/git/org/refile.org")
+               "* PHONE %? :PHONE:\n%U" :clock-in t :clock-resume t)
+              ...)))
+
+(require 'bbdb)
+(require 'bbdb-com)
+
+(global-set-key (kbd "<f9> p") 'bh/phone-call)
+
+;;
+;; Phone capture template handling with BBDB lookup
+;; Adapted from code by Gregory J. Grubbs
+(defun bh/phone-call ()
+  "Return name and company info for caller from bbdb lookup"
+  (interactive)
+  (let* (name rec caller)
+    (setq name (completing-read "Who is calling? "
+                                (bbdb-hashtable)
+                                'bbdb-completion-predicate
+                                'confirm))
+    (when (> (length name) 0)
+      ; Something was supplied - look it up in bbdb
+      (setq rec
+            (or (first
+                 (or (bbdb-search (bbdb-records) name nil nil)
+                     (bbdb-search (bbdb-records) nil name nil)))
+                name)))
+
+    ; Build the bbdb link if we have a bbdb record, otherwise just return the name
+    (setq caller (cond ((and rec (vectorp rec))
+                        (let ((name (bbdb-record-name rec))
+                              (company (bbdb-record-company rec)))
+                          (concat "[[bbdb:"
+                                  name "]["
+                                  name "]]"
+                                  (when company
+                                    (concat " - " company)))))
+                       (rec)
+                       (t "NameOfCaller")))
+    (insert caller)))
+#+end_src
+***** TODO Integrate BBDB with Google contacts
+*** TODO Manage Secrets
+***** TODO Research how Linux Secrets Work
+-https://blog.sekun.dev/posts/manage-secrets-in-nixos/
+***** TODO Full disk system encryption
+***** TODO Using a UbiKey With Linux
+***** TODO encrypt files with Git crypt
+- https://github.com/AGWA/git-crypt
+***** TODO encrypt headings with org crypt
+#+begin_src emacs-lisp
+(require 'org-crypt)
+; Encrypt all entries before saving
+(org-crypt-use-before-save-magic)
+(setq org-tags-exclude-from-inheritance (quote ("crypt")))
+; GPG key to use for encryption
+(setq org-crypt-key "F0B66B40")
+
+(setq org-crypt-disable-auto-save nil)
+#+end_src
+- https://orgmode.org/manual/Org-Crypt.html
+***** TODO Check on ~org-crypt-key~
+***** TODO Research how to encrypt General files
+***** TODO manage system secrets using nix-sops
+- https://bmcgee.ie/posts/2022/11/getting-nixos-to-keep-a-secret/
+- https://github.com/Mic92/sops-nix
+*** TODO Consider additional Packages
+- [ ] deft
+- [ ] [[https://github.com/oantolin/embark][embark]]
+- [ ] [[https://github.com/nverno/llvm-mode][LLVM IR Mode]]
+- [ ] [[https://melpa.org/#/paredit][paredit]]
+- [ ] Gnu go
+- [ ] gnu cash
+  - if compatable with hledger
+*** TODO Figure out how to integrate with phone
+**** TODO Orgzly to access todos from phone
+**** TODO Find a way to take voice notes and transcribe them into plain text
+* Media Center Configuration
+** TODO Find a way to control tv's ir via usb
