@@ -1,9 +1,4 @@
-{ inputs, outputs, lib, config, pkgs, ... }:
-
-let
-  obsidian = pkgs.callPackage (import ./Obsidian/obsidian.nix) {};
-
-in {
+{ inputs, outputs, lib, config, pkgs, ... }: {
 
   imports = [
   ];
