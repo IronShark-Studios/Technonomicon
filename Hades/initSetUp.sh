@@ -62,6 +62,9 @@ cp ~/Downloads/Allusion-1.0.0-rc.10.AppImage ./
 cd ~tn/Layers/User/Art-Tools/PureRef 
 cp ~/Downloads/PureRef-1.11.1_x64.Appimage ./
 
+cd ~tn/Layers/User/Knowledge-Tools/Obsidian
+cp ~/Downloads/Obsidian-1.7.4.AppImage
+
 cd ~tn
 cp ~/Downloads/Tn.key ./
 
