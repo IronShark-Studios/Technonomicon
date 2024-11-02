@@ -68,6 +68,7 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };
+    backupFileExtension = "backup";
     users = {
       xin = import ./xin-home.nix;
     };
