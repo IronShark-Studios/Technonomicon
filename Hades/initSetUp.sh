@@ -48,10 +48,24 @@ git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 emacs --batch -f nerd-icons-install-fonts
 echo
 
-echo "Updating hardware-configuration.nix"
-cd ~tn/Thanatos/NixOS
+echo "Updating Machine Files"
+cd ~tn/Hades
 rm ./hardware-configuration.nix
 cp /etc/nixos/hardware-configuration.nix ./hardware-configuration.nix
+
+cd ~tn/Layers/User/Firefox/Zen
+cp ~/Downloads/zen-specific.AppImage ./
+
+cd ~tn/Layers/User/Art-Tools/Allusion
+cp ~/Downloads/Allusion-1.0.0-rc.10.AppImage ./
+
+cd ~tn/Layers/User/Art-Tools/PureRef 
+cp ~/Downloads/PureRef-1.11.1_x64.Appimage ./
+
+cd ~tn
+cp ~/Downloads/Tn.key ./
+
+cd ~
 
 echo
 echo "Home Directory Set Up Complete, configuring R-clone connection"
