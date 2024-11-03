@@ -38,6 +38,18 @@ mv Iron-Shark.github.io Personal-Blog
 cd ~
 echo
 
+echo
+echo "Home Directory Set Up Complete, configuring R-clone connection"
+echo
+echo "This link must be opened with chromium"
+rclone config create G-Drive drive
+echo
+
+echo "Please press enter to continue"
+echo "after confirming login"
+read -r ConfirmationInput
+echo
+
 echo "Configuring Doom Emacs"
 rm -rf ~/.emacs.d
 mkdir ~/.emacs.d
@@ -48,38 +60,6 @@ git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 emacs --batch -f nerd-icons-install-fonts
 echo
 
-echo "Updating Machine Files"
-cd ~tn/Thanatos
-rm ./hardware-configuration.nix
-cp /etc/nixos/hardware-configuration.nix ./hardware-configuration.nix
-
-cd ~tn/Layers/User/Firefox/Zen
-cp ~/Downloads/zen-specific.AppImage ./
-
-cd ~tn/Layers/User/Art-Tools/Allusion
-cp ~/Downloads/Allusion-1.0.0-rc.10.AppImage ./
-
-cd ~tn/Layers/User/Art-Tools/PureRef 
-cp ~/Downloads/PureRef-1.11.1_x64.Appimage ./
-
-cd ~tn
-cp ~/Downloads/Tn.key ./
-
 cd ~
 
-echo
-echo "Home Directory Set Up Complete, configuring R-clone connection"
-echo
-echo "This link must be opened with chromium"
-rclone config create G-Drive drive
-echo
-echo "Please press enter to continue"
-echo "after confirming login"
-read -r ConfirmationInput
-echo
-
-echo "Updating and Rebuilding System"
-Upgrade
-Rebuild
-
-echo "system set up complete, please reboot"
+echo "Remember to update Tn.Key and hardware file, then rebuild system and reboot"
