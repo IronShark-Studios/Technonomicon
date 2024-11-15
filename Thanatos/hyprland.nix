@@ -4,7 +4,7 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
-        exec-once = waybar & mako & emacs --daemon & udiskie -asFN & hyprctl dispatch workspace 1
+        exec-once = waybar & mako & emacs --daemon & udiskie -asFN & blueman-applet
         exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
         exec-once = otd-daemon
 	exec-once = rclone mount G-Drive: ~/G-Drive
