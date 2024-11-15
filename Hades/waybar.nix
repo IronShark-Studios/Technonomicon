@@ -26,7 +26,7 @@
 
           "modules-left": ["hyprland/workspaces"],
           "modules-center": ["clock"],
-          "modules-right": ["network", "pulseaudio", "tray"],
+          "modules-right": ["pulseaudio", "tray", "network"],
           "hyprland/workspaces": {
               "format": "{icon}",
               "on-click": "activate",
