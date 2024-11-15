@@ -64,8 +64,8 @@
           "tooltip": false
           },
           "pulseaudio": {
-              "format": "{icon}",
-              "format-alt": "{volume} {icon}%",
+              "format": "{icon} {volume}%",
+              "format-alt": "{volume} {icon}",
               "format-alt-click": "click-right",
               "format-muted": "",
               "format-icons": {
