@@ -25,8 +25,8 @@
           "height": 30,
 
           "modules-left": ["hyprland/workspaces"],
-          "modules-center": ["tray"],
-          "modules-right": ["pulseaudio", "network", "battery", "clock"],
+          "modules-center": ["clock"],
+          "modules-right": ["network", "pulseaudio", "battery", "tray"],
           "hyprland/workspaces": {
               "format": "{icon}",
               "on-click": "activate",
@@ -34,11 +34,11 @@
               "on-scroll-down": "hyprctl dispatch workspace e-1"
           },
           "clock": {
-              "format": "{:%a %d %b %H:%M}",
+              "format": "{:%H:%M %d %b %a}",
               "tooltip": false
           },
           "battery": {
-            "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
+            "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
             "format-icons": ["", "", "", "", ""],
             "format-time": "{H}h{M}m",
             "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
@@ -65,7 +65,7 @@
           },
           "pulseaudio": {
               "format": "{icon}",
-              "format-alt": "{volume} {icon}",
+              "format-alt": "{volume} {icon}%",
               "format-alt-click": "click-right",
               "format-muted": "",
               "format-icons": {
