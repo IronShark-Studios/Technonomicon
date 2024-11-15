@@ -50,7 +50,7 @@
           "tooltip": false
           },
           "pulseaudio": {
-              "format": "{icon} {volume}%",
+              "format": "{icon} {volume} %",
               "format-alt": "{volume} {icon}",
               "format-alt-click": "click-right",
               "format-muted": "",
@@ -58,7 +58,7 @@
                   "phone": [" ", " ", " ", " "],
                   "default": ["", "", "", ""]
               },
-              "scroll-step": 10,
+              "scroll-step": 1,
               "on-click": "pavucontrol",
               "tooltip": false
           },
