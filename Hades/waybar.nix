@@ -25,8 +25,8 @@
           "height": 30,
 
           "modules-left": ["hyprland/workspaces"],
-          "modules-center": ["tray"],
-          "modules-right": ["pulseaudio", "network", "clock"],
+          "modules-center": ["clock"],
+          "modules-right": ["network", "pulseaudio", "tray"],
           "hyprland/workspaces": {
               "format": "{icon}",
               "on-click": "activate",
@@ -34,7 +34,7 @@
               "on-scroll-down": "hyprctl dispatch workspace e-1"
           },
           "clock": {
-              "format": "{:%a %d %b %H:%M}",
+              "format": "{:%H:%M %d %b %a}",
               "tooltip": false
           },
           "network": {
@@ -50,7 +50,7 @@
           "tooltip": false
           },
           "pulseaudio": {
-              "format": "{icon}",
+              "format": "{icon} {volume}%",
               "format-alt": "{volume} {icon}",
               "format-alt-click": "click-right",
               "format-muted": "",
