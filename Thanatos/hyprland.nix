@@ -19,6 +19,7 @@
 
         input {
             kb_layout = us
+	    kb_options = caps:swapescape
             follow_mouse = 2
             sensitivity = 0
             touchpad {
