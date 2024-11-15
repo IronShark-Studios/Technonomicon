@@ -61,6 +61,11 @@
       autoload -U compinit; compinit
       source ~/.zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
 
+      function chpwd() {
+        emulate -L zsh
+        eza --icons --oneline --group-directories-first --color auto
+      }
+      
       zle-line-init() {
         emulate -L zsh
 
