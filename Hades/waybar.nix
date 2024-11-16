@@ -50,7 +50,7 @@
           "tooltip": false
           },
           "pulseaudio": {
-              "format": "{icon} {volume} %",
+              "format": "{icon} {volume}%",
               "format-alt": "{volume} {icon}",
               "format-alt-click": "click-right",
               "format-muted": "",
