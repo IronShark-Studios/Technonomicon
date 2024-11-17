@@ -20,6 +20,6 @@ in {
   home.packages = with pkgs; [
     pureref
     allusion
-    davinci-resolve
+    yt-dlp
     ];
 }
