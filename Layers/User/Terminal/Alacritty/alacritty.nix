@@ -22,5 +22,6 @@
     fd
     eza
     entr
+    progress
   ];
 }
