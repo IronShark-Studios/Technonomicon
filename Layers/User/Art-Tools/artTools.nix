@@ -21,5 +21,6 @@ in {
     pureref
     allusion
     yt-dlp
+    ffmpeg
     ];
 }
