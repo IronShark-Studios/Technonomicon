@@ -34,7 +34,7 @@
               "on-scroll-down": "hyprctl dispatch workspace e-1"
           },
           "clock": {
-              "format": "{:%H:%M %d %b %a}",
+              "format": "{:%H:%M %a %b %d}",
               "tooltip": false
           },
           "battery": {
@@ -66,7 +66,7 @@
           "pulseaudio": {
               "format": "{volume}% {icon}",
               "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
-              "format-muted": " ",
+              "format-muted": "Muted  ",
               "format-icons": {
                   "phone": ["  ", "  ", "  ", "  "],
                   "default": [" ", " ", " ", " "]
