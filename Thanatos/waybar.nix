@@ -65,8 +65,7 @@
           },
           "pulseaudio": {
               "format": "{volume}% {icon}",
-              "format-alt-click": "click-right",
-              "on-alt-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+              "on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle",
               "format-muted": " ",
               "format-icons": {
                   "phone": ["  ", "  ", "  ", "  "],
