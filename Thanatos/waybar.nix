@@ -65,12 +65,12 @@
           },
           "pulseaudio": {
               "format": "{volume}% {icon}",
-              "format-alt": "{volume} {icon}",
               "format-alt-click": "click-right",
-              "format-muted": "",
+              "on-alt-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+              "format-muted": " ",
               "format-icons": {
-                  "phone": [" ", " ", " ", " "],
-                  "default": ["", "", "", ""]
+                  "phone": ["  ", "  ", "  ", "  "],
+                  "default": [" ", " ", " ", " "]
               },
               "scroll-step": 1,
               "on-click": "pavucontrol",
