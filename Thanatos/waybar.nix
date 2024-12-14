@@ -65,14 +65,13 @@
           },
           "pulseaudio": {
               "format": "{volume}% {icon}",
-              "on-click-right": "wpctl set-mute @DEFAULT_SINK@ toggle",
+              "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
               "format-muted": " ",
               "format-icons": {
                   "phone": ["  ", "  ", "  ", "  "],
                   "default": [" ", " ", " ", " "]
               },
               "scroll-step": 1,
-              "on-click": "pavucontrol",
               "tooltip": false
           },
           "tray": {
