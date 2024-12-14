@@ -8,5 +8,6 @@
     anki
     zotero
     rclone
+    zathura
     ];
 }

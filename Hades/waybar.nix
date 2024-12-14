@@ -26,7 +26,7 @@
 
           "modules-left": ["hyprland/workspaces"],
           "modules-center": ["clock"],
-          "modules-right": ["network", "pulseaudio", "tray"],
+          "modules-right": ["pulseaudio", "tray", "network"],
           "hyprland/workspaces": {
               "format": "{icon}",
               "on-click": "activate",
@@ -50,9 +50,16 @@
           "tooltip": false
           },
           "pulseaudio": {
+<<<<<<< HEAD
               "format": "{icon} {volume} %",
               "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
               "format-muted": "Muted  ",
+=======
+              "format": "{icon} {volume}% ",
+              "format-alt": "{volume} {icon}",
+              "format-alt-click": "click-right",
+              "format-muted": "",
+>>>>>>> 3ba4badb0f418a77c9fcdf0803df19031b690476
               "format-icons": {
                   "phone": ["  ", "  ", "  ", "  "],
                   "default": [" ", " ", " ", " "]

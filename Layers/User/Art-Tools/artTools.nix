@@ -20,5 +20,7 @@ in {
   home.packages = with pkgs; [
     pureref
     allusion
+    yt-dlp
+    ffmpeg
     ];
 }
