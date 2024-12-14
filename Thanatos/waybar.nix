@@ -42,7 +42,7 @@
             "format-icons": ["", "", "", "", ""],
             "format-time": "{H}h{M}m",
             "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}% - {time}",
-            "format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>",
+            "format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span> ",
             "interval": 30,
             "states": {
                 "warning": 25,
