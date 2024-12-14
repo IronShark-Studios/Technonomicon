@@ -34,7 +34,7 @@
               "on-scroll-down": "hyprctl dispatch workspace e-1"
           },
           "clock": {
-              "format": "{:%H:%M %d %b %a}",
+              "format": "{:%H:%M %a %b %d}",
               "tooltip": false
           },
           "network": {
@@ -51,15 +51,13 @@
           },
           "pulseaudio": {
               "format": "{icon} {volume} %",
-              "format-alt": "{volume} {icon}",
-              "format-alt-click": "click-right",
-              "format-muted": "",
+              "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+              "format-muted": "Muted  ",
               "format-icons": {
-                  "phone": [" ", " ", " ", " "],
-                  "default": ["", "", "", ""]
+                  "phone": ["  ", "  ", "  ", "  "],
+                  "default": [" ", " ", " ", " "]
               },
               "scroll-step": 1,
-              "on-click": "pavucontrol",
               "tooltip": false
           },
           "tray": {
