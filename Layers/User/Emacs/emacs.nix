@@ -10,7 +10,7 @@
 
   programs.emacs = {
     enable = true;
-    package = pkgs.emacs-pgtk;
+    package = pkgs.emacs-unstable-pgtk;
     extraPackages = epkgs: [ epkgs.vterm ];
   };
 
