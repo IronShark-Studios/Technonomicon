@@ -17,10 +17,6 @@
           success_symbol = "[❯](#7fff00)"
           error_symbol = "[✗](#ff4b00)"
 
-          [cmd_duration]
-          style = "#7fff00"
-          format = "[ $duration](bg:#20282f fg:$style)"
-
           [directory]
           style = "#7fff00"
           truncate_to_repo = false
