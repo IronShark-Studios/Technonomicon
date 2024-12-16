@@ -2,7 +2,8 @@
 
   home = {
     packages = with pkgs; [
-    plover.dev
+      plover.with-plugins (ps: [
+      ])
     ];
   };
 
