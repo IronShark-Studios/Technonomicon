@@ -42,8 +42,6 @@ key = "Back"
 mods = "Control"
 chars = "\u0017"
 
-[terminal.shell]
-program = "/home/xin/.nix-profile/bin/tmux"
     '';
   };
 }
