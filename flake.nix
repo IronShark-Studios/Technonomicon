@@ -9,9 +9,11 @@
     nixos-hardware.url = "github:nixos/nixos-hardware";
 
     emacs-community.url = "github:nix-community/emacs-overlay";
+
+    plover-flake.url = "github:dnaq/plover-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, nixos-hardware, emacs-community, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nixos-hardware, emacs-community, plover-flake, ... }@inputs:
    let
       inherit (self) outputs;
       forAllSystems = nixpkgs.lib.genAttrs [
