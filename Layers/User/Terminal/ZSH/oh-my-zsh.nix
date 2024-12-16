@@ -23,6 +23,10 @@
         rgx-menu() { rg --regex "$1" | fzf; }
         fd-menu() { fd -i "$1" | fzf; }
         fdx-menu() { fd --regex "$1" | fzf; }
+	
+        ZSH_COMMAND_TIME_MIN_SECONDS=3
+        ZSH_COMMAND_TIME_MSG="Execution time: %s sec"
+        ZSH_COMMAND_TIME_EXCLUDE=(vim mcedit)
       '';
   };
 
