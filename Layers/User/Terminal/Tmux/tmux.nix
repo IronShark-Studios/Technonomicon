@@ -7,6 +7,8 @@
     prefix = "C-x";
     shell = "/home/xin/.nix-profile/bin/zsh";
     disableConfirmationPrompt = true;
+    plugins = [
+    ];
     extraConfig = ''
     '';
   };
