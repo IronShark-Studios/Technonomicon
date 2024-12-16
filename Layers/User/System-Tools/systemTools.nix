@@ -3,7 +3,6 @@
   imports = [
     ./blueman.nix
     ./thunar.nix
-    ./plover.nix
     ./rofi.nix
   ];
 }
