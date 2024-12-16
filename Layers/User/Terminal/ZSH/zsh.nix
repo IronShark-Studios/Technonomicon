@@ -1,5 +1,4 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
-
   programs.zsh = {
     enable = true;
     autocd = true;
@@ -25,6 +24,16 @@
           repo = "fzf-tab";
           rev = "v1.1.2";
           sha256 = "sha256-Qv8zAiMtrr67CbLRrFjGaPzFZcOiMVEFLg1Z+N6VMhg";
+        };
+      }
+      {
+        name = "zsh-command-time";
+        file = "zsh-command-time.plugin.zsh";
+        src = pkgs.fetchFromGitHub {
+          owner = "popstas";
+          repo = "zsh-command-time";
+          rev = "master";
+          sha256 = "sha256-ndHVFcz+XmUW0zwFq7pBXygdRKyPLjDZNmTelhd5bv8";
         };
       }
     ];
@@ -55,6 +64,7 @@
       zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
       zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 
+
       eval "$(zoxide init zsh)"
       eval "$(fzf --zsh)"
 
@@ -66,13 +76,6 @@
         eza --icons --oneline --group-directories-first --color auto
       }
 
-      # If command execution time above min. time, plugins will not output time.
-      ZSH_COMMAND_TIME_MIN_SECONDS=3
-
-      ZSH_COMMAND_TIME_MSG="Execution time: %s sec"
-
-      ZSH_COMMAND_TIME_EXCLUDE=(vim vi nvim)
-      
       zle-line-init() {
         emulate -L zsh
 
@@ -104,6 +107,10 @@
       }
 
           zle -N zle-line-init
+
+
+
+
     '';
 };
 }

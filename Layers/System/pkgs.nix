@@ -5,6 +5,7 @@
       wget
       unzip
       alsa-utils
+      zsh-command-time
     ];
   };
 
