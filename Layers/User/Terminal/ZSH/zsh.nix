@@ -26,16 +26,6 @@
           sha256 = "sha256-Qv8zAiMtrr67CbLRrFjGaPzFZcOiMVEFLg1Z+N6VMhg";
         };
       }
-      {
-        name = "zsh-command-time";
-        file = "zsh-command-time.plugin.zsh";
-        src = pkgs.fetchFromGitHub {
-          owner = "popstas";
-          repo = "zsh-command-time";
-          rev = "master";
-          sha256 = "sha256-ndHVFcz+XmUW0zwFq7pBXygdRKyPLjDZNmTelhd5bv8";
-        };
-      }
     ];
 
     history.ignoreAllDups = true;
@@ -48,6 +38,8 @@
 
     initExtra = ''
       tmux -2Du
+
+      TIMER_FORMAT='[Execution Time: %d]'; TIMER_THRESHOLD=3
 
       printf '\n%.0s' {1..100}
 
@@ -63,7 +55,6 @@
       zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
       zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
       zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-
 
       eval "$(zoxide init zsh)"
       eval "$(fzf --zsh)"

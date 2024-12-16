@@ -14,6 +14,7 @@
       "fzf"
       "sudo"
       "command-not-found"
+      "timer"
     ];
     extraConfig = ''
         cdd() { z "$1" && eza --icons --oneline --group-directories-first --color auto; }
@@ -21,6 +22,7 @@
         rgx-menu() { rg --regex "$1" | fzf; }
         fd-menu() { fd -i "$1" | fzf; }
         fdx-menu() { fd --regex "$1" | fzf; }
+
       '';
   };
 
