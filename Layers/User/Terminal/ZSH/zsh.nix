@@ -37,7 +37,6 @@
     };
 
     initExtra = ''
-      tmux -2Du
 
       TIMER_FORMAT='[Execution Time: %d]'; TIMER_THRESHOLD=3
 
