@@ -13,6 +13,9 @@
           [time]
           disabled = true
 
+	  [cmd_duration]
+          disabled = true
+
           [character]
           success_symbol = "[❯](#7fff00)"
           error_symbol = "[✗](#ff4b00)"

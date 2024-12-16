@@ -15,6 +15,7 @@
       "fzf"
       "sudo"
       "command-not-found"
+      "zsh-command-time"
     ];
     extraConfig = ''
         cdd() { z "$1" && eza --icons --oneline --group-directories-first --color auto; }
