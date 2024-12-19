@@ -14,5 +14,9 @@
     extraConfig =''
     set clipboard=unnamedplus
     '';
+
+    plugins = with pkgs.vimPlugins; [
+
+    ];
   };
 }
