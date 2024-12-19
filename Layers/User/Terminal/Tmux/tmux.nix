@@ -10,6 +10,7 @@
     plugins = [
     ];
     extraConfig = ''
+    set -g status off
     '';
   };
 }
