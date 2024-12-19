@@ -14,5 +14,16 @@
     extraConfig =''
     set clipboard=unnamedplus
     '';
+
+    extraLuaConfig =''
+    local builtin = require('telescope.builtin')
+
+
+    vim.g.mapleader = " "
+    '';
+
+    plugins = with pkgs.vimPlugins; [
+    nvim-treesitter.withAllGrammars
+    ];
   };
 }

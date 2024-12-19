@@ -9,7 +9,7 @@
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 ;;
-(load! "~/.config/doom/secrets.el")
+;;(load! "~/.config/doom/secrets.el")
 ;;(load! "~/.config/doom/lisp/modus-varangian")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
