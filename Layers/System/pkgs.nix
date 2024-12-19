@@ -10,7 +10,7 @@
   };
 
   fonts.packages = with pkgs; [
-    nerdfonts
+    nerd-fonts
     iosevka
     iosevka-comfy.comfy-wide-motion
     iosevka-comfy.comfy-wide-motion-duo
