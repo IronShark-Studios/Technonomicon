@@ -31,6 +31,6 @@
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old";
     devEnv = "nix develop -c zsh";
-    ns = "alacritty --working-directory ./";
+    ns = "alacritty --working-directory ./ &";
   };
 }
