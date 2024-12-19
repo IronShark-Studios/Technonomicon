@@ -10,6 +10,7 @@
   };
 
   fonts.packages = with pkgs; [
+    nerd-fonts.symbols-only
     iosevka
     iosevka-comfy.comfy-wide-motion
     iosevka-comfy.comfy-wide-motion-duo
@@ -18,5 +19,4 @@
     fira-code
     fira-go
   ];
-   ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts)
 }
