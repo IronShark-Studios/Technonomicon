@@ -5,6 +5,7 @@
       target = ".config/hypr/hyprland.conf";
       text = ''
       test = test
+      test2 = 2
 #       exec-once = waybar & mako --default-timeout 3000 & emacs --daemon & udiskie -asFN & blueman-applet
 #       exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 #       exec-once = otd-daemon
