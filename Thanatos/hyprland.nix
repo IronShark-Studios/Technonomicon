@@ -4,11 +4,10 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
-      exec-once = firefox &
-        exec-once = waybar & mako --default-timeout 3000 & emacs --daemon & udiskie -asFN & blueman-applet
-        exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-        exec-once = otd-daemon
-	exec-once = rclone mount G-Drive: ~/G-Drive
+        #exec-once = waybar & mako --default-timeout 3000 & emacs --daemon & udiskie -asFN & blueman-applet
+        #exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+        #exec-once = otd-daemon
+	#exec-once = rclone mount G-Drive: ~/G-Drive
 
         env = XCURSOR_SIZE,24
         env = QT_QPA_PLATFORMTHEME,qt5ct
