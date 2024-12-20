@@ -4,8 +4,6 @@
     "hyprland.conf" = {
       target = ".config/hypr/hyprland.conf";
       text = ''
-      test = test
-      test2 = 2
 #       exec-once = waybar & mako --default-timeout 3000 & emacs --daemon & udiskie -asFN & blueman-applet
 #       exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 #       exec-once = otd-daemon
@@ -79,7 +77,7 @@
 #       }
 #
 #
-#       $mainMod = SUPER
+       $mainMod = SUPER
 #
 #       bind = $mainMod, S, exec, zen
 #       bind = $mainMod SHIFT, S, exec, thunderbird
@@ -87,7 +85,7 @@
 #       bind = $mainMod, E, exec, obsidian
 #
 #
-#       bind = $mainMod, T, exec, alacritty
+       bind = $mainMod, T, exec, alacritty
 #
 #       bind = $mainMod, C, exec, emacsclient -c -e '(full-calc)'
 #       bind = $mainMod SHIFT, C, exec, rofi -show calc -modi calc -no-show-match -no-sort
