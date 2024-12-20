@@ -8,9 +8,6 @@
 ;; clients, file templates and snippets. It is optional.
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
-;;
-;;(load! "~/.config/doom/secrets.el")
-;;(load! "~/.config/doom/lisp/modus-varangian")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
@@ -40,7 +37,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'modus-vivendi)
+(setq doom-theme 'city-lights)
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.

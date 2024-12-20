@@ -179,12 +179,13 @@
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more
        ;;purescript        ; javascript, but functional
-       ;; hy                ; readability of scheme w/ speed of python
-       ;; (python +lsp
-       ;;        +tree-sitter
+        hy                ; readability of scheme w/ speed of python
+        (python +lsp
+                +tree-sitter
        ;;        +conda
        ;;        +cython
-       ;;        +pyright)            ; beautiful is better than ugly
+       ;;        +pyright
+       )            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
        ;; (racket +lsp
        ;;         +xp)            ; a DSL for DSLs
