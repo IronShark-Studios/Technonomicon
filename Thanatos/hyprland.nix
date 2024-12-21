@@ -14,5 +14,6 @@
     hyprpicker
     wl-clipboard
     wtype
+    kitty
   ];
 }
