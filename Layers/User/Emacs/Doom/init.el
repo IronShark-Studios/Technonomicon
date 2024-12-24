@@ -141,8 +141,8 @@
        ;; (gdscript +lsp)          ; the language you waited for
        ;;(go +lsp)         ; the hipster dialect
        ;; (graphql +lsp)    ; Give queries a REST
-       ;; (haskell +lsp
-       ;;          +tree-sitter)    ; a language that's lazier than I am
+       (haskell +lsp
+                +tree-sitter)    ; a language that's lazier than I am
        ;;idris             ; a language you can depend on
        ;; (json +lsp
        ;;       +tree-sitter)              ; At least it ain't XML
@@ -187,8 +187,8 @@
        ;;        +pyright
        )            ; beautiful is better than ugly
        ;;qt                ; the 'cutest' gui framework ever
-       ;; (racket +lsp
-       ;;         +xp)            ; a DSL for DSLs
+       (racket +lsp
+               +xp)            ; a DSL for DSLs
        ;;raku              ; the artist formerly known as perl6
        ;;rest              ; Emacs as a REST client
        ;;rst               ; ReST in peace
@@ -196,11 +196,11 @@
        ;; (rust +lsp
        ;;       +tree-sitter)       ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        ;;scala             ; java, but good
-       ;; (scheme +guile
-       ;;         +mit
-       ;;         +racket
-       ;;         +chicken
-       ;;         +chez)   ; a fully conniving family of lisps
+       (scheme +guile
+               +mit
+               +racket
+               +chicken
+               +chez)   ; a fully conniving family of lisps
        (sh +lsp
            +tree-sitter)                ; she sells {ba,z,fi}sh shells on the C xor
        ;;sml
