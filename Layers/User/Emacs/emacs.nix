@@ -43,6 +43,9 @@
       ghc
       python3Full
       hy
+
+    # Degugging / Testing Tools
+      gdb
     ];
 
     file = {
