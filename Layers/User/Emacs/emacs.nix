@@ -35,6 +35,14 @@
       pandoc
       scrot
       sqlite
+
+    # Programming Languages
+      racket
+      chez
+      guile
+      ghc
+      python3Full
+      hy
     ];
 
     file = {
