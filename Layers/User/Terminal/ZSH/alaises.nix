@@ -13,7 +13,7 @@
     grepx-m = "rgx-menu";
     cp = "cp -r";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
-    ld = "eza --icons --oneline --group-directories-first --color auto --tree";
+    lld = "eza --icons --oneline --group-directories-first --color auto --tree";
     lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";
     ll = "eza --icons --oneline --group-directories-first --color auto";
     ls = "eza --icons --oneline --group-directories-first --color auto --long";
