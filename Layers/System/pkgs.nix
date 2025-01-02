@@ -19,4 +19,8 @@
     fira-code
     fira-go
   ];
+
+  programs.steam = {
+    enable = true;
+  };
 }
