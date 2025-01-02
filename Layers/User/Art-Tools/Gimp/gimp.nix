@@ -2,7 +2,7 @@
 
   home = {
     packages = with pkgs; [
-      gimp-with-plugins
+      # gimp-with-plugins
     ];
   };
 }
