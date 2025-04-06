@@ -12,7 +12,6 @@
     waylock
     hyprshot
     hyprpicker
-    wl-clipboard
     wtype
     kitty
   ];

@@ -3,6 +3,7 @@
   environment = {
     systemPackages = with pkgs; [
       sddm-chili-theme
+      xorg.libxshmfence
     ];
   };
 

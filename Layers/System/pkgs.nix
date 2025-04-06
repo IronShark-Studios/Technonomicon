@@ -6,6 +6,7 @@
       unzip
       alsa-utils
       zsh-command-time
+      wl-clipboard
     ];
   };
 
@@ -21,6 +22,10 @@
   ];
 
   programs.steam = {
+    enable = true;
+  };
+
+  programs.ydotool = {
     enable = true;
   };
 }

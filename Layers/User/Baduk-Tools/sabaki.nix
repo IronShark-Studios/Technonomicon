@@ -2,9 +2,9 @@
 
 let
   pname = "sabaki";
-  version = "1.11.1";
+  version = "0.51.0";
 
-  src =./sabaki-v0.52.2-linux-x64.AppImage;
+  src =./sabaki-v0.51.0-linux-x64.AppImage;
 
 in
 

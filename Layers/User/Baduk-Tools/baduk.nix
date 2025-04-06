@@ -2,6 +2,8 @@
 
 let
   sabaki = pkgs.callPackage (import ./sabaki.nix) {};
+  fox = pkgs.callPackage (import ./minifox.nix) {};
+
 
 in {
 
@@ -11,5 +13,6 @@ in {
   home.packages = with pkgs; [
      sabaki
      katago
+     fox
     ];
 }

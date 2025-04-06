@@ -4,7 +4,7 @@ let
   pname = "zen";
   version = "1.0.1";
 
-  src =./zen-specific.AppImage;
+  src =./zen-x86_64.AppImage;
 
 in
 

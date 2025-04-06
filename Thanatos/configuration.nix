@@ -17,6 +17,7 @@
     ../Layers/Scripts/test.nix
     ../Layers/Scripts/upgrade.nix
     ../Layers/Scripts/update-archives.nix
+    ../Layers/Scripts/sabaki-2-anki.nix
   ];
 
   boot = {
@@ -59,7 +60,7 @@
       xin = {
         isNormalUser = true;
         openssh.authorizedKeys.keys = [ ];
-        extraGroups = [ "wheel" "docker" ];
+        extraGroups = [ "wheel" "docker" "ydotool" ];
         shell = pkgs.zsh;
         hashedPasswordFile = "/etc/secrets/xin-usrPasswd.nix";
       };
