@@ -16,9 +16,6 @@
     '';
 
     extraLuaConfig =''
-    local builtin = require('telescope.builtin')
-
-
     vim.g.mapleader = " "
     '';
 
