@@ -1,0 +1,46 @@
+Leech Block Rules
+
+- Work Day
+0000-2000
+reddit.com/hot/
+
+- Permenate
+ALL Day
+reddit.com/#best
+reddit.com/new/
+reddit.com/rising/
+reddit.com/controversial/
+reddit.com/top/
+
+
+Ublock Rules
+- 101 Guan
+! Apr 7, 2025 https://www.101weiqi.com
+www.101weiqi.com###smallqtitle > .ng-binding
+www.101weiqi.com###operdiv > .ng-binding
+www.101weiqi.com##p.ng-scope > .ng-scope.ng-binding
+www.101weiqi.com###myfooter > .tc-main.container
+www.101weiqi.com###operdiv > div.ng-scope.width100 > p > a
+www.101weiqi.com##div.ng-scope.width100:nth-of-type(8) > div 
+www.101weiqi.com##div.ng-scope.width100:nth-of-type(8) > div > a
+www.101weiqi.com##div.ng-scope.width100:nth-of-type(9) > p
+www.101weiqi.com##div.ng-scope.width100:nth-of-type(11)
+www.101weiqi.com##.ng-scope.width100.play_pinglun > .bor
+www.101weiqi.com###answerbody > .ng-scope
+www.101weiqi.com##div.ng-scope.width100:nth-of-type(3) > p
+www.101weiqi.com##div.qaddonitem:nth-of-type(2)
+www.101weiqi.com##div.ng-scope.width100:nth-of-type(7) > div > a
+www.101weiqi.com##.ng-scope.width100.play_pinglun
+
+
+
+! Apr 7, 2025 https://www.101weiqi.com/guan/record
+www.101weiqi.com##:matches-path(/guan/record/) .active
+www.101weiqi.com##:matches-path(/guan/record/) #whead > .container
+www.101weiqi.com##:matches-path(/guan/record/) .ng-scope.width100.play_pinglun
+www.101weiqi.com##:matches-path(/guan/record/) #operdiv > div.ng-scope:nth-of-type(1) > .ng-scope > .ng-scope > div:nth-of-type(1)
+www.101weiqi.com##:matches-path(/guan/record/) div.ng-scope.width100:nth-of-type(2) > p
+www.101weiqi.com##:matches-path(/guan/record/) .ng-scope.zt_jies
+www.101weiqi.com##:matches-path(/guan/record/) .text-success > .ng-scope.ng-binding
+www.101weiqi.com##:matches-path(/guan/record/) p:nth-of-type(2)
+
