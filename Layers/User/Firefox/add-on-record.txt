@@ -27,9 +27,10 @@ www.101weiqi.com##div.ng-scope.width100:nth-of-type(9) > p
 www.101weiqi.com##div.ng-scope.width100:nth-of-type(11)
 www.101weiqi.com##.ng-scope.width100.play_pinglun > .bor
 www.101weiqi.com###answerbody > .ng-scope
-www.101weiqi.com##div.ng-scope.width100:nth-of-type(3) > p
 www.101weiqi.com##div.qaddonitem:nth-of-type(2)
 www.101weiqi.com##.ng-scope.width100.play_pinglun
+www.101weiqi.com###operdiv > div.ng-scope.width100:nth-of-type(3) > p
+
 
 
 
