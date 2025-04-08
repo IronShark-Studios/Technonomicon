@@ -18,12 +18,15 @@ ydotool key 106:1 106:0 #right arrow
 ydotool key 108:1 108:0 #down arrow
 ydotool key 28:1 28:0 #enter
 
+#small pause to prevent interference from holding keys
+sleep 0.5
+
 # Moves to Workspace 8 (Ankis expected workspace)
 ydotool key 125:1 106:1 106:0 125:0
 
 # Pastes and submits variation to anki
 ydotool key 29:1 42:1 47:1 47:0 42:0 29:0 #ctrl-shift-v
-ydotool key 29:1 28:1 28:0 29:0 #enter
+ydotool key 29:1 28:1 28:0 29:0 #ctrl-enter
     '';
   };
 }
