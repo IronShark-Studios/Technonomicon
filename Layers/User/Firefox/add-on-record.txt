@@ -30,9 +30,7 @@ www.101weiqi.com###answerbody > .ng-scope
 www.101weiqi.com##div.qaddonitem:nth-of-type(2)
 www.101weiqi.com##.ng-scope.width100.play_pinglun
 www.101weiqi.com###operdiv > div.ng-scope.width100:nth-of-type(3) > p
-
-
-
+www.101weiqi.com##div.ng-scope.width100 > .ng-scope.ng-binding.stonecomment
 
 ! Apr 7, 2025 https://www.101weiqi.com/guan/record
 www.101weiqi.com##:matches-path(/guan/record/) .active
@@ -44,3 +42,9 @@ www.101weiqi.com##:matches-path(/guan/record/) .ng-scope.zt_jies
 www.101weiqi.com##:matches-path(/guan/record/) .text-success > .ng-scope.ng-binding
 www.101weiqi.com##:matches-path(/guan/record/) p:nth-of-type(2)
 
+! Apr 9, 2025 https://beta.ai-sensei.com
+beta.ai-sensei.com##.winner.text-truncate.player-rank.ms-2
+beta.ai-sensei.com##.text-truncate.player-rank.ms-2
+
+! Apr 9, 2025 https://online-go.com
+online-go.com##.toggle-ratings.danger

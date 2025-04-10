@@ -32,5 +32,6 @@
     clean = "sudo nix-collect-garbage --delete-old";
     devEnv = "nix develop -c zsh";
     ns = "alacritty --working-directory ./ &";
+    sgf-archive = "bash /etc/scripts/sgf-archive.sh";
   };
 }
