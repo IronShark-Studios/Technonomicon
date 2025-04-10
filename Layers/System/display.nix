@@ -22,6 +22,7 @@
     udisks2.enable = true;
     libinput.enable = true;
     gnome.gnome-keyring.enable = true;
+    pulseaudio.enable = false;
 
     pipewire = {
       enable = true;
@@ -41,7 +42,6 @@
   };
 
   hardware = {
-    pulseaudio.enable = false;
     bluetooth.enable = true;
     graphics.enable = true;
     xpadneo.enable = true;
