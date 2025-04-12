@@ -1,7 +1,7 @@
 Leech Block Rules
 
 - Work Day
-0800-2400
+0000-0600,0800-2400
 reddit.com/hot/
 news.google.com/home
 
