@@ -1,8 +1,9 @@
 Leech Block Rules
 
 - Work Day
-0000-2000
+0800-2400
 reddit.com/hot/
+news.google.com/home
 
 - Permenate
 ALL Day
