@@ -30,7 +30,11 @@ echo "Creating obsidian note"
 
 touch ~/Grimoire/"$markdown_filename"
 
-echo "[[DDK Game Records]] #Baduk
+# Creates Dates need for sorting tags
+current_year=$(date +%Y)
+week_number=$(date +%V)
+
+echo "[[DDK Game Records]] #Baduk #Game$current_year-$week_number
 # Game Summary
 
 # Notable Success
