@@ -1,14 +1,19 @@
 #!/bin/sh
 
-# Check if the correct number of arguments is provided
-if [ "$#" -ne 2 ]; then
-  echo "Usage: $0 <old_filename> <new_filename>"
-  exit 1
-fi
+pb_raw=$(grep -oP 'PB\[\K[^\]]+' "$file")
+pb_formatted=$(echo "$pb_raw" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+# Extract White Player (PW) name
+pw_raw=$(grep -oP 'PW\[\K[^\]]+' "$file")
+pw_formatted=$(echo "$pw_raw" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+
+current_date=$(date +%Y-%m-%d)
+# Construct the new filename
+
+new_filename="${current_date}-${pb_formatted}-vs-${pw_formatted}.sgf"
 
 # Assign the arguments to variables
 old_filename="$1"
-new_filename="$2"
 
 # Check if the old file exists
 if [ ! -f "$old_filename" ]; then
@@ -34,7 +39,7 @@ touch ~/Grimoire/"$markdown_filename"
 current_year=$(date +%Y)
 week_number=$(date +%V)
 
-echo "[[DDK Game Records]] #Baduk #Game$current_year-$week_number
+echo "[[DDK Game Records]] [[${current_year}-W${week_number}]] #Baduk 
 # Game Summary
 
 # Notable Success
