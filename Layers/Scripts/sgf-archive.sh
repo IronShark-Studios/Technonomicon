@@ -1,19 +1,19 @@
 #!/bin/sh
 
-pb_raw=$(grep -oP 'PB\[\K[^\]]+' "$file")
+# Assign the arguments to variables
+old_filename="$1"
+
+pb_raw=$(grep -oP 'PB\[\K[^\]]+' "$old_filename")
 pb_formatted=$(echo "$pb_raw" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 
 # Extract White Player (PW) name
-pw_raw=$(grep -oP 'PW\[\K[^\]]+' "$file")
+pw_raw=$(grep -oP 'PW\[\K[^\]]+' "$old_filename")
 pw_formatted=$(echo "$pw_raw" | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
 
 current_date=$(date +%Y-%m-%d)
 # Construct the new filename
 
 new_filename="${current_date}-${pb_formatted}-vs-${pw_formatted}.sgf"
-
-# Assign the arguments to variables
-old_filename="$1"
 
 # Check if the old file exists
 if [ ! -f "$old_filename" ]; then
