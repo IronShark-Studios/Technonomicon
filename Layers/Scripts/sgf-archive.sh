@@ -56,7 +56,7 @@ echo "Storing in DDK Google Drive"
 rsync -avz --progress "$new_filename" ~/G-Drive/Baduk/My-Games/DDK
 
 # Renames Original File to show it has been archived
-mv "$new_filename" "$new_filename.bak"
+mv "$new_filename" "ARC-$new_filename"
 
 # Print current directory
 eza --icons --oneline --group-directories-first --color auto
