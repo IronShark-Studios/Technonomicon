@@ -19,6 +19,7 @@
     ../Layers/Scripts/update-archives.nix
     ../Layers/Scripts/sabaki-2-anki.nix
     ../Layers/Scripts/sgf-archive.nix
+    ../Layers/Scripts/start-up.nix
   ];
 
   boot = {
