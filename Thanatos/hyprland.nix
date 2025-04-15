@@ -14,5 +14,6 @@
     hyprpicker
     wtype
     kitty
+    brightnessctl
   ];
 }
