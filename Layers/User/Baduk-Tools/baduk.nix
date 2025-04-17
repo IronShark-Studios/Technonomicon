@@ -14,5 +14,6 @@ in {
      sabaki
      katago
      fox
+     pipx
     ];
 }
