@@ -15,6 +15,5 @@
     wtype
     kitty
     brightnessctl
-    satty
   ];
 }
