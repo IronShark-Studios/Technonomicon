@@ -15,6 +15,6 @@
     wtype
     kitty
     brightnessctl
-    gromit-mpx
+    satty
   ];
 }
