@@ -11,17 +11,27 @@ if [ -z "$1" ]; then
 fi
 
 filename="$1"
+base="${filename%.*}"       # Extract filename without extension
+extension="${filename##*.}" # Extract the extension
+new_number=""
 
-new_filename=$(echo "$filename" | rename 's/(--)?(\d*)(\.[^.]+$)/sprintf("--%d%s", $2 + 1, $3)/e' -n)
-
-if [ "$filename" = "$new_filename" ]; then
-  new_filename=$(echo "$filename" | rename 's/(\.[^.]+$)/--1&/' -n)
+if [[ "$base" =~ --([0-9]+)$ ]]; then
+  # Found an existing number
+  existing_number="${BASH_REMATCH[1]}"
+  new_number=$((existing_number + 1))
+  new_base="${base%--*}"
+  new_filename="${new_base}--${new_number}.${extension}"
+else
+  # No existing number found
+  new_filename="${base}--1.${extension}"
 fi
 
-mv "$filename" "$new_filename"
-
-echo "Incremented '$filename' to '$new_filename'"
-
+if [ "$filename" != "$new_filename" ]; then
+  mv "$filename" "$new_filename"
+  echo "Renamed '$filename' to '$new_filename'"
+else
+  echo "Filename '$filename' already in the desired format (or no change needed)."
+fi
     '';
   };
 }
