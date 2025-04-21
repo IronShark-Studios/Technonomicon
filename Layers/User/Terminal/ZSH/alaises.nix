@@ -33,5 +33,6 @@
     devEnv = "nix develop -c zsh";
     ns = "alacritty --working-directory ./ &";
     sgf-archive = "bash /etc/scripts/sgf-archive.sh";
+    sgf-inc = "bash /etc/scripts/sgf-increment.sh";
   };
 }
