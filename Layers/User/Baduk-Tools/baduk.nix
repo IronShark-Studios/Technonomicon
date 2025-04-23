@@ -12,7 +12,7 @@ in {
 
   home.packages = with pkgs; [
      sabaki
-     katago
+     katagoCPU
      fox
      pipx
     ];
