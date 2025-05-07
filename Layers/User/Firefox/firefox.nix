@@ -12,12 +12,13 @@ in {
   ];
 
   programs.firefox = {
-    enable = true;
+    enable = false;
+    # enable = true;
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
   };
 
   home.packages = with pkgs; [
   zen
-  chromium
+  # chromium
   ];
 }

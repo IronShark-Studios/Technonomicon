@@ -2,7 +2,6 @@ Leech Block Rules
 
 - Work Day
 0000-0600,0800-2400
-reddit.com/hot/
 news.google.com/home
 
 - Permenate
@@ -12,6 +11,7 @@ reddit.com/new/
 reddit.com/rising/
 reddit.com/controversial/
 reddit.com/top/
+reddit.com/hot/
 
 
 Ublock Rules
