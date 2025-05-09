@@ -5,6 +5,7 @@
     slack
     discord
     thunderbird
+    hugo
     ];
   };
 }
