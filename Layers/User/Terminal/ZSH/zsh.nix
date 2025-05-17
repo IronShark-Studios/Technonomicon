@@ -36,7 +36,7 @@
       NIXOS_GENERATION = "$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | tail -n 1 | sed 's/(current)//')";
     };
 
-    initExtra = ''
+    initContent = ''
       TIMER_FORMAT='[Execution Time: %d]'; TIMER_THRESHOLD=3
 
       printf '\n%.0s' {1..100}
