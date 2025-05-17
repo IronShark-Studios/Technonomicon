@@ -23,6 +23,6 @@
     eza
     entr
     progress
-    qcopy
+    copyq
   ];
 }
