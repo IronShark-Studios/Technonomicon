@@ -31,7 +31,7 @@
         fcitx-gtk
 	fcitx-chinese-addons
 	fcitx-hangul
-	fcitx-nord
+	fcitx-configtool
       ];
     };
   };
