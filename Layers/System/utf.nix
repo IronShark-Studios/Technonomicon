@@ -21,18 +21,17 @@
     ];
 
     inputMethod = {
-#    enabled = "ibus";
-#    type = "ibus";
-#    ibus = {
-#      engines = with pkgs.ibus-engines; [ libpinyin hangul ];
-#      };
-    enable = "fcitx5";
-      fcitx5.addons = with pkgs; [
+    type = "fcitx5";
+    enable = "true";
+    fcitx5 = {
+      waylandFrontend = true;
+      addons = with pkgs; [
         fcitx-gtk
-	fcitx-chinese-addons
-	fcitx-hangul
-	fcitx-configtool
-      ];
+        fcitx-chinese-addons
+        fcitx-hangul
+        fcitx-configtool
+        ];
+      };
     };
   };
 }
