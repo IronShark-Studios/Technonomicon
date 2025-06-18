@@ -30,7 +30,7 @@
         fcitx5-chinese-addons
         fcitx5-hangul
         fcitx5-configtool
-	fcitx5-Black-Simplicity
+	fcitx5-nord
         ];
       };
     };
