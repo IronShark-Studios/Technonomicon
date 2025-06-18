@@ -14,5 +14,12 @@
       LC_TELEPHONE = "en_US.UTF-8";
       LC_TIME = "en_US.UTF-8";
     };
+    consoleUseXkbConfig = true;
+    inputMethod = {
+      enabled = "ibus";
+      ibus = {
+        engines = [ pkgs.ibus-engines.hangul ];
+      };
+    };
   };
 }
