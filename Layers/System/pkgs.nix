@@ -11,6 +11,7 @@
   };
 
   fonts.packages = with pkgs; [
+    noto-fonts
     nerd-fonts.symbols-only
     iosevka
     iosevka-comfy.comfy-wide-motion
