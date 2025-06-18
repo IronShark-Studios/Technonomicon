@@ -26,10 +26,10 @@
     fcitx5 = {
       waylandFrontend = true;
       addons = with pkgs; [
-        fcitx-gtk
-        fcitx-chinese-addons
-        fcitx-hangul
-        fcitx-configtool
+        fcitx5-gtk
+        fcitx5-chinese-addons
+        fcitx5-hangul
+        fcitx5-configtool
         ];
       };
     };
