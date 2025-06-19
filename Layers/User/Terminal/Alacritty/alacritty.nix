@@ -24,6 +24,6 @@
     entr
     progress
     copyq
-    qalculate
+    qalculate-gtk
   ];
 }
