@@ -24,5 +24,6 @@
     entr
     progress
     copyq
+    qalculate
   ];
 }
