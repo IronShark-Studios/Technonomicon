@@ -76,11 +76,6 @@
     users = {
       xin = import ./xin-home.nix;
     };
-  home.file."fcitx5-config" = {
-    source = ./fcitx5-config;
-    target = .config/fxitx5/config;
-    enable = true;
-  };
   };
 
 }
