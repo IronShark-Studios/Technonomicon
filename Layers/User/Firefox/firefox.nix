@@ -12,7 +12,7 @@ in {
   ];
 
   programs.firefox = {
-    enable = false;
+    enable = true;
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
   };
 
