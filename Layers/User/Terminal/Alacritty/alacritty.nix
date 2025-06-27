@@ -15,7 +15,7 @@
     gparted
     pciutils
     fastfetch
-    udiskie
+#    udiskie
     trash-cli
     ripgrep
     ripgrep-all
