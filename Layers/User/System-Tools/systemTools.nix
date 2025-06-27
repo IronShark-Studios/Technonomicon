@@ -11,6 +11,14 @@
       source = ./fcitx5-config;
       target = ".config/fcitx5/config";
     };
+    "gromit-mpx-config" = {
+      source = ./gromit-mpx.cfg;
+      target = ".config/gromit-mpx.cfg";
+    };
+    "gromit-mpx-ini" = {
+      source = ./gromit-mpx.ini;
+      target = ".config/gromit-mpx.ini";
+    };
   };
 
 }
