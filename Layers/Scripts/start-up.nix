@@ -11,7 +11,7 @@ obsidian &
 
 anki &
 
-discord &
+#discord &
 
 thunderbird &
     '';
