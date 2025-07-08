@@ -6,6 +6,7 @@
 
   home.sessionPath = [
   "$HOME/.emacs.d/bin"
+  "$HOME/.nix-profile/bin/sabaki"
   ];
 
   home.packages = with pkgs; [
