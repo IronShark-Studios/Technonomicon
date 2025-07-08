@@ -37,6 +37,9 @@
     };
 
     initContent = ''
+      
+      export PATH=$PATH:/home/xin/.nix-profile/bin/sabaki
+
       TIMER_FORMAT='[Execution Time: %d]'; TIMER_THRESHOLD=3
 
       printf '\n%.0s' {1..100}
