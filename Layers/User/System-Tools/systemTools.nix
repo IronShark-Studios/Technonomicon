@@ -14,10 +14,12 @@
     "gromit-mpx-config" = {
       source = ./gromit-mpx.cfg;
       target = ".config/gromit-mpx.cfg";
+      force = true;
     };
     "gromit-mpx-ini" = {
       source = ./gromit-mpx.ini;
       target = ".config/gromit-mpx.ini";
+      force = true;
     };
   };
 
