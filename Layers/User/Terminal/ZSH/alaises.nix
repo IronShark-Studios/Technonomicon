@@ -34,6 +34,6 @@
     ns = "alacritty --working-directory ./ &";
     sgf-archive = "bash /etc/scripts/sgf-archive.sh";
     sgf-inc = "bash /etc/scripts/sgf-increment.sh";
-    sanatize-chilly "bash ~tn/Layers/Scripts/sgf-sanatize.sh";
+    sanatize-chilly = "bash ~tn/Layers/Scripts/sgf-sanatize.sh";
   };
 }
