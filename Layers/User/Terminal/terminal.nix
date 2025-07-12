@@ -14,18 +14,4 @@
     ./VIM/vim.nix
     ./GIT/git.nix
   ];
-
-  home.file."sabaki-rofi" = {
-    target = ".local/share/applications/sabaki.desktop";
-    text = ''
-     #!/usr/bin/env xdg-open
-     [Desktop Entry]
-     Version=1.0
-     Terminal=false
-     Type=Application
-     Name=Sabaki
-     Exec=/home/xin/.nix-profile/bin/sabaki
-    '';
-
-  };
 }

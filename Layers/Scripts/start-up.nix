@@ -14,6 +14,8 @@ anki &
 discord &
 
 thunderbird &
+
+firefox &
     '';
   };
 }
