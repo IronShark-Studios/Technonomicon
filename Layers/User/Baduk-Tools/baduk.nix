@@ -15,6 +15,7 @@ in {
      katagoCPU
      fox
      pipx
+     libepoxy # needed for fox server
     ];
 
 
