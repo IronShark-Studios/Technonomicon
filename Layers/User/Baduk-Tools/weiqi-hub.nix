@@ -1,7 +1,7 @@
 { pkgs, fetchurl }:
 
 let
-  pname = "WeiqiHub";
+  pname = "fox";
   version = "0.51.0";
 
   src =./WeiqiHub-0.1.8-x86_64.AppImage;
