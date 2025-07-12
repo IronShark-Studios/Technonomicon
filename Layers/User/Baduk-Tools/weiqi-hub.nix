@@ -4,7 +4,7 @@ let
   pname = "WeiqiHub";
   version = "0.51.0";
 
-  src =./WeiqiHub-0.1.8-x64.AppImage;
+  src =./WeiqiHub-0.1.8-x86_64.AppImage;
 
 in
 
