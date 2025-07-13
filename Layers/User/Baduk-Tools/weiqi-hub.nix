@@ -9,7 +9,7 @@ let
 in
 
 pkgs.runCommand "Fox" {
-  buildInputs = with pkgs; [ appimage-run ];
+  # buildInputs = with pkgs; [ appimage-run ];
 } ''
   mkdir -p $out/bin
   cat <<-EOF > $out/bin/fox
