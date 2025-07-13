@@ -30,7 +30,7 @@ in {
           Terminal=false
           Type=Application
           Name=Sabaki
-          Exec=
+          Exec=/home/xin/.nix-profile/bin/sabaki
         '';
       };
       "fox-rofi" = {
@@ -42,7 +42,7 @@ in {
           Terminal=false
           Type=Application
           Name=Fox
-          Exec=
+          Exec=/home/xin/.nix-profile/bin/fox
         '';
       };
     };
