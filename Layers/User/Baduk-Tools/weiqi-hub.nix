@@ -10,11 +10,13 @@ in
 
 pkgs.runCommand "Fox" {
   # buildInputs = with pkgs; [ appimage-run ];
+  # ${pkgs.appimage-run}/bin/appimage-run ${src}
+
 } ''
   mkdir -p $out/bin
   cat <<-EOF > $out/bin/fox
   #!/bin/sh
-  ${pkgs.appimage-run}/bin/appimage-run ${src}
+  /run/current-system/sw/bin/appimage-run ${src}
   EOF
   chmod +x $out/bin/fox
 ''
