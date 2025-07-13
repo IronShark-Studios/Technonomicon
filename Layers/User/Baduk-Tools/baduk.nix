@@ -16,6 +16,7 @@ in {
      fox
      pipx
      libepoxy # needed for fox server
+     ente-auth # needed for fox server
     ];
 
 
