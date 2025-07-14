@@ -9,9 +9,6 @@ let
 in
 
 pkgs.runCommand "Fox" {
-  # buildInputs = with pkgs; [ appimage-run ];
-  # ${pkgs.appimage-run}/bin/appimage-run ${src}
-
 } ''
   mkdir -p $out/bin
   cat <<-EOF > $out/bin/fox
