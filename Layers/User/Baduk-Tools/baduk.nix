@@ -15,9 +15,8 @@ in {
      katagoCPU
      fox
      pipx
-     libepoxy # needed for fox server
-     ente-auth # needed for fox server
      lutris
+     geckodriver #used for lutris-fox
     ];
 
 
