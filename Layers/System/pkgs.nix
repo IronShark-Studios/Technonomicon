@@ -7,6 +7,7 @@
       alsa-utils
       zsh-command-time
       wl-clipboard
+      killall
     ];
   };
 
@@ -28,5 +29,18 @@
 
   programs.ydotool = {
     enable = true;
+  };
+
+  programs.appimage = {
+  enable = true;
+  binfmt = true;
+  package = pkgs.appimage-run.override {
+    extraPkgs = pkgs:
+      with pkgs; [
+        libepoxy
+        brotli
+        xdg-user-dirs
+      ];
+    };
   };
 }
