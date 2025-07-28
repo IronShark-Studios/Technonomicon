@@ -7,7 +7,6 @@
       alsa-utils
       zsh-command-time
       wl-clipboard
-      killall
     ];
   };
 
