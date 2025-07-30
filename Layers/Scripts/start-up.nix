@@ -12,6 +12,8 @@ obsidian &
 anki &
 
 thunderbird &
+
+discord &
     '';
   };
 }
