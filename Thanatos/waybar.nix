@@ -23,7 +23,7 @@
           "layer": "bottom",
           "position": "top",
           "height": 30,
-	  "mode": "hide",
+	  "mode": "dock",
 	  "start_hidden": false,
 
           "modules-left": ["hyprland/workspaces"],
