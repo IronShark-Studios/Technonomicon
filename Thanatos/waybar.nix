@@ -24,7 +24,7 @@
           "position": "top",
           "height": 30,
 	  "mode": "hide",
-	  "start_hidden": true,
+	  "start_hidden": false,
 
           "modules-left": ["hyprland/workspaces"],
           "modules-center": ["clock"],
