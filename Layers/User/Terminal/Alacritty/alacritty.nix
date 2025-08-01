@@ -25,5 +25,6 @@
     progress
     copyq
     qalculate-gtk
+    wally-cli
   ];
 }
