@@ -21,6 +21,7 @@
     ../Layers/Scripts/sgf-archive.nix
     ../Layers/Scripts/start-up.nix
     ../Layers/Scripts/sgf-increment.nix
+    ../Layers/Scripts/utilities.nix
   ];
 
   boot = {
