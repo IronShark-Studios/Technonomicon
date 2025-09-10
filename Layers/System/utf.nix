@@ -18,6 +18,7 @@
     "en_US.UTF-8/UTF-8" 
     "zh_CN.UTF-8/UTF-8" 
     "ko_KR.UTF-8/UTF-8" 
+    "ja_JP.UTF-8/UTF-8" 
     ];
 
     inputMethod = {
@@ -29,6 +30,7 @@
         fcitx5-gtk
         fcitx5-chinese-addons
         fcitx5-hangul
+        fcitx5-anthy
         fcitx5-configtool
 	fcitx5-nord
         ];
