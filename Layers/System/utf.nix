@@ -30,7 +30,7 @@
         fcitx5-gtk
         fcitx5-chinese-addons
         fcitx5-hangul
-        fcitx5-mozc
+        fcitx5-mozc-ut
         fcitx5-configtool
 	fcitx5-nord
         ];
