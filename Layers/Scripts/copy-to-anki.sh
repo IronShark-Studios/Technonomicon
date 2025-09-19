@@ -1,7 +1,7 @@
 #! /bin/sh
 
 
-# This script copies files from its current directory into the anki windo to the right of it. SGF feild must have been pre-selected before running
+# This script copies a files contents from its current directory into the anki windo to the right of it. SGF feild must have been pre-selected before running
 
 target_file=$(eza --oneline | head --lines 1)
 

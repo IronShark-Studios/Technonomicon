@@ -13,7 +13,7 @@ anki &
 
 thunderbird &
 
-# discord &
+discord &
     '';
   };
 }
