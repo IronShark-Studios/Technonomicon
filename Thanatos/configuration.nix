@@ -13,15 +13,7 @@
     ../Layers/System/utf.nix
     ../Layers/System/virtualization.nix
     ../Layers/System/display.nix
-    ../Layers/Scripts/rebuild.nix
-    ../Layers/Scripts/test.nix
-    ../Layers/Scripts/upgrade.nix
-    ../Layers/Scripts/update-archives.nix
-    ../Layers/Scripts/sabaki-2-anki.nix
-    ../Layers/Scripts/sgf-archive.nix
-    ../Layers/Scripts/start-up.nix
-    ../Layers/Scripts/sgf-increment.nix
-    ../Layers/Scripts/utilities.nix
+    ../Layers/Scripts/Active/system-scripts.nix
   ];
 
   boot = {
