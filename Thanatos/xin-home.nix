@@ -9,7 +9,6 @@
   imports = [
     ./hyprland.nix
     ./waybar.nix
-    ../Layers/User/Emacs/emacs.nix
     ../Layers/User/xdg.nix
     ../Layers/User/Terminal/terminal.nix
     ../Layers/User/Firefox/firefox.nix
