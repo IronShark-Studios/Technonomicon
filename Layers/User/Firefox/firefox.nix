@@ -1,9 +1,4 @@
-{ inputs, outputs, lib, config, pkgs, ... }: 
-
-let
-  zen = pkgs.callPackage (import ./Zen/zen.nix) {};
-
-in {
+{ inputs, outputs, lib, config, pkgs, ... }: {
 
   imports = [
     ./tridactyl.nix
@@ -17,7 +12,6 @@ in {
   };
 
   home.packages = with pkgs; [
-  zen
   # chromium
   ];
 }
