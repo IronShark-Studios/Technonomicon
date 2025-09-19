@@ -24,14 +24,6 @@
 
   nixosConfigurations = {
 
-    Hades = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs outputs; };
-      modules = [
-        home-manager.nixosModules.home-manager
-        ./Hades/configuration.nix
-      ];
-    };
-
     Thanatos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs outputs; };
       modules = [
