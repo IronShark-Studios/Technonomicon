@@ -6,7 +6,6 @@
       outputs.overlays.modifications
       outputs.overlays.static-nxpkgs
       outputs.overlays.static-hmpkgs
-      inputs.emacs-community.overlay
     ];
 
     config = {

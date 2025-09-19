@@ -23,16 +23,6 @@ echo "after confirming login"
 read -r ConfirmationInput
 echo
 
-echo "Configuring Doom Emacs"
-rm -rf ~/.emacs.d
-mkdir ~/.emacs.d
-mkdir ~/.config/doom
-cd ~/.emacs.d
-git clone https://github.com/hlissner/doom-emacs ~/.emacs.d	
-~/.emacs.d/bin/doom install
-emacs --batch -f nerd-icons-install-fonts
-echo
-
 cd ~
 
 echo "Remember to update Tn.Key and hardware file, then rebuild system and reboot"
