@@ -3,7 +3,7 @@
 # Creates mirrored postions of the input file.
 
 input_directory=$(pwd)
-input_file=$(ls -1 | head -n 1)
+input_file=$(eza --oneline | head -n 1)
 input_file_stripped=${input_file%.sgf}
 target_directory="$input_directory/Target/"
 out_put_1="$target_directory$input_file_stripped-1.sgf"
@@ -36,9 +36,9 @@ if [[ "$input_file" == *.sgf ]]; then
 
     # Pastes input file from clipboard
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
 
     # Saves starting state as out_put_1 in target directory
@@ -47,9 +47,9 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
     # Rotates board and saves as out_put_2
     wl-copy -t TEXT $out_put_2
@@ -59,9 +59,9 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
     # Rotates board and saves as out_put_3
     wl-copy -t TEXT $out_put_3
@@ -71,9 +71,9 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
     # Rotates board and saves as out_put_4
     wl-copy -t TEXT $out_put_4
@@ -83,9 +83,9 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
     # Rotates and flips board and saves as out_put_5
     wl-copy -t TEXT $out_put_5
@@ -97,9 +97,9 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
     # Rotates board and saves as out_put_6
     wl-copy -t TEXT $out_put_6
@@ -109,9 +109,9 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
     # Rotates board and saves as out_put_7
     wl-copy -t TEXT $out_put_7
@@ -121,9 +121,9 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 0.5
 
     # Rotates board and saves as out_put_8
     wl-copy -t TEXT $out_put_8
@@ -133,20 +133,23 @@ if [[ "$input_file" == *.sgf ]]; then
     ydotool key 29:1 42:1 31:1 31:0 42:0 29:0
     sleep 0.5
     ydotool key 29:1 47:1 47:0 29:0	
-    sleep 0.5
+    sleep 1
     ydotool key 28:1 28:0
-    sleep 2
+    sleep 1
 
-    # Returns focus to terminal and deletes target file, 
+    # Returns focus to terminal and moves input file, 
     # then repeats script until there are no 
     # remaining input files.
     ydotool key 125:1 105:1 105:0 125:0
     sleep 0.5
-    rm $input_file
+    mkdir -p ./Completed
+    sleep 0.5
+    mv $input_file ./Completed
     sleep 0.5
     echo " "
     echo " "
     echo " "
+    sleep 0.5
     bash copier.sh
     
 else
