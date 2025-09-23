@@ -12,6 +12,7 @@ in {
 
   home.packages = with pkgs; [
      sabaki
+     sgfutils
      katagoCPU
      fox
      pipx
@@ -30,8 +31,13 @@ in {
           Terminal=false
           Type=Application
           Name=Sabaki
+	  Icon=.local/share/applications/sabaki.png
           Exec=/home/xin/.nix-profile/bin/sabaki
         '';
+      };
+      "sabaki-icon" = {
+        target = ".local/share/applications/sabaki.png";
+	source = ./sabaki.png;
       };
       "fox-rofi" = {
         target = ".local/share/applications/fox.desktop";
