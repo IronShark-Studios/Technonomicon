@@ -26,5 +26,6 @@
     copyq
     qalculate-gtk
     wally-cli
+    espeak
   ];
 }
