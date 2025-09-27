@@ -4,7 +4,7 @@
 
 file_name="$(date +"%H%M%S").sgf"
 target_directory="/home/xin/Projects/Tsumego-Books"
-target_file="$target_directory$file_name"
+target_file="$target_directory/$file_name"
 
 
 
