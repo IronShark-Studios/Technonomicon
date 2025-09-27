@@ -3,7 +3,7 @@
 # Saves the current sabaki file to a specific dir in projects.
 
 file_name="$(date +"%H%M%S").sgf"
-target_directory="/home/xin/Projects/Life-Death-Viz/Extended/"
+target_directory="/home/xin/Projects/Tsumego-Books"
 target_file="$target_directory$file_name"
 
 
