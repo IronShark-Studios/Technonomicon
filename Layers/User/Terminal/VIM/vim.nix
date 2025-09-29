@@ -25,7 +25,12 @@
  #   '';
 
     plugins = with pkgs.vimPlugins; [
-    nvim-treesitter.withAllGrammars
+    # nvim-treesitter.withAllGrammars
     ];
+  };
+
+  home.file."LazyVim" = {
+    source = ./LazyVim;
+    target = ".config/nvim";
   };
 }
