@@ -27,5 +27,6 @@
     qalculate-gtk
     wally-cli
     espeak
+    lazygit
   ];
 }

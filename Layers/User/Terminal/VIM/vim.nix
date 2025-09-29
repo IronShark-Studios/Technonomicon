@@ -20,9 +20,9 @@ autocmd InsertEnter * :silent if fcitx5state == 2 | call system("fcitx5-remote -
 
     '';
 
-    extraLuaConfig =''
-    vim.g.mapleader = " "
-    '';
+ #   extraLuaConfig =''
+ #   vim.g.mapleader = " "
+ #   '';
 
     plugins = with pkgs.vimPlugins; [
     nvim-treesitter.withAllGrammars
