@@ -8,7 +8,7 @@
 
   home.file = {
     "fcitx5-config" = {
-      source = ./fcitx5-config;
+      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/System-Tools/fcitx5-config";
       target = ".config/fcitx5/config";
     };
     "gromit-mpx-config" = {

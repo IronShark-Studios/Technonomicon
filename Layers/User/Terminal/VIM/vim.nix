@@ -25,12 +25,19 @@
  #   '';
 
     plugins = with pkgs.vimPlugins; [
-    # nvim-treesitter.withAllGrammars
+    nvim-treesitter.withAllGrammars
     ];
   };
 
   home.file."LazyVim" = {
-    source = ./LazyVim;
+    source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/LazyVim";
     target = ".config/nvim";
+    recursive = true;
   };
+
+
+
+
+
+
 }
