@@ -11,12 +11,16 @@
     vimAlias = true;
     vimdiffAlias = true;
 
-    extraWrapperArgs = [
-        "--prefix"
-        "PATH"
-        ":"
-        "${lib.makeBinPath [ pkgs.gcc ]}"
-      ];
+    extraWrapperArgs = let
+      nvim-treesitter-parsers = let
+        nvim-treesitter = pkgs.vimPlugins.nvim-treesitter;
+        in
+          builtins.map (grammar: nvim-treesitter.grammarToPlugin grammar) nvim-treesitter.allGrammars;
+          in [
+            "--set"
+            "NVIM_TREESITTER_PARSERS"
+            (lib.concatStringsSep "," nvim-treesitter-parsers)
+    ];
 
 #    extraConfig =''
 #    set clipboard=unnamedplus
@@ -32,7 +36,7 @@
  #   '';
 
     plugins = with pkgs.vimPlugins; [
-    nvim-treesitter.withAllGrammars
+      nvim-treesitter.withAllGrammars
     # nvim-treesitter.withPlugins
     ];
   };
