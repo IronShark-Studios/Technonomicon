@@ -28,5 +28,6 @@
     wally-cli
     espeak
     lazygit
+    gcc
   ];
 }

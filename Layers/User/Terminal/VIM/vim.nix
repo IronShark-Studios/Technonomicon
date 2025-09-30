@@ -11,6 +11,13 @@
     vimAlias = true;
     vimdiffAlias = true;
 
+    extraWrapperArgs = [
+        "--prefix"
+        "PATH"
+        ":"
+        "${lib.makeBinPath [ pkgs.gcc ]}"
+      ];
+
 #    extraConfig =''
 #    set clipboard=unnamedplus
 #
@@ -26,6 +33,7 @@
 
     plugins = with pkgs.vimPlugins; [
     nvim-treesitter.withAllGrammars
+    # nvim-treesitter.withPlugins
     ];
   };
 
