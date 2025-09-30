@@ -36,5 +36,11 @@
     };
   };
 
+  
+	  options = {
+	    mine.home.nixvim.enable =
+	      lib.mkEnableOption "enable nixvim in home-manager";
+	  };
+
   systemd.user.startServices = "sd-switch";
 }
