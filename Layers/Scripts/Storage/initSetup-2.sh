@@ -25,4 +25,10 @@ echo
 
 cd ~
 
+echo "configuring npm global settings"
+mkdir -p ~/.npm-packages
+npm config set prefix '~/.npm-packages'
+echo "installing npm tree-sitter-cli globally"
+npm install -g tree-sitter-cli
+
 echo "Remember to update Tn.Key and hardware file, then rebuild system and reboot"
