@@ -5,6 +5,7 @@
   };
 
   home.sessionPath = [
+  ".npm_packages"
   ];
 
   home.packages = with pkgs; [
