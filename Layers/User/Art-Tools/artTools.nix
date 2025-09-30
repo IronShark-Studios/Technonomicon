@@ -15,6 +15,7 @@ in {
     ./Krita/krita.nix
     ./Blender/blender.nix
     ./Gimp/gimp.nix
+    ./Programming/programming.nix
   ];
 
   home.packages = with pkgs; [
