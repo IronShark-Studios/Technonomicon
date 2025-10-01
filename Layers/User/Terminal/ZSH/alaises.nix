@@ -3,14 +3,8 @@
   programs.zsh.shellAliases = {
     ca = "clear && printf '\n%.0s' {1..100}";
     lf = "bash ~/.config/lf/lfimg/lfrun";
-    find = "fd -i";
-    find-m = "fd-menu";
-    findx = "fd --regex";
-    findx-m = "fdx-menu";
-    grep = "rg -i";
-    grep-m = "rg-menu";
-    grepx = "rg --regex";
-    grepx-m = "rgx-menu";
+    find = "fd -g -i";
+    grep = "grep -r";
     cp = "cp -r";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
     lld = "eza --icons --oneline --group-directories-first --color auto --tree";
@@ -28,10 +22,7 @@
     upgrade = "bash /etc/scripts/upgrade.sh";
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old";
-    devEnv = "nix develop -c zsh";
     ns = "alacritty --working-directory ./ &";
-    sgf-archive = "bash /etc/scripts/sgf-archive.sh";
-    sgf-inc = "bash /etc/scripts/sgf-increment.sh";
-    sanatize-chilly = "bash ~tn/Layers/Scripts/sgf-sanatize.sh";
+    devEnv = "nix develop -c zsh";
   };
 }
