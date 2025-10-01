@@ -29,5 +29,6 @@
     espeak
     lazygit
     gcc
+    zip
   ];
 }
