@@ -69,6 +69,7 @@ programs.neovim = {
           telescope-nvim
           todo-comments-nvim
           tokyonight-nvim
+          github-nvim-theme
           trouble-nvim
           vim-illuminate
           vim-startuptime
