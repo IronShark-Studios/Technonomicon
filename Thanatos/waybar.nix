@@ -71,7 +71,7 @@
               "format-muted": "Muted  ",
               "format-icons": {
                   "phone": ["  ", "  ", "  ", "  "],
-                  "default": [" ", " ", " ", " "]
+                  "default": [" ", " ", "  ", "  "]
               },
               "scroll-step": 1,
               "tooltip": false
