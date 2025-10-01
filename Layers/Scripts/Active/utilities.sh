@@ -2,10 +2,10 @@
 
 # Saves the current sabaki file to a specific dir in projects.
 
-file_name="$(date +"%H%M%S").sgf"
 target_directory="/home/xin/Projects/Tsumego-Books"
+file_name="$(echo $(( $(eza --oneline -f $target_directory | tail --lines 1 | sed 's/\..*//') + 1 )) | sed 's/$/.sgf/'
+)"
 target_file="$target_directory/$file_name"
-
 
 
 
