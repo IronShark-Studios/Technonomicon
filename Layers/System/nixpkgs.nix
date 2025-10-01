@@ -21,5 +21,9 @@
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
     };
+    extraOptions = ''
+    keep-outputs = true
+    keep-derivations = true
+    '';
   };
 }
