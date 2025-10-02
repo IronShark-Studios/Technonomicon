@@ -2,7 +2,7 @@
 
   programs.zsh.shellAliases = {
     ca = "clear && printf '\n%.0s' {1..100}";
-    lf = "bash ~/.config/lf/lfimg/lfrun";
+    lf = "ranger";
     find = "fd -g -i";
     grep = "grep -r";
     cp = "cp -r";

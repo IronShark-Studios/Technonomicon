@@ -42,5 +42,6 @@
     lazygit
     gcc
     zip
+    ranger
   ];
 }
