@@ -6,9 +6,16 @@
     };
   };
 
-  home.file."alacritty.toml" = {
-    target = ".config/alacritty/alacritty.toml";
-    source = ./alacritty.toml;
+  home.file = {
+    "alacritty.toml" = {
+      target = ".config/alacritty/alacritty.toml";
+      source = ./alacritty.toml;
+    };
+
+    "theme.toml" = {
+      target = ".config/alacritty/theme.toml";
+      source = ./theme.toml;
+    };
   };
 
   home.packages = with pkgs; [

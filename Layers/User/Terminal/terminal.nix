@@ -2,7 +2,6 @@
 
   imports = [
     ./Alacritty/alacritty.nix
-    ./Alacritty/alacrittyConfig.nix
     ./Starship/starship.nix
     ./ZSH/alaises.nix
     ./ZSH/oh-my-zsh.nix

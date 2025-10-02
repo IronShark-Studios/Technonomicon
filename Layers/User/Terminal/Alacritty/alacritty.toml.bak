@@ -8,13 +8,9 @@ style = "Beam"
 background = "#5ec4ff"
 text = "#f8f8f2"
 
-[env]
-TERM = "xterm-256color"
-
-[general]
-import = [
-  "~/.config/alacritty/theme.toml"
-]
+[colors.primary]
+background = "#20282f"
+foreground = "#C5C8C6"
 
 [[keyboard.bindings]]
 action = "ToggleViMode"
