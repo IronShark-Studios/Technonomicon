@@ -144,33 +144,16 @@ programs.neovim = {
   # Normal LazyVim config here, see https://github.com/LazyVim/starter/tree/main/lua
   xdg.configFile."nvim/lua".source = ./lua;
 
+home.file = { 
+  "lazy-lock.json" = {
+    source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/lazy-lock.json";
+    target = ".config/nvim/lazy-lock.json";
+  };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  "lazyvim.json" = {
+    source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/lazyvim.json";
+    target = ".config/nvim/lazyvim.json";
+  };
+};
 
 }
