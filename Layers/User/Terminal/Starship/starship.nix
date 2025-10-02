@@ -50,8 +50,8 @@
           deleted = "[  ](fg:#539bf5 bg:#2c3e56)"
           untracked = "[ ? ](fg:#539bf5 bg:#2c3e56)"
           stashed = "[  ](fg:#539bf5 bg:#2c3e56)"
-          ahead = "[  ](fg:#539bf5 bg:#2c3e56)"
-          behind = "[  ](fg:#539bf5 bg:#2c3e56)"
+          ahead = "[   ](fg:#539bf5 bg:#2c3e56)"
+          behind = "[   ](fg:#539bf5 bg:#2c3e56)"
 
    '';
   };
