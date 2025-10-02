@@ -6,6 +6,11 @@
     };
   };
 
+  home.file."alacritty.toml" = {
+    target = ".config/alacritty/alacritty.toml";
+    source = ./alacritty.toml;
+  };
+
   home.packages = with pkgs; [
     htop-vim
     nmon
