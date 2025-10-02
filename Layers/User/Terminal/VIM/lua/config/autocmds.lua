@@ -6,3 +6,19 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+
+vim.api.nvim_create_user_command("Ns", function()
+	local shell_cmd =
+		'! export current_dir=$(pwd) && hyprctl dispatch exec "alacritty --working-directory $current_dir"'
+	vim.cmd(shell_cmd)
+end, {
+	desc = "Open a new Alacritty terminal in the current directory",
+})
+
+vim.api.nvim_create_user_command("Nf", function()
+	local shell_cmd =
+		'! export current_dir=$(pwd) && hyprctl dispatch exec "alacritty --working-directory $current_dir -e ranger"'
+	vim.cmd(shell_cmd)
+end, {
+	desc = "Open a new Ranger terminal in the current directory",
+})
