@@ -22,7 +22,7 @@
     upgrade = "bash /etc/scripts/upgrade.sh";
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old";
-    ns = "alacritty --working-directory ./ &";
     devEnv = "nix develop -c zsh";
+    ns = "alacritty --working-directory $PWD &";
   };
 }
