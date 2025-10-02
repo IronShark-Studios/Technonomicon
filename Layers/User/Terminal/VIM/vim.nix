@@ -75,6 +75,9 @@ programs.neovim = {
           vim-startuptime
           which-key-nvim
           obsidian-nvim
+          harpoon2
+          rainbow-delimiters-nvim
+          { name = "harpoon"; path = harpoon2; }
           { name = "LuaSnip"; path = luasnip; }
           { name = "catppuccin"; path = catppuccin-nvim; }
           { name = "mini.ai"; path = mini-nvim; }
