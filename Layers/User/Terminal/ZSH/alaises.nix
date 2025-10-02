@@ -23,6 +23,6 @@
     test = "bash /etc/scripts/test.sh";
     clean = "sudo nix-collect-garbage --delete-old";
     devEnv = "nix develop -c zsh";
-    ns = "alacritty --working-directory $PWD &";
+    ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
   };
 }
