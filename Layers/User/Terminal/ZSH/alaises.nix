@@ -24,5 +24,6 @@
     clean = "sudo nix-collect-garbage --delete-old";
     devEnv = "nix develop -c zsh";
     ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
+    nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
   };
 }
