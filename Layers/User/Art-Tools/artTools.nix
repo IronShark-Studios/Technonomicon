@@ -23,5 +23,6 @@ in {
     allusion
     yt-dlp
     ffmpeg
+    wl-color-picker
     ];
 }
