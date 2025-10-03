@@ -23,6 +23,10 @@
     fira-go
   ];
 
+  xdg.mime.defaultApplications = {
+    "application/pdf" = "firefox.desktop";
+  };
+
   programs.steam = {
     enable = true;
   };

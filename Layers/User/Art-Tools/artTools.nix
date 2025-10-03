@@ -29,7 +29,21 @@ in {
   home.file = {
     "wl-color-picker" = {
       target = ".local/share/applications/wl-color-picker.desktop";
+      text = ''
+        #!/usr/bin/env xdg-open
+        [Desktop Entry]
+        Version=1.0
+        Terminal=false
+        Type=Application
+        Name=Color Picker
+        Icon=.local/share/applications/color-picker.png
+        Exec=/home/xin/.nix-profile/bin/wl-color-picker
+      '';
+    };
 
+    "wl-color-picker-icon" = {
+      target = ".local/share/applications/color-picker.png";
+      source = ./color-picker.png;
     };
   };
 }
