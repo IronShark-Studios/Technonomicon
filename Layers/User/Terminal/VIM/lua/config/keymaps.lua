@@ -9,4 +9,8 @@ map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 map("n", "*", "*zzzv")
 map("n", "#", "#zzzv")
-map("x", "<leader>p", '"_dP', { desc = "Replace and Keep" })
+map("n", "<leader>p", '"_dP', { desc = "Replace and Keep" })
+
+map("n", "<leader>[", "o- [ ] ", { desc = "Insert Indented Check Box" })
+
+map("n", "<leader>]", "o- ", { desc = "Insert Indedented Bullet List" })

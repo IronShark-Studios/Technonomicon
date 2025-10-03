@@ -16,10 +16,4 @@ return {
 			},
 		},
 	},
-
-	daily_notes = {
-		folder = "Journal",
-		date_format = "%Y-%m-%d",
-		template = "Journal Template.md",
-	},
 }
