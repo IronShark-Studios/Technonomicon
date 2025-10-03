@@ -31,7 +31,7 @@ in {
           Terminal=false
           Type=Application
           Name=Sabaki
-	  Icon=.local/share/applications/sabaki.png
+	        Icon=.local/share/applications/sabaki.png
           Exec=/home/xin/.nix-profile/bin/sabaki
         '';
       };

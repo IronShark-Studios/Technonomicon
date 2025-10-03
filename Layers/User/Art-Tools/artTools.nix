@@ -25,4 +25,11 @@ in {
     ffmpeg
     wl-color-picker
     ];
+
+  home.file = {
+    "wl-color-picker" = {
+      target = ".local/share/applications/wl-color-picker.desktop";
+
+    };
+  };
 }
