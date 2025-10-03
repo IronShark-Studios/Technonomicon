@@ -5,7 +5,6 @@
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   xdg.portal.configPackages = [ pkgs.xdg-desktop-portal-gtk ];
 
-
   home.file."user-dirs.dirs" = {
     target = ".config/user-dirs.dirs";
     force = true;
