@@ -6,12 +6,19 @@
     ./userPolicies.nix
   ];
 
+  home.packages = with pkgs; [
+  ];
+
+  programs.qutebrowser = {
+    enable = true;
+  };
+
   programs.firefox = {
     enable = true;
     nativeMessagingHosts = [ pkgs.tridactyl-native ];
   };
 
-  home.packages = with pkgs; [
-  # chromium
-  ];
+  programs.chromium = {
+    enable = false;
+  };
 }

@@ -9,5 +9,7 @@
     zotero
     rclone
     zathura
+    libation
+    mpv
     ];
 }
