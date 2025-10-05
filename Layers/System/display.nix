@@ -4,6 +4,8 @@
     systemPackages = with pkgs; [
       sddm-chili-theme
       xorg.libxshmfence
+      hyprcursor
+      hyprlandPlugins.hypr-dynamic-cursors
     ];
   };
 
