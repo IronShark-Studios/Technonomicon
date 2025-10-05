@@ -36,5 +36,9 @@
     };
   };
 
+  wayland.windowManager.hyprland.plugins = [
+    pkgs.hyprlandPlugins.hypr-dynamic-cursors
+  ];
+
   systemd.user.startServices = "sd-switch";
 }
