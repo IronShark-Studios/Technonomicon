@@ -4,12 +4,9 @@ return {
 	version = "*",
 	lazy = false,
 
-	keys = {
-		{
-			"<leader>j",
-			"<Plug>(VM-Add-Cursor-At-Pos)",
-			mode = { "n", "v" },
-			desc = "Multi-Cursor: Add Cursor at Point",
-		},
-	},
+	init = function()
+		vim.g.VM_maps = {
+			["Add Cursor At Pos"] = "ga",
+		}
+	end,
 }
