@@ -28,7 +28,7 @@ window {
     location:       north;
     y-offset:       calc(5%);
     width:          950;
-    border-radius:  24px;
+    border-radius:  9px;
 
     background-color:   @bg0;
 }
@@ -42,7 +42,7 @@ inputbar {
     border-color:       @bg3;
 
     border:         2px;
-    border-radius:  16px;
+    border-radius:  9px;
 
     padding:    8px 16px;
     spacing:    8px;
@@ -54,13 +54,13 @@ prompt {
 }
 
 entry {
-    placeholder:        "Search";
+    placeholder:        "Select Application";
     placeholder-color:  @fg3;
 }
 
 message {
     margin:             12px 0 0;
-    border-radius:      16px;
+    border-radius:      9px;
     border-color:       @bg2;
     background-color:   @bg2;
 }
@@ -73,7 +73,7 @@ listview {
     background-color:   transparent;
 
     margin:     12px 0 0;
-    lines:      8;
+    lines:      9;
     columns:    1;
 
     fixed-height: false;
@@ -82,7 +82,7 @@ listview {
 element {
     padding:        8px 16px;
     spacing:        8px;
-    border-radius:  16px;
+    border-radius:  9px;
 }
 
 element normal active {

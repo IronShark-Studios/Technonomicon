@@ -21,9 +21,9 @@
     rebuild = "bash /etc/scripts/rebuild.sh";
     upgrade = "bash /etc/scripts/upgrade.sh";
     test = "bash /etc/scripts/test.sh";
-    clean = "sudo nix-collect-garbage --delete-old";
+    clean = "rm ~/Grimoire/.trash/* && trash-empty -f && sudo nix-collect-garbage --delete-old";
     devEnv = "nix develop -c zsh";
-    ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
-    nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
+    Ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
+    Nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
   };
 }

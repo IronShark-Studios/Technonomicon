@@ -142,7 +142,7 @@ programs.neovim = {
     "${parsers}/parser";
 
   # Normal LazyVim config here, see https://github.com/LazyVim/starter/tree/main/lua
-  xdg.configFile."nvim/lua".source = ./lua;
+  xdg.configFile."nvim/lua".source = ./Lua;
 
 home.file = { 
   "lazy-lock.json" = {
@@ -153,12 +153,6 @@ home.file = {
   "lazyvim.json" = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/lazyvim.json";
     target = ".config/nvim/lazyvim.json";
-  };
-
-  "Local-Plugins" = {
-    source = "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/Local-Plugins/";
-    target = ".config/nvim/Local-Plugins";
-    recursive = true;
   };
 };
 
