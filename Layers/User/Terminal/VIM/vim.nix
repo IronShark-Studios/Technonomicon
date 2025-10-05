@@ -154,6 +154,12 @@ home.file = {
     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/lazyvim.json";
     target = ".config/nvim/lazyvim.json";
   };
+
+  "Local-Plugins" = {
+    source = "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/Local-Plugins/";
+    target = ".config/nvim/Local-Plugins";
+    recursive = true;
+  };
 };
 
 }
