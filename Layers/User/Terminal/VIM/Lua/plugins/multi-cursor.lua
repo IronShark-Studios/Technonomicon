@@ -5,6 +5,7 @@ return {
 	lazy = false,
 
 	config = function()
-		vim.cmd([[let n:VM_maps["Add Cursor At Pos"] = '<leader>j']])
+		-- Set the custom 'Add Cursor At Pos' mapping
+		vim.cmd([[let g:VM_leader = '<leader>j']])
 	end,
 }
