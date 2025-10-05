@@ -43,5 +43,6 @@
     gcc
     zip
     ranger
+    caligula
   ];
 }

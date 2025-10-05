@@ -6,6 +6,7 @@
     find = "fd -g -i";
     grep = "grep -r";
     cp = "cp -r";
+    dd = "caligula burn";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
     lld = "eza --icons --oneline --group-directories-first --color auto --tree";
     lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";

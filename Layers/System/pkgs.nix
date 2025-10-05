@@ -24,7 +24,7 @@
   ];
 
   xdg.mime.defaultApplications = {
-    "application/pdf" = "firefox.desktop";
+    "application/pdf" = "qutebrowser.desktop";
   };
 
   programs.steam = {
