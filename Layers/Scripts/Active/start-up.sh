@@ -1,11 +1,11 @@
 #! /bin/sh
 
-firefox &
+hyprctl dispatch exec [workspace 1 silent] obsidian
 
-obsidian &
+hyprctl dispatch exec [workspace 2 silent] firefox
 
-anki &
+hyprctl dispatch exec [workspace 3 silent] thunderbird
 
-thunderbird &
+hyprctl dispatch exec [workspace 8 silent] anki
 
-discord &
+hyprctl dispatch exec [workspace 9 silent] discord
