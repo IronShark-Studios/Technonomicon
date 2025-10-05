@@ -44,5 +44,6 @@
     zip
     ranger
     caligula
+    bartib
   ];
 }
