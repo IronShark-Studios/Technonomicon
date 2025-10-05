@@ -4,7 +4,12 @@ return {
 	version = "*",
 	lazy = false,
 
-	config = function()
-		vim.cmd([[let g:VM_leader = '|']])
-	end,
+	keys = {
+		{
+			"<leader>j",
+			"<Plug>(VM-Add-Cursor-At-Pos)",
+			mode = { "n", "v" },
+			desc = "Multi-Cursor: Add Cursor at Point",
+		},
+	},
 }
