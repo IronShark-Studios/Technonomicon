@@ -1,6 +1,7 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
   programs.zsh.shellAliases = {
+    cd = "z";
     ca = "clear && printf '\n%.0s' {1..100}";
     lf = "ranger";
     find = "fd -g -i";

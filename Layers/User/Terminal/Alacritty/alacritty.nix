@@ -16,6 +16,11 @@
       target = ".config/alacritty/theme.toml";
       source = ./theme.toml;
     };
+
+    "bartib-completion" = {
+      target = ".config/Bartib/bartib-completion";
+      source = ./bartib-completion;
+    };
   };
 
   home.packages = with pkgs; [
