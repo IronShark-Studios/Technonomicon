@@ -36,7 +36,7 @@
               "on-scroll-down": "hyprctl dispatch workspace e-1"
           },
           "clock": {
-              "format": "{:%H:%M %a %b %d}",
+              "format": "{:%a %b %d %H:%M}",
               "tooltip": false
           },
           "battery": {
@@ -71,7 +71,7 @@
               "format-muted": "Muted  ",
               "format-icons": {
                   "phone": ["  ", "  ", "  ", "  "],
-                  "default": [" ", " ", "  ", "  "]
+                  "default": [" ", " ", "  ", "  "]
               },
               "scroll-step": 1,
               "tooltip": false
@@ -90,7 +90,7 @@
             border:        none;
             border-radius: 0;
             font-family:   Iosveka;
-            font-size:     15px;
+            font-size:     18px;
             box-shadow:    none;
             text-shadow:   none;
             transition-duration: 0s;
@@ -98,7 +98,7 @@
 
         window {
             color:      rgba(217, 216, 216, 1);
-            background: rgba(35, 31, 32, 1);
+            background: rgba(17, 17, 17, 1);
         }
 
         window#waybar.solo {
