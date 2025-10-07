@@ -18,6 +18,7 @@
     ../Layers/User/Art-Tools/artTools.nix
     ../Layers/User/Knowledge-Tools/knowledge.nix
     ../Layers/User/Baduk-Tools/baduk.nix
+    ../Layers/Secrets/secrets.nix
   ];
 
   programs.home-manager.enable = true;

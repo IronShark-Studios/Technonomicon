@@ -1,17 +1,14 @@
 { inputs, outputs, lib, config, pkgs, ... }: {
 
   imports = [
-    ./tridactyl.nix
-    ./userChrome.nix
-    ./userPolicies.nix
+    ./firefox-tridactyl.nix
+    ./firefox-userChrome.nix
+    ./firefox-userPolicies.nix
   ];
 
   home.packages = with pkgs; [
   ];
 
-  programs.qutebrowser = {
-    enable = true;
-  };
 
   programs.firefox = {
     enable = true;
@@ -21,4 +18,14 @@
   programs.chromium = {
     enable = false;
   };
+
+  programs.qutebrowser = {
+    enable = true;
+    loadAutoconfig = true;
+    extraConfig =''
+      config.set("colors.webpage.darkmode.enabled", True)
+      config.set("colors.hints.bg.global", #539bf5)
+    '';
+  };
+
 }

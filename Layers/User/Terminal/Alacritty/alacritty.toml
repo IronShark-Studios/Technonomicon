@@ -4,6 +4,9 @@ size = 18.0
 [cursor]
 style = "Beam"
 
+[cursor.vi_mode_style]
+shape = "Block"
+
 [colors.cursor]
 background = "#5ec4ff"
 text = "#f8f8f2"
@@ -18,8 +21,8 @@ import = [
 
 [[keyboard.bindings]]
 action = "ToggleViMode"
-mods = "Shift"
-key = "Escape"
+mods = "Control"
+key = "Space"
 
 [[keyboard.bindings]]
 action = "ToggleViMode"
@@ -27,13 +30,18 @@ key = "A"
 mode = "Vi"
 
 [[keyboard.bindings]]
+action = "ToggleViMode"
+key = "I"
+mode = "Vi"
+
+[[keyboard.bindings]]
 action = "ScrollHalfPageDown"
-key = "N"
+key = "D"
 mode = "Vi"
 
 [[keyboard.bindings]]
 action = "ScrollHalfPageUp"
-key = "E"
+key = "U"
 mode = "Vi"
 
 [[keyboard.bindings]]
