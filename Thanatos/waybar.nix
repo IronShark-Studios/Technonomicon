@@ -98,7 +98,7 @@
 
         window {
             color:      rgba(217, 216, 216, 1);
-            background: rgba(17, 17, 17, 1);
+            background: rgba(15, 15, 15, 1);
         }
 
         window#waybar.solo {
