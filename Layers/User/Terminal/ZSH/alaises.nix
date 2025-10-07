@@ -2,11 +2,13 @@
 
   programs.zsh.shellAliases = {
     cd = "z";
+    cp = "~/.local/bin/advcp -r --progress-bar";
+    mv = "~/.local/bin/advmv --progress-bar";
+    ci = "vi";
     ca = "clear && printf '\n%.0s' {1..100}";
     lf = "ranger";
     find = "fd -g -i";
     grep = "grep -r";
-    cp = "cp -r";
     dd = "caligula burn";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
     lld = "eza --icons --oneline --group-directories-first --color auto --tree";

@@ -101,10 +101,18 @@
       }
 
           zle -N zle-line-init
-
-
-
-
     '';
-};
+  };
+
+  home.file = {
+    "advcp" = {
+      source = ./advcp;
+      target = ".local/bin/advcp";
+    };
+
+    "advmv" = {
+      source = ./advmv;
+      target = ".local/bin/advmv";
+    };
+  };
 }
