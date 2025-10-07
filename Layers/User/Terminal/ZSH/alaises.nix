@@ -29,5 +29,6 @@
     devEnv = "nix develop -c zsh";
     Ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
     Nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
+    qt = "qutebrowser";
   };
 }
