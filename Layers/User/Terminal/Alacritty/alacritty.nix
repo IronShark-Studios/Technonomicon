@@ -56,5 +56,6 @@
     jq
     dysk
     pastel
+    gnumake
   ];
 }
