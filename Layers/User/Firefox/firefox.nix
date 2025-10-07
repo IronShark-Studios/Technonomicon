@@ -31,6 +31,8 @@
       c.auto_save.session = True
       c.tabs.show = 'never'
       c.statusbar.show = 'never'
+      config.bind('m', 'cmd-set-text -s :spawn shiori add {url} -i "%"')
+      config.bind('P', ':open http://localhost:8080/#home')
       config.bind('b', 'cmd-set-text -sr :tab-focus')
       config.bind('B', 'cmd-set-text -s :quickmark-load')
       config.bind('t', 'cmd-set-text -s :open -t')
