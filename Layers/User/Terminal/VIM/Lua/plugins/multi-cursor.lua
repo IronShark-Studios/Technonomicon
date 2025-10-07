@@ -1,12 +1,17 @@
 return {
-	"mg979/vim-visual-multi",
-	enable = true,
-	version = "*",
-	lazy = false,
-
-	init = function()
-		vim.g.VM_maps = {
-			["Add Cursor At Pos"] = "ga",
-		}
-	end,
+	"smoka7/multicursors.nvim",
+	event = "VeryLazy",
+	dependencies = {
+		"nvimtools/hydra.nvim",
+	},
+	opts = {},
+	cmd = { "MCstart", "MCvisual", "MCclear", "MCpattern", "MCvisualPattern", "MCunderCursor" },
+	keys = {
+		{
+			mode = { "v", "n" },
+			"<Leader>m",
+			"<cmd>MCstart<cr>",
+			desc = "Create a selection for selected text or word under the cursor",
+		},
+	},
 }
