@@ -50,5 +50,11 @@
     ranger
     caligula
     bartib
+    gum
+    sc-im
+    gh
+    jq
+    dysk
+    pastel
   ];
 }
