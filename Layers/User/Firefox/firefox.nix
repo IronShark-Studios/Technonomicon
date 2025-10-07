@@ -9,6 +9,7 @@
   home.packages = with pkgs; [
     bitwarden-cli
     bitwarden-desktop
+    shiori
   ];
 
 
@@ -54,7 +55,12 @@
 
         curl -o "$QUTE_DOWNLOAD_DIR/$(date +%s)_$RANDOM.png" $QUTE_URL
       '';
+    };
 
+    "greasemonkey-scripts" = {
+      target = ".config/qutebrowser/greasemonkey";
+      source = ./greasemonkey-scripts;
+      recursive = true;
     };
   };
 
