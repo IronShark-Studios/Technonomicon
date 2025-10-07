@@ -59,11 +59,11 @@
       zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
       zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 
-      eval "$(zoxide init zsh)"
-      eval "$(fzf --zsh)"
-
       autoload -U compinit; compinit
       source ~/.zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
+
+      eval "$(zoxide init zsh)"
+      eval "$(fzf --zsh)"
 
       function chpwd() {
         emulate -L zsh
