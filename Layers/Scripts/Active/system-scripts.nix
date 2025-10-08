@@ -5,6 +5,7 @@
     text = ''
       #!/bin/sh
 
+      cd ~tn
       git add .
       git status
       echo "Change Log:"
@@ -14,6 +15,7 @@
       git push 
       echo
       echo System Generation $NIXOS_GENERATION Active.
+      cd -
     '';
   };
 
@@ -23,10 +25,12 @@
     text = ''
       #!/bin/sh
 
+      cd ~tn
       git add .
       sudo nixos-rebuild test --impure --flake .#$HOSTNAME &&
       echo
       echo System Generation $NIXOS_GENERATION Temporarily Active.
+      cd -
     '';
   };
 
@@ -36,6 +40,7 @@
     text = ''
       #!/bin/sh
 
+      cd ~tn
       git add .
       git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
       git push
@@ -44,6 +49,7 @@
       git add .
       git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
       git push
+      cd -
     '';
   };
 
