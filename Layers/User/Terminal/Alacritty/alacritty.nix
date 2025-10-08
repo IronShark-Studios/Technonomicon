@@ -54,6 +54,7 @@
     sc-im
     gh
     jq
+    yq
     dysk
     pastel
     gnumake

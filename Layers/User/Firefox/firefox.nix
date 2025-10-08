@@ -37,16 +37,17 @@
       config.bind('t', 'spawn ~/.config/qutebrowser/rofi-tab-page-menu.sh')
       config.bind('m', 'cmd-set-text -s :spawn shiori add {url} -i "%"')
       config.bind('P', ':open http://localhost:8080/#home')
-      config.bind('b', 'cmd-set-text -sr :tab-focus')
-      config.bind('B', 'cmd-set-text -s :quickmark-load')
+      config.bind('b', 'spawn ~/.config/qutebrowser/rofi-buffer-menu.sh')
+      config.bind('B', 'cmd-set-text -s :tab-focus')
       config.bind('I', 'hint images')
       config.bind(';i', 'hint images userscript ~/.config/qutebrowser/qute-image-download.sh')
       c.downloads.remove_finished = 3000
+      c.auto_save.interval = 1000
       c.downloads.location.directory = '~/Downloads/'
       c.downloads.location.suggestion = 'both'
       c.url.start_pages = ['https://en.wikipedia.org/wiki/Special:Random']
       c.url.default_page = 'https://en.wikipedia.org/wiki/Special:Random'
-      c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}','!d': 'https://duckduckgo.com/?q={}', '!g': 'https://google.com/search?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!nix-pkgs': 'https://search.nixos.org/packages?channel=unstable&query={}', '!nix-opts': 'https://search.nixos.org/options?channel=unstable&query={}', '!hm-opts': 'https://home-manager-options.extranix.com/?query={}&release=master'}
+      c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}','!d': 'https://duckduckgo.com/?q={}', '!g': 'https://google.com/search?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!np': 'https://search.nixos.org/packages?channel=unstable&query={}', '!no': 'https://search.nixos.org/options?channel=unstable&query={}', '!ho': 'https://home-manager-options.extranix.com/?query={}&release=master'}
 
     '';
   };
@@ -72,6 +73,12 @@
       target = ".config/qutebrowser/rofi-tab-page-menu.sh";
       executable = true;
       source = ./rofi-tab-page-menu.sh;
+    };
+
+    "qute-rofi-buffer-menu" = {
+      target = ".config/qutebrowser/rofi-buffer-menu.sh";
+      executable = true;
+      source = ./rofi-buffer-menu.sh;
     };
 
     "greasemonkey-scripts" = {
