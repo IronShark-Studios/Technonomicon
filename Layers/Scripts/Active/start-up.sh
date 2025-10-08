@@ -1,7 +1,6 @@
 #! /bin/sh
 
 hyprctl dispatch exec [workspace 1 silent] obsidian
-hyprctl dispatch exec [workspace 1 silent] bitwarden
 
 hyprctl dispatch exec [workspace 2 silent] firefox
 

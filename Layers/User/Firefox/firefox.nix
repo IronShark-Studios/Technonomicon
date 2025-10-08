@@ -10,6 +10,7 @@
     bitwarden-cli
     bitwarden-desktop
     shiori
+    sqlite
   ];
 
 
@@ -31,11 +32,13 @@
       c.auto_save.session = True
       c.tabs.show = 'never'
       c.statusbar.show = 'never'
+      config.bind('D', ':tab-only')
+      config.bind('o', 'spawn ~/.config/qutebrowser/rofi-page-menu.sh')
+      config.bind('t', 'spawn ~/.config/qutebrowser/rofi-tab-page-menu.sh')
       config.bind('m', 'cmd-set-text -s :spawn shiori add {url} -i "%"')
       config.bind('P', ':open http://localhost:8080/#home')
       config.bind('b', 'cmd-set-text -sr :tab-focus')
       config.bind('B', 'cmd-set-text -s :quickmark-load')
-      config.bind('t', 'cmd-set-text -s :open -t')
       config.bind('I', 'hint images')
       config.bind(';i', 'hint images userscript ~/.config/qutebrowser/qute-image-download.sh')
       c.downloads.remove_finished = 3000
@@ -43,7 +46,7 @@
       c.downloads.location.suggestion = 'both'
       c.url.start_pages = ['https://en.wikipedia.org/wiki/Special:Random']
       c.url.default_page = 'https://en.wikipedia.org/wiki/Special:Random'
-      c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', '!g': 'https://google.com/search?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!nix-pkgs': 'https://search.nixos.org/packages?channel=unstable&query={}', '!nix-opts': 'https://search.nixos.org/options?channel=unstable&query={}', '!hm-opts': 'https://home-manager-options.extranix.com/?query={}&release=master'}
+      c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}','!ddg': 'https://duckduckgo.com/?q={}' '!g': 'https://google.com/search?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!nix-pkgs': 'https://search.nixos.org/packages?channel=unstable&query={}', '!nix-opts': 'https://search.nixos.org/options?channel=unstable&query={}', '!hm-opts': 'https://home-manager-options.extranix.com/?query={}&release=master'}
 
     '';
   };
@@ -57,6 +60,18 @@
 
         curl -o "$QUTE_DOWNLOAD_DIR/$(date +%s)_$RANDOM.png" $QUTE_URL
       '';
+    };
+
+    "qute-rofi-page-menu" = {
+      target = ".config/qutebrowser/rofi-page-menu.sh";
+      executable = true;
+      source = ./rofi-page-menu.sh;
+    };
+
+    "qute-rofi-tab-page-menu" = {
+      target = ".config/qutebrowser/rofi-tab-page-menu.sh";
+      executable = true;
+      source = ./rofi-tab-page-menu.sh;
     };
 
     "greasemonkey-scripts" = {
