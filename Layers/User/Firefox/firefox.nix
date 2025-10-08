@@ -33,12 +33,11 @@
       c.tabs.show = 'never'
       c.statusbar.show = 'never'
       config.bind('D', ':tab-only')
-      config.bind('o', 'spawn ~/.config/qutebrowser/rofi-page-menu.sh')
-      config.bind('t', 'spawn ~/.config/qutebrowser/rofi-tab-page-menu.sh')
+      config.bind('o', 'cmd-set-text -s :open')
+      config.bind('t', 'cmd-set-text -s :open -t')
       config.bind('m', 'cmd-set-text -s :spawn shiori add {url} -i "%"')
-      config.bind('P', ':open http://localhost:8080/#home')
-      config.bind('b', 'spawn ~/.config/qutebrowser/rofi-buffer-menu.sh')
-      config.bind('B', 'cmd-set-text -s :tab-focus')
+      config.bind('b', 'cmd-set-text -sr :tab-focus')
+      config.bind('B', 'spawn shiori add {url} -i {title} -t "unsorted"')
       config.bind('I', 'hint images')
       config.bind(';i', 'hint images userscript ~/.config/qutebrowser/qute-image-download.sh')
       c.downloads.remove_finished = 3000
@@ -61,24 +60,6 @@
 
         curl -o "$QUTE_DOWNLOAD_DIR/$(date +%s)_$RANDOM.png" $QUTE_URL
       '';
-    };
-
-    "qute-rofi-page-menu" = {
-      target = ".config/qutebrowser/rofi-page-menu.sh";
-      executable = true;
-      source = ./rofi-page-menu.sh;
-    };
-
-    "qute-rofi-tab-page-menu" = {
-      target = ".config/qutebrowser/rofi-tab-page-menu.sh";
-      executable = true;
-      source = ./rofi-tab-page-menu.sh;
-    };
-
-    "qute-rofi-buffer-menu" = {
-      target = ".config/qutebrowser/rofi-buffer-menu.sh";
-      executable = true;
-      source = ./rofi-buffer-menu.sh;
     };
 
     "greasemonkey-scripts" = {
