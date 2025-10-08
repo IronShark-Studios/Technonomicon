@@ -46,7 +46,7 @@
       c.downloads.location.suggestion = 'both'
       c.url.start_pages = ['https://en.wikipedia.org/wiki/Special:Random']
       c.url.default_page = 'https://en.wikipedia.org/wiki/Special:Random'
-      c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}','!ddg': 'https://duckduckgo.com/?q={}' '!g': 'https://google.com/search?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!nix-pkgs': 'https://search.nixos.org/packages?channel=unstable&query={}', '!nix-opts': 'https://search.nixos.org/options?channel=unstable&query={}', '!hm-opts': 'https://home-manager-options.extranix.com/?query={}&release=master'}
+      c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}','!d': 'https://duckduckgo.com/?q={}', '!g': 'https://google.com/search?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!nix-pkgs': 'https://search.nixos.org/packages?channel=unstable&query={}', '!nix-opts': 'https://search.nixos.org/options?channel=unstable&query={}', '!hm-opts': 'https://home-manager-options.extranix.com/?query={}&release=master'}
 
     '';
   };
