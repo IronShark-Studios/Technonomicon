@@ -15,6 +15,7 @@
     lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";
     ll = "eza --icons --oneline --group-directories-first --color auto";
     ls = "eza --icons --oneline --group-directories-first --color auto --long";
+    ld = "eza --icons --oneline --only-dirs --color auto";
     rm = "sudo trash-put -v";
     rm-s = "sudo shred -f";
     trash-restore = "sudo trash-restore";

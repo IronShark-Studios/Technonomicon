@@ -24,9 +24,12 @@
   ];
 
   xdg.mime.defaultApplications = {
-    "application/pdf" = "qutebrowser.desktop";
-    "http" = "qutebrowser.desktop";
-    "https" = "qutebrowser.desktop";
+    "text/pdf" = "org.qutebrowser.qutebrowser.desktop";
+    "text/html" = "org.qutebrowser.qutebrowser.desktop";
+    "x-scheme-handler/http" = "org.qutebrowser.qutebrowser.desktop";
+    "x-scheme-handler/https" = "org.qutebrowser.qutebrowser.desktop";
+    "x-scheme-handler/about" = "org.qutebrowser.qutebrowser.desktop";
+    "x-scheme-handler/mailto" = "thunderbird.desktop";
   };
 
   programs.steam = {
