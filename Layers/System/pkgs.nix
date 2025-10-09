@@ -25,6 +25,8 @@
 
   xdg.mime.defaultApplications = {
     "application/pdf" = "qutebrowser.desktop";
+    "http" = "qutebrowser.desktop";
+    "https" = "qutebrowser.desktop";
   };
 
   programs.steam = {
