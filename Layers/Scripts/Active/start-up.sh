@@ -2,7 +2,7 @@
 
 hyprctl dispatch exec [workspace 1 silent] obsidian
 
-hyprctl dispatch exec [workspace 2 silent] firefox
+hyprctl dispatch exec [workspace 2 silent] qutebrowser
 
 hyprctl dispatch exec [workspace 3 silent] thunderbird
 
