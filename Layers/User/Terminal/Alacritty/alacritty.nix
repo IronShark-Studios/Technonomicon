@@ -58,5 +58,6 @@
     dysk
     pastel
     gnumake
+    gemini-cli
   ];
 }

@@ -15,4 +15,9 @@
 
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
   xdg.configFile."mpv/script-opts".source = ./MPV-Script-Options;
+
+  home.file."obsidian-journal-archiver" = {
+    source = ./journal-archiver.sh;
+    target = ".config/obsidian/journal-archiver.sh";
+  };
 }
