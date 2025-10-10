@@ -11,6 +11,7 @@
     zathura
     libation
     mpv
+    pdfannots2json #needed by obsidian
     ];
 
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
