@@ -5,7 +5,7 @@
     text = ''
       #!/bin/sh
 
-      cd ~tn
+      cd /home/xin/Projects/Technonomicon
       git add .
       git status
       echo "Change Log:"
@@ -25,7 +25,7 @@
     text = ''
       #!/bin/sh
 
-      cd ~tn
+      cd /home/xin/Projects/Technonomicon
       git add .
       sudo nixos-rebuild test --impure --flake .#$HOSTNAME &&
       echo
@@ -40,7 +40,7 @@
     text = ''
       #!/bin/sh
 
-      cd ~tn
+      cd /home/xin/Projects/Technonomicon
       git add .
       git commit -m "Pre-Upgrade: $HOSTNAME $NIXOS_GENERATION"
       git push

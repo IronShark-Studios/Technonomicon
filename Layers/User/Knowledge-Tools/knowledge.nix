@@ -20,4 +20,9 @@
     source = ./journal-archiver.sh;
     target = ".config/obsidian/journal-archiver.sh";
   };
+
+      home.file."Zotero-Configuration" = {
+      target = ".zotero";
+      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/Secrets/Zotero";
+    };
 }
