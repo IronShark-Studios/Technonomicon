@@ -15,5 +15,13 @@ return {
 				path = "~/Grimoire",
 			},
 		},
+
+		notes_subdir = "Notes",
+
+		wiki_link_func = function(opts)
+			return require("obsidian.util").wiki_link_path_only(opts)
+		end,
+
+		preferred_link_style = "markdown",
 	},
 }
