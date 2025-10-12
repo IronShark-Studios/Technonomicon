@@ -53,20 +53,40 @@
     '';
   };
 
-  environment.etc."utilities.nix" = {
-    target = "scripts/utilities.sh";
-    source = ./utilities.sh;
+  environment.etc."clean.nix" = {
+    target = "scripts/clean.sh";
+    text = ''
+      #!/bin/sh
+      
+      rm /home/xin/Grimoire/.trash/* 
+      trash-empty -f
+      sudo nix-collect-garbage --delete-old
+    '';
   };
 
-
-  environment.etc."start-up.nix" = {
-    target = "scripts/start-up.sh";
-    source = ./start-up.sh;
-  };
-
-
-  environment.etc."sabaki-2-anki.nix" = {
-    target = "scripts/sabaki-2-anki.sh";
-    source = ./sabaki-2-anki.sh;
+  environment.etc."Tn-command" = {
+    target = "scripts/tn-command.sh";
+    text = ''
+      tn () {
+        case "$1" in
+          clean)
+            bash /etc/scripts/clean.sh
+            ;;
+          test)
+            bash /etc/scripts/test.sh
+            ;;
+          upgrade)
+            bash /etc/scripts/upgrade.sh
+            ;;
+          rebuild)
+            bash /etc/scripts/rebuild.sh
+            ;;
+          *)
+            echo "Error: Invalid argument '$1'."
+            return 1 # Exit with an error status
+            ;;
+        esac
+      }
+    '';
   };
 }

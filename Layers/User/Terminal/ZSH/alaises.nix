@@ -23,10 +23,6 @@
     power-off = "sudo trash-put ~/Downloads/* & trash-empty & sudo shutdown -h now";
     logout = "sudo kill -9 -1";
     restart = "sudo reboot";
-    rebuild = "bash /etc/scripts/rebuild.sh";
-    upgrade = "bash /etc/scripts/upgrade.sh";
-    test = "bash /etc/scripts/test.sh";
-    clean = "rm ~/Grimoire/.trash/* && trash-empty -f && sudo nix-collect-garbage --delete-old";
     devEnv = "nix develop -c zsh";
     Ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
     Nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";

@@ -41,6 +41,7 @@
     initContent = ''
 
       source ~/.config/Bartib/bartib-completion
+      source /etc/scripts/tn-command.sh
 
       TIMER_FORMAT='[Execution Time: %d]'; TIMER_THRESHOLD=3
 
