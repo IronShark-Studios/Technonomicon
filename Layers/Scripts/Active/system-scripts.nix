@@ -67,7 +67,7 @@
   environment.etc."Tn-command" = {
     target = "scripts/tn-command.sh";
     text = ''
-      tn () {
+      Tn () {
         case "$1" in
           clean)
             bash /etc/scripts/clean.sh

@@ -15,6 +15,7 @@
     lxd = "eza --icons --oneline --group-directories-first --color auto --tree --all --ignore-glob=\"??????????????????????????????????????\"";
     ll = "eza --icons --oneline --group-directories-first --color auto";
     ls = "eza --icons --oneline --group-directories-first --color auto --long";
+    lsx = "eza --icons --oneline --group-directories-first --color auto --long --all";
     ld = "eza --icons --oneline --only-dirs --color auto";
     rm = "sudo trash-put -v";
     rm-s = "sudo shred -f";
@@ -27,5 +28,6 @@
     Ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
     Nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
     qt = "qutebrowser";
+    ff = "firefox";
   };
 }

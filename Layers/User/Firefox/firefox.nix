@@ -25,6 +25,7 @@
 
   programs.qutebrowser = {
     enable = true;
+    loadAutoconfig = true;
     extraConfig =''
       c.aliases = {'w': 'session-save', 'q': 'close', 'qa': 'quit', 'wq': 'quit --save', 'wqa': 'quit --save'}
       c.colors.webpage.darkmode.enabled = True 
@@ -34,7 +35,9 @@
       c.statusbar.show = 'never'
       config.bind('D', ':tab-only')
       config.bind('o', 'cmd-set-text -s :open')
+      config.bind('O', 'open -- {clipboard}')
       config.bind('t', 'cmd-set-text -s :open -t')
+      config.bind('T', 'open -t -- {clipboard}')
       config.bind('m', 'cmd-set-text -s :spawn shiori add {url} -i "%"')
       config.bind('b', 'cmd-set-text -sr :tab-focus')
       config.bind('B', 'spawn shiori add {url} -i {title} -t "unsorted"')
@@ -46,7 +49,7 @@
       c.downloads.location.suggestion = 'both'
       c.url.start_pages = ['https://en.wikipedia.org/wiki/Special:Random']
       c.url.default_page = 'https://en.wikipedia.org/wiki/Special:Random'
-      c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}','!d': 'https://duckduckgo.com/?q={}', '!g': 'https://google.com/search?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!np': 'https://search.nixos.org/packages?channel=unstable&query={}', '!no': 'https://search.nixos.org/options?channel=unstable&query={}', '!ho': 'https://home-manager-options.extranix.com/?query={}&release=master'}
+      c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}','!d': 'https://duckduckgo.com/?q={}', '!gi': 'https://www.google.com/search?tbm=isch&q={}', '!gs': 'https://scholar.google.com/scholar?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!np': 'https://search.nixos.org/packages?channel=unstable&query={}', '!no': 'https://search.nixos.org/options?channel=unstable&query={}', '!ho': 'https://home-manager-options.extranix.com/?query={}&release=master'}
 
     '';
   };
