@@ -22,6 +22,7 @@ return {
 			return require("obsidian.util").wiki_link_path_only(opts)
 		end,
 
-		preferred_link_style = "markdown",
+		preferred_link_style = "wiki",
 	},
 }
+
