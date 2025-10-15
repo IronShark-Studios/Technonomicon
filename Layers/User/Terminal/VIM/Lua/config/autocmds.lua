@@ -22,10 +22,3 @@ vim.api.nvim_create_user_command("Nf", function()
 end, {
 	desc = "Open a new Ranger terminal in the current directory",
 })
-
-vim.api.nvim_create_user_command("Ne", function()
-	local shell_cmd = '! export current_dir=$(pwd) && hyprctl dispatch exec "rofi -show drun"'
-	vim.cmd(shell_cmd)
-end, {
-	desc = "Open a new Alacritty terminal in the current directory",
-})
