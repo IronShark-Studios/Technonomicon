@@ -25,7 +25,7 @@ end, {
 
 vim.api.nvim_create_user_command("Ne", function()
 	local shell_cmd =
-		'! export current_dir=$(pwd) && hyprctl dispatch exec "alacritty --working-directory $current_dir -e "rofi -show file-browser-extended""'
+		'! export current_dir=$(pwd) && hyprctl dispatch exec "rofi -show file-browser-extended -file-browser-dir $current_dir"'
 	vim.cmd(shell_cmd)
 end, {
 	desc = "Open a new Ranger terminal in the current directory",
