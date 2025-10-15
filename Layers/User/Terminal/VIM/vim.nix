@@ -154,6 +154,24 @@ programs.neovim = {
       source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/lazyvim.json";
       target = ".config/nvim/lazyvim.json";
     };
+    "Nvim-Desktop" = {
+      target = ".local/share/applications/nvim-term.desktop";
+      text = ''
+        #!/usr/bin/env xdg-open
+        [Desktop Entry]
+        Type=Application
+        Terminal=false
+        Version=1.0
+        Name=NeoVim
+        Icon=.local/share/applications/nvim.png
+        Exec=/home/xin/.nix-profile/bin/alacritty -e nvim %F
+        MimeType=text/plain;text/markdown;
+      '';
+    };
+    "Nvim-Icon" = {
+      source = ./nvim.png;
+      target = ".local/share/applications/nvim.png";
+    };
   };
 
 }
