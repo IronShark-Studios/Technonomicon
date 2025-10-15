@@ -10,6 +10,7 @@
       rofi-emoji
       rofi-calc
       rofi-bluetooth
+      rofi-file-browser
     ];
   };
 
