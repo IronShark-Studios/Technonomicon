@@ -22,3 +22,11 @@ vim.api.nvim_create_user_command("Nf", function()
 end, {
 	desc = "Open a new Ranger terminal in the current directory",
 })
+
+vim.api.nvim_create_user_command("Ne", function()
+	local shell_cmd =
+		'! export current_dir=$(pwd) && rofi -show file-browser-extended -file-browser-cmd "alacritty -e nvim" -file-browser-der $current_dir'
+	vim.cmd(shell_cmd)
+end, {
+	desc = "Open a new Ranger terminal in the current directory",
+})
