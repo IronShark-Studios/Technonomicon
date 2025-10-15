@@ -27,7 +27,7 @@
       init = {
         defaultBranch = "main";
         pull = {
-          rebase = true;
+          rebase = false;
         };
         push = {
           origin = "HEAD";
