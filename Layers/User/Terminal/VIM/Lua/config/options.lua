@@ -12,7 +12,7 @@ opt.foldmethod = "manual"
 opt.showbreak = " ↪ "
 
 opt.path:append({
-	"~/Grimoire/**",
+	"~/Grimoire/Notes/",
 })
 
 vim.g.lazyvim_picker = "telescope"
