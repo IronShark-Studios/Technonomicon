@@ -7,6 +7,7 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"telescope.nvim",
+		"nvim-cmp",
 	},
 
 	opts = {
