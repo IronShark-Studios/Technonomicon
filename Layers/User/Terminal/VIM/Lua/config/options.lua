@@ -9,4 +9,10 @@ opt.textwidth = 80
 
 opt.foldmethod = "manual"
 
+opt.showbreak = " ↪ "
+
+opt.path:append({
+	"~/Grimoire/**",
+})
+
 vim.g.lazyvim_picker = "telescope"

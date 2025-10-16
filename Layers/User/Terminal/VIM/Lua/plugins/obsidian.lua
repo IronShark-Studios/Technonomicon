@@ -14,6 +14,8 @@ return {
 
 		dir = "~/Grimoire/",
 		notes_subdir = "Notes",
+		finder = "telescope.nvim",
+		preferred_link_style = "markdown",
 
 		workspaces = {
 			{
@@ -27,13 +29,9 @@ return {
 			vim.fn.system({ "xdg-open", url })
 		end,
 
-		wiki_link_func = function(opts)
-			return require("obsidian.util").wiki_link_path_only(opts)
-		end,
-
-		preferred_link_style = "wiki",
-
-		finer = "telescope",
+		templates = {
+			folder = "Utility/Templates",
+		},
 
 		keys = {
 			-- Search/Quick Switch Keymaps (Telescope Integration)
