@@ -21,7 +21,7 @@ map("n", "<leader>of", ":ObsidianFollowLink<CR>", { desc = "Opens Obsidian Link"
 map("n", "<leader>oo", ":ObsidianQuickSwitch<CR>", { desc = "Opens Obsidian File" })
 map("n", "<leader>oe", ":ObsidianOpen<CR>", { desc = "Opens Current File in Obsidian" })
 map("n", "<leader>ob", ":ObsidianBacklinks<CR>", { desc = "Opens Obsidian Backlinks" })
-map("n", "<leader>ob", ":ObsidianNewFromTemplate<CR>", { desc = "Opens New Obsidian File" })
+map("n", "<leader>oc", ":ObsidianNewFromTemplate<CR>", { desc = "Opens New Obsidian File" })
 map(
 	"n",
 	"<leader>od",
