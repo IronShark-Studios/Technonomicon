@@ -8,3 +8,5 @@ opt.wrap = true
 opt.textwidth = 80
 
 opt.foldmethod = "manual"
+
+vim.g.lazyvim_picker = "telescope"

@@ -79,6 +79,7 @@ programs.neovim = {
           rainbow-delimiters-nvim
           multicursors-nvim
           { name = "harpoon"; path = harpoon2; }
+          { name = "harpoon"; path = harpoon2; }
           { name = "LuaSnip"; path = luasnip; }
           { name = "catppuccin"; path = catppuccin-nvim; }
           { name = "mini.ai"; path = mini-nvim; }
