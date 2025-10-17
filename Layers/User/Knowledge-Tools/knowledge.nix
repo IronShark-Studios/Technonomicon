@@ -17,13 +17,15 @@
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
   xdg.configFile."mpv/script-opts".source = ./MPV-Script-Options;
 
-  home.file."obsidian-journal-archiver" = {
-    source = ./journal-archiver.sh;
-    target = ".config/obsidian/journal-archiver.sh";
-  };
-
-      home.file."Zotero-Configuration" = {
-      target = ".zotero";
-      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/Secrets/Zotero";
+  home.file = { 
+    "Zotero-User-Configuration" = {
+      target = ".zotero/zotero/profiles.ini";
+      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Knowledge-Tools/profiles.ini";
     };
+
+    "Zotero-User-Prefs" = {
+      target = ".zotero/zotero/1qdyyx20.default/prefs.js";
+      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Knowledge-Tools/prefs.js";
+    };
+  };
 }
