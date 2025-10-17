@@ -1,6 +1,10 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.editor.harpoon2"
+    "lazyvim.plugins.extras.coding.mini-surround",
+    "lazyvim.plugins.extras.dap.core",
+    "lazyvim.plugins.extras.editor.harpoon2",
+    "lazyvim.plugins.extras.editor.refactoring",
+    "lazyvim.plugins.extras.test.core"
   ],
   "install_version": 8,
   "news": {
