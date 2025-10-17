@@ -2,9 +2,9 @@
 
 let
   pname = "pureref";
-  version = "1.11.1";
+  version = "2.0.3";
 
-  src = ./PureRef-1.11.1_x64.Appimage;
+  src = ./PureRef-2.0.3_x64.Appimage;
 
 in
 

@@ -64,5 +64,24 @@ in {
       target = ".local/share/applications/allusion.png";
       source = ./Allusion/allusion-icon.png;
     };
+
+    "PureRef" = {
+      target = ".local/share/applications/pureref.desktop";
+      text = ''
+        #!/usr/bin/env xdg-open
+        [Desktop Entry]
+        Version=1.0
+        Terminal=false
+        Type=Application
+        Name=PureRef
+        Icon=.local/share/applications/pureref.png
+        Exec=/home/xin/.nix-profile/bin/pureref
+      '';
+    };
+
+    "pureref-icon" = {
+      target = ".local/share/applications/pureref.png";
+      source = ./PureRef/pureref-icon.png;
+    };
   };
 }
