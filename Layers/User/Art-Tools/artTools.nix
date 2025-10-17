@@ -45,5 +45,24 @@ in {
       target = ".local/share/applications/color-picker.png";
       source = ./color-picker.png;
     };
+
+    "Allusion" = {
+      target = ".local/share/applications/allusion.desktop";
+      text = ''
+        #!/usr/bin/env xdg-open
+        [Desktop Entry]
+        Version=1.0
+        Terminal=false
+        Type=Application
+        Name=Allusion
+        Icon=.local/share/applications/allusion.png
+        Exec=/home/xin/.nix-profile/bin/allusion
+      '';
+    };
+
+    "Allusion-icon" = {
+      target = ".local/share/applications/allusion.png";
+      source = ./Allusion/allusion-icon.png;
+    };
   };
 }
