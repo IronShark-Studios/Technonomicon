@@ -49,7 +49,7 @@
       c.downloads.location.suggestion = 'both'
       c.url.start_pages = ['https://en.wikipedia.org/wiki/Special:Random']
       c.url.default_page = 'https://en.wikipedia.org/wiki/Special:Random'
-      c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}','!d': 'https://duckduckgo.com/?q={}', '!gi': 'https://www.google.com/search?tbm=isch&q={}', '!gs': 'https://scholar.google.com/scholar?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!np': 'https://search.nixos.org/packages?channel=unstable&query={}', '!no': 'https://search.nixos.org/options?channel=unstable&query={}', '!ho': 'https://home-manager-options.extranix.com/?query={}&release=master'}
+      c.url.searchengines = {'DEFAULT': 'https://google.com/search?q={}','!d': 'https://duckduckgo.com/?q={}', '!gi': 'https://www.google.com/search?tbm=isch&q={}', '!gs': 'https://scholar.google.com/scholar?q={}', '!r': 'https://google.com/search?q=[site:https://reddit.com {}]', '!w': 'https://en.wikipedia.org/w/index.php?search={}', '!np': 'https://search.nixos.org/packages?channel=unstable&query={}', '!no': 'https://search.nixos.org/options?channel=unstable&query={}', '!ho': 'https://home-manager-options.extranix.com/?query={}&release=master','!amz': 'https://www.amazon.com/s?k={}','!books': 'https://annas-archive.org/search?q={}'}
 
     '';
   };
