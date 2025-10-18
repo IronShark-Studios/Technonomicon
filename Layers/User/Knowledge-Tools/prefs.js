@@ -10,10 +10,10 @@
 // - set it within a user.js file in your profile.
 
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1760744479);
-user_pref("app.update.lastUpdateTime.background-update-timer", 1760744479);
+user_pref("app.update.lastUpdateTime.background-update-timer", 1760787679);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1760744479);
 user_pref("browser.laterrun.bookkeeping.profileCreationTime", 1760109020);
-user_pref("browser.laterrun.bookkeeping.sessionCount", 25);
+user_pref("browser.laterrun.bookkeeping.sessionCount", 26);
 user_pref("browser.laterrun.enabled", true);
 user_pref("browser.startup.homepage_override.buildID", "20240801134912");
 user_pref("browser.startup.homepage_override.mstone", "115.14.0");
@@ -71,12 +71,14 @@ user_pref("extensions.zotero.panes.notes.open", true);
 user_pref("extensions.zotero.panes.related.open", true);
 user_pref("extensions.zotero.panes.tags.open", true);
 user_pref("extensions.zotero.prefVersion", 13);
+user_pref("extensions.zotero.purge.creators", true);
+user_pref("extensions.zotero.purge.items", true);
 user_pref("extensions.zotero.purge.tags", true);
 user_pref("extensions.zotero.saveRelativeAttachmentPath", true);
 user_pref("extensions.zotero.sync.reminder.setUp.enabled", false);
 user_pref("extensions.zotero.sync.reminder.setUp.lastDisplayed", 1760112960);
-user_pref("extensions.zotero.translators.better-bibtex.autoExport.%2Fhome%2Fxin%2FGrimoire%2FOverview%2FMy%20Library%2ebib", "{\"path\":\"/home/xin/Grimoire/Overview/My Library.bib\",\"translatorID\":\"f895aa0d-f28e-47fe-b247-2ea77c6ed583\",\"type\":\"library\",\"id\":1,\"status\":\"done\",\"error\":\"\",\"recursive\":false,\"updated\":1760753052551,\"enabled\":true,\"asciiBibLaTeX\":false,\"biblatexExtendedNameFormat\":true,\"DOIandURL\":\"both\",\"exportNotes\":true,\"useJournalAbbreviation\":false,\"biblatexAPA\":false,\"biblatexChicago\":false,\"created\":1760744482359}");
-user_pref("extensions.zotero.translators.better-bibtex.autoExport.%2Fhome%2Fxin%2FGrimoire%2FOverview%2Fzotero%2ebib", "{\"path\":\"/home/xin/Grimoire/Overview/zotero.bib\",\"translatorID\":\"f895aa0d-f28e-47fe-b247-2ea77c6ed583\",\"type\":\"library\",\"id\":1,\"status\":\"done\",\"error\":\"\",\"recursive\":false,\"updated\":1760753052562,\"enabled\":true,\"asciiBibLaTeX\":false,\"biblatexExtendedNameFormat\":true,\"DOIandURL\":\"both\",\"exportNotes\":true,\"useJournalAbbreviation\":false,\"biblatexAPA\":false,\"biblatexChicago\":false,\"created\":1760744482360}");
+user_pref("extensions.zotero.translators.better-bibtex.autoExport.%2Fhome%2Fxin%2FGrimoire%2FOverview%2FMy%20Library%2ebib", "{\"path\":\"/home/xin/Grimoire/Overview/My Library.bib\",\"translatorID\":\"f895aa0d-f28e-47fe-b247-2ea77c6ed583\",\"type\":\"library\",\"id\":1,\"status\":\"done\",\"error\":\"\",\"recursive\":false,\"updated\":1760785943987,\"enabled\":true,\"asciiBibLaTeX\":false,\"biblatexExtendedNameFormat\":true,\"DOIandURL\":\"both\",\"exportNotes\":true,\"useJournalAbbreviation\":false,\"biblatexAPA\":false,\"biblatexChicago\":false,\"created\":1760785909763}");
+user_pref("extensions.zotero.translators.better-bibtex.autoExport.%2Fhome%2Fxin%2FGrimoire%2FOverview%2Fzotero%2ebib", "{\"path\":\"/home/xin/Grimoire/Overview/zotero.bib\",\"translatorID\":\"f895aa0d-f28e-47fe-b247-2ea77c6ed583\",\"type\":\"library\",\"id\":1,\"status\":\"done\",\"error\":\"\",\"recursive\":false,\"updated\":1760785943998,\"enabled\":true,\"asciiBibLaTeX\":false,\"biblatexExtendedNameFormat\":true,\"DOIandURL\":\"both\",\"exportNotes\":true,\"useJournalAbbreviation\":false,\"biblatexAPA\":false,\"biblatexChicago\":false,\"created\":1760785909764}");
 user_pref("extensions.zotero.translators.better-bibtex.baseAttachmentPath", "/home/xin/Grimoire/PDF");
 user_pref("extensions.zotero.translators.better-bibtex.citekeyFormat", "auth.lower + shorttitle(3, 3) + year");
 user_pref("extensions.zotero.translators.better-bibtex.citekeyFormatEditing", "auth.lower + shorttitle(3, 3) + year");

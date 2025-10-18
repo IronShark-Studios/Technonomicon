@@ -28,3 +28,6 @@ map(
 	":ObsidianToggleCheckbox<CR>:ObsidianToggleCheckbox<CR>:ObsidianToggleCheckbox<CR>:ObsidianToggleCheckbox<CR>",
 	{ desc = "Toggles Checkbox to Done Status" }
 )
+
+local map = vim.keymap.del
+map("n", "<leader>l")
