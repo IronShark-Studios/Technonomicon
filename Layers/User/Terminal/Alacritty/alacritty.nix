@@ -53,6 +53,7 @@
     gum
     sc-im
     gh
+    glab
     jq
     yq
     dysk
