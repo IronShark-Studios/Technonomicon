@@ -12,8 +12,8 @@ echo "Configuring Home Directory"
 cd ~
 mkdir ~/.ssh
 mkdir ~/Projects
+mkdir ~/Projects/Scratch/
 mkdir ~/Media
-mkdir ~/G-Drive
 echo
 
 echo "Creating System SSH-Key"
