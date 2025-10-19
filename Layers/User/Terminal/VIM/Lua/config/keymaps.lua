@@ -21,13 +21,11 @@ map("n", "<leader>lf", ":ObsidianFollowLink<CR>", { desc = "Opens Obsidian Link"
 map("n", "<leader>lb", ":ObsidianQuickSwitch<CR>", { desc = "Opens Obsidian File" })
 map("n", "<leader>le", ":ObsidianOpen<CR>", { desc = "Opens Current File in Obsidian" })
 map("n", "<leader>lL", ":ObsidianBacklinks<CR>", { desc = "Opens Obsidian Backlinks" })
-map("n", "<leader>lc", ":ObsidianNewFromTemplate<CR>", { desc = "Opens New Obsidian File" })
-map(
-	"n",
-	"<leader>ld",
-	":ObsidianToggleCheckbox<CR>:ObsidianToggleCheckbox<CR>:ObsidianToggleCheckbox<CR>:ObsidianToggleCheckbox<CR>",
-	{ desc = "Toggles Checkbox to Done Status" }
-)
+map("n", "<leader>ln", ":ObsidianNewFromTemplate<CR>", { desc = "Opens New Obsidian File" })
+map("n", "<leader>lc", "0t]r-", { desc = "Toggles Checkbox to Cancled Status" })
+map("n", "<leader>lp", "0t]r/", { desc = "Toggles Checkbox to In-Progress Status" })
+map("n", "<leader>lr", "0t]r ", { desc = "Resets Checkbox Status" })
+map("n", "<leader>ld", "0t]rx", { desc = "Toggles Checkbox to Done Status" })
 
 local map = vim.keymap.del
 map("n", "<leader>l")
