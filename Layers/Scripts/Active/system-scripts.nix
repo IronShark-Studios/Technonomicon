@@ -59,8 +59,10 @@
       #!/bin/sh
       
       rm /home/xin/Grimoire/.trash/* 
-      trash-empty -f
       sudo nix-collect-garbage --delete-old
+      sudo trash-put /home/xin/.local/share/qutebrowser/history.sqlite
+      trash-empty -f
+      sudo trash-empty -f
     '';
   };
 
