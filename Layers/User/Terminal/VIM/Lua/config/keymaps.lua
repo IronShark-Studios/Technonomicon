@@ -26,6 +26,7 @@ map("n", "<leader>lc", "0t]r-", { desc = "Toggles Checkbox to Cancled Status" })
 map("n", "<leader>lp", "0t]r/", { desc = "Toggles Checkbox to In-Progress Status" })
 map("n", "<leader>lr", "0t]r ", { desc = "Resets Checkbox Status" })
 map("n", "<leader>ld", "0t]rx", { desc = "Toggles Checkbox to Done Status" })
+map("n", "<leader>lt", "A`$=dv.view('progress-bar',[a,b])`", { desc = "Inserts Task Progress-bar" })
 
 local map = vim.keymap.del
 map("n", "<leader>l")
