@@ -22,6 +22,9 @@
         git commit -m "$CommitMessage" &&
         git push
       '';
+      unstage = "restore --staged";
+      history = "log --graph --pretty=oneline";
+      last = "log -1 HEAD";
     };
     extraConfig = {
       init = {
