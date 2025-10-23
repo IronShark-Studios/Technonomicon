@@ -29,5 +29,6 @@
     Nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
     qt = "qutebrowser";
     ff = "firefox";
+    ghub = "gh";
   };
 }
