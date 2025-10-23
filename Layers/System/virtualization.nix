@@ -14,11 +14,14 @@
     spiceUSBRedirection.enable = true;
   };
 
-  users.users.xin.extraGroups = [ 
-    "libvirtd"
-    "dialout"
-    "tty"
-  ];
+  users.users.xin = {
+    isNormalUser = true;
+    extraGroups = [ 
+      "libvirtd"
+      "dialout"
+      "tty"
+    ];
+  };
 
   environment.systemPackages = with pkgs; [
     spice
