@@ -17,6 +17,7 @@
   users.users.xin.extraGroups = [ 
     "libvirtd"
     "dialout"
+    "tty"
   ];
 
   environment.systemPackages = with pkgs; [
