@@ -9,6 +9,11 @@
     ];
   };
 
+  environment.etc."Keyd-conf" = {
+    target = "keyd/default.conf";
+    source = ../../Thanatos/keyd.conf;
+  };
+
   programs = {
     hyprland.enable = true;
     dconf.enable = true;

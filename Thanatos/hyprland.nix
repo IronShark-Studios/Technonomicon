@@ -21,5 +21,6 @@
     kitty
     brightnessctl
     gromit-mpx
+    keyd
   ];
 }
