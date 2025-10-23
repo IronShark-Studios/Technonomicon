@@ -60,5 +60,6 @@
     pastel
     gnumake
     gemini-cli
+    usbutils
   ];
 }
