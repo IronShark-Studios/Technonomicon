@@ -5,6 +5,7 @@
     cp = "~/.local/bin/advcp -r --progress-bar";
     mv = "~/.local/bin/advmv --progress-bar";
     ci = "vi";
+    view = "nvim -R";
     ca = "clear && printf '\n%.0s' {1..100}";
     lf = "ranger";
     find = "fd -g -i";
