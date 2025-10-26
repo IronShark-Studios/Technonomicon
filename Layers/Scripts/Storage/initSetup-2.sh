@@ -15,6 +15,7 @@ echo
 echo "Home Directory Set Up Complete, configuring R-clone connection"
 echo
 echo "This link must be opened with chromium"
+mkdir -p ~/.config/beancount/
 mkdir -p ~/Apocrypha/Remote/
 rclone config create G-Drive drive
 echo
