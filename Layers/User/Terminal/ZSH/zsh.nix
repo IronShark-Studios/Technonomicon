@@ -34,7 +34,7 @@
     sessionVariables = {
       SUDO_EDITOR = "nvim";
       EDITOR = "nvim";
-      BARTIB_FILE = "/home/xin/.config/Bartib/$(date +%Y)-time-tracking.txt";
+      BARTIB_FILE = "/home/xin/.config/Bartib/time-tracking.txt";
       NIXOS_GENERATION = "$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | tail -n 1 | sed 's/(current)//')";
     };
 

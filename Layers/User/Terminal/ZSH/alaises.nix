@@ -10,7 +10,7 @@
     ca = "clear && printf '\n%.0s' {1..100}";
     lf = "ranger";
     find = "fd -g -i";
-    grep = "rg";
+    grep = "rg -i";
     dd = "caligula burn";
     lx = "eza --icons --oneline --group-directories-first --color auto --all";
     lld = "eza --icons --oneline --group-directories-first --color auto --tree";

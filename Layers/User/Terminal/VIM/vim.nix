@@ -79,6 +79,7 @@ programs.neovim = {
           rainbow-delimiters-nvim
           multicursors-nvim
           vim-fugitive
+          vim-beancount
           { name = "harpoon"; path = harpoon2; }
           { name = "LuaSnip"; path = luasnip; }
           { name = "catppuccin"; path = catppuccin-nvim; }
