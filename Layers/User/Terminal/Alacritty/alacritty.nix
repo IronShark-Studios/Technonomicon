@@ -21,6 +21,11 @@
       target = ".config/Bartib/bartib-completion";
       source = ./bartib-completion;
     };
+
+    "bartib-menu" = {
+      target = ".config/Bartib/bartib-menu.sh";
+      source = ./bartib-menu.sh;
+    };
   };
 
   home.packages = with pkgs; [
