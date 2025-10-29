@@ -8,7 +8,7 @@ in {
 
   imports = [
     ./Graphviz/graphviz.nix
-  #  ./Cura/cura.nix   # 20241101 package currently broken
+    ./Cura/cura.nix
     ./OBS/obs.nix
     ./OpenSCAD/openscad.nix
     ./Inkscape/inkscape.nix
