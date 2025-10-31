@@ -27,8 +27,8 @@
     logout = "sudo kill -9 -1";
     restart = "sudo reboot";
     devEnv = "nix develop -c zsh";
-    Ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
-    Nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
+    ns = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir\"";
+    nf = "export current_dir=$(pwd) && hyprctl dispatch exec \"alacritty --working-directory $current_dir -e ranger\"";
     qt = "qutebrowser";
     ff = "firefox";
     ghub = "gh";
