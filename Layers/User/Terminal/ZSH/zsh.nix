@@ -35,6 +35,7 @@
       SUDO_EDITOR = "nvim";
       EDITOR = "nvim";
       BARTIB_FILE = "/home/xin/.config/Bartib/time-tracking.txt";
+      NIXPKGS_ALLOW_UNFREE = "1";
       NIXOS_GENERATION = "$(sudo nix-env --list-generations --profile /nix/var/nix/profiles/system | tail -n 1 | sed 's/(current)//')";
     };
 
