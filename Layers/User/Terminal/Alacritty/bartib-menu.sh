@@ -37,9 +37,9 @@ numeric_option () {
 if [[ "$MENU_SELECTION" == "New Activity" ]]; then
 
 
-  export ACTIVITY_DESCRIPTION=$(rofi -dmenu -i -p "Activity Description" -l 13)
-
   export PROJECT_DESCRIPTION=$(echo -e "$PROJECT_LIST" | rofi -dmenu -i -p "Project Description" -l 13)
+
+  export ACTIVITY_DESCRIPTION=$(rofi -dmenu -i -p "Activity Description" -l 13)
   
   bartib start -d "$ACTIVITY_DESCRIPTION" -p "$PROJECT_DESCRIPTION"
   
