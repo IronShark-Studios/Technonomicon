@@ -46,6 +46,7 @@
       git push
       sudo nix flake update
       sudo nixos-rebuild switch --impure --flake .#$HOSTNAME --upgrade
+      nvim --headless "+Lazy! update" +qa
       git add .
       git commit -m "Upgraded: $HOSTNAME $NIXOS_GENERATION"
       git push
