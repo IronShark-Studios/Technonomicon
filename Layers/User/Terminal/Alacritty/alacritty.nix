@@ -26,6 +26,11 @@
       target = ".config/Bartib/bartib-menu.sh";
       source = ./bartib-menu.sh;
     };
+
+    "bartib-fava" = {
+      target = ".config/Bartib/time-tracking.bean";
+      source = ../../../Secrets/time-tracking.bean;
+    };
   };
 
   home.packages = with pkgs; [
