@@ -12,7 +12,7 @@ PROMPT="$(bartib current | sed '2d' | sed '1d' | sed 's/^.\{17\}//')"
 
 MENU_SELECTION="$(echo -e "$MENU_LIST" | rofi -dmenu -i -p "$PROMPT" -l 13)"
 
-SELECTION=$(echo $MENU_SELECTION | sed 's/^\[\([0-9]\+\)\].*/\1/' | sed 'y/123456789/012345678/')
+SELECTION=$(echo $MENU_SELECTION | sed 's/^\[\([0-9]\+\)\].*/\1/')
 
 PAST_PROJECTS=$(bartib projects | sed -E 's/" "/\n/g; s/"//g')
 
@@ -26,7 +26,7 @@ numeric_option () {
       bartib stop
     ;;
     "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9")
-      bartib continue "$SELECTION"
+      bartib continue "$($SELECTION | sed 'y/123456789/012345678/')"
     ;;
     *)
       return 1
