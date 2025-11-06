@@ -52,5 +52,6 @@
     bluetooth.enable = true;
     graphics.enable = true;
     xpadneo.enable = true;
+    sane.enable = true;
   };
 }

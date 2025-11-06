@@ -56,7 +56,7 @@
       xin = {
         isNormalUser = true;
         openssh.authorizedKeys.keys = [ ];
-        extraGroups = [ "wheel" "docker" "ydotool" ];
+        extraGroups = [ "wheel" "docker" "ydotool" "scanner" "lp" ];
         shell = pkgs.zsh;
         hashedPasswordFile = "/etc/secrets/xin-usrPasswd.nix";
       };

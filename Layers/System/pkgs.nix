@@ -8,6 +8,7 @@
       zsh-command-time
       wl-clipboard
       nix-ld 
+      simple-scan
     ];
   };
 
