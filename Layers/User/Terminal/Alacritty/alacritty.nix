@@ -71,5 +71,6 @@
     gnumake
     gemini-cli
     usbutils
+    bat
   ];
 }
