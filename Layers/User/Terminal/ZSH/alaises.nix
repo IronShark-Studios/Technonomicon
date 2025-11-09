@@ -32,5 +32,6 @@
     qt = "qutebrowser";
     ff = "firefox";
     ghub = "gh";
+    bzip = "bzip3";
   };
 }
