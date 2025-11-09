@@ -72,5 +72,6 @@
     gemini-cli
     usbutils
     bat
+    bzip3
   ];
 }
