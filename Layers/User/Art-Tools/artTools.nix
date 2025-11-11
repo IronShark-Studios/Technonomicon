@@ -24,6 +24,7 @@ in {
     yt-dlp
     ffmpeg
     wl-color-picker
+    pinta
     ];
 
   home.file = {
