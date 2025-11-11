@@ -37,7 +37,7 @@ in {
       };
       "sabaki-icon" = {
         target = ".local/share/applications/sabaki.png";
-	source = ./sabaki.png;
+        source = ./sabaki.png;
       };
       "fox-rofi" = {
         target = ".local/share/applications/fox.desktop";
@@ -49,6 +49,23 @@ in {
           Type=Application
           Name=Fox
           Exec=/home/xin/.nix-profile/bin/fox
+        '';
+      };
+      "101-icon" = {
+        target = ".local/share/applications/101-wq.png";
+        source = ./101-wq.png;
+      };
+      "101-Web-App" = {
+        target = ".local/share/applications/101-web-app.desktop";
+        text = ''
+          #!/usr/bin/env xdg-open
+          [Desktop Entry]
+          Version=1.0
+          Terminal=false
+          Type=Application
+          Name=101 Weiqi
+	        Icon=.local/share/applications/101-wq.png
+          Exec=firefox --new-window https://www.101weiqi.com/training/
         '';
       };
     };
