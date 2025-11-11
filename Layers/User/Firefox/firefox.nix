@@ -70,6 +70,24 @@
       source = ./greasemonkey-scripts;
       recursive = true;
     };
+
+    "Gemini-app" = {
+      target = ".local/share/applications/gemini.desktop";
+      text = ''
+        #!/usr/bin/env xdg-open
+        [Desktop Entry]
+        Version=1.0
+        Terminal=false
+        Type=Application
+        Name=Gemini
+        Icon=.local/share/applications/gemini.png
+        Exec=firefox --new-window https://gemini.google.com/app
+      '';
+    };
+    "Gemini-icon" = {
+      target = ".local/share/applications/gemini.png";
+      source = ./gemini.png;
+    };
   };
 
 }
