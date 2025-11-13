@@ -11,6 +11,17 @@
     bitwarden-desktop
     shiori
     sqlite
+    (writeShellApplication {
+      name = "ff-applet";
+      text = ''
+        URL=$1
+
+        firefox --kiosk --new-instance -P applets "$URL" &
+        sleep 1
+        hyprctl dispatch fullscreen 1
+        hyprctl dispatch fullscreen 1
+      '';
+    })
   ];
 
 
