@@ -65,7 +65,7 @@ in {
           Type=Application
           Name=101 Weiqi
 	        Icon=.local/share/applications/101-wq.png
-          Exec=firefox --new-window https://www.101weiqi.com/training/
+          Exec=ff-applet https://www.101weiqi.com/training/
         '';
       };
     };
