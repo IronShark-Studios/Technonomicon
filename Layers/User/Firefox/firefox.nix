@@ -99,6 +99,24 @@
       target = ".local/share/applications/gemini.png";
       source = ./gemini.png;
     };
+
+    "YouTube-app" = {
+      target = ".local/share/applications/youtube.desktop";
+      text = ''
+        #!/usr/bin/env xdg-open
+        [Desktop Entry]
+        Version=1.0
+        Terminal=false
+        Type=Application
+        Name=YouTube
+        Icon=.local/share/applications/youtube.png
+        Exec=ff-applet https://www.youtube.com
+      '';
+    };
+    "YouTube-icon" = {
+      target = ".local/share/applications/youtube.png";
+      source = ./youtube.png;
+    };
   };
 
 }
