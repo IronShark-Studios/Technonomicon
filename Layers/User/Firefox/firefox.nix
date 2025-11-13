@@ -92,7 +92,7 @@
         Type=Application
         Name=Gemini
         Icon=.local/share/applications/gemini.png
-        Exec=firefox --new-window https://gemini.google.com/app
+        Exec=ff-applet https://gemini.google.com/app
       '';
     };
     "Gemini-icon" = {
