@@ -73,5 +73,6 @@
     usbutils
     bat
     bzip3
+    tldr
   ];
 }
