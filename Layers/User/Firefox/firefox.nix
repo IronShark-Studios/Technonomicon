@@ -31,7 +31,7 @@
   };
 
   programs.chromium = {
-    enable = false;
+    enable = true;
   };
 
   programs.qutebrowser = {
