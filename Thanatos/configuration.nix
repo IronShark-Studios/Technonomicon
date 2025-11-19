@@ -14,6 +14,7 @@
     ../Layers/System/virtualization.nix
     ../Layers/System/display.nix
     ../Layers/Scripts/Active/system-scripts.nix
+    ../Layers/Scripts/Active/quick-macro.nix
   ];
 
   boot = {
