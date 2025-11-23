@@ -8,7 +8,7 @@
       zsh-command-time
       wl-clipboard
       nix-ld 
-      xsane
+      kdePackages.skanlite
     ];
   };
 
