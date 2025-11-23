@@ -9,7 +9,7 @@
       wl-clipboard
       nix-ld 
       simple-scan
-      brscan5
+      xsane
     ];
   };
 
@@ -32,6 +32,11 @@
     "x-scheme-handler/https" = "org.qutebrowser.qutebrowser.desktop";
     "x-scheme-handler/about" = "org.qutebrowser.qutebrowser.desktop";
     "x-scheme-handler/mailto" = "thunderbird.desktop";
+  };
+
+  hardware.sane = {
+    enable = true;
+    extraBackends = [ pkgs.brscan5 ];
   };
 
   programs.steam = {
