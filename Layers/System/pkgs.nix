@@ -9,6 +9,7 @@
       wl-clipboard
       nix-ld 
       simple-scan
+      brscan5
     ];
   };
 
