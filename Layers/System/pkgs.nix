@@ -8,7 +8,6 @@
       zsh-command-time
       wl-clipboard
       nix-ld 
-      simple-scan
       xsane
     ];
   };
@@ -36,7 +35,13 @@
 
   hardware.sane = {
     enable = true;
-    extraBackends = [ pkgs.brscan5 ];
+    extraBackends = [ pkgs.sane-airscan ];
+  };
+
+  services.avahi = {
+  enable = true;
+  nssmdns = true;
+  openFirewall = true;
   };
 
   programs.steam = {
