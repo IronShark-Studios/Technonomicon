@@ -5,8 +5,16006 @@
     text = ''
       #!/bin/sh
 
-      sleep 0.35
-      ydotool key 97:1 49:1 49:0 97:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
+      sleep 0.3
+      ydotool key 57:1 57:0
+      sleep 0.2
+      ydotool key 2:1 2:0
     '';
   };
 }
