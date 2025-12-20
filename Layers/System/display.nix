@@ -9,11 +9,6 @@
     ];
   };
 
-  environment.etc."Keyd-conf" = {
-    target = "keyd/default.conf";
-    source = ../../Thanatos/keyd.conf;
-  };
-
   programs = {
     hyprland.enable = true;
     dconf.enable = true;
@@ -45,6 +40,12 @@
       wayland.enable = true;
       autoNumlock = true;
       theme = "chili";
+    };
+
+    kanata = {
+      enable = true;
+      package = pkgs.kanata-with-cmd;
+      keyboards.colmacs.configFile = ../../Thanatos/colmacs.kbd;
     };
   };
 
