@@ -1,50 +1,35 @@
-#|
-This minimal config changes Caps Lock to act as Caps Lock on quick tap, but
-if held, it will act as Left Ctrl. It also changes the backtick/grave key to
-act as backtick/grave on quick tap, but change ijkl keys to arrow keys on hold.
-
-This text between the two pipe+octothorpe sequences is a multi-line comment.
-|#
-
-;; Text after double-semicolons are single-line comments.
-
-#|
-One defcfg entry may be added, which is used for configuration key-pairs. These
-configurations change kanata's behaviour at a more global level than the other
-configuration entries.
-|#
-
 (defcfg
-  #|
-  This configuration will process all keys pressed inside of kanata, even if
-  they are not mapped in defsrc. This is so that certain actions can activate
-  at the right time for certain input sequences. By default, unmapped keys are
-  not processed through kanata due to a Windows issue related to AltGr. If you
-  use AltGr in your keyboard, you will likely want to follow the simple.kbd
-  file while unmapping lctl and ralt from defsrc.
-  |#
   process-unmapped-keys yes
 )
 
 (defsrc
-  caps grv         i
-              j    k    l
-  lsft rsft
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt menu rctl
 )
 
-(deflayer default
-  @cap @grv        _
-              _    _    _
-  _    _
-)
-
-(deflayer arrows
-  _    _           up
-              left down rght
-  _    _
+(deflayer colemak
+  grv    1    2    3    4    5    6    7    8      9      0    -    =    bspc
+  tab    q    w    f    p    b    j    l    u      y      z    [    ]    \
+  esc    a    r    s    t    g    m    n    e      i      o    '    ret
+  @lxsft ;    c    d    v    x    k    h    ,      .     /    @rxsft
+  @lxctl  @lxmet @lxalt           spc            @rxalt menu @rxctl
 )
 
 (defalias
-  cap (tap-hold-press 200 200 caps lctl)
-  grv (tap-hold-press 200 200 grv (layer-toggle arrows))
+  lxsft (tap-hold 200 200 (one-shot 500 lsft) lsft)
+  rxsft (tap-hold 200 200 (one-shot 500 rsft) rsft)
+  lxctl (tap-hold 200 200 (one-shot 500 lctl) lctl)
+  rxctl (tap-hold 200 200 (one-shot 500 rctl) rctl)
+  lxmet (tap-hold 200 200 (one-shot 500 lmet) lmet)
+  rxmet (tap-hold 200 200 (one-shot 500 rmet) rmet)
+  lxalt (tap-hold 200 200 (one-shot 500 lalt) lalt)
+  rxalt (tap-hold 200 200 (one-shot 500 ralt) ralt)
 )
+
+
+
+
+
