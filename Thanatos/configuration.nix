@@ -17,7 +17,10 @@
     ../Layers/Scripts/Active/quick-macro.nix
   ];
 
+  hardware.uinput.enable = true;
+
   boot = {
+    kernelModules = [ "uinput" ];
     kernelPackages = pkgs.linuxPackages_latest;
     loader = {
       systemd-boot.enable = true;
@@ -57,7 +60,7 @@
       xin = {
         isNormalUser = true;
         openssh.authorizedKeys.keys = [ ];
-        extraGroups = [ "wheel" "docker" "ydotool" "scanner" "lp" ];
+        extraGroups = [ "wheel" "docker" "ydotool" "scanner" "lp" "uinput" "input" ];
         shell = pkgs.zsh;
         hashedPasswordFile = "/etc/secrets/xin-usrPasswd.nix";
       };
