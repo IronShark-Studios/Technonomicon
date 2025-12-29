@@ -11,10 +11,10 @@
 )
 
 (deflayer colemak
-  grv    1    2    3    4    5    6    7    8      9      0    -    =    bspc
-  tab    q    w    f    p    b    j    l    u      y      z    [    ]    \
-  esc    a    r    s    t    g    m    n    e      i      o    '    ret
-  @lxsft ;    c    d    v    x    k    h    ,      .     /    @rxsft
+  grv    1    2    3      4    5    6    7      8      9      0    -    =    bspc
+  tab    q    w    f      p    b    j    l      u      y      z    [    ]    \
+  esc    a    r    @cs    @ct    g    m    @cn    @ce      i      o    '    ret
+  @lxsft ;    c    d      v    x    k    h    ,      .     /    @rxsft
   @lxctl  @lxmet @lxalt           spc            @rxalt menu @rxctl
 )
 
@@ -31,5 +31,18 @@
 
 
 
+(defchords v1 50
+  (n) n
+  (e) e
+  (n e) spc
+  (t) t
+  (s) s 
+  (t s) bspc 
+)
 
-
+(defalias
+  cn (chord v1 n)
+  ce (chord v1 e)
+  ct (chord v1 t)
+  cs (chord v1 s)
+)
