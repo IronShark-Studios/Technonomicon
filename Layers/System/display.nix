@@ -5,7 +5,7 @@
       sddm-chili-theme
       xorg.libxshmfence
       hyprcursor
-      hyprlandPlugins.hypr-dynamic-cursors
+      # hyprlandPlugins.hypr-dynamic-cursors
     ];
   };
 

@@ -69,10 +69,9 @@
     dysk
     pastel
     gnumake
-    gemini-cli
+    # gemini-cli
     usbutils
     bat
     bzip3
-    tldr
   ];
 }

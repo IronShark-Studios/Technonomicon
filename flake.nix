@@ -7,6 +7,8 @@
     home-manager.url = "github:nix-community/home-manager";
 
     nixos-hardware.url = "github:nixos/nixos-hardware";
+
+    plover-flake.url = "github:openstenoproject/plover-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, nixos-hardware, ... }@inputs:
