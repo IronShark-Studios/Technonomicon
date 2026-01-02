@@ -50,6 +50,10 @@
     pathsToLink = [ "/share/zsh" ];
   };
 
+  services.udev.extraRules = ''
+    KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
+  '';
+
   users = {
     mutableUsers = false;
     users = {
@@ -60,7 +64,7 @@
       xin = {
         isNormalUser = true;
         openssh.authorizedKeys.keys = [ ];
-        extraGroups = [ "wheel" "docker" "ydotool" "scanner" "lp" "uinput" "input" ];
+        extraGroups = [ "wheel" "docker" "ydotool" "scanner" "lp" "uinput" "input" "dialout" ];
         shell = pkgs.zsh;
         hashedPasswordFile = "/etc/secrets/xin-usrPasswd.nix";
       };
