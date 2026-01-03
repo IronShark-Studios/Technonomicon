@@ -13,36 +13,19 @@
 (deflayer colemak
   grv    1    2    3      4    5    6    7      8      9      0    -    =    bspc
   tab    q    w    f      p    b    j    l      u      y      z    [    ]    \
-  esc    a    r    @cs    @ct    g    m    @cn    @ce      i      o    '    ret
-  @lxsft ;    c    d      v    x    k    h    ,      .     /    @rxsft
+  esc    a    r    s      t    g    m    n      e      i      o    '    ret
+  @lxsft ;    c    d      v    x    k    h      ,      .      /    @rxsft
   @lxctl  @lxmet @lxalt           spc            @rxalt menu @rxctl
 )
 
 (defalias
-  lxsft (tap-hold 200 200 (one-shot 500 lsft) lsft)
-  rxsft (tap-hold 200 200 (one-shot 500 rsft) rsft)
-  lxctl (tap-hold 200 200 (one-shot 500 lctl) lctl)
-  rxctl (tap-hold 200 200 (one-shot 500 rctl) rctl)
-  lxmet (tap-hold 200 200 (one-shot 500 lmet) lmet)
-  rxmet (tap-hold 200 200 (one-shot 500 rmet) rmet)
-  lxalt (tap-hold 200 200 (one-shot 500 lalt) lalt)
-  rxalt (tap-hold 200 200 (one-shot 500 ralt) ralt)
+  lxsft (tap-hold 200 200 (one-shot 1000 lsft) lsft)
+  rxsft (tap-hold 200 200 (one-shot 1000 rsft) rsft)
+  lxctl (tap-hold 200 200 (one-shot 1000 lctl) lctl)
+  rxctl (tap-hold 200 200 (one-shot 1000 rctl) rctl)
+  lxmet (tap-hold 200 200 (one-shot 1000 lmet) lmet)
+  rxmet (tap-hold 200 200 (one-shot 1000 rmet) rmet)
+  lxalt (tap-hold 200 200 (one-shot 1000 lalt) lalt)
+  rxalt (tap-hold 200 200 (one-shot 1000 ralt) ralt)
 )
 
-
-
-(defchords v1 50
-  (n) n
-  (e) e
-  (n e) spc
-  (t) t
-  (s) s 
-  (t s) bspc 
-)
-
-(defalias
-  cn (chord v1 n)
-  ce (chord v1 e)
-  ct (chord v1 t)
-  cs (chord v1 s)
-)

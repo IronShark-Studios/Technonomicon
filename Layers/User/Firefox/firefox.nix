@@ -11,17 +11,7 @@
     bitwarden-desktop
     shiori
     sqlite
-    (writeShellApplication {
-      name = "ff-applet";
-      text = ''
-        URL=$1
-
-        firefox --kiosk --new-instance -P applets "$URL" &
-        sleep 1
-        hyprctl dispatch fullscreen 1
-        hyprctl dispatch fullscreen 1
-      '';
-    })
+    brave
   ];
 
 
@@ -81,42 +71,50 @@
       source = ./greasemonkey-scripts;
       recursive = true;
     };
-
-    "Gemini-app" = {
-      target = ".local/share/applications/gemini.desktop";
-      text = ''
-        #!/usr/bin/env xdg-open
-        [Desktop Entry]
-        Version=1.0
-        Terminal=false
-        Type=Application
-        Name=Gemini
-        Icon=.local/share/applications/gemini.png
-        Exec=ff-applet https://gemini.google.com/app
-      '';
-    };
-    "Gemini-icon" = {
-      target = ".local/share/applications/gemini.png";
-      source = ./gemini.png;
-    };
-
-    "YouTube-app" = {
-      target = ".local/share/applications/youtube.desktop";
-      text = ''
-        #!/usr/bin/env xdg-open
-        [Desktop Entry]
-        Version=1.0
-        Terminal=false
-        Type=Application
-        Name=YouTube
-        Icon=.local/share/applications/youtube.png
-        Exec=ff-applet https://www.youtube.com
-      '';
-    };
-    "YouTube-icon" = {
-      target = ".local/share/applications/youtube.png";
-      source = ./youtube.png;
-    };
   };
 
+xdg.desktopEntries = {
+  khan-academy = {
+    name = "Khan Academy";
+    exec = "${pkgs.brave}/bin/brave --app=https://www.khanacademy.org/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./khan-academy-log.png; 
+  };
+
+  the-odin-project = {
+    name = "TOP: The Odin Project";
+    exec = "${pkgs.brave}/bin/brave --app=https://www.theodinproject.com/dashboard --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./top-icon.png; 
+  };
+
+  youtube = {
+    name = "YouTube";
+    exec = "${pkgs.brave}/bin/brave --app=https://www.youtube.com --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./youtube.png; 
+  };
+
+  gemini = {
+    name = "Gemini";
+    exec = "${pkgs.brave}/bin/brave --app=https://www.gemini.google.com/app --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./gemini.png; 
+  };
+
+  weight-tracke = {
+    name = "Weight Tracker";
+    exec = "${pkgs.brave}/bin/brave --app=https://www.docs.google.com/spreadsheets/d/1w-b4trFSWNrBQS52KmcZsIfq678T2F_S_8TXcrZrCmA --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./gemini.png; 
+  };
+
+
+
+};
 }
