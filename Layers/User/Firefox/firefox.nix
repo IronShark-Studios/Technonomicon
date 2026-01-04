@@ -100,7 +100,7 @@ xdg.desktopEntries = {
 
   gemini = {
     name = "Gemini";
-    exec = "${pkgs.brave}/bin/brave --app=https://www.gemini.google.com/app --start-maximized";
+    exec = "${pkgs.brave}/bin/brave --app=https://gemini.google.com/app --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
     icon = ./gemini.png; 
@@ -111,7 +111,7 @@ xdg.desktopEntries = {
     exec = "${pkgs.brave}/bin/brave --app=https://www.docs.google.com/spreadsheets/d/1w-b4trFSWNrBQS52KmcZsIfq678T2F_S_8TXcrZrCmA --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
-    icon = ./gemini.png; 
+    icon = ./google-sheets-icon.png; 
   };
 
 
