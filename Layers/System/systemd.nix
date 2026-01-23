@@ -3,4 +3,6 @@
   systemd.sleep.extraConfig = ''
     HandleSuspend=ignore
   '';
+
+  systemd.services.ModemManager.enable = false;
 }
