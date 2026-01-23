@@ -33,5 +33,7 @@
     ff = "firefox";
     ghub = "gh";
     bzip = "bzip3";
+    k-stop = "sudo systemctl stop kanata-colmacs";
+    k-start = "sudo systemctl restart kanata-colmacs";
   };
 }
