@@ -114,6 +114,19 @@ xdg.desktopEntries = {
     icon = ./google-sheets-icon.png; 
   };
 
+  steno-jig = {
+    name = "Steno Jig";
+    exec = "${pkgs.brave}/bin/brave --app=https://joshuagrams.github.io/steno-jig/form.html --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
+
+  typey-type = {
+    name = "Typey Type";
+    exec = "${pkgs.brave}/bin/brave --app=https://didoesdigital.com/typey-type/lessons/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
 
 
 };
