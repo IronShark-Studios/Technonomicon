@@ -6,6 +6,7 @@
       xorg.libxshmfence
       hyprcursor
       # hyprlandPlugins.hypr-dynamic-cursors
+      gnome-network-displays
     ];
   };
 
