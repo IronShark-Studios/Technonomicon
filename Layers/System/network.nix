@@ -5,6 +5,20 @@
     useDHCP = lib.mkDefault true;
   };
 
+networking.firewall = {
+  enable = true;
+  allowedTCPPorts = [ 7236 7250 ];
+  allowedUDPPorts = [ 7236 5353 ];
+};
+networking.firewall.trustedInterfaces = [ "p2p-wl+" ];
+services.udev.extraRules = ''
+  SUBSYSTEM=="net", KERNEL=="p2p-dev-*", ACTION=="add", TAG-="systemd"
+'';
+xdg.portal = {
+  enable = true;
+  extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
+  config.common.default = [ "gnome" ];
+};
 
   services = {
     openssh = {
