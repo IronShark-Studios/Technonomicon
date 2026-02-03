@@ -54,6 +54,11 @@
     KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
   '';
 
+  services.udev.extraRules = ''
+  KERNEL=="ttyACM[0-9]*", MODE="0666"
+  KERNEL=="ttyUSB[0-9]*", MODE="0666"
+'';
+
   users = {
     mutableUsers = false;
     users = {
