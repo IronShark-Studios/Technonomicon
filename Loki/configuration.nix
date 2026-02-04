@@ -2,7 +2,7 @@
 
   system.stateVersion = "23.11";
 
-  networking.hostName = "Thanatos";
+  networking.hostName = "Loki";
 
   imports = [
     ./hardware-configuration.nix
@@ -18,18 +18,23 @@
   ];
 
   hardware.uinput.enable = true;
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true; # Necessary for Steam/older games
+  };
 
-  boot = {
-    kernelModules = [ "uinput" ];
-    kernelPackages = pkgs.linuxPackages_latest;
-    loader = {
-      systemd-boot.enable = true;
-      efi = {
-        canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot";
+  services.xserver.videoDrivers = ["nvidia"];
+    boot = {
+      kernelModules = [ "uinput" ];
+      kernelPackages = pkgs.linuxPackages_latest;
+      loader = {
+        systemd-boot.enable = true;
+        efi = {
+          canTouchEfiVariables = true;
+          efiSysMountPoint = "/boot";
+        };
       };
     };
-  };
 
   security = {
     sudo.wheelNeedsPassword = false;
