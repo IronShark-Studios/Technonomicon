@@ -111,7 +111,7 @@ xdg.desktopEntries = {
     exec = "${pkgs.brave}/bin/brave --app=https://www.docs.google.com/spreadsheets/d/1w-b4trFSWNrBQS52KmcZsIfq678T2F_S_8TXcrZrCmA --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
-    icon = ./google-sheets-icon.png; 
+    icon = ./google-sheets-icon.png;
   };
 
   steno-jig = {
@@ -128,6 +128,13 @@ xdg.desktopEntries = {
     categories = [ "Application" "Network" ];
   };
 
+  vikunja = {
+    name = "Kanban";
+    exec = "${pkgs.brave}/bin/brave --app=http://localhost:3456 --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./kanban.png;
+  };
 
 };
 }
