@@ -13,6 +13,7 @@
     mpv
     pdfannots2json #needed by obsidian
     pomodoro-gtk
+    vikunja
     ];
 
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
