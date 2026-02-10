@@ -34,11 +34,11 @@
       ];
     };
 
-    Loki = nixpkgs.lib.nixosSystem {
+    Akmon = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs outputs; };
       modules = [
         home-manager.nixosModules.home-manager
-        ./Loki/configuration.nix
+        ./Akmon/configuration.nix
       ];
     };
 

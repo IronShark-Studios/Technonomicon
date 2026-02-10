@@ -2,7 +2,7 @@
 
   system.stateVersion = "23.11";
 
-  networking.hostName = "Loki";
+  networking.hostName = "Akmon";
 
   imports = [
     ./hardware-configuration.nix
@@ -17,24 +17,37 @@
     ../Layers/Scripts/Active/quick-macro.nix
   ];
 
-  hardware.uinput.enable = true;
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true; # Necessary for Steam/older games
+  hardware = { 
+    uinput.enable = true;
+    graphics = {
+      enable = true;
+      enable32bit = true;
+    };
+    nvidia = {
+      package = config.boot.kernelPackages.nvidiaPackages.beta;
+      open = true;
+      nvidiaSettings = true;
+      modesetting.enable = true;
+      powerManagement.enable = false;
+      powerManagement.finegrained = false;
+    };
   };
 
-  services.xserver.videoDrivers = ["nvidia"];
-    boot = {
-      kernelModules = [ "uinput" ];
-      kernelPackages = pkgs.linuxPackages_latest;
-      loader = {
-        systemd-boot.enable = true;
-        efi = {
-          canTouchEfiVariables = true;
-          efiSysMountPoint = "/boot";
-        };
+  boot = {
+    kernelModules = [ "uinput" ];
+    kernelPackages = pkgs.linuxPackages_latest;
+    kernelParams = [
+      "nvidia-drm.modset=1"
+      "nvidia-drm.fbdev=1"
+    ];
+    loader = {
+      systemd-boot.enable = true;
+      efi = {
+        canTouchEfiVariables = true;
+        efiSysMountPoint = "/boot";
       };
     };
+  };
 
   security = {
     sudo.wheelNeedsPassword = false;
@@ -57,9 +70,11 @@
 
 
   services.udev.extraRules = ''
-  KERNEL=="ttyACM[0-9]*", MODE="0666"
-  KERNEL=="ttyUSB[0-9]*", MODE="0666"
-'';
+    KERNEL=="ttyACM[0-9]*", MODE="0666"
+    KERNEL=="ttyUSB[0-9]*", MODE="0666"
+  '';
+
+  services.xserver.videoDrivers = [ "nvidia" ];
 
   users = {
     mutableUsers = false;
