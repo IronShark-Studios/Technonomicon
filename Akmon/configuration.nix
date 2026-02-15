@@ -21,7 +21,6 @@
     uinput.enable = true;
     graphics = {
       enable = true;
-      enable32bit = true;
     };
     nvidia = {
       package = config.boot.kernelPackages.nvidiaPackages.beta;

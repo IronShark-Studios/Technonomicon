@@ -7,6 +7,7 @@
       hyprcursor
       # hyprlandPlugins.hypr-dynamic-cursors
       gnome-network-displays
+      greetd.tuigreet
     ];
   };
 
@@ -36,11 +37,15 @@
       };
     };
 
-    displayManager.sddm = {
+    greetd = {
       enable = true;
-      wayland.enable = true;
-      autoNumlock = true;
-      theme = "chili";
+      settings = {
+        default_session = {
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --asterisks
+          --remember --cmd Hyprland";
+          user = "greeter";
+        };
+      };
     };
 
     kanata = {
