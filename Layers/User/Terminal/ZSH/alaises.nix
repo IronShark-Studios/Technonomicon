@@ -2,9 +2,6 @@
 
   programs.zsh.shellAliases = {
     cd = "z";
-    cp = "~/.local/bin/advcp -r --progress-bar";
-    mv = "~/.local/bin/advmv --progress-bar";
-    ci = "vi";
     view = "nvim -R";
     vimdiff = "nvim -d";
     ca = "clear && printf '\n%.0s' {1..100}";
