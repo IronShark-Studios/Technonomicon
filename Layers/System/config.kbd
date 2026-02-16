@@ -10,6 +10,7 @@
   /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-if01-hidraw
   /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-if02-hidraw
   /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-mouse
+  /dev/input/by-path/platform-i8042-serio-0-event-kbd
   )
 )
 
