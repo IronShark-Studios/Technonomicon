@@ -40,6 +40,9 @@ xdg.portal = {
       enable = true;
       openDefaultPorts = true;
         guiAddress = "127.0.0.1:8385";
+        user = "xin";
+        group = "users";
+        dataDir = "/home/xin/";
     };
   };
 }
