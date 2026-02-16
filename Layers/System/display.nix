@@ -51,7 +51,7 @@
     kanata = {
       enable = true;
       package = pkgs.kanata-with-cmd;
-      keyboards.colmacs.configFile = ../../Thanatos/colmacs.kbd;
+      keyboards.colmacs.configFile = ./config.kbd;
     };
   };
 

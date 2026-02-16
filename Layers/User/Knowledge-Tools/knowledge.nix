@@ -14,10 +14,12 @@
     pdfannots2json #needed by obsidian
     pomodoro-gtk
     blanket
+    wl-kbptr
     ];
 
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
   xdg.configFile."mpv/script-opts".source = ./MPV-Script-Options;
+  xdg.configFile."wl-kbptr".source = ./wl-kbptr;
 
   home.file = { 
     "Zotero-User-Configuration" = {

@@ -1,5 +1,6 @@
 (defcfg
   process-unmapped-keys yes
+  danger-enable-cmd yes
 )
 
 (defsrc
@@ -11,7 +12,7 @@
 )
 
 (deflayer colemak
-  grv    1    2    3      4    5    6    7      8      9      0    -    =    bspc
+  grv    1    2    3      4    5    6    7      8      9      0    -    =  @bspc-nav
   tab    q    w    f      p    b    j    l      u      y      z    [    ]    \
   esc    a    r    s      t    g    m    n      e      i      o    '    ret
   @lxsft ;    c    d      v    x    k    h      ,      .      /    @rxsft
@@ -19,15 +20,17 @@
 )
 
 (deflayer nav
-  _  _      _       _        _   _    _    _      _     _        _    _    _    _ 
-  _  S-lft  pgup    S-right  _   _    _    C-lft  up    C-right  _    _    _    _
-  _  home   pgdn    end      _   _    _    lft    down  right    _    _    _
-  _  _      _       _        _   _    _    _      _     _        _    _
-  _  _      _                _                    _     _        _
+  _  _  _      _     _       _      _      _      _     _        _    _    _    _ 
+  _  _  S-lft  pgup  S-rght  _      _      C-lft  up    C-rght   _    _    _    _
+  _  _  home   pgdn  end     @mouse @mouse lft    down  rght     _    _    _
+  _  _  _      _     _       _      _      _      _     _        _    _
+  _  _  _            _                     _      _     _
 )
 
 (defalias
   spc-nav (tap-hold 200 200 spc (layer-toggle nav))
+  bspc-nav (tap-hold 200 200 bspc (layer-toggle nav))
+  mouse (multi ctl alt met sft spc)
 )
 
 

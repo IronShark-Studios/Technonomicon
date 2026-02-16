@@ -7,7 +7,7 @@
 
 networking.firewall = {
   enable = true;
-  allowedTCPPorts = [ 7236 7250 ];
+  allowedTCPPorts = [ 7236 7250 8384 ];
   allowedUDPPorts = [ 7236 5353 ];
 };
 networking.firewall.trustedInterfaces = [ "p2p-wl+" ];
@@ -34,6 +34,11 @@ xdg.portal = {
       enable = true;
       nssmdns4 = true;
       openFirewall = true;
+    };
+
+    syncthing = {
+      enable = true;
+      openDefaultPorts = true;
     };
   };
 }

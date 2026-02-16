@@ -3,6 +3,7 @@ pkgs.mkShell {
   packages = with pkgs; [
     nixVersions.latest
     git
+    git-crypt
     vim
   ];
 }

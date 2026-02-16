@@ -22,7 +22,12 @@
         rgx-menu() { rg --regex "$1" | fzf; }
         fd-menu() { fd -i "$1" | fzf; }
         fdx-menu() { fd --regex "$1" | fzf; }
-
+        monitor_command() {
+            "$@" &              
+            pid=$!             
+            progress -mp $pid 
+            wait $pid        
+        }
       '';
   };
 
