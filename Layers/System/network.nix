@@ -7,7 +7,7 @@
 
 networking.firewall = {
   enable = true;
-  allowedTCPPorts = [ 7236 7250 8384 ];
+  allowedTCPPorts = [ 7236 7250 8385 ];
   allowedUDPPorts = [ 7236 5353 ];
 };
 networking.firewall.trustedInterfaces = [ "p2p-wl+" ];
@@ -39,6 +39,7 @@ xdg.portal = {
     syncthing = {
       enable = true;
       openDefaultPorts = true;
+        guiAddress = "127.0.0.1:8385";
     };
   };
 }
