@@ -1,6 +1,16 @@
 (defcfg
   process-unmapped-keys yes
   danger-enable-cmd yes
+  linux-continue-if-no-devs-found yes
+  linux-dev (
+  /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-event-if02
+  /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-event-mouse
+  /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-hidraw
+  /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-if01-event-kbd
+  /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-if01-hidraw
+  /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-if02-hidraw
+  /dev/input/by-id/usb-Kinesis_Advantage2_Keyboard_314159265359-mouse
+  )
 )
 
 (defsrc
