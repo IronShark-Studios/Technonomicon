@@ -38,6 +38,7 @@
 
   boot = {
     kernelModules = [ "uinput" ];
+    blacklistedKernelModules = [ "wacom" ];
     kernelPackages = pkgs.linuxPackages_latest;
     kernelParams = [
       "nvidia-drm.modset=1"
