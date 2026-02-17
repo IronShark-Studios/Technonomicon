@@ -29,6 +29,7 @@
       modesetting.enable = true;
       powerManagement.enable = false;
       powerManagement.finegrained = false;
+
     };
   };
 
