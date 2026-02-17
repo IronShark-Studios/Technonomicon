@@ -29,7 +29,10 @@
       modesetting.enable = true;
       powerManagement.enable = false;
       powerManagement.finegrained = false;
-
+    };
+    opentabletdriver = {
+      enable = true;
+      daemon.enable = true;
     };
   };
 
