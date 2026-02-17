@@ -105,4 +105,12 @@
           zle -N zle-line-init
     '';
   };
+
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 6d --keep 3";
+    flake = "/home/xin/Projects/Technonomicon/";
+  };
+
 }
