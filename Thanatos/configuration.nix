@@ -21,7 +21,7 @@
 
   boot = {
     kernelModules = [ "uinput" ];
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages;
     loader = {
       systemd-boot.enable = true;
       efi = {
