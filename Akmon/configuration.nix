@@ -23,7 +23,7 @@
       enable = true;
     };
     nvidia = {
-      package = config.boot.kernelPackages.nvidiaPackages.beta;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
       open = true;
       nvidiaSettings = true;
       modesetting.enable = true;
@@ -39,7 +39,7 @@
   boot = {
     kernelModules = [ "uinput" ];
     blacklistedKernelModules = [ "wacom" ];
-    kernelPackages = pkgs.linuxPackages_latest;
+    kernelPackages = pkgs.linuxPackages;
     kernelParams = [
       "nvidia-drm.modset=1"
       "nvidia-drm.fbdev=1"
