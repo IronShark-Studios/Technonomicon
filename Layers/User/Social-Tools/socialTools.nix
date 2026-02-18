@@ -3,7 +3,7 @@
   home = {
     packages = with pkgs; [
     slack
-    discord
+#    discord
     thunderbird
     hugo
     ];
