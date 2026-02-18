@@ -20,7 +20,7 @@
     rm-s = "sudo shred -f";
     trash-restore = "sudo trash-restore";
     arc-sync = "bash /etc/scripts/update-archives.sh";
-    power-off = "sudo trash-put ~/Downloads/* & trash-empty & sudo shutdown -h now";
+    power-off = "bash /etc/scripts/clean-power-off.sh";
     logout = "sudo kill -9 -1";
     restart = "sudo reboot";
     devEnv = "nix develop -c zsh";

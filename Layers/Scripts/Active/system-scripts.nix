@@ -61,7 +61,6 @@
       
       rm /home/xin/Grimoire/.trash/* 
       sudo nix-collect-garbage --delete-old
-      sudo trash-put /home/xin/.local/share/qutebrowser/history.sqlite
       trash-empty -f
       sudo trash-empty -f
     '';
@@ -90,6 +89,16 @@
             ;;
         esac
       }
+    '';
+  };
+
+  environment.etc."clean-power-off.nix" = {
+    target = "scripts/clean-power-off.sh";
+    text = ''
+      #!/bin/sh
+      
+      alacritty -e sudo trash-put ~/Downloads/*
+      poweroff
     '';
   };
 }
