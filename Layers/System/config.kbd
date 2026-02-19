@@ -92,6 +92,6 @@
   rxmet (tap-hold 200 200 (one-shot 1500 rmet) rmet)
   lxalt (tap-hold 200 200 (one-shot 1500 lalt) lalt)
   rxalt (tap-hold 200 200 (one-shot 1500 ralt) ralt)
-  sret  (tap-hold 200 200 (one-shot 1500 ret) rmet)
-  sdel  (tap-hold 200 200 (one-shot 1500 del) rmet)
+  sret  (tap-hold 200 200 ret rmet)
+  sdel  (tap-hold 200 200 del rmet)
 )
