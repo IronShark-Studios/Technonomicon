@@ -19,15 +19,15 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt          spc            ralt menu rctl
+  lctl lmet lalt          spc            ralt rmet rctl
 )
 
 (deflayer colemak
-  grv    1    2    3      4    5    6    7      8      9      0    -    =  @bspc-nav
+  grv    1    2    3      4    5     6    7      8      9      0    -    =  @bspc-nav
   tab    q    w    f      p    b    j    l      u      y      z    [    ]    \
-  esc    a    r    s      t    g    m    n      e      i      o    '    ret
-  @lxsft ;    c    d      v    x    k    h      ,      .      /    @rxsft
-  @lxctl  @lxmet @lxalt        @spc-nav            @rxalt menu @rxctl
+  esc    a    @cr  @cs    @ct  g    m    @cn    @ce    @ci      o    '    ret
+  @lxsft ;    @cc  @cd    @cv  x    k    @ch    @c,    @c.      /    @rxsft
+  @lxctl  @lxmet @lxalt           @spc-nav            @rxalt @rxmet @rxctl
 )
 
 (deflayer nav
@@ -38,10 +38,48 @@
   _  _  _            _                     _      _     _
 )
 
+(defchords mod-chords 50
+  (h)  h
+  (n)  n
+  (h n) @rxctl
+
+  (,)  ,
+  (e)  e
+  (, e) @rxmet
+
+  (.)  .
+  (i)  i
+  (. i)  @rxalt
+
+  (v)  v
+  (t)  t
+  (v t)  @lxctl
+
+  (d)  d
+  (s)  s
+  (d s)  @lxmet
+
+  (c)  c
+  (r)  r
+  (c r)  @lxalt
+)
+
 (defalias
   spc-nav (tap-hold 200 200 spc (layer-toggle nav))
   bspc-nav (tap-hold 200 200 bspc (layer-toggle nav))
   mouse (multi ctl alt met sft spc)
+  ch (chord mod-chords h)
+  cn (chord mod-chords n)
+  c, (chord mod-chords ,)
+  ce (chord mod-chords e)
+  c. (chord mod-chords .)
+  ci (chord mod-chords i)
+  cv (chord mod-chords v)
+  ct (chord mod-chords t)
+  cd (chord mod-chords d)
+  cs (chord mod-chords s)
+  cc (chord mod-chords c)
+  cr (chord mod-chords r)
 )
 
 
