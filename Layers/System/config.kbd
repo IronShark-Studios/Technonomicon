@@ -19,15 +19,15 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt          spc            ralt rmet rctl
+  lctl lmet lalt          spc            ralt rmet rctl del 
 )
 
 (deflayer colemak
   grv    1    2    3      4    5     6    7      8      9      0    -    =  @bspc-nav
   tab    q    w    f      p    b    j    l      u      y      z    [    ]    \
-  esc    a    @cr  @cs    @ct  g    m    @cn    @ce    @ci      o    '    ret
+  esc    a    @cr  @cs    @ct  g    m    @cn    @ce    @ci      o    '    @sret
   @lxsft ;    @cc  @cd    @cv  x    k    @ch    @c,    @c.      /    @rxsft
-  @lxctl  @lxmet @lxalt           @spc-nav            @rxalt @rxmet @rxctl
+  @lxctl  @lxmet @lxalt           @spc-nav            @rxalt @rxmet @rxctl @sdel
 )
 
 (deflayer nav
@@ -35,7 +35,7 @@
   _  _  S-lft  pgup  S-rght  _      _      C-lft  up    C-rght   _    _    _    _
   _  _  home   pgdn  end     @mouse @mouse lft    down  rght     _    _    _
   _  _  _      _     _       _      _      _      _     _        _    _
-  _  _  _            _                     _      _     _
+  _  _  _            _                     _      _     _        _
 )
 
 (defchords mod-chords 50
@@ -84,12 +84,14 @@
 
 
 (defalias
-  lxsft (tap-hold 200 200 (one-shot 3000 lsft) lsft)
-  rxsft (tap-hold 200 200 (one-shot 3000 rsft) rsft)
-  lxctl (tap-hold 200 200 (one-shot 3000 lctl) lctl)
-  rxctl (tap-hold 200 200 (one-shot 3000 rctl) rctl)
-  lxmet (tap-hold 200 200 (one-shot 3000 lmet) lmet)
-  rxmet (tap-hold 200 200 (one-shot 3000 rmet) rmet)
-  lxalt (tap-hold 200 200 (one-shot 3000 lalt) lalt)
-  rxalt (tap-hold 200 200 (one-shot 3000 ralt) ralt)
+  lxsft (tap-hold 200 200 (one-shot 1500 lsft) lsft)
+  rxsft (tap-hold 200 200 (one-shot 1500 rsft) rsft)
+  lxctl (tap-hold 200 200 (one-shot 1500 lctl) lctl)
+  rxctl (tap-hold 200 200 (one-shot 1500 rctl) rctl)
+  lxmet (tap-hold 200 200 (one-shot 1500 lmet) lmet)
+  rxmet (tap-hold 200 200 (one-shot 1500 rmet) rmet)
+  lxalt (tap-hold 200 200 (one-shot 1500 lalt) lalt)
+  rxalt (tap-hold 200 200 (one-shot 1500 ralt) ralt)
+  sret  (tap-hold 200 200 (one-shot 1500 ret) rmet)
+  sdel  (tap-hold 200 200 (one-shot 1500 del) rmet)
 )
