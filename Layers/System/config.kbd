@@ -84,12 +84,12 @@
 
 
 (defalias
-  lxsft (tap-hold 200 200 (one-shot 1000 lsft) lsft)
-  rxsft (tap-hold 200 200 (one-shot 1000 rsft) rsft)
-  lxctl (tap-hold 200 200 (one-shot 1000 lctl) lctl)
-  rxctl (tap-hold 200 200 (one-shot 1000 rctl) rctl)
-  lxmet (tap-hold 200 200 (one-shot 1000 lmet) lmet)
-  rxmet (tap-hold 200 200 (one-shot 1000 rmet) rmet)
-  lxalt (tap-hold 200 200 (one-shot 1000 lalt) lalt)
-  rxalt (tap-hold 200 200 (one-shot 1000 ralt) ralt)
+  lxsft (tap-hold 200 200 (one-shot 3000 lsft) lsft)
+  rxsft (tap-hold 200 200 (one-shot 3000 rsft) rsft)
+  lxctl (tap-hold 200 200 (one-shot 3000 lctl) lctl)
+  rxctl (tap-hold 200 200 (one-shot 3000 rctl) rctl)
+  lxmet (tap-hold 200 200 (one-shot 3000 lmet) lmet)
+  rxmet (tap-hold 200 200 (one-shot 3000 rmet) rmet)
+  lxalt (tap-hold 200 200 (one-shot 3000 lalt) lalt)
+  rxalt (tap-hold 200 200 (one-shot 3000 ralt) ralt)
 )
