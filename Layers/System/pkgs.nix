@@ -4,6 +4,8 @@
     systemPackages = with pkgs; [
       wget
       adwaita-icon-theme
+      gnome-themes-extra
+      glib
       unzip
       alsa-utils
       zsh-command-time
