@@ -3,6 +3,7 @@
   environment = {
     systemPackages = with pkgs; [
       wget
+      adwaita-icon-theme
       unzip
       alsa-utils
       zsh-command-time
