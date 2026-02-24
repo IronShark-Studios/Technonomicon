@@ -32,5 +32,6 @@
     bzip = "bzip3";
     k-stop = "sudo systemctl stop kanata-colmacs";
     k-start = "sudo systemctl restart kanata-colmacs";
+    blanket = "GTK_THEME=Adwaita:dark blanket";
   };
 }

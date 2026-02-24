@@ -13,8 +13,13 @@
     mpv
     pdfannots2json #needed by obsidian
     pomodoro-gtk
-    blanket
     wl-kbptr
+    (blanket.overrideAttrs (oldAttrs: {
+      postInstall = (oldAttrs.postInstall or "") + ''
+        wrapProgram $out/bin/blanket \
+          --set GTK_THEME "Adwaita:dark"
+      '';
+    }))
     ];
 
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
