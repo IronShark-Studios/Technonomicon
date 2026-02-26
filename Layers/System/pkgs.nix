@@ -55,6 +55,7 @@
     port = 11434;
     environmentVariables = {
       OLLAMA_KEEP_ALIVE = "5m";
+      OLLAMA_ORIGINS = "*";
     };
   };
 
