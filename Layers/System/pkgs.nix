@@ -12,6 +12,7 @@
       wl-clipboard
       nix-ld 
       kdePackages.skanlite
+      vscodium
     ];
   };
 
@@ -50,6 +51,18 @@
   services.ollama = {
     enable = true;
     host = "0.0.0.0";
+    port = 11434;
+    environmentVariables = {
+      OLLAMA_KEEP_ALIVE = "5m";
+    };
+  };
+
+  services.open-webui = {
+    enable = true;
+    port = 8180;
+    environment = {
+      OLLAMA_API_BASE_URL = "http://127.0.0.1:11434";
+    };
   };
 
   services.vikunja = {
