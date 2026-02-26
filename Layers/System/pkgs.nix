@@ -47,6 +47,11 @@
   openFirewall = true;
   };
 
+  services.ollama = {
+    enable = true;
+    host = "0.0.0.0";
+  };
+
   services.vikunja = {
     enable = true;
     frontendScheme = "http";
