@@ -12,7 +12,7 @@
       wl-clipboard
       nix-ld 
       kdePackages.skanlite
-      vscodium
+      vscodium-fhs
     ];
   };
 
