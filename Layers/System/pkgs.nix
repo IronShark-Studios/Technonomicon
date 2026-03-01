@@ -68,7 +68,7 @@
   };
 
   services.vikunja = {
-    enable = true;
+    enable = false;
     frontendScheme = "http";
     frontendHostname = "Thanatos";
     settings = {
