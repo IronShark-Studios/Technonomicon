@@ -33,5 +33,6 @@
     k-stop = "sudo systemctl stop kanata-colmacs";
     k-start = "sudo systemctl restart kanata-colmacs";
     blanket = "GTK_THEME=Adwaita:dark blanket";
+    pdf-split = "sh -c 'nix-shell -p ocamlPackages.cpdf --run \"cpdf -split-bookmarks 0 \\\"$1\\\" -utf8 -o \\\"@B.pdf\\\"\"' sh";
   };
 }
