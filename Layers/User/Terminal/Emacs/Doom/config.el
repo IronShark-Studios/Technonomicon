@@ -7,7 +7,7 @@
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;; `doom-font', `doom-variable-pitch-font', `doom-serif-font', `doom-symbol-font',
 ;; and `doom-big-font'.
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 14))
+(setq doom-font (font-spec :family "iosevka" :size 18))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the

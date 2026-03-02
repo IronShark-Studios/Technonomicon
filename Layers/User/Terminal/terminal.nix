@@ -10,7 +10,6 @@
     ./ZSH/zsh-env.nix
     ./Tmux/tmux.nix
     ./BASH/bash.nix
-    ./VIM/vim.nix
     ./GIT/git.nix
     ./Emacs/emacs.nix
   ];
