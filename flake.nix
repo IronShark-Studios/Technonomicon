@@ -8,6 +8,8 @@
 
     nixos-hardware.url = "github:nixos/nixos-hardware";
 
+    nix-doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
+
     plover-flake.url = "github:openstenoproject/plover-flake";
   };
 
