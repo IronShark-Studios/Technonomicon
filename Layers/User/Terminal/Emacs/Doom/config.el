@@ -4,10 +4,12 @@
 (setq user-full-name "Xin IronShark"
       user-mail-address "xin@ironshark.org")
 
+(map! :i "C-S-v" #'clipboard-yank)
+
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;; `doom-font', `doom-variable-pitch-font', `doom-serif-font', `doom-symbol-font',
 ;; and `doom-big-font'.
-(setq doom-font (font-spec :family "iosevka" :size 18))
+(setq doom-font (font-spec :family "iosevka" :size 23))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -17,3 +19,12 @@
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
+
+(use-package! fcitx
+  :after evil
+  :config
+  (setq fcitx-use-dbus nil)
+  (setq fcitx-remote-command "fcitx5-remote")
+  
+  (fcitx-aggressive-setup))
+
