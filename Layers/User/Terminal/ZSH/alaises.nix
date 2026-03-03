@@ -33,6 +33,7 @@
     k-stop = "sudo systemctl stop kanata-colmacs";
     k-start = "sudo systemctl restart kanata-colmacs";
     blanket = "GTK_THEME=Adwaita:dark blanket";
+    book-dl = "aria2c -x 16 -s 16";
     pdf-split = "sh -c 'nix-shell -p ocamlPackages.cpdf --run \"cpdf -split-bookmarks 0 \\\"$1\\\" -utf8 -o \\\"@B.pdf\\\"\"' sh";
     en = "emacsclient -c -a 'emacs'";
     vi = "env COLORTERM=truecolor emacsclient -t";

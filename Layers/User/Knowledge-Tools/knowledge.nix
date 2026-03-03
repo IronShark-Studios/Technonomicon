@@ -11,6 +11,7 @@
     zathura
     libation
     mpv
+    aria2
     pdfannots2json #needed by obsidian
     pomodoro-gtk
     wl-kbptr
