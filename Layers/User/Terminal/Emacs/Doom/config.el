@@ -85,3 +85,42 @@
 
 (add-hook 'verilog-mode-hook #'lsp!)
 (add-hook 'vhdl-mode-hook #'lsp!)
+
+(after! org
+  (setq org-directory "~/Grimoire/")
+  (setq org-roam-directory "~/Grimoire/Notes/"))
+
+(use-package! websocket
+    :after org-roam)
+
+(use-package! org-roam-ui
+  :after org-roam
+  :config
+  (setq org-roam-ui-sync-theme t      
+        org-roam-ui-follow t         
+        org-roam-ui-update-on-save t
+        org-roam-ui-open-on-start t)) 
+
+(after! org-roam
+  (setq org-roam-dailies-directory "Journal/")
+  
+  (setq org-roam-dailies-capture-templates
+        '(("d" "default" entry
+           "* %?" 
+           :target (file+head "%<%Y-%m-%d>.org"
+                              "#+title: %<%Y-%m-%d>\n")))))
+
+(use-package! org-modern
+  :hook (org-mode . org-modern-mode)
+  :hook (org-agenda-finalize . org-modern-agenda)
+  :config
+  (setq org-modern-tag nil)
+  (setq org-modern-star '("◉" "○" "●" "◦" "•")
+        org-modern-list '((?- . "•"))
+        org-modern-hide-stars t
+        org-modern-todo-faces
+        '(("TODO" :inverse-video t :weight bold)
+          ("DONE" :inverse-video t :weight bold))))
+
+(use-package! org-kanban
+  :after org)

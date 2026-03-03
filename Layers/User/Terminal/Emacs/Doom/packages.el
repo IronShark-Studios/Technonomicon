@@ -12,3 +12,9 @@
 (package! bqn-mode)
 
 (package! forth-mode)
+
+(package! org-roam-ui)
+
+(package! org-modern)
+
+(package! org-kanban)
