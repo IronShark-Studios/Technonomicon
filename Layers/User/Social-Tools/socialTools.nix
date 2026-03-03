@@ -4,7 +4,7 @@
     packages = with pkgs; [
     slack
     discord
-    thunderbird
+    newsflash
     hugo
     ];
   };

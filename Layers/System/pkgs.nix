@@ -37,7 +37,7 @@
     "x-scheme-handler/https" = "brave-browser.desktop";
     "x-scheme-handler/about" = "brave-browser.desktop";
     "x-scheme-handler/unknown" = "brave-browser.desktop";
-    "x-scheme-handler/mailto" = "thunderbird.desktop";
+    "x-scheme-handler/mailto" = "brave-browser.desktop";
   };
 
   hardware.sane = {
