@@ -18,52 +18,6 @@
     ];
   };
 
-  xdg.configFile."surfingkeys/config.js".text = ''
-    api.unmap('e');
-    api.unmap('E');
-    api.unmap('S');
-    api.unmap('D');
-
-    api.map('J', 'E'); // Go one tab left
-    api.map('K', 'R'); // Go one tab right
-    api.map('d', 'x'); // Close current tab
-    api.map('u', 'X'); // Restore closed tab
-
-    api.map('H', 'S'); // Go back in history
-    api.map('L', 'D'); // Go forward in history
-
-    settings.hintAlign = "left";
-    api.Hints.setCharacters('asdfghjklqwertyuiopzxcvbnm');
-
-    settings.theme = `
-      .sk_theme {
-        background: #282c34;
-        color: #bbc2cf;
-      }
-      .sk_theme tbody {
-        color: #bbc2cf;
-      }
-      .sk_theme input {
-        color: #bbc2cf;
-      }
-      .sk_theme .url {
-        color: #51afef;
-      }
-      .sk_theme .annotation {
-        color: #c678dd;
-      }
-      .sk_theme .omnibar_highlight {
-        color: #98be65;
-      }
-      .sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {
-        background: #282c34;
-      }
-      .sk_theme #sk_omnibarSearchResult ul li.focused {
-        background: #3f444a;
-      }
-    `;
-  '';
-
 xdg.desktopEntries = {
   khan-academy = {
     name = "Khan Academy";
@@ -119,5 +73,18 @@ xdg.desktopEntries = {
     categories = [ "Application" "Network" ];
   };
 
+  G-Mail = {
+    name = "Google Email";
+    exec = "${pkgs.brave}/bin/brave --app=https://gmail.com --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
+
+  G-Calenda = {
+    name = "Google Calendar";
+    exec = "${pkgs.brave}/bin/brave --app=https://calendar.google.com --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
 };
 }
