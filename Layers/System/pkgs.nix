@@ -12,7 +12,8 @@
       wl-clipboard
       nix-ld 
       kdePackages.skanlite
-      vscodium-fhs
+      aider-chat
+      aichat
     ];
   };
 
@@ -56,9 +57,16 @@
     host = "0.0.0.0";
     port = 11434;
     environmentVariables = {
-      OLLAMA_KEEP_ALIVE = "5m";
+      OLLAMA_KEEP_ALIVE = "10m";
       OLLAMA_ORIGINS = "*";
     };
+    loadModels = [
+      "mixtral:latest"
+      "deepseek-r1:32b"
+      "qwen2.5-code:32b-instruct"
+      "qwen2.5-code:14b"
+      "qwen2.5-code:7b"
+    ];
   };
 
   services.open-webui = {
