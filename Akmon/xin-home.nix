@@ -11,7 +11,7 @@
     ./waybar.nix
     ../Layers/User/xdg.nix
     ../Layers/User/Terminal/terminal.nix
-    ../Layers/User/Firefox/firefox.nix
+    ../Layers/User/Web-Tools/browsers.nix
     ../Layers/User/System-Tools/systemTools.nix
     ../Layers/User/Social-Tools/socialTools.nix
     ../Layers/User/Accounting-Tools/accountingTools.nix

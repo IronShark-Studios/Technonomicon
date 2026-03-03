@@ -73,5 +73,8 @@
     usbutils
     bat
     bzip3
+    bitwarden-cli
+    bitwarden-desktop
+    sqlite
   ];
 }
