@@ -4,3 +4,11 @@
 ;; use 'M-x doom/reload'.
 
 (package! fcitx)
+
+(package! aidermacs)
+
+(package! minuet)
+
+(package! bqn-mode)
+
+(package! forth-mode)

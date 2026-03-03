@@ -4,6 +4,8 @@
 (setq user-full-name "Xin IronShark"
       user-mail-address "xin@ironshark.org")
 
+(setq confirm-kill-emacs nil)
+
 (map! :i "C-S-v" #'clipboard-yank)
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
@@ -28,3 +30,58 @@
   
   (fcitx-aggressive-setup))
 
+(use-package! aidermacs
+
+  :config
+  (setq aidermacs-backend 'vterm)
+  (setq aidermacs-default-model "ollama/qwen2.5-coder:14b")
+  
+  (map! :leader
+        :desc "Aidermacs Menu" "o a" #'aidermacs-transient-menu))
+
+
+ (use-package! minuet
+  :demand t
+  :config
+  (setq minuet-provider 'openai-fim-compatible)
+  (setq minuet-n-completions 1)
+  
+  ;; Use plist-put to safely inject your Ollama settings
+  (plist-put minuet-openai-fim-compatible-options :end-point "http://localhost:11434/v1/completions")
+  (plist-put minuet-openai-fim-compatible-options :name "Ollama")
+  (plist-put minuet-openai-fim-compatible-options :model "qwen2.5-coder:1.5b")
+  
+  ;; THE FIX: Tell Minuet to look at the $TERM environment variable to bypass the key check
+  (plist-put minuet-openai-fim-compatible-options :api-key "TERM") 
+
+  ;; Enable auto-suggestions for all programming modes
+  (add-hook 'prog-mode-hook #'minuet-auto-suggestion-mode)
+
+  ;; Keybindings for the ghost text
+  (map! :map minuet-active-mode-map
+        :i "TAB" #'minuet-accept-suggestion
+        :i "M-n" #'minuet-next-suggestion
+        :i "M-p" #'minuet-previous-suggestion
+        :i "M-e" #'minuet-dismiss-suggestion))       :i "M-e" #'minuet-dismiss-suggestion)) ;; Alt+E to reject and clear the ghost text
+
+
+(defun my/save-buffer-if-file ()
+  "Save the current buffer if it's visiting a file and has been modified."
+  (when (and (buffer-file-name) (buffer-modified-p))
+    (save-buffer)))
+
+(add-hook 'evil-normal-state-entry-hook #'my/save-buffer-if-file)
+(add-hook 'evil-insert-state-entry-hook #'my/save-buffer-if-file)
+
+
+
+(use-package! bqn-mode
+  :mode "\\.bqn$")
+
+(use-package! forth-mode
+  :mode "\\.\\(fs\\|fth\\)$")
+
+(add-to-list 'auto-mode-alist '("\\.asm\\'" . asm-mode))
+
+(add-hook 'verilog-mode-hook #'lsp!)
+(add-hook 'vhdl-mode-hook #'lsp!)

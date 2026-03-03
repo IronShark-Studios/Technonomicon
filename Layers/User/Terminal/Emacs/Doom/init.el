@@ -12,7 +12,6 @@
        :ui
        doom                ; what makes DOOM look the way it does
        doom-dashboard      ; a nifty splash screen for Emacs
-       ;; doom-quit           ; DOOM quit-message prompts when you quit Emacs
        hl-todo             ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
        modeline            ; snazzy, Atom-inspired modeline, plus API
        ophints             ; highlight the region an operation acts on
@@ -38,22 +37,29 @@
 
        :checkers
        syntax              ; tasing you for every semicolon you forget
-       ;;spell             ; tasing you for misspelling mispelling
-       ;;grammar           ; tasing grammar mistake every you make
+       spell             ; tasing you for misspelling mispelling
+       grammar           ; tasing grammar mistake every you make
 
        :tools
        eval                ; run code, run (also, repls)
        lookup              ; navigate your code and its documentation
        magit               ; a git porcelain to manage your version-control
        make                ; run make tasks from Emacs
+       lsp
 
        :lang
+       (cc +lsp)
+       (haskell +lsp)
+       (nix +lsp)                 ; I hereby declare "nix geht mehr!"
+       (python +lsp +pyright)
+       (racket +lsp)
+       (zig +lsp)
+       scheme
        emacs-lisp          ; drown in parentheses
-       nix                 ; I hereby declare "nix geht mehr!"
        markdown            ; writing docs for people to ignore
        org                 ; organize your plain life in plain text
        sh                  ; she sells {ba,z,fi}sh shells on the C xor
 
        :config
-       ;;literate
+       literate
        (default +bindings +smartparens))

@@ -14,6 +14,7 @@
       kdePackages.skanlite
       aider-chat
       aichat
+      lsp-ai
     ];
   };
 
@@ -61,11 +62,12 @@
       OLLAMA_ORIGINS = "*";
     };
     loadModels = [
-      "mixtral:latest"
+      "mixtral"
       "deepseek-r1:32b"
-      "qwen2.5-code:32b-instruct"
-      "qwen2.5-code:14b"
-      "qwen2.5-code:7b"
+      "qwen2.5-coder:32b-instruct"
+      "qwen2.5-coder:1.5b"
+      "qwen2.5-coder:14b"
+      "qwen2.5-coder:7b"
     ];
   };
 

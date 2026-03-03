@@ -26,6 +26,24 @@
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
   xdg.configFile."mpv/script-opts".source = ./MPV-Script-Options;
   xdg.configFile."wl-kbptr".source = ./wl-kbptr;
+  xdg.configFile."lsp-ai/config.json".text = builtins.toJSON {
+    memory = {
+      file_store = {};
+    };
+    models = {
+      my-local-copilot = {
+        type = "ollama";
+        model = "qwen2.5-coder:7b"; # Keep the 7B here for speed!
+        chat_endpoint = "http://localhost:11434/api/chat";
+      };
+    };
+    completion = {
+      model = "my-local-copilot";
+      parameters = {
+        max_tokens = 64;
+      };
+    };
+  };
 
   home.file = { 
     "Zotero-User-Configuration" = {
