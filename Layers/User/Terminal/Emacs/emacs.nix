@@ -6,15 +6,16 @@
   ];
 
   services.emacs = {
-    enable = true;
+    enable = false;
+    client.enable = false; 
     defaultEditor = true; 
-    client.enable = true; 
   };
 
   programs.doom-emacs = {
     enable = true;
     doomDir = ./Doom;
     emacs= pkgs.emacs30-pgtk; 
+    extraPackages = epkgs: [ epkgs.treesit-grammars.with-all-grammars ];
   };
 
   home.packages = with pkgs; [
@@ -41,5 +42,9 @@
     nasm gforth
     # Verilog & VHDL
     verilator verible ghdl vhdl-ls
+    # Jupyter Notebooks
+    python3
+    python3Packages.jupyter
+    zeromq
   ];
 }

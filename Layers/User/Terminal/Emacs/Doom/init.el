@@ -17,20 +17,25 @@
        ophints             ; highlight the region an operation acts on
        (popup +defaults)   ; tame sudden yet inevitable temporary windows
        treemacs            ; a project drawer, like neotree but cooler
-       vc-gutter           ; vcs diff in the fringe
+       (vc-gutter +pretty)           ; vcs diff in the fringe
        vi-tilde-fringe     ; fringe tildes to mark beyond EOB
        workspaces          ; tab emulation, persistence & separate workspaces
+       indent-guides
+       ligatures
 
        :editor
        (evil +everywhere)  ; come to the dark side, we have cookies
        file-templates      ; auto-snippets for empty files
        fold                ; (nigh) universal code folding
        snippets            ; my elves. They type so I don't have to
+       format
+       multiple-cursors
 
        :emacs
-       dired               ; making dired pretty [functional]
+       (dired +dirvish)               ; making dired pretty [functional]
        undo                ; persistent, smarter undo for your inevitable mistakes
        vc                  ; version-control and tools, magit
+       (whitespace +guess +trim)
 
        :term
        vterm               ; the best terminal emulation in Emacs
@@ -41,24 +46,30 @@
        grammar           ; tasing grammar mistake every you make
 
        :tools
+       eww
        eval                ; run code, run (also, repls)
        lookup              ; navigate your code and its documentation
-       magit               ; a git porcelain to manage your version-control
+       (magit +forge +childframe)               ; a git porcelain to manage your version-control
        make                ; run make tasks from Emacs
        lsp
+       tree-sitter
+       debugger
+       direnv
+       pdf
 
        :lang
-       (cc +lsp)
-       (haskell +lsp)
-       (nix +lsp)                 ; I hereby declare "nix geht mehr!"
-       (python +lsp +pyright)
-       (racket +lsp)
-       (zig +lsp)
-       scheme
+       beancount
+       (cc +lsp +tree-sitter)
+       (haskell +lsp +tree-sitter)
+       (nix +lsp +tree-sitter)                 ; I hereby declare "nix geht mehr!"
+       (python +lsp +pyright +tree-sitter)
+       (racket +lsp +tree-sitter)
+       (zig +lsp +tree-sitter)
+       (scheme +tree-sitter)
        emacs-lisp          ; drown in parentheses
        markdown            ; writing docs for people to ignore
-       (org +roam)                 ; organize your plain life in plain text
-       sh                  ; she sells {ba,z,fi}sh shells on the C xor
+       (org +roam +dragndrop +jupyter)                 ; organize your plain life in plain text
+       (sh +tree-sitter)                  ; she sells {ba,z,fi}sh shells on the C xor
 
        :config
        literate

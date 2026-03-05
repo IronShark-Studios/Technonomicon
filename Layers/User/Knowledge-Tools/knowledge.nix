@@ -14,6 +14,7 @@
     aria2
     pdfannots2json #needed by obsidian
     pomodoro-gtk
+    sox
     wl-kbptr
     (blanket.overrideAttrs (oldAttrs: {
       postInstall = (oldAttrs.postInstall or "") + ''

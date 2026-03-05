@@ -3,13 +3,22 @@
 
 
 
-* List of Thin
-[10%]
-- [x] one
-- [ ] two
+* List of Things
+[1/2]
+- [X] one
+- [-] two
+- [ ] perfect ?! 
 
 [google](google.com)
 [[google.com][google]] 
 
 /test/ 
 
+
+* test to see how this is handeled
+[35/80]
+* Not sure why this is working now
+- test
+- test 2
+
+  

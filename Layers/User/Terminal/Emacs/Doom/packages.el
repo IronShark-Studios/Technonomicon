@@ -24,3 +24,11 @@
 (package! org-kanban)
 
 (package! org-appear)
+
+(package! which-key-posframe)
+
+(package! org-autolist)
+
+(package! ox-hugo)
+
+(package! highlight-parentheses)

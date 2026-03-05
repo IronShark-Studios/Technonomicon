@@ -104,6 +104,38 @@
 
           zle -N zle-line-init
     '';
+
+    initExtra = ''
+      # Custom wrapper for Nix Helper (nh) to auto-restart Services
+      nh() {
+          # Run the actual nh command
+          command nh "$@"
+          local exit_status=$?
+
+          # If the command was 'os' AND it didn't fail (exit 0)
+          if [[ "$1" == "os" && $exit_status -eq 0 ]]; then
+              echo -e "\n✨ NixOS Build Successful!"
+              # systemctl --user restart emacs
+          fi
+
+          return $exit_status
+      }
+
+        # Open files in the host Emacs from vterm
+        eo() {
+        # If no file is provided, do nothing
+        if [ -z "$1" ]; then
+        echo "Usage: eo <filename>"
+        return 1
+        fi
+
+        # Get the absolute path so Emacs knows exactly where to look
+        local file_path=$(realpath "$1")
+
+        # Send the hidden vterm escape code to Emacs telling it to run 'find-file'
+        printf "\e]51;Efind-file %s\e\\" "$file_path"
+        }
+    '';
   };
 
   programs.nh = {

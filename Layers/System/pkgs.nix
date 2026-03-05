@@ -24,6 +24,7 @@
     iosevka
     iosevka-comfy.comfy-wide-motion
     iosevka-comfy.comfy-wide-motion-duo
+    jetbrains-mono
     sarasa-gothic
     overpass
     fira-code
