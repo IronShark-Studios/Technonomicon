@@ -5,7 +5,6 @@
     slack
     discord
     newsflash
-    hugo
     ];
   };
 }
