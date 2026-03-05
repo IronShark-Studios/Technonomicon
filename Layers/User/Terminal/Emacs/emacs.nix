@@ -18,6 +18,8 @@
   };
 
   home.packages = with pkgs; [
+    hunspell
+    hunspellDicts.en_US
     sqlite
     # Haskell
     ghc cabal-install haskell-language-server haskellPackages.hoogle

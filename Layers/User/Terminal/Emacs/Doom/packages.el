@@ -3,6 +3,8 @@
 ;; on the command line, then restart Emacs for the changes to take effect -- or
 ;; use 'M-x doom/reload'.
 
+(package! exec-path-from-shell)
+
 (package! fcitx)
 
 (package! aidermacs)
@@ -17,4 +19,8 @@
 
 (package! org-modern)
 
+(package! svg-tag-mode)
+
 (package! org-kanban)
+
+(package! org-appear)

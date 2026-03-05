@@ -6,8 +6,8 @@
        ;;layout            ; auie,ctsrnm is the superior home row
 
        :completion
-       company             ; the ultimate code completion backend
-       vertico             ; the search engine of the future
+       (corfu +icons +dabbrev)
+       (vertico +icons +childframe)             ; the search engine of the future
 
        :ui
        doom                ; what makes DOOM look the way it does

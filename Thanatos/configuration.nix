@@ -66,7 +66,7 @@
     "SearchSuggestEnabled" = false;
 
     "ShowHomeButton" = false;
-    "NewTabPageLocation" = "https://en.wikipedia.org/wiki/Special:Random"; # <--- ADD THIS LINE
+    "NewTabPageLocation" = "https://en.wikipedia.org/wiki/Special:Random"; 
     "HomepageLocation" = "https://en.wikipedia.org/wiki/Special:Random";
     "BraveNewTabWidgetsVisible" = false;
     "NewTabPageAllowedTypes" = [ "none" ]; 
