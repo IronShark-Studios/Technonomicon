@@ -1,3 +1,4 @@
 *.key filter=git-crypt diff=git-crypt
 Thanatos/Secrets/** filter=git-crypt diff=git-crypt
+Akmon/Secrets/** filter=git-crypt diff=git-crypt
 Layers/Secrets/** filter=git-crypt diff=git-crypt

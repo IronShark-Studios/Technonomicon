@@ -68,7 +68,7 @@
        (scheme +tree-sitter)
        emacs-lisp          ; drown in parentheses
        markdown            ; writing docs for people to ignore
-       (org +roam +dragndrop +jupyter)                 ; organize your plain life in plain text
+       (org +roam +dragndrop +jupyter +hugo)                 ; organize your plain life in plain text
        (sh +tree-sitter)                  ; she sells {ba,z,fi}sh shells on the C xor
 
        :config

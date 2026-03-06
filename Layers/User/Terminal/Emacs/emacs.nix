@@ -18,6 +18,12 @@
     extraPackages = epkgs: [ epkgs.treesit-grammars.with-all-grammars ];
   };
 
+  programs.direnv = {
+      enable = true;
+      enableZshIntegration = true; # Hooks it into your Zsh shell
+      nix-direnv.enable = true;    # Crucial: Makes direnv lightning fast with Nix Flakes!
+  };
+
   home.packages = with pkgs; [
     hunspell
     hunspellDicts.en_US
