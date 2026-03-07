@@ -31,4 +31,12 @@
 
 (package! ox-hugo)
 
+(package! org-fragtog)
+
 (package! highlight-parentheses)
+
+(package! ob-mermaid)
+
+(package! anki-editor)
+
+(package! org-super-agenda)

@@ -25,9 +25,17 @@
   };
 
   home.packages = with pkgs; [
+    sqlite
+    mermaid-cli
+    drawio
+    #PDF Tooling
+    sioyek
+    poppler
+    # LaTeX
+    texlive.combined.scheme-full
+    # Spell Checking
     hunspell
     hunspellDicts.en_US
-    sqlite
     # Haskell
     ghc cabal-install haskell-language-server haskellPackages.hoogle
     # Nix

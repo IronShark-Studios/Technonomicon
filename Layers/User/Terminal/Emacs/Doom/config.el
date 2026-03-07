@@ -14,6 +14,9 @@
   (when (memq window-system '(mac ns x pgtk))
     (exec-path-from-shell-initialize)))
 
+(setq initial-major-mode 'org-mode)
+(setq initial-scratch-message nil)
+
 ;; =============================================================================
 ;; 2. UI, FONTS & THEME
 ;; =============================================================================
@@ -87,8 +90,16 @@
 (use-package! aidermacs
   :config
   (setq aidermacs-backend 'vterm)
-  (setq aidermacs-default-model "ollama/qwen2.5-coder:14b")
+  (setq aidermacs-default-model "gemini/gemini-3-flash-preview")
   (map! :leader :desc "Aidermacs Menu" "o a" #'aidermacs-transient-menu))
+
+;; Read the Gemini API key directly from the file into Emacs' environment
+(let ((key-file "/home/xin/Projects/Technonomicon/Layers/Secrets/gemini-api.txt"))
+  (when (file-exists-p key-file)
+    (setenv "GEMINI_API_KEY" 
+            (string-trim (with-temp-buffer 
+                           (insert-file-contents key-file) 
+                           (buffer-string))))))
 
 (use-package! minuet
   :demand t
@@ -123,10 +134,12 @@
 ;; 6. ORG MODE (BASE)
 ;; =============================================================================
 (after! org
+  (require 'org-mouse)
   (setq org-directory "~/Grimoire/")
   (setq org-hide-emphasis-markers t)
-  (require 'org-mouse)
-  
+  (setq org-todo-keywords
+        '((sequence "TODO(t)" "ACTIVE(a)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" "ARCHIVE(A)")))
+
   ;; Fleeting Notes
   (setq org-capture-templates
         '(("f" "Fleeting Note" entry
@@ -225,8 +238,12 @@
   (setq svg-tag-tags
         `(("\\([A-Za-z0-9]+\\):" . ((lambda (tag) (svg-tag-make tag :margin 0 :padding 0 :face 'info))))
           ("\\[#[A-Z]\\]" . ( (lambda (tag) (svg-tag-make tag :face 'error :beg 2 :end -1 :margin 0 :padding 0))))
-          ("\\bTODO\\b" . ((lambda (tag) (when (string= tag "TODO") (svg-tag-make "TODO" :face 'warning :inverse t :margin 0 :padding 0)))))
-          ("\\bDONE\\b" . ((lambda (tag) (when (string= tag "DONE") (svg-tag-make "DONE" :face 'success :inverse t :margin 0 :padding 0)))))
+          ("\\bTODO\\b" . ((lambda (tag) (string= tag "TODO") (svg-tag-make "TODO" :face 'warning :inverse t :margin 0 :padding 0))))
+          ("\\bACTIVE\\b" . ((lambda (tag) (string= tag "ACTIVE") (svg-tag-make "ACTIVE" :face 'info :inverse t :margin 0 :padding 0))))
+          ("\\bWAITING\\b" . ((lambda (tag) (string= tag "WAITING") (svg-tag-make "WAITING" :face 'secondary :inverse t :margin 0 :padding 0))))
+          ("\\bDONE\\b" . ((lambda (tag) (string= tag "DONE") (svg-tag-make "DONE" :face 'success :inverse t :margin 0 :padding 0))))
+          ("\\bCANCELLED\\b" . ((lambda (tag) (string= tag "CANCELLED") (svg-tag-make "CANCELLED" :face 'error :inverse t :margin 0 :padding 0))))
+          ("\\bARCHIVE\\b" . ((lambda (tag) (string= tag "ARCHIVE") (svg-tag-make "ARCHIVE" :face 'shadow :inverse t :margin 0 :padding 0))))
           ("\\(\\[[0-9]\\{1,3\\}%\\]\\)" . ((lambda (tag) (svg-progress-percent (substring tag 1 -2)))))
           ("\\(\\[[0-9]+/[0-9]+\\]\\)" . ((lambda (tag) (svg-progress-count (substring tag 1 -1)))))
           (,(format "\\(<%s>\\)" date-re) . ((lambda (tag) (svg-tag-make tag :beg 1 :end -1 :margin 0 :face 'success))))
@@ -312,3 +329,71 @@
                    (sleep-for 0.2)
                    (kill-emacs)))
   (delete-other-windows))
+
+;; --- LaTeX Typing & Rendering ---
+(use-package! org-fragtog
+  :hook (org-mode . org-fragtog-mode))
+
+(after! org
+  ;; Turn on CDLaTeX in Org-mode for fast math typing
+  (add-hook 'org-mode-hook #'turn-on-org-cdlatex)
+  
+  ;; Scale up the rendered equations to match your size 23 font
+  (setq org-format-latex-options 
+        (plist-put org-format-latex-options :scale 3.5)))
+
+;; =============================================================================
+;; 10. DIAGRAMS Mermaid
+;; =============================================================================
+
+;; --- Mermaid Charts ---
+(use-package! ob-mermaid
+  :config
+  ;; Nix places the executable simply as 'mmdc' in your PATH
+  (setq ob-mermaid-cli-path "mmdc"))
+
+(after! org
+  ;; Tell Org-Babel that it is allowed to execute Mermaid code blocks
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   (append org-babel-load-languages
+           '((mermaid . t)
+             (latex . t)))))
+
+(use-package! anki-editor
+  :after org
+  :config
+  (setq anki-editor-org-tags-as-anki-tags t))
+
+(defun my/dynamic-roam-agenda-files ()
+  "Query the org-roam database for files containing TODOs and set them as agenda files."
+  (interactive)
+  (setq org-agenda-files
+        (seq-uniq
+         (mapcar #'car
+                 (org-roam-db-query
+                  [:select [file] :from nodes :where (not (= todo nil))])))))
+
+;; Run this instantly right before building the agenda
+(advice-add 'org-agenda :before #'my/dynamic-roam-agenda-files)
+
+(use-package! org-super-agenda
+  :after org-agenda
+  :config
+  (org-super-agenda-mode t)
+  (setq org-super-agenda-groups
+        '(;; Each group has an implicit boolean OR operator between its selectors.
+          (:name "🔥 Overdue"  
+                 :deadline past)
+          (:name "⚡ Today"  
+                 :time-grid t  
+                 :scheduled today)
+          (:name "📚 Active Research"
+                 :todo "ACTIVE")
+          (:name "⏳ Waiting On"
+                 :todo "WAITING")
+          (:name "Inbox / Unprocessed"
+                 :file-path "Inbox\\.org")
+          ;; Catch-all for everything else
+          (:name "📌 Upcoming / Backlog"
+                 :auto-todo t))))
