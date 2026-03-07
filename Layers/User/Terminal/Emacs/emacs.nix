@@ -26,6 +26,9 @@
 
   home.packages = with pkgs; [
     sqlite
+    # Export Tooling
+    pandoc
+    # Chart Tooling
     mermaid-cli
     drawio
     #PDF Tooling

@@ -29,8 +29,6 @@
 
 (package! org-autolist)
 
-(package! ox-hugo)
-
 (package! org-fragtog)
 
 (package! highlight-parentheses)
@@ -40,3 +38,6 @@
 (package! anki-editor)
 
 (package! org-super-agenda)
+
+(package! visual-fill-column)
+

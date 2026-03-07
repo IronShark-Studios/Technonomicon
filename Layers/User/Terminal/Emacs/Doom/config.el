@@ -9,6 +9,8 @@
 (setq confirm-kill-emacs nil)
 (setq ispell-program-name "hunspell")
 
+(global-visual-line-mode t)
+
 (use-package! exec-path-from-shell
   :config
   (when (memq window-system '(mac ns x pgtk))
@@ -173,23 +175,25 @@
            :target (file+head "%<%Y%m%d%H%M%S>-${slug}.org"
                               "#+title: ${title}\n")
            :unnarrowed t)
-           
+
           ("b" "Blog Post" plain "%?"
-           :target (file+head "Blog/%<%Y%m%d%H%M%S>-${slug}.org"
-                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+hugo_base_dir: ~/Projects/Personal-Blog\n#+hugo_section: post\n#+export_file_name: ${slug}\n#+filetags: :blog:\n\n")
-           :unnarrowed t)))
+           :target (file+head "~/Grimoire/Notes/Blog/%<%Y%m%d%H%M%S>-${slug}.org"
+                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+PANDOC_METADATA: draft:true\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}.qmd\n\n")
+           :unnarrowed t)
+
+          ("p" "Project Hub" plain "%?"
+           :target (file+head "~/Grimoire/Notes/Blog/Projects/${slug}.org"
+                              "#+title: ${title}\n#+date: %<%Y-%m-%d>\n#+export_file_name: ~/Projects/Personal-Blog/projects/${slug}.qmd\n\n* Project Overview\n\n")
+           :unnarrowed t)
+
+          ))
+
 
   ;; --- Org Roam UI ---
   (setq org-roam-ui-sync-theme t      
         org-roam-ui-follow t         
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
-
-(use-package! ox-hugo
-  :after ox
-  :hook (org-mode . org-hugo-auto-export-mode) ;; FIX: Enable minor mode cleanly
-  :config
-  (setq org-hugo-base-dir "~/Projects/Personal-Blog"))
 
 ;; =============================================================================
 ;; 8. ORG EXTRAS (Modern, SVG, Appear, Autolist, Kanban)
@@ -199,8 +203,7 @@
   :hook (org-agenda-finalize . org-modern-agenda)
   :config
   (setq org-modern-todo nil
-        org-modern-tag nil               
-        org-modern-statistics nil        
+        org-modern-tag nil
         org-modern-star '("◉" "○" "●" "◦" "•")
         org-modern-list '((?- . "•"))
         org-modern-hide-stars t
@@ -236,7 +239,8 @@
                     (svg-lib-tag value nil :stroke 3 :margin 3)) :ascent 'center))))
 
   (setq svg-tag-tags
-        `(("\\([A-Za-z0-9]+\\):" . ((lambda (tag) (svg-tag-make tag :margin 0 :padding 0 :face 'info))))
+        `(
+         ;; ("\\([A-Za-z0-9]+\\):" . ((lambda (tag) (svg-tag-make tag :margin 0 :padding 0 :face 'info))))
           ("\\[#[A-Z]\\]" . ( (lambda (tag) (svg-tag-make tag :face 'error :beg 2 :end -1 :margin 0 :padding 0))))
           ("\\bTODO\\b" . ((lambda (tag) (string= tag "TODO") (svg-tag-make "TODO" :face 'warning :inverse t :margin 0 :padding 0))))
           ("\\bACTIVE\\b" . ((lambda (tag) (string= tag "ACTIVE") (svg-tag-make "ACTIVE" :face 'info :inverse t :margin 0 :padding 0))))
@@ -397,3 +401,25 @@
           ;; Catch-all for everything else
           (:name "📌 Upcoming / Backlog"
                  :auto-todo t))))
+
+(use-package! visual-fill-column
+  :hook ((org-mode markdown-mode text-mode) . visual-fill-column-mode)
+  :config
+  (setq-default fill-column 80)
+  (setq visual-fill-column-width 80
+        visual-fill-column-center-text nil))
+
+(use-package! ox-pandoc
+  :after org
+  :config
+  (setq org-pandoc-options '((standalone . t)))
+  
+  ;; Force Pandoc to use $ $ for math and strip raw org attributes
+  (setq org-pandoc-format-extensions '(markdown-raw_attribute-tex_math_single_backslash+tex_math_dollars)))
+
+;; =============================================================================
+;; 11. QUARTO PUBLISHING SHORTCUT
+;; =============================================================================
+;; Bypasses the export menu and directly compiles pristine Pandoc Markdown (with math!)
+(map! :leader
+      :desc "Publish to Quarto" "n q" #'org-pandoc-export-to-markdown)
