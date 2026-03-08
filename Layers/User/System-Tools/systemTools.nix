@@ -2,7 +2,6 @@
 
   imports = [
     ./blueman.nix
-    ./thunar.nix
     ./rofi.nix
   ];
 
@@ -20,6 +19,31 @@
       source = ./gromit-mpx.ini;
       target = ".config/gromit-mpx.ini";
       force = true;
+    };
+  };
+
+  home.packages = with pkgs; [
+    nemo-with-extensions
+  ];
+
+  dconf.settings = {
+    "org/nemo/preferences" = {
+      show-hidden-files = true;
+      always-use-browser-view = true;
+    };
+  };
+
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark"; # Or your preferred dark theme like "Arc-Dark"
+      package = pkgs.gnome-themes-extra;
+    };
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
+    gtk4.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
     };
   };
 

@@ -92,11 +92,27 @@
     '';
   };
 
+  environment.etc."clean-power-off-akmon.nix" = {
+    target = "scripts/clean-power-off.sh";
+    text = ''
+      #!/bin/sh
+
+      cd ~/Grimoire/
+      git add .
+      git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
+      git push
+
+      cd
+      alacritty -e sudo trash-put ~/Downloads/*
+      poweroff
+    '';
+  };
+
   environment.etc."clean-power-off.nix" = {
     target = "scripts/clean-power-off.sh";
     text = ''
       #!/bin/sh
-      
+
       alacritty -e sudo trash-put ~/Downloads/*
       poweroff
     '';
