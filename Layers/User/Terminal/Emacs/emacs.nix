@@ -42,7 +42,7 @@
     # Haskell
     ghc cabal-install haskell-language-server haskellPackages.hoogle
     # Nix
-    nil nixfmt-rfc-style
+    nixfmt
     # Python
     python3 pyright ruff
     # BQN

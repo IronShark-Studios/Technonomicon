@@ -3,11 +3,11 @@
   environment = {
     systemPackages = with pkgs; [
       sddm-chili-theme
-      xorg.libxshmfence
+      libxshmfence
       hyprcursor
       # hyprlandPlugins.hypr-dynamic-cursors
       gnome-network-displays
-      greetd.tuigreet
+      tuigreet
     ];
   };
 
@@ -41,7 +41,7 @@
       enable = true;
       settings = {
         default_session = {
-          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --asterisks
+          command = "${pkgs.tuigreet}/bin/tuigreet --time --asterisks
           --remember --cmd Hyprland";
           user = "greeter";
         };

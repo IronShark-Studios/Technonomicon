@@ -104,9 +104,7 @@
       }
 
           zle -N zle-line-init
-    '';
-
-    initExtra = ''
+        
       # Custom wrapper for Nix Helper (nh) to auto-restart Services
       nh() {
           # Run the actual nh command

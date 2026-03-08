@@ -4,8 +4,6 @@
     enable = true;
     package = pkgs.gitFull;
     lfs.enable = true;
-    userName = "xin";
-    userEmail = "git@ironshark.org";
     ignores = [
       "*~"
       ".*~"
@@ -13,20 +11,23 @@
       "\#*\#"
       ".*.swp"
     ];
-    aliases = {
-      send = ''
-        ! git status &&
+    settings = {
+      user.name = "xin";
+      user.email = "git@ironshark.org";
+      aliases = {
+        send = ''
+          ! git status &&
         echo -n Commit Message:  &&
         read -r CommitMessage &&
         git add . &&
         git commit -m "$CommitMessage" &&
         git push
-      '';
-      unstage = "restore --staged";
-      history = "log --graph --pretty=oneline";
-      last = "log -1 HEAD";
-    };
-    extraConfig = {
+        '';
+        unstage = "restore --staged";
+        history = "log --graph --pretty=oneline";
+        last = "log -1 HEAD";
+      };
+
       init = {
         defaultBranch = "main";
         pull = {
