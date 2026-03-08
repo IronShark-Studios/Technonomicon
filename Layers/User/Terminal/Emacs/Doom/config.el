@@ -178,15 +178,10 @@
 
           ("b" "Blog Post" plain "%?"
            :target (file+head "~/Grimoire/Notes/Blog/%<%Y%m%d%H%M%S>-${slug}.org"
-                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+PANDOC_METADATA: draft:true\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}.qmd\n\n")
+                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+PANDOC_METADATA: draft=false\n#+PANDOC_METADATA: categories=General\n#+PANDOC_METADATA: image=image.png\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}/index.qmd\n\n")
            :unnarrowed t)
 
-          ("p" "Project Hub" plain "%?"
-           :target (file+head "~/Grimoire/Notes/Blog/Projects/${slug}.org"
-                              "#+title: ${title}\n#+date: %<%Y-%m-%d>\n#+export_file_name: ~/Projects/Personal-Blog/projects/${slug}.qmd\n\n* Project Overview\n\n")
-           :unnarrowed t)
-
-          ))
+))
 
 
   ;; --- Org Roam UI ---
@@ -240,7 +235,6 @@
 
   (setq svg-tag-tags
         `(
-         ;; ("\\([A-Za-z0-9]+\\):" . ((lambda (tag) (svg-tag-make tag :margin 0 :padding 0 :face 'info))))
           ("\\[#[A-Z]\\]" . ( (lambda (tag) (svg-tag-make tag :face 'error :beg 2 :end -1 :margin 0 :padding 0))))
           ("\\bTODO\\b" . ((lambda (tag) (string= tag "TODO") (svg-tag-make "TODO" :face 'warning :inverse t :margin 0 :padding 0))))
           ("\\bACTIVE\\b" . ((lambda (tag) (string= tag "ACTIVE") (svg-tag-make "ACTIVE" :face 'info :inverse t :margin 0 :padding 0))))
@@ -407,19 +401,30 @@
   :config
   (setq-default fill-column 80)
   (setq visual-fill-column-width 80
-        visual-fill-column-center-text nil))
+        visual-fill-column-center-text t))
 
 (use-package! ox-pandoc
   :after org
   :config
   (setq org-pandoc-options '((standalone . t)))
-  
-  ;; Force Pandoc to use $ $ for math and strip raw org attributes
-  (setq org-pandoc-format-extensions '(markdown-raw_attribute-tex_math_single_backslash+tex_math_dollars)))
+  (setq org-pandoc-format-extensions '(markdown-raw_attribute-tex_math_single_backslash+tex_math_dollars))
+  )
 
 ;; =============================================================================
-;; 11. QUARTO PUBLISHING SHORTCUT
+;; 11. QUARTO PUBLISHING SYSTEM
 ;; =============================================================================
-;; Bypasses the export menu and directly compiles pristine Pandoc Markdown (with math!)
+(defun my/publish-to-quarto ()
+  "Ensure the export directory exists, then safely export via Pandoc."
+  (interactive)
+  (let* ((export-file (org-export-output-file-name ".qmd"))
+         (export-dir (file-name-directory export-file)))
+    ;; 1. Automatically create the folder if it doesn't exist
+    (unless (file-exists-p export-dir)
+      (make-directory export-dir t))
+    ;; 2. Run the export
+    (org-pandoc-export-to-markdown)
+    (message "🚀 Successfully published to: %s" export-dir)))
+
+;; Bind it to your standard shortcut
 (map! :leader
-      :desc "Publish to Quarto" "n q" #'org-pandoc-export-to-markdown)
+      :desc "Publish to Quarto" "n q" #'my/publish-to-quarto)
