@@ -80,17 +80,6 @@
     };
   };
 
-  services.vikunja = {
-    enable = false;
-    frontendScheme = "http";
-    frontendHostname = "Thanatos";
-    settings = {
-      service = {
-        filespath = "/home/xin/.config/vikunja-data";
-      };
-    };
-  };
-
   programs.steam = {
     enable = true;
   };

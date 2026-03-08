@@ -28,11 +28,11 @@
 
   nixosConfigurations = {
 
-    Thanatos = nixpkgs.lib.nixosSystem {
+    Kvasir = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs outputs; };
       modules = [
         home-manager.nixosModules.home-manager
-        ./Thanatos/configuration.nix
+        ./Khasir/configuration.nix
       ];
     };
 

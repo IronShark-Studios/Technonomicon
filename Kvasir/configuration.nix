@@ -2,7 +2,7 @@
 
   system.stateVersion = "23.11";
 
-  networking.hostName = "Thanatos";
+  networking.hostName = "Kvasir";
 
   imports = [
     ./hardware-configuration.nix
