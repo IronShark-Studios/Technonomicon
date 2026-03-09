@@ -32,7 +32,7 @@
       specialArgs = { inherit inputs outputs; };
       modules = [
         home-manager.nixosModules.home-manager
-        ./Kvasir/configuration.nix
+        ./Khasir/configuration.nix
       ];
     };
 

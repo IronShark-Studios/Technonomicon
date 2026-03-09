@@ -24,23 +24,23 @@
 
 (defalias
   ;; Nav & utility
-  spc-nav  (tap-hold 200 200 spc (layer-toggle nav))
-  bspc-nav (tap-hold 200 200 bspc (layer-toggle nav))
+  spc-nav  (tap-hold 200 500 spc (layer-toggle nav))
+  bspc-nav (tap-hold 200 500 bspc (layer-toggle nav))
   mouse    (multi lctl lalt lmet lsft spc)
   
   ;; Top Row Shift Mods (tap-hold-release prevents fast-typing misfires)
-  hrm-f    (tap-hold-release 200 200 f lsft)
-  hrm-p    (tap-hold-release 200 200 p lsft)
-  hrm-l    (tap-hold-release 200 200 l rsft)
-  hrm-u    (tap-hold-release 200 200 u rsft)
+  hrm-f    (tap-hold-release 200 500 f lsft)
+  hrm-p    (tap-hold-release 200 500 p lsft)
+  hrm-l    (tap-hold-release 200 500 l rsft)
+  hrm-u    (tap-hold-release 200 500 u rsft)
 
   ;; Home Row Mods (Alt, Super/Meta, Control)
-  hrm-r    (tap-hold-release 200 200 r lalt)
-  hrm-s    (tap-hold-release 200 200 s lmet)
-  hrm-t    (tap-hold-release 200 200 t lctl)
-  hrm-n    (tap-hold-release 200 200 n rctl)
-  hrm-e    (tap-hold-release 200 200 e rmet)
-  hrm-i    (tap-hold-release 200 200 i ralt)
+  hrm-r    (tap-hold-release 200 500 r lalt)
+  hrm-s    (tap-hold-release 200 500 s lmet)
+  hrm-t    (tap-hold-release 200 500 t lctl)
+  hrm-n    (tap-hold-release 200 500 n rctl)
+  hrm-e    (tap-hold-release 200 500 e rmet)
+  hrm-i    (tap-hold-release 200 500 i ralt)
 
   ;; Modifiers & One-shots
   lxsft    (tap-hold 200 200 (one-shot 1500 lsft) lsft)

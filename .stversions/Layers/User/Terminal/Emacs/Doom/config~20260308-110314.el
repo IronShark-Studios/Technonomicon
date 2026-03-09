@@ -24,10 +24,7 @@
 ;; =============================================================================
 (setq doom-font (font-spec :family "JetBrains Mono" :size 23))
 (setq doom-theme 'doom-city-lights)
-(setq display-line-numbers-type 'visual)
-(add-hook 'visual-line-mode-hook
-          (lambda ()
-            (setq wrap-prefix (propertize "  ↳ " 'face 'font-lock-comment-face))))
+(setq display-line-numbers-type t)
 
 (use-package! which-key-posframe
   :after which-key
@@ -45,12 +42,12 @@
   '(font-lock-keyword-face :foreground "#00FFFF" :weight bold)
   '(font-lock-variable-name-face :foreground "#00FA9A")
   '(font-lock-function-name-face :foreground "#1E90FF" :weight bold)
-  '(org-level-1 :foreground "#00FFFF" :weight bold :height 1.5 :box (:line-width 2 :color "#1D232F"))
-  '(org-level-2 :foreground "#00FFFF" :weight bold :height 1.4 :box (:line-width 2 :color "#1D232F"))
-  '(org-level-3 :foreground "#00FFFF" :weight bold :height 1.3 :box (:line-width 2 :color "#1D232F"))
-  '(org-level-4 :foreground "#00FFFF" :weight bold :height 1.2 :box (:line-width 2 :color "#1D232F"))
-  '(org-level-5 :foreground "#00FFFF" :weight bold :height 1.1 :box (:line-width 2 :color "#1D232F"))
-  '(org-level-6 :foreground "#00FFFF" :weight bold :height 1.0 :box (:line-width 2 :color "#1D232F")))
+  '(org-level-1 :foreground "#00FFFF" :weight bold :height 1.5)
+  '(org-level-2 :foreground "#00FFFF" :weight bold :height 1.4)
+  '(org-level-3 :foreground "#00FFFF" :weight bold :height 1.3)
+  '(org-level-4 :foreground "#00FFFF" :weight bold :height 1.2)
+  '(org-level-5 :foreground "#00FFFF" :weight bold :height 1.1)
+  '(org-level-6 :foreground "#00FFFF" :weight bold :height 1.0))
 
 (use-package! highlight-parentheses
   :hook (prog-mode . highlight-parentheses-mode)
@@ -142,9 +139,6 @@
   (require 'org-mouse)
   (setq org-directory "~/Grimoire/")
   (setq org-hide-emphasis-markers t)
-  (setq org-startup-with-inline-images t)
-  (setq org-checkbox-hierarchical-statistics nil)
-  (setq org-hierarchical-todo-statistics nil)
   (setq org-todo-keywords
         '((sequence "TODO(t)" "ACTIVE(a)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" "ARCHIVE(A)")))
 
@@ -225,9 +219,9 @@
     (save-match-data
      (svg-image (svg-lib-concat
                  (svg-lib-progress-bar  (/ (string-to-number value) 100.0)
-                                   nil :height 0.8 :margin 2 :stroke 2 :radius 3 :padding 1 :width 30)
+                                   nil :margin 3 :stroke 3 :radius 3 :padding 3 :width 30)
                  (svg-lib-tag (concat value "%")
-                              nil :height 0.8 :stroke 2 :margin 2)) :ascent 85)))
+                              nil :stroke 3 :margin 3)) :ascent 'center)))
 
   (defun svg-progress-count (value)
     (save-match-data
@@ -236,8 +230,8 @@
              (total (if (stringp (cadr seq)) (float (string-to-number (cadr seq))) 1000)))
         (svg-image (svg-lib-concat
                     (svg-lib-progress-bar (/ count total) nil
-                                          :height 0.8 :margin 2 :stroke 2 :radius 3 :padding 1 :width 30)
-                    (svg-lib-tag value nil :height 0.8 :stroke 2 :margin 2)) :ascent 85))))
+                                          :margin 3 :stroke 3 :radius 3 :padding 3 :width 30)
+                    (svg-lib-tag value nil :stroke 3 :margin 3)) :ascent 'center))))
 
   (setq svg-tag-tags
         `(
@@ -402,6 +396,13 @@
           (:name "📌 Upcoming / Backlog"
                  :auto-todo t))))
 
+(use-package! visual-fill-column
+  :hook ((org-mode markdown-mode text-mode) . visual-fill-column-mode)
+  :config
+  (setq-default fill-column 80)
+  (setq visual-fill-column-width 80
+        visual-fill-column-center-text t))
+
 (use-package! ox-pandoc
   :after org
   :config
@@ -427,17 +428,3 @@
 ;; Bind it to your standard shortcut
 (map! :leader
       :desc "Publish to Quarto" "n q" #'my/publish-to-quarto)
-
-;; --- BIBLIOGRAPHY / ZOTERO INTEGRATION ---
-
-;; Tell Citar where your auto-exported Zotero library is
-(setq citar-bibliography '("~/Grimoire/bibtex.bib"))
-
-;; Tell Citar where Zotero stores the actual PDF files
-(setq citar-library-paths '("~/.zotero/zotero/storage/"))
-
-;; Ensure Citar uses the Better BibTeX citation keys
-(setq citar-symbols
-      `((file ,(all-the-icons-faicon "file-pdf-o" :face 'all-the-icons-red :v-adjust -0.1) . " ")
-        (note ,(all-the-icons-material "insert_comment" :face 'all-the-icons-blue :v-adjust -0.3) . " ")
-        (link ,(all-the-icons-octicon "link" :face 'all-the-icons-orange :v-adjust 0.01) . " ")))

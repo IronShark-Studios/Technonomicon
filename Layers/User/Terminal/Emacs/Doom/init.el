@@ -46,6 +46,7 @@
        grammar           ; tasing grammar mistake every you make
 
        :tools
+       biblio
        eww
        eval                ; run code, run (also, repls)
        lookup              ; navigate your code and its documentation

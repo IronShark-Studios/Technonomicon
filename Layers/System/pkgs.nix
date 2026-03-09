@@ -32,7 +32,7 @@
   ];
 
   xdg.mime.defaultApplications = {
-    "application/pdf" = "brave-browser.desktop";
+    "application/pdf" = "sioyek.desktop";
     "text/html" = "brave-browser.desktop";
     "application/xhtml+xml" = "brave-browser.desktop";
     "x-scheme-handler/http" = "brave-browser.desktop";

@@ -38,6 +38,3 @@
 (package! anki-editor)
 
 (package! org-super-agenda)
-
-(package! visual-fill-column)
-

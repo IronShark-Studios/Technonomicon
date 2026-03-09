@@ -93,11 +93,11 @@
   };
 
   environment.etc."clean-power-off-akmon.nix" = {
-    target = "scripts/clean-power-off.sh";
+    target = "scripts/clean-power-off-akmon.sh";
     text = ''
       #!/bin/sh
 
-      cd ~/Grimoire/
+      cd /home/xin/Grimoire/
       git add .
       git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
       git push
