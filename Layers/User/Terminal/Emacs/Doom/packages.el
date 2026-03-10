@@ -38,3 +38,5 @@
 (package! anki-editor)
 
 (package! org-super-agenda)
+
+(package! org-drawio)

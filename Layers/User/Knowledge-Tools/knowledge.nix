@@ -46,16 +46,16 @@
     };
   };
 
-  home.file = { 
-    "Zotero-User-Configuration" = {
-      target = ".zotero/zotero/profiles.ini";
-      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Grimoire/.Zotero/profiles.ini";
-    };
+  # home.file = { 
+  #   "Zotero-User-Configuration" = {
+  #     target = ".zotero/zotero/profiles.ini";
+  #     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Grimoire/.Zotero/profiles.ini";
+  #   };
 
-    "Zotero-User-Prefs" = {
-      target = ".zotero/zotero/1qdyyx20.default/prefs.js";
-      source = config.lib.file.mkOutOfStoreSymlink
-      "/home/xin/Grimoire/.Zotero/prefs.js";
-    };
-  };
+  #   "Zotero-User-Prefs" = {
+  #     target = ".zotero/zotero/1qdyyx20.default/prefs.js";
+  #     source = config.lib.file.mkOutOfStoreSymlink
+  #     "/home/xin/Grimoire/.Zotero/prefs.js";
+  #   };
+  # };
 }

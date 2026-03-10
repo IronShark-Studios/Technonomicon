@@ -24,8 +24,8 @@
 
 (defalias
   ;; Nav & utility
-  spc-nav  (tap-hold 200 500 spc (layer-toggle nav))
-  bspc-nav (tap-hold 200 500 bspc (layer-toggle nav))
+  spc-nav  (tap-hold 200 350 spc (layer-toggle nav))
+  bspc-nav (tap-hold 200 350 bspc (layer-toggle nav))
   mouse    (multi lctl lalt lmet lsft spc)
   
   ;; Top Row Shift Mods (tap-hold-release prevents fast-typing misfires)

@@ -31,6 +31,7 @@
     # Chart Tooling
     mermaid-cli
     drawio
+    pdf2svg
     #PDF Tooling
     sioyek
     poppler

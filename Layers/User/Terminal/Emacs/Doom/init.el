@@ -22,6 +22,7 @@
        workspaces          ; tab emulation, persistence & separate workspaces
        indent-guides
        ligatures
+       zen
 
        :editor
        (evil +everywhere)  ; come to the dark side, we have cookies

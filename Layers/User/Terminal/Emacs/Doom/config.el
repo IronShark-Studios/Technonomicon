@@ -166,6 +166,19 @@
       :map org-mode-map
       :i "SPC" #'my/org-checkbox-smart-space)
 
+;; Configure Zen Mode (Writeroom)
+(after! writeroom-mode
+  (setq +zen-text-scale 1.0)   ;; Stop Zen from making your size-23 font even bigger
+  (setq writeroom-width 80))   ;; Force the centered column to exactly 80 characters
+
+(add-hook 'org-mode-hook
+          (lambda ()
+            ;; Check if the buffer is a real file AND is inside your Notes folder
+            (when (and (buffer-file-name)
+                       (string-prefix-p (expand-file-name "~/Grimoire/Notes/") 
+                                        (buffer-file-name)))
+              (writeroom-mode 1))))
+
 ;; =============================================================================
 ;; 7. ORG ROAM & HUGO (THE FIX)
 ;; =============================================================================
@@ -241,13 +254,13 @@
 
   (setq svg-tag-tags
         `(
-          ("\\[#[A-Z]\\]" . ( (lambda (tag) (svg-tag-make tag :face 'error :beg 2 :end -1 :margin 0 :padding 0))))
-          ("\\bTODO\\b" . ((lambda (tag) (string= tag "TODO") (svg-tag-make "TODO" :face 'warning :inverse t :margin 0 :padding 0))))
-          ("\\bACTIVE\\b" . ((lambda (tag) (string= tag "ACTIVE") (svg-tag-make "ACTIVE" :face 'info :inverse t :margin 0 :padding 0))))
-          ("\\bWAITING\\b" . ((lambda (tag) (string= tag "WAITING") (svg-tag-make "WAITING" :face 'secondary :inverse t :margin 0 :padding 0))))
-          ("\\bDONE\\b" . ((lambda (tag) (string= tag "DONE") (svg-tag-make "DONE" :face 'success :inverse t :margin 0 :padding 0))))
-          ("\\bCANCELLED\\b" . ((lambda (tag) (string= tag "CANCELLED") (svg-tag-make "CANCELLED" :face 'error :inverse t :margin 0 :padding 0))))
-          ("\\bARCHIVE\\b" . ((lambda (tag) (string= tag "ARCHIVE") (svg-tag-make "ARCHIVE" :face 'shadow :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(TODO\\)\\b" . ((lambda (tag) (string= tag "TODO") (svg-tag-make "TODO" :face 'warning :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(ACTIVE\\)\\b" . ((lambda (tag) (string= tag "ACTIVE") (svg-tag-make "ACTIVE" :face 'info :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(WAITING\\)\\b" . ((lambda (tag) (string= tag "WAITING") (svg-tag-make "WAITING" :face 'secondary :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(DONE\\)\\b" . ((lambda (tag) (string= tag "DONE") (svg-tag-make "DONE" :face 'success :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(CANCELLED\\)\\b" . ((lambda (tag) (string= tag "CANCELLED") (svg-tag-make "CANCELLED" :face 'error :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(ARCHIVE\\)\\b" . ((lambda (tag) (string= tag "ARCHIVE") (svg-tag-make "ARCHIVE" :face 'shadow :inverse t :margin 0 :padding 0))))
+          ("\\[#[A-Z]\\]" . ( (lambda (tag) (svg-tag-make tag :face 'error :beg 2 :end -1 :margin 3 :padding 1 :height 0.85))))
           ("\\(\\[[0-9]\\{1,3\\}%\\]\\)" . ((lambda (tag) (svg-progress-percent (substring tag 1 -2)))))
           ("\\(\\[[0-9]+/[0-9]+\\]\\)" . ((lambda (tag) (svg-progress-count (substring tag 1 -1)))))
           (,(format "\\(<%s>\\)" date-re) . ((lambda (tag) (svg-tag-make tag :beg 1 :end -1 :margin 0 :face 'success))))
@@ -265,7 +278,14 @@
         (pop keywords)
         (setq keyword (car keywords)))))
         
-  (add-hook 'org-agenda-finalize-hook #'org-agenda-show-svg))
+  (add-hook 'org-agenda-finalize-hook #'org-agenda-show-svg)
+
+  (add-hook 'svg-tag-mode-hook
+          (lambda ()
+          (when (derived-mode-p 'org-mode)
+          (setq-local font-lock-keywords-case-fold-search nil)
+          (font-lock-flush)
+          (font-lock-ensure)))))
 
 (use-package! org-kanban :after org)
 (use-package! org-appear
@@ -441,3 +461,11 @@
       `((file ,(all-the-icons-faicon "file-pdf-o" :face 'all-the-icons-red :v-adjust -0.1) . " ")
         (note ,(all-the-icons-material "insert_comment" :face 'all-the-icons-blue :v-adjust -0.3) . " ")
         (link ,(all-the-icons-octicon "link" :face 'all-the-icons-orange :v-adjust 0.01) . " ")))
+
+  (setq org-drawio-executable-path "/home/xin/.nix-profile/bin/drawio")
+  (setq org-drawio-output-dir "/home/xin/Grimoire/Notes/Assets")
+  (setq org-drawio-input-dir "/home/xin/Grimoire/Notes/Assets")
+
+(use-package! org-drawio
+  :config
+  (add-hook 'org-mode-hook #'org-drawio-inline-images-mode))
