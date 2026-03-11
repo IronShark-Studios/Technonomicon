@@ -6,8 +6,8 @@
        ;;layout            ; auie,ctsrnm is the superior home row
 
        :completion
-       (corfu +icons +dabbrev +orderless)
-       (vertico +icons +childframe)           ; the search engine of the future
+       (corfu +icons +dabbrev)
+       (vertico +icons +childframe)             ; the search engine of the future
 
        :ui
        doom                ; what makes DOOM look the way it does
@@ -31,13 +31,11 @@
        snippets            ; my elves. They type so I don't have to
        format
        multiple-cursors
-       format
 
        :emacs
        (dired +dirvish)               ; making dired pretty [functional]
-       undo              ; persistent, smarter undo for your inevitable mistakes
+       undo                ; persistent, smarter undo for your inevitable mistakes
        vc                  ; version-control and tools, magit
-       (whitespace +guess)
 
        :term
        vterm               ; the best terminal emulation in Emacs
@@ -46,13 +44,15 @@
        syntax              ; tasing you for every semicolon you forget
        spell             ; tasing you for misspelling mispelling
        grammar           ; tasing grammar mistake every you make
+       (format +onsave)
+       (whitespace +guess +trim)
 
        :tools
        biblio
        eww
        eval                ; run code, run (also, repls)
        lookup              ; navigate your code and its documentation
-       (magit +forge +childframe)
+       (magit +forge +childframe)               ; a git porcelain to manage your version-control
        make                ; run make tasks from Emacs
        lsp
        tree-sitter
@@ -64,15 +64,17 @@
        beancount
        (cc +lsp +tree-sitter)
        (haskell +lsp +tree-sitter)
-       (nix +lsp +tree-sitter)              ; I hereby declare "nix geht mehr!"
+       (nix +lsp +tree-sitter)                 ; I hereby declare "nix geht mehr!"
+       (python +lsp +pyright +tree-sitter)
+       (racket +lsp +tree-sitter)
        (zig +lsp +tree-sitter)
        (scheme +tree-sitter)
        (javascript +lsp +tree-sitter +prettier)
        emacs-lisp          ; drown in parentheses
        markdown            ; writing docs for people to ignore
        (latex +cdlatex)
-       (org +roam +dragndrop +jupyter +pandoc)
-       (sh +tree-sitter)             ; she sells {ba,z,fi}sh shells on the C xor
+       (org +roam +dragndrop +jupyter +pandoc)                 ; organize your plain life in plain text
+       (sh +tree-sitter)                  ; she sells {ba,z,fi}sh shells on the C xor
 
        :config
        literate

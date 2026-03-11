@@ -6,7 +6,7 @@
        ;;layout            ; auie,ctsrnm is the superior home row
 
        :completion
-       (corfu +icons +dabbrev +orderless)
+       (corfu +icons +dabbrev)
        (vertico +icons +childframe)           ; the search engine of the future
 
        :ui
@@ -31,13 +31,13 @@
        snippets            ; my elves. They type so I don't have to
        format
        multiple-cursors
-       format
+       (format +onsave)
 
        :emacs
        (dired +dirvish)               ; making dired pretty [functional]
        undo              ; persistent, smarter undo for your inevitable mistakes
        vc                  ; version-control and tools, magit
-       (whitespace +guess)
+       (whitespace +guess +trim)
 
        :term
        vterm               ; the best terminal emulation in Emacs
@@ -71,8 +71,8 @@
        emacs-lisp          ; drown in parentheses
        markdown            ; writing docs for people to ignore
        (latex +cdlatex)
-       (org +roam +dragndrop +jupyter +pandoc)
-       (sh +tree-sitter)             ; she sells {ba,z,fi}sh shells on the C xor
+       (org +roam +dragndrop +jupyter +pandoc)                 ; organize your plain life in plain text
+       (sh +tree-sitter)                  ; she sells {ba,z,fi}sh shells on the C xor
 
        :config
        literate

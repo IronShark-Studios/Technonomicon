@@ -62,12 +62,6 @@
   (set-face-attribute 'hl-paren-face nil :weight 'bold))
 
 (add-hook 'prog-mode-hook 'whitespace-mode)
-
-(add-hook 'before-save-hook #'delete-trailing-whitespace)
-
-(setq whitespace-style '(face spaces tabs trailing space-mark tab-mark))
-
-
 ;; =============================================================================
 ;; 3. EDITOR BEHAVIOR & KEYBINDINGS
 ;; =============================================================================
@@ -110,9 +104,9 @@
 ;; Read the Gemini API key directly from the file into Emacs' environment
 (let ((key-file "/home/xin/Projects/Technonomicon/Layers/Secrets/gemini-api.txt"))
   (when (file-exists-p key-file)
-    (setenv "GEMINI_API_KEY"
-            (string-trim (with-temp-buffer
-                           (insert-file-contents key-file)
+    (setenv "GEMINI_API_KEY" 
+            (string-trim (with-temp-buffer 
+                           (insert-file-contents key-file) 
                            (buffer-string))))))
 
 (use-package! minuet
@@ -123,7 +117,7 @@
   (plist-put minuet-openai-fim-compatible-options :end-point "http://localhost:11434/v1/completions")
   (plist-put minuet-openai-fim-compatible-options :name "Ollama")
   (plist-put minuet-openai-fim-compatible-options :model "qwen2.5-coder:1.5b")
-  (plist-put minuet-openai-fim-compatible-options :api-key "TERM")
+  (plist-put minuet-openai-fim-compatible-options :api-key "TERM") 
   (add-hook 'prog-mode-hook #'minuet-auto-suggestion-mode)
   (map! :map minuet-active-mode-map
         :i "TAB" #'minuet-accept-suggestion
@@ -168,7 +162,7 @@
   "When pressing space inside `[]`, insert space, jump out, and add a trailing space."
   (interactive)
   (if (and (eq (char-before) ?\[) (eq (char-after) ?\]))
-      (progn (insert " ") (forward-char 1) (insert " "))
+      (progn (insert " ") (forward-char 1) (insert " "))      
     (insert " ")))
 
 (map! :after org
@@ -184,7 +178,7 @@
           (lambda ()
             ;; Check if the buffer is a real file AND is inside your Notes folder
             (when (and (buffer-file-name)
-                       (string-prefix-p (expand-file-name "~/Grimoire/Notes/")
+                       (string-prefix-p (expand-file-name "~/Grimoire/Notes/") 
                                         (buffer-file-name)))
               (writeroom-mode 1))))
 
@@ -196,7 +190,7 @@
 (after! org-roam
   (setq org-roam-directory "~/Grimoire/Notes/")
   (setq org-roam-dailies-directory "Journal/")
-
+  
   ;; --- Unified Capture Templates ---
   (setq org-roam-capture-templates
         '(("d" "default" plain "%?"
@@ -213,8 +207,8 @@
 
 
   ;; --- Org Roam UI ---
-  (setq org-roam-ui-sync-theme t
-        org-roam-ui-follow t
+  (setq org-roam-ui-sync-theme t      
+        org-roam-ui-follow t         
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
 
@@ -253,7 +247,7 @@
 
   (defun svg-progress-count (value)
     (save-match-data
-      (let* ((seq (split-string value "/"))
+      (let* ((seq (split-string value "/"))           
              (count (if (stringp (car seq)) (float (string-to-number (car seq))) 0))
              (total (if (stringp (cadr seq)) (float (string-to-number (cadr seq))) 1000)))
         (svg-image (svg-lib-concat
@@ -286,7 +280,7 @@
                          'display  (nth 3 (eval (nth 2 keyword)))) ))
         (pop keywords)
         (setq keyword (car keywords)))))
-
+  
   (add-hook 'org-agenda-finalize-hook #'org-agenda-show-svg)
 
   (add-hook 'svg-tag-mode-hook
@@ -300,8 +294,8 @@
 (use-package! org-appear
   :hook (org-mode . org-appear-mode)
   :config
-  (setq org-appear-autoemphasis t
-        org-appear-autolinks t
+  (setq org-appear-autoemphasis t   
+        org-appear-autolinks t     
         org-appear-autosubmarkers t))
 (use-package! org-autolist :hook (org-mode . org-autolist-mode))
 
@@ -348,7 +342,7 @@
   (interactive)
   (switch-to-buffer (get-buffer-create "*Quick-Write*"))
   (text-mode)
-  (visual-line-mode 1)
+  (visual-line-mode 1) 
   (evil-insert-state)
   (insert "Write your text here. Press [C-c C-c] to copy to clipboard and close.\n\n")
   (local-set-key (kbd "C-c C-c")
@@ -370,9 +364,9 @@
 (after! org
   ;; Turn on CDLaTeX in Org-mode for fast math typing
   (add-hook 'org-mode-hook #'turn-on-org-cdlatex)
-
+  
   ;; Scale up the rendered equations to match your size 23 font
-  (setq org-format-latex-options
+  (setq org-format-latex-options 
         (plist-put org-format-latex-options :scale 3.5)))
 
 ;; =============================================================================
@@ -416,10 +410,10 @@
   (org-super-agenda-mode t)
   (setq org-super-agenda-groups
         '(;; Each group has an implicit boolean OR operator between its selectors.
-          (:name "🔥 Overdue"
+          (:name "🔥 Overdue"  
            :deadline past)
-          (:name "⚡ Today"
-           :time-grid t
+          (:name "⚡ Today"  
+           :time-grid t  
            :scheduled today)
           (:name "📚 Active Research"
            :todo "ACTIVE")
