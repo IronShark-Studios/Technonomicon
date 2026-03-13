@@ -110,21 +110,21 @@
   (map! :leader :desc "Aidermacs Menu" "o a" #'aidermacs-transient-menu))
 
 
-(use-package! minuet
-  :demand t
-  :config
-  (setq minuet-provider 'openai-fim-compatible)
-  (setq minuet-n-completions 1)
-  (plist-put minuet-openai-fim-compatible-options :end-point "http://localhost:11434/v1/completions")
-  (plist-put minuet-openai-fim-compatible-options :name "Ollama")
-  (plist-put minuet-openai-fim-compatible-options :model "qwen2.5-coder:1.5b")
-  (plist-put minuet-openai-fim-compatible-options :api-key "TERM")
-  (add-hook 'prog-mode-hook #'minuet-auto-suggestion-mode)
-  (map! :map minuet-active-mode-map
-        :i "TAB" #'minuet-accept-suggestion
-        :i "M-n" #'minuet-next-suggestion
-        :i "M-p" #'minuet-previous-suggestion
-        :i "M-e" #'minuet-dismiss-suggestion))
+;; (use-package! minuet
+;;   :demand t
+;;   :config
+;;   (setq minuet-provider 'openai-fim-compatible)
+;;   (setq minuet-n-completions 1)
+;;   (plist-put minuet-openai-fim-compatible-options :end-point "http://localhost:11434/v1/completions")
+;;   (plist-put minuet-openai-fim-compatible-options :name "Ollama")
+;;   (plist-put minuet-openai-fim-compatible-options :model "qwen2.5-coder:1.5b")
+;;   (plist-put minuet-openai-fim-compatible-options :api-key "TERM")
+;;   (add-hook 'prog-mode-hook #'minuet-auto-suggestion-mode)
+;;   (map! :map minuet-active-mode-map
+;;         :i "TAB" #'minuet-accept-suggestion
+;;         :i "M-n" #'minuet-next-suggestion
+;;         :i "M-p" #'minuet-previous-suggestion
+;;         :i "M-e" #'minuet-dismiss-suggestion))
 
 ;; =============================================================================
 ;; 5. PROGRAMMING LANGUAGES & EWW
@@ -471,6 +471,10 @@
 (setq org-drawio-output-dir "/home/xin/Grimoire/Notes/Assets")
 (setq org-drawio-input-dir "/home/xin/Grimoire/Notes/Assets")
 
-(use-package! org-drawio
-  :config
-  (add-hook 'org-mode-hook #'org-drawio-inline-images-mode))
+;; (use-package! org-drawio
+;;   :config
+;;   (add-hook 'org-mode-hook #'org-drawio-inline-images-mode))
+
+(after! vterm
+  (map! :map vterm-mode-map
+        "C-S-v" #'vterm-yank))

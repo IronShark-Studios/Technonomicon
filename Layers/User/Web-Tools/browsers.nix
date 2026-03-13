@@ -6,11 +6,25 @@
   home.packages = with pkgs; [
   ];
 
+  programs.nyxt = {
+    enable = true;
+
+    package = pkgs.symlinkJoin {
+      name = "nyxt-wayland-wrapped";
+      paths = [ pkgs.nyxt ];
+      buildInputs = [ pkgs.makeWrapper ];
+      postBuild = ''
+        wrapProgram $out/bin/nyxt \
+          --set WEBKIT_DISABLE_COMPOSITING_MODE 1 \
+          --set GTK_THEME Adwaita:dark
+      '';
+    };
+  };
+  xdg.configFile."nyxt/config.lisp".source = ./nyxt-config.lisp;
 
   programs.chromium = {
     enable = true;
     package = pkgs.brave;
-    
     commandLineArgs = [
       "--enable-features=UseOzonePlatform"
       "--ozone-platform=wayland"
@@ -26,7 +40,7 @@ xdg.desktopEntries = {
     exec = "${pkgs.brave}/bin/brave --app=https://www.khanacademy.org/ --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
-    icon = ./khan-academy-log.png; 
+    icon = ./khan-academy-log.png;
   };
 
   the-odin-project = {
@@ -34,7 +48,7 @@ xdg.desktopEntries = {
     exec = "${pkgs.brave}/bin/brave --app=https://www.theodinproject.com/dashboard --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
-    icon = ./top-icon.png; 
+    icon = ./top-icon.png;
   };
 
   youtube = {
@@ -42,7 +56,15 @@ xdg.desktopEntries = {
     exec = "${pkgs.brave}/bin/brave --app=https://www.youtube.com --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
-    icon = ./youtube.png; 
+    icon = ./youtube.png;
+  };
+
+  Deep-Seek = {
+    name = "Deep Seek";
+    exec = "${pkgs.brave}/bin/brave --app=https://chat.deepseek.com --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./deep-seek.png;
   };
 
   gemini = {
@@ -50,7 +72,7 @@ xdg.desktopEntries = {
     exec = "${pkgs.brave}/bin/brave --app=https://gemini.google.com/app --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
-    icon = ./gemini.png; 
+    icon = ./gemini.png;
   };
 
   weight-tracker = {

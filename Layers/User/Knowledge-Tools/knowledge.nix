@@ -15,7 +15,10 @@
     pdfannots2json #needed by obsidian
     pomodoro-gtk
     sox
-    wl-kbptr
+    (wl-kbptr.overrideAttrs (oldAttrs: {
+      mesonFlags = (oldAttrs.mesonFlags or []) ++ [ "-Dopencv=enabled" ];
+      buildInputs = (oldAttrs.buildInputs or []) ++ [ pkgs.opencv ];
+    }))
     (blanket.overrideAttrs (oldAttrs: {
       postInstall = (oldAttrs.postInstall or "") + ''
         wrapProgram $out/bin/blanket \
@@ -24,6 +27,7 @@
     }))
     ];
 
+  xdg.configFile."wl-kbptr/config".source = ./wl-kbptr-config;
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
   xdg.configFile."mpv/script-opts".source = ./MPV-Script-Options;
   xdg.configFile."wl-kbptr".source = ./wl-kbptr;
@@ -46,7 +50,7 @@
     };
   };
 
-  # home.file = { 
+  # home.file = {
   #   "Zotero-User-Configuration" = {
   #     target = ".zotero/zotero/profiles.ini";
   #     source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Grimoire/.Zotero/profiles.ini";
