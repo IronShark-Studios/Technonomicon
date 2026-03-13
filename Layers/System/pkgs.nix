@@ -10,7 +10,7 @@
       alsa-utils
       zsh-command-time
       wl-clipboard
-      nix-ld 
+      nix-ld
       kdePackages.skanlite
       aider-chat
       aichat
@@ -65,6 +65,7 @@
     loadModels = [
       "mixtral"
       "deepseek-r1:32b"
+      "mannix/deepseek-coder-v2-lite-instruct:q4_k_m"
       "qwen2.5-coder:32b-instruct"
       "qwen2.5-coder:1.5b"
       "qwen2.5-coder:14b"

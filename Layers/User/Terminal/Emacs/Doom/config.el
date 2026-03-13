@@ -21,6 +21,8 @@
 (setq initial-major-mode 'org-mode)
 (setq initial-scratch-message nil)
 
+(setq org-cite-global-bibliography '("~/Grimoire/bibtex.bib"))
+
 ;; =============================================================================
 ;; 2. UI, FONTS & THEME
 ;; =============================================================================
@@ -104,16 +106,9 @@
 (use-package! aidermacs
   :config
   (setq aidermacs-backend 'vterm)
-  (setq aidermacs-default-model "gemini/gemini-3-flash-preview")
+  (setq aidermacs-default-model "ollama_chat/")
   (map! :leader :desc "Aidermacs Menu" "o a" #'aidermacs-transient-menu))
 
-;; Read the Gemini API key directly from the file into Emacs' environment
-(let ((key-file "/home/xin/Projects/Technonomicon/Layers/Secrets/gemini-api.txt"))
-  (when (file-exists-p key-file)
-    (setenv "GEMINI_API_KEY"
-            (string-trim (with-temp-buffer
-                           (insert-file-contents key-file)
-                           (buffer-string))))))
 
 (use-package! minuet
   :demand t
@@ -152,6 +147,7 @@
   (setq org-directory "~/Grimoire/")
   (setq org-hide-emphasis-markers t)
   (setq org-startup-with-inline-images t)
+  (setq org-fold-catch-invisible-edits 'smart)
   (setq org-checkbox-hierarchical-statistics nil)
   (setq org-hierarchical-todo-statistics nil)
   (setq org-todo-keywords
@@ -206,7 +202,7 @@
 
           ("b" "Blog Post" plain "%?"
            :target (file+head "~/Grimoire/Notes/Blog/%<%Y%m%d%H%M%S>-${slug}.org"
-                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+PANDOC_METADATA: draft=false\n#+PANDOC_METADATA: categories=General\n#+PANDOC_METADATA: image=image.png\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}/index.qmd\n\n")
+                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+PANDOC_METADATA: draft=false\n#+PANDOC_METADATA: categories=General\n#+PANDOC_METADATA: image=thumbnail.png\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}/index.qmd\n\n")
            :unnarrowed t)
 
           ))

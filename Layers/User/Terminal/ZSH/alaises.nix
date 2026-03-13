@@ -35,6 +35,7 @@
     blanket = "GTK_THEME=Adwaita:dark blanket";
     book-dl = "aria2c -x 16 -s 16";
     pdf-split = "sh -c 'nix-shell -p ocamlPackages.cpdf --run \"cpdf -split-bookmarks 0 \\\"$1\\\" -utf8 -o \\\"@B.pdf\\\"\"' sh";
+    pdf-split-50 = "sh -c 'nix-shell -p ocamlPackages.cpdf --run \"cpdf -split \\\"$1\\\" -chunk 50 -o \\\"\${1%.pdf}_part_%%.pdf\\\"\"' sh";
     en = "emacsclient -c -a 'emacs'";
     vi = "env COLORTERM=truecolor emacsclient -t";
   };
