@@ -155,7 +155,7 @@
   (setq org-checkbox-hierarchical-statistics nil)
   (setq org-hierarchical-todo-statistics nil)
   (setq org-todo-keywords
-        '((sequence "TODO(t)" "ACTIVE(a)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" "ARCHIVE(A)")))
+        '((sequence "TODO(t)" "NEXT(n)" "ACTIVE(a)" "PAUSED(p)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" "ARCHIVE(A)")))
   (setq org-habit-graph-column 60
         org-habit-preceding-days 21
         org-habit-following-days 7
@@ -271,6 +271,8 @@
           ("^\\*+\\s-+\\(ACTIVE\\)\\b" . ((lambda (tag) (string= tag "ACTIVE") (svg-tag-make "ACTIVE" :face 'info :inverse t :margin 0 :padding 0))))
           ("^\\*+\\s-+\\(WAITING\\)\\b" . ((lambda (tag) (string= tag "WAITING") (svg-tag-make "WAITING" :face 'secondary :inverse t :margin 0 :padding 0))))
           ("^\\*+\\s-+\\(DONE\\)\\b" . ((lambda (tag) (string= tag "DONE") (svg-tag-make "DONE" :face 'success :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(NEXT\\)\\b" . ((lambda (tag) (string= tag "NEXT") (svg-tag-make "NEXT" :face 'success :inverse t :margin 0 :padding 0))))
+          ("^\\*+\\s-+\\(PAUSED\\)\\b" . ((lambda (tag) (string= tag "PAUSED") (svg-tag-make "PAUSED" :face 'shadow :inverse t :margin 0 :padding 0))))
           ("^\\*+\\s-+\\(CANCELLED\\)\\b" . ((lambda (tag) (string= tag "CANCELLED") (svg-tag-make "CANCELLED" :face 'error :inverse t :margin 0 :padding 0))))
           ("^\\*+\\s-+\\(ARCHIVE\\)\\b" . ((lambda (tag) (string= tag "ARCHIVE") (svg-tag-make "ARCHIVE" :face 'shadow :inverse t :margin 0 :padding 0))))
           ("\\[#[A-Z]\\]" . ( (lambda (tag) (svg-tag-make tag :face 'error :beg 2 :end -1 :margin 3 :padding 1 :height 0.85))))
