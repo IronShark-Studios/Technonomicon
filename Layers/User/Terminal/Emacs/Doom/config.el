@@ -150,6 +150,7 @@
 
   (setq org-directory "~/Grimoire/")
   (setq org-hide-emphasis-markers t)
+  (setq org-agenda-start-on-weekday 0)
   (setq org-startup-with-inline-images t)
   (setq org-fold-catch-invisible-edits 'smart)
   (setq org-checkbox-hierarchical-statistics nil)
