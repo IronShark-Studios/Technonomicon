@@ -144,6 +144,10 @@
 ;; =============================================================================
 (after! org
   (require 'org-mouse)
+  (require 'org-habit)
+
+  (add-to-list 'org-modules 'org-habit t)
+
   (setq org-directory "~/Grimoire/")
   (setq org-hide-emphasis-markers t)
   (setq org-startup-with-inline-images t)
@@ -152,6 +156,10 @@
   (setq org-hierarchical-todo-statistics nil)
   (setq org-todo-keywords
         '((sequence "TODO(t)" "ACTIVE(a)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" "ARCHIVE(A)")))
+  (setq org-habit-graph-column 60
+        org-habit-preceding-days 21
+        org-habit-following-days 7
+        org-habit-show-habits-only-for-today t))
 
   ;; Fleeting Notes
   (setq org-capture-templates
