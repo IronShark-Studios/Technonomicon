@@ -1,3 +1,4 @@
 *.key
 Layers/User/Baduk-Tools/katago-network.bin.gz
 .aider*
+.st*
