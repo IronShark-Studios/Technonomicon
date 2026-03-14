@@ -168,6 +168,13 @@
            "* TODO %?\n%U\n%i"
            :prepend t :empty-lines 1))))
 
+(defun my/org-reset-checkbox-state-maybe ()
+    "Reset all checkboxes in an entry if the `RESET_CHECK_BOXES' property is set."
+    (when (org-entry-get (point) "RESET_CHECK_BOXES")
+      (org-reset-checkbox-state-subtree)))
+
+  (add-hook 'org-todo-repeat-hook #'my/org-reset-checkbox-state-maybe)
+
 (defun my/org-checkbox-smart-space ()
   "When pressing space inside `[]`, insert space, jump out, and add a trailing space."
   (interactive)
