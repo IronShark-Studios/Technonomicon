@@ -427,6 +427,8 @@
           (:name "⚡ Today"
            :time-grid t
            :scheduled today)
+          (:name "🌱 Daily Habits"
+           :habit t)
           (:name "📚 Active Research"
            :todo "ACTIVE")
           (:name "⏳ Waiting On"
