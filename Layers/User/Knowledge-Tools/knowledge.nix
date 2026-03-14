@@ -27,7 +27,6 @@
     }))
     ];
 
-  xdg.configFile."wl-kbptr/config".source = ./wl-kbptr-config;
   xdg.configFile."mpv/scripts".source = ./MPV-Scripts;
   xdg.configFile."mpv/script-opts".source = ./MPV-Script-Options;
   xdg.configFile."wl-kbptr".source = ./wl-kbptr;

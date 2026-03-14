@@ -475,6 +475,6 @@
 ;;   :config
 ;;   (add-hook 'org-mode-hook #'org-drawio-inline-images-mode))
 
-(after! vterm
-  (map! :map vterm-mode-map
-        "C-S-v" #'vterm-yank))
+;; (after! vterm
+;;   (map! :map vterm-mode-map
+;;         "C-S-v" #'vterm-yank))
