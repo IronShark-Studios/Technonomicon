@@ -149,6 +149,7 @@
   (add-to-list 'org-modules 'org-habit t)
 
   (setq org-directory "~/Grimoire/")
+  (setq org-log-into-drawer t)
   (setq org-hide-emphasis-markers t)
   (setq org-agenda-start-on-weekday 0)
   (setq org-startup-with-inline-images t)
