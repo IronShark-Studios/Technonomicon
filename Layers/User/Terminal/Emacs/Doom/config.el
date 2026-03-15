@@ -412,17 +412,7 @@
   :config
   (setq anki-editor-org-tags-as-anki-tags t))
 
-(defun my/dynamic-roam-agenda-files ()
-  "Query the org-roam database for files containing TODOs and set them as agenda files."
-  (interactive)
-  (setq org-agenda-files
-        (seq-uniq
-         (mapcar #'car
-                 (org-roam-db-query
-                  [:select [file] :from nodes :where (not (= todo nil))])))))
-
-;; Run this instantly right before building the agenda
-(advice-add 'org-agenda :before #'my/dynamic-roam-agenda-files)
+(setq org-agenda-files '("~/Grimoire/Notes/"))
 
 (use-package! org-super-agenda
   :after org-agenda
