@@ -58,7 +58,7 @@
       zstyle ':fzf-tab:*' switch-group '<' '>'
       zstyle ':completion:*:git-checkout:*' sort false
       zstyle ':completion:*:descriptions' format '[%d]'
-      zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+      zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
       zstyle ':completion:*' list-color "''\${(s.:.)LS_COLORS}"
       zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 
@@ -104,7 +104,7 @@
       }
 
           zle -N zle-line-init
-        
+
       # Custom wrapper for Nix Helper (nh) to auto-restart Services
       nh() {
           # Run the actual nh command
