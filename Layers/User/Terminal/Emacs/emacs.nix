@@ -7,14 +7,14 @@
 
   services.emacs = {
     enable = false;
-    client.enable = false; 
-    defaultEditor = true; 
+    client.enable = false;
+    defaultEditor = true;
   };
 
   programs.doom-emacs = {
     enable = true;
     doomDir = ./Doom;
-    emacs= pkgs.emacs30-pgtk; 
+    emacs= pkgs.emacs30-pgtk;
     extraPackages = epkgs: [ epkgs.treesit-grammars.with-all-grammars ];
   };
 
