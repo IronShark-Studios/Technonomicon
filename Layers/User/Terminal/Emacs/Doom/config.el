@@ -158,7 +158,7 @@
   (setq org-hierarchical-todo-statistics nil)
   (setq org-todo-keywords
         '((sequence "TODO(t)" "NEXT(n)" "ACTIVE(a)" "PAUSED(p)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" "ARCHIVE(A)")))
-  (setq org-habit-graph-column 60
+  (setq org-habit-graph-column 30
         org-habit-preceding-days 21
         org-habit-following-days 7
         org-habit-show-habits-only-for-today t)
