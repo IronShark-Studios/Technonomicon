@@ -418,6 +418,7 @@
 (use-package! org-super-agenda
   :after org-agenda
   :config
+  (add-hook 'org-trigger-hook #'save-buffer)
   (org-super-agenda-mode t)
   (setq org-super-agenda-groups
         '(;; Each group has an implicit boolean OR operator between its selectors.
