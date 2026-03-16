@@ -219,7 +219,7 @@
 
           ("b" "Blog Post" plain "%?"
            :target (file+head "~/Grimoire/Notes/Blog/%<%Y%m%d%H%M%S>-${slug}.org"
-                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+PANDOC_METADATA: draft=false\n#+PANDOC_METADATA: categories=General\n#+PANDOC_METADATA: image=thumbnail.png\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}/index.qmd\n\n")
+                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+description=temp description\n#+PANDOC_METADATA: draft=false\n#+PANDOC_METADATA: categories=General\n#+PANDOC_METADATA: image=thumbnail.png\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}/index.qmd\n\n")
            :unnarrowed t)
 
           ))
@@ -441,10 +441,9 @@
 (use-package! ox-pandoc
   :after org
   :config
+  (add-to-list 'org-pandoc-menu-entry '(markdown "to markdown" 100))
   (setq org-pandoc-options '((standalone . t)))
-  (setq org-pandoc-format-extensions '(markdown-raw_attribute-tex_math_single_backslash+tex_math_dollars))
-  )
-
+  (setq org-pandoc-format-extensions '(markdown+tex_math_dollars)))
 ;; =============================================================================
 ;; 11. QUARTO PUBLISHING SYSTEM
 ;; =============================================================================
