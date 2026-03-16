@@ -33,8 +33,16 @@
     drawio
     pdf2svg
     #PDF Tooling
-    sioyek
     poppler
+    (symlinkJoin {
+      name = "sioyek-wrapped";
+      paths = [ sioyek ];
+      buildInputs = [ makeWrapper ];
+      postBuild = ''
+        wrapProgram $out/bin/sioyek \
+          --set QT_QPA_PLATFORM xcb
+      '';
+    })
     # LaTeX
     texlive.combined.scheme-full
     # Spell Checking
