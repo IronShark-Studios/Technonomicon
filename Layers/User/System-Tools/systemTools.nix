@@ -27,6 +27,10 @@
   ];
 
   dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
+
     "org/nemo/preferences" = {
       show-hidden-files = true;
       always-use-browser-view = true;
