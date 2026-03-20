@@ -489,3 +489,12 @@
 ;; (after! vterm
 ;;   (map! :map vterm-mode-map
 ;;         "C-S-v" #'vterm-yank))
+;;
+(after! evil
+  ;; 's' - Type one or more characters to jump anywhere
+  (map! :n "s" #'avy-goto-char-timer)
+  ;; 'S' (Shift+s) - Instantly jump to any visible line
+  (map! :n "S" #'avy-goto-line)
+
+  ;; Make the Avy timer slightly faster (default is 0.5s)
+  (setq avy-timeout-seconds 0.3))
