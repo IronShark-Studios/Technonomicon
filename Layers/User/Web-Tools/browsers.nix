@@ -35,6 +35,8 @@
     ];
   };
 
+  xdg.configFile."surfingkeys/config.js".source = ./surfingkeys-config.js;
+
 xdg.desktopEntries = {
   khan-academy = {
     name = "Khan Academy";
