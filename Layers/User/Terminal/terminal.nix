@@ -12,5 +12,6 @@
     ./BASH/bash.nix
     ./GIT/git.nix
     ./Emacs/emacs.nix
+    ./VIM/vim.nix
   ];
 }
