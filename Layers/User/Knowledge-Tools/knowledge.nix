@@ -4,7 +4,6 @@
   ];
 
   home.packages = with pkgs; [
-    obsidian
     anki
     zotero
     rclone
@@ -12,7 +11,7 @@
     libation
     mpv
     aria2
-    pdfannots2json #needed by obsidian
+    pdfannots2json
     pomodoro-gtk
     sox
     (wl-kbptr.overrideAttrs (oldAttrs: {
