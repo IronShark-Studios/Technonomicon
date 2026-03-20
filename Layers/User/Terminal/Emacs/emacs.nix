@@ -53,7 +53,7 @@
     # Nix
     nixfmt
     # Python
-    python3 pyright ruff
+    python3 pyright ruff black
     # BQN
     cbqn
     # Bash / Shell
