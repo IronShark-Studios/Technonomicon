@@ -20,6 +20,7 @@
       '';
     };
   };
+
   xdg.configFile."nyxt/config.lisp".source = ./nyxt-config.lisp;
 
   programs.chromium = {
@@ -104,7 +105,7 @@ xdg.desktopEntries = {
     categories = [ "Application" "Network" ];
   };
 
-  G-Calenda = {
+  G-Calendar = {
     name = "Google Calendar";
     exec = "${pkgs.brave}/bin/brave --app=https://calendar.google.com --start-maximized";
     terminal = false;
