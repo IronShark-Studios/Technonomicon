@@ -14,6 +14,8 @@ programs.neovim = {
     ];
 
     plugins = with pkgs.vimPlugins; [
+      hop-nvim
+      vim-be-good
     ];
 
     extraConfig =''
