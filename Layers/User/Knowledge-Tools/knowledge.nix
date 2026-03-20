@@ -14,6 +14,15 @@
     pdfannots2json
     pomodoro-gtk
     sox
+    (symlinkJoin {
+      name = "rnote-wrapped";
+      paths = [ rnote ];
+      buildInputs = [ makeWrapper ];
+      postBuild = ''
+        wrapProgram $out/bin/rnote \
+        --set GDK_BACKEND x11
+      '';
+    })
     (wl-kbptr.overrideAttrs (oldAttrs: {
       mesonFlags = (oldAttrs.mesonFlags or []) ++ [ "-Dopencv=enabled" ];
       buildInputs = (oldAttrs.buildInputs or []) ++ [ pkgs.opencv ];
