@@ -504,32 +504,36 @@
 ;; (after! vterm
 ;;   (map! :map vterm-mode-map
 ;;         "C-S-v" #'vterm-yank))
-;;
-(after! evil
-  ;; 's' - Type one or more characters to jump anywhere
-  (map! :n "s" #'avy-goto-char-timer)
-  ;; 'S' (Shift+s) - Instantly jump to any visible line
-  (map! :n "S" #'avy-goto-line)
 
-  ;; Make the Avy timer slightly faster (default is 0.5s)
+;; =============================================================================
+;; 12. FIXED MOTIONS & TEXT OBJECTS
+;; =============================================================================
+
+;; --- 1. Avy (On-Screen Jumping) ---
+(after! evil-snipe
+  (map! :map evil-snipe-local-mode-map :n "s" nil :n "S" nil)
+  (map! :map evil-snipe-mode-map       :n "s" nil :n "S" nil)
+
+  (map! :nv "s" #'avy-goto-char-timer
+        :nv "S" #'avy-goto-line))
+
+(after! avy
   (setq avy-timeout-seconds 0.3))
 
-
 ;; --- 2. Evil Text Objects (AST-based) ---
+;; Ensure this matches the corrected name in packages.el
 (use-package! evil-textobj-tree-sitter
   :after evil
   :config
-  ;; Bind inner (i) and outer (a) text objects for standard AST nodes
+  ;; Standard AST Objects
   (define-key evil-outer-text-objects-map "f" (evil-textobj-tree-sitter-get-textobj "function.outer"))
   (define-key evil-inner-text-objects-map "f" (evil-textobj-tree-sitter-get-textobj "function.inner"))
-
   (define-key evil-outer-text-objects-map "c" (evil-textobj-tree-sitter-get-textobj "class.outer"))
   (define-key evil-inner-text-objects-map "c" (evil-textobj-tree-sitter-get-textobj "class.inner"))
-
   (define-key evil-outer-text-objects-map "a" (evil-textobj-tree-sitter-get-textobj "parameter.outer"))
   (define-key evil-inner-text-objects-map "a" (evil-textobj-tree-sitter-get-textobj "parameter.inner"))
 
-  ;; Add motion bindings to jump between functions
+  ;; Jump motions
   (map! :n "]f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer"))
         :n "[f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer" t))))
 
