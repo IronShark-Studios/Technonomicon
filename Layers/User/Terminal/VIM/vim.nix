@@ -11,15 +11,9 @@ programs.neovim = {
     vimAlias = true;
     vimdiffAlias = true;
     extraPackages = with pkgs; [
-      # LazyVim
-      lua-language-server
-      stylua
-      # Telescope
-      ripgrep
     ];
 
     plugins = with pkgs.vimPlugins; [
-      lazy-nvim
     ];
 
     extraConfig =''
@@ -27,135 +21,20 @@ programs.neovim = {
       autocmd InsertLeave * :silent let fcitx5state=system("fcitx5-remote")[0] | silent !fcitx5-remote -c " Disable the input method when exiting insert mode and save the state
       autocmd InsertEnter * :silent if fcitx5state == 2 | call system("fcitx5-remote -o") | endif " 2 means that the input method was opened in the previous state, and the input method is started when entering the insert mode
 
-    '';
+      lua << EOF
+      -- Initialize Hop
+      require('hop').setup()
 
-    extraLuaConfig =
-      let
-        plugins = with pkgs.vimPlugins; [
-          # LazyVim
-          LazyVim
-          bufferline-nvim
-          cmp-buffer
-          cmp-nvim-lsp
-          cmp-path
-          cmp_luasnip
-          conform-nvim
-          dashboard-nvim
-          dressing-nvim
-          flash-nvim
-          friendly-snippets
-          gitsigns-nvim
-          indent-blankline-nvim
-          lualine-nvim
-          neo-tree-nvim
-          neoconf-nvim
-          neodev-nvim
-          noice-nvim
-          nui-nvim
-          nvim-cmp
-          nvim-lint
-          nvim-lspconfig
-          nvim-notify
-          nvim-spectre
-          nvim-treesitter
-          nvim-treesitter-context
-          nvim-treesitter-textobjects
-          nvim-ts-autotag
-          nvim-ts-context-commentstring
-          nvim-web-devicons
-          persistence-nvim
-          plenary-nvim
-          telescope-fzf-native-nvim
-          telescope-nvim
-          todo-comments-nvim
-          tokyonight-nvim
-          github-nvim-theme
-          trouble-nvim
-          vim-illuminate
-          vim-startuptime
-          which-key-nvim
-          obsidian-nvim
-          harpoon2
-          rainbow-delimiters-nvim
-          multicursors-nvim
-          vim-fugitive
-          vim-beancount
-          { name = "harpoon"; path = harpoon2; }
-          { name = "LuaSnip"; path = luasnip; }
-          { name = "catppuccin"; path = catppuccin-nvim; }
-          { name = "mini.ai"; path = mini-nvim; }
-          { name = "mini.bufremove"; path = mini-nvim; }
-          { name = "mini.comment"; path = mini-nvim; }
-          { name = "mini.indentscope"; path = mini-nvim; }
-          { name = "mini.pairs"; path = mini-nvim; }
-          { name = "mini.surround"; path = mini-nvim; }
-        ];
-        mkEntryFromDrv = drv:
-          if lib.isDerivation drv then
-            { name = "${lib.getName drv}"; path = drv; }
-          else
-            drv;
-        lazyPath = pkgs.linkFarm "lazy-plugins" (builtins.map mkEntryFromDrv plugins);
-      in
-      ''
-        require("lazy").setup({
-          defaults = {
-            lazy = true,
-          },
-          dev = {
-            -- reuse files from pkgs.vimPlugins.*
-            path = "${lazyPath}",
-            patterns = { "" },
-            -- fallback to download
-            fallback = true,
-          },
-          spec = {
-            { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-            -- The following configs are needed for fixing lazyvim on nix
-            -- force enable telescope-fzf-native.nvim
-            { "nvim-telescope/telescope-fzf-native.nvim", enabled = true },
-            -- disable mason.nvim, use programs.neovim.extraPackages
-            { "mason-org/mason-lspconfig.nvim", enabled = false },
-            { "mason-org/mason.nvim", enabled = false },
-            -- import/override with your plugins
-            { import = "plugins" },
-            -- treesitter handled by xdg.configFile."nvim/parser", put this line at the end of spec to clear ensure_installed
-            { "nvim-treesitter/nvim-treesitter", opts = { ensure_installed = {} } },
-            { "nvim-treesitter/nvim-treesitter",
-              opts = function(_, opts)
-                opts.ensure_installed = {}
-              end,
-             },
-          },
-        })
-      '';
+      -- 's' - Jump to any character on screen
+      vim.keymap.set('n', 's', '<cmd>HopChar1<CR>', { desc = 'Hop 1 Char (Avy jump)' })
+
+      -- 'S' (Shift+s) - Jump to any visible line
+      vim.keymap.set('n', 'S', '<cmd>HopLine<CR>', { desc = 'Hop Line (Avy line jump)' })
+      EOF
+    '';
   };
 
-  # https://github.com/nvim-treesitter/nvim-treesitter#i-get-query-error-invalid-node-type-at-position
-  xdg.configFile."nvim/parser".source =
-    let
-      parsers = pkgs.symlinkJoin {
-        name = "treesitter-parsers";
-        paths = (pkgs.vimPlugins.nvim-treesitter.withPlugins (plugins: with plugins; [
-          c
-          lua
-        ])).dependencies;
-      };
-    in
-    "${parsers}/parser";
-
-  xdg.configFile."nvim/lua".source = ./Lua;
-
-  home.file = { 
-    "lazy-lock.json" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/lazy-lock.json";
-      target = ".config/nvim/lazy-lock.json";
-    };
-
-    "lazyvim.json" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/home/xin/Projects/Technonomicon/Layers/User/Terminal/VIM/lazyvim.json";
-      target = ".config/nvim/lazyvim.json";
-    };
+  home.file = {
     "Nvim-Desktop" = {
       target = ".local/share/applications/nvim-term.desktop";
       text = ''
