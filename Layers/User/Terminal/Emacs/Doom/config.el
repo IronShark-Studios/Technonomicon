@@ -535,3 +535,5 @@
 
 (setq-hook! 'python-mode-hook +format-with-lsp nil)
 (set-formatter! 'black "black -q -" :modes '(python-mode))
+
+(message "--- CONFIG LOADED SUCCESSFULLY ---")
