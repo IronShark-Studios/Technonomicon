@@ -156,6 +156,20 @@
   (setq org-fold-catch-invisible-edits 'smart)
   (setq org-checkbox-hierarchical-statistics nil)
   (setq org-hierarchical-todo-statistics nil)
+  (setq org-agenda-span 1)
+  (setq org-agenda-start-day "+0d")
+  (setq org-agenda-current-time-string "")
+  (setq org-agenda-time-grid '((daily) () "" ""))
+  (setq org-agenda-prefix-format '(
+                                   (agenda . "  %?-2i %t ")
+                                   (todo . " %i %-12:c")
+                                   (tags . " %i %-12:c")
+                                   (search . " %i %-12:c")))
+  (setq org-agenda-skip-timestamp-if-done t
+        org-agenda-skip-deadline-if-done t
+        org-agenda-skip-scheduled-if-done t
+        org-agenda-skip-scheduled-if-deadline-is-shown t
+        org-agenda-skip-timestamp-if-deadline-is-shown t)
   (setq org-todo-keywords
         '((sequence "TODO(t)" "NEXT(n)" "ACTIVE(a)" "PAUSED(p)" "WAITING(w)" "|" "DONE(d)" "CANCELLED(c)" "ARCHIVE(A)")))
   (setq org-habit-graph-column 30
@@ -445,6 +459,7 @@
   (add-to-list 'org-pandoc-menu-entry '(markdown "to markdown" 100))
   (setq org-pandoc-options '((standalone . t)))
   (setq org-pandoc-format-extensions '(markdown+tex_math_dollars)))
+
 ;; =============================================================================
 ;; 11. QUARTO PUBLISHING SYSTEM
 ;; =============================================================================
