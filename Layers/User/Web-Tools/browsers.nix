@@ -113,5 +113,19 @@ xdg.desktopEntries = {
     terminal = false;
     categories = [ "Application" "Network" ];
   };
+
+  Toggl = {
+    name = "Toggl Time Tracking";
+    exec = "${pkgs.brave}/bin/brave --app=https://track.toggl.com/timer --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
+
+  Exist = {
+    name = "Exist Dashboard";
+    exec = "${pkgs.brave}/bin/brave --app=https://exist.io/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
 };
 }
