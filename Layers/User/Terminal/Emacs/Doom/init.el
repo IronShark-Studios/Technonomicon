@@ -62,6 +62,7 @@
 
        :lang
        beancount
+       (python +lsp +tree-sitter +pyright)
        (cc +lsp +tree-sitter)
        (haskell +lsp +tree-sitter)
        (nix +lsp +tree-sitter)              ; I hereby declare "nix geht mehr!"
