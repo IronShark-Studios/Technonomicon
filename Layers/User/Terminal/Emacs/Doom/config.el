@@ -498,3 +498,22 @@
 
   ;; Make the Avy timer slightly faster (default is 0.5s)
   (setq avy-timeout-seconds 0.3))
+
+
+;; --- 2. Evil Text Objects (AST-based) ---
+(use-package! evil-textobj-tree-sitter
+  :after evil
+  :config
+  ;; Bind inner (i) and outer (a) text objects for standard AST nodes
+  (define-key evil-outer-text-objects-map "f" (evil-textobj-tree-sitter-get-textobj "function.outer"))
+  (define-key evil-inner-text-objects-map "f" (evil-textobj-tree-sitter-get-textobj "function.inner"))
+
+  (define-key evil-outer-text-objects-map "c" (evil-textobj-tree-sitter-get-textobj "class.outer"))
+  (define-key evil-inner-text-objects-map "c" (evil-textobj-tree-sitter-get-textobj "class.inner"))
+
+  (define-key evil-outer-text-objects-map "a" (evil-textobj-tree-sitter-get-textobj "parameter.outer"))
+  (define-key evil-inner-text-objects-map "a" (evil-textobj-tree-sitter-get-textobj "parameter.inner"))
+
+  ;; Add motion bindings to jump between functions
+  (map! :n "]f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer"))
+        :n "[f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer" t))))

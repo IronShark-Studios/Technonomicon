@@ -40,3 +40,5 @@
 (package! org-super-agenda)
 
 (package! org-drawio)
+
+(package! evil-textobj-tree-sitter)
