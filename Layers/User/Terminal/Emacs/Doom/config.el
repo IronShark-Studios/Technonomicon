@@ -532,3 +532,6 @@
   ;; Add motion bindings to jump between functions
   (map! :n "]f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer"))
         :n "[f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer" t))))
+
+(setq-hook! 'python-mode-hook +format-with-lsp nil)
+(set-formatter! 'black "black -q -" :modes '(python-mode))
