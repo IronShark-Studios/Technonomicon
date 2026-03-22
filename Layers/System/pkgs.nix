@@ -78,7 +78,32 @@
     port = 8180;
     environment = {
       OLLAMA_API_BASE_URL = "http://127.0.0.1:11434";
+      WEBUI_AUTH = "False";
     };
+  };
+
+  services.sillytavern = {
+    enable = true;
+    port = 8585;
+  };
+
+  virtualisation.oci-containers.containers.kokoro = {
+    image = "ghcr.io/rushyrush/kokoro-fastapi-gpu:v0.3.0";
+    ports = [ "8880:8880" ];
+    environment = {
+      USE_GPU = "true";
+    };
+    extraOptions = [ "--gpus=all" ];
+  };
+
+  virtualisation.oci-containers.containers.whisper = {
+    image = "fedirz/faster-whisper-server:latest-cuda";
+    ports = [ "8000:8000" ];
+    environment = {
+      WHISPER__MODEL = "Systran/faster-whisper-large-v3";
+      WHISPER__COMPUTE_TYPE = "float16";
+    };
+    extraOptions = [ "--gpus=all" ];
   };
 
   programs.steam = {

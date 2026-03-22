@@ -12,7 +12,7 @@
       read change_log
       sudo nixos-rebuild switch --impure --flake .#$HOSTNAME
       git commit -m "$change_log $HOST: $NIXOS_GENERATION"
-      git push 
+      git push
       echo
       echo System Generation $NIXOS_GENERATION Active.
       cd -
@@ -58,8 +58,8 @@
     target = "scripts/clean.sh";
     text = ''
       #!/bin/sh
-      
-      rm /home/xin/Grimoire/.trash/* 
+
+      rm /home/xin/Grimoire/.trash/*
       sudo nix-collect-garbage --delete-old
       trash-empty -f
       sudo trash-empty -f

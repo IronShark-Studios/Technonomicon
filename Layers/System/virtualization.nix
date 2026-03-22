@@ -14,9 +14,11 @@
     spiceUSBRedirection.enable = true;
   };
 
+  hardware.nvidia-container-toolkit.enable = true;
+
   users.users.xin = {
     isNormalUser = true;
-    extraGroups = [ 
+    extraGroups = [
       "libvirtd"
       "dialout"
       "tty"
