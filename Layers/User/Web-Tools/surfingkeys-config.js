@@ -54,3 +54,13 @@ settings.theme = `
     width: 60%;
     left: 20%;
 }`;
+
+// Map 'ot' to show tabs in the current window only
+mapkey('T', 'Choose a tab in current window', function() {
+    RUNTIME('getTabs', { queryInfo: { currentWindow: true } }, response => {
+        Front.openOmnibar({
+            type: "UserURLs",
+            extra: response.tabs
+        });
+    });
+});
