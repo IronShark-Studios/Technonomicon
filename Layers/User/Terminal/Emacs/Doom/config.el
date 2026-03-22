@@ -316,7 +316,7 @@
         (pop keywords)
         (setq keyword (car keywords)))))
 
-  (add-hook 'org-agenda-finalize-hook #'org-agenda-show-svg)
+  ;; (add-hook 'org-agenda-finalize-hook #'org-agenda-show-svg)
 
   (add-hook 'svg-tag-mode-hook
             (lambda ()
@@ -429,29 +429,31 @@
 
 (setq org-agenda-files '("~/Grimoire/Notes/"))
 
-(use-package! org-super-agenda
-  :after org-agenda
-  :config
-  (add-hook 'org-trigger-hook #'save-buffer)
-  (org-super-agenda-mode t)
-  (setq org-super-agenda-groups
-        '(;; Each group has an implicit boolean OR operator between its selectors.
-          (:name "🔥 Overdue"
-           :deadline past)
-          (:name "⚡ Today"
-           :time-grid t
-           :scheduled today)
-          (:name "🌱 Daily Habits"
-           :habit t)
-          (:name "📚 Active Research"
-           :todo "ACTIVE")
-          (:name "⏳ Waiting On"
-           :todo "WAITING")
-          (:name "Inbox / Unprocessed"
-           :file-path "Inbox\\.org")
-          ;; Catch-all for everything else
-          (:name "📌 Upcoming / Backlog"
-           :auto-todo t))))
+(after! org-agenda
+  (after! org-habit
+    (use-package! org-super-agenda
+      :after org-agenda
+      :config
+      (add-hook 'org-trigger-hook #'save-buffer)
+      (org-super-agenda-mode t)
+      (setq org-super-agenda-groups
+            '(;; Each group has an implicit boolean OR operator between its selectors.
+              (:name "🔥 Overdue"
+               :deadline past)
+              (:name "⚡ Today"
+               :time-grid t
+               :scheduled today)
+              (:name "🌱 Daily Habits"
+               :habit t)
+              (:name "📚 Active Research"
+               :todo "ACTIVE")
+              (:name "⏳ Waiting On"
+               :todo "WAITING")
+              (:name "Inbox / Unprocessed"
+               :file-path "Inbox\\.org")
+              ;; Catch-all for everything else
+              (:name "📌 Upcoming / Backlog"
+               :auto-todo t))))))
 
 (use-package! ox-pandoc
   :after org
