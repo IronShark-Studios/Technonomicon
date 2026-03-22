@@ -78,6 +78,14 @@ xdg.desktopEntries = {
     icon = ./gemini.png;
   };
 
+  SillyTavern = {
+    name = "Silly Tavern";
+    exec = "${pkgs.brave}/bin/brave --app=http://127.0.0.1:8585/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+    icon = ./deep-seek.png;
+  };
+
   weight-tracker = {
     name = "Weight Tracker";
     exec = "${pkgs.brave}/bin/brave --app=https://www.docs.google.com/spreadsheets/d/1w-b4trFSWNrBQS52KmcZsIfq678T2F_S_8TXcrZrCmA --start-maximized";
@@ -124,6 +132,34 @@ xdg.desktopEntries = {
   Exist = {
     name = "Exist Dashboard";
     exec = "${pkgs.brave}/bin/brave --app=https://exist.io/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
+
+  Whisper = {
+    name = "Whisper";
+    exec = "${pkgs.brave}/bin/brave --app=http://127.0.0.1:8000/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
+
+  Kokoro = {
+    name = "Kokoro";
+    exec = "${pkgs.brave}/bin/brave --app=http://127.0.0.1:8880/web/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
+
+  Open-Webui = {
+    name = "Open WebUI";
+    exec = "${pkgs.brave}/bin/brave --app=http://127.0.0.1:8180/ --start-maximized";
+    terminal = false;
+    categories = [ "Application" "Network" ];
+  };
+
+  syncthing = {
+    name = "Syncthing";
+    exec = "${pkgs.brave}/bin/brave --app=http://localhost:8385/ --start-maximized";
     terminal = false;
     categories = [ "Application" "Network" ];
   };
