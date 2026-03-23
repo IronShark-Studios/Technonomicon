@@ -11,7 +11,7 @@
     ../Layers/System/nixpkgs.nix
     ../Layers/System/pkgs.nix
     ../Layers/System/utf.nix
-    ../Layers/System/virtualization.nix
+    # ../Layers/System/virtualization.nix
     ../Layers/System/display.nix
     ../Layers/Scripts/Active/system-scripts.nix
     ../Layers/Scripts/Active/quick-macro.nix
