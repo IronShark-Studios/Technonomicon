@@ -11,7 +11,10 @@
 
 (global-visual-line-mode t)
 
-                                        ;(setq-default line-spacing 0.3)
+(setq scroll-preserve-screen-position t
+      scroll-conservatively 0
+      maximum-scroll-margin 0.5
+      scroll-margin 99999)
 
 (use-package! exec-path-from-shell
   :config
@@ -22,6 +25,8 @@
 (setq initial-scratch-message nil)
 
 (setq org-cite-global-bibliography '("~/Grimoire/bibtex.bib"))
+
+(add-hook 'org-mode-hook 'flyspell-mode)
 
 ;; =============================================================================
 ;; 2. UI, FONTS & THEME
@@ -233,7 +238,7 @@
 
           ("b" "Blog Post" plain "%?"
            :target (file+head "~/Grimoire/Notes/Blog/%<%Y%m%d%H%M%S>-${slug}.org"
-                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+description=temp description\n#+PANDOC_METADATA: draft=false\n#+PANDOC_METADATA: categories=General\n#+PANDOC_METADATA: image=thumbnail.png\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}/index.qmd\n\n")
+                              "#+title: ${title}\n#+author: Xin IronShark\n#+date: %<%Y-%m-%d>\n#+description: temp description\n#+PANDOC_METADATA: draft=false\n#+PANDOC_METADATA: categories=General\n#+PANDOC_METADATA: image=thumbnail.png\n#+export_file_name: ~/Projects/Personal-Blog/posts/${slug}/index.qmd\n\n")
            :unnarrowed t)
 
           ))
@@ -459,7 +464,8 @@
                :tag "Dailies"
                :order 99)
               (:name "🔥 Overdue"
-               :deadline past)
+               :deadline past
+               :order 1)
               (:name "⚡ Today"
                :time-grid t
                :scheduled today)
