@@ -465,6 +465,7 @@
                :order 99)
               (:name "🔥 Overdue"
                :deadline past
+               :and (:habit t :scheduled past)
                :order 1)
               (:name "⚡ Today"
                :time-grid t
