@@ -19,6 +19,7 @@
 
   hardware.uinput.enable = true;
 
+
   boot = {
     kernelModules = [ "uinput" ];
     kernelPackages = pkgs.linuxPackages;
@@ -54,22 +55,22 @@
     "PasswordManagerEnabled" = false;
     "AutofillAddressEnabled" = false;
     "AutofillCreditCardEnabled" = false;
-    
+
     "BraveRewardsDisabled" = true;
     "BraveWalletDisabled" = true;
     "BraveVPNMode" = 0; # 0 = Disabled
     "TorDisabled" = true;
     "IPFSCompanionEnabled" = false;
-    
+
     "DefaultBrowserSettingEnabled" = false;
     "MetricsReportingEnabled" = false;
     "SearchSuggestEnabled" = false;
 
     "ShowHomeButton" = false;
-    "NewTabPageLocation" = "https://en.wikipedia.org/wiki/Special:Random"; 
+    "NewTabPageLocation" = "https://en.wikipedia.org/wiki/Special:Random";
     "HomepageLocation" = "https://en.wikipedia.org/wiki/Special:Random";
     "BraveNewTabWidgetsVisible" = false;
-    "NewTabPageAllowedTypes" = [ "none" ]; 
+    "NewTabPageAllowedTypes" = [ "none" ];
     "ImagesForNewTabPageEnabled" = false;
 
     "ExtensionInstallForcelist" = [

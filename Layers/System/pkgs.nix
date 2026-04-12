@@ -12,9 +12,10 @@
       wl-clipboard
       nix-ld
       kdePackages.skanlite
-      aider-chat
+      # aider-chat
       aichat
       lsp-ai
+      nvtopPackages.nvidia
     ];
   };
 
@@ -53,58 +54,53 @@
   openFirewall = true;
   };
 
-  services.ollama = {
-    enable = true;
-    package = pkgs.ollama-cuda;
-    host = "0.0.0.0";
-    port = 11434;
-    environmentVariables = {
-      OLLAMA_KEEP_ALIVE = "10m";
-      OLLAMA_ORIGINS = "*";
-    };
-    loadModels = [
-      "mixtral"
-      "deepseek-r1:32b"
-      "mannix/deepseek-coder-v2-lite-instruct:q4_k_m"
-      "qwen2.5-coder:32b-instruct"
-      "qwen2.5-coder:1.5b"
-      "qwen2.5-coder:14b"
-      "qwen2.5-coder:7b"
-    ];
-  };
+  # services.ollama = {
+  #   enable = true;
+  #   package = pkgs.ollama-cuda;
+  #   host = "0.0.0.0";
+  #   port = 11434;
+  #   environmentVariables = {
+  #     OLLAMA_KEEP_ALIVE = "10m";
+  #     OLLAMA_ORIGINS = "*";
+  #   };
+  #   loadModels = [
+  #     "qwen3.5:9b"
+  #     "hf.co/Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-GGUF:Q6_K"
+  #   ];
+  # };
 
-  services.open-webui = {
-    enable = true;
-    port = 8180;
-    environment = {
-      OLLAMA_API_BASE_URL = "http://127.0.0.1:11434";
-      WEBUI_AUTH = "False";
-    };
-  };
+  # services.open-webui = {
+  #   enable = true;
+  #   port = 8180;
+  #   environment = {
+  #     OLLAMA_API_BASE_URL = "http://127.0.0.1:11434";
+  #     WEBUI_AUTH = "False";
+  #   };
+  # };
 
-  services.sillytavern = {
-    enable = true;
-    port = 8585;
-  };
+  # services.sillytavern = {
+  #   enable = true;
+  #   port = 8585;
+  # };
 
-  virtualisation.oci-containers.containers.kokoro = {
-    image = "ghcr.io/rushyrush/kokoro-fastapi-gpu:v0.3.0";
-    ports = [ "8880:8880" ];
-    environment = {
-      USE_GPU = "true";
-    };
-    extraOptions = [ "--gpus=all" ];
-  };
+  # virtualisation.oci-containers.containers.kokoro = {
+  #   image = "ghcr.io/rushyrush/kokoro-fastapi-gpu:v0.3.0";
+  #   ports = [ "8880:8880" ];
+  #   environment = {
+  #     USE_GPU = "true";
+  #   };
+  #   extraOptions = [ "--gpus=all" ];
+  # };
 
-  virtualisation.oci-containers.containers.whisper = {
-    image = "fedirz/faster-whisper-server:latest-cuda";
-    ports = [ "8000:8000" ];
-    environment = {
-      WHISPER__MODEL = "Systran/faster-whisper-large-v3";
-      WHISPER__COMPUTE_TYPE = "float16";
-    };
-    extraOptions = [ "--gpus=all" ];
-  };
+  # virtualisation.oci-containers.containers.whisper = {
+  #   image = "fedirz/faster-whisper-server:latest-cuda";
+  #   ports = [ "8000:8000" ];
+  #   environment = {
+  #     WHISPER__MODEL = "Systran/faster-whisper-small";
+  #     WHISPER__COMPUTE_TYPE = "float16";
+  #   };
+  #   extraOptions = [ "--gpus=all" ];
+  # };
 
   programs.steam = {
     enable = true;

@@ -4,7 +4,7 @@
   ];
 
   home.packages = with pkgs; [
-    anki
+    anki-bin
     zotero
     rclone
     zathura

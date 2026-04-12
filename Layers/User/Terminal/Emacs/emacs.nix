@@ -6,8 +6,8 @@
   ];
 
   services.emacs = {
-    enable = false;
-    client.enable = false;
+    enable = true;
+    client.enable = true;
     defaultEditor = true;
   };
 
@@ -57,7 +57,7 @@
     # BQN
     cbqn
     # Bash / Shell
-    nodePackages.bash-language-server shellcheck shfmt
+    shellcheck shfmt
     # Scheme & Racket (Your miniKanren environments)
     guile racket
     # C

@@ -64,8 +64,8 @@ in {
           Terminal=false
           Type=Application
           Name=101 Weiqi
-	        Icon=.local/share/applications/101-wq.png
-          Exec=ff-applet https://www.101weiqi.com/training/
+          Icon=.local/share/applications/101-wq.png
+          Exec=ff-applet brave --app=https://101weiqi.com/training/
         '';
       };
     };
