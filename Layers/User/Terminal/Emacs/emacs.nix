@@ -6,8 +6,8 @@
   ];
 
   services.emacs = {
-    enable = true;
-    client.enable = true;
+    enable = false;
+    client.enable = false;
     defaultEditor = true;
   };
 

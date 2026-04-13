@@ -24,7 +24,6 @@
 
   programs.home-manager.enable = true;
 
-  
   programs.plover = {
     enable = true;
     package =

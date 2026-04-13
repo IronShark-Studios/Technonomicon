@@ -8,6 +8,7 @@
 
 (setq confirm-kill-emacs nil)
 (setq ispell-program-name "hunspell")
+(setq confirm-kill-processes nil)
 
 (global-visual-line-mode t)
 
