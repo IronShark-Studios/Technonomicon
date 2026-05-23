@@ -4,6 +4,7 @@
     packages = with pkgs; [
       xivlauncher
       hyperspeedcube
+      cowsay
     ];
   };
 }

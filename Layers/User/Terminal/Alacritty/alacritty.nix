@@ -27,6 +27,11 @@
       source = ./bartib-menu.sh;
     };
 
+    "gemini-menu" = {
+      target = ".config/alacritty/gemini-menu.sh";
+      source = ./gemini-menu.sh;
+    };
+
     "bartib-fava" = {
       target = ".config/Bartib/time-tracking.bean";
       source = ../../../Secrets/time-tracking.bean;
@@ -69,7 +74,7 @@
     dysk
     pastel
     gnumake
-    # gemini-cli
+    gemini-cli
     usbutils
     bat
     bzip3

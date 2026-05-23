@@ -16,8 +16,8 @@ in {
      katagoCPU
      fox
      pipx
-     lutris
-     geckodriver #used for lutris-fox
+     # lutris
+     # geckodriver #used for lutris-fox
     ];
 
 

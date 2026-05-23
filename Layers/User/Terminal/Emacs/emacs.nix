@@ -25,7 +25,9 @@
   };
 
   home.packages = with pkgs; [
+    exercism
     sqlite
+    gdb
     # Export Tooling
     pandoc
     # Chart Tooling

@@ -3,6 +3,8 @@
 ;; on the command line, then restart Emacs for the changes to take effect -- or
 ;; use 'M-x doom/reload'.
 
+(package! ewm)
+
 (package! exec-path-from-shell)
 
 (package! fcitx)

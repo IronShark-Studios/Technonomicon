@@ -99,6 +99,16 @@
   (add-to-list 'completion-at-point-functions #'cape-dabbrev)
   (add-to-list 'completion-at-point-functions #'cape-file))
 
+;; Stop Emacs from calculating syntax highlighting while actively typing
+(setq redisplay-skip-fontification-on-input t)
+
+;; Unchoke the LSP data pipe (increase to 4MB)
+(setq read-process-output-max (* 4 1024 1024))
+
+;; Make Corfu suggestions appear instantly
+(after! corfu
+  (setq corfu-auto-delay 0.0
+        corfu-auto-prefix 1))
 ;; =============================================================================
 ;; 4. MODULES & AI
 ;; =============================================================================
@@ -571,3 +581,10 @@
 (set-formatter! 'black "black -q -" :modes '(python-mode))
 
 (message "--- CONFIG LOADED SUCCESSFULLY ---")
+
+(use-package! ewm
+  :defer t
+  :config
+  ;; Intercept Super/Mod key and C-c so Emacs handles window management.
+  ;; All other keystrokes will act like 'insert mode' for the focused Wayland app.
+  (setq ewm-intercept-prefixes '("s-")))
