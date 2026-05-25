@@ -1,4 +1,4 @@
-{ self, inputs, ... }: {
+{ self, inputs, config, ... }: {
   flake.nixosConfigurations.Kvasir = inputs.nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
 
@@ -14,7 +14,7 @@
       ./_hardware-configuration.nix
 
       inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t480s
-
+      inputs.sops-nix.nixosModules.sops
       inputs.hjem.nixosModules.hjem
 
       self.nixosModules.core-settings
@@ -23,21 +23,32 @@
       self.nixosModules.web-browsers-feature
       self.nixosModules.network-feature
 
-      ({ pkgs, ... }: {
+      ({ pkgs, config, ... }: {
         system.stateVersion = "23.11";
+
         boot.loader.systemd-boot.enable = true;
         boot.loader.efi.canTouchEfiVariables = true;
 
-        environment.etc.secrets.source = ../../Secrets/_xin-usrPasswd.nix;
+        sops.secrets.xin-password.neededForUsers = true;
+        sops.age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
+        sops.defaultSopsFile = "${inputs.self}/_secrets.yaml";
+        sops.defaultSopsFormat = "yaml";
 
         networking.hostName = "Kvasir";
+
+        hjem = {
+          extraModules = [ inputs.hjem-impure.hjemModules.default ];
+          users.xin = {
+            impure.enable = true;
+          };
+        };
 
         users = {
           mutableUsers = false;
 
           users.xin = {
             isNormalUser = true;
-            hashedPasswordFile = "/etc/secrets/xin-usrPasswd.nix";
+            hashedPasswordFile = config.sops.secrets.xin-password.path;
             shell = pkgs.bash;
             extraGroups = [
               "wheel"
