@@ -39,11 +39,11 @@
           (lambda ()
             (setq wrap-prefix (propertize "  ↳ " 'face 'font-lock-comment-face))))
 
-(use-package! which-key-posframe
-  :after which-key
-  :config
-  (setq which-key-posframe-poshandler 'posframe-poshandler-frame-center)
-  (which-key-posframe-mode 1))
+;; (use-package! which-key-posframe
+;;   :after which-key
+;;   :config
+;;   (setq which-key-posframe-poshandler 'posframe-poshandler-frame-center)
+;;   (which-key-posframe-mode 1))
 
 (custom-set-faces!
   '(default :foreground "#CFDFDF")
@@ -582,9 +582,71 @@
 
 (message "--- CONFIG LOADED SUCCESSFULLY ---")
 
+(use-package! app-launcher)
+
 (use-package! ewm
   :defer t
   :config
   ;; Intercept Super/Mod key and C-c so Emacs handles window management.
   ;; All other keystrokes will act like 'insert mode' for the focused Wayland app.
-  (setq ewm-intercept-prefixes '("s-")))
+  :bind (:map ewm-mode-map
+              ("s-d" . consult-buffer)
+              ("s-<return>" . app-launcher-run-app)))
+
+(defvar consult-source-xdg-apps
+  `(:name "Apps"
+          :narrow ?a
+          :category app
+          :items ,(lambda ()
+                    (mapcar #'car (ewm-list-xdg-apps)))
+          :action ,#'ewm-launch-xdg-command))
+
+;; (setq consult-buffer-sources
+;;       '(consult-source-current-buffer
+;;         consult-source-buffer
+;;         consult-source-hidden-buffer
+;;         consult-source-modified-buffer
+;;         consult-source-recent-file
+;;         consult-source-xdg-apps))
+
+(when (daemonp)
+  (add-hook 'after-make-frame-functions
+            (defun +ewm-trigger-server-hooks-h (frame)
+              (when (display-graphic-p frame)
+                (remove-hook 'after-make-frame-functions #'+ewm-trigger-server-hooks-h)
+                (with-selected-frame frame
+                  (run-hooks 'server-after-make-frame-hook))))))
+(use-package! ewm
+  :defer t
+  :init
+  ;; Intercept Super/Mod key so Emacs handles window management.
+  ;; We put this in :init so it executes instantly at boot,
+  ;; preventing Brave from locking you out.
+  ;;
+
+
+
+
+
+  ;; (setq ewm-intercept-prefixes '("s-"))
+
+  ;; :bind (:map ewm-mode-map
+  ;;        ("s-<return>" . app-launcher-run-app)
+  ;;        ("s-RET"      . app-launcher-run-app)  ; Wayland fallback
+  ;;        ("s-b"        . switch-to-buffer)      ; Escape to an Emacs buffer
+  ;;        ("s-w"        . evil-window-delete)    ; Close current window split
+
+  ;;        ;; Global Workspace Switching (Super + Number)
+  ;;        ("s-1"        . +workspaces/switch-to-0)
+  ;;        ("s-2"        . +workspaces/switch-to-1)
+  ;;        ("s-3"        . +workspaces/switch-to-2)
+  ;;        ("s-4"        . +workspaces/switch-to-3)
+  ;;        ("s-5"        . +workspaces/switch-to-4)
+  ;;        ("s-]"        . +workspaces/switch-to-next)
+  ;;        ("s-["        . +workspaces/switch-to-prev)
+
+  ;;        ;; Global Tiling Window Navigation (Super + Arrow Keys)
+  ;;        ("s-<left>"   . evil-window-left)
+  ;;        ("s-<down>"   . evil-window-down)
+  ;;        ("s-<up>"     . evil-window-up)
+  ;;        ("s-<right>"  . evil-window-right)))

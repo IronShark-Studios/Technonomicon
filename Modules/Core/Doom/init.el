@@ -7,7 +7,7 @@
 
        :completion
        (corfu +icons +dabbrev +orderless)
-       (vertico +icons +childframe)           ; the search engine of the future
+       (vertico +icons)   ;+childframe        ; the search engine of the future
 
        :ui
        doom                ; what makes DOOM look the way it does
@@ -52,7 +52,7 @@
        eww
        eval                ; run code, run (also, repls)
        lookup              ; navigate your code and its documentation
-       (magit +forge +childframe)
+       (magit +forge) ;+childframe
        make                ; run make tasks from Emacs
        lsp
        tree-sitter

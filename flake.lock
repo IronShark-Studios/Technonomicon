@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "app-launcher": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1762281245,
+        "narHash": "sha256-TVITX2MH1KoAcLnRlHBEnrMzfdUBxfOTo6QqxJgLN5Y=",
+        "owner": "SebastienWae",
+        "repo": "app-launcher",
+        "rev": "5493b8ec39c00b4971d260c03e8bbe93b25bb697",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SebastienWae",
+        "repo": "app-launcher",
+        "type": "github"
+      }
+    },
     "doom-emacs-unstraightened": {
       "inputs": {
         "doomemacs": "doomemacs",
@@ -109,6 +125,54 @@
         "owner": "feel-co",
         "repo": "hjem",
         "rev": "77bf113e3ce91c6632def66222198561437853dc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "repo": "hjem",
+        "type": "github"
+      }
+    },
+    "hjem-impure": {
+      "inputs": {
+        "hjem": "hjem_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1774033400,
+        "narHash": "sha256-lECETmsnVngKI5qZYsygEAyFQVSvZNxzDqOWZoxK4mQ=",
+        "owner": "Rexcrazy804",
+        "repo": "hjem-impure",
+        "rev": "1a65894ec4b6b80591a7ec121ee4bb52ca772ebf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Rexcrazy804",
+        "repo": "hjem-impure",
+        "type": "github"
+      }
+    },
+    "hjem_2": {
+      "inputs": {
+        "nix-darwin": [
+          "hjem-impure"
+        ],
+        "nixpkgs": [
+          "hjem-impure",
+          "nixpkgs"
+        ],
+        "smfh": [
+          "hjem-impure"
+        ]
+      },
+      "locked": {
+        "lastModified": 1767318528,
+        "narHash": "sha256-I2zxtEafZbFbqXe71rjqwVeTDv8SIVLaSzQd39SwfwM=",
+        "owner": "feel-co",
+        "repo": "hjem",
+        "rev": "8539013044624a257e8da370069107aea148e985",
         "type": "github"
       },
       "original": {
@@ -268,15 +332,38 @@
     },
     "root": {
       "inputs": {
+        "app-launcher": "app-launcher",
         "doom-emacs-unstraightened": "doom-emacs-unstraightened",
         "ewm": "ewm",
         "flake-parts": "flake-parts",
         "hjem": "hjem",
+        "hjem-impure": "hjem-impure",
         "import-tree": "import-tree",
         "nix-index-database": "nix-index-database",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_3",
-        "nixpkgs-stable": "nixpkgs-stable"
+        "nixpkgs-stable": "nixpkgs-stable",
+        "sops-nix": "sops-nix"
+      }
+    },
+    "sops-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1777944972,
+        "narHash": "sha256-VfGRo1qTBKOe3s2gOv8LSoA6Fk19PvBlwQ1ECN0Evn8=",
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "rev": "c591bf665727040c6cc5cb409079acb22dcce33c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mic92",
+        "repo": "sops-nix",
+        "type": "github"
       }
     },
     "systems": {

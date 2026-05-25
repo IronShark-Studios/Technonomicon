@@ -8,16 +8,26 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
 
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-
-    hjem.url = "github:feel-co/hjem";
-    hjem.inputs.nixpkgs.follows = "nixpkgs";
     nix-index-database.url = "github:nix-community/nix-index-database";
     nix-index-database.inputs.nixpkgs.follows = "nixpkgs";
 
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    nixos-hardware.inputs.nixpkgs.follows = "nixpkgs";
+
+    sops-nix.url = "github:Mic92/sops-nix";
+    sops-nix.inputs.nixpkgs.follows = "nixpkgs";
+
+    hjem.url = "github:feel-co/hjem";
+    hjem.inputs.nixpkgs.follows = "nixpkgs";
+    hjem-impure.url = "github:Rexcrazy804/hjem-impure";
+    hjem-impure.inputs.nixpkgs.follows = "nixpkgs";
 
     doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
     ewm.url = "git+https://codeberg.org/ezemtsov/ewm";
+    app-launcher = {
+      url = "github:SebastienWae/app-launcher";
+      flake = false;
+    };
   };
 
   outputs = inputs@{ self, flake-parts, import-tree, ... }:
