@@ -1,6 +1,6 @@
 { inputs, ... }: {
 
-  flake.nixosModules.editor-feature = { pkgs, config, ... }: {
+  flake.nixosModules.Tn-Emacs = { pkgs, config, ... }: {
 
     nixpkgs.overlays = [ inputs.doom-emacs-unstraightened.overlays.default ];
 

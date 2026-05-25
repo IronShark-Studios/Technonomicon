@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.network-feature = { pkgs, ... }: {
+  flake.nixosModules.Tn-network = { pkgs, ... }: {
 
     networking.networkmanager.enable = true;
     networking.networkmanager.wifi.backend = "iwd";

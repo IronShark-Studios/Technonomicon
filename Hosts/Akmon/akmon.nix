@@ -1,5 +1,5 @@
 { self, inputs, config, ... }: {
-  flake.nixosConfigurations.Kvasir = inputs.nixpkgs.lib.nixosSystem {
+  flake.nixosConfigurations.Akmon = inputs.nixpkgs.lib.nixosSystem {
     system = "x86_64-linux";
 
     specialArgs = {
@@ -13,7 +13,6 @@
     modules = [
       ./_hardware-configuration.nix
 
-      inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t480s
       inputs.sops-nix.nixosModules.sops
       inputs.hjem.nixosModules.hjem
 
@@ -35,7 +34,7 @@
         sops.defaultSopsFile = "${inputs.self}/_secrets.yaml";
         sops.defaultSopsFormat = "yaml";
 
-        networking.hostName = "Kvasir";
+        networking.hostName = "Akmon";
 
         hjem = {
           extraModules = [ inputs.hjem-impure.hjemModules.default ];

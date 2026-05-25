@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.browsers-feature = { pkgs, pkgs-stable, config, ... }: {
+  flake.nixosModules.Tn-web-apps = { pkgs, pkgs-stable, config, ... }: {
 
     xdg.desktopEntries = {
 

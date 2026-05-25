@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.core-settings = { pkgs, ... }: {
+  flake.nixosModules.Tn-nix = { pkgs, ... }: {
     nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
     imports = [ inputs.nix-index-database.nixosModules.nix-index ];

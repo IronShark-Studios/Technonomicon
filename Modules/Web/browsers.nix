@@ -1,9 +1,9 @@
 { inputs, ... }: {
-  flake.nixosModules.web-browsers-feature = { pkgs, pkgs-stable, config, ... }: {
+  flake.nixosModules.Tn-web-browsers = { pkgs, pkgs-stable, config, ... }: {
 
     programs.chromium.enable = true;
     environment.systemPackages = [
-      (pkgs.brave.override {
+      ((pkgs.brave.override {
         commandLineArgs = [
           "--enable-features=UseOzonePlatform"
           "--ozone-platform=wayland"
@@ -11,7 +11,16 @@
           "--hide-crash-restore-bubble"
           "--restore-last-session"
         ];
-      })
+      }).overrideAttrs (oldAttrs: {
+        postFixup = (oldAttrs.postFixup or "") + ''
+          for target_dir in "$out/lib/brave" "$out/libexec/brave" "$out/opt/brave" "$out/usr/lib/brave-browser"; do
+            if [ -d "$target_dir" ]; then
+              echo "Injecting initial_preferences into $target_dir"
+              echo '${builtins.toJSON { browser = { custom_chrome_frame = true; }; }}' > "$target_dir/initial_preferences"
+            fi
+          done
+        '';
+      }))
     ];
 
     hjem.users.xin = {
@@ -48,7 +57,14 @@
         "eimadpbcbfnmbkopoojfekhnkhdbieeh;https://clients2.google.com/service/update2/crx" # Dark Reader
         "nngceckbapebfimnlniiiahkandclblb;https://clients2.google.com/service/update2/crx" # Bitwarden
         "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx" # uBlock Origin
+        "dndlcbaomdoggooaficldplkcmkfpgff;https://clients2.google.com/service/update2/crx" # New Tab, New Window
       ];
     };
+
+      environment.etc."brave/initial_preferences".text = builtins.toJSON {
+        browser = {
+          custom_chrome_frame = true;
+        };
+      };
   };
 }

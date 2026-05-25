@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.desktop-feature = { pkgs, pkgs-stable, config, ... }: {
+  flake.nixosModules.Tn-desktop = { pkgs, pkgs-stable, config, ... }: {
 
     imports = [ inputs.ewm.nixosModules.default ];
     programs.ewm.enable = true;
@@ -44,12 +44,10 @@
     ];
 
     environment.sessionVariables = {
-      # Forces Chromium/Electron apps (like Brave, VS Code, Discord) to use Wayland
       NIXOS_OZONE_GH_WAYLAND = "1";
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
-
-      # Forces Qt apps (like Anki) to use Wayland
       QT_QPA_PLATFORM = "wayland";
+      QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
     };
 
     environment.systemPackages = with pkgs; [
