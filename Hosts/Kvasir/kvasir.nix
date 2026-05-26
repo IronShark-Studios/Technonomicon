@@ -17,7 +17,7 @@
       inputs.sops-nix.nixosModules.sops
       inputs.hjem.nixosModules.hjem
 
-      self.nixosModules.Tn-Nix
+      self.nixosModules.Tn-nix
       self.nixosModules.Tn-desktop
       self.nixosModules.Tn-emacs
       self.nixosModules.Tn-web-browsers
@@ -27,8 +27,13 @@
       ({ pkgs, config, ... }: {
         system.stateVersion = "23.11";
 
-        boot.loader.systemd-boot.enable = true;
-        boot.loader.efi.canTouchEfiVariables = true;
+        boot.kernelModules = [ "uinput" ];
+        boot.kernelPackages = pkgs.linuxPackages;
+        boot.loader = {
+          systemd-boot.enable = true;
+          efi.canTouchEfiVariables = true;
+          efi.efiSysMountPoint = "/boot";
+        };
 
         sops.secrets.xin-password.neededForUsers = true;
         sops.age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];
@@ -50,7 +55,7 @@
           users.xin = {
             isNormalUser = true;
             hashedPasswordFile = config.sops.secrets.xin-password.path;
-            shell = pkgs.bash;
+            shell = pkgs.xonsh;
             extraGroups = [
               "wheel"
               "docker"

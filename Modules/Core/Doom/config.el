@@ -587,10 +587,13 @@
 (use-package! ewm
   :defer t
   :config
-  ;; Intercept Super/Mod key and C-c so Emacs handles window management.
-  ;; All other keystrokes will act like 'insert mode' for the focused Wayland app.
+
   :bind (:map ewm-mode-map
-              ("s-d" . consult-buffer)
+              ("s-<tab>" . +workspace/switch-to)
+              ("s-SPC" . execute-extended-command)
+              ("s-B" . consult-buffer)
+              ("s-b" . +vertico/switch-workspace-buffer)
+              ("s-d" . delete-window)
               ("s-<return>" . app-launcher-run-app)))
 
 (defvar consult-source-xdg-apps
@@ -616,9 +619,25 @@
                 (remove-hook 'after-make-frame-functions #'+ewm-trigger-server-hooks-h)
                 (with-selected-frame frame
                   (run-hooks 'server-after-make-frame-hook))))))
-(use-package! ewm
-  :defer t
-  :init
+
+
+
+(after! doom-modeline
+  (setq display-time-default-load-average nil)
+  (setq display-time-format "%H:%M")
+  (display-time-mode 1)
+
+  (setq doom-modeline-battery t)
+  (setq doom-modeline-volume t)
+  (display-battery-mode 1))
+
+
+
+
+
+;; (use-package! ewm
+;;   :defer t
+;;   :init
   ;; Intercept Super/Mod key so Emacs handles window management.
   ;; We put this in :init so it executes instantly at boot,
   ;; preventing Brave from locking you out.

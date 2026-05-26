@@ -48,12 +48,11 @@
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
       QT_QPA_PLATFORM = "wayland";
       QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+      NIXPKGS_ALLOW_UNFREE = "1";
     };
 
     environment.systemPackages = with pkgs; [
-      alacritty
       wl-clipboard
-      wiremix
     ];
 
   };

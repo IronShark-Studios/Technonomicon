@@ -8,6 +8,11 @@
     programs.nix-index.enable = true;
     programs.nix-index-database.comma.enable = true;
 
+    nixpkgs.config = {
+      allowUnfree = true;
+      allowUnfreePredicate = (_: true);
+    };
+
     environment.systemPackages = with pkgs; [
       git
       curl
