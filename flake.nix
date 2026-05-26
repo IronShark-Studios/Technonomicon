@@ -27,6 +27,8 @@
       url = "github:SebastienWae/app-launcher";
       flake = false;
     };
+
+    plover-flake.url = "github:openstenoproject/plover-flake";
   };
 
   outputs = inputs@{ self, flake-parts, import-tree, ... }:

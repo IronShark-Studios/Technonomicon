@@ -41,6 +41,7 @@
         };
 
         hardware = {
+          nvidia-container-toolkit.enable = true;
           uinput.enable = true;
           graphics = {
             enable = true;

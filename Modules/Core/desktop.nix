@@ -32,7 +32,6 @@
       libinput.enable = true;
       gnome.gnome-keyring.enable = true;
       pulseaudio.enable = false;
-
       pipewire = {
         enable = true;
         pulse.enable = true;
@@ -77,6 +76,7 @@
     services.udev.extraRules = ''
       KERNEL=="ttyACM[0-9]*", MODE="0666"
       KERNEL=="ttyUSB[0-9]*", MODE="0666"
+      KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
     '';
 
     environment.sessionVariables = {
@@ -99,8 +99,9 @@
       brightnessctl
       gnome-themes-extra
       adwaita-icon-theme
-      gnome-themes-extra
       kdePackages.skanlite
+
+      inputs.plover-flake.packages.${pkgs.stdenv.hostPlatform.system}.plover-full
     ];
 
     xdg.portal = {
@@ -112,18 +113,11 @@
     programs.steam.enable = true;
     programs.ydotool.enable = true;
 
-    programs.plover = {
-      enable = true;
-      package =
-        inputs.plover-flake.packages.${pkgs.stdenv.hostPlatform.system}.plover-full;
-    };
-
     programs.appimage = {
       enable = true;
       binfmt = true;
       package = pkgs.appimage-run.override {
-        extraPkgs = pkgs:
-        with pkgs; [
+        extraPkgs = pkgs: with pkgs; [
           libepoxy
           brotli
           xdg-user-dirs
@@ -139,9 +133,9 @@
             color-scheme = "prefer-dark";
             gtk-theme = "Adwaita-dark";
           };
-          "org/nemo/preferences" = {
-            show-hidden-files = true;
-            always-use-browser-view = true;
+          "org/virt-manager/virt-manager/connections" = {
+            autoconnect = [ "qemu:///system" ];
+            uris = [ "qemu:///system" ];
           };
         };
       }];
@@ -158,7 +152,6 @@
         PICTURES=Media
         VIDEOS=Media
       '';
-
       "xdg/fcitx5/config".source = ./_fcitx5-config;
 
       "xdg/gromit-mpx.cfg".source = ./_gromit-mpx.cfg;
@@ -169,7 +162,6 @@
         gtk-theme-name=Adwaita-dark
         gtk-application-prefer-dark-theme=1
       '';
-
       "gtk-4.0/settings.ini".text = ''
         [Settings]
         gtk-theme-name=Adwaita-dark

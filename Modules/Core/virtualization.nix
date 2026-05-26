@@ -15,8 +15,6 @@
       spiceUSBRedirection.enable = true;
     };
 
-    hardware.nvidia-container-toolkit.enable = true;
-
     users.users.xin = {
       isNormalUser = true;
       extraGroups = [
@@ -38,15 +36,6 @@
     programs = {
       virt-manager.enable = true;
       dconf.enable = true;
-    };
-
-    home-manager.users.xin = {
-      dconf.settings = {
-        "org/virt-manager/virt-manager/connections" = {
-          autoconnect = [ "qemu:///system" ];
-          uris = [ "qemu:///system" ];
-        };
-      };
     };
   };
 }
