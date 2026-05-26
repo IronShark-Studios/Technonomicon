@@ -20,7 +20,6 @@
     };
 
     environment.systemPackages = with pkgs; [
-    exercism
     ];
   };
 }

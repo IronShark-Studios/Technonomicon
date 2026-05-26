@@ -28,6 +28,9 @@
       self.nixosModules.Tn-sound
       self.nixosModules.Tn-shell
       self.nixosModules.Tn-pdf
+      self.nixosModules.Tn-games
+      self.nixosModules.Tn-learning
+      self.nixosModules.Tn-art
 
       ({ pkgs, config, ... }: {
         system.stateVersion = "23.11";

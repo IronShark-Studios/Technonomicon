@@ -111,6 +111,7 @@
       nmon
       kmon
       rsync
+      rclone
       curl
       zoxide
       gparted
@@ -140,6 +141,9 @@
       gemini-cli
       usbutils
       bat
+      mpv
+      sox
+      aria2
       bzip3
       bitwarden-cli
       bitwarden-desktop
