@@ -1,4 +1,38 @@
 ;; doom.d/config.el
+;; =============================================================================
+;; 0. EWM
+;; =============================================================================
+(use-package! app-launcher)
+
+(use-package! ewm
+  :defer t
+  :config
+  (add-hook 'ewm-surface-mode-hook #'doom-mark-buffer-as-real-h)
+
+  :bind (:map ewm-mode-map
+              ("s-<tab>" . +workspace/switch-to)
+              ("s-SPC" . execute-extended-command)
+              ("s-B" . consult-buffer)
+              ("s-b" . +vertico/switch-workspace-buffer)
+              ("s-d" . delete-window)
+              ("s-<return>" . app-launcher-run-app)))
+
+(when (daemonp)
+  (add-hook 'after-make-frame-functions
+            (defun +ewm-trigger-server-hooks-h (frame)
+              (when (display-graphic-p frame)
+                (remove-hook 'after-make-frame-functions #'+ewm-trigger-server-hooks-h)
+                (with-selected-frame frame
+                  (run-hooks 'server-after-make-frame-hook))))))
+
+(after! doom-modeline
+  (setq display-time-default-load-average nil)
+  (setq display-time-format "%H:%M")
+  (display-time-mode 1)
+
+  (setq doom-modeline-battery t)
+  (setq doom-modeline-volume t)
+  (display-battery-mode 1))
 
 ;; =============================================================================
 ;; 1. PERSONAL IDENTITY & SYSTEM
@@ -581,91 +615,3 @@
 (set-formatter! 'black "black -q -" :modes '(python-mode))
 
 (message "--- CONFIG LOADED SUCCESSFULLY ---")
-
-(use-package! app-launcher)
-
-(use-package! ewm
-  :defer t
-  :config
-
-  :bind (:map ewm-mode-map
-              ("s-<tab>" . +workspace/switch-to)
-              ("s-SPC" . execute-extended-command)
-              ("s-B" . consult-buffer)
-              ("s-b" . +vertico/switch-workspace-buffer)
-              ("s-d" . delete-window)
-              ("s-<return>" . app-launcher-run-app)))
-
-(defvar consult-source-xdg-apps
-  `(:name "Apps"
-          :narrow ?a
-          :category app
-          :items ,(lambda ()
-                    (mapcar #'car (ewm-list-xdg-apps)))
-          :action ,#'ewm-launch-xdg-command))
-
-;; (setq consult-buffer-sources
-;;       '(consult-source-current-buffer
-;;         consult-source-buffer
-;;         consult-source-hidden-buffer
-;;         consult-source-modified-buffer
-;;         consult-source-recent-file
-;;         consult-source-xdg-apps))
-
-(when (daemonp)
-  (add-hook 'after-make-frame-functions
-            (defun +ewm-trigger-server-hooks-h (frame)
-              (when (display-graphic-p frame)
-                (remove-hook 'after-make-frame-functions #'+ewm-trigger-server-hooks-h)
-                (with-selected-frame frame
-                  (run-hooks 'server-after-make-frame-hook))))))
-
-
-
-(after! doom-modeline
-  (setq display-time-default-load-average nil)
-  (setq display-time-format "%H:%M")
-  (display-time-mode 1)
-
-  (setq doom-modeline-battery t)
-  (setq doom-modeline-volume t)
-  (display-battery-mode 1))
-
-
-
-
-
-;; (use-package! ewm
-;;   :defer t
-;;   :init
-  ;; Intercept Super/Mod key so Emacs handles window management.
-  ;; We put this in :init so it executes instantly at boot,
-  ;; preventing Brave from locking you out.
-  ;;
-
-
-
-
-
-  ;; (setq ewm-intercept-prefixes '("s-"))
-
-  ;; :bind (:map ewm-mode-map
-  ;;        ("s-<return>" . app-launcher-run-app)
-  ;;        ("s-RET"      . app-launcher-run-app)  ; Wayland fallback
-  ;;        ("s-b"        . switch-to-buffer)      ; Escape to an Emacs buffer
-  ;;        ("s-w"        . evil-window-delete)    ; Close current window split
-
-  ;;        ;; Global Workspace Switching (Super + Number)
-  ;;        ("s-1"        . +workspaces/switch-to-0)
-  ;;        ("s-2"        . +workspaces/switch-to-1)
-  ;;        ("s-3"        . +workspaces/switch-to-2)
-  ;;        ("s-4"        . +workspaces/switch-to-3)
-  ;;        ("s-5"        . +workspaces/switch-to-4)
-  ;;        ("s-]"        . +workspaces/switch-to-next)
-  ;;        ("s-["        . +workspaces/switch-to-prev)
-
-  ;;        ;; Global Tiling Window Navigation (Super + Arrow Keys)
-  ;;        ("s-<left>"   . evil-window-left)
-  ;;        ("s-<down>"   . evil-window-down)
-  ;;        ("s-<up>"     . evil-window-up)
-  ;;        ("s-<right>"  . evil-window-right)))
