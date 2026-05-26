@@ -55,5 +55,21 @@
       wl-clipboard
     ];
 
+    xdg.portal = {
+      enable = true;
+      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+      configPackages = [ pkgs.xdg-desktop-portal-gtk ];
+    };
+
+    environment.etc."xdg/user-dirs.defaults".text = ''
+      DESKTOP=Archive
+      DOWNLOAD=Downloads
+      TEMPLATES=Projects
+      PUBLICSHARE=Projects
+      DOCUMENTS=Media
+      MUSIC=Media
+      PICTURES=Media
+      VIDEOS=Media
+    '';
   };
 }

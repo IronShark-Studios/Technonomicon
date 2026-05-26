@@ -22,6 +22,47 @@
       ];
     };
 
-      environment.systemPackages = [ config.programs.ewm.emacsPackage ];
+    environment.systemPackages = with pkgs; [
+      config.programs.ewm.emacsPackage
+      # General Tooling
+      sqlite
+      gdb
+      # Export Tooling
+      pandoc
+      # Chart Tooling
+      mermaid-cli
+      drawio
+      pdf2svg
+      #PDF Tooling
+      poppler
+      # LaTeX
+      texlive.combined.scheme-full
+      # Spell Checking
+      hunspell
+      hunspellDicts.en_US
+      # Haskell
+      ghc cabal-install haskell-language-server haskellPackages.hoogle
+      # Nix
+      nixfmt
+      # Python
+      python3 pyright ruff black
+      # BQN
+      cbqn
+      # Bash / Shell
+      shellcheck shfmt
+      # Scheme & Racket (Your miniKanren environments)
+      guile racket
+      # C
+      gcc clang-tools # provides clangd LSP
+      # Zig
+      zig zls
+      # Assembly & Forth
+      nasm gforth
+      # Verilog & VHDL
+      verilator verible ghdl vhdl-ls
+      # Jupyter Notebooks
+      zeromq
+      python3Packages.jupyter
+    ];
   };
 }

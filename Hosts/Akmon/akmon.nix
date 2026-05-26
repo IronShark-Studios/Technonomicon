@@ -22,6 +22,7 @@
       self.nixosModules.Tn-web-browsers
       self.nixosModules.Tn-web-apps
       self.nixosModules.Tn-network
+      self.nixosModules.Tn-pdf
 
       ({ pkgs, config, ... }: {
         system.stateVersion = "23.11";

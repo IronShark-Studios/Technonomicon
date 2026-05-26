@@ -4,9 +4,15 @@
 
     imports = [ inputs.nix-index-database.nixosModules.nix-index ];
 
-    programs.nh.enable = true;
     programs.nix-index.enable = true;
     programs.nix-index-database.comma.enable = true;
+
+    programs.nh = {
+      enable = true;
+      clean.enable = true;
+      clean.extraArgs = "--keep-since 6d --keep 3";
+      flake = "/home/xin/Projects/Technonomicon/";
+    };
 
     nixpkgs.config = {
       allowUnfree = true;
@@ -14,8 +20,7 @@
     };
 
     environment.systemPackages = with pkgs; [
-      git
-      curl
+    exercism
     ];
   };
 }
