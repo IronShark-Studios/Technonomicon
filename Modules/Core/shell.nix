@@ -112,6 +112,10 @@
       kmon
       rsync
       rclone
+      wget
+      glib
+      unzip
+      nix-ld
       curl
       zoxide
       gparted
@@ -147,6 +151,7 @@
       bzip3
       bitwarden-cli
       bitwarden-desktop
+      nvtopPackages.nvidia
     ];
   };
 }

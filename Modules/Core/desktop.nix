@@ -4,8 +4,15 @@
     imports = [ inputs.ewm.nixosModules.default ];
     programs.ewm.enable = true;
 
-    services = {
+    hardware = {
+      bluetooth.enable = true;
+      graphics.enable = true;
+      xpadneo.enable = true;
+      sane.enable = true;
+      sane.extraBackends = [ pkgs.sane-airscan ];
+    };
 
+    services = {
       greetd = {
         enable = true;
         settings = {
@@ -20,6 +27,19 @@
         enable = true;
         package = pkgs.kanata-with-cmd;
         keyboards.colmacs.configFile = ./_kanata.kbd;
+      };
+
+      libinput.enable = true;
+      gnome.gnome-keyring.enable = true;
+      pulseaudio.enable = false;
+
+      pipewire = {
+        enable = true;
+        pulse.enable = true;
+        alsa = {
+          enable = true;
+          support32Bit = true;
+        };
       };
     };
 
@@ -43,6 +63,22 @@
       fira-go
     ];
 
+    xdg.mime.defaultApplications = {
+      "application/pdf" = "sioyek.desktop";
+      "text/html" = "brave-browser.desktop";
+      "application/xhtml+xml" = "brave-browser.desktop";
+      "x-scheme-handler/http" = "brave-browser.desktop";
+      "x-scheme-handler/https" = "brave-browser.desktop";
+      "x-scheme-handler/about" = "brave-browser.desktop";
+      "x-scheme-handler/unknown" = "brave-browser.desktop";
+      "x-scheme-handler/mailto" = "brave-browser.desktop";
+    };
+
+    services.udev.extraRules = ''
+      KERNEL=="ttyACM[0-9]*", MODE="0666"
+      KERNEL=="ttyUSB[0-9]*", MODE="0666"
+    '';
+
     environment.sessionVariables = {
       NIXOS_OZONE_GH_WAYLAND = "1";
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
@@ -52,7 +88,19 @@
     };
 
     environment.systemPackages = with pkgs; [
+      mako
+      wtype
+      blueman
+      waylock
+      alsa-utils
+      gromit-mpx
+      pavucontrol
       wl-clipboard
+      brightnessctl
+      gnome-themes-extra
+      adwaita-icon-theme
+      gnome-themes-extra
+      kdePackages.skanlite
     ];
 
     xdg.portal = {
@@ -61,15 +109,78 @@
       configPackages = [ pkgs.xdg-desktop-portal-gtk ];
     };
 
-    environment.etc."xdg/user-dirs.defaults".text = ''
-      DESKTOP=Archive
-      DOWNLOAD=Downloads
-      TEMPLATES=Projects
-      PUBLICSHARE=Projects
-      DOCUMENTS=Media
-      MUSIC=Media
-      PICTURES=Media
-      VIDEOS=Media
-    '';
+    programs.steam.enable = true;
+    programs.ydotool.enable = true;
+
+    programs.plover = {
+      enable = true;
+      package =
+        inputs.plover-flake.packages.${pkgs.stdenv.hostPlatform.system}.plover-full;
+    };
+
+    programs.appimage = {
+      enable = true;
+      binfmt = true;
+      package = pkgs.appimage-run.override {
+        extraPkgs = pkgs:
+        with pkgs; [
+          libepoxy
+          brotli
+          xdg-user-dirs
+        ];
+      };
+    };
+
+    programs.dconf = {
+      enable = true;
+      profiles.user.databases = [{
+        settings = {
+          "org/gnome/desktop/interface" = {
+            color-scheme = "prefer-dark";
+            gtk-theme = "Adwaita-dark";
+          };
+          "org/nemo/preferences" = {
+            show-hidden-files = true;
+            always-use-browser-view = true;
+          };
+        };
+      }];
+    };
+
+    environment.etc = {
+      "xdg/user-dirs.defaults".text = ''
+        DESKTOP=Archive
+        DOWNLOAD=Downloads
+        TEMPLATES=Projects
+        PUBLICSHARE=Projects
+        DOCUMENTS=Media
+        MUSIC=Media
+        PICTURES=Media
+        VIDEOS=Media
+      '';
+
+      "xdg/fcitx5/config".source = ./_fcitx5-config;
+
+      "xdg/gromit-mpx.cfg".source = ./_gromit-mpx.cfg;
+      "xdg/gromit-mpx.ini".source = ./_gromit-mpx.ini;
+
+      "gtk-3.0/settings.ini".text = ''
+        [Settings]
+        gtk-theme-name=Adwaita-dark
+        gtk-application-prefer-dark-theme=1
+      '';
+
+      "gtk-4.0/settings.ini".text = ''
+        [Settings]
+        gtk-theme-name=Adwaita-dark
+        gtk-application-prefer-dark-theme=1
+      '';
+    };
+
+    systemd.services.ModemManager.enable = false;
+    systemd.sleep.settings.Sleep = {
+      HandleSuspend = "ignore";
+    };
+
   };
 }

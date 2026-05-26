@@ -29,6 +29,35 @@
 
         boot.loader.systemd-boot.enable = true;
         boot.loader.efi.canTouchEfiVariables = true;
+        boot = {
+          initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
+          kernelModules = [ "uinput" ];
+          blacklistedKernelModules = [ "wacom" ];
+          kernelPackages = pkgs.linuxPackages;
+          kernelParams = [
+            "nvidia-drm.modeset=1"
+            "nvidia-drm.fbdev=1"
+          ];
+        };
+
+        hardware = {
+          uinput.enable = true;
+          graphics = {
+            enable = true;
+          };
+          nvidia = {
+            package = config.boot.kernelPackages.nvidiaPackages.stable;
+            open = true;
+            nvidiaSettings = true;
+            modesetting.enable = true;
+            powerManagement.enable = false;
+            powerManagement.finegrained = false;
+          };
+          opentabletdriver = {
+            enable = true;
+            daemon.enable = true;
+          };
+        };
 
         sops.secrets.xin-password.neededForUsers = true;
         sops.age.sshKeyPaths = [ "/etc/ssh/ssh_host_ed25519_key" ];

@@ -31,6 +31,8 @@
       self.nixosModules.Tn-games
       self.nixosModules.Tn-learning
       self.nixosModules.Tn-art
+      self.nixosModules.Tn-utf
+      self.nixosModules.Tn-virtualization
 
       ({ pkgs, config, ... }: {
         system.stateVersion = "23.11";
@@ -41,6 +43,17 @@
           systemd-boot.enable = true;
           efi.canTouchEfiVariables = true;
           efi.efiSysMountPoint = "/boot";
+        };
+
+        hardware = {
+          uinput.enable = true;
+          graphics = {
+            enable = true;
+          };
+          opentabletdriver = {
+            enable = true;
+            daemon.enable = true;
+          };
         };
 
         sops.secrets.xin-password.neededForUsers = true;

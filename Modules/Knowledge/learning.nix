@@ -2,6 +2,11 @@
   flake.nixosModules.Tn-learning = { pkgs, pkgs-stable, config, ... }: {
 
     environment.systemPackages = with pkgs; [
+      ledger
+      fava
+      beancount
+      gnucash
+      visidata
       anki-bin
       zotero
       zathura
