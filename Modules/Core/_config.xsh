@@ -1,6 +1,10 @@
 import os
 import subprocess
 
+# Integrate "nix-shell" and "direnv" commands
+execx($(nix-your-shell xonsh))
+xontrib load direnv
+
 # =============================================================================
 # 1. STANDARD SHELL OPTIONS & THEME
 # =============================================================================
@@ -8,6 +12,7 @@ $AUTO_CD = True
 $COLOR_INPUT = True
 $HISTCONTROL = {'ignoredups'}
 
+$COMPLETIONS_CONFIRM = False
 $UPDATE_COMPLETIONS_ON_KEYPRESS = False
 $COMPLETIONS_BRACKETS = False     # Stops looking up matching brackets on completion
 $COMPLETION_QUERY_LIMIT = 50       # Prevents lag on massive directories (default is 100)

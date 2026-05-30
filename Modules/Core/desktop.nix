@@ -79,6 +79,8 @@
       KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
     '';
 
+    security.pam.services.swaylock = {};
+
     environment.sessionVariables = {
       NIXOS_OZONE_GH_WAYLAND = "1";
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
@@ -91,7 +93,7 @@
       mako
       wtype
       blueman
-      waylock
+      swaylock
       alsa-utils
       gromit-mpx
       pavucontrol
@@ -169,7 +171,7 @@
       '';
     };
 
-    systemd.services.ModemManager.enable = false;
+    networking.modemmanager.enable = false;
     systemd.sleep.settings.Sleep = {
       HandleSuspend = "ignore";
     };

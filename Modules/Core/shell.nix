@@ -52,7 +52,7 @@
     programs.starship = {
       enable = true;
       settings = {
-        format = "$directory$git_branch$git_commit$git_state$git_status\n$character";
+        format = "$directory$nix_shell$git_branch$git_commit$git_state$git_status\n$character";
         right_format = "$cmd_duration";
 
         time.disabled = true;
@@ -104,6 +104,7 @@
     };
 
     environment.systemPackages = with pkgs; [
+      nix-your-shell
       gitFull
       git-lfs
       ghostty
@@ -149,6 +150,7 @@
       sox
       aria2
       bzip3
+      nemo-with-extensions
       bitwarden-cli
       bitwarden-desktop
       nvtopPackages.nvidia

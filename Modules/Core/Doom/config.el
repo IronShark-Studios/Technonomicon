@@ -9,12 +9,32 @@
   :config
   (add-hook 'ewm-surface-mode-hook #'doom-mark-buffer-as-real-h)
 
+  (defun Tn/vterm-current-window ()
+    "Launch a new unique vterm buffer strictly in the current window."
+    (interactive)
+    (let ((display-buffer-overriding-action '(display-buffer-same-window)))
+      (vterm t)))
+
+  (defun Tn/run-swaylock ()
+    "Asynchronously launch swaylock so Emacs doesn't freeze."
+    (interactive)
+    (start-process "swaylock-process" nil "swaylock"))
+
+  (defun Tn/trash-and-poweroff ()
+    "Trash the contents of ~/Downloads and immediately shut down."
+    (interactive)
+    (start-process-shell-command "poweroff-sequence" nil "touch ~/Downloads/tmp.txt; trash-put ~/Downloads/*; poweroff"))
+
   :bind (:map ewm-mode-map
               ("s-<tab>" . +workspace/switch-to)
+              ("s-t" . Tn/vterm-current-window)
+              ("s-q" . Tn/run-swaylock)
+              ("s-Q" . Tn/trash-and-poweroff)
               ("s-SPC" . execute-extended-command)
               ("s-B" . consult-buffer)
               ("s-b" . +vertico/switch-workspace-buffer)
-              ("s-d" . delete-window)
+              ("s-d" . evil-delete-buffer)
+              ("s-f" . find-file)
               ("s-<return>" . app-launcher-run-app)))
 
 (when (daemonp)
@@ -28,10 +48,8 @@
 (after! doom-modeline
   (setq display-time-default-load-average nil)
   (setq display-time-format "%H:%M")
-  (display-time-mode 1)
-
   (setq doom-modeline-battery t)
-  (setq doom-modeline-volume t)
+  (display-time-mode 1)
   (display-battery-mode 1))
 
 ;; =============================================================================
@@ -143,6 +161,13 @@
 (after! corfu
   (setq corfu-auto-delay 0.0
         corfu-auto-prefix 1))
+
+;; Auto-commit-mode for prose writing
+(use-package! git-auto-commit-mode
+  :config
+  (setq gac-automatically-push-p nil
+        gac-automatically-add-new-files-p t
+        gac-debounce-interval 1.0))
 ;; =============================================================================
 ;; 4. MODULES & AI
 ;; =============================================================================

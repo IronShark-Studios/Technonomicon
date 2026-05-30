@@ -61,7 +61,7 @@
 
       (pkgs.makeDesktopItem {
         name = "G-Mail";
-        desktopName = "Google Email";
+        desktopName = "Gmaail Email";
         exec = "${pkgs.brave}/bin/brave --app=https://gmail.com --start-maximized";
         terminal = false;
         categories = [ "Application" "Network" ];
@@ -69,7 +69,7 @@
 
       (pkgs.makeDesktopItem {
         name = "G-Calendar";
-        desktopName = "Google Calendar";
+        desktopName = "Calendar";
         exec = "${pkgs.brave}/bin/brave --app=https://calendar.google.com --start-maximized";
         terminal = false;
         categories = [ "Application" "Network" ];
@@ -87,6 +87,14 @@
         name = "syncthing";
         desktopName = "Syncthing";
         exec = "${pkgs.brave}/bin/brave --app=http://localhost:8385/ --start-maximized";
+        terminal = false;
+        categories = [ "Application" "Network" ];
+      })
+
+      (pkgs.makeDesktopItem {
+        name = "Nomi";
+        desktopName = "Nomi";
+        exec = "${pkgs.brave}/bin/brave --app=https://beta.nomi.ai/nomis --start-maximized";
         terminal = false;
         categories = [ "Application" "Network" ];
       })

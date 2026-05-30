@@ -5,6 +5,8 @@
 
 (package! ewm)
 
+(package! pulseaudio-control)
+
 (package! exec-path-from-shell)
 
 (package! fcitx)
@@ -44,3 +46,5 @@
 (package! org-drawio)
 
 (package! evil-textobj-tree-sitter)
+
+(package! git-auto-commit-mode)

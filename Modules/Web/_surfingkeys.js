@@ -2,6 +2,9 @@
 api.unmap('<Ctrl-i>');
 api.iunmap('<Ctrl-i>'); // Ensures it is disabled in text input fields too
 
+// Map 'o' to open a URL in the current tab (aliases 'go')
+api.map('o', 'go');
+
 // 2. Map Shift+f ('F') to open a link in non-active new tab (aliases 'c')
 api.map('F', 'c');
 
@@ -54,13 +57,3 @@ settings.theme = `
     width: 60%;
     left: 20%;
 }`;
-
-// Map 'ot' to show tabs in the current window only
-mapkey('T', 'Choose a tab in current window', function() {
-    RUNTIME('getTabs', { queryInfo: { currentWindow: true } }, response => {
-        Front.openOmnibar({
-            type: "UserURLs",
-            extra: response.tabs
-        });
-    });
-});

@@ -9,6 +9,7 @@
 
     environment.systemPackages = with pkgs; [
       impala
+      gping
     ];
 
     networking.firewall = {
