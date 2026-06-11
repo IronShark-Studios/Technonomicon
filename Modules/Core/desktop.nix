@@ -49,11 +49,6 @@
       TTYVTDisallocate = true;
     };
 
-    systemd.services.kanata-colmacs.serviceConfig.DeviceAllow = pkgs.lib.mkForce [
-      "/dev/uinput rw"
-      "char-input rw"
-    ];
-
     fonts.packages = with pkgs; [
       iosevka
       iosevka-comfy.comfy-wide-motion
