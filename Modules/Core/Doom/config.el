@@ -5,9 +5,20 @@
 (use-package! app-launcher)
 
 (use-package! ewm
-  :defer t
+  :demand t
   :config
-  (add-hook 'ewm-surface-mode-hook #'doom-mark-buffer-as-real-h)
+(add-hook 'ewm-surface-mode-hook #'doom-mark-buffer-as-real-h)
+
+(add-to-list 'display-buffer-alist
+               '((lambda (buf _)
+                   (with-current-buffer buf
+                     (and (bound-and-true-p ewm-surface-app)
+                          (member ewm-surface-app '("foot" "mpv")))))
+                 (display-buffer-reuse-mode-window display-buffer-at-bottom)
+                 (dedicated . t)
+                 (window-height . 0.3)
+                 (window-parameters . ((mode-line-format . none)))
+                 (post-command-select-window . t)))
 
   (defun Tn/vterm-current-window ()
     "Launch a new unique vterm buffer strictly in the current window."
@@ -25,16 +36,65 @@
     (interactive)
     (start-process-shell-command "poweroff-sequence" nil "touch ~/Downloads/tmp.txt; trash-put ~/Downloads/*; poweroff"))
 
+
+  (defun Tn/screenshot-clipboard ()
+    "Capture a selected region via grim/slurp and pipe it to the clipboard."
+    (interactive)
+    (start-process "screenshot-process" nil
+                   "sh" "-c"
+                   "WAYLAND_DISPLAY=wayland-ewm-vt1 XDG_RUNTIME_DIR=/run/user/1000 slurp | grim -g - - | wl-copy"))
+
+  (defun Tn/dashboard-and-leader ()
+    "Switch to the *doom* dashboard and trigger the leader key menu."
+    (interactive)
+    (+doom-dashboard/open (selected-frame))
+    (evil-normal-state)
+    (setq unread-command-events (append (listify-key-sequence (kbd "SPC")) unread-command-events))
+    ;; Instantly force Which-Key to render the menu without waiting for the idle delay
+    (run-with-idle-timer 0.01 nil #'which-key--update))
+
+  (defun my/switch-to-or-create-workspace (index)
+    "Switch to a workspace by index. If it doesn't exist, create it dynamically."
+    (interactive)
+    (while (<= (length (+workspace-list-names)) index)
+      (+workspace-new (format "Workspace %d" (1+ (length (+workspace-list-names))))))
+    (+workspace-switch (nth index (+workspace-list-names))))
+
   :bind (:map ewm-mode-map
-              ("s-<tab>" . +workspace/switch-to)
-              ("s-t" . Tn/vterm-current-window)
-              ("s-q" . Tn/run-swaylock)
-              ("s-Q" . Tn/trash-and-poweroff)
-              ("s-SPC" . execute-extended-command)
-              ("s-B" . consult-buffer)
+
+              ("s-1" . (lambda () (interactive) (my/switch-to-or-create-workspace 0)))
+              ("s-2" . (lambda () (interactive) (my/switch-to-or-create-workspace 1)))
+              ("s-3" . (lambda () (interactive) (my/switch-to-or-create-workspace 2)))
+              ("s-4" . (lambda () (interactive) (my/switch-to-or-create-workspace 3)))
+              ("s-5" . (lambda () (interactive) (my/switch-to-or-create-workspace 4)))
+              ("s-6" . (lambda () (interactive) (my/switch-to-or-create-workspace 5)))
+              ("s-7" . (lambda () (interactive) (my/switch-to-or-create-workspace 6)))
+              ("s-8" . (lambda () (interactive) (my/switch-to-or-create-workspace 7)))
+              ("s-9" . (lambda () (interactive) (my/switch-to-or-create-workspace 8)))
+
               ("s-b" . +vertico/switch-workspace-buffer)
-              ("s-d" . evil-delete-buffer)
+              ("s-<tab>" . +workspace/other)
+              ("s-M-<tab>" . +workspace/switch-to)
+              ("s-C-<tab>" . +workspace/rename)
+              ("s-x" . execute-extended-command)
+              ("s-t" . Tn/vterm-current-window)
+              ("s-Q" . Tn/trash-and-poweroff)
+              ("s-d" . kill-buffer-and-window)
+              ("s-S-d" . persp-remove-buffer)
+              ("s-q" . Tn/run-swaylock)
+              ("s-B" . consult-buffer)
               ("s-f" . find-file)
+              ("s-a" . org-agenda)
+              ("s-c" . org-roam-dailies-capture-today)
+              ("s-C" . org-roam-dailies-capture-date)
+              ("s-j" . org-roam-dailies-goto-today)
+              ("s-J" . org-roam-dailies-goto-date)
+              ("s-M-j" . org-roam-dailies-goto-tomorrow)
+              ("s-w" . split-window-horizontally)
+              ("s-W" . evil-window-delete)
+              ("s-j" . org-roam-dailies-goto-today)
+              ("s-y" . Tn/screenshot-clipboard)
+              ("s-SPC" . Tn/dashboard-and-leader)
               ("s-<return>" . app-launcher-run-app)))
 
 (when (daemonp)
@@ -77,6 +137,7 @@
 (setq initial-major-mode 'org-mode)
 (setq initial-scratch-message nil)
 
+(setq org-directory "~/Grimoire/")
 (setq org-cite-global-bibliography '("~/Grimoire/bibtex.bib"))
 
 (add-hook 'org-mode-hook 'flyspell-mode)
@@ -223,7 +284,6 @@
 
   (add-to-list 'org-modules 'org-habit t)
 
-  (setq org-directory "~/Grimoire/")
   (setq org-log-into-drawer t)
   (setq org-hide-emphasis-markers t)
   (setq org-agenda-start-on-weekday 0)
@@ -250,14 +310,7 @@
   (setq org-habit-graph-column 30
         org-habit-preceding-days 21
         org-habit-following-days 7
-        org-habit-show-habits-only-for-today t)
-
-  ;; Fleeting Notes
-  (setq org-capture-templates
-        '(("f" "Fleeting Note" entry
-           (file "~/Grimoire/Inbox.org")
-           "* TODO %?\n%U\n%i"
-           :prepend t :empty-lines 1))))
+        org-habit-show-habits-only-for-today t))
 
 (defun my/org-reset-checkbox-state-maybe ()
     "Reset all checkboxes in an entry if the `RESET_CHECK_BOXES' property is set."
@@ -265,6 +318,11 @@
       (org-reset-checkbox-state-subtree)))
 
   (add-hook 'org-todo-repeat-hook #'my/org-reset-checkbox-state-maybe)
+
+(setq +org-capture-todo-file "Inbox.org"
+      +org-capture-notes-file "Inbox.org"
+      +org-capture-projects-file "Projects.org"
+      +org-capture-journal-file "Notes/Journal/classic-journal.org")
 
 (defun my/org-checkbox-smart-space ()
   "When pressing space inside `[]`, insert space, jump out, and add a trailing space."

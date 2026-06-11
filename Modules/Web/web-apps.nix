@@ -92,9 +92,9 @@
       })
 
       (pkgs.makeDesktopItem {
-        name = "Nomi";
-        desktopName = "Nomi";
-        exec = "${pkgs.brave}/bin/brave --app=https://beta.nomi.ai/nomis --start-maximized";
+        name = "Exercism";
+        desktopName = "Exercism";
+        exec = "${pkgs.brave}/bin/brave --app=https://exercism.org/tracks/python --start-maximized";
         terminal = false;
         categories = [ "Application" "Network" ];
       })

@@ -91,6 +91,8 @@
 
     environment.systemPackages = with pkgs; [
       mako
+      grim
+      slurp
       wtype
       blueman
       swaylock

@@ -13,6 +13,8 @@
       extraPackages = epkgs: [
         config.programs.ewm.ewmPackage
 
+        epkgs.treesit-grammars.with-all-grammars
+
         (epkgs.trivialBuild {
           pname = "app-launcher";
           version = "unstable";
@@ -44,6 +46,7 @@
       ghc cabal-install haskell-language-server haskellPackages.hoogle
       # Nix
       nixfmt
+      nixd
       # Python
       python3 pyright ruff black
       # BQN

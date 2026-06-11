@@ -143,7 +143,7 @@
       dysk
       pastel
       gnumake
-      gemini-cli
+      antigravity-fhs
       usbutils
       bat
       mpv
@@ -151,8 +151,8 @@
       aria2
       bzip3
       nemo-with-extensions
-      bitwarden-cli
-      bitwarden-desktop
+      # bitwarden-cli
+      # bitwarden-desktop
       nvtopPackages.nvidia
     ];
   };

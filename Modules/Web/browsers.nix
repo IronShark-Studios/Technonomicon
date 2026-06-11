@@ -9,7 +9,6 @@
           "--ozone-platform=wayland"
           "--disable-features=BraveNews,BraveRewards,BraveWallet,WebRtcAllowInputVolumeAdjustment"
           "--hide-crash-restore-bubble"
-          "--restore-last-session"
         ];
       }).overrideAttrs (oldAttrs: {
         postFixup = (oldAttrs.postFixup or "") + ''
@@ -58,6 +57,7 @@
         "nngceckbapebfimnlniiiahkandclblb;https://clients2.google.com/service/update2/crx" # Bitwarden
         "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx" # uBlock Origin
         "dndlcbaomdoggooaficldplkcmkfpgff;https://clients2.google.com/service/update2/crx" # New Tab, New Window
+        "blaaajhemilngeeffpbfkdjjoefldkok;https://clients2.google.com/service/update2/crx" # LeechBlock NG
       ];
     };
 

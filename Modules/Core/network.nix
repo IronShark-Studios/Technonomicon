@@ -4,6 +4,14 @@
     networking.networkmanager.enable = true;
     networking.networkmanager.wifi.backend = "iwd";
     networking.wireless.iwd.enable = true;
+    networking.extraHosts = ''
+        127.0.0.1 reddit.com
+        127.0.0.1 www.reddit.com
+        127.0.0.1 old.reddit.com
+        ::1 reddit.com
+        ::1 www.reddit.com
+        ::1 old.reddit.com
+    '';
 
     time.timeZone = "America/Detroit";
 

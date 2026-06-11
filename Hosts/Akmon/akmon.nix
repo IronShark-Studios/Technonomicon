@@ -16,13 +16,22 @@
       inputs.sops-nix.nixosModules.sops
       inputs.hjem.nixosModules.hjem
 
-      self.nixosModules.Tn-Nix
+      self.nixosModules.Tn-nix
       self.nixosModules.Tn-desktop
       self.nixosModules.Tn-emacs
       self.nixosModules.Tn-web-browsers
       self.nixosModules.Tn-web-apps
       self.nixosModules.Tn-network
+      self.nixosModules.Tn-sound
+      self.nixosModules.Tn-shell
+      self.nixosModules.Tn-sound
+      self.nixosModules.Tn-shell
       self.nixosModules.Tn-pdf
+      self.nixosModules.Tn-games
+      self.nixosModules.Tn-learning
+      self.nixosModules.Tn-art
+      self.nixosModules.Tn-utf
+      self.nixosModules.Tn-virtualization
 
       ({ pkgs, config, ... }: {
         system.stateVersion = "23.11";
@@ -39,6 +48,8 @@
             "nvidia-drm.fbdev=1"
           ];
         };
+
+        services.xserver.videoDrivers = [ "nvidia" ];
 
         hardware = {
           nvidia-container-toolkit.enable = true;

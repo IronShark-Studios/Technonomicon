@@ -12,8 +12,6 @@
         cura-appimage
         obs-studio
         xdg-desktop-portal
-        slurp
-        grim
         vlc
         inkscape-with-extensions
         gimp-with-plugins
