@@ -7,6 +7,9 @@
         ".config/discord/settings.json".text = builtins.toJSON {
           SKIP_HOST_UPDATE = true;
         };
+        ".config/mako/config".text = ''
+          default-timeout=10000
+        '';
       };
     };
 
