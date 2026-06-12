@@ -168,42 +168,37 @@ def _clear_all(args):
 aliases['ca'] = _clear_all
 
 # =============================================================================
-# 6. VI MODE CURSOR SHAPE CONFIGURATION (For Emacs vterm)
+# 6. CUSTOM WORD NAVIGATION & DELETION
 # =============================================================================
-$VI_MODE = True  # Ensures Vi keybindings are fully activated
+
+$XONSH_CTRL_BKSP_DELETION = True
 
 @events.on_ptk_create
-def configure_vi_cursor(prompter, **kwargs):
-    import sys
-    from prompt_toolkit.key_binding.vi_state import InputMode, ViState
-
-    # GUARD: If we have already patched the class, stop here to prevent infinite loop crashes!
-    if hasattr(ViState, '_vi_cursor_patched'):
+def add_custom_keybindings(prompter, **kwargs):
+    bindings = kwargs.get('bindings')
+    if not bindings:
         return
 
-    # Intercept prompt_toolkit's default state setter descriptor
-    old_setter = ViState.input_mode.fset
+    # --- Ctrl + Left Arrow: Jump to previous word ---
+    @bindings.add('c-left')
+    def _(event):
+        b = event.current_buffer
+        pos = b.document.find_start_of_previous_word(count=event.arg)
+        if pos:
+            b.cursor_position += pos
 
-    def custom_input_mode_setter(self, new_mode):
-        # Send the DECSCUSR escape sequences directly to standard output
-        # 2 q = Solid Block (Normal Mode)
-        # 6 q = Solid Vertical Line/Bar (Insert Mode)
-        if new_mode == InputMode.NAVIGATION:
-            sys.stdout.write("\x1b[2 q")
-        elif new_mode == InputMode.INSERT:
-            sys.stdout.write("\x1b[6 q")
-        sys.stdout.flush()
-
-        # Trigger the original setup routine so the shell works normally
-        old_setter(self, new_mode)
-
-    # Inject our custom terminal hook and set our guard flag to True
-    ViState.input_mode = property(ViState.input_mode.fget, custom_input_mode_setter)
-    ViState._vi_cursor_patched = True
+    # --- Ctrl + Right Arrow: Jump to next word ---
+    @bindings.add('c-right')
+    def _(event):
+        b = event.current_buffer
+        pos = b.document.find_end_of_next_word(count=event.arg)
+        if pos:
+            b.cursor_position += pos
 
 # =============================================================================
 # 7. CUSTOM SHELL ALIASES
 # =============================================================================
+
 aliases.update({
     'cat': 'bat',
     'cd': 'z',

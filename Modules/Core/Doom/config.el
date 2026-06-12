@@ -72,7 +72,8 @@
               ("s-8" . (lambda () (interactive) (my/switch-to-or-create-workspace 7)))
               ("s-9" . (lambda () (interactive) (my/switch-to-or-create-workspace 8)))
 
-              ("s-b" . +vertico/switch-workspace-buffer)
+              ;; ("s-b" . +vertico/switch-workspace-buffer)
+              ("s-b" . consult-buffer)
               ("s-<tab>" . +workspace/other)
               ("s-M-<tab>" . +workspace/switch-to)
               ("s-C-<tab>" . +workspace/rename)
@@ -82,7 +83,6 @@
               ("s-d" . kill-buffer-and-window)
               ("s-S-d" . persp-remove-buffer)
               ("s-q" . Tn/run-swaylock)
-              ("s-B" . consult-buffer)
               ("s-f" . find-file)
               ("s-a" . org-agenda)
               ("s-c" . org-roam-dailies-capture-today)
@@ -96,6 +96,10 @@
               ("s-y" . Tn/screenshot-clipboard)
               ("s-SPC" . Tn/dashboard-and-leader)
               ("s-<return>" . app-launcher-run-app)))
+
+(setopt ewm-input-config
+        '((touchpad :scroll-method "no-scroll" :tap t :dwt t)
+          (keyboard :repeat-delay 500)))
 
 (when (daemonp)
   (add-hook 'after-make-frame-functions
@@ -112,6 +116,17 @@
   (display-time-mode 1)
   (display-battery-mode 1))
 
+(defun +ewm-force-buffer-context-h ()
+  "Force Emacs' Lisp engine to target the visible EWM buffer before running a hotkey command."
+  (let ((visible-buf (window-buffer (selected-window))))
+    (when (with-current-buffer visible-buf (derived-mode-p 'ewm-mode))
+      (set-buffer visible-buf))))
+
+(after! vterm
+  (advice-add #'vterm--redraw :around
+              (lambda (orig-fun &rest args)
+                (let ((cursor-type cursor-type))
+                  (apply orig-fun args)))))
 ;; =============================================================================
 ;; 1. PERSONAL IDENTITY & SYSTEM
 ;; =============================================================================
@@ -229,9 +244,11 @@
   (setq gac-automatically-push-p nil
         gac-automatically-add-new-files-p t
         gac-debounce-interval 1.0))
+
 ;; =============================================================================
 ;; 4. MODULES & AI
 ;; =============================================================================
+
 (use-package! fcitx
   :after evil
   :config
@@ -265,6 +282,7 @@
 ;; =============================================================================
 ;; 5. PROGRAMMING LANGUAGES & EWW
 ;; =============================================================================
+
 (use-package! bqn-mode :mode "\\.bqn$")
 (use-package! forth-mode :mode "\\.\\(fs\\|fth\\)$")
 (add-to-list 'auto-mode-alist '("\\.asm\\'" . asm-mode))
@@ -278,6 +296,7 @@
 ;; =============================================================================
 ;; 6. ORG MODE (BASE)
 ;; =============================================================================
+
 (after! org
   (require 'org-mouse)
   (require 'org-habit)
@@ -351,6 +370,7 @@
 ;; =============================================================================
 ;; 7. ORG ROAM & HUGO (THE FIX)
 ;; =============================================================================
+
 (use-package! websocket :after org-roam)
 
 (after! org-roam
@@ -381,6 +401,7 @@
 ;; =============================================================================
 ;; 8. ORG EXTRAS (Modern, SVG, Appear, Autolist, Kanban)
 ;; =============================================================================
+
 (use-package! org-modern
   :hook (org-mode . org-modern-mode)
   :hook (org-agenda-finalize . org-modern-agenda)
@@ -487,6 +508,7 @@
 ;; =============================================================================
 ;; 9. HYPRLAND STANDALONE LAUNCHERS
 ;; =============================================================================
+
 (defun my/popup-calc ()
   "Launch calc and maximize it in the floating window."
   (interactive)
@@ -620,6 +642,7 @@
 ;; =============================================================================
 ;; 11. QUARTO PUBLISHING SYSTEM
 ;; =============================================================================
+
 (defun my/publish-to-quarto ()
   "Ensure the export directory exists, then safely export via Pandoc."
   (interactive)
