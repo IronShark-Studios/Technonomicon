@@ -2,23 +2,13 @@
 ;; =============================================================================
 ;; 0. EWM
 ;; =============================================================================
+;;
 (use-package! app-launcher)
 
 (use-package! ewm
   :demand t
   :config
 (add-hook 'ewm-surface-mode-hook #'doom-mark-buffer-as-real-h)
-
-(add-to-list 'display-buffer-alist
-               '((lambda (buf _)
-                   (with-current-buffer buf
-                     (and (bound-and-true-p ewm-surface-app)
-                          (member ewm-surface-app '("foot" "mpv")))))
-                 (display-buffer-reuse-mode-window display-buffer-at-bottom)
-                 (dedicated . t)
-                 (window-height . 0.3)
-                 (window-parameters . ((mode-line-format . none)))
-                 (post-command-select-window . t)))
 
   (defun Tn/vterm-current-window ()
     "Launch a new unique vterm buffer strictly in the current window."
@@ -81,7 +71,6 @@
               ("s-t" . Tn/vterm-current-window)
               ("s-Q" . Tn/trash-and-poweroff)
               ("s-d" . kill-buffer-and-window)
-              ("s-S-d" . persp-remove-buffer)
               ("s-q" . Tn/run-swaylock)
               ("s-f" . find-file)
               ("s-a" . org-agenda)
@@ -715,7 +704,9 @@
 
   ;; Jump motions
   (map! :n "]f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer"))
-        :n "[f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer" t))))
+        :n "[f" (lambda () (interactive) (evil-textobj-tree-sitter-goto-textobj "function.outer" t)))
+  (map! :n "<up>"   #'evil-previous-visual-line
+        :n "<down>" #'evil-next-visual-line))
 
 (setq-hook! 'python-mode-hook +format-with-lsp nil)
 (set-formatter! 'black "black -q -" :modes '(python-mode))

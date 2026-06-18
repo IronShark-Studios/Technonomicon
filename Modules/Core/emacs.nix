@@ -27,6 +27,7 @@
     environment.systemPackages = with pkgs; [
       config.programs.ewm.emacsPackage
       # General Tooling
+      claude-code
       sqlite
       gdb
       # Export Tooling
