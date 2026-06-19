@@ -9,6 +9,13 @@
   :demand t
   :config
 (add-hook 'ewm-surface-mode-hook #'doom-mark-buffer-as-real-h)
+(add-hook 'ewm-surface-mode-hook
+  (defun Tn/ewm-surface-pin-to-workspace-h ()
+    "Pin new ewm surface buffer to the workspace active at creation time."
+    (when (and (bound-and-true-p persp-mode) (get-current-persp))
+      (persp-add-buffer (current-buffer) (get-current-persp) nil nil))))
+(add-hook 'persp-add-buffer-on-after-change-major-mode-filter-functions
+          #'ewm-surface-buffer-p)
 
   (defun Tn/vterm-current-window ()
     "Launch a new unique vterm buffer strictly in the current window."
@@ -34,13 +41,25 @@
                    "sh" "-c"
                    "WAYLAND_DISPLAY=wayland-ewm-vt1 XDG_RUNTIME_DIR=/run/user/1000 slurp | grim -g - - | wl-copy"))
 
+  (defun Tn/open-dashboard (&optional frame)
+    "Open the Doom dashboard in FRAME, with fallback if the autoload is unavailable."
+    (let ((frame (or frame (selected-frame))))
+      (cond
+       ((fboundp '+doom-dashboard/open)
+        (+doom-dashboard/open frame))
+       ((require 'doom-dashboard nil t)
+        (when (fboundp '+doom-dashboard/open)
+          (+doom-dashboard/open frame)))
+       (t
+        (with-selected-frame frame
+          (switch-to-buffer (doom-fallback-buffer)))))))
+
   (defun Tn/dashboard-and-leader ()
     "Switch to the *doom* dashboard and trigger the leader key menu."
     (interactive)
-    (+doom-dashboard/open (selected-frame))
+    (Tn/open-dashboard (selected-frame))
     (evil-normal-state)
     (setq unread-command-events (append (listify-key-sequence (kbd "SPC")) unread-command-events))
-    ;; Instantly force Which-Key to render the menu without waiting for the idle delay
     (run-with-idle-timer 0.01 nil #'which-key--update))
 
   (defun my/switch-to-or-create-workspace (index)
@@ -49,6 +68,35 @@
     (while (<= (length (+workspace-list-names)) index)
       (+workspace-new (format "Workspace %d" (1+ (length (+workspace-list-names))))))
     (+workspace-switch (nth index (+workspace-list-names))))
+
+  (defun Tn/workspace-has-other-real-non-surface-buffers-p ()
+    "Return non-nil if the current persp has real non-EWM buffers besides the current one."
+    (when (and (bound-and-true-p persp-mode) (get-current-persp))
+      (cl-some (lambda (buf)
+                 (and (not (eq buf (current-buffer)))
+                      (doom-real-buffer-p buf)
+                      (not (ewm-surface-buffer-p buf))))
+               (persp-buffers (get-current-persp)))))
+
+  (defun Tn/smart-close ()
+    "Close the compositor-focused ewm surface, or kill the Emacs buffer+window.
+Uses ewm's compositor-authoritative last-focused window rather than
+Emacs' selected-window, which can drift due to background display-buffer calls.
+Shows the Doom dashboard when the last real non-EWM buffer is killed."
+    (interactive)
+    (if (and (boundp 'ewm--mff-last-window)
+             (window-live-p ewm--mff-last-window)
+             (ewm-surface-buffer-p (window-buffer ewm--mff-last-window)))
+        (progn
+          (kill-buffer (window-buffer ewm--mff-last-window))
+          (unless (Tn/workspace-has-other-real-non-surface-buffers-p)
+            (Tn/open-dashboard (selected-frame))))
+      (if (Tn/workspace-has-other-real-non-surface-buffers-p)
+          (let ((buf (current-buffer)))
+            (switch-to-prev-buffer nil t)
+            (kill-buffer buf))
+        (kill-buffer (current-buffer))
+        (Tn/open-dashboard (selected-frame)))))
 
   :bind (:map ewm-mode-map
 
@@ -62,15 +110,15 @@
               ("s-8" . (lambda () (interactive) (my/switch-to-or-create-workspace 7)))
               ("s-9" . (lambda () (interactive) (my/switch-to-or-create-workspace 8)))
 
-              ;; ("s-b" . +vertico/switch-workspace-buffer)
-              ("s-b" . consult-buffer)
+              ("s-b" . +vertico/switch-workspace-buffer)
+              ("s-B" . consult-buffer)
               ("s-<tab>" . +workspace/other)
               ("s-M-<tab>" . +workspace/switch-to)
               ("s-C-<tab>" . +workspace/rename)
               ("s-x" . execute-extended-command)
               ("s-t" . Tn/vterm-current-window)
               ("s-Q" . Tn/trash-and-poweroff)
-              ("s-d" . kill-buffer-and-window)
+              ("s-d" . Tn/smart-close)
               ("s-q" . Tn/run-swaylock)
               ("s-f" . find-file)
               ("s-a" . org-agenda)
@@ -96,12 +144,16 @@
               (when (display-graphic-p frame)
                 (remove-hook 'after-make-frame-functions #'+ewm-trigger-server-hooks-h)
                 (with-selected-frame frame
-                  (run-hooks 'server-after-make-frame-hook))))))
+                  (run-hooks 'server-after-make-frame-hook))
+                ;; +doom-dashboard-init-h ran before this graphical frame existed
+                ;; and couldn't render. Explicitly open dashboard once theme/fonts settle.
+                (run-with-idle-timer 0.1 nil #'Tn/open-dashboard frame)))))
 
 (after! doom-modeline
   (setq display-time-default-load-average nil)
   (setq display-time-format "%H:%M")
   (setq doom-modeline-battery t)
+  (setq doom-modeline-persp-name t)
   (display-time-mode 1)
   (display-battery-mode 1))
 

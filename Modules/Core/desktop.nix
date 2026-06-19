@@ -29,7 +29,10 @@
         keyboards.colmacs.configFile = ./_kanata.kbd;
       };
 
-      libinput.enable = true;
+      libinput = {
+        enable = true;
+        touchpad.tappingDragLock = false;
+      };
       gnome.gnome-keyring.enable = true;
       pulseaudio.enable = false;
       pipewire = {
