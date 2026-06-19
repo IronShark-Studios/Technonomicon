@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-art = { pkgs, pkgs-stable, config, ... }:
+  flake.nixosModules.Tn-art = { pkgs, config, ... }:
     let
       pureref = pkgs.callPackage (import ./PureRef/_pureref.nix) {};
       allusion = pkgs.callPackage (import ./Allusion/_allusion.nix) {};
@@ -11,7 +11,6 @@
         graphviz
         cura-appimage
         obs-studio
-        xdg-desktop-portal
         vlc
         inkscape-with-extensions
         gimp-with-plugins

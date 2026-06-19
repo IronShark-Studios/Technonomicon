@@ -57,7 +57,7 @@
       # Scheme & Racket (Your miniKanren environments)
       guile racket
       # C
-      gcc clang-tools # provides clangd LSP
+      clang-tools # provides clangd LSP
       # Zig
       zig zls
       # Assembly & Forth

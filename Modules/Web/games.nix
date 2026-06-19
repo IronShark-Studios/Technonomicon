@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-games = { pkgs, pkgs-stable, ... }: {
+  flake.nixosModules.Tn-games = { pkgs, ... }: {
 
 
     environment.systemPackages = with pkgs; [

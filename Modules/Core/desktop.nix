@@ -85,7 +85,7 @@
     security.pam.services.swaylock = {};
 
     environment.sessionVariables = {
-      NIXOS_OZONE_GH_WAYLAND = "1";
+      NIXOS_OZONE_WL = "1";
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
       QT_QPA_PLATFORM = "wayland";
       QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
@@ -93,13 +93,11 @@
     };
 
     environment.systemPackages = with pkgs; [
-      mako
       grim
       slurp
       wtype
       blueman
       swaylock
-      alsa-utils
       gromit-mpx
       pavucontrol
       wl-clipboard
@@ -176,10 +174,7 @@
       '';
     };
 
-    networking.modemmanager.enable = false;
-    systemd.sleep.settings.Sleep = {
-      HandleSuspend = "ignore";
-    };
+    services.logind.settings.Login.HandleSuspend = "ignore";
 
   };
 }

@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-web-apps = { pkgs, pkgs-stable, config, ... }: {
+  flake.nixosModules.Tn-web-apps = { pkgs, config, ... }: {
 
     environment.systemPackages = [
 
@@ -61,7 +61,7 @@
 
       (pkgs.makeDesktopItem {
         name = "G-Mail";
-        desktopName = "Gmaail Email";
+        desktopName = "Gmail Email";
         exec = "${pkgs.brave}/bin/brave --app=https://gmail.com --start-maximized";
         terminal = false;
         categories = [ "Application" "Network" ];
@@ -94,7 +94,7 @@
       (pkgs.makeDesktopItem {
         name = "Exercism";
         desktopName = "Exercism";
-        exec = "${pkgs.brave}/bin/brave --app=https://exercism.org/tracks/python --start-maximized";
+        exec = "${pkgs.brave}/bin/brave --app=https://exercism.org/dashboard --start-maximized";
         terminal = false;
         categories = [ "Application" "Network" ];
       })

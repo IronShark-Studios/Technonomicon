@@ -129,7 +129,6 @@ Shows the Doom dashboard when the last real non-EWM buffer is killed."
               ("s-M-j" . org-roam-dailies-goto-tomorrow)
               ("s-w" . split-window-horizontally)
               ("s-W" . evil-window-delete)
-              ("s-j" . org-roam-dailies-goto-today)
               ("s-y" . Tn/screenshot-clipboard)
               ("s-SPC" . Tn/dashboard-and-leader)
               ("s-<return>" . app-launcher-run-app)))
@@ -300,7 +299,6 @@ Shows the Doom dashboard when the last real non-EWM buffer is killed."
 (use-package! aidermacs
   :config
   (setq aidermacs-backend 'vterm)
-  (setq aidermacs-default-model "ollama_chat/")
   (map! :leader :desc "Aidermacs Menu" "o a" #'aidermacs-transient-menu))
 
 
@@ -602,7 +600,7 @@ Shows the Doom dashboard when the last real non-EWM buffer is killed."
                    (write-region (point-min) (point-max) "/tmp/emacs-quick-write.txt")
                    (call-process-shell-command "wl-copy < /tmp/emacs-quick-write.txt" nil 0)
                    (sleep-for 0.2)
-                   (kill-emacs)))
+                   (if (daemonp) (delete-frame) (kill-emacs))))
   (delete-other-windows))
 
 ;; --- LaTeX Typing & Rendering ---
@@ -714,7 +712,7 @@ Shows the Doom dashboard when the last real non-EWM buffer is killed."
 ;;         (note . ,(all-the-icons-material "insert_comment" :face 'all-the-icons-blue :v-adjust -0.3))
 ;;         (link . ,(all-the-icons-octicon "link" :face 'all-the-icons-orange :v-adjust 0.01))))
 
-(setq org-drawio-executable-path "/home/xin/.nix-profile/bin/drawio")
+(setq org-drawio-executable-path (executable-find "drawio"))
 (setq org-drawio-output-dir "/home/xin/Grimoire/Notes/Assets")
 (setq org-drawio-input-dir "/home/xin/Grimoire/Notes/Assets")
 

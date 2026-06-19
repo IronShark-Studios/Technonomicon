@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-pdf = { pkgs, pkgs-stable, config, ... }: {
+  flake.nixosModules.Tn-pdf = { pkgs, config, ... }: {
 
     environment.systemPackages = with pkgs; [
       (symlinkJoin {
@@ -40,7 +40,7 @@
   # --- INTEGRATION & WORKFLOW ---
 
   # 1. External Search Engines (Google Scholar, arXiv, Library Genesis)
-  search_url_g https://goolge.com/search?query=
+  search_url_g https://google.com/search?query=
   search_url_s https://scholar.google.com/scholar?q=
   search_url_a https://arxiv.org/search/?query=
   search_url_l http://libgen.rs/search.php?req=

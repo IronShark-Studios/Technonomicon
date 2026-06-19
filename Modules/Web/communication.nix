@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-network = { pkgs, pkgs-stable, ... }: {
+  flake.nixosModules.Tn-communication = { pkgs, ... }: {
 
     hjem.users.xin = {
       enable = true;

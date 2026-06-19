@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-web-browsers = { pkgs, pkgs-stable, config, ... }: {
+  flake.nixosModules.Tn-web-browsers = { pkgs, config, ... }: {
 
     programs.chromium.enable = true;
     environment.systemPackages = [
@@ -61,10 +61,5 @@
       ];
     };
 
-      environment.etc."brave/initial_preferences".text = builtins.toJSON {
-        browser = {
-          custom_chrome_frame = true;
-        };
-      };
   };
 }

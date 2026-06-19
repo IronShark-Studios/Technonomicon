@@ -1,20 +1,15 @@
 { pkgs, fetchurl }:
 
 let
-  pname = "pureref";
   version = "2.0.3";
-
   src = ./_PureRef-2.0.3_x64.Appimage;
-
 in
 
-pkgs.runCommand "pureref" {
-  buildInputs = with pkgs; [ appimage-run ];
-} ''
+pkgs.runCommand "pureref" {} ''
   mkdir -p $out/bin
-  cat <<-EOF > $out/bin/pureref
+  cat > $out/bin/pureref << 'EOF'
   #!/bin/sh
-  ${pkgs.appimage-run}/bin/appimage-run ${src}
+  exec ${src}
   EOF
   chmod +x $out/bin/pureref
 ''

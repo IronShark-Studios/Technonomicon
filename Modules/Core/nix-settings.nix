@@ -14,12 +14,6 @@
       flake = "/home/xin/Projects/Technonomicon/";
     };
 
-    nixpkgs.config = {
-      allowUnfree = true;
-      allowUnfreePredicate = (_: true);
-    };
-
-    environment.systemPackages = with pkgs; [
-    ];
+    nixpkgs.config.allowUnfree = true;
   };
 }

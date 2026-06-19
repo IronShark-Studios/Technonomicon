@@ -1,20 +1,15 @@
 { pkgs, fetchurl }:
 
 let
-  pname = "allusion";
-  version = "1.11.1";
-
-  src =./_Allusion-1.0.0-rc.10.AppImage;
-
+  version = "1.0.0-rc.10";
+  src = ./_Allusion-1.0.0-rc.10.AppImage;
 in
 
-pkgs.runCommand "allusion" {
-  buildInputs = with pkgs; [ appimage-run ];
-} ''
+pkgs.runCommand "allusion" {} ''
   mkdir -p $out/bin
-  cat <<-EOF > $out/bin/allusion
+  cat > $out/bin/allusion << 'EOF'
   #!/bin/sh
-  ${pkgs.appimage-run}/bin/appimage-run ${src}
+  exec ${src}
   EOF
   chmod +x $out/bin/allusion
 ''

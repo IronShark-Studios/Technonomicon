@@ -22,8 +22,7 @@
       self.nixosModules.Tn-web-browsers
       self.nixosModules.Tn-web-apps
       self.nixosModules.Tn-network
-      self.nixosModules.Tn-sound
-      self.nixosModules.Tn-shell
+      self.nixosModules.Tn-communication
       self.nixosModules.Tn-sound
       self.nixosModules.Tn-shell
       self.nixosModules.Tn-pdf
@@ -54,9 +53,6 @@
         hardware = {
           nvidia-container-toolkit.enable = true;
           uinput.enable = true;
-          graphics = {
-            enable = true;
-          };
           nvidia = {
             package = config.boot.kernelPackages.nvidiaPackages.stable;
             open = true;
@@ -91,7 +87,7 @@
           users.xin = {
             isNormalUser = true;
             hashedPasswordFile = config.sops.secrets.xin-password.path;
-            shell = pkgs.bash;
+            shell = pkgs.xonsh;
             extraGroups = [
               "wheel"
               "docker"

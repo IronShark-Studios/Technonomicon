@@ -3,7 +3,6 @@ import subprocess
 
 # Integrate "nix-shell" and "direnv" commands
 execx($(nix-your-shell xonsh))
-xontrib load direnv
 
 # =============================================================================
 # 1. STANDARD SHELL OPTIONS & THEME

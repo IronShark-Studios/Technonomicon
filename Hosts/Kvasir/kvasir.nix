@@ -23,8 +23,7 @@
       self.nixosModules.Tn-web-browsers
       self.nixosModules.Tn-web-apps
       self.nixosModules.Tn-network
-      self.nixosModules.Tn-sound
-      self.nixosModules.Tn-shell
+      self.nixosModules.Tn-communication
       self.nixosModules.Tn-sound
       self.nixosModules.Tn-shell
       self.nixosModules.Tn-pdf
@@ -39,6 +38,7 @@
 
         boot.kernelModules = [ "uinput" ];
         boot.kernelPackages = pkgs.linuxPackages;
+        boot.blacklistedKernelModules = [ "wacom" ];
         boot.loader = {
           systemd-boot.enable = true;
           efi.canTouchEfiVariables = true;
@@ -47,9 +47,6 @@
 
         hardware = {
           uinput.enable = true;
-          graphics = {
-            enable = true;
-          };
           opentabletdriver = {
             enable = true;
             daemon.enable = true;

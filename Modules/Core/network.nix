@@ -3,7 +3,6 @@
 
     networking.networkmanager.enable = true;
     networking.networkmanager.wifi.backend = "iwd";
-    networking.wireless.iwd.enable = true;
     networking.extraHosts = ''
         127.0.0.1 reddit.com
         127.0.0.1 www.reddit.com
@@ -22,8 +21,8 @@
 
     networking.firewall = {
       enable = true;
-      allowedTCPPorts = [ 7236 7250 8385 ];
-      allowedUDPPorts = [ 7236 5353 ];
+      allowedTCPPorts = [ 7236 7250 ];
+      allowedUDPPorts = [ 7236 ];
     };
 
     networking.firewall.trustedInterfaces = [ "p2p-wl+" ];
@@ -38,12 +37,6 @@
       SUBSYSTEM=="net", KERNEL=="p2p-dev-*", ACTION=="add", TAG-="systemd"
     '';
 
-    xdg.portal = {
-      enable = true;
-      extraPortals = [ pkgs.xdg-desktop-portal-gnome ];
-      config.common.default = [ "gnome" ];
-    };
-
     programs = {
       gnupg.agent = {
         enable = true;
@@ -55,8 +48,7 @@
       openssh = {
         enable = false;
         settings = {
-          permitRootLogin = "no";
-          passwordAuthentication = false;
+          PermitRootLogin = "no";
           PasswordAuthentication = false;
           KbdInteractiveAuthentication = false;
         };

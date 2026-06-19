@@ -31,7 +31,6 @@
        snippets            ; my elves. They type so I don't have to
        format
        multiple-cursors
-       format
 
        :emacs
        (dired +dirvish)               ; making dired pretty [functional]

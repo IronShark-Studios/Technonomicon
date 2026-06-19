@@ -7,29 +7,22 @@
         qemu = {
           package = pkgs.qemu_kvm;
           swtpm.enable = true;
-          # ovmf.enable = true;
-          # ovmf.packages = [ pkgs.OVMFFull.fd ];
         };
       };
       docker.enable = true;
       spiceUSBRedirection.enable = true;
     };
 
-    users.users.xin = {
-      isNormalUser = true;
-      extraGroups = [
-        "libvirtd"
-        "dialout"
-        "tty"
-      ];
-    };
+    users.users.xin.extraGroups = [
+      "libvirtd"
+      "tty"
+    ];
 
     environment.systemPackages = with pkgs; [
       spice
       spice-gtk
       spice-protocol
       virt-viewer
-      docker
       distrobox
     ];
 

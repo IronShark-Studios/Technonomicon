@@ -53,8 +53,6 @@
       enable = true;
       settings = {
         format = "$directory$nix_shell$git_branch$git_commit$git_state$git_status\n$character";
-        right_format = "$cmd_duration";
-
         time.disabled = true;
         cmd_duration.disabled = true;
 
@@ -131,7 +129,6 @@
       entr
       progress
       copyq
-      gcc
       zip
       caligula
       gum
@@ -153,7 +150,7 @@
       nemo-with-extensions
       # bitwarden-cli
       # bitwarden-desktop
-      nvtopPackages.nvidia
+      nvtopPackages.full
     ];
   };
 }

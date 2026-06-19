@@ -1,5 +1,5 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-learning = { pkgs, pkgs-stable, config, ... }: {
+  flake.nixosModules.Tn-learning = { pkgs, config, ... }: {
 
     environment.systemPackages = with pkgs; [
       ledger
