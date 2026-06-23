@@ -45,6 +45,13 @@
       };
     };
 
+    # R LSP: not a standalone binary — runs R itself; system installs R + rPackages.languageserver
+    extraConfigLua = ''
+      require('lspconfig').r_language_server.setup({
+        capabilities = require('cmp_nvim_lsp').default_capabilities(),
+      })
+    '';
+
     # ── Completion ───────────────────────────────────────────────────────────────
     plugins.cmp = {
       enable = true;
