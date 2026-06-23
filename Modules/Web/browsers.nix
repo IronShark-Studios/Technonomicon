@@ -18,6 +18,16 @@
 
     programs.chromium.enable = true;
     environment.systemPackages = [
+      nyxt4
+      (pkgs.makeDesktopItem {
+        name        = "nyxt";
+        desktopName = "Nyxt";
+        exec        = "nyxt %U";
+        icon        = "nyxt";
+        comment     = "The hacker's browser";
+        categories  = [ "Network" "WebBrowser" ];
+        mimeTypes   = [ "text/html" "x-scheme-handler/http" "x-scheme-handler/https" ];
+      })
       ((pkgs.brave.override {
         commandLineArgs = [
           "--enable-features=UseOzonePlatform"
