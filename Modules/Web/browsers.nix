@@ -22,13 +22,6 @@
       }))
     ];
 
-    hjem.users.xin = {
-      enable = true;
-      files = {
-        ".config/surfingkeys/config.js".source = ./_surfingkeys.js;
-      };
-    };
-
     environment.etc."brave/policies/managed/default.json".text = builtins.toJSON {
       "PasswordManagerEnabled" = false;
       "AutofillAddressEnabled" = false;
@@ -36,7 +29,7 @@
 
       "BraveRewardsDisabled" = true;
       "BraveWalletDisabled" = true;
-      "BraveVPNMode" = 0; # 0 = Disabled
+      "BraveVPNMode" = 0;
       "TorDisabled" = true;
       "IPFSCompanionEnabled" = false;
 
@@ -52,12 +45,12 @@
       "ImagesForNewTabPageEnabled" = false;
 
       "ExtensionInstallForcelist" = [
-        "gfbliohnnapiefjpjlpjnehglfpaknnc;https://clients2.google.com/service/update2/crx" # Surfingkeys
-        "eimadpbcbfnmbkopoojfekhnkhdbieeh;https://clients2.google.com/service/update2/crx" # Dark Reader
-        "nngceckbapebfimnlniiiahkandclblb;https://clients2.google.com/service/update2/crx" # Bitwarden
-        "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx" # uBlock Origin
-        "dndlcbaomdoggooaficldplkcmkfpgff;https://clients2.google.com/service/update2/crx" # New Tab, New Window
-        "blaaajhemilngeeffpbfkdjjoefldkok;https://clients2.google.com/service/update2/crx" # LeechBlock NG
+        "gfbliohnnapiefjpjlpjnehglfpaknnc;https://clients2.google.com/service/update2/crx"
+        "eimadpbcbfnmbkopoojfekhnkhdbieeh;https://clients2.google.com/service/update2/crx"
+        "nngceckbapebfimnlniiiahkandclblb;https://clients2.google.com/service/update2/crx"
+        "cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx"
+        "dndlcbaomdoggooaficldplkcmkfpgff;https://clients2.google.com/service/update2/crx"
+        "blaaajhemilngeeffpbfkdjjoefldkok;https://clients2.google.com/service/update2/crx"
       ];
     };
 
