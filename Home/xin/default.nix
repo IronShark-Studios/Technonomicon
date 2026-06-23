@@ -16,7 +16,6 @@
           ./_taskwarrior.nix
           ./_mail.nix
           ./_rclone.nix
-          ./_persistence.nix
           ./_apps.nix
         ];
         home.stateVersion = "23.11";
