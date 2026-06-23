@@ -302,6 +302,7 @@ If Nyxt 4.0 eventually lands in nixpkgs, swap the whole `let nyxt4 = ...` block 
 | **aerc accounts.conf** | Write manually (contains credentials, not managed by Nix) |
 | **Per-host monitor config** | Update `_hyprland.nix` after `hyprctl monitors` (Step 2) |
 | **Obsidian plugins** | Install via GUI (Step 11) |
-| **shake-to-find cursor** | Not in Hyprland yet — track upstream |
+| **Nyxt 4.0** | Fill in URL + hash in `Modules/Web/browsers.nix` before first build (Step 12) |
+| **shake-to-find cursor** | Handled by `hypr-dynamic-cursors` plugin — enabled in `_hyprland.nix` |
 | **R LSP in nvim** | `rPackages.languageserver` installed system-wide; if nixvim doesn't auto-pick it up, add a custom LSP cmd pointing to `R --no-save --slave -e languageserver::run()` |
 | **Waybar per-host** | Battery/backlight only relevant on Kvasir; tweak `_hyprland.nix` to conditionally show them or just leave unused modules hidden |
