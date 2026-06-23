@@ -69,7 +69,7 @@
     Host imap.gmail.com
     Port 993
     User xin@ironshark.org
-    PassCmd "sops -d --extract '[\"google-app-password\"]' ${builtins.toString /home/xin/Projects/Technonomicon}/_secrets.yaml"
+    PassCmd "sops -d --extract '[\"google-app-password\"]' ${inputs.self}/_secrets.yaml"
     SSLType IMAPS
     CertificateFile /etc/ssl/certs/ca-certificates.crt
 
