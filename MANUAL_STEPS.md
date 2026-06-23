@@ -296,7 +296,7 @@ If Nyxt 4.0 eventually lands in nixpkgs, swap the whole `let nyxt4 = ...` block 
 
 | Item | What to do |
 |------|-----------|
-| **sagemath** | `distrobox create --name sage --image ubuntu:24.04` → `apt install sagemath` |
+| **sagemath** | Declared in `Tn-math` via `pkgs.sagemath`. If the nixpkgs build is broken at switch time, fall back to distrobox as a stopgap. |
 | **tbkeys** | Install `.xpi` from addons.thunderbird.net manually |
 | **Habitica hook** | Write Python script (Step 10 above) |
 | **aerc accounts.conf** | Write manually (contains credentials, not managed by Nix) |
