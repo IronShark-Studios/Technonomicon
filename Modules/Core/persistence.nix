@@ -1,7 +1,7 @@
 { inputs, ... }: {
-  imports = [ inputs.impermanence.nixosModules.impermanence ];
-
   flake.nixosModules.Tn-persistence = { ... }: {
+    imports = [ inputs.impermanence.nixosModules.impermanence ];
+
     environment.persistence."/persist" = {
       hideMounts = true;
       directories = [
