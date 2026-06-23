@@ -2,6 +2,11 @@
   flake.nixosModules.Tn-math = { pkgs, ... }: {
     environment.systemPackages = with pkgs; [
       julia
+      R
+      rPackages.languageserver
+      rPackages.tidyverse
+      rPackages.rmarkdown
+      rPackages.knitr
       maxima
       octave
       gnuplot
