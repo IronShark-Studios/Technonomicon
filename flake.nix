@@ -25,8 +25,6 @@
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
 
-    impermanence.url = "github:nix-community/impermanence";
-
     plover-flake.url = "github:openstenoproject/plover-flake";
   };
 
