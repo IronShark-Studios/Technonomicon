@@ -1,5 +1,20 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-web-browsers = { pkgs, config, ... }: {
+  flake.nixosModules.Tn-web-browsers = { pkgs, config, ... }:
+    let
+      # Nyxt 4.0 — not yet in nixpkgs; fetch the official AppImage.
+      # Steps to fill this in:
+      #   1. Download the .AppImage from github.com/atlas-engineer/nyxt/releases
+      #   2. Run: nix-prefetch-url --type sha256 file:///path/to/nyxt.AppImage
+      #   3. Paste the resulting hash below.
+      nyxt4 = pkgs.appimageTools.wrapType2 {
+        name    = "nyxt";
+        version = "4.0.0";
+        src = pkgs.fetchurl {
+          url  = "TODO";   # e.g. the .AppImage asset URL from the GitHub release page
+          hash = "sha256-TODO";
+        };
+      };
+    in {
 
     programs.chromium.enable = true;
     environment.systemPackages = [
