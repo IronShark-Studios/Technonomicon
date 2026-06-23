@@ -19,6 +19,20 @@
       }
     }
 
+    plugin:dynamic-cursors {
+      enabled = true
+      mode = none
+
+      shake {
+        enabled   = true
+        threshold = 6.0
+        base      = 4.0
+        speed     = 4.0
+        timeout   = 2000
+        effects   = false
+      }
+    }
+
     # ── Variables ────────────────────────────────────────────────────────────────
     $mod = SUPER
 
