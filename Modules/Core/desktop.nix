@@ -113,8 +113,8 @@
         PICTURES=Media
         VIDEOS=Media
       '';
-      "xdg/gromit-mpx.cfg".source = "${inputs.self}/Modules/Core/_gromit-mpx.cfg";
-      "xdg/gromit-mpx.ini".source = "${inputs.self}/Modules/Core/_gromit-mpx.ini";
+      "xdg/gromit-mpx.cfg".source = ./_gromit-mpx.cfg;
+      "xdg/gromit-mpx.ini".source = ./_gromit-mpx.ini;
       "gtk-3.0/settings.ini".text = ''
         [Settings]
         gtk-theme-name=Adwaita-dark
