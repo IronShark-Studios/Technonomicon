@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   programs.thunderbird = {
     enable = true;
     profiles.xin = {
