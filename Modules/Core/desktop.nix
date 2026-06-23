@@ -31,7 +31,10 @@
 
       libinput = {
         enable = true;
-        touchpad.tappingDragLock = false;
+        touchpad = {
+          tappingDragLock = false;
+          middleEmulation = false;
+        };
       };
       gnome.gnome-keyring.enable = true;
       pulseaudio.enable = false;

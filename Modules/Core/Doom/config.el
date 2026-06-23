@@ -69,34 +69,39 @@
       (+workspace-new (format "Workspace %d" (1+ (length (+workspace-list-names))))))
     (+workspace-switch (nth index (+workspace-list-names))))
 
-  (defun Tn/workspace-has-other-real-non-surface-buffers-p ()
-    "Return non-nil if the current persp has real non-EWM buffers besides the current one."
+  (defun Tn/prev-real-workspace-buffer ()
+    "Return the most recently visited real non-EWM buffer in the workspace, excluding current."
     (when (and (bound-and-true-p persp-mode) (get-current-persp))
-      (cl-some (lambda (buf)
-                 (and (not (eq buf (current-buffer)))
-                      (doom-real-buffer-p buf)
-                      (not (ewm-surface-buffer-p buf))))
-               (persp-buffers (get-current-persp)))))
+      (let ((persp-bufs (persp-buffers (get-current-persp))))
+        (cl-find-if (lambda (buf)
+                      (and (not (eq buf (current-buffer)))
+                           (doom-real-buffer-p buf)
+                           (not (ewm-surface-buffer-p buf))
+                           (memq buf persp-bufs)))
+                    (buffer-list)))))
 
   (defun Tn/smart-close ()
     "Close the compositor-focused ewm surface, or kill the Emacs buffer+window.
 Uses ewm's compositor-authoritative last-focused window rather than
 Emacs' selected-window, which can drift due to background display-buffer calls.
-Shows the Doom dashboard when the last real non-EWM buffer is killed."
+Switches to the most recently visited real workspace buffer on close, or opens
+the Doom dashboard when no real non-EWM buffers remain."
     (interactive)
     (if (and (boundp 'ewm--mff-last-window)
              (window-live-p ewm--mff-last-window)
              (ewm-surface-buffer-p (window-buffer ewm--mff-last-window)))
         (progn
           (kill-buffer (window-buffer ewm--mff-last-window))
-          (unless (Tn/workspace-has-other-real-non-surface-buffers-p)
+          (if (Tn/prev-real-workspace-buffer)
+              (+vertico/switch-workspace-buffer)
             (Tn/open-dashboard (selected-frame))))
-      (if (Tn/workspace-has-other-real-non-surface-buffers-p)
-          (let ((buf (current-buffer)))
-            (switch-to-prev-buffer nil t)
-            (kill-buffer buf))
-        (kill-buffer (current-buffer))
-        (Tn/open-dashboard (selected-frame)))))
+      (let ((buf (current-buffer)))
+        (if (Tn/prev-real-workspace-buffer)
+            (progn
+              (kill-buffer buf)
+              (+vertico/switch-workspace-buffer))
+          (kill-buffer buf)
+          (Tn/open-dashboard (selected-frame))))))
 
   :bind (:map ewm-mode-map
 
