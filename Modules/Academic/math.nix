@@ -11,6 +11,12 @@
       octave
       gnuplot
       lean4
+      gap
+      sagemath
+
+      # Topology
+      polymake      # polyhedral / combinatorial geometry
+      macaulay2     # algebraic topology, homological algebra, sheaves
 
       (python3.withPackages (ps: with ps; [
         numpy
@@ -22,6 +28,7 @@
         jupyterlab
         scikit-learn
         ipython
+        gudhi         # TDA: persistent homology, simplicial complexes
       ]))
 
       zeromq
