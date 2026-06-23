@@ -35,6 +35,11 @@
       ];
     };
 
+    programs.zsh = {
+      enable = true;
+      enableCompletion = true;
+    };
+
     programs.direnv = {
       enable = true;
       nix-direnv.enable = true;
