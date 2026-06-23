@@ -1,39 +1,20 @@
 { inputs, ... }: {
   flake.nixosModules.Tn-desktop = { pkgs, pkgs-stable, config, ... }: {
 
-    imports = [ inputs.ewm.nixosModules.default ];
-    programs.ewm.enable = true;
-
     hardware = {
-      bluetooth.enable = true;
-      graphics.enable = true;
-      xpadneo.enable = true;
-      sane.enable = true;
+      bluetooth.enable  = true;
+      graphics.enable   = true;
+      xpadneo.enable    = true;
+      sane.enable       = true;
       sane.extraBackends = [ pkgs.sane-airscan ];
     };
 
     services = {
-      greetd = {
-        enable = true;
-        settings = {
-          default_session = {
-            command = "${pkgs.tuigreet}/bin/tuigreet --time --asterisks --remember --sessions ${config.services.displayManager.sessionData.desktops}/share/wayland-sessions";
-            user = "greeter";
-          };
-        };
-      };
-
-      kanata = {
-        enable = true;
-        package = pkgs.kanata-with-cmd;
-        keyboards.colmacs.configFile = ./_kanata.kbd;
-      };
-
       libinput = {
         enable = true;
         touchpad = {
-          tappingDragLock = false;
-          middleEmulation = false;
+          tappingDragLock   = false;
+          middleEmulation   = false;
         };
       };
       gnome.gnome-keyring.enable = true;
@@ -42,17 +23,11 @@
         enable = true;
         pulse.enable = true;
         alsa = {
-          enable = true;
+          enable       = true;
           support32Bit = true;
         };
       };
-    };
-
-    systemd.services.greetd.serviceConfig = {
-      Type = "idle";
-      TTYReset = true;
-      TTYVHangup = true;
-      TTYVTDisallocate = true;
+      logind.settings.Login.HandleSuspend = "ignore";
     };
 
     fonts.packages = with pkgs; [
@@ -66,17 +41,19 @@
       overpass
       fira-code
       fira-go
+      julia-mono
+      cm-unicode
     ];
 
     xdg.mime.defaultApplications = {
-      "application/pdf" = "sioyek.desktop";
-      "text/html" = "brave-browser.desktop";
+      "application/pdf"        = "sioyek.desktop";
+      "text/html"              = "brave-browser.desktop";
       "application/xhtml+xml" = "brave-browser.desktop";
-      "x-scheme-handler/http" = "brave-browser.desktop";
-      "x-scheme-handler/https" = "brave-browser.desktop";
-      "x-scheme-handler/about" = "brave-browser.desktop";
+      "x-scheme-handler/http"    = "brave-browser.desktop";
+      "x-scheme-handler/https"   = "brave-browser.desktop";
+      "x-scheme-handler/about"   = "brave-browser.desktop";
       "x-scheme-handler/unknown" = "brave-browser.desktop";
-      "x-scheme-handler/mailto" = "brave-browser.desktop";
+      "x-scheme-handler/mailto"  = "brave-browser.desktop";
     };
 
     services.udev.extraRules = ''
@@ -85,40 +62,16 @@
       KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
     '';
 
-    security.pam.services.swaylock = {};
-
-    environment.sessionVariables = {
-      NIXOS_OZONE_WL = "1";
-      ELECTRON_OZONE_PLATFORM_HINT = "auto";
-      QT_QPA_PLATFORM = "wayland";
-      QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-      NIXPKGS_ALLOW_UNFREE = "1";
-    };
-
-    environment.systemPackages = with pkgs; [
-      grim
-      slurp
-      wtype
-      blueman
-      swaylock
-      gromit-mpx
-      pavucontrol
-      wl-clipboard
-      brightnessctl
-      gnome-themes-extra
-      adwaita-icon-theme
-      kdePackages.skanlite
-
-      inputs.plover-flake.packages.${pkgs.stdenv.hostPlatform.system}.plover-full
-    ];
-
     xdg.portal = {
       enable = true;
-      extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-      configPackages = [ pkgs.xdg-desktop-portal-gtk ];
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-gtk
+        xdg-desktop-portal-hyprland
+      ];
+      configPackages = [ pkgs.xdg-desktop-portal-hyprland ];
     };
 
-    programs.steam.enable = true;
+    programs.steam.enable   = true;
     programs.ydotool.enable = true;
 
     programs.appimage = {
@@ -139,11 +92,11 @@
         settings = {
           "org/gnome/desktop/interface" = {
             color-scheme = "prefer-dark";
-            gtk-theme = "Adwaita-dark";
+            gtk-theme    = "Adwaita-dark";
           };
           "org/virt-manager/virt-manager/connections" = {
             autoconnect = [ "qemu:///system" ];
-            uris = [ "qemu:///system" ];
+            uris        = [ "qemu:///system" ];
           };
         };
       }];
@@ -160,11 +113,8 @@
         PICTURES=Media
         VIDEOS=Media
       '';
-      "xdg/fcitx5/config".source = ./_fcitx5-config;
-
-      "xdg/gromit-mpx.cfg".source = ./_gromit-mpx.cfg;
-      "xdg/gromit-mpx.ini".source = ./_gromit-mpx.ini;
-
+      "xdg/gromit-mpx.cfg".source = "${inputs.self}/Modules/Core/_gromit-mpx.cfg";
+      "xdg/gromit-mpx.ini".source = "${inputs.self}/Modules/Core/_gromit-mpx.ini";
       "gtk-3.0/settings.ini".text = ''
         [Settings]
         gtk-theme-name=Adwaita-dark
@@ -177,7 +127,16 @@
       '';
     };
 
-    services.logind.settings.Login.HandleSuspend = "ignore";
+    environment.systemPackages = with pkgs; [
+      gromit-mpx
+      brightnessctl
+      gnome-themes-extra
+      adwaita-icon-theme
+      kdePackages.skanlite
+      blueman
+      pavucontrol
 
+      inputs.plover-flake.packages.${pkgs.stdenv.hostPlatform.system}.plover-full
+    ];
   };
 }
