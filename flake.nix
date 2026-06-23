@@ -1,5 +1,5 @@
 {
-  description = "Personal system configurations.";
+  description = "Technonomicon — Academic Workstation";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -16,17 +16,16 @@
     sops-nix.url = "github:Mic92/sops-nix";
     sops-nix.inputs.nixpkgs.follows = "nixpkgs";
 
-    hjem.url = "github:feel-co/hjem";
-    hjem.inputs.nixpkgs.follows = "nixpkgs";
-    hjem-impure.url = "github:Rexcrazy804/hjem-impure";
-    hjem-impure.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
-    ewm.url = "git+https://codeberg.org/ezemtsov/ewm";
-    app-launcher = {
-      url = "github:SebastienWae/app-launcher";
-      flake = false;
-    };
+    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.inputs.nixpkgs.follows = "nixpkgs";
+
+    nixvim.url = "github:nix-community/nixvim";
+    nixvim.inputs.nixpkgs.follows = "nixpkgs";
+
+    impermanence.url = "github:nix-community/impermanence";
 
     plover-flake.url = "github:openstenoproject/plover-flake";
   };
@@ -37,6 +36,7 @@
     imports = [
       (import-tree ./Modules)
       (import-tree ./Hosts)
+      (import-tree ./Home)
     ];
   };
 }
