@@ -78,7 +78,7 @@
           users.xin = {
             isNormalUser = true;
             hashedPasswordFile = config.sops.secrets.xin-password.path;
-            shell = pkgs.xonsh;
+            shell = pkgs.zsh;
             extraGroups = [
               "wheel"
               "docker"
