@@ -38,7 +38,6 @@
       };
     };
 
-    environment.etc."xdg/fcitx5/config".source =
-      "${inputs.self}/Modules/Core/_fcitx5-config";
+    environment.etc."xdg/fcitx5/config".source = ./_fcitx5-config;
   };
 }
