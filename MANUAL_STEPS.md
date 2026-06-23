@@ -270,6 +270,28 @@ glxinfo | grep "OpenGL renderer"
 
 ---
 
+## Step 12 — Nyxt 4.0 (fill in URL + hash before first build)
+
+`Modules/Web/browsers.nix` has a `TODO` placeholder for the Nyxt 4.0 AppImage.
+Before running `nix flake lock` / `nh os switch`, fill it in:
+
+1. Go to the Nyxt GitHub releases page and copy the `.AppImage` asset URL for 4.0.
+2. Get the hash:
+   ```bash
+   nix-prefetch-url --type sha256 <paste-url-here>
+   # Outputs something like: sha256-abc123...
+   ```
+3. Edit `Modules/Web/browsers.nix` — replace both `TODO` values:
+   ```nix
+   url  = "<paste URL>";
+   hash = "sha256-<paste hash>";
+   ```
+4. Rebuild as normal. Nyxt will be in your PATH as `nyxt` and in the app launcher.
+
+If Nyxt 4.0 eventually lands in nixpkgs, swap the whole `let nyxt4 = ...` block for `pkgs.nyxt`.
+
+---
+
 ## Known Gaps
 
 | Item | What to do |
