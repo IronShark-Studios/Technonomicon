@@ -14,11 +14,13 @@
       ./_hardware-configuration.nix
 
       inputs.sops-nix.nixosModules.sops
-      inputs.hjem.nixosModules.hjem
 
       self.nixosModules.Tn-nix
       self.nixosModules.Tn-desktop
-      self.nixosModules.Tn-emacs
+      self.nixosModules.Tn-hyprland
+      self.nixosModules.Tn-lock
+      self.nixosModules.Tn-display-manager
+      self.nixosModules.Tn-kanata
       self.nixosModules.Tn-web-browsers
       self.nixosModules.Tn-web-apps
       self.nixosModules.Tn-network
@@ -31,6 +33,17 @@
       self.nixosModules.Tn-art
       self.nixosModules.Tn-utf
       self.nixosModules.Tn-virtualization
+      self.nixosModules.Tn-persistence
+      self.nixosModules.Tn-documents
+      self.nixosModules.Tn-math
+      self.nixosModules.Tn-references
+      self.nixosModules.Tn-anki
+      self.nixosModules.Tn-tasks
+      self.nixosModules.Tn-mail
+      self.nixosModules.Tn-calendar
+      self.nixosModules.Tn-quantified
+      self.nixosModules.Tn-backup
+      self.nixosModules.Home-xin
 
       ({ pkgs, config, ... }: {
         system.stateVersion = "23.11";
@@ -73,13 +86,6 @@
         sops.defaultSopsFormat = "yaml";
 
         networking.hostName = "Akmon";
-
-        hjem = {
-          extraModules = [ inputs.hjem-impure.hjemModules.default ];
-          users.xin = {
-            impure.enable = true;
-          };
-        };
 
         users = {
           mutableUsers = false;
