@@ -1,169 +1,213 @@
 # Manual Steps — Academic Workstation Migration
 
-This file documents what you need to do manually to activate the academic-station.md refactor.
-The code is written; these are the human-in-the-loop steps.
+Code is written and ready to review. These are the human steps to activate it.
 
 ---
 
-## Before You Do Anything: Lock and Check
+## Step 0 — Lock and dry-run
 
 ```bash
-# Pull all new flake inputs (home-manager, hyprland, nixvim, impermanence)
+# Pull all new flake inputs (home-manager, hyprland, nixvim)
 nix flake lock
 
-# Verify the flake evaluates without errors (dry run, no install)
+# Verify both configs evaluate without errors
 nix build .#nixosConfigurations.Kvasir.config.system.build.toplevel --dry-run
 nix build .#nixosConfigurations.Akmon.config.system.build.toplevel --dry-run
 ```
 
 ---
 
-## Step 0 — Stage on One Machine First
+## Step 1 — Apply (Kvasir first)
 
-Do Kvasir (laptop) first. It's lower-risk than Akmon (desktop + Nvidia).
-If Kvasir boots correctly, do Akmon.
+Kvasir (laptop) is lower-risk. Apply there first, then Akmon once confirmed working.
 
----
+```bash
+nh os switch --hostname Kvasir
+```
 
-## Phase 1 — Hyprland + NixVim (no fresh install needed)
-
-This phase can be applied to the **current filesystem** — it does NOT require BTRFS.
-It replaces ewm+doom-emacs with Hyprland+NixVim on the existing system.
-
-**What to do:**
-
-1. Remove impermanence from the host modules list temporarily (comment out `Tn-persistence`
-   and `Home-xin`'s `_persistence.nix`) since `/persist` doesn't exist yet.
-   In `Hosts/Kvasir/kvasir.nix`, comment out:
-   ```nix
-   # self.nixosModules.Tn-persistence
-   ```
-   In `Home/xin/default.nix`, comment out `_persistence.nix` from imports.
-
-2. Also comment out `Tn-backup` temporarily — btrbk and snapper expect BTRFS.
-
-3. Build and switch:
-   ```bash
-   nh os switch --hostname Kvasir
-   ```
-
-4. Log in via greetd → Hyprland should start.
-   - Test: `$mod+Return` → anyrun launcher
-   - Test: `$mod+T` → ghostty terminal
-   - Test: `$mod+N` → jumps to nvim workspace with nvim already open
-   - Test: `nvim` → should open with cyberdream theme, all plugins
-
-5. Set up monitor config in `Home/xin/_hyprland.nix`:
-   Run `hyprctl monitors` in a terminal and update the monitor line:
-   ```conf
-   monitor = eDP-1, 2560x1440@60, 0x0, 1.5   # Kvasir
-   ```
-
-6. Enroll fingerprint / re-test hyprlock:
-   ```bash
-   hyprlock   # should show the lock screen
-   ```
+**After switching — first login:**
+Your login shell is now **zsh**. Ghostty will open a zsh session.
+- `xsh` → starts xonsh if you need the Python shell
+- `nvim` → opens with cyberdream theme and all plugins via NixVim
 
 ---
 
-## Phase 2 — Secrets for New Services
+## Step 2 — Fix monitor config
 
-Add these secrets to `_secrets.yaml` before activating mail/calendar/backup:
+In `Home/xin/_hyprland.nix`, the monitor line is currently set to auto-detect.
+After logging in to Hyprland, run:
+
+```bash
+hyprctl monitors
+```
+
+Then edit the monitor entry in `_hyprland.nix` and rebuild:
+```conf
+# Kvasir (example — use the actual output name from hyprctl)
+monitor = eDP-1, 2560x1440@60, 0x0, 1.5
+
+# Akmon (example)
+monitor = DP-1, 2560x1440@144, 0x0, 1
+```
+
+If you want per-host monitor configs, the cleanest approach is to move the monitor line
+into the host-specific inline module block in `akmon.nix`/`kvasir.nix` via
+`home-manager.users.xin.wayland.windowManager.hyprland.settings.monitor = [...]`
+or simply maintain two `_hyprland-akmon.nix` / `_hyprland-kvasir.nix` variants.
+
+---
+
+## Step 3 — Test Hyprland session
+
+| Keybind | Action |
+|---------|--------|
+| `$mod+Return` | anyrun launcher |
+| `$mod+T` | ghostty terminal |
+| `` $mod+` `` | scratchpad terminal |
+| `$mod+N` (spacebar key) | jump to persistent nvim workspace |
+| `$mod+Q` | hyprlock |
+| `$mod+TAB` | hyprexpo overview |
+| `$mod+m/i/n/e` | focus left/right/down/up (Colemak) |
+
+---
+
+## Step 4 — Test NixVim
+
+Open nvim and verify:
+
+```
+:checkhealth lsp          " should show nixd, pyright, etc. attached
+:Telescope find_files     " <leader>ff
+:Neogit                   " <leader>gg
+<M-1> .. <M-4>            " Harpoon file slots
+<leader>ha                " add file to Harpoon
+```
+
+VimTeX uses sioyek as the PDF viewer. Obsidian plugin looks for `~/Grimoire/` — create the
+vault dir first if needed: `mkdir -p ~/Grimoire`.
+
+---
+
+## Step 5 — Add sops secrets for new services
 
 ```bash
 sops _secrets.yaml
 ```
 
-Add:
+Add the following keys (leave values as placeholders until ready to fill in):
+
 ```yaml
-habitica-user-id:      ENC[...]
-habitica-api-token:    ENC[...]
-google-app-password:   ENC[...]   # Gmail App Password for mbsync + vdirsyncer
-borg-passphrase:       ENC[...]
-wtfutil-github-token:  ENC[...]   # optional
+google-app-password:  ENC[...]   # Gmail App Password for mbsync + vdirsyncer CalDAV
+habitica-user-id:     ENC[...]
+habitica-api-token:   ENC[...]
+borg-passphrase:      ENC[...]
 ```
+
+Get a Gmail App Password: Google Account → Security → App passwords → generate one for "Mail".
 
 ---
 
-## Phase 3 — Email Setup (after secrets added)
+## Step 6 — Email (aerc + mbsync + Thunderbird)
 
+**Initial mail sync:**
 ```bash
-# Initial maildir sync
+# Create maildir
+mkdir -p ~/.local/share/mail/ironshark/Inbox
+
+# Initial sync (pulls all Gmail)
 mbsync -a
 
-# Build notmuch index
+# Build notmuch search index
 notmuch new
-
-# Verify aerc works
-aerc
 ```
 
-Enable the mbsync systemd timer:
+**Enable the auto-sync timer:**
 ```bash
 systemctl --user enable --now mbsync.timer
 ```
 
+**aerc** is configured via `~/.config/aerc/aerc.conf` (written by home-manager).
+You still need to write `~/.config/aerc/accounts.conf` with your Gmail credentials:
+
+```conf
+[ironshark]
+source      = maildir://~/.local/share/mail/ironshark
+outgoing    = smtp+plain://xin@ironshark.org:APP_PASSWORD@smtp.gmail.com:587
+from        = Xin IronShark <xin@ironshark.org>
+copy-to     = Sent
+```
+
+Replace `APP_PASSWORD` with the app password (or better: use `source-cred-cmd`).
+
+**Thunderbird:**
+1. Launch → add Gmail account manually
+2. Download **tbkeys** XPI from addons.thunderbird.net and install
+3. Configure tbkeys with vim-style keybindings (j/k, o, r, d, a, f, c, g i)
+
 ---
 
-## Phase 4 — Calendar Sync
+## Step 7 — Calendar (khal + vdirsyncer)
 
 After adding `google-app-password` to sops:
 
 ```bash
-# Edit vdirsyncer config (already written to ~/.config/vdirsyncer/config by HM)
-# but you need to do an initial sync:
+# Initial CalDAV sync
 vdirsyncer discover calendar_google
 vdirsyncer sync
+
+# Browse calendar in TUI
+khal interactive
 ```
 
 ---
 
-## Phase 5 — Google Drive (rclone bisync)
+## Step 8 — Google Drive (rclone bisync)
 
 ```bash
-# Authenticate (interactive OAuth)
+# Interactive OAuth setup
 rclone config
-# → New remote → Google Drive → name it "gdrive" → follow OAuth prompts
+# → New remote → name "gdrive" → Google Drive → follow prompts
 
 # Create local directory
 mkdir -p ~/GDrive
 
-# Initial sync (pulls entire Drive to ~/GDrive)
+# Initial resync (downloads all of Drive)
 rclone bisync ~/GDrive gdrive: --resync
 
-# Enable the timer (home-manager already wrote the unit file)
+# Enable the timer (home-manager already installed the unit)
 systemctl --user enable --now rclone-bisync.timer
 ```
 
 ---
 
-## Phase 6 — Borgbackup
+## Step 9 — Borgbackup
 
 ```bash
-# Initialize the repo (use a backup drive or remote)
+# Initialize a backup repo (use an external drive or remote path)
 borg init --encryption=repokey /mnt/backup/borg
 
-# Store the passphrase in sops (already added above)
 # Test a backup
 borg create /mnt/backup/borg::first-backup /home/xin
+
+# Set up a cron/systemd timer manually for now (no NixOS service configured)
 ```
 
 ---
 
-## Phase 7 — Habitica Hook
+## Step 10 — Habitica Hook
 
-1. Get your Habitica User ID and API Token from Habitica → Settings → API
-2. Add them to `_secrets.yaml` (done in Phase 2)
-3. Write the hook script:
+1. Habitica → Settings → API → copy User ID and API Token
+2. Add to sops (done in Step 5)
+3. Write the hook:
 
 ```bash
 mkdir -p ~/.local/share/task/hooks
-cat > ~/.local/share/task/hooks/on-exit.habitica.py << 'EOF'
+cat > ~/.local/share/task/hooks/on-exit.habitica.py << 'HOOK'
 #!/usr/bin/env python3
 import json, sys, os, urllib.request
 
-user_id  = os.environ.get("HABITICA_USER_ID")
-api_token = os.environ.get("HABITICA_API_TOKEN")
+user_id   = os.environ.get("HABITICA_USER_ID", "")
+api_token = os.environ.get("HABITICA_API_TOKEN", "")
 if not user_id or not api_token:
     sys.exit(0)
 
@@ -171,42 +215,33 @@ for line in sys.stdin:
     try:
         event = json.loads(line)
         if event.get("event") == "task-complete":
-            task_id = event.get("uuid")
+            task_id = event["uuid"]
             req = urllib.request.Request(
                 f"https://habitica.com/api/v3/tasks/{task_id}/score/up",
                 method="POST",
-                headers={
-                    "x-api-user": user_id,
-                    "x-api-key": api_token,
-                    "Content-Type": "application/json",
-                }
+                headers={"x-api-user": user_id, "x-api-key": api_token,
+                         "Content-Type": "application/json"},
             )
             urllib.request.urlopen(req, timeout=5)
     except Exception:
         pass
-EOF
+HOOK
 chmod +x ~/.local/share/task/hooks/on-exit.habitica.py
 ```
 
-4. Wire the sops secrets as environment variables (add to the sops module config or inject via a systemd user service).
+4. Expose the sops secrets as env vars. Add to the sops module in a host file:
+```nix
+sops.secrets.habitica-user-id  = {};
+sops.secrets.habitica-api-token = {};
+```
+Then inject them via a systemd user service environment or a shell profile export.
 
 ---
 
-## Phase 8 — Thunderbird Manual Setup
-
-After `nh os switch`:
-
-1. Launch Thunderbird
-2. Add Gmail account manually (IMAP: imap.gmail.com:993, SMTP: smtp.gmail.com:587)
-3. Download and install **tbkeys** XPI from addons.thunderbird.net
-4. Configure tbkeys with the key bindings from `academic-station.md`
-
----
-
-## Phase 9 — Obsidian Plugins
+## Step 11 — Obsidian Community Plugins
 
 1. Launch Obsidian → open `~/Grimoire/` vault
-2. Settings → Community Plugins → install:
+2. Settings → Community Plugins → Browse → install:
    - Dataview
    - Templater
    - Calendar
@@ -221,116 +256,30 @@ After `nh os switch`:
 
 ---
 
-## Phase 10 — BTRFS + LUKS2 + Impermanence (Fresh Install)
+## Akmon-specific: after Kvasir is confirmed working
 
-> **Only do this when ready to reinstall.** Back up everything first.
-
-### Pre-install checklist
-- [ ] Back up `/home/xin` to external drive
-- [ ] Export Grimoire vault (or verify Syncthing has it)
-- [ ] Note current UUIDs: `blkid`
-
-### Partition and format
 ```bash
-# Boot NixOS live ISO
-# Wipe disk and create partitions
-parted /dev/nvme0n1 -- mklabel gpt
-parted /dev/nvme0n1 -- mkpart ESP fat32 1MB 512MB
-parted /dev/nvme0n1 -- set 1 esp on
-parted /dev/nvme0n1 -- mkpart primary 512MB 100%
-
-# LUKS2 encryption
-cryptsetup luksFormat --type luks2 /dev/nvme0n1p2
-cryptsetup open /dev/nvme0n1p2 cryptroot
-
-# EFI
-mkfs.fat -F 32 -n boot /dev/nvme0n1p1
-
-# BTRFS
-mkfs.btrfs -L nixos /dev/mapper/cryptroot
-mount /dev/mapper/cryptroot /mnt
-
-# Subvolumes
-btrfs subvolume create /mnt/@
-btrfs subvolume create /mnt/@home
-btrfs subvolume snapshot -r /mnt/@ /mnt/@blank        # blank root snapshot
-btrfs subvolume snapshot -r /mnt/@home /mnt/@home-blank  # blank home snapshot
-btrfs subvolume create /mnt/@persist
-btrfs subvolume create /mnt/@nix
-btrfs subvolume create /mnt/@snapshots
-umount /mnt
-
-# Mount for install
-mount -o subvol=@,noatime,compress=zstd:3 /dev/mapper/cryptroot /mnt
-mkdir -p /mnt/{home,persist,nix,.snapshots,boot}
-mount -o subvol=@home,noatime,compress=zstd:3  /dev/mapper/cryptroot /mnt/home
-mount -o subvol=@persist,noatime,compress=zstd:3 /dev/mapper/cryptroot /mnt/persist
-mount -o subvol=@nix,noatime,compress=zstd:3,nodatacow /dev/mapper/cryptroot /mnt/nix
-mount -o subvol=@snapshots,noatime,compress=zstd:3 /dev/mapper/cryptroot /mnt/.snapshots
-mount /dev/nvme0n1p1 /mnt/boot
+nh os switch --hostname Akmon
 ```
 
-### Update hardware-configuration.nix
-Replace `Hosts/Akmon/_hardware-configuration.nix` (or Kvasir) with the BTRFS/LUKS config
-from `academic-station.md` Storage section. Fill in the actual UUIDs from `blkid`.
-
-The rollback boot service (`boot.initrd.systemd.services.rollback`) is already in the plan —
-add it to the hardware config file.
-
-### Pre-populate /persist before first reboot
+Nvidia is already configured in the host file. Verify after switch:
 ```bash
-# Run before nixos-install or after but before enabling rollback:
-mkdir -p /mnt/persist/etc/ssh
-cp /etc/machine-id /mnt/persist/etc/machine-id           2>/dev/null || true
-# SSH host keys will be generated by nixos-install; copy them after
-mkdir -p /mnt/persist/var/lib/nixos
-```
-
-### Install
-```bash
-nixos-install --flake /path/to/Technonomicon#Kvasir   # or Akmon
-```
-
-After nixos-install generates SSH host keys, copy them to persist:
-```bash
-cp /mnt/etc/ssh/ssh_host_* /mnt/persist/etc/ssh/
-cp /mnt/etc/machine-id /mnt/persist/etc/machine-id
-cp -a /mnt/var/lib/nixos/. /mnt/persist/var/lib/nixos/
-```
-
-### Uncomment Tn-persistence and _persistence.nix
-Once on the BTRFS system, re-enable:
-- `self.nixosModules.Tn-persistence` in host files
-- `./_persistence.nix` in `Home/xin/default.nix`
-
-And re-enable `Tn-backup`.
-
-### First boot verification
-```bash
-journalctl -b | grep rollback   # should show rollback service ran
-ls /                            # should be nearly empty (ephemeral root worked)
-ls /persist                     # should have your saved data
-```
-
-### Akmon: TPM2 auto-unlock (optional)
-```bash
-sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+7 /dev/nvme0n1p2
-```
-Then add to Akmon hardware config:
-```nix
-boot.initrd.luks.devices."cryptroot".crypttabExtraOpts = [ "tpm2-device=auto" ];
+nvidia-smi
+glxinfo | grep "OpenGL renderer"
 ```
 
 ---
 
-## Notes on Known Gaps
+## Known Gaps
 
-| Item | Action needed |
-|------|--------------|
-| **sagemath** | `distrobox create --name sage --image ubuntu:24.04` then `apt install sagemath` |
-| **tbkeys** | Install `.xpi` manually from addons.thunderbird.net |
-| **Habitica hook** | Write Python script (see Phase 7 above) |
-| **shake-to-find cursor** | Not in Hyprland yet; track upstream |
-| **rclone OAuth** | Must be done interactively (see Phase 5) |
-| **Waybar per-host** | Kvasir needs battery/backlight modules; Akmon does not. Currently both configs are identical — tune waybar settings in `_hyprland.nix` per machine after first boot. |
-| **Neovim R LSP** | `rPackages.languageserver` is installed system-wide; add `r.enable = true` to nixvim LSP if nixvim has an R LSP option, otherwise configure manually via `lsp.servers` with a custom cmd. |
+| Item | What to do |
+|------|-----------|
+| **sagemath** | `distrobox create --name sage --image ubuntu:24.04` → `apt install sagemath` |
+| **tbkeys** | Install `.xpi` from addons.thunderbird.net manually |
+| **Habitica hook** | Write Python script (Step 10 above) |
+| **aerc accounts.conf** | Write manually (contains credentials, not managed by Nix) |
+| **Per-host monitor config** | Update `_hyprland.nix` after `hyprctl monitors` (Step 2) |
+| **Obsidian plugins** | Install via GUI (Step 11) |
+| **shake-to-find cursor** | Not in Hyprland yet — track upstream |
+| **R LSP in nvim** | `rPackages.languageserver` installed system-wide; if nixvim doesn't auto-pick it up, add a custom LSP cmd pointing to `R --no-save --slave -e languageserver::run()` |
+| **Waybar per-host** | Battery/backlight only relevant on Kvasir; tweak `_hyprland.nix` to conditionally show them or just leave unused modules hidden |
