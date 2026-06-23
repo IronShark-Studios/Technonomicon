@@ -33,7 +33,6 @@
       self.nixosModules.Tn-art
       self.nixosModules.Tn-utf
       self.nixosModules.Tn-virtualization
-      self.nixosModules.Tn-persistence
       self.nixosModules.Tn-documents
       self.nixosModules.Tn-math
       self.nixosModules.Tn-references
