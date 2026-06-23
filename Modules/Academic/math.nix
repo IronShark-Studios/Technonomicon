@@ -11,7 +11,6 @@
       octave
       gnuplot
       lean4
-      gap
 
       (python3.withPackages (ps: with ps; [
         numpy
