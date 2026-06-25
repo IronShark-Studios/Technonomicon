@@ -6,7 +6,7 @@
       enable = true;
       withUWSM = true;
       plugins = [
-        pkgs.hyprlandPlugins.hyprscroller
+        pkgs.hyprlandPlugins.hyprscrolling
         pkgs.hyprlandPlugins.hypr-dynamic-cursors
       ];
     };
