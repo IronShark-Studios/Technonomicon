@@ -1,6 +1,6 @@
 { inputs, ... }: {
   flake.nixosModules.Tn-hyprland = { pkgs, ... }: {
-    disabledModules = [ "programs/hyprland.nix" ];
+    disabledModules = [ "programs/wayland/hyprland.nix" ];
     imports = [ inputs.hyprland.nixosModules.default ];
 
     programs.hyprland = {
