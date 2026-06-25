@@ -3,13 +3,9 @@
     disabledModules = [ "programs/wayland/hyprland.nix" ];
     imports = [ inputs.hyprland.nixosModules.default ];
 
-    programs.hyprland = {
-      enable = true;
-      withUWSM = true;
-      plugins = [
-        pkgs.hyprlandPlugins.hypr-dynamic-cursors
-      ];
-    };
+    programs.hyprland.plugins = [
+      pkgs.hyprlandPlugins.hypr-dynamic-cursors
+    ];
 
     security.pam.services.hyprlock = {};
 
