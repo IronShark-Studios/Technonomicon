@@ -1,15 +1,14 @@
 { inputs, ... }: {
   flake.nixosModules.Tn-hyprland = { pkgs, ... }: {
-    disabledModules = [ "programs/wayland/hyprland.nix" ];
-    imports = [ inputs.hyprland.nixosModules.default ];
-
-    programs.hyprland.plugins = [
-      pkgs.hyprlandPlugins.hypr-dynamic-cursors
-    ];
+    programs.hyprland = {
+      enable   = true;
+      withUWSM = true;
+    };
 
     security.pam.services.hyprlock = {};
 
     environment.systemPackages = with pkgs; [
+      hyprlandPlugins.hypr-dynamic-cursors
       hyprlock
       hypridle
       hyprpaper
