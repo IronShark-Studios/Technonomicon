@@ -42,7 +42,7 @@
       fira-code
       fira-go
       julia-mono
-      cm-unicode
+      cm_unicode
     ];
 
     xdg.mime.defaultApplications = {
