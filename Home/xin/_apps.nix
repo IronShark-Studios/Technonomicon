@@ -19,7 +19,6 @@
     cursor-style-blink = false
 
     shell-integration-features = no-cursor
-    login-shell = true
 
     window-padding-x = 8
     window-padding-y = 6
