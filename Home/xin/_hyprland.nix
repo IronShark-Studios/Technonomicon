@@ -38,7 +38,6 @@
         natural_scroll = false
         tap-to-click = true
         disable_while_typing = true
-        scroll_method = no_scroll
         middle_button_emulation = false
       }
     }
