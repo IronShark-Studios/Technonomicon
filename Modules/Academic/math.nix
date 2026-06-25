@@ -12,7 +12,7 @@
       gnuplot
       lean4
       gap
-      sagemath
+      # sagemath  # not in nixpkgs at this nixos-unstable rev; use distrobox as stopgap
 
       # Topology
       polymake      # polyhedral / combinatorial geometry
