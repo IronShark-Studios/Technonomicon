@@ -1,7 +1,5 @@
 { inputs, ... }: {
   flake.nixosModules.Tn-hyprland = { pkgs, ... }: {
-    imports = [ inputs.hyprland.nixosModules.default ];
-
     programs.hyprland = {
       enable = true;
       withUWSM = true;
