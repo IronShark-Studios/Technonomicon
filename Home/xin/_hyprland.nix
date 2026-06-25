@@ -10,15 +10,6 @@
     # Fallback: auto-detect
     monitor = ,preferred,auto,auto
 
-    # ── Source Plugins ───────────────────────────────────────────────────────────
-    plugin {
-      hyprscrolling {
-        column_default_width = one
-        column_widths = one two maximized
-        focus_wrap = false
-      }
-    }
-
     plugin:dynamic-cursors {
       enabled = true
       mode = none
