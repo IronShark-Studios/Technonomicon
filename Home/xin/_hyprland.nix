@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   home.file.".config/hypr/hyprland.conf".text = ''
     # ── Monitors ────────────────────────────────────────────────────────────────
     # Akmon: update to actual output from `hyprctl monitors`
