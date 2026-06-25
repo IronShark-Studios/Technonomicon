@@ -9,7 +9,7 @@
         openscad
         openscad-lsp
         graphviz
-        cura-appimage
+        # cura-appimage  # broken at this nixpkgs rev (appimage extract API change)
         obs-studio
         vlc
         inkscape-with-extensions
