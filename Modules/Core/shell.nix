@@ -102,6 +102,7 @@
       gitFull
       git-lfs
       ghostty
+      claude-code
       btop
       nmon
       kmon
