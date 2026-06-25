@@ -10,6 +10,8 @@
     # Fallback: auto-detect
     monitor = ,preferred,auto,auto
 
+    plugin = ${pkgs.hyprlandPlugins.hypr-dynamic-cursors}/lib/libhypr-dynamic-cursors.so
+
     plugin:dynamic-cursors {
       enabled = true
       mode = none
