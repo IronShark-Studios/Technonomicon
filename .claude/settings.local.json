@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:github.com)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(nh os *)",
+      "Bash(nix build *)",
+      "Bash(grep -v \"^$\\\\|warning:\\\\|trace:\\\\|evaluation\")",
+      "Bash(nix log *)",
+      "Bash(nix show-derivation *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); args=list\\(d.values\\(\\)\\)[0]['args']; print\\('\\\\n'.join\\(args\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); v=list\\(d.values\\(\\)\\)[0]; [print\\(k\\) for k in v.keys\\(\\)]\")",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
