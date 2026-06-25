@@ -63,7 +63,7 @@
       border_size = 2
       col.active_border = rgba(00FFFFee)
       col.inactive_border = rgba(1D232Faa)
-      layout = scroller
+      layout = dwindle
     }
 
     # ── Decorations ──────────────────────────────────────────────────────────────
