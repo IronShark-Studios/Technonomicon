@@ -168,9 +168,6 @@
     # Keyboard pointer
     bind = $mod, K, exec, wl-kbptr
 
-    # Overview
-    bind = $mod, TAB, hyprexpo:expo, toggle
-
     # Focus navigation (Colemak-DH home row: m/n/e/i = ←/↓/↑/→)
     bind = $mod, m, movefocus, l
     bind = $mod, i, movefocus, r
@@ -182,12 +179,6 @@
     bind = $mod SHIFT, i, movewindow, r
     bind = $mod SHIFT, n, movewindow, d
     bind = $mod SHIFT, e, movewindow, u
-
-    # hyprscrolling column navigation
-    bind = $mod, bracketleft,  scroller:movefocus, begin
-    bind = $mod, bracketright, scroller:movefocus, end
-    bind = $mod, equal,        scroller:cyclewidth, next
-    bind = $mod, minus,        scroller:cyclewidth, prev
 
     # Resize (hold mod+alt + direction)
     binde = $mod ALT, m, resizeactive, -40 0
