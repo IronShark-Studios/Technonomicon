@@ -85,16 +85,16 @@
     }
 
     # ── Window Rules ─────────────────────────────────────────────────────────────
-    windowrulev2 = workspace special:terminal silent, class:^(ghostty-scratchpad)$
-    windowrulev2 = float, class:^(ghostty-scratchpad)$
-    windowrulev2 = size 65% 60%, class:^(ghostty-scratchpad)$
-    windowrulev2 = center, class:^(ghostty-scratchpad)$
+    windowrule = workspace special:terminal silent, class:^(ghostty-scratchpad)$
+    windowrule = float, class:^(ghostty-scratchpad)$
+    windowrule = size 65% 60%, class:^(ghostty-scratchpad)$
+    windowrule = center, class:^(ghostty-scratchpad)$
 
-    windowrulev2 = workspace name:nvim silent, class:^(ghostty-nvim)$
+    windowrule = workspace name:nvim silent, class:^(ghostty-nvim)$
 
-    windowrulev2 = float, class:^(pavucontrol)$
-    windowrulev2 = float, class:^(blueman-manager)$
-    windowrulev2 = float, class:^(wl-kbptr)$
+    windowrule = float, class:^(pavucontrol)$
+    windowrule = float, class:^(blueman-manager)$
+    windowrule = float, class:^(wl-kbptr)$
 
     xwayland { force_zero_scaling = true; }
 
