@@ -22,6 +22,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
 
+
     lazyvim-nix.url = "github:pfassina/lazyvim-nix";
     lazyvim-nix.inputs.nixpkgs.follows = "nixpkgs";
 
