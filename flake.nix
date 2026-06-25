@@ -22,8 +22,8 @@
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
 
-    nixvim.url = "github:nix-community/nixvim";
-    nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    lazyvim-nix.url = "github:pfassina/lazyvim-nix";
+    lazyvim-nix.inputs.nixpkgs.follows = "nixpkgs";
 
     plover-flake.url = "github:openstenoproject/plover-flake";
   };
