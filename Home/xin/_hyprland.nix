@@ -1,182 +1,170 @@
 { pkgs, ... }: {
-  home.file.".config/hypr/hyprland.conf".text = ''
-    # ── Monitors ────────────────────────────────────────────────────────────────
-    # Akmon: update to actual output from `hyprctl monitors`
-    # monitor = DP-1, 2560x1440@144, 0x0, 1
+  home.file.".config/hypr/hyprland.lua".text = ''
+    -- ── Plugin ───────────────────────────────────────────────────────────────────
+    hl.plugin.load("${pkgs.hyprlandPlugins.hypr-dynamic-cursors}/lib/libhypr-dynamic-cursors.so")
 
-    # Kvasir ThinkPad T480s (HiDPI panel)
-    # monitor = eDP-1, 2560x1440@60, 0x0, 1.5
+    -- ── Monitor ──────────────────────────────────────────────────────────────────
+    -- Akmon:  hl.monitor({ output = "DP-1",  mode = "2560x1440@144", position = "0x0", scale = 1 })
+    -- Kvasir: hl.monitor({ output = "eDP-1", mode = "2560x1440@60",  position = "0x0", scale = 1.5 })
+    hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" })
 
-    # Fallback: auto-detect
-    monitor = ,preferred,auto,auto
+    -- ── Autostart ────────────────────────────────────────────────────────────────
+    hl.on("hyprland.start", function()
+        hl.exec_cmd("mako")
+        hl.exec_cmd("hypridle")
+        hl.exec_cmd("hyprpaper")
+        hl.exec_cmd("waybar")
+        hl.exec_cmd("ghostty --class=ghostty-scratchpad")
+        hl.exec_cmd("ghostty --class=ghostty-nvim -e nvim")
+        hl.exec_cmd("udiskie")
+        hl.exec_cmd("copyq")
+        hl.exec_cmd("fcitx5 -d")
+        hl.exec_cmd("aw-server")
+        hl.exec_cmd("aw-watcher-window")
+        hl.exec_cmd("aw-watcher-afk")
+    end)
 
-    plugin = ${pkgs.hyprlandPlugins.hypr-dynamic-cursors}/lib/libhypr-dynamic-cursors.so
+    -- ── Config ───────────────────────────────────────────────────────────────────
+    hl.config({
+        general = {
+            gaps_in     = 4,
+            gaps_out    = 8,
+            border_size = 2,
+            col = {
+                active_border   = "rgba(00FFFFee)",
+                inactive_border = "rgba(1D232Faa)",
+            },
+            layout = "dwindle",
+        },
+        decoration = {
+            rounding = 6,
+            blur = {
+                enabled = true,
+                size    = 4,
+                passes  = 2,
+            },
+        },
+        animations = {
+            enabled = true,
+        },
+        misc = {
+            disable_hyprland_logo    = true,
+            disable_splash_rendering = true,
+        },
+        input = {
+            kb_layout    = "us",
+            repeat_delay = 500,
+            repeat_rate  = 30,
+            touchpad = {
+                natural_scroll          = false,
+                tap_to_click            = true,
+                disable_while_typing    = true,
+                middle_button_emulation = false,
+            },
+        },
+        cursor = {
+            hide_on_key_press = true,
+            inactive_timeout  = 5,
+        },
+        xwayland = {
+            force_zero_scaling = true,
+        },
+    })
 
-    plugin:dynamic-cursors {
-      enabled = true
-      mode = none
+    hl.config({
+        plugin = {
+            ["dynamic-cursors"] = {
+                enabled = true,
+                mode    = "none",
+                shake   = {
+                    enabled   = true,
+                    threshold = 6.0,
+                    base      = 4.0,
+                    speed     = 4.0,
+                    timeout   = 2000,
+                    effects   = false,
+                },
+            },
+        },
+    })
 
-      shake {
-        enabled   = true
-        threshold = 6.0
-        base      = 4.0
-        speed     = 4.0
-        timeout   = 2000
-        effects   = false
-      }
-    }
+    -- ── Animations ───────────────────────────────────────────────────────────────
+    hl.curve("snappy", { type = "bezier", points = { {0.05, 0.9}, {0.1, 1.05} } })
+    hl.animation({ leaf = "windows",    enabled = true, speed = 3, bezier = "snappy" })
+    hl.animation({ leaf = "fade",       enabled = true, speed = 4, bezier = "default" })
+    hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "snappy" })
 
-    # ── Variables ────────────────────────────────────────────────────────────────
-    $mod = SUPER
+    -- ── Window Rules ─────────────────────────────────────────────────────────────
+    hl.window_rule({
+        match     = { class = "^ghostty-scratchpad$" },
+        workspace = "special:terminal silent",
+        float     = true,
+        size      = "65% 60%",
+        center    = true,
+    })
 
-    # ── Input ────────────────────────────────────────────────────────────────────
-    input {
-      kb_layout = us
-      repeat_delay = 500
-      repeat_rate = 30
-      touchpad {
-        natural_scroll = false
-        tap-to-click = true
-        disable_while_typing = true
-        middle_button_emulation = false
-      }
-    }
+    hl.window_rule({
+        match     = { class = "^ghostty-nvim$" },
+        workspace = "name:nvim silent",
+    })
 
-    # ── Cursor ───────────────────────────────────────────────────────────────────
-    cursor {
-      hide_on_key_press = true
-      inactive_timeout = 5
-    }
+    hl.window_rule({ match = { class = "^pavucontrol$" },     float = true })
+    hl.window_rule({ match = { class = "^blueman-manager$" }, float = true })
+    hl.window_rule({ match = { class = "^wl-kbptr$" },        float = true })
 
-    # ── General ──────────────────────────────────────────────────────────────────
-    general {
-      gaps_in = 4
-      gaps_out = 8
-      border_size = 2
-      col.active_border = rgba(00FFFFee)
-      col.inactive_border = rgba(1D232Faa)
-      layout = dwindle
-    }
+    -- ── Keybindings ──────────────────────────────────────────────────────────────
+    local mod = "SUPER"
 
-    # ── Decorations ──────────────────────────────────────────────────────────────
-    decoration {
-      rounding = 6
-      blur {
-        enabled = true
-        size = 4
-        passes = 2
-      }
-    }
+    -- Workspaces 1–9
+    for i = 1, 9 do
+        hl.bind(mod .. " + " .. i,         hl.dsp.focus({ workspace = i }))
+        hl.bind(mod .. " + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
+    end
 
-    # ── Animations ───────────────────────────────────────────────────────────────
-    animations {
-      enabled = true
-      bezier = snappy, 0.05, 0.9, 0.1, 1.05
-      animation = windows, 1, 3, snappy
-      animation = fade, 1, 4, default
-      animation = workspaces, 1, 4, snappy
-    }
+    -- Named workspace: Neovim (Space = code:57)
+    hl.bind(mod .. " + code:57", hl.dsp.focus({ workspace = "name:nvim" }))
 
-    # ── Misc ─────────────────────────────────────────────────────────────────────
-    misc {
-      disable_hyprland_logo = true
-      disable_splash_rendering = true
-    }
+    -- Window management
+    hl.bind(mod .. " + D",         hl.dsp.window.close())
+    hl.bind(mod .. " + W",         hl.dsp.window.float({ action = "toggle" }))
+    hl.bind(mod .. " + F",         hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+    hl.bind(mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "maximize",   action = "toggle" }))
 
-    # ── Window Rules ─────────────────────────────────────────────────────────────
-    windowrule = workspace special:terminal silent, class:^(ghostty-scratchpad)$
-    windowrule = float, class:^(ghostty-scratchpad)$
-    windowrule = size 65% 60%, class:^(ghostty-scratchpad)$
-    windowrule = center, class:^(ghostty-scratchpad)$
+    -- Launch
+    hl.bind(mod .. " + Return", hl.dsp.exec_cmd("anyrun"))
+    hl.bind(mod .. " + T",      hl.dsp.exec_cmd("ghostty"))
+    hl.bind(mod .. " + grave",  hl.dsp.workspace.toggle_special("terminal"))
 
-    windowrule = workspace name:nvim silent, class:^(ghostty-nvim)$
+    -- System
+    hl.bind(mod .. " + Q",         hl.dsp.exec_cmd("hyprlock"))
+    hl.bind(mod .. " + SHIFT + Q", hl.dsp.exec_cmd("wlogout"))
 
-    windowrule = float, class:^(pavucontrol)$
-    windowrule = float, class:^(blueman-manager)$
-    windowrule = float, class:^(wl-kbptr)$
+    -- Screenshot / screen tools
+    hl.bind(mod .. " + Y",         hl.dsp.exec_cmd("slurp | grim -g - - | wl-copy"))
+    hl.bind(mod .. " + SHIFT + Y", hl.dsp.exec_cmd("hyprshot -m region"))
+    hl.bind(mod .. " + CTRL + Y",  hl.dsp.exec_cmd("wf-recorder"))
+    hl.bind(mod .. " + P",         hl.dsp.exec_cmd("hyprpicker"))
 
-    xwayland { force_zero_scaling = true; }
+    -- Keyboard pointer
+    hl.bind(mod .. " + K", hl.dsp.exec_cmd("wl-kbptr"))
 
-    # ── Autostart ────────────────────────────────────────────────────────────────
-    exec-once = mako
-    exec-once = hypridle
-    exec-once = hyprpaper
-    exec-once = waybar
-    exec-once = ghostty --class=ghostty-scratchpad
-    exec-once = ghostty --class=ghostty-nvim -e nvim
-    exec-once = udiskie
-    exec-once = copyq
-    exec-once = fcitx5 -d
-    exec-once = aw-server
-    exec-once = aw-watcher-window
-    exec-once = aw-watcher-afk
+    -- Focus navigation (Colemak-DH home row: m/n/e/i = ←/↓/↑/→)
+    hl.bind(mod .. " + m", hl.dsp.focus({ direction = "left" }))
+    hl.bind(mod .. " + i", hl.dsp.focus({ direction = "right" }))
+    hl.bind(mod .. " + n", hl.dsp.focus({ direction = "down" }))
+    hl.bind(mod .. " + e", hl.dsp.focus({ direction = "up" }))
 
-    # ── Keybindings ──────────────────────────────────────────────────────────────
+    -- Move windows
+    hl.bind(mod .. " + SHIFT + m", hl.dsp.window.move({ direction = "left" }))
+    hl.bind(mod .. " + SHIFT + i", hl.dsp.window.move({ direction = "right" }))
+    hl.bind(mod .. " + SHIFT + n", hl.dsp.window.move({ direction = "down" }))
+    hl.bind(mod .. " + SHIFT + e", hl.dsp.window.move({ direction = "up" }))
 
-    # Workspaces 1–9
-    bind = $mod, 1, workspace, 1
-    bind = $mod, 2, workspace, 2
-    bind = $mod, 3, workspace, 3
-    bind = $mod, 4, workspace, 4
-    bind = $mod, 5, workspace, 5
-    bind = $mod, 6, workspace, 6
-    bind = $mod, 7, workspace, 7
-    bind = $mod, 8, workspace, 8
-    bind = $mod, 9, workspace, 9
-    bind = $mod SHIFT, 1, movetoworkspace, 1
-    bind = $mod SHIFT, 2, movetoworkspace, 2
-    bind = $mod SHIFT, 3, movetoworkspace, 3
-    bind = $mod SHIFT, 4, movetoworkspace, 4
-    bind = $mod SHIFT, 5, movetoworkspace, 5
-    bind = $mod SHIFT, 6, movetoworkspace, 6
-    bind = $mod SHIFT, 7, movetoworkspace, 7
-    bind = $mod SHIFT, 8, movetoworkspace, 8
-    bind = $mod SHIFT, 9, movetoworkspace, 9
-
-    # Named workspace: persistent Neovim session ($mod+N)
-    bind = $mod, code:57, workspace, name:nvim
-
-    # Window management
-    bind = $mod, D, killactive
-    bind = $mod, W, togglefloating
-    bind = $mod, F, fullscreen
-    bind = $mod SHIFT, F, fullscreen, 1
-
-    # Launch
-    bind = $mod, Return, exec, anyrun
-    bind = $mod, T, exec, ghostty
-    bind = $mod, grave, togglespecialworkspace, terminal
-
-    # System
-    bind = $mod, Q, exec, hyprlock
-    bind = $mod SHIFT, Q, exec, wlogout
-
-    # Screenshot / screen tools
-    bind = $mod, Y, exec, slurp | grim -g - - | wl-copy
-    bind = $mod SHIFT, Y, exec, hyprshot -m region
-    bind = $mod CTRL, Y, exec, wf-recorder
-    bind = $mod, P, exec, hyprpicker
-
-    # Keyboard pointer
-    bind = $mod, K, exec, wl-kbptr
-
-    # Focus navigation (Colemak-DH home row: m/n/e/i = ←/↓/↑/→)
-    bind = $mod, m, movefocus, l
-    bind = $mod, i, movefocus, r
-    bind = $mod, n, movefocus, d
-    bind = $mod, e, movefocus, u
-
-    # Move windows
-    bind = $mod SHIFT, m, movewindow, l
-    bind = $mod SHIFT, i, movewindow, r
-    bind = $mod SHIFT, n, movewindow, d
-    bind = $mod SHIFT, e, movewindow, u
-
-    # Resize (hold mod+alt + direction)
-    binde = $mod ALT, m, resizeactive, -40 0
-    binde = $mod ALT, i, resizeactive,  40 0
-    binde = $mod ALT, n, resizeactive, 0  40
-    binde = $mod ALT, e, resizeactive, 0 -40
+    -- Resize (repeating)
+    hl.bind(mod .. " + ALT + m", hl.dsp.window.resize({ x = -40, y =   0 }), { repeating = true })
+    hl.bind(mod .. " + ALT + i", hl.dsp.window.resize({ x =  40, y =   0 }), { repeating = true })
+    hl.bind(mod .. " + ALT + n", hl.dsp.window.resize({ x =   0, y =  40 }), { repeating = true })
+    hl.bind(mod .. " + ALT + e", hl.dsp.window.resize({ x =   0, y = -40 }), { repeating = true })
   '';
 
   programs.hyprlock = {
