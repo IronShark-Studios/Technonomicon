@@ -96,6 +96,7 @@
           hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("systemctl poweroff"))
           hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exit())
           hl.bind(mainMod .. " + F",         hl.dsp.window.fullscreen())
+          hl.bind(mainMod .. " + M",         hl.dsp.exec_cmd("${toggleWlKbptr}"))
 
           hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left"  }))
           hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down"  }))
