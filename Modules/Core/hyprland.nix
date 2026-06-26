@@ -6,60 +6,58 @@
     xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
     xdg.portal.configPackages = [ pkgs.xdg-desktop-portal-hyprland ];
 
-    home-manager.users.xin.home.file.".config/hypr/hyprland.conf".text = ''
-      monitor=,preferred,auto,1
+    home-manager.users.xin.home.file.".config/hypr/hyprland.lua".text = ''
+      hl.monitor({
+        output   = "",
+        mode     = "preferred",
+        position = "auto",
+        scale    = "auto",
+      })
 
-      $mod = SUPER
-      $terminal = ghostty
+      local terminal = "ghostty"
+      local mainMod  = "SUPER"
 
-      input {
-        kb_layout = us
-        touchpad {
-          natural_scroll = true
-        }
-      }
+      hl.env("XCURSOR_SIZE", "24")
+      hl.env("HYPRCURSOR_SIZE", "24")
 
-      general {
-        layout = dwindle
-      }
+      hl.config({
+        input = {
+          kb_layout = "us",
+          follow_mouse = 1,
+          touchpad = {
+            natural_scroll = true,
+          },
+        },
+        general = {
+          layout = "dwindle",
+        },
+        dwindle = {
+          preserve_split = true,
+        },
+      })
 
-      bind = $mod, Return, exec, $terminal
-      bind = $mod SHIFT, Q, killactive
-      bind = $mod SHIFT, E, exit
-      bind = $mod, F, fullscreen
+      hl.bind(mainMod .. " + Return",    hl.dsp.exec_cmd(terminal))
+      hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.close())
+      hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exit())
+      hl.bind(mainMod .. " + F",         hl.dsp.window.fullscreen())
 
-      bind = $mod, H, movefocus, l
-      bind = $mod, J, movefocus, d
-      bind = $mod, K, movefocus, u
-      bind = $mod, L, movefocus, r
+      hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
+      hl.bind(mainMod .. " + J", hl.dsp.focus({ direction = "down" }))
+      hl.bind(mainMod .. " + K", hl.dsp.focus({ direction = "up" }))
+      hl.bind(mainMod .. " + L", hl.dsp.focus({ direction = "right" }))
 
-      bind = $mod SHIFT, H, movewindow, l
-      bind = $mod SHIFT, J, movewindow, d
-      bind = $mod SHIFT, K, movewindow, u
-      bind = $mod SHIFT, L, movewindow, r
+      hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "left" }))
+      hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "down" }))
+      hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "up" }))
+      hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
 
-      bind = $mod, 1, workspace, 1
-      bind = $mod, 2, workspace, 2
-      bind = $mod, 3, workspace, 3
-      bind = $mod, 4, workspace, 4
-      bind = $mod, 5, workspace, 5
-      bind = $mod, 6, workspace, 6
-      bind = $mod, 7, workspace, 7
-      bind = $mod, 8, workspace, 8
-      bind = $mod, 9, workspace, 9
+      for i = 1, 9 do
+        hl.bind(mainMod .. " + " .. i,         hl.dsp.focus({ workspace = i }))
+        hl.bind(mainMod .. " + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
+      end
 
-      bind = $mod SHIFT, 1, movetoworkspace, 1
-      bind = $mod SHIFT, 2, movetoworkspace, 2
-      bind = $mod SHIFT, 3, movetoworkspace, 3
-      bind = $mod SHIFT, 4, movetoworkspace, 4
-      bind = $mod SHIFT, 5, movetoworkspace, 5
-      bind = $mod SHIFT, 6, movetoworkspace, 6
-      bind = $mod SHIFT, 7, movetoworkspace, 7
-      bind = $mod SHIFT, 8, movetoworkspace, 8
-      bind = $mod SHIFT, 9, movetoworkspace, 9
-
-      bindm = $mod, mouse:272, movewindow
-      bindm = $mod, mouse:273, resizewindow
+      hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+      hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
     '';
   };
 }
