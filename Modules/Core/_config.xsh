@@ -72,11 +72,6 @@ aliases['cpv'] = 'rsync -h --progress'  # Modern rsync copy with progress bar
 # =============================================================================
 @events.on_chdir
 def auto_ls(olddir, newdir, **kw):
-    # Vterm Directory Tracking
-    if 'vterm' in os.environ.get('INSIDE_EMACS', ''):
-        print(f"\x1b]51;A{newdir}\x1b\\", end='', flush=True)
-
-    # Automatic directory content list on every 'cd'
     os.system("eza --icons --oneline --group-directories-first --color=always")
 
 # =============================================================================
