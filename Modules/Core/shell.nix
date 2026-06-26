@@ -3,7 +3,6 @@
 
     programs.xonsh = {
       enable = true;
-      config = builtins.readFile ./_config.xsh;
       extraPackages = ps: [
         (ps.buildPythonPackage {
           pname = "xontrib-fzf-widgets";
