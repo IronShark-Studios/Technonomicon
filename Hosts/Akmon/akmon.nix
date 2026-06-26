@@ -18,7 +18,7 @@
 
       self.nixosModules.Tn-nix
       self.nixosModules.Tn-desktop
-      self.nixosModules.Tn-emacs
+      self.nixosModules.Tn-helix
       self.nixosModules.Tn-web-browsers
       self.nixosModules.Tn-web-apps
       self.nixosModules.Tn-network
