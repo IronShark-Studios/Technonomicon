@@ -75,7 +75,7 @@
               fullscreen_on_one_column = true,
             },
             cursor = {
-              inactive_timeout = 3,
+              inactive_timeout = 0.5,
             },
           })
 
