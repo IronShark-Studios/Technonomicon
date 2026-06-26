@@ -147,13 +147,13 @@
                 active_border   = "rgba(00ffffee)",
                 inactive_border = "rgba(595959aa)",
               },
-              layout = "dwindle",
+              layout = "scrolling",
             },
             decoration = {
               rounding = 8,
             },
-            dwindle = {
-              preserve_split = true,
+            scrolling = {
+              fullscreen_on_one_column = true,
             },
           })
 
