@@ -39,14 +39,27 @@
       nix-direnv.enable = true;
     };
 
-    environment.etc."gitconfig".source = ./_gitconfig;
-    environment.etc."gitignore_global".text = ''
-      *~
-    .*~
-    #*#
-    \#*\#
-    .*.swp
-    '';
+    home-manager.users.xin = {
+      home.file.".config/xonsh/rc.xsh".source = ./_config.xsh;
+
+      programs.git = {
+        enable = true;
+        userName = "xin";
+        userEmail = "git@ironshark.org";
+        aliases = {
+          send = "! git status && echo -n 'Commit Message: ' && read -r CommitMessage && git add . && git commit -m \"$CommitMessage\" && git push";
+          unstage = "restore --staged";
+          history = "log --graph --pretty=oneline";
+          last = "log -1 HEAD";
+        };
+        extraConfig = {
+          init.defaultBranch = "main";
+          pull.rebase = false;
+          push.default = "current";
+        };
+        ignores = [ "*~" ".*~" "#*#" "\\#*\\#" ".*.swp" ];
+      };
+    };
 
     programs.starship = {
       enable = true;
