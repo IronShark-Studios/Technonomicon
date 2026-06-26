@@ -78,15 +78,6 @@ def auto_ls(olddir, newdir, **kw):
 # 6. CUSTOM SHELL UTILITIES & WRAPPERS
 # =============================================================================
 
-# --- Emacs vterm file opener ---
-def _eo_wrapper(args):
-    if not args:
-        print("Usage: eo <filename>")
-        return 1
-    file_path = os.path.abspath(args[0])
-    print(f"\x1b]51;Efind-file {file_path}\x1b\\", end='')
-aliases['eo'] = _eo_wrapper
-
 # --- Clipboard Utilities (Replaces OMZ 'copypath' & 'copyfile') ---
 def _copypath(args):
     cwd = os.getcwd()
