@@ -214,6 +214,7 @@
           general {
             lock_cmd         = hyprlock
             before_sleep_cmd = hyprlock
+            after_sleep_cmd  = hyprctl dispatch dpms on
           }
 
           listener {
@@ -223,7 +224,7 @@
 
           listener {
             timeout    = 600
-            on-timeout = systemctl suspend
+            on-timeout = bash -c '[ "$(cat /sys/class/power_supply/AC*/online 2>/dev/null | head -1)" = "0" ] && systemctl suspend'
           }
         '';
       };
