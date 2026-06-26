@@ -352,11 +352,6 @@
           }
         '';
 
-        ".config/wl-kbptr/config".text = ''
-          [general]
-          modes=floating
-        '';
-
         ".config/anyrun/config.ron".text = ''
           Config(
               x: Fraction(0.5),
