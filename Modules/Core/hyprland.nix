@@ -108,10 +108,11 @@
           hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
         '';
 
+        ".config/hypr/background.jpg".source = ../../background.jpg;
+
         ".config/hypr/hyprpaper.conf".text = ''
-          # Place wallpaper at ~/.config/hypr/wallpaper.png and uncomment:
-          # preload  = ~/.config/hypr/wallpaper.png
-          # wallpaper = ,~/.config/hypr/wallpaper.png
+          preload  = ~/.config/hypr/background.jpg
+          wallpaper = ,~/.config/hypr/background.jpg
           splash = false
           ipc    = off
         '';
