@@ -1,5 +1,14 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-hyprland = { pkgs, ... }: {
+  flake.nixosModules.Tn-hyprland = { pkgs, ... }:
+  let
+    toggleWlKbptr = pkgs.writeShellScript "wl-kbptr-toggle" ''
+      if pgrep -x wl-kbptr > /dev/null; then
+        pkill -x wl-kbptr
+      else
+        wl-kbptr
+      fi
+    '';
+  in {
 
     programs.hyprland.enable = true;
     programs.hyprlock.enable = true;
