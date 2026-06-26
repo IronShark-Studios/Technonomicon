@@ -106,6 +106,7 @@
               "input"
               "dialout"
               "plugdev"
+              "networkmanager"
             ];
           };
         };
