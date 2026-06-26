@@ -89,6 +89,9 @@
       ELECTRON_OZONE_PLATFORM_HINT = "auto";
       QT_QPA_PLATFORM = "wayland";
       QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+      QT_AUTO_SCREEN_SCALE_FACTOR = "0";
+      QT_SCALE_FACTOR = "1";
+      GDK_SCALE = "1";
       NIXPKGS_ALLOW_UNFREE = "1";
     };
 
