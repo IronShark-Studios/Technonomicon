@@ -45,8 +45,8 @@
   search_url_a https://arxiv.org/search/?query=
   search_url_l http://libgen.rs/search.php?req=
 
-  # 3. Inverse Search (Click PDF -> Jump to Doom Emacs)
-  inverse_search_command emacsclient -n +%2 "%1"
+  # 3. Inverse Search (Click PDF -> Jump to Helix)
+  inverse_search_command hx "%1:%2"
     '';
 
     home-manager.users.xin.home.file.".config/sioyek/keys_user.config".text = ''
