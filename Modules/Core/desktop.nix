@@ -97,7 +97,6 @@
       slurp
       wtype
       blueman
-      swaylock
       gromit-mpx
       pavucontrol
       wl-clipboard
