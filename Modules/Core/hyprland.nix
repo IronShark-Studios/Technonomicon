@@ -44,10 +44,6 @@
             on-click = "activate";
           };
 
-          "hyprland/window" = {
-            max-length = 60;
-          };
-
           clock = {
             format         = "{:%a %b %d  %H:%M}";
             tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
