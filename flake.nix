@@ -19,13 +19,6 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
-    ewm.url = "git+https://codeberg.org/ezemtsov/ewm";
-    app-launcher = {
-      url = "github:SebastienWae/app-launcher";
-      flake = false;
-    };
-
     plover-flake.url = "github:openstenoproject/plover-flake";
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
