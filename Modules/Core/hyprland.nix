@@ -35,7 +35,7 @@
           layer    = "top";
           position = "top";
 
-          modules-left   = [ "hyprland/workspaces" "hyprland/window" ];
+          modules-left   = [ "hyprland/workspaces" ];
           modules-center = [ "clock" ];
           modules-right  = [ "wireplumber" "battery" "tray" ];
 
