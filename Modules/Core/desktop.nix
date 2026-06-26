@@ -133,48 +133,45 @@
       };
     };
 
-    programs.dconf = {
-      enable = true;
-      profiles.user.databases = [{
-        settings = {
-          "org/gnome/desktop/interface" = {
-            color-scheme = "prefer-dark";
-            gtk-theme = "Adwaita-dark";
-          };
-          "org/virt-manager/virt-manager/connections" = {
-            autoconnect = [ "qemu:///system" ];
-            uris = [ "qemu:///system" ];
-          };
+    programs.dconf.enable = true;
+
+    home-manager.users.xin = {
+      dconf.settings = {
+        "org/gnome/desktop/interface" = {
+          color-scheme = "prefer-dark";
+          gtk-theme = "Adwaita-dark";
         };
-      }];
-    };
+        "org/virt-manager/virt-manager/connections" = {
+          autoconnect = [ "qemu:///system" ];
+          uris = [ "qemu:///system" ];
+        };
+      };
 
-    environment.etc = {
-      "xdg/user-dirs.defaults".text = ''
-        DESKTOP=Archive
-        DOWNLOAD=Downloads
-        TEMPLATES=Projects
-        PUBLICSHARE=Projects
-        DOCUMENTS=Media
-        MUSIC=Media
-        PICTURES=Media
-        VIDEOS=Media
-      '';
-      "xdg/fcitx5/config".source = ./_fcitx5-config;
+      gtk = {
+        enable = true;
+        theme.name = "Adwaita-dark";
+        gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
+        gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
+      };
 
-      "xdg/gromit-mpx.cfg".source = ./_gromit-mpx.cfg;
-      "xdg/gromit-mpx.ini".source = ./_gromit-mpx.ini;
+      xdg.userDirs = {
+        enable = true;
+        createDirectories = false;
+        desktop     = "$HOME/Archive";
+        download    = "$HOME/Downloads";
+        templates   = "$HOME/Projects";
+        publicShare = "$HOME/Projects";
+        documents   = "$HOME/Media";
+        music       = "$HOME/Media";
+        pictures    = "$HOME/Media";
+        videos      = "$HOME/Media";
+      };
 
-      "gtk-3.0/settings.ini".text = ''
-        [Settings]
-        gtk-theme-name=Adwaita-dark
-        gtk-application-prefer-dark-theme=1
-      '';
-      "gtk-4.0/settings.ini".text = ''
-        [Settings]
-        gtk-theme-name=Adwaita-dark
-        gtk-application-prefer-dark-theme=1
-      '';
+      home.file = {
+        ".config/fcitx5/config".source = ./_fcitx5-config;
+        ".config/gromit-mpx.cfg".source = ./_gromit-mpx.cfg;
+        ".config/gromit-mpx.ini".source = ./_gromit-mpx.ini;
+      };
     };
 
     services.logind.settings.Login.HandleSuspend = "ignore";
