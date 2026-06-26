@@ -151,12 +151,16 @@
         enable = true;
         theme.name = "Adwaita-dark";
         gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
-        gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
+        gtk4 = {
+          theme.name = "Adwaita-dark";
+          extraConfig.gtk-application-prefer-dark-theme = 1;
+        };
       };
 
       xdg.userDirs = {
         enable = true;
         createDirectories = false;
+        setSessionVariables = true;
         desktop     = "$HOME/Archive";
         download    = "$HOME/Downloads";
         templates   = "$HOME/Projects";
