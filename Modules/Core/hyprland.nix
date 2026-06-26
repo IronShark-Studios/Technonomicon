@@ -5,7 +5,10 @@
       if pgrep -x wl-kbptr > /dev/null; then
         pkill -x wl-kbptr
       else
-        wl-kbptr
+        hyprctl clients -j \
+          | ${pkgs.jq}/bin/jq -r \
+              '.[] | select(.mapped) | "\(.at[0]) \(.at[1]) \(.size[0]) \(.size[1])"' \
+          | wl-kbptr
       fi
     '';
   in {
