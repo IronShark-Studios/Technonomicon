@@ -44,15 +44,15 @@
 
       programs.git = {
         enable = true;
-        userName = "xin";
-        userEmail = "git@ironshark.org";
-        aliases = {
-          send = "! git status && echo -n 'Commit Message: ' && read -r CommitMessage && git add . && git commit -m \"$CommitMessage\" && git push";
-          unstage = "restore --staged";
-          history = "log --graph --pretty=oneline";
-          last = "log -1 HEAD";
-        };
-        extraConfig = {
+        settings = {
+          user.name = "xin";
+          user.email = "git@ironshark.org";
+          alias = {
+            send = "! git status && echo -n 'Commit Message: ' && read -r CommitMessage && git add . && git commit -m \"$CommitMessage\" && git push";
+            unstage = "restore --staged";
+            history = "log --graph --pretty=oneline";
+            last = "log -1 HEAD";
+          };
           init.defaultBranch = "main";
           pull.rebase = false;
           push.default = "current";
