@@ -15,7 +15,7 @@
 
       inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t480s
       inputs.sops-nix.nixosModules.sops
-      inputs.hjem.nixosModules.hjem
+      inputs.home-manager.nixosModules.home-manager
 
       self.nixosModules.Tn-nix
       self.nixosModules.Tn-desktop
