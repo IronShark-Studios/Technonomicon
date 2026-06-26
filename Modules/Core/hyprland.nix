@@ -74,22 +74,8 @@
             scrolling = {
               fullscreen_on_one_column = true,
             },
-            plugin = {
-              ["hypr-dynamic-cursors"] = {
-                enabled   = true,
-                threshold = 2,
-                shake = {
-                  enabled  = true,
-                  factor   = 1.5,
-                  base     = 0.5,
-                  slowdown = 0.85,
-                },
-                hide = {
-                  enabled   = true,
-                  hideDelay = 0,
-                  showDelay = 0,
-                },
-              },
+            cursor = {
+              inactive_timeout = 3,
             },
           })
 
