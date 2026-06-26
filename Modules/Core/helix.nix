@@ -68,6 +68,10 @@
     ];
 
     home-manager.users.xin.home.file = {
+      ".config/ghostty/config".text = ''
+        confirm-close-surface = false
+      '';
+
       ".config/helix/config.toml".text = ''
         theme = "onedark"
 
