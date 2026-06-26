@@ -74,11 +74,11 @@
 
         networking.hostName = "Akmon";
 
-        hjem = {
-          extraModules = [ inputs.hjem-impure.hjemModules.default ];
-          users.xin = {
-            impure.enable = true;
-          };
+        home-manager = {
+          useGlobalPkgs = true;
+          useUserPackages = true;
+          extraSpecialArgs = { inherit inputs pkgs-stable; };
+          users.xin.home.stateVersion = "23.11";
         };
 
         users = {
