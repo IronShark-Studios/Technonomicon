@@ -88,6 +88,7 @@
               "input"
               "dialout"
               "plugdev"
+              "networkmanager"
             ];
           };
         };
