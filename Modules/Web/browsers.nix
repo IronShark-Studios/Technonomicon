@@ -5,7 +5,7 @@
 
     services.flatpak = {
       enable = true;
-      remotes = [{ name = "flathub"; location = "https://dl.flathub.org/repo/"; }];
+      remotes = [{ name = "flathub"; location = "https://flathub.org/repo/flathub.flatpakrepo"; }];
       packages = [{ appId = "engineer.atlas.Nyxt"; origin = "flathub"; }];
     };
 
