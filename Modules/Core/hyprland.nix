@@ -363,6 +363,26 @@
               }
           }
         '';
+
+        ".config/anyrun/config.ron".text = ''
+          Config(
+              x: Fraction(0.5),
+              y: Fraction(0.3),
+              width: Absolute(800),
+              hide_icons: false,
+              ignore_exclusive_zones: false,
+              layer: Overlay,
+              hide_plugin_info: true,
+              close_on_click: false,
+              show_results_immediately: false,
+              max_entries: Some(8),
+              plugins: [
+                  "${pkgs.anyrun}/lib/libapplications.so",
+                  "${pkgs.anyrun}/lib/librink.so",
+                  "${pkgs.anyrun}/lib/libshell.so",
+              ],
+          )
+        '';
       };
     };
   };
