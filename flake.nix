@@ -29,6 +29,8 @@
     };
 
     plover-flake.url = "github:openstenoproject/plover-flake";
+
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
   };
 
   outputs = inputs@{ self, flake-parts, import-tree, ... }:
