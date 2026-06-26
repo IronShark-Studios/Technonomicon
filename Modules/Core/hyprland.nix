@@ -48,6 +48,8 @@
             hl.exec_cmd("hypridle")
             hl.exec_cmd("quickshell")
             hl.exec_cmd("nm-applet --indicator")
+            hl.exec_cmd("udiskie --tray")
+            hl.exec_cmd("blueman-applet")
           end)
 
           hl.plugin.load("${pkgs.hyprlandPlugins.hypr-dynamic-cursors}/lib/libhypr-dynamic-cursors.so")
