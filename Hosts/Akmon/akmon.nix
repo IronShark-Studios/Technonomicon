@@ -77,7 +77,7 @@
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
-          extraSpecialArgs = { inherit inputs pkgs-stable; };
+          extraSpecialArgs = { inherit inputs; };
           users.xin.home.stateVersion = "23.11";
         };
 
