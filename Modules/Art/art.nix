@@ -42,7 +42,7 @@
         })
       ];
 
-      environment.etc."xdg/OpenSCAD/OpenSCAD.conf".text = ''
+      home-manager.users.xin.home.file.".config/OpenSCAD/OpenSCAD.conf".text = ''
         [General]
         recentFileList=@Invalid()
 
