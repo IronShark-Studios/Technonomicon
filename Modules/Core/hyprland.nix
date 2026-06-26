@@ -8,7 +8,7 @@
     xdg.portal.configPackages = [ pkgs.xdg-desktop-portal-hyprland ];
 
     environment.systemPackages = with pkgs; [
-      rofi
+      anyrun
       hyprpaper
       hypridle
       bibata-cursors
