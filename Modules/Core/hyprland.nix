@@ -218,11 +218,6 @@
           }
 
           listener {
-            timeout    = 300
-            on-timeout = hyprlock
-          }
-
-          listener {
             timeout    = 600
             on-timeout = bash -c '[ "$(cat /sys/class/power_supply/AC*/online 2>/dev/null | head -1)" = "0" ] && systemctl suspend'
           }
