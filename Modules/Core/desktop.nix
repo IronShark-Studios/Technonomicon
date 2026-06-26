@@ -82,7 +82,7 @@
       KERNEL=="uinput", GROUP="input", MODE="0660", OPTIONS+="static_node=uinput"
     '';
 
-    security.pam.services.swaylock = {};
+    security.sudo.extraConfig = "Defaults pwfeedback\n";
 
     environment.sessionVariables = {
       NIXOS_OZONE_WL = "1";
