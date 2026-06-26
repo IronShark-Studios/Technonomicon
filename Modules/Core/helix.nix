@@ -77,6 +77,8 @@
         pane_frames false
         simplified_ui true
         default_layout "compact"
+        show_startup_tips false
+        show_release_notes false
       '';
 
       ".config/helix/config.toml".text = ''
