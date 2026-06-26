@@ -73,6 +73,12 @@
         command = zellij
       '';
 
+      ".config/zellij/config.kdl".text = ''
+        pane_frames false
+        simplified_ui true
+        default_layout "compact"
+      '';
+
       ".config/helix/config.toml".text = ''
         theme = "nord"
 
