@@ -12,6 +12,8 @@
       hyprpaper
       hypridle
       bibata-cursors
+      quickshell
+      networkmanagerapplet
     ];
 
     home-manager.users.xin = {
@@ -22,93 +24,6 @@
         size       = 24;
         gtk.enable = true;
         x11.enable = true;
-      };
-
-      programs.waybar = {
-        enable = true;
-        systemd = {
-          enable  = true;
-          targets = [ "hyprland-session.target" ];
-        };
-
-        settings = [{
-          layer    = "top";
-          position = "top";
-
-          modules-left   = [ "hyprland/workspaces" ];
-          modules-center = [ "clock" ];
-          modules-right  = [ "wireplumber" "battery" "tray" ];
-
-          "hyprland/workspaces" = {
-            format   = "{id}";
-            on-click = "activate";
-          };
-
-          clock = {
-            format         = "{:%a %b %d  %H:%M}";
-            tooltip-format = "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>";
-          };
-
-          wireplumber = {
-            format       = "  {volume}%";
-            format-muted = "  muted";
-            on-click     = "pavucontrol";
-          };
-
-          battery = {
-            states          = { warning = 30; critical = 15; };
-            format          = "{icon}  {capacity}%";
-            format-charging = "  {capacity}%";
-            format-icons    = [ "" "" "" "" "" ];
-          };
-
-          tray = {
-            spacing = 10;
-          };
-        }];
-
-        style = ''
-          * {
-            font-family: "JetBrains Mono", "Symbols Nerd Font";
-            font-size: 13px;
-            border: none;
-            border-radius: 0;
-            min-height: 0;
-          }
-          window#waybar {
-            background-color: rgba(10, 10, 20, 0.92);
-            color: #cdd6f4;
-            border-bottom: 2px solid rgba(0, 255, 255, 0.3);
-          }
-          #workspaces button {
-            padding: 0 8px;
-            color: #666;
-            background: transparent;
-          }
-          #workspaces button.active {
-            color: #00ffff;
-            border-bottom: 2px solid #00ffff;
-          }
-          #workspaces button:hover {
-            color: #cdd6f4;
-            background: rgba(255, 255, 255, 0.05);
-          }
-          #window {
-            padding: 0 10px;
-            color: #999;
-          }
-          #clock {
-            color: #cdd6f4;
-            font-weight: bold;
-          }
-          #wireplumber, #battery, #tray {
-            padding: 0 12px;
-            color: #cdd6f4;
-          }
-          #battery.warning  { color: #f9e2af; }
-          #battery.critical { color: #f38ba8; }
-          #battery.charging { color: #a6e3a1; }
-        '';
       };
 
       home.file = {
@@ -130,7 +45,8 @@
           hl.on("hyprland.start", function()
             hl.exec_cmd("hyprpaper")
             hl.exec_cmd("hypridle")
-            hl.exec_cmd("waybar")
+            hl.exec_cmd("quickshell")
+            hl.exec_cmd("nm-applet --indicator")
           end)
 
           hl.config({
@@ -220,6 +136,212 @@
           listener {
             timeout    = 600
             on-timeout = bash -c '[ "$(cat /sys/class/power_supply/AC*/online 2>/dev/null | head -1)" = "0" ] && systemctl suspend'
+          }
+        '';
+
+        ".config/quickshell/shell.qml".text = ''
+          import Quickshell
+
+          ShellRoot {
+              Variants {
+                  model: Quickshell.screens
+                  delegate: Bar {
+                      required property var modelData
+                      screen: modelData
+                  }
+              }
+
+              Notifications {}
+          }
+        '';
+
+        ".config/quickshell/Bar.qml".text = ''
+          pragma ComponentBehavior: Bound
+          import Quickshell
+          import Quickshell.Hyprland
+          import Quickshell.Services.SystemTray
+          import QtQuick
+          import QtQuick.Layouts
+
+          PanelWindow {
+              id: root
+              required property ShellScreen screen
+
+              anchors { top: true; left: true; right: true }
+              implicitHeight: 36
+              color: Qt.rgba(0.04, 0.04, 0.08, 0.92)
+
+              Rectangle {
+                  anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
+                  height: 1
+                  color: Qt.rgba(0, 1, 1, 0.3)
+              }
+
+              RowLayout {
+                  anchors { fill: parent; leftMargin: 8; rightMargin: 8 }
+                  spacing: 4
+
+                  Repeater {
+                      model: Hyprland.workspaces
+                      delegate: Item {
+                          id: wsBtn
+                          required property HyprlandWorkspace modelData
+                          implicitWidth: 28
+                          implicitHeight: 28
+
+                          Rectangle {
+                              anchors.centerIn: parent
+                              width: 22; height: 22; radius: 4
+                              color: wsBtn.modelData === Hyprland.focusedWorkspace
+                                  ? "#00ffff" : "transparent"
+
+                              Text {
+                                  anchors.centerIn: parent
+                                  text: wsBtn.modelData.id
+                                  color: wsBtn.modelData === Hyprland.focusedWorkspace
+                                      ? "#0a0a14" : "#555555"
+                                  font.pixelSize: 12
+                                  font.family: "JetBrains Mono"
+                                  font.bold: true
+                              }
+
+                              MouseArea {
+                                  anchors.fill: parent
+                                  onClicked: wsBtn.modelData.activate()
+                              }
+                          }
+                      }
+                  }
+
+                  Item { Layout.fillWidth: true }
+
+                  Text {
+                      id: clockText
+                      color: "#cdd6f4"
+                      font.pixelSize: 13
+                      font.family: "JetBrains Mono"
+                      font.bold: true
+
+                      Timer {
+                          interval: 1000; running: true; repeat: true
+                          onTriggered: clockText.text = Qt.formatDateTime(new Date(), "ddd MMM dd  HH:mm")
+                      }
+                      Component.onCompleted: text = Qt.formatDateTime(new Date(), "ddd MMM dd  HH:mm")
+                  }
+
+                  Item { Layout.fillWidth: true }
+
+                  Repeater {
+                      model: SystemTray.items
+                      delegate: Item {
+                          id: trayItem
+                          required property SystemTrayItem modelData
+                          implicitWidth: 22; implicitHeight: 22
+
+                          Image {
+                              anchors.centerIn: parent
+                              width: 16; height: 16
+                              source: trayItem.modelData.icon
+                              smooth: true
+                          }
+
+                          MouseArea {
+                              anchors.fill: parent
+                              acceptedButtons: Qt.LeftButton | Qt.RightButton
+                              onClicked: mouse => {
+                                  if (mouse.button === Qt.RightButton)
+                                      trayItem.modelData.secondaryActivate()
+                                  else
+                                      trayItem.modelData.activate()
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+        '';
+
+        ".config/quickshell/Notifications.qml".text = ''
+          pragma ComponentBehavior: Bound
+          import Quickshell
+          import Quickshell.Services.Notifications
+          import QtQuick
+          import QtQuick.Layouts
+
+          Scope {
+              NotificationServer {
+                  id: server
+                  keepOnReload: true
+              }
+
+              PanelWindow {
+                  anchors { top: true; right: true }
+                  margins { top: 44; right: 8 }
+
+                  visible: server.trackedNotifications.length > 0
+                  implicitWidth: 360
+                  implicitHeight: Math.max(notifCol.implicitHeight + 16, 1)
+                  color: "transparent"
+
+                  ColumnLayout {
+                      id: notifCol
+                      anchors { fill: parent; margins: 8 }
+                      spacing: 8
+
+                      Repeater {
+                          model: server.trackedNotifications
+                          delegate: Rectangle {
+                              id: notif
+                              required property Notification modelData
+
+                              Layout.fillWidth: true
+                              implicitHeight: notifInner.implicitHeight + 20
+                              color: Qt.rgba(0.04, 0.04, 0.08, 0.95)
+                              border.color: "#00ffff"
+                              border.width: 1
+                              radius: 8
+
+                              ColumnLayout {
+                                  id: notifInner
+                                  anchors { fill: parent; margins: 10 }
+                                  spacing: 4
+
+                                  Text {
+                                      text: notif.modelData.summary
+                                      color: "#cdd6f4"
+                                      font.pixelSize: 13
+                                      font.family: "JetBrains Mono"
+                                      font.bold: true
+                                      Layout.fillWidth: true
+                                      elide: Text.ElideRight
+                                  }
+
+                                  Text {
+                                      text: notif.modelData.body
+                                      color: "#999999"
+                                      font.pixelSize: 12
+                                      font.family: "JetBrains Mono"
+                                      Layout.fillWidth: true
+                                      wrapMode: Text.WordWrap
+                                      visible: text.length > 0
+                                  }
+                              }
+
+                              MouseArea {
+                                  anchors.fill: parent
+                                  onClicked: notif.modelData.dismiss()
+                              }
+
+                              Timer {
+                                  interval: notif.modelData.expireTimeout > 0
+                                      ? notif.modelData.expireTimeout : 3000
+                                  running: true
+                                  onTriggered: notif.modelData.dismiss()
+                              }
+                          }
+                      }
+                  }
+              }
           }
         '';
       };
