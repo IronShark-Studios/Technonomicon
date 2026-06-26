@@ -1,6 +1,14 @@
 { inputs, ... }: {
   flake.nixosModules.Tn-web-browsers = { pkgs, config, ... }: {
 
+    imports = [ inputs.nix-flatpak.nixosModules.nix-flatpak ];
+
+    services.flatpak = {
+      enable = true;
+      remotes = [{ name = "flathub"; location = "https://dl.flathub.org/repo/"; }];
+      packages = [{ appId = "engineer.atlas.Nyxt"; origin = "flathub"; }];
+    };
+
     programs.chromium.enable = true;
     environment.systemPackages = [
       ((pkgs.brave.override {
