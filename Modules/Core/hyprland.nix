@@ -92,7 +92,7 @@
             },
           })
 
-          hl.bind(mainMod .. " + Return",    hl.dsp.exec_cmd("rofi -show drun"))
+          hl.bind(mainMod .. " + Return",    hl.dsp.exec_cmd("anyrun"))
           hl.bind(mainMod .. " + T",         hl.dsp.exec_cmd(terminal))
           hl.bind(mainMod .. " + D",         hl.dsp.window.close())
           hl.bind(mainMod .. " + Q",         hl.dsp.exec_cmd("hyprlock"))
