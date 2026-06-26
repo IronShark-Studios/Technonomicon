@@ -16,10 +16,8 @@
     sops-nix.url = "github:Mic92/sops-nix";
     sops-nix.inputs.nixpkgs.follows = "nixpkgs";
 
-    hjem.url = "github:feel-co/hjem";
-    hjem.inputs.nixpkgs.follows = "nixpkgs";
-    hjem-impure.url = "github:Rexcrazy804/hjem-impure";
-    hjem-impure.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     doom-emacs-unstraightened.url = "github:marienz/nix-doom-emacs-unstraightened";
     ewm.url = "git+https://codeberg.org/ezemtsov/ewm";
