@@ -49,6 +49,8 @@
             hl.exec_cmd("nm-applet --indicator")
           end)
 
+          hl.plugin.load("${pkgs.hyprlandPlugins.hypr-dynamic-cursors}/lib/libhypr-dynamic-cursors.so")
+
           hl.config({
             input = {
               kb_layout    = "us",
