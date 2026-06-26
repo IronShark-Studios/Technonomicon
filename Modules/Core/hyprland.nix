@@ -2,6 +2,7 @@
   flake.nixosModules.Tn-hyprland = { pkgs, ... }: {
 
     programs.hyprland.enable = true;
+    programs.hyprland.plugins = [ pkgs.hyprlandPlugins.hypr-dynamic-cursors ];
     programs.hyprlock.enable = true;
 
     xdg.portal.extraPortals  = [ pkgs.xdg-desktop-portal-hyprland ];
