@@ -32,8 +32,8 @@ $LESS_TERMCAP_us = "\x1b[1;4;32m"    # Begin underline
 # =============================================================================
 # 2. DYNAMIC SESSION VARIABLES
 # =============================================================================
-$SUDO_EDITOR = "emacsclient -t -a ''"
-$EDITOR = "emacsclient -t -a ''"
+$SUDO_EDITOR = "hx"
+$EDITOR = "hx"
 
 # =============================================================================
 # 3. INIT SCRIPTS & EXTERNAL PLUGINS
