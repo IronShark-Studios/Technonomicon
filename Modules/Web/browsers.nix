@@ -22,12 +22,7 @@
       }))
     ];
 
-    hjem.users.xin = {
-      enable = true;
-      files = {
-        ".config/surfingkeys/config.js".source = ./_surfingkeys.js;
-      };
-    };
+    home-manager.users.xin.home.file.".config/surfingkeys/config.js".source = ./_surfingkeys.js;
 
     environment.etc."brave/policies/managed/default.json".text = builtins.toJSON {
       "PasswordManagerEnabled" = false;
