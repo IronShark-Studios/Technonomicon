@@ -13,7 +13,7 @@
       })
     ];
 
-    environment.etc."sioyek/prefs_user.config".text = ''
+    home-manager.users.xin.home.file.".config/sioyek/prefs_user.config".text = ''
       # --- UI & VISUALS ---
   # Start in dark mode automatically
   default_dark_mode 1
