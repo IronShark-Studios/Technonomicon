@@ -168,10 +168,6 @@
           hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exit())
           hl.bind(mainMod .. " + F",         hl.dsp.window.fullscreen())
 
-          hl.bind(mainMod .. " + H",     hl.dsp.focus({ direction = "left"  }))
-          hl.bind(mainMod .. " + J",     hl.dsp.focus({ direction = "down"  }))
-          hl.bind(mainMod .. " + K",     hl.dsp.focus({ direction = "up"    }))
-          hl.bind(mainMod .. " + L",     hl.dsp.focus({ direction = "right" }))
           hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left"  }))
           hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down"  }))
           hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up"    }))
