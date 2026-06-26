@@ -74,7 +74,7 @@
       '';
 
       ".config/helix/config.toml".text = ''
-        theme = "onedark"
+        theme = "nord"
 
         [editor]
         line-number        = "relative"
@@ -95,9 +95,9 @@
         left  = ["mode", "spinner", "file-name", "file-modification-indicator"]
         right = ["diagnostics", "position", "file-encoding", "file-type"]
 
-        [keys.normal]
-        "space.f"     = ":format"
-        "space.space" = "file_picker"
+        [keys.normal.space]
+        f     = ":format"
+        space = "file_picker"
       '';
 
       ".config/helix/languages.toml".text = ''
