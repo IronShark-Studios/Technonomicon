@@ -117,7 +117,6 @@
       nix-your-shell
       gitFull
       git-lfs
-      ghostty
       btop
       nmon
       kmon

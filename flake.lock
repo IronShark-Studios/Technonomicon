@@ -129,72 +129,23 @@
         "type": "github"
       }
     },
-    "hjem": {
+    "home-manager": {
       "inputs": {
-        "nix-darwin": "nix-darwin",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1781430841,
-        "narHash": "sha256-5uEX8TEZ5kI+bnil/T2jtRlxiADcyeD9mX8gOwQIEVs=",
-        "owner": "feel-co",
-        "repo": "hjem",
-        "rev": "89d0beea9068903aeb9998f52b741c69d4e32aa1",
+        "lastModified": 1782423922,
+        "narHash": "sha256-qPNd6lUohHP5gcJhqQ7rLV87RwIx0xYR2A4Frb9Zjc4=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "5d320ab301cfaaca7d32514f13815d19d109f5f4",
         "type": "github"
       },
       "original": {
-        "owner": "feel-co",
-        "repo": "hjem",
-        "type": "github"
-      }
-    },
-    "hjem-impure": {
-      "inputs": {
-        "hjem": "hjem_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1780011779,
-        "narHash": "sha256-nVA2sFfzDm97nuW2DMhN8fgCW+Eh7S5ZwMG3ICrD/Z0=",
-        "owner": "Rexcrazy804",
-        "repo": "hjem-impure",
-        "rev": "6a5e29c8cadc156258b71f251eb2abdb825cf286",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Rexcrazy804",
-        "repo": "hjem-impure",
-        "type": "github"
-      }
-    },
-    "hjem_2": {
-      "inputs": {
-        "nix-darwin": [
-          "hjem-impure"
-        ],
-        "nixpkgs": [
-          "hjem-impure",
-          "nixpkgs"
-        ],
-        "smfh": [
-          "hjem-impure"
-        ]
-      },
-      "locked": {
-        "lastModified": 1767318528,
-        "narHash": "sha256-I2zxtEafZbFbqXe71rjqwVeTDv8SIVLaSzQd39SwfwM=",
-        "owner": "feel-co",
-        "repo": "hjem",
-        "rev": "8539013044624a257e8da370069107aea148e985",
-        "type": "github"
-      },
-      "original": {
-        "owner": "feel-co",
-        "repo": "hjem",
+        "owner": "nix-community",
+        "repo": "home-manager",
         "type": "github"
       }
     },
@@ -210,27 +161,6 @@
       "original": {
         "owner": "vic",
         "repo": "import-tree",
-        "type": "github"
-      }
-    },
-    "nix-darwin": {
-      "inputs": {
-        "nixpkgs": [
-          "hjem",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1777780666,
-        "narHash": "sha256-8wURyQMdDkGUarSTKOGdCuFfYiwa3HbzwscUfn3STDE=",
-        "owner": "nix-darwin",
-        "repo": "nix-darwin",
-        "rev": "8c62fba0854ba15c8917aed18894dbccb48a3777",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-darwin",
-        "repo": "nix-darwin",
         "type": "github"
       }
     },
@@ -504,8 +434,7 @@
         "doom-emacs-unstraightened": "doom-emacs-unstraightened",
         "ewm": "ewm",
         "flake-parts": "flake-parts",
-        "hjem": "hjem",
-        "hjem-impure": "hjem-impure",
+        "home-manager": "home-manager",
         "import-tree": "import-tree",
         "nix-flatpak": "nix-flatpak",
         "nix-index-database": "nix-index-database",

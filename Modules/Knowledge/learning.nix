@@ -2,7 +2,7 @@
   flake.nixosModules.Tn-learning = { pkgs, config, ... }: {
 
     environment.systemPackages = with pkgs; [
-      ledger
+      hledger
       fava
       beancount
       gnucash
