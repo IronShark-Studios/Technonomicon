@@ -44,7 +44,6 @@
           hl.env("HYPRCURSOR_SIZE", "24")
 
           hl.on("hyprland.start", function()
-            hl.exec_cmd("hyprctl plugin load ${pkgs.hyprlandPlugins.hypr-dynamic-cursors}/lib/libhypr-dynamic-cursors.so")
             hl.exec_cmd("hyprpaper")
             hl.exec_cmd("hypridle")
             hl.exec_cmd("quickshell")
