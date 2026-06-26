@@ -3,6 +3,7 @@
 
     programs.chromium.enable = true;
     environment.systemPackages = [
+      pkgs.qutebrowser
       ((pkgs.brave.override {
         commandLineArgs = [
           "--enable-features=UseOzonePlatform"
