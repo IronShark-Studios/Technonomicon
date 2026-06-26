@@ -1,16 +1,13 @@
 { inputs, ... }: {
   flake.nixosModules.Tn-communication = { pkgs, ... }: {
 
-    hjem.users.xin = {
-      enable = true;
-      files = {
-        ".config/discord/settings.json".text = builtins.toJSON {
-          SKIP_HOST_UPDATE = true;
-        };
-        ".config/mako/config".text = ''
-          default-timeout=3000
-        '';
+    home-manager.users.xin = {
+      home.file.".config/discord/settings.json".text = builtins.toJSON {
+        SKIP_HOST_UPDATE = true;
       };
+      home.file.".config/mako/config".text = ''
+        default-timeout=3000
+      '';
     };
 
     systemd.user.services.mako = {
