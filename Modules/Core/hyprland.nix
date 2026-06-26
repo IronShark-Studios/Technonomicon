@@ -14,6 +14,7 @@
       bibata-cursors
       quickshell
       networkmanagerapplet
+      udiskie
     ];
 
     home-manager.users.xin = {
