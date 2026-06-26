@@ -1,9 +1,6 @@
 { inputs, ... }: {
   flake.nixosModules.Tn-desktop = { pkgs, pkgs-stable, config, ... }: {
 
-    imports = [ inputs.ewm.nixosModules.default ];
-    programs.ewm.enable = true;
-
     hardware = {
       bluetooth.enable = true;
       graphics.enable = true;
