@@ -14,26 +14,13 @@
 
       input {
         kb_layout = us
-        follow_mouse = 1
         touchpad {
           natural_scroll = true
         }
       }
 
       general {
-        gaps_in = 5
-        gaps_out = 10
-        border_size = 2
         layout = dwindle
-      }
-
-      decoration {
-        rounding = 8
-      }
-
-      dwindle {
-        pseudotile = true
-        preserve_split = true
       }
 
       bind = $mod, Return, exec, $terminal
