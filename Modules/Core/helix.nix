@@ -7,6 +7,23 @@
       zellij
       lazygit
       ghostty
+      # JS / TypeScript
+      nodejs
+      nodePackages.typescript-language-server
+      nodePackages.prettier
+      # File Management
+      yazi
+      # Git
+      delta
+      # DAP Debug Adapters
+      lldb
+      python3Packages.debugpy
+      # Accounting
+      beancount
+      # AI Coding
+      aider-chat
+      # Markdown LSP
+      marksman
       # General Tooling
       claude-code
       sqlite
