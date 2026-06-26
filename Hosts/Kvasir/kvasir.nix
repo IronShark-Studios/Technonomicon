@@ -62,6 +62,8 @@
 
         networking.hostName = "Kvasir";
 
+        services.logind.settings.Login.HandleLidSwitch = "suspend";
+
         home-manager = {
           useGlobalPkgs = true;
           useUserPackages = true;
