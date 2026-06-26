@@ -15,7 +15,6 @@
       quickshell
       networkmanagerapplet
       udiskie
-      wl-kbptr
     ];
 
     home-manager.users.xin = {
