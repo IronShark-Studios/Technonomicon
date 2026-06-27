@@ -163,9 +163,12 @@
         language-servers = ["zls"]
         auto-format = true
 
+        [language-server.markdown-oxide]
+        command = "markdown-oxide"
+
         [[language]]
         name = "markdown"
-        language-servers = ["marksman"]
+        language-servers = ["markdown-oxide", "marksman"]
         formatter = { command = "prettier", args = ["--parser", "markdown"] }
 
         [[language]]
