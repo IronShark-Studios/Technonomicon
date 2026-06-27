@@ -355,7 +355,7 @@
 
                       Text {
                           anchors.verticalCenter: parent.verticalCenter
-                          font.pixelSize: 20
+                          font.pixelSize: 14
                           font.family: "JetBrainsMono Nerd Font Mono"
                           color: (UPower.displayDevice !== null
                               && UPower.displayDevice.state !== UPowerDeviceState.Charging
