@@ -122,6 +122,7 @@
         [keys.normal.space]
         f     = ":format"
         space = "file_picker"
+        o     = ":sh open-in-obsidian %val{filename}"
       '';
 
       ".config/helix/languages.toml".text = ''
