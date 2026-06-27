@@ -27,7 +27,6 @@
 
     environment.systemPackages = with pkgs; [
       anyrun
-      swaybg
       hypridle
       bibata-cursors
       quickshell
