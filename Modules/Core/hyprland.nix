@@ -348,24 +348,38 @@
                       }
                   }
 
-                  Text {
-                      id: batText
+                  Row {
+                      id: batRow
                       visible: UPower.displayDevice !== null && UPower.displayDevice.ready
-                      font.pixelSize: 14
-                      font.family: "JetBrainsMono Nerd Font Mono"
-                      color: (UPower.displayDevice !== null
-                          && UPower.displayDevice.state !== UPowerDeviceState.Charging
-                          && UPower.displayDevice.percentage <= 20) ? "#ff5555" : "#cdd6f4"
-                      text: UPower.displayDevice === null ? "" :
-                          (UPower.displayDevice.state === UPowerDeviceState.Charging
-                           || UPower.displayDevice.state === UPowerDeviceState.PendingCharge)
-                              ? "󰂄 " + Math.round(UPower.displayDevice.percentage) + "%" :
-                          UPower.displayDevice.percentage <= 10 ? "󰂎 " + Math.round(UPower.displayDevice.percentage) + "%" :
-                          UPower.displayDevice.percentage <= 30 ? "󰁻 " + Math.round(UPower.displayDevice.percentage) + "%" :
-                          UPower.displayDevice.percentage <= 50 ? "󰁽 " + Math.round(UPower.displayDevice.percentage) + "%" :
-                          UPower.displayDevice.percentage <= 70 ? "󰁿 " + Math.round(UPower.displayDevice.percentage) + "%" :
-                          UPower.displayDevice.percentage <= 90 ? "󰂁 " + Math.round(UPower.displayDevice.percentage) + "%" :
-                          "󰁹 " + Math.round(UPower.displayDevice.percentage) + "%"
+                      spacing: 3
+
+                      Text {
+                          anchors.verticalCenter: parent.verticalCenter
+                          font.pixelSize: 20
+                          font.family: "JetBrainsMono Nerd Font Mono"
+                          color: (UPower.displayDevice !== null
+                              && UPower.displayDevice.state !== UPowerDeviceState.Charging
+                              && UPower.displayDevice.percentage <= 0.20) ? "#ff5555" : "#cdd6f4"
+                          text: UPower.displayDevice === null ? "" :
+                              (UPower.displayDevice.state === UPowerDeviceState.Charging
+                               || UPower.displayDevice.state === UPowerDeviceState.PendingCharge) ? "󰂄" :
+                              UPower.displayDevice.percentage <= 0.10 ? "󰂎" :
+                              UPower.displayDevice.percentage <= 0.30 ? "󰁻" :
+                              UPower.displayDevice.percentage <= 0.50 ? "󰁽" :
+                              UPower.displayDevice.percentage <= 0.70 ? "󰁿" :
+                              UPower.displayDevice.percentage <= 0.90 ? "󰂁" : "󰁹"
+                      }
+
+                      Text {
+                          anchors.verticalCenter: parent.verticalCenter
+                          font.pixelSize: 12
+                          font.family: "JetBrains Mono"
+                          color: (UPower.displayDevice !== null
+                              && UPower.displayDevice.state !== UPowerDeviceState.Charging
+                              && UPower.displayDevice.percentage <= 0.20) ? "#ff5555" : "#cdd6f4"
+                          text: UPower.displayDevice === null ? "" :
+                                Math.round((UPower.displayDevice.percentage ?? 0) * 100) + "%"
+                      }
                   }
               }
           }
