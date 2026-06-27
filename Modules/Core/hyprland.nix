@@ -271,16 +271,35 @@
 
                   Item { Layout.fillWidth: true }
 
-                  Text {
-                      id: volText
-                      color: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "#555555" : "#cdd6f4"
-                      font.pixelSize: 14
-                      font.family: "JetBrainsMono Nerd Font Mono"
-                      text: (Pipewire.defaultAudioSink?.audio.muted ?? false)
-                          ? "󰸈 mute"
-                          : ((Pipewire.defaultAudioSink?.audio.volume ?? 0) > 0.66 ? "󰕾 " :
-                             (Pipewire.defaultAudioSink?.audio.volume ?? 0) > 0.33 ? "󰖀 " : "󰕿 ")
-                            + Math.round((Pipewire.defaultAudioSink?.audio.volume ?? 0) * 100) + "%"
+                  Item {
+                      id: volWidget
+                      implicitWidth: volRow.implicitWidth
+                      implicitHeight: 28
+
+                      Row {
+                          id: volRow
+                          anchors.verticalCenter: parent.verticalCenter
+                          spacing: 3
+
+                          Text {
+                              anchors.verticalCenter: parent.verticalCenter
+                              font.pixelSize: 20
+                              font.family: "JetBrainsMono Nerd Font Mono"
+                              color: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "#555555" : "#cdd6f4"
+                              text: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "󰸈" :
+                                    (Pipewire.defaultAudioSink?.audio.volume ?? 0) > 0.66 ? "󰕾" :
+                                    (Pipewire.defaultAudioSink?.audio.volume ?? 0) > 0.33 ? "󰖀" : "󰕿"
+                          }
+
+                          Text {
+                              anchors.verticalCenter: parent.verticalCenter
+                              font.pixelSize: 12
+                              font.family: "JetBrains Mono"
+                              color: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "#555555" : "#cdd6f4"
+                              text: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "mute" :
+                                    Math.round((Pipewire.defaultAudioSink?.audio.volume ?? 0) * 100) + "%"
+                          }
+                      }
 
                       MouseArea {
                           anchors.fill: parent
