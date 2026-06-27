@@ -275,13 +275,12 @@
                       id: volText
                       color: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "#555555" : "#cdd6f4"
                       font.pixelSize: 12
-                      font.family: "JetBrains Mono"
-                      text: {
-                          const muted = Pipewire.defaultAudioSink?.audio.muted ?? false
-                          const vol   = Pipewire.defaultAudioSink?.audio.volume ?? 0
-                          const icon  = muted ? "󰸈" : vol > 0.66 ? "󰕾" : vol > 0.33 ? "󰖀" : "󰕿"
-                          return icon + " " + (muted ? "mute" : Math.round(vol * 100) + "%")
-                      }
+                      font.family: "JetBrainsMono Nerd Font Mono"
+                      text: (Pipewire.defaultAudioSink?.audio.muted ?? false)
+                          ? "󰸈 mute"
+                          : ((Pipewire.defaultAudioSink?.audio.volume ?? 0) > 0.66 ? "󰕾 " :
+                             (Pipewire.defaultAudioSink?.audio.volume ?? 0) > 0.33 ? "󰖀 " : "󰕿 ")
+                            + Math.round((Pipewire.defaultAudioSink?.audio.volume ?? 0) * 100) + "%"
 
                       MouseArea {
                           anchors.fill: parent
