@@ -187,6 +187,7 @@
         ".config/quickshell/Bar.qml".text = ''
           pragma ComponentBehavior: Bound
           import Quickshell
+          import Quickshell.Io
           import Quickshell.Hyprland
           import Quickshell.Services.SystemTray
           import Quickshell.Services.Pipewire
