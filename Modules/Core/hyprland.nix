@@ -331,8 +331,8 @@
 
                   Text {
                       id: batText
-                      visible: UPower.displayDevice !== null
-                      font.pixelSize: 12
+                      visible: UPower.displayDevice !== null && UPower.displayDevice.ready
+                      font.pixelSize: 14
                       font.family: "JetBrainsMono Nerd Font Mono"
                       color: (UPower.displayDevice !== null
                           && UPower.displayDevice.state !== UPowerDeviceState.Charging
