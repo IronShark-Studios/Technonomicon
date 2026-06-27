@@ -6,7 +6,8 @@
           | ${pkgs.jq}/bin/jq -e '.[] | select(.class == "grimoire-inbox")' > /dev/null 2>&1; then
         ${pkgs.hyprland}/bin/hyprctl dispatch togglespecialworkspace grimoire
       else
-        ghostty --class=grimoire-inbox -e hx ~/Grimoire/Inbox.md
+        ${pkgs.hyprland}/bin/hyprctl dispatch exec \
+          "[workspace special:grimoire silent] ghostty --class=grimoire-inbox -e hx ~/Grimoire/Inbox.md"
       fi
     '';
   in {
