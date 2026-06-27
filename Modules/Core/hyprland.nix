@@ -61,15 +61,12 @@
           hl.env("HYPRCURSOR_SIZE", "24")
 
           hl.on("hyprland.start", function()
-            hl.exec_cmd("hyprpaper")
             hl.exec_cmd("hypridle")
             hl.exec_cmd("quickshell")
             hl.exec_cmd("nm-applet --indicator")
             hl.exec_cmd("udiskie --tray")
             hl.exec_cmd("blueman-applet")
-            hl.exec_cmd('hyprctl dispatch exec "[workspace special:obsidian silent] obsidian"')
-            hl.exec_cmd('hyprctl dispatch exec "[workspace special:discord silent] flatpak run com.discordapp.Discord"')
-            hl.exec_cmd('hyprctl dispatch exec "[workspace special:grimoire silent] ghostty --class=grimoire-inbox -e hx ~/Grimoire/Inbox.md"')
+            hl.exec_cmd("${startupApps}")
           end)
 
           hl.config({
