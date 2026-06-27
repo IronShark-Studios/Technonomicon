@@ -50,6 +50,7 @@
       marksman
       markdown-oxide
       # General Tooling
+      qalculate-gtk
       claude-code
       sqlite
       gdb
