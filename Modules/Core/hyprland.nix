@@ -262,7 +262,7 @@
                       implicitWidth: volText.implicitWidth + 8
                       implicitHeight: 28
 
-                      property var sinkAudio: Pipewire.defaultAudioSink
+                      property var sinkAudio: (Pipewire.defaultAudioSink && Pipewire.defaultAudioSink.ready)
                                               ? Pipewire.defaultAudioSink.audio
                                               : null
 
