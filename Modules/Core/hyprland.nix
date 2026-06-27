@@ -67,6 +67,7 @@
             hl.exec_cmd("nm-applet --indicator")
             hl.exec_cmd("udiskie --tray")
             hl.exec_cmd("blueman-applet")
+            hl.exec_cmd("pasystray")
             hl.exec_cmd("${startupApps}")
           end)
 
