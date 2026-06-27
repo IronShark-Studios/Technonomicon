@@ -1,7 +1,20 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "Bash(nix build *)",
+      "Bash(nix run *)",
+      "Bash(nix eval *)",
+      "Bash(hyprctl hyprpaper *)",
+      "Bash(xargs -I{} find {} -name \"Pipewire\" -o -name \"pipewire\")",
+      "Bash(python3 *)",
+      "WebFetch(domain:quickshell.outfoxxed.me)",
+      "WebFetch(domain:quickshell.org)",
+      "WebSearch",
+      "Bash(gh api *)",
+      "Bash(gh search *)",
+      "WebFetch(domain:git.outfoxxed.me)",
+      "Read(//sys/class/power_supply/**)"
     ]
   }
 }
