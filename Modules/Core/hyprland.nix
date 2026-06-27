@@ -20,7 +20,6 @@
 
     environment.systemPackages = with pkgs; [
       anyrun
-      hyprpaper
       hypridle
       bibata-cursors
       quickshell
