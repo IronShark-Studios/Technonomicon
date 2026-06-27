@@ -193,6 +193,7 @@
           import Quickshell.Hyprland
           import Quickshell.Services.SystemTray
           import Quickshell.Services.Pipewire
+          import Quickshell.Services.UPower
           import QtQuick
           import QtQuick.Layouts
 
