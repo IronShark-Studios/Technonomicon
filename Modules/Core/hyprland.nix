@@ -326,6 +326,38 @@
                           }
                       }
                   }
+
+                  Text {
+                      id: batText
+                      visible: UPower.displayDevice !== null
+                      font.pixelSize: 12
+                      font.family: "JetBrains Mono"
+                      color: {
+                          const bat = UPower.displayDevice
+                          if (!bat) return "#cdd6f4"
+                          if (bat.state !== UPowerDeviceState.Charging && bat.percentage <= 20)
+                              return "#ff5555"
+                          return "#cdd6f4"
+                      }
+                      text: {
+                          const bat = UPower.displayDevice
+                          if (!bat) return ""
+                          const pct      = Math.round(bat.percentage)
+                          const charging = bat.state === UPowerDeviceState.Charging
+                                        || bat.state === UPowerDeviceState.PendingCharge
+                          const icon = charging             ? "󰂄" :
+                                       pct <= 10            ? "󰂎" :
+                                       pct <= 20            ? "󰁺" :
+                                       pct <= 30            ? "󰁻" :
+                                       pct <= 40            ? "󰁼" :
+                                       pct <= 50            ? "󰁽" :
+                                       pct <= 60            ? "󰁾" :
+                                       pct <= 70            ? "󰁿" :
+                                       pct <= 80            ? "󰂀" :
+                                       pct <= 90            ? "󰂁" : "󰁹"
+                          return icon + " " + pct + "%"
+                      }
+                  }
               }
           }
         '';
