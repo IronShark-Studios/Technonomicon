@@ -24,6 +24,7 @@
       aider-chat
       # Markdown LSP
       marksman
+      markdown-oxide
       # General Tooling
       claude-code
       sqlite
