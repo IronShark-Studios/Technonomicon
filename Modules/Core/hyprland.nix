@@ -10,6 +10,13 @@
           "[workspace special:grimoire silent] ghostty --class=grimoire-inbox -e hx ~/Grimoire/Inbox.md"
       fi
     '';
+
+    startupApps = pkgs.writeShellScript "hyprland-startup-apps" ''
+      sleep 1
+      ${pkgs.hyprland}/bin/hyprctl dispatch exec "[workspace special:obsidian silent] obsidian"
+      ${pkgs.hyprland}/bin/hyprctl dispatch exec "[workspace special:discord silent] flatpak run com.discordapp.Discord"
+      ${pkgs.hyprland}/bin/hyprctl dispatch exec "[workspace special:grimoire silent] ghostty --class=grimoire-inbox -e hx ~/Grimoire/Inbox.md"
+    '';
   in {
 
     programs.hyprland.enable = true;
@@ -20,6 +27,7 @@
 
     environment.systemPackages = with pkgs; [
       anyrun
+      swaybg
       hypridle
       bibata-cursors
       quickshell
