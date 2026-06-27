@@ -50,7 +50,10 @@
             hl.exec_cmd("nm-applet --indicator")
             hl.exec_cmd("udiskie --tray")
             hl.exec_cmd("blueman-applet")
+            hl.exec_cmd("obsidian")
           end)
+
+          hl.windowrule("workspace special:obsidian silent", "class:obsidian")
 
           hl.config({
             input = {
