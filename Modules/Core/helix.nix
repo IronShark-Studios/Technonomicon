@@ -1,6 +1,20 @@
 { inputs, ... }: {
 
-  flake.nixosModules.Tn-helix = { pkgs, ... }: {
+  flake.nixosModules.Tn-helix = { pkgs, ... }:
+  let
+    openInObsidian = pkgs.writeShellScriptBin "open-in-obsidian" ''
+      if [ -z "$1" ] || [ "$1" = "[scratch]" ]; then
+        exit 1
+      fi
+      FILE_PATH=$(realpath "$1")
+      ENCODED_PATH=$(${pkgs.python3}/bin/python3 -c \
+        "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" \
+        "$FILE_PATH")
+      ${pkgs.xdg-utils}/bin/xdg-open "obsidian://open?path=$ENCODED_PATH"
+      hyprctl dispatch focuswindow "class:^(obsidian)$" \
+        || hyprctl dispatch focuswindow "class:^(Obsidian)$"
+    '';
+  in {
 
     environment.systemPackages = with pkgs; [
       helix
