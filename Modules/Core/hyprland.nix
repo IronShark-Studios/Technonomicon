@@ -51,9 +51,11 @@
             hl.exec_cmd("udiskie --tray")
             hl.exec_cmd("blueman-applet")
             hl.exec_cmd("obsidian")
+            hl.exec_cmd("flatpak run com.discordapp.Discord")
           end)
 
           hl.windowrule("workspace special:obsidian silent", "class:obsidian")
+          hl.windowrule("workspace special:discord silent",  "class:discord")
 
           hl.config({
             input = {
