@@ -57,6 +57,7 @@
       iosevka-comfy.comfy-wide-motion
       iosevka-comfy.comfy-wide-motion-duo
       nerd-fonts.symbols-only
+      nerd-fonts.jetbrains-mono
       jetbrains-mono
       sarasa-gothic
       noto-fonts
