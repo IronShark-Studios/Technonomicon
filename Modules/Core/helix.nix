@@ -24,7 +24,9 @@
   in {
 
     environment.systemPackages = with pkgs; [
+      previewImage
       openInObsidian
+      imv
       helix
       zellij
       lazygit
