@@ -203,6 +203,7 @@
               color: Qt.rgba(0.04, 0.04, 0.08, 0.92)
 
               PwObjectTracker { objects: [ Pipewire.defaultAudioSink ] }
+              Process { id: pavuProcess; command: ["pavucontrol"] }
 
               Rectangle {
                   anchors { bottom: parent.bottom; left: parent.left; right: parent.right }
