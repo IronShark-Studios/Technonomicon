@@ -2,6 +2,13 @@
 
   flake.nixosModules.Tn-helix = { pkgs, ... }:
   let
+    previewImage = pkgs.writeShellScriptBin "preview-image" ''
+      path="$1"
+      [ -z "$path" ] && exit 1
+      [[ "$path" != /* ]] && path="$(pwd)/$path"
+      ${pkgs.imv}/bin/imv "$path" & disown
+    '';
+
     openInObsidian = pkgs.writeShellScriptBin "open-in-obsidian" ''
       if [ -z "$1" ] || [ "$1" = "[scratch]" ]; then
         exit 1
