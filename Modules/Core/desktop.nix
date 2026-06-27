@@ -33,6 +33,7 @@
           middleEmulation = false;
         };
       };
+      upower.enable = true;
       gnome.gnome-keyring.enable = true;
       pulseaudio.enable = false;
       pipewire = {
