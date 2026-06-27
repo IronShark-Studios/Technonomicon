@@ -32,7 +32,6 @@
       quickshell
       networkmanagerapplet
       udiskie
-      volumeicon
     ];
 
     home-manager.users.xin = {
