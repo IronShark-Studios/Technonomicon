@@ -127,7 +127,8 @@
             hl.bind(mainMod .. " + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
           end
 
-          hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
+          hl.bind("Print",            hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
+          hl.bind(mainMod .. " + Y", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | wl-copy"))
 
           hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
           hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
