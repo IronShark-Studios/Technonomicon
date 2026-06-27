@@ -274,7 +274,7 @@
                   Text {
                       id: volText
                       color: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "#555555" : "#cdd6f4"
-                      font.pixelSize: 12
+                      font.pixelSize: 14
                       font.family: "JetBrainsMono Nerd Font Mono"
                       text: (Pipewire.defaultAudioSink?.audio.muted ?? false)
                           ? "󰸈 mute"
