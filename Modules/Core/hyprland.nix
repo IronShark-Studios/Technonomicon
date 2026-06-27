@@ -32,7 +32,7 @@
       quickshell
       networkmanagerapplet
       udiskie
-      pasystray
+      volumeicon
     ];
 
     home-manager.users.xin = {
