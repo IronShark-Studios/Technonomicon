@@ -1,5 +1,15 @@
 { inputs, ... }: {
-  flake.nixosModules.Tn-hyprland = { pkgs, ... }: {
+  flake.nixosModules.Tn-hyprland = { pkgs, ... }:
+  let
+    toggleGrimoire = pkgs.writeShellScript "toggle-grimoire" ''
+      if ${pkgs.hyprland}/bin/hyprctl clients -j \
+          | ${pkgs.jq}/bin/jq -e '.[] | select(.class == "grimoire-inbox")' > /dev/null 2>&1; then
+        ${pkgs.hyprland}/bin/hyprctl dispatch togglespecialworkspace grimoire
+      else
+        ghostty --class=grimoire-inbox -e hx ~/Grimoire/Inbox.md
+      fi
+    '';
+  in {
 
     programs.hyprland.enable = true;
     programs.hyprlock.enable = true;
