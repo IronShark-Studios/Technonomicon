@@ -133,13 +133,6 @@
           hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
         '';
 
-        ".config/hypr/hyprpaper.conf".text = ''
-          preload  = ${../../background.jpg}
-          wallpaper = ,${../../background.jpg}
-          splash = false
-          ipc    = on
-        '';
-
         ".config/hypr/hyprlock.conf".text = ''
           background {
             blur_passes = 3
