@@ -32,6 +32,7 @@
       quickshell
       networkmanagerapplet
       udiskie
+      pasystray
     ];
 
     home-manager.users.xin = {
