@@ -279,7 +279,7 @@
                           acceptedButtons: Qt.LeftButton | Qt.RightButton
                           onClicked: mouse => {
                               if (mouse.button === Qt.RightButton) {
-                                  Qt.openUrlExternally("pavucontrol")
+                                  pavuProcess.running = true
                               } else {
                                   const audio = Pipewire.defaultAudioSink?.audio
                                   if (audio) audio.muted = !audio.muted
