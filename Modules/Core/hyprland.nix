@@ -274,10 +274,14 @@
 
                       MouseArea {
                           anchors.fill: parent
-                          acceptedButtons: Qt.LeftButton
-                          onClicked: {
-                              const audio = Pipewire.defaultAudioSink?.audio
-                              if (audio) audio.muted = !audio.muted
+                          acceptedButtons: Qt.LeftButton | Qt.RightButton
+                          onClicked: mouse => {
+                              if (mouse.button === Qt.RightButton) {
+                                  Qt.openUrlExternally("pavucontrol")
+                              } else {
+                                  const audio = Pipewire.defaultAudioSink?.audio
+                                  if (audio) audio.muted = !audio.muted
+                              }
                           }
                           onWheel: wheel => {
                               const audio = Pipewire.defaultAudioSink?.audio
