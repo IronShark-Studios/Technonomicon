@@ -259,37 +259,27 @@
 
                   Item { Layout.fillWidth: true }
 
-                  Item {
-                      id: volWidget
-                      implicitWidth: volText.implicitWidth + 8
-                      implicitHeight: 28
-
-                      property var sinkAudio: (Pipewire.defaultAudioSink && Pipewire.defaultAudioSink.ready)
-                                              ? Pipewire.defaultAudioSink.audio
-                                              : null
-
-                      Text {
-                          id: volText
-                          anchors.centerIn: parent
-                          color: volWidget.sinkAudio && volWidget.sinkAudio.muted ? "#555555" : "#cdd6f4"
-                          font.pixelSize: 12
-                          font.family: "JetBrains Mono"
-                          text: volWidget.sinkAudio
-                              ? (volWidget.sinkAudio.muted ? "mute" : Math.round(volWidget.sinkAudio.volume * 100) + "%")
-                              : "?"
-                      }
+                  Text {
+                      id: volText
+                      color: (Pipewire.defaultAudioSink?.audio.muted ?? false) ? "#555555" : "#cdd6f4"
+                      font.pixelSize: 12
+                      font.family: "JetBrains Mono"
+                      text: (Pipewire.defaultAudioSink?.audio.muted ?? false)
+                          ? "mute"
+                          : Math.round((Pipewire.defaultAudioSink?.audio.volume ?? 0) * 100) + "%"
 
                       MouseArea {
                           anchors.fill: parent
                           acceptedButtons: Qt.LeftButton
                           onClicked: {
-                              if (volWidget.sinkAudio)
-                                  volWidget.sinkAudio.muted = !volWidget.sinkAudio.muted
+                              const audio = Pipewire.defaultAudioSink?.audio
+                              if (audio) audio.muted = !audio.muted
                           }
                           onWheel: wheel => {
-                              if (!volWidget.sinkAudio) return
+                              const audio = Pipewire.defaultAudioSink?.audio
+                              if (!audio) return
                               const delta = wheel.angleDelta.y > 0 ? 0.05 : -0.05
-                              volWidget.sinkAudio.volume = Math.max(0.0, Math.min(1.5, volWidget.sinkAudio.volume + delta))
+                              audio.volume = Math.max(0.0, Math.min(1.5, audio.volume + delta))
                           }
                       }
                   }
