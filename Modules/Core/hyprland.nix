@@ -362,7 +362,12 @@
                               && UPower.displayDevice.percentage <= 0.20) ? "#ff5555" : "#cdd6f4"
                           text: UPower.displayDevice === null ? "" :
                               (UPower.displayDevice.state === UPowerDeviceState.Charging
-                               || UPower.displayDevice.state === UPowerDeviceState.PendingCharge) ? "󰂄" :
+                               || UPower.displayDevice.state === UPowerDeviceState.PendingCharge)
+                                  ? (UPower.displayDevice.percentage <= 0.10 ? "󰢜" :
+                                     UPower.displayDevice.percentage <= 0.30 ? "󰢝" :
+                                     UPower.displayDevice.percentage <= 0.50 ? "󰢟" :
+                                     UPower.displayDevice.percentage <= 0.70 ? "󰢡" :
+                                     UPower.displayDevice.percentage <= 0.90 ? "󰢣" : "󰂄") :
                               UPower.displayDevice.percentage <= 0.10 ? "󰂎" :
                               UPower.displayDevice.percentage <= 0.30 ? "󰁻" :
                               UPower.displayDevice.percentage <= 0.50 ? "󰁽" :
