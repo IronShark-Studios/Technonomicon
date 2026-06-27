@@ -32,6 +32,7 @@
       quickshell
       networkmanagerapplet
       udiskie
+      copyq
     ];
 
     home-manager.users.xin = {
