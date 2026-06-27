@@ -89,7 +89,7 @@
           hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("systemctl poweroff"))
           hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exit())
           hl.bind(mainMod .. " + F",         hl.dsp.window.fullscreen())
-          hl.bind(mainMod .. " + O",         hl.dsp.exec_cmd("hyprctl dispatch togglespecialworkspace obsidian"))
+          hl.bind(mainMod .. " + ALT + 1",   hl.dsp.exec_cmd("hyprctl dispatch togglespecialworkspace obsidian"))
 
           hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left"  }))
           hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down"  }))
