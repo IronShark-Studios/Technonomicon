@@ -101,9 +101,15 @@
       ".config/zellij/config.kdl".text = ''
         pane_frames false
         simplified_ui true
-        default_layout "compact"
+        default_layout "bare"
         show_startup_tips false
         show_release_notes false
+      '';
+
+      ".config/zellij/layouts/bare.kdl".text = ''
+        layout {
+          pane
+        }
       '';
 
       ".config/helix/config.toml".text = ''
