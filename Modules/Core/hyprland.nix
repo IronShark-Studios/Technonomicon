@@ -52,10 +52,12 @@
             hl.exec_cmd("blueman-applet")
             hl.exec_cmd("obsidian")
             hl.exec_cmd("flatpak run com.discordapp.Discord")
+            hl.exec_cmd("ghostty --class=grimoire-inbox -e hx ~/Grimoire/Inbox.md")
           end)
 
-          hl.windowrule("workspace special:obsidian silent", "class:obsidian")
-          hl.windowrule("workspace special:discord silent",  "class:discord")
+          hl.windowrule("workspace special:obsidian silent",  "class:obsidian")
+          hl.windowrule("workspace special:discord silent",   "class:discord")
+          hl.windowrule("workspace special:grimoire silent",  "class:grimoire-inbox")
 
           hl.config({
             input = {
